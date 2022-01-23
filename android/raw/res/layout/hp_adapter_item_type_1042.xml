@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:card_view="http://schemas.android.com/apk/res-auto">
+    <android.support.v7.widget.CardView android:layout_width="wrap_content" android:layout_height="30.0dip" android:layout_marginLeft="@dimen/dimen_8" android:layout_marginBottom="@dimen/dimen_5" android:layout_alignParentBottom="true" card_view:cardCornerRadius="15.0dip" card_view:cardElevation="@dimen/dimen_0">
+        <RelativeLayout android:layout_width="wrap_content" android:layout_height="30.0dip">
+            <ImageView android:id="@id/iv_background" android:layout_width="fill_parent" android:layout_height="30.0dip" android:layout_marginRight="-8.0dip" android:scaleType="fitXY" android:layout_alignRight="@id/titleTextview" />
+            <TextView android:textSize="@dimen/dimen_14" android:textColor="@color/color_5B5B5B" android:ellipsize="end" android:id="@id/titleTextview" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dimen_8" android:layout_marginTop="@dimen/dimen_5" android:layout_marginRight="@dimen/dimen_8" android:layout_marginBottom="@dimen/dimen_5" android:maxWidth="@dimen/dimen_200" android:maxLines="1" android:singleLine="true" />
+        </RelativeLayout>
+    </android.support.v7.widget.CardView>
+</RelativeLayout>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@color/list_background_color" android:layout_width="fill_parent" android:layout_height="@dimen/dimen_55"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginLeft="@dimen/dimen_20" android:layout_marginRight="@dimen/dimen_20">
+        <ImageView android:layout_gravity="center_vertical" android:id="@id/iv_right_menu_icon" android:visibility="invisible" android:layout_width="@dimen/dimen_26" android:layout_height="@dimen/dimen_26" android:src="@drawable/email_avatar" android:scaleType="fitXY" />
+        <TextView android:textSize="@dimen/ts_17px" android:textColor="@color/color_222222" android:ellipsize="end" android:gravity="center|left" android:layout_gravity="center_vertical" android:id="@id/tv_right_menu_title" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dimen_16" android:layout_marginRight="@dimen/dimen_10" android:singleLine="true" android:layout_weight="1.0" />
+        <TextView android:textSize="@dimen/dimen_12" android:textColor="@color/white" android:gravity="center" android:layout_gravity="center_vertical" android:id="@id/tv_unread_num" android:background="@drawable/circle_red_bg" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="@dimen/dimen_18" android:layout_marginLeft="@dimen/dimen_10" android:minWidth="@dimen/dimen_26" />
+        <ImageView android:layout_gravity="center_vertical" android:id="@id/iv_check" android:visibility="gone" android:layout_width="@dimen/dimen_14" android:layout_height="@dimen/dimen_14" android:layout_marginLeft="@dimen/dimen_10" android:src="@drawable/icon_menu_check" />
+    </LinearLayout>
+    <View android:id="@id/divider_line" android:background="@color/color_E8E8E8" android:layout_width="fill_parent" android:layout_height="@dimen/dimen_0.5" android:layout_marginLeft="@dimen/dimen_58" android:layout_alignParentBottom="true" />
+</RelativeLayout>

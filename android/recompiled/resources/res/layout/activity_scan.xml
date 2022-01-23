@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" android:gravity="center_horizontal" android:background="@color/translucent" android:layout_width="match_parent" android:layout_height="match_parent">
+    <SurfaceView android:id="@+id/sv_scan_camera" android:layout_width="match_parent" android:layout_height="match_parent"/>
+    <com.systoon.toon.scan.view.ScanFrameView android:id="@+id/v_scan_frame_view" android:layout_width="match_parent" android:layout_height="match_parent"/>
+    <RelativeLayout android:fitsSystemWindows="true" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <ImageView android:id="@+id/iv_scan_back" android:background="@drawable/scan_go_back" android:layout_width="@dimen/dimen_20" android:layout_height="@dimen/dimen_20" android:layout_marginLeft="@dimen/dimen_9" android:layout_marginTop="@dimen/dimen_10" android:layout_marginBottom="@dimen/dimen_9" android:scaleType="fitCenter"/>
+        <TextView android:textSize="@dimen/dimen_18" android:textColor="@color/c20" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dimen_10" android:layout_marginBottom="@dimen/dimen_9" android:text="@string/scan_title_name" android:layout_centerHorizontal="true"/>
+    </RelativeLayout>
+    <TextView android:textSize="@dimen/ts_16px" android:textColor="@color/c20" android:id="@+id/tv_scan_network_notice" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/scan_notice_no_network" android:layout_centerHorizontal="true"/>
+    <LinearLayout android:orientation="vertical" android:id="@+id/ll_flash_show" android:padding="@dimen/dimen_10" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerHorizontal="true">
+        <ImageView android:layout_gravity="center" android:id="@+id/iv_scan_flash" android:background="@drawable/icon_scan_flash_light_close" android:layout_width="@dimen/dimen_28" android:layout_height="@dimen/dimen_38"/>
+        <TextView android:textSize="@dimen/ts_14px" android:textColor="@color/c20" android:layout_gravity="center" android:id="@+id/tv_scan_flash" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dimen_8" android:text="@string/scan_open_flash"/>
+    </LinearLayout>
+    <ImageView android:id="@+id/scan_line" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/icon_scan_line"/>
+    <TextView android:textSize="@dimen/dimen_16" android:textColor="@color/c4" android:id="@+id/tv_scan_notice" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/scan_notice" android:layout_centerHorizontal="true"/>
+    <LinearLayout android:orientation="horizontal" android:id="@+id/ll_scan_operate" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dimen_15" android:layout_marginTop="@dimen/dimen_50" android:layout_marginRight="@dimen/dimen_15" android:layout_below="@+id/tv_scan_notice" android:layout_centerHorizontal="true">
+        <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@+id/ll_scan_qrcode_card" android:visibility="gone" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1">
+            <ImageView android:id="@+id/iv_scan_qrcode_card" android:background="@drawable/icon_scan_card" android:layout_width="@dimen/dimen_56" android:layout_height="@dimen/dimen_56"/>
+            <TextView android:textSize="@dimen/ts_12px" android:textColor="@color/c20" android:id="@+id/tv_scan_qrcode_card" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dimen_10" android:text="@string/qrcode_card" android:singleLine="true"/>
+        </LinearLayout>
+        <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@+id/ll_scan_qrcode_app" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1">
+            <ImageView android:id="@+id/iv_scan_qrcode_app" android:background="@drawable/icon_scan_app" android:layout_width="@dimen/dimen_56" android:layout_height="@dimen/dimen_56"/>
+            <TextView android:textSize="@dimen/ts_12px" android:textColor="@color/c20" android:id="@+id/tv_scan_qrcode_app" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dimen_10" android:text="@string/qrcode_app" android:singleLine="true"/>
+        </LinearLayout>
+        <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@+id/ll_scan_qrcode_album" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1">
+            <ImageView android:id="@+id/iv_scan_qrcode_album" android:background="@drawable/icon_scan_album" android:layout_width="@dimen/dimen_56" android:layout_height="@dimen/dimen_56"/>
+            <TextView android:textSize="@dimen/ts_12px" android:textColor="@color/c20" android:id="@+id/tv_scan_qrcode_album" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dimen_10" android:text="@string/album" android:singleLine="true"/>
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>

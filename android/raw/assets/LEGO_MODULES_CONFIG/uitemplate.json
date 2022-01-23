@@ -1,0 +1,43 @@
+{
+  "default_tab": 0,
+  "tab_info": [
+    {
+      "tab_name": "首页",
+      "tab_en_name": "Home",
+      "class_name": "com.systoon.flutter.HomePageTabPlugin",
+      "tab_drawable_normal": "tab_home_gray",
+      "tab_drawable_select": "tab_home_blue"
+    },
+    {
+      "tab_name": "资讯",
+      "tab_en_name": "News",
+      "class_name": "com.systoon.business.webpage.WebViewManager",
+      "tab_drawable_normal": "tab_social_gray",
+      "tab_drawable_select": "tab_social_blue"
+    },
+    {
+      "tab_name": "赛事",
+      "tab_en_name": "Events",
+      "tab_need_login": true,
+      "class_name": "com.systoon.business.match.MatchManager",
+      "tab_drawable_normal": "tab_match_gray",
+      "tab_drawable_select": "tab_match_blue"
+    },
+    {
+      "tab_name": "消息",
+      "tab_en_name": "Messages",
+      "tab_need_login": true,
+      "class_name": "com.msgseal.global.MsgsealTabPlugin",
+      "tab_drawable_normal": "tab_msg_gray",
+      "tab_drawable_select": "tab_msg_blue"
+    },
+    {
+      "tab_name": "我的",
+      "tab_en_name": "Me",
+      "tab_need_login": true,
+      "class_name": "com.zhengtoon.tuser.workbench.manager.MyAccountManager",
+      "tab_drawable_normal": "tab_my_gray",
+      "tab_drawable_select": "tab_my_blue"
+    }
+  ]
+}

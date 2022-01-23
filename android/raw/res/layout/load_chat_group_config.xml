@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="@dimen/dimen_52"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="@dimen/dimen_16" android:id="@id/tv_load_chat_group_config" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/load_group_config" />
+    <ImageView android:id="@id/iv_load_chat_group_config" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dimen_8" android:src="@drawable/icon_chat_group_loading1" android:layout_marginStart="@dimen/dimen_8" />
+</LinearLayout>

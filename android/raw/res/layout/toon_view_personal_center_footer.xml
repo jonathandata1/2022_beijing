@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/c5" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <View android:background="@color/c6" android:layout_width="fill_parent" android:layout_height="@dimen/dimen_0.3" android:layout_marginTop="20.0dip" />
+    <RelativeLayout android:id="@id/rl_again_enter" android:background="@color/c20" android:layout_width="fill_parent" android:layout_height="@dimen/dimen_44">
+        <TextView android:textSize="@dimen/ts_16px" android:textColor="@color/c14" android:gravity="center" android:id="@id/tv_setting_quit" android:layout_width="fill_parent" android:layout_height="fill_parent" android:text="@string/quit_login" />
+    </RelativeLayout>
+    <View android:background="@color/c6" android:layout_width="fill_parent" android:layout_height="@dimen/dimen_0.3" android:layout_marginBottom="30.0dip" />
+</LinearLayout>

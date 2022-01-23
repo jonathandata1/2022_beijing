@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>getMainColor</key>
+	<dict>
+		<key>in</key>
+		<string></string>
+		<key>out</key>
+		<string></string>
+		<key>excutor</key>
+		<string>TNCommonGetMainColorExcutor</string>
+	</dict>
+	<key>getProxy</key>
+	<dict>
+		<key>in</key>
+		<string></string>
+		<key>out</key>
+		<string>NSStrimg</string>
+		<key>excutor</key>
+		<string>TNCommonGetProxyExcutor</string>
+	</dict>
+	<key>showToast</key>
+	<dict>
+		<key>in</key>
+		<string>NSDictionary</string>
+		<key>out</key>
+		<string></string>
+		<key>excutor</key>
+		<string>TNCommonShowToastExcutor</string>
+	</dict>
+	<key>screenshotImage</key>
+	<dict>
+		<key>in</key>
+		<string>NSDictionary</string>
+		<key>out</key>
+		<string></string>
+		<key>excutor</key>
+		<string>TNCommonGetScreenshotImageExcutor</string>
+	</dict>
+</dict>
+</plist>

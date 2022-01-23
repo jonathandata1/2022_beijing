@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" android:background="@drawable/tab_contacts_layout" android:layout_width="match_parent" android:layout_height="40dp">
+    <TextView android:textSize="@dimen/ts_16px" android:textColor="@color/c12" android:gravity="center_vertical" android:id="@+id/tv_title" android:paddingLeft="15dp" android:layout_width="104dp" android:layout_height="40dp"/>
+    <ImageView android:id="@+id/iv_arrow" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="15dp" android:src="@drawable/common_arrow_right" android:layout_alignParentRight="true" android:layout_centerVertical="true"/>
+    <TextView android:textSize="16dp" android:textColor="@color/c12" android:textColorHint="@color/c27" android:ellipsize="end" android:gravity="center_vertical" android:id="@+id/tv_value" android:layout_width="match_parent" android:layout_height="40dp" android:layout_marginRight="10dp" android:singleLine="true" android:layout_toLeftOf="@+id/iv_arrow" android:layout_toRightOf="@+id/tv_title"/>
+    <View android:id="@+id/v_driver_align_value" android:background="@color/c6" android:visibility="gone" android:layout_width="match_parent" android:layout_height="0.3dp" android:layout_alignLeft="@+id/tv_value" android:layout_alignParentBottom="true"/>
+    <View android:background="@color/c6" android:visibility="gone" android:layout_width="match_parent" android:layout_height="0.3dp" android:layout_marginLeft="15dp" android:layout_alignLeft="@+id/tv_title" android:layout_alignParentBottom="true"/>
+    <View android:id="@+id/v_driver_bottom" android:background="@color/c6" android:visibility="gone" android:layout_width="match_parent" android:layout_height="0.3dp" android:layout_alignParentBottom="true"/>
+    <View android:id="@+id/v_driver_top" android:background="@color/c6" android:visibility="gone" android:layout_width="match_parent" android:layout_height="0.3dp" android:layout_alignParentTop="true"/>
+</RelativeLayout>

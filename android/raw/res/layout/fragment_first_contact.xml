@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.msgseal.chat.firstcontact.NoticeViewGroupScrollview android:orientation="vertical" android:id="@id/scroll_view" android:layout_width="fill_parent" android:layout_height="fill_parent" android:fillViewport="true"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <RelativeLayout android:orientation="vertical" android:id="@id/movable_view" android:paddingBottom="@dimen/dimen_16" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <LinearLayout android:orientation="vertical" android:id="@id/description_view" android:background="@drawable/bg_new_contact" android:paddingTop="@dimen/dimen_16" android:paddingBottom="@dimen/dimen_20" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dimen_16" android:layout_marginRight="@dimen/dimen_16" android:layout_marginBottom="@dimen/dimen_26">
+            <LinearLayout android:orientation="horizontal" android:id="@id/describe_view" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dimen_16" android:layout_marginRight="@dimen/dimen_16">
+                <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/dimen_12" android:src="@drawable/new_contact_icon" />
+                <TextView android:textSize="@dimen/dimen_18" android:textColor="#fff8f9fb" android:layout_gravity="center_vertical" android:id="@id/describe_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/new_contact_describe_title" />
+            </LinearLayout>
+            <TextView android:textSize="@dimen/dimen_14" android:textColor="@color/color_c5c5c5" android:layout_gravity="center_vertical" android:id="@id/describe_content" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dimen_16" android:layout_marginTop="@dimen/dimen_12" android:layout_marginRight="@dimen/dimen_16" android:text="@string/new_contact_describe_content" />
+        </LinearLayout>
+        <LinearLayout android:orientation="vertical" android:id="@id/contact_address" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_below="@id/description_view">
+            <TextView android:textSize="@dimen/dimen_14" android:id="@id/txt_label_contact_address" android:paddingLeft="@dimen/dimen_16" android:paddingRight="@dimen/dimen_16" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/contact_temail" android:drawableLeft="@drawable/bg_red_round" android:drawablePadding="@dimen/dimen_6" />
+            <LinearLayout android:paddingLeft="@dimen/dimen_16" android:paddingRight="@dimen/dimen_16" android:focusable="true" android:focusableInTouchMode="true" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <AutoCompleteTextView android:textSize="@dimen/dimen_17" android:id="@id/et_temail_address" android:background="@drawable/transparent" android:focusable="true" android:focusableInTouchMode="true" android:layout_width="0.0dip" android:layout_height="@dimen/dimen_56" android:hint="@string/hint_new_contact_tmail" android:maxLines="1" android:singleLine="true" android:layout_weight="1.0" />
+                <ImageView android:layout_gravity="center_vertical" android:id="@id/img_autocomplete_del" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_input_del" />
+            </LinearLayout>
+            <View android:id="@id/line_split1" android:background="@color/tc_6" android:layout_width="fill_parent" android:layout_height="@dimen/dimen_0.3" android:layout_marginLeft="@dimen/dimen_16" android:layout_marginRight="@dimen/dimen_16" />
+        </LinearLayout>
+        <LinearLayout android:orientation="vertical" android:id="@id/ll_my_temail_view" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_below="@id/contact_address">
+            <TextView android:textSize="@dimen/dimen_14" android:id="@id/txt_label_to_mail_address_card" android:paddingLeft="@dimen/dimen_16" android:paddingRight="@dimen/dimen_16" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dimen_10" android:text="@string/new_contact_select_tmail_card" android:drawablePadding="@dimen/dimen_6" />
+            <LinearLayout android:orientation="horizontal" android:id="@id/ll_my_temail_card" android:paddingLeft="@dimen/dimen_16" android:paddingRight="@dimen/dimen_16" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dimen_10">
+                <LinearLayout android:layout_gravity="center_vertical" android:orientation="vertical" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+                    <TextView android:textSize="@dimen/dimen_17" android:id="@id/txt_my_temail" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+                </LinearLayout>
+                <ImageView android:layout_gravity="center_vertical" android:id="@id/img_triple_indicator" android:layout_width="@dimen/dimen_10" android:layout_height="@dimen/dimen_10" android:src="@drawable/unfold" />
+            </LinearLayout>
+            <View android:id="@id/line_split2" android:background="@color/tc_6" android:layout_width="fill_parent" android:layout_height="@dimen/dimen_0.3" android:layout_marginLeft="@dimen/dimen_16" android:layout_marginTop="@dimen/dimen_16" android:layout_marginRight="@dimen/dimen_16" />
+        </LinearLayout>
+        <LinearLayout android:orientation="vertical" android:id="@id/ll_bottom" android:background="@color/transparent" android:paddingLeft="@dimen/dimen_16" android:paddingRight="@dimen/dimen_16" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dimen_20" android:layout_below="@id/ll_my_temail_view">
+            <TextView android:textColor="@color/text_subtitle_color" android:gravity="center|left" android:id="@id/label_recommend_title" android:background="@drawable/recommend_title_bg" android:paddingLeft="@dimen/dimen_16" android:layout_width="fill_parent" android:layout_height="@dimen/dimen_40" android:text="@string/chat_label_recommend_title" />
+            <android.support.v7.widget.RecyclerView android:id="@id/recycle_recommend" android:background="@drawable/recommend_content_bg" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+        </LinearLayout>
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_below="@id/ll_bottom">
+            <com.msgseal.base.ui.RippleView android:gravity="center" android:layout_gravity="center_horizontal" android:id="@id/rv_next_step" android:background="@drawable/bg_input_next_selector" android:layout_width="fill_parent" android:layout_height="@dimen/dimen_44" android:layout_marginLeft="@dimen/dimen_16" android:layout_marginTop="@dimen/dimen_40" android:layout_marginRight="@dimen/dimen_16">
+                <TextView android:textSize="@dimen/ts_18px" android:textColor="@color/white" android:gravity="center" android:id="@id/label_next" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/new_contact_recommend_ok" />
+            </com.msgseal.base.ui.RippleView>
+            <RelativeLayout android:orientation="horizontal" android:id="@id/recommend_layout" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="@dimen/dimen_20" android:layout_marginLeft="@dimen/dimen_16" android:layout_marginTop="@dimen/dimen_30" android:layout_marginRight="@dimen/dimen_16">
+                <TextView android:textSize="@dimen/dimen_14" android:id="@id/recommend_txt" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/new_contact_group_square_app_recommend" android:layout_centerInParent="true" />
+                <ImageView android:id="@id/group_plaza_icon" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dimen_10" android:src="@drawable/groupplaza_icon" android:layout_toRightOf="@id/recommend_txt" android:layout_centerVertical="true" />
+            </RelativeLayout>
+            <RelativeLayout android:orientation="horizontal" android:id="@id/search_layout" android:layout_width="fill_parent" android:layout_height="@dimen/dimen_40" android:layout_marginLeft="@dimen/dimen_16" android:layout_marginTop="@dimen/dimen_16" android:layout_marginRight="@dimen/dimen_16">
+                <TextView android:textSize="@dimen/dimen_14" android:textColor="@color/category_blue" android:id="@id/search_txt" android:padding="10.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/new_contact_search_user_nick_name" android:layout_centerInParent="true" />
+            </RelativeLayout>
+        </LinearLayout>
+    </RelativeLayout>
+</com.msgseal.chat.firstcontact.NoticeViewGroupScrollview>

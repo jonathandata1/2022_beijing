@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true">
+        <com.msgseal.base.ui.LoadingPageView android:layout_gravity="center_horizontal" android:id="@+id/iv_base_empty_loading_bg" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="@dimen/dimen_50" android:scaleType="fitCenter"/>
+        <ImageView android:layout_gravity="center_horizontal" android:id="@+id/iv_base_empty_bg" android:layout_width="wrap_content" android:layout_height="wrap_content" android:scaleType="fitCenter"/>
+        <TextView android:textSize="@dimen/ts_16px" android:textColor="@color/c28" android:gravity="center_horizontal" android:layout_gravity="center_horizontal" android:id="@+id/tv_base_empty_bg" android:layout_width="wrap_content" android:layout_height="match_parent" android:layout_marginTop="@dimen/dimen_40"/>
+        <com.msgseal.base.ui.RippleView android:layout_gravity="center" android:id="@+id/rl_no_data" android:visibility="gone" android:layout_width="@dimen/dimen_240" android:layout_height="@dimen/dimen_48" android:layout_marginTop="@dimen/dimen_50">
+            <Button android:textSize="@dimen/ts_16px" android:textColor="@color/c1" android:gravity="center" android:id="@+id/but_base_empty_bg" android:background="@drawable/no_data_view_but" android:layout_width="match_parent" android:layout_height="match_parent"/>
+        </com.msgseal.base.ui.RippleView>
+        <View android:layout_width="match_parent" android:layout_height="@dimen/dimen_30"/>
+    </LinearLayout>
+</RelativeLayout>

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:background="@color/c5" android:layout_width="match_parent" android:layout_height="match_parent">
+    <include android:id="@+id/in_1" layout="@layout/item_navigation_bar"/>
+    <RelativeLayout android:id="@+id/rl_change_phone_by_code" android:background="@color/c20" android:layout_width="match_parent" android:layout_height="@dimen/dimen_45" android:layout_marginTop="@dimen/dimen_10">
+        <ImageView android:id="@+id/iv_password_phone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dimen_15" android:src="@drawable/change_phone_phone" android:layout_alignParentLeft="true" android:layout_centerVertical="true"/>
+        <TextView android:textSize="@dimen/ts_16px" android:textColor="@color/color_222222" android:id="@+id/tv_change_by_code" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dimen_12" android:layout_toRightOf="@+id/iv_password_phone" android:layout_centerVertical="true"/>
+        <ImageView android:id="@+id/icon_password_arrow" android:background="@drawable/common_arrow_right" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/dimen_15" android:layout_alignParentRight="true" android:layout_centerVertical="true"/>
+    </RelativeLayout>
+    <View android:id="@+id/v_line_under_code" android:background="@color/c6" android:layout_width="match_parent" android:layout_height="@dimen/res_0x7f070190_dimen_0_3" android:layout_marginLeft="@dimen/dimen_15"/>
+    <RelativeLayout android:id="@+id/rl_change_phone_by_email" android:background="@color/c20" android:layout_width="match_parent" android:layout_height="@dimen/dimen_45">
+        <ImageView android:id="@+id/iv_password_email" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dimen_15" android:src="@drawable/change_phone_email" android:layout_alignParentLeft="true" android:layout_centerVertical="true"/>
+        <TextView android:textSize="@dimen/ts_16px" android:textColor="@color/color_222222" android:id="@+id/tv_change_by_email" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dimen_12" android:layout_toRightOf="@+id/iv_password_email" android:layout_centerVertical="true"/>
+        <ImageView android:id="@+id/icon_email_arrow" android:background="@drawable/common_arrow_right" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/dimen_15" android:layout_alignParentRight="true" android:layout_centerVertical="true"/>
+    </RelativeLayout>
+    <View android:id="@+id/v_line_under_email" android:background="@color/c6" android:layout_width="match_parent" android:layout_height="@dimen/res_0x7f070190_dimen_0_3" android:layout_marginLeft="@dimen/dimen_15"/>
+    <RelativeLayout android:id="@+id/rl_change_phone_by_question" android:background="@color/c20" android:layout_width="match_parent" android:layout_height="@dimen/dimen_45">
+        <ImageView android:id="@+id/iv_password_question" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dimen_15" android:src="@drawable/change_phone_question" android:layout_alignParentLeft="true" android:layout_centerVertical="true"/>
+        <TextView android:textSize="@dimen/ts_16px" android:textColor="@color/color_222222" android:id="@+id/tv_change_by_question" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dimen_12" android:layout_toRightOf="@+id/iv_password_question" android:layout_centerVertical="true"/>
+        <ImageView android:id="@+id/icon_question_arrow" android:background="@drawable/common_arrow_right" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/dimen_15" android:layout_alignParentRight="true" android:layout_centerVertical="true"/>
+    </RelativeLayout>
+</LinearLayout>

@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent" android:layout_height="match_parent">
+    <ImageView android:id="@+id/dust_cloud" android:layout_width="match_parent" android:layout_height="wrap_content" android:src="@drawable/hp_cloud_dust" android:layout_centerInParent="true"/>
+    <com.systoon.weatheranimator.dust.DustView android:id="@+id/dust_ion" android:layout_width="match_parent" android:layout_height="match_parent"/>
+</RelativeLayout>

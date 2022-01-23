@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:id="@+id/ll_phone_num" android:background="@color/c20" android:layout_width="match_parent" android:layout_height="match_parent">
+    <RelativeLayout android:id="@+id/rl_set_title" android:layout_width="match_parent" android:layout_height="@dimen/dimen_44">
+        <TextView android:textSize="@dimen/dimen_17" android:textColor="@color/color_222222" android:gravity="center_vertical" android:id="@+id/tv_pc_to_login_left" android:layout_width="wrap_content" android:layout_height="match_parent" android:layout_marginLeft="@dimen/dimen_16" android:text="@string/cancel"/>
+    </RelativeLayout>
+    <View android:background="@color/c6" android:layout_width="match_parent" android:layout_height="@dimen/res_0x7f070191_dimen_0_5"/>
+    <ImageView android:layout_gravity="center_horizontal" android:id="@+id/iv_pc_to_login" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="97dp" android:src="@drawable/pc_to_login_pc"/>
+    <TextView android:textSize="@dimen/dimen_16" android:textColor="@color/color_4a4a4a" android:layout_gravity="center_horizontal" android:id="@+id/tv_pc_to_login_tip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dimen_18" android:text="@string/pc_to_login_tip"/>
+    <TextView android:textSize="@dimen/dimen_14" android:textColor="#ff804a" android:layout_gravity="center_horizontal" android:id="@+id/tv_pc_to_login_fail_tip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dimen_10" android:text=""/>
+    <Button android:textSize="@dimen/dimen_18" android:textColor="@color/c20" android:layout_gravity="center_horizontal" android:id="@+id/btn_pc_to_login" android:background="@drawable/pc_to_login_btn_with_corner" android:layout_width="match_parent" android:layout_height="@dimen/dimen_50" android:layout_marginLeft="@dimen/dimen_35" android:layout_marginTop="118dp" android:layout_marginRight="@dimen/dimen_35" android:text="@string/pc_to_login"/>
+    <TextView android:textSize="@dimen/dimen_16" android:textColor="@color/c8" android:layout_gravity="center_horizontal" android:id="@+id/tv_pc_to_login_cancel" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dimen_35" android:text="@string/pc_to_login_cancel"/>
+</LinearLayout>

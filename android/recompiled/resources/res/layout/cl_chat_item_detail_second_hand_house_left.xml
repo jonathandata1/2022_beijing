@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.lianjia.common.vr.view.RoundCornerLinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:orientation="vertical" android:background="@color/cl_white_common" android:paddingBottom="14dp" android:layout_width="match_parent" android:layout_height="wrap_content" app:bottom_left_radius="@dimen/cl_chatui_chat_msg_card_corner_radius" app:bottom_right_radius="@dimen/cl_chatui_chat_msg_card_corner_radius" app:corner_color="@color/cl_chatui_background" app:top_right_radius="@dimen/cl_chatui_chat_msg_card_corner_radius">
+    <include layout="@layout/cl_chatui_chat_item_detail_second_hand_house_card_content"/>
+</com.lianjia.common.vr.view.RoundCornerLinearLayout>

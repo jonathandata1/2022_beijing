@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android">
+    <size android:height="@dimen/dimen_20" android:width="@dimen/dimen_4"/>
+    <solid android:color="@color/common_dialog_scroll_bar"/>
+    <corners android:radius="8dp"/>
+</shape>

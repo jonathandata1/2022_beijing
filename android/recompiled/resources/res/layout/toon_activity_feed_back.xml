@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:focusable="true" android:focusableInTouchMode="true" android:layout_width="match_parent" android:layout_height="match_parent">
+    <include android:id="@+id/in_1" layout="@layout/toon_item_navigation_bar"/>
+    <ScrollView android:layout_width="match_parent" android:layout_height="match_parent">
+        <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+            <TextView android:gravity="center_vertical" android:background="#00000000" android:paddingLeft="@dimen/dimen_16" android:layout_width="match_parent" android:layout_height="@dimen/dimen_36" android:text="@string/question_type"/>
+            <android.support.v7.widget.RecyclerView android:id="@+id/rv_common_questions" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+            <TextView android:gravity="center_vertical" android:background="#00000000" android:paddingLeft="@dimen/dimen_16" android:layout_width="match_parent" android:layout_height="@dimen/dimen_36" android:text="@string/question_and_suggestion"/>
+            <EditText android:textSize="@dimen/dimen_15" android:textColorHint="@color/color_c5c5c5" android:gravity="start" android:id="@+id/et_suggestion_input" android:background="@color/white" android:paddingLeft="@dimen/dimen_16" android:paddingTop="@dimen/dimen_12" android:paddingRight="@dimen/dimen_16" android:paddingBottom="@dimen/dimen_15" android:layout_width="match_parent" android:layout_height="wrap_content" android:minHeight="106dp" android:hint="@string/suggestion_hint" android:singleLine="false"/>
+            <TextView android:textSize="@dimen/dimen_12" android:textColor="#c5c5c5" android:gravity="end" android:background="@color/white" android:paddingRight="@dimen/dimen_16" android:layout_width="match_parent" android:layout_height="@dimen/dimen_30" android:text="@string/suggestion_limit"/>
+            <TextView android:gravity="center_vertical" android:background="#00000000" android:paddingLeft="@dimen/dimen_16" android:layout_width="match_parent" android:layout_height="@dimen/dimen_36" android:text="@string/upload_picture"/>
+            <LinearLayout android:orientation="horizontal" android:background="@color/white" android:paddingLeft="@dimen/dimen_16" android:paddingTop="@dimen/dimen_12" android:paddingRight="@dimen/dimen_16" android:paddingBottom="@dimen/dimen_12" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/dimen_10">
+                <com.zhengtoon.tuser.setting.view.NoScrollGridView android:gravity="center" android:id="@+id/gv_feedback_pic" android:background="@color/c20" android:scrollbars="none" android:fadingEdge="none" android:layout_width="match_parent" android:layout_height="wrap_content" android:listSelector="@color/transparent" android:stretchMode="columnWidth" android:columnWidth="@dimen/dimen_80" android:numColumns="4"/>
+            </LinearLayout>
+            <RelativeLayout android:id="@+id/rl_upload_tmail_log" android:background="@color/white" android:visibility="gone" android:layout_width="match_parent" android:layout_height="@dimen/dimen_36" android:layout_marginBottom="@dimen/dimen_10">
+                <TextView android:gravity="center_vertical" android:id="@+id/tv_upload_tmail_log" android:paddingLeft="@dimen/dimen_16" android:layout_width="wrap_content" android:layout_height="@dimen/dimen_36" android:text="@string/upload_tmail_log"/>
+                <ImageView android:id="@+id/iv_upload_tmail_log" android:layout_width="@dimen/dimen_16" android:layout_height="@dimen/dimen_16" android:layout_marginRight="@dimen/dimen_16" android:src="@drawable/user_selected_const" android:layout_alignParentRight="true" android:layout_centerVertical="true"/>
+            </RelativeLayout>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

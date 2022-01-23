@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:id="@+id/sy_choose_addr_driver_info" android:background="@color/sy_vffffff" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <View android:background="@color/sy_vfafafa" android:layout_width="match_parent" android:layout_height="8dp"/>
+    <RelativeLayout android:gravity="center_vertical" android:background="@color/white" android:paddingLeft="26dp" android:paddingRight="20dp" android:layout_width="match_parent" android:layout_height="80dp">
+        <ImageView android:id="@+id/sy_choose_addr_driver_icon" android:layout_width="88dp" android:layout_height="76dp" android:src="@drawable/sy_choose_addr_car_icon" android:scaleType="centerCrop"/>
+        <LinearLayout android:gravity="right|center_vertical|center_horizontal|center" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentRight="true" android:layout_centerInParent="true">
+            <TextView android:textSize="20sp" android:textStyle="bold" android:textColor="@color/sy_v6574f8" android:id="@+id/sy_choose_addr_driver_num" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+            <TextView android:textSize="14sp" android:textColor="@color/v555555" android:id="@+id/sy_choose_addr_driver_tip" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+        </LinearLayout>
+    </RelativeLayout>
+    <View android:background="@color/sy_vfafafa" android:layout_width="match_parent" android:layout_height="8dp"/>
+</LinearLayout>

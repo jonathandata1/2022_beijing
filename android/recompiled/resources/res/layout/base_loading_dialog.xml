@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:gravity="center" android:orientation="horizontal" android:background="@drawable/common_dialog_bg" android:layout_width="@dimen/dimen_245" android:layout_height="@dimen/dimen_76" android:layout_centerHorizontal="true" android:layout_centerVertical="true">
+        <com.msgseal.base.ui.customView.BaseLoadingMoveRoundView android:id="@+id/iv_base_loading_progress" android:layout_width="@dimen/dimen_50" android:layout_height="@dimen/dimen_50"/>
+        <TextView android:textAppearance="?android:attr/textAppearanceMedium" android:textSize="@dimen/ts_14px" android:textStyle="bold" android:textColor="@color/c20" android:gravity="center" android:id="@+id/tv_base_loading_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dimen_10" android:text="@string/base_loading_msg"/>
+    </LinearLayout>
+</RelativeLayout>

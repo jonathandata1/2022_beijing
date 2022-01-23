@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:gravity="center_horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_centerInParent="true">
+        <ImageView android:id="@id/appicon" android:layout_width="@dimen/dimen_42" android:layout_height="@dimen/dimen_42" android:layout_marginTop="@dimen/dimen_6" android:layout_centerHorizontal="true" />
+        <TextView android:textSize="@dimen/dimen_13" android:textColor="@color/color_4A4A4A" android:gravity="center" android:id="@id/appName" android:layout_width="fill_parent" android:layout_height="@dimen/dimen_18" android:layout_marginTop="@dimen/dimen_4" android:singleLine="true" android:layout_below="@id/appicon" android:layout_centerHorizontal="true" />
+    </RelativeLayout>
+</RelativeLayout>

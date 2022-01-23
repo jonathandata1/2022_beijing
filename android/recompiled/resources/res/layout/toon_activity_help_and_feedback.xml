@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent" android:layout_height="match_parent">
+    <include android:id="@+id/in_1" layout="@layout/toon_item_navigation_bar"/>
+    <TextView android:gravity="center_vertical" android:background="#00000000" android:paddingLeft="@dimen/dimen_16" android:layout_width="match_parent" android:layout_height="@dimen/dimen_36" android:layout_marginTop="@dimen/dimen_49" android:text="@string/common_questions"/>
+    <android.support.v7.widget.RecyclerView android:id="@+id/rv_question_list" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginTop="@dimen/dimen_85" android:layout_marginBottom="@dimen/dimen_64"/>
+    <LinearLayout android:background="@color/c20" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true">
+        <TextView android:textSize="@dimen/dimen_18" android:textColor="@color/white" android:gravity="center" android:id="@+id/btn_open_feed_back" android:background="@color/c1" android:layout_width="match_parent" android:layout_height="@dimen/dimen_44" android:layout_marginLeft="@dimen/dimen_24" android:layout_marginTop="@dimen/dimen_10" android:layout_marginRight="@dimen/dimen_24" android:layout_marginBottom="@dimen/dimen_10" android:text="@string/feed_back"/>
+    </LinearLayout>
+</RelativeLayout>

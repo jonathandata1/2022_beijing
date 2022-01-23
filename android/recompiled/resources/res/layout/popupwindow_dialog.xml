@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="50dp">
+    <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="match_parent">
+        <LinearLayout android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="1"/>
+        <LinearLayout android:orientation="vertical" android:id="@+id/pop_layout" android:background="#ffffff" android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="6">
+            <LinearLayout android:gravity="center_vertical" android:background="@color/tittle_blue" android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="1">
+                <ImageView android:id="@+id/close_image" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="20dp" android:src="0x7f080224"/>
+            </LinearLayout>
+            <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="9">
+                <LinearLayout android:orientation="horizontal" android:background="@drawable/search_background_shap" android:visibility="gone" android:layout_width="match_parent" android:layout_height="50dp" android:layout_margin="10dp">
+                    <ImageView android:layout_width="0dp" android:layout_height="50dp" android:src="@drawable/test_serch" android:layout_weight="1"/>
+                    <EditText android:textColor="@color/black" android:id="@+id/search_text" android:background="@null" android:layout_width="0dp" android:layout_height="match_parent" android:hint="关键字" android:cursorVisible="true" android:layout_weight="4" android:textCursorDrawable="@null"/>
+                    <LinearLayout android:gravity="right" android:layout_gravity="right" android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="1">
+                        <ImageView android:id="@+id/delete_edit" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/test_btn_3"/>
+                    </LinearLayout>
+                </LinearLayout>
+                <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="20dp">
+                    <ListView android:id="@+id/listView" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>

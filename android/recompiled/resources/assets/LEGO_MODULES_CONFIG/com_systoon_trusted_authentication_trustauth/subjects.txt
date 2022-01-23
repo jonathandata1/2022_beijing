@@ -1,0 +1,14 @@
+OnCdtpConnectionTopic.onConnect
+-com.systoon.trusted.authentication.trustauth.Receiver.MsgSealUserReceiver#onConnect
+OnCdtpConnectionTopic.onLoginResp
+-com.systoon.trusted.authentication.trustauth.Receiver.MsgSealUserReceiver#onLoginResp
+OnCdtpConnectionTopic.onDisconnect
+-com.systoon.trusted.authentication.trustauth.Receiver.MsgSealUserReceiver#onDisconnect
+System.loginEvent
+-com.systoon.trusted.authentication.trustauth.TrustAuthSDK#loginInit
+OnCdtpConnectionTopic.onLogoutResp
+-com.systoon.trusted.authentication.trustauth.Receiver.MsgSealUserReceiver#onLogoutResp
+ApplicationTopic.onCreate
+-com.systoon.trusted.authentication.trustauth.TrustAuthSDK#onCreate
+System.logoutEvent
+-com.systoon.trusted.authentication.trustauth.TrustAuthSDK#clearCache

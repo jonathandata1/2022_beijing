@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:id="@id/rl_new_friends_prompt" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:background="@drawable/bg_new_friends_prompt" android:paddingLeft="@dimen/dimen_16" android:paddingBottom="@dimen/dimen_15" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dimen_16" android:layout_marginTop="@dimen/dimen_10" android:layout_marginRight="@dimen/dimen_16" android:layout_marginBottom="@dimen/dimen_10">
+        <android.support.v7.widget.AppCompatTextView android:textSize="@dimen/dimen_15" android:textColor="@color/c20" android:id="@id/tv_notice_friends_num" android:paddingLeft="@dimen/dimen_18" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dimen_30" android:layout_marginTop="@dimen/dimen_14" android:layout_marginRight="@dimen/dimen_30" android:text="@string/new_friends_increase_prompt" android:maxLines="1" android:layout_centerInParent="true" />
+        <ImageView android:id="@id/btn_new_friends_prompt_close" android:paddingTop="@dimen/dimen_6" android:paddingRight="@dimen/dimen_6" android:layout_width="@dimen/dimen_20" android:layout_height="@dimen/dimen_20" android:src="@drawable/icon_friends_prompt_close" android:layout_alignParentRight="true" />
+    </RelativeLayout>
+</FrameLayout>

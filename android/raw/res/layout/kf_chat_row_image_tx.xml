@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:padding="5.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="10.0sp" android:gravity="center" android:id="@id/chatting_time_tv" android:background="@color/lightgrey" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="2.0dip" android:layout_centerHorizontal="true" />
+    <RelativeLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_below="@id/chatting_time_tv">
+        <RelativeLayout android:id="@id/chart_to_container" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="48.0dip" android:layout_alignParentRight="true">
+            <ImageView android:id="@id/chatting_avatar_iv" android:layout_width="50.0dip" android:layout_height="50.0dip" android:src="@drawable/kf_head_default_local" android:scaleType="fitXY" android:layout_alignParentRight="true" />
+            <RelativeLayout android:id="@id/chatto_content_layout" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_toLeftOf="@id/chatting_avatar_iv">
+                <FrameLayout android:id="@id/chat_to_layout_img" android:background="@drawable/kf_chatto_bg_normal" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                    <ImageView android:id="@id/chat_content_iv" android:layout_width="160.0dip" android:layout_height="100.0dip" android:scaleType="fitXY" />
+                </FrameLayout>
+            </RelativeLayout>
+            <ImageView android:id="@id/chatting_state_iv" android:background="@drawable/kf_chat_failure_msgs" android:visibility="gone" android:layout_width="20.0dip" android:layout_height="20.0dip" android:layout_toLeftOf="@id/chatto_content_layout" android:layout_centerVertical="true" />
+            <ProgressBar android:id="@id/uploading_pb" android:layout_width="20.0dip" android:layout_height="20.0dip" android:layout_toLeftOf="@id/chatto_content_layout" android:layout_centerVertical="true" />
+        </RelativeLayout>
+    </RelativeLayout>
+</RelativeLayout>

@@ -1,0 +1,23 @@
+{
+  "default_tab": 0,
+  "get_left_view": "getLeftTopView",
+  "get_right_view": "getRightTopView",
+  "tab_info": [
+    {
+      "tab_name": "消息",
+      "tab_en_name": "Messages",
+      "class_name": "com.msgseal.chat.session.BusinessNoticeFragment",
+      "hasLeftMenu": "true",
+      "hasRightMenu": "true",
+      "change_temail": "onChangeTemail"
+    },
+    {
+      "tab_name": "通讯录",
+      "tab_en_name": "Contacts",
+      "class_name": "com.msgseal.contact.chatcontact.ChatContactFragment",
+      "hasLeftMenu": "true",
+      "hasRightMenu": "true",
+      "change_temail" : "onChangeTemail"
+    }
+  ]
+}

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+    <RelativeLayout android:background="@color/htjc_title_bg" android:layout_width="match_parent" android:layout_height="44dp">
+        <ImageView android:id="@+id/iv_return" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="16dp" android:src="@drawable/htjc_title_return" android:layout_centerVertical="true"/>
+        <TextView android:textSize="24sp" android:textColor="#ffffff" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/htjc_fail_title" android:layout_centerInParent="true"/>
+    </RelativeLayout>
+    <LinearLayout android:orientation="vertical" android:background="@color/htjc_main_bg" android:layout_width="match_parent" android:layout_height="match_parent">
+        <ImageView android:layout_gravity="center_horizontal" android:background="@drawable/htjc_fail_face" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="75dp"/>
+        <TextView android:textSize="22sp" android:textColor="#ffffff" android:layout_gravity="center_horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10dp" android:text="检测失败"/>
+        <TextView android:textSize="16sp" android:textColor="#dbdbdb" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="50dp" android:layout_marginTop="50dp" android:text="可能失败的原因："/>
+        <TextView android:textSize="15sp" android:textColor="#dbdbdb" android:id="@+id/rezion_tv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="50dp" android:layout_marginTop="10dp"/>
+        <View android:background="#dbdbdb" android:layout_width="250dp" android:layout_height="1px" android:layout_marginLeft="50dp" android:layout_marginTop="5dp"/>
+        <LinearLayout android:layout_gravity="center_horizontal" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="15dp" android:layout_marginTop="50dp" android:layout_marginRight="15dp">
+            <ImageView android:id="@+id/btn_again" android:layout_width="111dp" android:layout_height="42dp" android:layout_marginRight="5dp" android:src="@drawable/htjc_btn_again_selector" android:layout_weight="1"/>
+            <ImageView android:id="@+id/btn_return" android:layout_width="111dp" android:layout_height="42dp" android:layout_marginLeft="5dp" android:src="@drawable/htjc_btn_return_selector" android:layout_weight="1"/>
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

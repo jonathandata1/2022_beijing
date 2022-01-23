@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:background="@color/cloudwalk_bg" android:layout_width="match_parent" android:layout_height="match_parent">
+    <TextView android:gravity="center" android:layout_width="match_parent" android:layout_height="0dp" android:text="@string/cloudwalk_tip_light" android:layout_weight="0.7" style="@style/normalTextwhite"/>
+    <RelativeLayout android:background="@color/cloudwalk_guide" android:layout_width="match_parent" android:layout_height="0dp" android:layout_marginLeft="20dp" android:layout_marginRight="20dp" android:layout_weight="2">
+        <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10dp" android:layout_marginBottom="10dp" android:src="@drawable/cloudwalk_guide" android:layout_centerInParent="true"/>
+    </RelativeLayout>
+    <RelativeLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="2">
+        <TextView android:gravity="center" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="5dp" android:text="@string/cloudwalk_tip_himself" style="@style/smallTexttwhite"/>
+        <Button android:gravity="center" android:id="@+id/bt_startdect" android:background="@drawable/cloudwalk_red_btn_selector_corners" android:layout_width="match_parent" android:layout_height="41.5dp" android:layout_marginLeft="18.5dp" android:layout_marginRight="18.5dp" android:layout_marginBottom="10dp" android:text="@string/cloudwalk_start_dect" android:layout_centerInParent="true" style="@style/normalTextwhite"/>
+    </RelativeLayout>
+</LinearLayout>

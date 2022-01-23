@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/cramea" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:id="@id/rl_cramea" android:background="@drawable/APKTOOL_DUMMY_765" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="20.0dip" android:layout_centerInParent="true">
+        <TextView android:textSize="16.0dip" android:textColor="@color/c12" android:gravity="center_horizontal" android:layout_gravity="center_horizontal" android:id="@id/tv_title" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="15.0dip" android:text="@string/is_logout" />
+        <TextView android:textSize="14.0dip" android:textColor="@color/c12" android:gravity="center_horizontal" android:id="@id/tv_content" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="10.0dip" android:text="退出后扫描记录无法保存" android:layout_below="@id/tv_title" android:layout_centerHorizontal="true" />
+        <RelativeLayout android:layout_width="fill_parent" android:layout_height="48.0dip" android:layout_marginTop="12.0dip" android:layout_below="@id/tv_content">
+            <TextView android:textSize="@dimen/ts_14px" android:textColor="@color/c25" android:gravity="center" android:id="@id/tv_dialog_confirm" android:layout_width="75.0dip" android:layout_height="36.0dip" android:layout_marginRight="12.0dip" android:text="@string/continue_photo" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+            <TextView android:textSize="@dimen/ts_14px" android:textColor="@color/c25" android:gravity="center" android:id="@id/tv_dialog_cancle" android:layout_width="75.0dip" android:layout_height="36.0dip" android:layout_marginRight="12.0dip" android:text="@string/ok_logout" android:layout_toLeftOf="@id/tv_dialog_confirm" android:layout_centerVertical="true" />
+        </RelativeLayout>
+    </LinearLayout>
+</RelativeLayout>

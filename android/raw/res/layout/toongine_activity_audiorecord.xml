@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:id="@id/toogine_audiorecoder_title" android:background="@color/c5" android:layout_width="fill_parent" android:layout_height="@dimen/dimen_48">
+        <TextView android:textSize="@dimen/dimen_16" android:textColor="@color/c2" android:gravity="center" android:id="@id/toongine_audiorecoder_cancle" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_marginLeft="@dimen/dimen_8" android:text="@string/cancel" />
+        <TextView android:textSize="@dimen/dimen_18" android:textColor="@color/black" android:gravity="center" android:id="@id/toongine_audiorecoder_titletext" android:layout_width="wrap_content" android:layout_height="fill_parent" android:text="@string/audio_recorder" android:layout_centerInParent="true" />
+        <TextView android:textSize="@dimen/dimen_16" android:textColor="@color/c7" android:gravity="center" android:id="@id/toongine_audiorecoder_save" android:clickable="false" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_marginRight="@dimen/dimen_8" android:text="@string/toongine_complete" android:layout_alignParentRight="true" />
+    </RelativeLayout>
+    <LinearLayout android:orientation="vertical" android:id="@id/toongine_audiorecoder_voiceitem" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginBottom="220.0dip" android:layout_below="@id/toogine_audiorecoder_title" />
+    <RelativeLayout android:id="@id/toogine_audiorecoder_start" android:layout_width="fill_parent" android:layout_height="220.0dip" android:layout_alignParentBottom="true" />
+    <RelativeLayout android:id="@id/toogine_audiorecoder_uploading" android:background="@drawable/bg_translucent_gray_circle" android:visibility="gone" android:layout_width="@dimen/dimen_100" android:layout_height="@dimen/dimen_100" android:layout_centerInParent="true">
+        <ProgressBar android:id="@id/toogine_audiorecoder_uploadprogress" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true" />
+        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dimen_16" android:text="@string/toongine_saving" android:layout_below="@id/toogine_audiorecoder_uploadprogress" android:layout_centerHorizontal="true" />
+    </RelativeLayout>
+</RelativeLayout>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/root_view" android:background="@color/c20" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:id="@id/edit_input_container" android:background="@drawable/tcontact_search_shape_bg_left" android:layout_width="fill_parent" android:layout_height="@dimen/dimen_36" android:layout_marginLeft="@dimen/dimen_16" android:layout_toLeftOf="@id/tv_cancel" android:layout_centerVertical="true">
+        <ImageView android:id="@id/iv_search_close_icon" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dimen_5" android:layout_marginRight="@dimen/dimen_8" android:src="@drawable/common_close_gray" android:layout_alignParentRight="true" android:layout_centerVertical="true" android:layout_alignParentEnd="true" />
+        <include android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginRight="@dimen/dimen_25" android:layout_centerVertical="true" layout="@layout/tcontact_search_icon_edit" />
+    </RelativeLayout>
+    <TextView android:textSize="@dimen/dimen_17" android:textColor="@color/c12" android:gravity="center" android:id="@id/tv_cancel" android:layout_width="@dimen/dimen_65" android:layout_height="@dimen/dimen_36" android:text="@string/contact_cancel" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+</RelativeLayout>

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:layout_width="fill_parent" android:layout_height="@dimen/px_44">
+        <ImageView android:id="@id/close" android:layout_width="@dimen/px_16" android:layout_height="@dimen/px_16" android:layout_marginTop="@dimen/px_16" android:layout_marginRight="@dimen/px_16" android:src="@drawable/APKTOOL_DUMMY_224" android:scaleType="fitXY" android:layout_alignParentRight="true" />
+    </RelativeLayout>
+    <android.support.v7.widget.RecyclerView android:id="@id/recy" android:padding="8.0dip" android:clipChildren="false" android:clipToPadding="false" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+</LinearLayout>

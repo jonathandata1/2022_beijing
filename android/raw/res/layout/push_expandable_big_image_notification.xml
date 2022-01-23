@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@android:color/transparent" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:id="@id/push_big_pic_default_Content" android:background="@android:color/transparent" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <RelativeLayout android:id="@id/push_big_defaultView" android:layout_width="fill_parent" android:layout_height="64.0dip">
+            <ImageView android:id="@id/push_big_notification_icon" android:layout_width="42.0dip" android:layout_height="42.0dip" android:layout_marginLeft="10.0dip" android:scaleType="centerInside" android:layout_alignParentLeft="true" android:layout_centerVertical="true" />
+            <ImageView android:id="@id/push_big_notification_icon2" android:layout_width="22.0dip" android:layout_height="22.0dip" android:layout_marginRight="5.0dip" android:scaleType="centerInside" android:layout_alignBottom="@id/push_big_notification_icon" android:layout_alignParentRight="true" />
+            <RelativeLayout android:gravity="center_vertical" android:orientation="vertical" android:id="@id/push_big_notification" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginLeft="16.0dip" android:layout_marginRight="0.0dip" android:layout_toRightOf="@id/push_big_notification_icon">
+                <DateTimeView android:textSize="12.0sp" android:textColor="#ffffffff" android:id="@id/push_big_notification_date" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="0.0dip" android:layout_marginRight="10.0dip" android:layout_alignParentTop="true" android:layout_alignParentRight="true" android:alpha="0.6" style="@android:style/TextAppearance.StatusBar.EventContent" />
+                <TextView android:textSize="18.0sp" android:textStyle="normal" android:textColor="#ffffffff" android:id="@id/push_big_notification_title" android:layout_width="fill_parent" android:layout_height="wrap_content" android:singleLine="true" android:layout_toLeftOf="@id/push_big_notification_date" style="@android:style/TextAppearance.StatusBar.EventContent.Title" />
+                <TextView android:textSize="14.0sp" android:textStyle="normal" android:textColor="#ffffffff" android:id="@id/push_big_notification_content" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="0.0dip" android:layout_marginRight="10.0dip" android:singleLine="true" android:layout_below="@id/push_big_notification_title" style="@android:style/TextAppearance.StatusBar.EventContent" />
+            </RelativeLayout>
+        </RelativeLayout>
+        <LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:id="@id/push_big_text_notification_area" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="69.0dip" android:layout_marginTop="34.0dip" android:layout_marginRight="13.0dip" android:layout_marginBottom="10.0dip">
+            <TextView android:textSize="14.0sp" android:textStyle="normal" android:textColor="#ffffffff" android:ellipsize="end" android:id="@id/push_big_bigtext_defaultView" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:maxHeight="192.0dip" android:alpha="0.9" style="@android:style/TextAppearance.StatusBar.EventContent" />
+        </LinearLayout>
+        <ImageView android:id="@id/push_big_bigview_defaultView" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="192.0dip" android:scaleType="centerCrop" android:layout_below="@id/push_big_defaultView" />
+    </RelativeLayout>
+</RelativeLayout>

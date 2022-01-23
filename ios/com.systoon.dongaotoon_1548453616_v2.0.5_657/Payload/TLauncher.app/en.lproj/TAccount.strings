@@ -1,0 +1,43 @@
+
+/*
+ TAccount.strings
+ Pods
+ 
+ Created by Dong on 2018/8/28.
+ 
+ */
+"搜索暂无结果" = "搜索暂无结果";
+"退出账号" = "退出账号";
+
+"我的账号" = "Account Management";
+"新增账号" = "Add New Account";
+"请输入地址" = "Enter address";
+"密证网盘帐号" = "CP Disk Account";
+"密证云备份" = "Backup in CPdisk";
+"未登录" = "Login";
+"搜索" = "Search";
+"退出帐号" = "Logout";
+"下一步" = "Next";
+
+"确定退出当前账号吗?" = "Logout?";
+"取消" = "Cancel";
+"退出登录" = "Logout";
+"退出成功" = "Succeeded to logout";
+"当前网络不可用，请检查你的网络设定" = "Network crashed. Check it. ";
+"帐号数量已达到上限" = "The accounts is overflow";
+"请输入正确的地址" = "Please enter the correct address";
+"反序列化失败" = "Deserializing failure";
+"TAIP账号未登录,请先登录"="Login now";
+"获取的数据类型不是字典" = "Not dictionary type data";
+"TAIP协议返回错误" = "Return false";
+"没有已登录的TAIP账号" = "Account missing";
+"获取的源为空" = "Idle resource";
+"TAIP访问失败" = "Access failure";
+"无法访问网络,点击重新加载" = "Cannot access, reload";
+"搜索暂无结果" = "No results";
+
+"网络异常，请检查网络连接并重新尝试" = "网络异常，请检查网络连接并重新尝试";
+"账号数量已达到上限" = "账号数量已达到上限";
+"添加成功" = "添加成功";
+
+

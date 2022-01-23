@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.msgseal.chat.customviews.MessageItemViewGroup android:layout_gravity="center" android:id="@id/notice_layout" android:padding="@dimen/dimen_20" android:layout_width="@dimen/dimen_260" android:layout_height="wrap_content" android:maxHeight="@dimen/dimen_174" android:layout_alignWithParentIfMissing="true"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.msgseal.chat.customviews.AutoLinkTextView android:textSize="@dimen/dimen_16" android:textColor="@color/c20" android:textColorLink="@color/c1" android:gravity="start|center" android:autoLink="phone" android:id="@id/txt_notice" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_centerInParent="true" android:lineSpacingExtra="@dimen/dimen_2" />
+</com.msgseal.chat.customviews.MessageItemViewGroup>

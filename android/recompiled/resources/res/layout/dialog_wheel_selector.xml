@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:orientation="vertical" android:background="#ffffff" android:layout_width="match_parent" android:layout_height="wrap_content" android:minHeight="100dp">
+    <RelativeLayout android:paddingLeft="16dp" android:paddingRight="16dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <Button android:textSize="17dp" android:textColor="#007aff" android:layout_gravity="center" android:id="@+id/btn_cancle" android:background="@color/white" android:layout_width="wrap_content" android:layout_height="50dp" android:text="@string/wheel_select_cancel"/>
+        <Button android:textSize="17dp" android:textColor="#007aff" android:layout_gravity="center" android:id="@+id/btn_confirm" android:background="@color/white" android:layout_width="wrap_content" android:layout_height="50dp" android:text="@string/wheel_select_confirm" android:layout_alignParentRight="true"/>
+    </RelativeLayout>
+    <View android:background="@color/c6" android:layout_width="match_parent" android:layout_height="@dimen/divider_high"/>
+    <com.zhengtoon.tuser.common.view.wheelview.SingleSelectWheelView android:id="@+id/wv_kefu" android:layout_width="match_parent" android:layout_height="wrap_content" app:selectedTextColor="#222222" app:selectedTextSize="20sp" app:wheelCurtainBorderColor="@color/c6" app:wheelCurtainColor="#ffffff"/>
+</LinearLayout>

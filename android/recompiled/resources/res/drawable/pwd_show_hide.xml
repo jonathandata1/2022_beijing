@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:state_selected="true" android:drawable="@drawable/password_show"/>
+    <item android:state_selected="false" android:drawable="@drawable/password_hide"/>
+    <item android:drawable="@drawable/password_show"/>
+</selector>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:focusable="true" android:focusableInTouchMode="true" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include android:id="@id/in_1" layout="@layout/item_navigation_bar" />
+    <LinearLayout android:id="@id/ll_search_bg" android:background="@color/c2" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <com.systoon.tcloud.view.ClearEditText android:textSize="@dimen/ts_14px" android:textColor="@color/c12" android:id="@id/search_et" android:background="@drawable/search_bg" android:paddingLeft="5.0dip" android:paddingRight="@dimen/dimen_5" android:focusable="true" android:focusableInTouchMode="true" android:layout_width="fill_parent" android:layout_height="34.0dip" android:layout_margin="8.0dip" android:layout_marginTop="5.0dip" android:hint="@string/search_text" android:singleLine="true" android:drawableLeft="@drawable/common_search" android:drawablePadding="8.0dip" android:imeOptions="actionSearch" android:textCursorDrawable="@null" />
+    </LinearLayout>
+    <View android:id="@id/v_search_divider" android:background="@color/c6" android:layout_width="fill_parent" android:layout_height="0.30000007dip" />
+    <RelativeLayout android:layout_gravity="center_horizontal" android:id="@id/rl_empty" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <ImageView android:id="@id/iv_empty_view" android:background="@drawable/tcloud_search_empty_icon" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="120.0dip" android:layout_centerHorizontal="true" />
+        <TextView android:textSize="@dimen/ts_16px" android:textColor="@color/c12" android:id="@id/tv_empty_tip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="20.0dip" android:text="@string/no_search" android:layout_below="@id/iv_empty_view" android:layout_centerHorizontal="true" />
+    </RelativeLayout>
+    <com.systoon.toon.view.alphabetical.ClassifyRecyclerView android:id="@id/country_listview" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+</LinearLayout>

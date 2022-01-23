@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" android:gravity="center" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="@dimen/dp_52">
+    <TextView android:textSize="14sp" android:textColor="@color/sy_v222222" android:ellipsize="end" android:gravity="center_vertical" android:id="@+id/sy_popup_tv_addr_name" android:background="@drawable/sy_selector_choose_addr_drawable" android:paddingLeft="@dimen/dp_25" android:paddingRight="@dimen/dp_25" android:layout_width="match_parent" android:layout_height="match_parent"/>
+    <View android:layout_gravity="bottom" android:id="@+id/sy_popup_line" android:background="@color/sy_split_line" android:layout_width="match_parent" android:layout_height="@dimen/dp_0_5"/>
+</FrameLayout>

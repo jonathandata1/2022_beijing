@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@color/c20" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/iv_close" android:padding="@dimen/dimen_15" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/btn_search_close" android:layout_alignParentRight="true" />
+    <LinearLayout android:orientation="vertical" android:paddingBottom="10.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <TextView android:textSize="18.0dip" android:textColor="@color/c12" android:layout_gravity="center_horizontal" android:id="@id/tv_state" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="35.0dip" android:text="@string/voice_search_tip" />
+        <RelativeLayout android:layout_gravity="center_horizontal" android:layout_width="wrap_content" android:layout_height="93.0dip">
+            <ImageView android:id="@id/iv_voice" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dimen_47" />
+            <ImageView android:id="@id/iv_move_up_cancel" android:visibility="gone" android:layout_width="47.5dip" android:layout_height="53.0dip" android:src="@drawable/icon_search_move_up_cancel" android:layout_centerVertical="true" />
+        </RelativeLayout>
+        <RelativeLayout android:gravity="center" android:layout_gravity="center_horizontal" android:id="@id/rl_start_speech" android:clickable="true" android:layout_width="256.0dip" android:layout_height="44.0dip">
+            <ImageView android:id="@id/iv_speech" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="10.0dip" android:src="@drawable/btn_search_voice_p" android:layout_centerVertical="true" />
+            <TextView android:textSize="18.0dip" android:textColor="@color/c20" android:id="@id/tv_start_speech" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/voice_hold_to_talk" android:layout_toRightOf="@id/iv_speech" android:layout_centerVertical="true" />
+        </RelativeLayout>
+        <TextView android:textSize="@dimen/dimen_10" android:textColor="@color/c9" android:layout_gravity="center_horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="15.0dip" android:text="@string/voice_xunfei_copyright" />
+    </LinearLayout>
+</RelativeLayout>

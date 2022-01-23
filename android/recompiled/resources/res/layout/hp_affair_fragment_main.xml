@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:background="@color/color_FFFFFF" android:focusable="true" android:focusableInTouchMode="true" android:layout_width="match_parent" android:layout_height="match_parent">
+    <FrameLayout android:id="@+id/fragment_custom_search" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_alignParentTop="true"/>
+    <com.systoon.customhomepage.widget.HomepageCusPtrClassicFrameLayout android:id="@+id/rotate_header_web_view_frame" android:background="@color/transparent" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_below="@+id/fragment_custom_search" cube_ptr:ptr_duration_to_close_header="2000" cube_ptr:ptr_keep_header_when_refresh="true" cube_ptr:ptr_mode="1" cube_ptr:ptr_pull_to_fresh="false" cube_ptr:ptr_ratio_of_header_height_to_refresh="1.2" cube_ptr:ptr_resistance_header="1.7">
+        <android.support.v4.widget.NestedScrollView android:id="@+id/nested_scroll_view" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_below="@+id/topview">
+            <com.systoon.customhomepage.widget.BetterRecyclerView android:id="@+id/mc_hplist" android:background="@color/color_F8F8FB" android:paddingBottom="@dimen/hp_px_58" android:scrollbars="none" android:layout_width="match_parent" android:layout_height="match_parent" android:listSelector="@null" android:cacheColorHint="@color/transparent" android:divider="@null"/>
+        </android.support.v4.widget.NestedScrollView>
+    </com.systoon.customhomepage.widget.HomepageCusPtrClassicFrameLayout>
+    <ImageView android:id="@+id/sweep_yards_suspension" android:layout_width="@dimen/dimen_52" android:layout_height="@dimen/dimen_52" android:layout_marginRight="@dimen/dimen_26" android:layout_marginBottom="@dimen/dimen_64" android:src="@drawable/sweep_yards_qr" android:layout_alignParentRight="true" android:layout_alignParentBottom="true"/>
+</RelativeLayout>

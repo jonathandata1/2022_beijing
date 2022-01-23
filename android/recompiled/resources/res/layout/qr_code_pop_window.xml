@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" android:background="@color/translucent" android:layout_width="match_parent" android:layout_height="match_parent">
+    <RelativeLayout android:id="@+id/rl_dialog_bg" android:background="0x7f080765" android:layout_width="300dp" android:layout_height="450dp" android:layout_centerHorizontal="true" android:layout_centerVertical="true">
+        <TextView android:textSize="@dimen/ts_16px" android:textColor="@color/c12" android:id="@+id/tv_qr_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="35dp" android:layout_centerHorizontal="true"/>
+        <RelativeLayout android:id="@+id/rl_qr_user_info" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="40dp" android:layout_marginTop="40dp" android:layout_marginRight="40dp" android:layout_below="@+id/tv_qr_title">
+            <com.systoon.toon.common.ui.view.ShapeImageView android:id="@+id/civ_user_info_head" android:layout_width="45dp" android:layout_height="45dp"/>
+            <TextView android:textSize="@dimen/ts_17px" android:textColor="@color/c12" android:id="@+id/tv_user_info_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="9dp" android:text="何佳" android:layout_toRightOf="@+id/civ_user_info_head"/>
+            <ImageView android:layout_width="18dp" android:layout_height="18dp" android:layout_marginLeft="4dp" android:layout_toRightOf="@+id/tv_user_info_name"/>
+            <TextView android:textSize="@dimen/ts_14px" android:textColor="@color/c9" android:id="@+id/tv_user_info_card_num" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="9dp" android:layout_marginTop="4dp" android:text="卡号：12222233333333" android:singleLine="true" android:layout_toRightOf="@+id/civ_user_info_head" android:layout_below="@+id/tv_user_info_name"/>
+        </RelativeLayout>
+        <RelativeLayout android:id="@+id/rl_qr_code_bg" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="40dp" android:layout_below="@+id/rl_qr_user_info" android:layout_centerHorizontal="true">
+            <ImageView android:id="@+id/iv_qr_code" android:layout_width="130dp" android:layout_height="139dp" android:layout_centerInParent="true"/>
+        </RelativeLayout>
+        <TextView android:textSize="@dimen/ts_15px" android:textColor="@color/c10" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="20dp" android:text="使用时，请出示此码" android:layout_below="@+id/rl_qr_code_bg" android:layout_centerHorizontal="true"/>
+    </RelativeLayout>
+</RelativeLayout>

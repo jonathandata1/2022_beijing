@@ -1,0 +1,17 @@
+/* 
+  TSkin.strings
+  Pods
+
+  Created by danghanxin on 2018/8/31.
+  
+*/
+
+"背景模式设置" = "Themes";
+"完成" = "Done";
+"个性换肤中" = "Setting...";
+"切换皮肤失败" = "Theme change failed";
+"皮肤下载失败" = "Theme cannot be downloaded";
+"该皮肤已下架" = "This theme is unavailable temporarily.";
+"加载中" = "Loading...";
+
+

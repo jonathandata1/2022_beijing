@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" android:id="@+id/RelativeLayout1" android:layout_width="match_parent" android:layout_height="match_parent">
+    <ImageView android:id="@+id/image_item" android:background="#ffffff" android:layout_width="match_parent" android:layout_height="match_parent" android:scaleType="centerCrop" android:layout_centerHorizontal="true"/>
+    <ImageView android:id="@+id/delete_image_item" android:background="@drawable/common_del" android:layout_width="@dimen/dimen_23" android:layout_height="@dimen/dimen_23" android:layout_marginTop="@dimen/dimen_5" android:layout_marginRight="@dimen/dimen_5" android:adjustViewBounds="true" android:layout_alignParentRight="true"/>
+</RelativeLayout>

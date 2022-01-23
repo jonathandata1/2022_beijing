@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" android:layout_gravity="center" android:id="@+id/rl_main_app_subset_out" android:layout_width="match_parent" android:layout_height="match_parent">
+    <FrameLayout android:background="#50000000" android:layout_width="match_parent" android:layout_height="match_parent"/>
+    <LinearLayout android:orientation="vertical" android:id="@+id/ll_center" android:background="@color/c20" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true">
+        <RelativeLayout android:orientation="horizontal" android:background="@color/c20" android:layout_width="match_parent" android:layout_height="44dp">
+            <TextView android:textSize="16dp" android:textColor="@color/c1" android:gravity="center_vertical" android:layout_gravity="left" android:id="@+id/show_recore_cancle" android:paddingLeft="15dp" android:layout_width="wrap_content" android:layout_height="44dp" android:text="@string/cancel"/>
+            <TextView android:textSize="16dp" android:textColor="@color/c1" android:gravity="center_vertical" android:id="@+id/show_recore_confirm" android:paddingRight="15dp" android:layout_width="wrap_content" android:layout_height="44dp" android:text="@string/ok" android:layout_alignParentRight="true"/>
+            <TextView android:textSize="14dp" android:textColor="@color/c9" android:gravity="center" android:background="@drawable/tcard_recruit_current_date_bg" android:visibility="gone" android:layout_width="48dp" android:layout_height="23dp" android:layout_marginRight="24dp" android:text="@string/create_event_curdate_title" android:layout_toLeftOf="@+id/show_recore_confirm" android:layout_centerVertical="true"/>
+            <View android:background="@color/c36" android:layout_width="match_parent" android:layout_height="@dimen/res_0x7f070190_dimen_0_3"/>
+        </RelativeLayout>
+    </LinearLayout>
+</RelativeLayout>

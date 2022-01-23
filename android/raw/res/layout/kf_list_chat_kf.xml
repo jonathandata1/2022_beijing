@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:padding="5.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="10.0sp" android:id="@id/chat_time" android:background="@color/lightgrey" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="2.0dip" android:layout_centerHorizontal="true" />
+    <RelativeLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_below="@id/chat_time">
+        <RelativeLayout android:id="@id/chart_from_container" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginRight="48.0dip" android:layout_alignParentLeft="true">
+            <com.m7.imkfsdk.chat.RoundImageView android:id="@id/chatfrom_icon" android:layout_width="50.0dip" android:layout_height="50.0dip" android:scaleType="fitXY" />
+            <TextView android:textSize="10.0sp" android:textColor="@color/all_black" android:id="@id/chatfrom_tv_name" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="8.0dip" android:text="姓名" android:layout_toRightOf="@id/chatfrom_icon" />
+            <TextView android:gravity="center_vertical" android:id="@id/chatfrom_content" android:background="@drawable/kf_chatfrom_bg_normal" android:paddingLeft="25.0dip" android:paddingTop="10.0dip" android:paddingRight="20.0dip" android:paddingBottom="10.0dip" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="3.0dip" android:layout_toRightOf="@id/chatfrom_icon" android:layout_below="@id/chatfrom_tv_name" android:lineSpacingMultiplier="1.1" />
+            <RelativeLayout android:id="@id/chat_from_recorder_length" android:background="@drawable/kf_chatfrom_bg_normal" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_toRightOf="@id/chatfrom_icon" android:layout_below="@id/chatfrom_tv_name" android:layout_centerVertical="true">
+                <View android:id="@id/chat_from_recorder_anim" android:background="@drawable/kf_adj_left" android:layout_width="30.0dip" android:layout_height="30.0dip" android:layout_alignParentLeft="true" android:layout_centerVertical="true" />
+                <TextView android:textColor="#ff777777" android:id="@id/chat_from_recorder_time" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="3.0dip" android:layout_marginRight="3.0dip" android:text="9" android:layout_toRightOf="@id/chat_from_recorder_anim" android:layout_centerVertical="true" />
+            </RelativeLayout>
+            <FrameLayout android:id="@id/chat_from_layout_img" android:background="@drawable/kf_chatfrom_bg_normal" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_toRightOf="@id/chatfrom_icon" android:layout_below="@id/chatfrom_tv_name">
+                <ImageView android:id="@id/chat_from_iv_img" android:layout_width="160.0dip" android:layout_height="100.0dip" android:scaleType="fitXY" />
+            </FrameLayout>
+        </RelativeLayout>
+        <RelativeLayout android:id="@id/chart_to_container" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="48.0dip" android:layout_alignParentRight="true">
+            <com.m7.imkfsdk.chat.RoundImageView android:id="@id/chatto_icon" android:layout_width="50.0dip" android:layout_height="50.0dip" android:scaleType="fitXY" android:layout_alignParentRight="true" />
+            <RelativeLayout android:id="@id/chatto_content_layout" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_toLeftOf="@id/chatto_icon">
+                <FrameLayout android:id="@id/chat_to_text_layout" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                    <TextView android:gravity="center_vertical" android:id="@id/chatto_content" android:background="@drawable/kf_chatto_bg_normal" android:paddingLeft="20.0dip" android:paddingTop="10.0dip" android:paddingRight="25.0dip" android:paddingBottom="10.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:lineSpacingMultiplier="1.1" />
+                </FrameLayout>
+                <RelativeLayout android:id="@id/chat_to_recorder_length" android:background="@drawable/kf_chatto_bg_normal" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerVertical="true">
+                    <View android:id="@id/chat_to_recorder_anim" android:background="@drawable/kf_adj" android:layout_width="30.0dip" android:layout_height="30.0dip" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+                    <TextView android:textColor="#ff777777" android:id="@id/chat_to_recorder_time" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="3.0dip" android:layout_marginRight="3.0dip" android:text="333" android:layout_toLeftOf="@id/chat_to_recorder_anim" android:layout_centerVertical="true" />
+                </RelativeLayout>
+                <FrameLayout android:id="@id/chat_to_layout_img" android:background="@drawable/kf_chatto_bg_normal" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                    <ImageView android:id="@id/chat_to_iv_img" android:layout_width="160.0dip" android:layout_height="100.0dip" android:scaleType="fitXY" />
+                </FrameLayout>
+            </RelativeLayout>
+            <ImageView android:id="@id/failure_msgs" android:background="@drawable/kf_chat_failure_msgs" android:visibility="gone" android:layout_width="20.0dip" android:layout_height="20.0dip" android:layout_toLeftOf="@id/chatto_content_layout" android:layout_centerVertical="true" />
+            <ProgressBar android:id="@id/progressBar" android:visibility="gone" android:layout_width="20.0dip" android:layout_height="20.0dip" android:layout_toLeftOf="@id/chatto_content_layout" android:layout_centerVertical="true" />
+        </RelativeLayout>
+    </RelativeLayout>
+</RelativeLayout>

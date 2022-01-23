@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<array>
+	<string>大门</string>
+	<string>单元门</string>
+	<string>车库</string>
+	<string>设备间</string>
+	<string>其它</string>
+</array>
+</plist>

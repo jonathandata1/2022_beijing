@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" android:id="@+id/root" android:background="@color/c5" android:layout_width="match_parent" android:layout_height="match_parent">
+    <View android:id="@+id/top_placeholder" android:layout_width="match_parent" android:layout_height="@dimen/dimen_24"/>
+    <com.zhengtoon.tuser.common.base.view.ImmerseFrameLayout android:id="@+id/container" android:fitsSystemWindows="true" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_below="@+id/top_placeholder" android:layout_alignWithParentIfMissing="true"/>
+    <View android:id="@+id/top_overlay" android:background="@color/status_bar_color" android:layout_width="match_parent" android:layout_height="@dimen/dimen_24"/>
+</RelativeLayout>

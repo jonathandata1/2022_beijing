@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+    <PreferenceCategory android:title="@string/aiui_mode">
+        <SwitchPreferenceCompat android:title="@string/translation_mode" android:key="aiui_translation" android:summary="@string/translation_tip_summary" android:defaultValue="false"/>
+    </PreferenceCategory>
+    <PreferenceCategory android:title="@string/interact">
+        <ListPreference android:entries="@array/accent" android:title="@string/accent" android:key="aiui_accent" android:summary="普通话" android:defaultValue="mandarin" android:entryValues="@array/accent_code"/>
+        <SwitchPreferenceCompat android:title="@string/wakeup" android:key="aiui_wakeup" android:summary="@string/wakeup_tip_summary" android:defaultValue="false"/>
+        <EditTextPreference android:numeric="integer" android:title="@string/eos" android:key="aiui_eos" android:summary="1000ms" android:defaultValue="1000"/>
+        <SwitchPreferenceCompat android:title="@string/cloud_tts" android:key="aiui_tts" android:summary="@string/tts_tip_summary" android:defaultValue="true"/>
+    </PreferenceCategory>
+    <PreferenceCategory android:title="@string/debug">
+        <SwitchPreferenceCompat android:title="@string/debug_log" android:key="aiui_debug_log" android:summary="@string/debug_log_summary" android:defaultValue="true"/>
+        <SwitchPreferenceCompat android:title="@string/save_datalog" android:key="aiui_save_datalog" android:summary="@string/save_datalog_summary" android:defaultValue="false"/>
+    </PreferenceCategory>
+    <PreferenceCategory android:title="@string/log">
+        <SwitchPreferenceCompat android:title="@string/aiui_log" android:key="aiui_log" android:summary="@string/aiui_log_summary" android:defaultValue="true"/>
+        <Preference android:title="@string/clear_aiui_log" android:key="clear_aiui_log" android:summary="@string/clear_aiui_log_summary"/>
+    </PreferenceCategory>
+</PreferenceScreen>

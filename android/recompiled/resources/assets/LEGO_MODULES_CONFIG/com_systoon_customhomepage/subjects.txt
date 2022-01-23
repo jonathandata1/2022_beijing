@@ -1,0 +1,6 @@
+System.loginEvent
+-com.systoon.customhomepage.CustomHomePageLifeCycle#loginInit
+System.logoutEvent
+-com.systoon.customhomepage.CustomHomePageLifeCycle#clearCache
+ApplicationTopic.onCreate
+-com.systoon.customhomepage.CustomHomePageLifeCycle#applicationInit

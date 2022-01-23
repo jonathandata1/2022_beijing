@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" android:gravity="center" android:layout_gravity="center" android:background="@drawable/kf_dialog_loading_bg" android:layout_width="wrap_content" android:layout_height="wrap_content">
+    <View android:layout_width="160dp" android:layout_height="160dp" android:layout_centerInParent="true"/>
+    <LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true">
+        <ProgressBar android:gravity="center" android:layout_gravity="center" android:clickable="false" android:layout_width="46dp" android:layout_height="46dp" android:layout_marginBottom="10dp"/>
+        <TextView android:textSize="17sp" android:textColor="#ffffffff" android:gravity="center" android:layout_gravity="center" android:id="@+id/id_dialog_loading_msg" android:layout_width="wrap_content" android:layout_height="wrap_content" android:lineSpacingExtra="3dp"/>
+    </LinearLayout>
+</RelativeLayout>

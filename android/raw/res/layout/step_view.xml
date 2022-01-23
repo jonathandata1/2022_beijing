@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.msgseal.user.init.view.StepViewIndicator android:layout_gravity="center_horizontal" android:id="@id/step_indicator_view" android:paddingTop="@dimen/dimen_5" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    <LinearLayout android:orientation="vertical" android:id="@id/ll_step_desc" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+</LinearLayout>

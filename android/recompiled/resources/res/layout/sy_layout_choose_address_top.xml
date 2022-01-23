@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:id="@+id/fl_header_layout" android:background="@color/white" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <com.zhuanche.commonbase.widget.homewidget.TitleBar android:id="@+id/sy_title_bar" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" app:backgroundColor="@android:color/transparent" app:leftDrawable="@drawable/sy_ic_back"/>
+    <include layout="@layout/sy_layout_address_search"/>
+    <RelativeLayout android:id="@+id/sy_choose_addr_header" android:visibility="gone" android:layout_width="match_parent" android:layout_height="50dp">
+        <TextView android:textSize="12sp" android:textColor="@color/sy_v8a8d95" android:id="@+id/sy_choose_addr_order_cancel" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/sy_str_cancel" android:layout_centerInParent="true" android:paddingStart="10dp" android:paddingEnd="17dp" android:layout_alignParentEnd="true"/>
+        <TextView android:textSize="15sp" android:textColor="@color/sy_v222222" android:id="@+id/sy_choose_addr_area" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true"/>
+        <ImageView android:id="@+id/sy_choose_addr_arrow_icon" android:layout_width="12dp" android:layout_height="12dp" android:src="@drawable/sy_selector_choose_addr_arrow_drawable" android:layout_centerInParent="true" android:layout_marginStart="4dp" android:layout_toEndOf="@+id/sy_choose_addr_area"/>
+    </RelativeLayout>
+</FrameLayout>

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include layout="@layout/sy_layout_choose_address_top" />
+    <include android:id="@id/sy_choose_addr_driver_info" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_below="@id/fl_header_layout" layout="@layout/sy_layout_driver_info" />
+    <include layout="@layout/sy_layout_choose_off_addree_top" />
+    <RelativeLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_below="@id/sy_choose_addr_second_header">
+        <android.support.v7.widget.RecyclerView android:id="@id/sy_rv_choose_addr" android:background="@color/sy_vf8f9fa" android:layout_width="80.0dip" android:layout_height="fill_parent" />
+        <FrameLayout android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_toEndOf="@id/sy_rv_choose_addr">
+            <android.support.v7.widget.RecyclerView android:id="@id/sy_rv_choose_subaddr" android:background="@color/sy_vf8f9fa" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+            <include android:id="@id/sy_sub_loading_layout" android:visibility="gone" layout="@layout/sy_loading_layout" />
+        </FrameLayout>
+        <include android:visibility="gone" layout="@layout/sy_loading_layout" />
+    </RelativeLayout>
+    <View android:id="@id/sy_choose_addr_second_header_shadow" android:background="@drawable/sy_by_home_title_bar" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="10.0dip" android:layout_below="@id/sy_choose_addr_second_header" />
+    <com.zhuanche.winterolympic.view.PopupLayout android:id="@id/sy_pop_addr_cities" android:background="@color/white" android:focusable="true" android:visibility="gone" android:clickable="true" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_below="@id/fl_header_layout" android:alpha="0.0" />
+    <View android:id="@id/sy_title_bar_shadow" android:background="@drawable/sy_by_home_title_bar" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="10.0dip" android:layout_below="@id/fl_header_layout" />
+</RelativeLayout>

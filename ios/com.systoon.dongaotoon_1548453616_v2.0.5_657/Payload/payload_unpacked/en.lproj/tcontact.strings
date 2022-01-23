@@ -1,0 +1,65 @@
+/* 
+  tchat.strings
+  Pods
+
+  Created by 崔洪禄 on 2018/9/27.
+  
+*/
+"暂时无法查看个人名片" = "Cannot show card";
+"暂无群聊" = "No Groups";
+"通讯录" = "通讯录";
+"暂无联系人" = "No contacts available";
+"搜索暂无结果" = "No results found";
+"搜索" = "Search";
+"移除" = "Remove";
+"加载中..." = "Loading...";
+"确定" = "Sure";
+"立即导入" = "Import";
+"从手机中导入有Email地址的联系人" = "Import contacts with Email addresses into your phone";
+"导入手机通讯录，查看秘邮新朋友" = "Import from your phone";
+"手机通讯录增加了%@个秘邮新朋友" = "Added %@ new friends of MsgSeal";
+"导入手机联系人成功" = "Imported";
+"导入手机联系人失败" = "Failed";
+"读取手机通讯录" = "Loading";
+"格式错误" = "Incorrect format";
+"未识别到有效的邮箱地址" = "No available email address";
+"联系人邮箱地址已存在" = "Email address already exists";
+"扫码添加" = "Scan QR";
+"新建联系人" = "New Contact";
+
+"请输入联系人邮箱地址" = "Please input email address";
+"取消" = "Cancel";
+"添加" = "Add";
+"网络异常，请检查网络连接后重新再试" = "Network unavailable. Check it.";
+"添加联系人成功" = "Done";
+"添加联系人" = "Add Contact";
+"添加联系人失败" = "Failed";
+"联系人邮箱地址不存在" = "The email address does not exist";
+"仅支持选择秘邮地址" = "Only MsgSeal addresses are supported";
+
+"已选" = "Selected";
+"完成" = "Done";
+"已选联系人" = "Selected Contacts";
+
+"最多只能选择%d个联系人" = "You can select a maximum of %d contacts.";
+"我知道了" = "OK";
+
+"\"%@\"及其他T%d人" = " \"%@\" and %d others";
+"\"%@\"" = " \"%@\"";
+
+"邮件组" = "Mail Group";
+"选择已有群聊" = "Select Groups";
+"好友" = "Friend";
+
+
+
+"更新失败" = "Update failed";
+"“秘邮”无法访问您的通讯录" = "Unable to access your address book";
+"获取联系人信息，需在“设置”中开启通讯录权限，开启权限后，会将联系人信息导入秘邮通讯录" = "To obtain contact information, open the address book permission in “Settings”. After opening the permission, the contact information will be imported into the secret mail address book";
+"新朋友" = "New Friend";
+
+"接受" = "Accept";
+"已交换" = "Exchanged";
+"同意申请" = "Agree apply";
+"想与你交换名片" = "I'd like to exchange business cards with you";
+"好友申请" = "Apply Friend";

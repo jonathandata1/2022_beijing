@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/c20" android:paddingLeft="@dimen/dimen_15" android:paddingRight="@dimen/dimen_15" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="@dimen/dimen_20" android:layout_centerInParent="true"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:id="@id/chat_error_code" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5.0dip" />
+    <ScrollView android:layout_width="fill_parent" android:layout_height="140.0dip" android:layout_marginTop="5.0dip">
+        <TextView android:gravity="center" android:id="@id/chat_error_msg" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    </ScrollView>
+    <TextView android:textSize="@dimen/ts_14px" android:textColor="@color/c25" android:gravity="center" android:layout_gravity="bottom|center|right" android:id="@id/chat_error_confirm" android:paddingTop="@dimen/dimen_14" android:paddingBottom="@dimen/dimen_14" android:layout_width="@dimen/dimen_75" android:layout_height="wrap_content" android:layout_marginRight="@dimen/dimen_12" android:text="@string/confirm" android:layout_marginEnd="@dimen/dimen_12" />
+</LinearLayout>

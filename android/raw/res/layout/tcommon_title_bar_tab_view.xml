@@ -1,0 +1,3 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhengtoon.toon.common.ui.view.TitleBarTabView android:layout_gravity="center_vertical" android:paddingLeft="@dimen/dimen_6" android:paddingRight="@dimen/dimen_6" android:layout_width="wrap_content" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" />

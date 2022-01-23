@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@color/color_FFFFFF" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:background="@drawable/affaior_kunshan_background" android:layout_width="fill_parent" android:layout_height="@dimen/hp_px_138" />
+    <View android:id="@id/view" android:layout_width="fill_parent" android:layout_height="@dimen/hp_px_64" />
+    <android.support.v7.widget.RecyclerView android:id="@id/gridview" android:scrollbars="none" android:layout_width="fill_parent" android:layout_height="@dimen/hp_px_74" android:listSelector="@color/transparent" android:verticalSpacing="@dimen/hp_px_1" android:columnWidth="10.0dip" android:layout_below="@id/view" android:overScrollMode="never" />
+</RelativeLayout>

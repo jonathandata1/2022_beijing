@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:layout_width="match_parent" android:layout_height="@dimen/hp_px_446">
+    <LinearLayout android:orientation="vertical" android:background="@drawable/hp_selector_dialog_bg" android:layout_width="wrap_content" android:layout_height="wrap_content" android:minWidth="@dimen/hp_px_300" android:layout_centerInParent="true">
+        <RelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content">
+            <com.makeramen.roundedimageview.RoundedImageView android:layout_width="match_parent" android:layout_height="match_parent" android:src="@drawable/hp_selector_header_bg" android:scaleType="centerCrop" android:layout_alignTop="@+id/rl_header" android:layout_alignBottom="@+id/rl_header" app:riv_corner_radius_top_left="@dimen/hp_px_5" app:riv_corner_radius_top_right="@dimen/hp_px_5"/>
+            <RelativeLayout android:id="@+id/rl_header" android:layout_width="match_parent" android:layout_height="wrap_content" android:minHeight="@dimen/hp_px_75">
+                <ImageView android:id="@+id/selector_header_icon" android:layout_width="@dimen/hp_px_20" android:layout_height="@dimen/hp_px_20" android:layout_marginLeft="@dimen/hp_px_17" android:layout_marginRight="@dimen/hp_px_7" android:src="@drawable/hp_selector_location" android:layout_centerVertical="true"/>
+                <TextView android:textSize="@dimen/hp_px_24" android:textColor="@color/color_FFFFFF" android:ellipsize="end" android:id="@+id/selector_header_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/hp_city_name" android:maxLines="2" android:layout_toLeftOf="@+id/dialog_close" android:layout_toRightOf="@+id/selector_header_icon" android:layout_centerVertical="true"/>
+                <ImageView android:id="@+id/dialog_close" android:layout_width="@dimen/hp_px_20" android:layout_height="@dimen/hp_px_20" android:layout_margin="@dimen/hp_px_13" android:src="@drawable/hp_selector_close" android:layout_alignParentRight="true"/>
+            </RelativeLayout>
+        </RelativeLayout>
+        <TextView android:textSize="@dimen/hp_px_15" android:textColor="@drawable/hp_selector_dialog_region_item_textcolor" android:gravity="center" android:id="@+id/selector_city_name" android:background="@drawable/hp_selector_dialog_region_item_bg" android:layout_width="@dimen/hp_px_80" android:layout_height="@dimen/hp_px_30" android:layout_margin="@dimen/hp_px_15" android:text="@string/hp_city_name"/>
+        <View android:background="@color/color_F3F3F3" android:layout_width="match_parent" android:layout_height="@dimen/hp_px_1" android:layout_marginLeft="@dimen/hp_px_15" android:layout_marginRight="@dimen/hp_px_15"/>
+        <android.support.v7.widget.RecyclerView android:id="@+id/selector_list" android:background="@color/transparent" android:paddingBottom="@dimen/hp_px_64" android:visibility="gone" android:scrollbars="none" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginTop="@dimen/hp_px_5" android:layout_marginRight="@dimen/hp_px_15" android:listSelector="@null" android:cacheColorHint="@color/transparent" android:divider="@null"/>
+    </LinearLayout>
+</RelativeLayout>

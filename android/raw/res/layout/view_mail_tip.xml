@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@color/color_A8453F" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/iv_tip_icon" android:layout_width="@dimen/dimen_28" android:layout_height="@dimen/dimen_28" android:layout_marginLeft="@dimen/dimen_15" android:src="@drawable/no_net_connect" android:layout_centerVertical="true" />
+    <TextView android:textSize="@dimen/ts_14px" android:textColor="@color/c20" android:gravity="start|center" android:id="@id/tv_tip_msg" android:layout_width="fill_parent" android:layout_height="@dimen/dimen_44" android:layout_marginLeft="@dimen/dimen_8" android:text="@string/no_net_notice" android:layout_toRightOf="@id/iv_tip_icon" android:textCursorDrawable="@null" />
+    <ImageView android:id="@id/iv_tip_close" android:padding="@dimen/dimen_16" android:focusable="true" android:focusableInTouchMode="true" android:clickable="true" android:layout_width="@dimen/dimen_28" android:layout_height="@dimen/dimen_44" android:src="@drawable/icon_mail_tip_close" android:scaleType="centerCrop" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+</RelativeLayout>

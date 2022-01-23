@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:background="@color/c5" android:layout_width="match_parent" android:layout_height="match_parent">
+    <TextView android:textSize="@dimen/dimen_14" android:textColor="@color/c9" android:gravity="left|center_vertical|center_horizontal|center" android:id="@+id/tv_report_title" android:background="@color/c5" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dimen_15" android:layout_marginTop="@dimen/dimen_15" android:layout_marginBottom="@dimen/dimen_7" android:text="@string/report_describe"/>
+    <LinearLayout android:orientation="vertical" android:id="@+id/ll_chat_choose_value" android:background="@color/c20" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <include layout="@layout/divider"/>
+        <RelativeLayout android:id="@+id/rl_chat_source" android:background="@color/c20" android:layout_width="match_parent" android:layout_height="42dp">
+            <TextView android:textSize="@dimen/dimen_15" android:textColor="@color/c12" android:gravity="center_vertical" android:paddingLeft="15dp" android:layout_width="match_parent" android:layout_height="match_parent" android:text="@string/report_chat_history"/>
+            <ImageView android:id="@+id/iv_report_right1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="15dp" android:src="@drawable/common_arrow_right" android:layout_alignParentRight="true" android:layout_centerVertical="true"/>
+            <TextView android:textSize="@dimen/dimen_15" android:textColor="@color/c9" android:gravity="center_vertical" android:id="@+id/tv_chat_source" android:paddingRight="10dp" android:layout_width="wrap_content" android:layout_height="match_parent" android:text="@string/report_choose_tag" android:layout_toLeftOf="@+id/iv_report_right1"/>
+        </RelativeLayout>
+        <include android:layout_width="match_parent" android:layout_height="@dimen/res_0x7f070190_dimen_0_3" android:layout_marginLeft="15dp" layout="@layout/divider"/>
+        <RelativeLayout android:id="@+id/rl_image_source" android:background="@color/c20" android:layout_width="match_parent" android:layout_height="42dp">
+            <ImageView android:id="@+id/iv_report_right2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="15dp" android:src="@drawable/common_arrow_right" android:layout_alignParentRight="true" android:layout_centerVertical="true"/>
+            <TextView android:textSize="@dimen/dimen_15" android:textColor="@color/c9" android:gravity="center_vertical" android:id="@+id/tv_image_source" android:paddingRight="10dp" android:layout_width="wrap_content" android:layout_height="match_parent" android:text="@string/report_choose_tag" android:layout_toLeftOf="@+id/iv_report_right2"/>
+            <TextView android:textSize="@dimen/dimen_15" android:textColor="@color/c12" android:gravity="center_vertical" android:id="@+id/textView3" android:paddingLeft="15dp" android:layout_width="match_parent" android:layout_height="match_parent" android:text="@string/report_image" android:layout_alignParentLeft="true" android:layout_alignParentTop="true" android:layout_alignParentStart="true"/>
+        </RelativeLayout>
+    </LinearLayout>
+    <include layout="@layout/divider"/>
+    <EditText android:textSize="@dimen/dimen_15" android:gravity="top" android:id="@+id/et_report_value" android:background="@color/c20" android:paddingLeft="15dp" android:paddingTop="15dp" android:paddingRight="15dp" android:visibility="gone" android:layout_width="match_parent" android:layout_height="100dp"/>
+    <TextView android:textSize="15dp" android:textColor="@color/c9" android:gravity="right" android:id="@+id/tv_report_number" android:background="@color/c20" android:padding="10dp" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="0/50"/>
+    <include layout="@layout/divider"/>
+    <TextView android:textSize="@dimen/dimen_14" android:textColor="@color/c9" android:gravity="left|center_vertical|center_horizontal|center" android:id="@+id/report_value_pic" android:background="@color/c5" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dimen_15" android:layout_marginTop="@dimen/dimen_15" android:layout_marginBottom="@dimen/dimen_7" android:text="@string/report_image_tag"/>
+    <View android:id="@+id/report_margin" android:visibility="gone" android:layout_width="match_parent" android:layout_height="10dp"/>
+    <RelativeLayout android:id="@+id/rl_report_image_list" android:background="@color/c20" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <com.msgseal.base.component.NoScrollGridView android:gravity="center" android:id="@+id/gridView" android:padding="15dp" android:scrollbars="none" android:fadingEdge="none" android:layout_width="match_parent" android:layout_height="wrap_content" android:listSelector="#00000000" android:horizontalSpacing="3dp" android:verticalSpacing="10dp" android:stretchMode="columnWidth" android:columnWidth="80dp" android:numColumns="4" android:layout_alignParentLeft="true" android:layout_alignParentTop="true" android:layout_alignParentStart="true"/>
+        <View android:background="@color/c6" android:layout_width="match_parent" android:layout_height="@dimen/divider_high"/>
+        <View android:background="@color/c6" android:layout_width="match_parent" android:layout_height="@dimen/divider_high" android:layout_below="@+id/gridView"/>
+    </RelativeLayout>
+</LinearLayout>

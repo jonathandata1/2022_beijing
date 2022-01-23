@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+    <TextView android:textSize="@dimen/dimen_17" android:id="@+id/tv_item_translate" android:layout_width="match_parent" android:layout_height="@dimen/dimen_40"/>
+    <View android:layout_width="match_parent" android:layout_height="@dimen/res_0x7f070190_dimen_0_3"/>
+</LinearLayout>

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:id="@+id/ll_chat_meeting_select_type" android:focusable="true" android:focusableInTouchMode="true" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <RelativeLayout android:id="@+id/rl_chat_meeting_type_none" android:layout_width="match_parent" android:layout_height="@dimen/dimen_50" android:layout_marginTop="@dimen/dimen_10">
+        <TextView android:textSize="@dimen/dimen_16" android:gravity="center_vertical" android:id="@+id/tv_chat_meeting_type_none" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dimen_20" android:text="@string/chat_meeting_type_none" android:layout_centerVertical="true"/>
+        <ImageView android:id="@+id/iv_chat_meeting_type_none" android:visibility="gone" android:layout_width="@dimen/dimen_14" android:layout_height="@dimen/dimen_14" android:layout_marginRight="@dimen/dimen_16" android:src="@drawable/icon_meeting_type_choose" android:layout_alignParentRight="true" android:layout_centerVertical="true"/>
+        <View android:id="@+id/v_chat_meeting_type_none_divider" android:background="@color/c7" android:layout_width="match_parent" android:layout_height="@dimen/res_0x7f070190_dimen_0_3" android:layout_marginLeft="@dimen/dimen_16" android:layout_alignParentBottom="true"/>
+    </RelativeLayout>
+    <RelativeLayout android:id="@+id/rl_chat_meeting_type_day" android:layout_width="match_parent" android:layout_height="@dimen/dimen_50">
+        <TextView android:textSize="@dimen/dimen_16" android:gravity="center_vertical" android:id="@+id/tv_chat_meeting_type_day" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dimen_20" android:text="@string/chat_meeting_type_day" android:layout_centerVertical="true"/>
+        <ImageView android:id="@+id/iv_chat_meeting_type_day" android:visibility="gone" android:layout_width="@dimen/dimen_14" android:layout_height="@dimen/dimen_14" android:layout_marginRight="@dimen/dimen_16" android:src="@drawable/icon_meeting_type_choose" android:layout_alignParentRight="true" android:layout_centerVertical="true"/>
+        <View android:id="@+id/v_chat_meeting_type_day_divider" android:background="@color/c7" android:layout_width="match_parent" android:layout_height="@dimen/res_0x7f070190_dimen_0_3" android:layout_marginLeft="@dimen/dimen_16" android:layout_alignParentBottom="true"/>
+    </RelativeLayout>
+    <RelativeLayout android:id="@+id/rl_chat_meeting_type_week" android:layout_width="match_parent" android:layout_height="@dimen/dimen_50">
+        <TextView android:textSize="@dimen/dimen_16" android:gravity="center_vertical" android:id="@+id/tv_chat_meeting_type_week" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dimen_20" android:text="@string/chat_meeting_type_week" android:layout_centerVertical="true"/>
+        <ImageView android:id="@+id/iv_chat_meeting_type_week" android:visibility="gone" android:layout_width="@dimen/dimen_14" android:layout_height="@dimen/dimen_14" android:layout_marginRight="@dimen/dimen_16" android:src="@drawable/icon_meeting_type_choose" android:layout_alignParentRight="true" android:layout_centerVertical="true"/>
+        <View android:id="@+id/v_chat_meeting_type_week_divider" android:background="@color/c7" android:layout_width="match_parent" android:layout_height="@dimen/res_0x7f070190_dimen_0_3" android:layout_marginLeft="@dimen/dimen_16" android:layout_alignParentBottom="true"/>
+    </RelativeLayout>
+    <RelativeLayout android:id="@+id/rl_chat_meeting_type_month" android:layout_width="match_parent" android:layout_height="@dimen/dimen_50">
+        <TextView android:textSize="@dimen/dimen_16" android:gravity="center_vertical" android:id="@+id/tv_chat_meeting_type_month" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dimen_20" android:text="@string/chat_meeting_type_month" android:layout_centerVertical="true"/>
+        <ImageView android:id="@+id/iv_chat_meeting_type_month" android:visibility="gone" android:layout_width="@dimen/dimen_14" android:layout_height="@dimen/dimen_14" android:layout_marginRight="@dimen/dimen_16" android:src="@drawable/icon_meeting_type_choose" android:layout_alignParentRight="true" android:layout_centerVertical="true"/>
+    </RelativeLayout>
+</LinearLayout>

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:background="@color/contact_bg_color" android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_above="@+id/view_selected_panel">
+        <include android:id="@+id/rl_top_search" layout="@layout/activity_contact_top_search"/>
+        <ExpandableListView android:id="@+id/elv_contact" android:scrollbars="none" android:fadingEdge="none" android:layout_width="match_parent" android:layout_height="match_parent" android:groupIndicator="@null" android:divider="@null" android:dividerHeight="@dimen/dimen_0"/>
+        <include android:id="@+id/contact_source_empty" layout="@layout/activity_contact_source_empty_view"/>
+    </LinearLayout>
+    <RelativeLayout android:id="@+id/rl_contact_source_search" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_above="@+id/view_selected_panel">
+        <include android:id="@+id/contact_search_header" android:layout_width="match_parent" android:layout_height="56dp" android:layout_alignParentTop="true" layout="@layout/tcontact_include_search_header"/>
+        <View android:id="@+id/v_contact_source_masklayer_view" android:background="#7f000000" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_below="@+id/contact_search_header"/>
+        <ListView android:id="@+id/lv_contact_source_search_result" android:background="@color/contact_bg_color" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent" android:divider="@null" android:layout_below="@+id/contact_search_header" android:overScrollMode="never"/>
+        <LinearLayout android:gravity="center" android:layout_gravity="center" android:orientation="vertical" android:id="@+id/contact_main_source_search_empty" android:background="@color/c20" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_below="@+id/contact_search_header">
+            <ImageView android:id="@+id/iv_search_source_empty" android:background="@drawable/contact_search_empty_icon" android:layout_width="120dp" android:layout_height="120dp"/>
+            <TextView android:id="@+id/tv_search_empty_tip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="30dp" android:text="@string/contact_type_search_empty"/>
+        </LinearLayout>
+    </RelativeLayout>
+    <com.msgseal.contact.selectedcontact.SelectedContactPanel android:id="@+id/view_selected_panel" android:visibility="gone" android:layout_width="match_parent" android:layout_height="@dimen/dimen_54" android:layout_alignParentBottom="true"/>
+</RelativeLayout>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include android:id="@id/in_1" layout="@layout/toon_item_navigation_bar" />
+    <CheckBox android:textSize="@dimen/dimen_15" android:gravity="center_vertical" android:id="@id/cb_zh" android:background="@color/c20" android:paddingLeft="@dimen/dimen_15" android:paddingRight="@dimen/dimen_15" android:layout_width="fill_parent" android:layout_height="@dimen/dimen_44" android:button="@null" android:text="@string/language_zh" android:drawableRight="@drawable/language_check_bg" android:layout_below="@id/in_1" />
+    <View android:id="@id/view_line" android:background="@color/color_e1e1e1" android:layout_width="fill_parent" android:layout_height="@dimen/dimen_1" android:layout_marginLeft="@dimen/dimen_15" android:layout_below="@id/cb_zh" />
+    <CheckBox android:textSize="@dimen/dimen_15" android:gravity="center_vertical" android:id="@id/cb_en" android:background="@color/c20" android:paddingLeft="@dimen/dimen_15" android:paddingRight="@dimen/dimen_15" android:layout_width="fill_parent" android:layout_height="@dimen/dimen_44" android:button="@null" android:text="@string/language_en" android:drawableRight="@drawable/language_check_bg" android:layout_below="@id/view_line" />
+    <TextView android:textSize="@dimen/dimen_18" android:textColor="@color/c20" android:gravity="center" android:id="@id/tv_save" android:background="@drawable/language_setting_blue" android:layout_width="fill_parent" android:layout_height="@dimen/dimen_50" android:layout_marginLeft="@dimen/dimen_24" android:layout_marginRight="@dimen/dimen_24" android:text="@string/setting_save" android:layout_centerVertical="true" />
+</RelativeLayout>

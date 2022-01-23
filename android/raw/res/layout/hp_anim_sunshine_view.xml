@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/ray_low" android:layout_width="255.0dip" android:layout_height="255.0dip" android:layout_marginTop="-127.5dip" android:src="@drawable/hp_ray_low" />
+    <ImageView android:id="@id/sun" android:layout_width="178.0dip" android:layout_height="wrap_content" android:layout_marginLeft="33.5dip" android:src="@drawable/hp_sun" />
+    <ImageView android:id="@id/blur_halo" android:layout_width="178.0dip" android:layout_height="wrap_content" android:layout_marginLeft="33.5dip" android:src="@drawable/hp_blur_halo" />
+    <ImageView android:id="@id/light_ray" android:layout_width="190.0dip" android:layout_height="wrap_content" android:layout_marginLeft="122.5dip" android:src="@drawable/hp_light_ray" />
+</RelativeLayout>

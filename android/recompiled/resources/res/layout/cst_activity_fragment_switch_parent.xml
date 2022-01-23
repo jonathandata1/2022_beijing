@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" android:id="@+id/rl_activity_fragment_switch" android:clipChildren="false" android:clipToPadding="false" android:layout_width="match_parent" android:layout_height="match_parent">
+    <FrameLayout android:id="@+id/fl_activity_fragment_switch" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_above="@+id/ll_activity_fragment_switch" android:layout_alignParentTop="true"/>
+    <LinearLayout android:orientation="horizontal" android:id="@+id/ll_activity_fragment_switch" android:clipChildren="false" android:clipToPadding="false" android:layout_width="match_parent" android:layout_height="@dimen/dimen_50" android:layout_alignParentBottom="true"/>
+    <View android:id="@+id/ll_activity_fragment_switch_shadow" android:background="@color/base_activity_divider_color" android:layout_width="match_parent" android:layout_height="@dimen/res_0x7f070191_dimen_0_5" android:layout_above="@+id/ll_activity_fragment_switch" android:layout_alignBottom="@+id/fl_activity_fragment_switch"/>
+</RelativeLayout>

@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:fitsSystemWindows="true" android:layout_width="match_parent" android:layout_height="match_parent">
+    <com.systoon.toongine.adapter.view.NavigationBarView android:id="@+id/toongine_navigationBarView" android:visibility="visible" android:layout_width="match_parent" android:layout_height="@dimen/dimen_48" android:layout_marginTop="@dimen/dimen_28"/>
+    <FrameLayout android:id="@+id/toongine_rootview" android:layout_width="match_parent" android:layout_height="match_parent"/>
+</LinearLayout>

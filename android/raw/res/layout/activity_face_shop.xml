@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.tmail.customView.pulltorefresh.PullToRefreshScrollView android:id="@id/sl_face_shop" android:background="@color/c5" android:scrollbars="none" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <RelativeLayout android:id="@id/rl_face_shop_banner" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <ImageView android:background="@drawable/face_banner_for_new_year" android:layout_width="fill_parent" android:layout_height="@dimen/dimen_150" android:contentDescription="@string/app_name" />
+            <android.support.v4.view.ViewPager android:visibility="gone" android:layout_width="fill_parent" android:layout_height="@dimen/dimen_150" />
+        </RelativeLayout>
+        <com.msgseal.emoji.FixHeightGridView android:id="@id/gv_face_shop" android:scrollbars="none" android:fadingEdge="none" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginLeft="@dimen/dimen_15" android:listSelector="@null" android:horizontalSpacing="@dimen/dimen_0" android:verticalSpacing="@dimen/dimen_0" android:numColumns="3" android:layout_below="@id/rl_face_shop_banner" />
+    </RelativeLayout>
+</com.tmail.customView.pulltorefresh.PullToRefreshScrollView>

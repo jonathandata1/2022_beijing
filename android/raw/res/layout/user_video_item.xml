@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <FrameLayout android:id="@id/surface_view_container" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <LinearLayout android:orientation="vertical" android:id="@id/user_info_container" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_centerInParent="true">
+        <com.systoon.toon.view.ShapeImageView android:layout_gravity="center_horizontal" android:id="@id/iv_avatar" android:layout_width="@dimen/dimen_50" android:layout_height="@dimen/dimen_50" android:layout_marginTop="40.0dip" android:src="@drawable/icon_default_avatar" />
+        <TextView android:textSize="@dimen/dimen_15" android:textColor="@color/white" android:ellipsize="end" android:gravity="center" android:layout_gravity="center_horizontal" android:id="@id/tv_name" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dimen_8" android:maxLines="1" android:singleLine="true" />
+        <TextView android:textSize="@dimen/dimen_13" android:textColor="@color/white" android:ellipsize="end" android:gravity="center" android:layout_gravity="center_horizontal" android:id="@id/tv_title" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dimen_4" android:maxLines="1" android:singleLine="true" />
+    </LinearLayout>
+    <RelativeLayout android:id="@id/rl_loading" android:background="@color/bright_foreground_light_disabled" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <ImageView android:id="@id/iv_loading" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/icon_call_loading" android:layout_centerInParent="true" />
+    </RelativeLayout>
+    <ImageView android:id="@id/iv_indicator" android:layout_width="@dimen/dimen_20" android:layout_height="@dimen/dimen_20" android:layout_marginRight="@dimen/dimen_16" android:layout_marginBottom="@dimen/dimen_16" android:src="@drawable/call_speaking_status" android:layout_alignParentRight="true" android:layout_alignParentBottom="true" />
+</RelativeLayout>

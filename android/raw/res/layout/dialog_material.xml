@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/layout_dialog_root" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:id="@id/layout_dialog_content" android:background="@drawable/base_shape_dialog_bg" android:paddingTop="16.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_centerInParent="true">
+        <TextView android:textSize="15.0sp" android:textStyle="bold" android:textColor="#ff333333" android:ellipsize="end" android:gravity="center" android:layout_gravity="center_horizontal" android:id="@id/sy_tv_dialog_title" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="6.0dip" android:maxLines="1" android:paddingStart="16.0dip" android:paddingEnd="16.0dip" />
+        <ScrollView android:scrollbarSize="2.0dip" android:id="@id/message_scrollView" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="10.0dip">
+            <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:paddingLeft="16.0dip" android:paddingRight="16.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:minHeight="50.0dip">
+                <TextView android:textSize="14.0sp" android:textColor="#ff333333" android:id="@id/sy_tv_dialog_message" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+            </LinearLayout>
+        </ScrollView>
+        <View android:background="@color/sy_ve5e5e5" android:layout_width="fill_parent" android:layout_height="0.5dip" android:layout_marginTop="14.0dip" />
+        <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="50.0dip">
+            <Button android:textSize="16.0sp" android:textColor="@color/sy_v4a4a4a" android:gravity="center" android:id="@id/sy_tv_dialog_button_cancel" android:background="@null" android:visibility="gone" android:layout_width="0.0dip" android:layout_height="fill_parent" android:singleLine="true" android:layout_weight="1.0" />
+            <View android:id="@id/sy_dialog_btn_divider" android:background="@color/sy_ve5e5e5" android:visibility="gone" android:layout_width="0.5dip" android:layout_height="fill_parent" />
+            <Button android:textSize="16.0sp" android:textStyle="bold" android:textColor="@color/sy_v222222" android:gravity="center" android:id="@id/sy_tv_dialog_button_accept" android:background="@null" android:layout_width="0.0dip" android:layout_height="fill_parent" android:text="@string/sy_str_ok" android:singleLine="true" android:layout_weight="1.0" />
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>

@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:orientation="vertical" android:background="@drawable/authlevel_bg" android:layout_width="match_parent" android:layout_height="match_parent">
+        <RelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content">
+            <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@+id/ll_username" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="35dp" android:layout_marginTop="25dp">
+                <TextView android:textSize="22dp" android:textColor="#ffffff" android:id="@+id/tv_name" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+                <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10dp" android:src="@drawable/authlevel_authed_icon"/>
+            </LinearLayout>
+            <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@+id/ll_toonno" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="14dp" android:layout_below="@+id/ll_username" android:layout_alignLeft="@+id/ll_username">
+                <TextView android:textSize="14dp" android:textColor="#ffffff" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="市民卡号  "/>
+                <TextView android:textSize="18dp" android:textColor="#ffffff" android:id="@+id/tv_toonno" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+            </LinearLayout>
+            <View android:id="@+id/view_border" android:background="#dddee3" android:layout_width="match_parent" android:layout_height="0.3dp" android:layout_marginLeft="22dp" android:layout_marginTop="14dp" android:layout_marginRight="22dp" android:layout_below="@+id/ll_toonno"/>
+            <RelativeLayout android:id="@+id/rl_mycard" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_below="@+id/view_border" android:layout_alignLeft="@+id/ll_toonno">
+                <TextView android:textSize="14dp" android:textColor="#ffffff" android:id="@+id/tv_card_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="12dp" android:layout_marginBottom="22dp" android:text="电子卡证"/>
+                <ImageView android:id="@+id/iv_redarrow" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="15dp" android:layout_marginRight="30dp" android:src="@drawable/authlevel_whitearrow" android:layout_alignParentRight="true"/>
+                <android.support.v7.widget.RecyclerView android:id="@+id/mycard_recycleview" android:layout_width="wrap_content" android:layout_height="@dimen/dimen_16" android:layout_marginRight="19dp" android:layout_toLeftOf="@+id/iv_redarrow" android:layout_alignTop="@+id/tv_card_title" android:layout_centerVertical="true"/>
+            </RelativeLayout>
+        </RelativeLayout>
+        <RelativeLayout android:id="@+id/rl_l1" android:background="@drawable/auth_select_bg" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="15dp" android:layout_marginRight="15dp">
+            <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@+id/ll_l1_top" android:layout_width="wrap_content" android:layout_height="48dp" android:layout_marginLeft="15dp">
+                <TextView android:textSize="16dp" android:textColor="#ff7500" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/l2_level_auth"/>
+                <TextView android:textSize="12dp" android:textColor="#acb3bf" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="3dp" android:text="@string/auth_text_prompt"/>
+            </LinearLayout>
+            <ImageView android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/authselect_watermark" android:layout_alignTop="@+id/ll_l1_top" android:layout_alignParentRight="true"/>
+            <View android:id="@+id/view_l1" android:background="#dddee3" android:layout_width="match_parent" android:layout_height="0.3dp" android:layout_marginTop="0.5dp" android:layout_marginRight="15dp" android:layout_below="@+id/ll_l1_top" android:layout_alignLeft="@+id/ll_l1_top"/>
+            <TextView android:textSize="18dp" android:textColor="#222222" android:id="@+id/tv_l1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="17dp" android:layout_marginBottom="18dp" android:text="@string/real_name_auth" android:layout_below="@+id/view_l1" android:layout_alignLeft="@+id/ll_l1_top"/>
+            <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="19dp" android:layout_below="@+id/view_l1" android:layout_alignTop="@+id/tv_l1" android:layout_alignParentRight="true">
+                <TextView android:textSize="15dp" android:textColor="#777e8c" android:gravity="center_vertical" android:id="@+id/tv_l1_status" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/card_authentication_no"/>
+                <ImageView android:id="@+id/iv_l1_arrow" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5dp" android:src="@drawable/auth_select_arrow"/>
+            </LinearLayout>
+        </RelativeLayout>
+        <RelativeLayout android:id="@+id/rl_l2" android:background="@drawable/auth_select_bg" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="15dp" android:layout_marginTop="10dp" android:layout_marginRight="15dp">
+            <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@+id/ll_l2_top" android:layout_width="wrap_content" android:layout_height="48dp" android:layout_marginLeft="15dp">
+                <TextView android:textSize="16dp" android:textColor="#ff7500" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/l3_level"/>
+                <TextView android:textSize="12dp" android:textColor="#acb3bf" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="3dp" android:text="@string/auth_text_prompt2"/>
+            </LinearLayout>
+            <ImageView android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/authselect_watermark" android:layout_alignTop="@+id/ll_l2_top" android:layout_alignParentRight="true"/>
+            <View android:id="@+id/view_l2" android:background="#dddee3" android:layout_width="match_parent" android:layout_height="0.3dp" android:layout_marginTop="0.5dp" android:layout_marginRight="15dp" android:layout_below="@+id/ll_l2_top" android:layout_alignLeft="@+id/ll_l2_top"/>
+            <RelativeLayout android:id="@+id/rl_checkface" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_below="@+id/view_l2" android:layout_alignLeft="@+id/ll_l2_top">
+                <TextView android:textSize="18dp" android:textColor="#222222" android:id="@+id/tv_l2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="17dp" android:layout_marginBottom="18dp" android:text="@string/face_auth"/>
+                <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="19dp" android:layout_alignTop="@+id/tv_l2" android:layout_alignParentRight="true">
+                    <TextView android:textSize="15dp" android:textColor="#777e8c" android:gravity="center_vertical" android:id="@+id/tv_l2_status" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/card_authentication_no"/>
+                    <ImageView android:id="@+id/iv_l2_arrow" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5dp" android:src="@drawable/auth_select_arrow"/>
+                </LinearLayout>
+            </RelativeLayout>
+            <View android:id="@+id/view_l2_bankcard" android:background="#dddee3" android:layout_width="match_parent" android:layout_height="0.3dp" android:layout_marginTop="0.5dp" android:layout_marginRight="15dp" android:layout_below="@+id/rl_checkface" android:layout_alignLeft="@+id/ll_l2_top"/>
+            <RelativeLayout android:id="@+id/rl_bankcard" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_below="@+id/view_l2_bankcard" android:layout_alignLeft="@+id/ll_l2_top">
+                <TextView android:textSize="18dp" android:textColor="#222222" android:id="@+id/tv_l2_bankcard" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="17dp" android:layout_marginBottom="18dp" android:text="@string/card_verify_title"/>
+                <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="19dp" android:layout_alignTop="@+id/tv_l2_bankcard" android:layout_alignParentRight="true">
+                    <TextView android:textSize="15dp" android:textColor="#777e8c" android:gravity="center_vertical" android:id="@+id/tv_l2_status_bankcard" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/card_authentication_no"/>
+                    <ImageView android:id="@+id/iv_l2_arrow_bankcard" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5dp" android:src="@drawable/auth_select_arrow"/>
+                </LinearLayout>
+            </RelativeLayout>
+        </RelativeLayout>
+        <RelativeLayout android:id="@+id/rl_l3" android:background="@drawable/auth_select_bg" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="15dp" android:layout_marginTop="10dp" android:layout_marginRight="15dp">
+            <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@+id/ll_l3_top" android:layout_width="wrap_content" android:layout_height="48dp" android:layout_marginLeft="15dp">
+                <TextView android:textSize="16dp" android:textColor="#ff7500" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/l4_level"/>
+                <TextView android:textSize="12dp" android:textColor="#acb3bf" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="3dp" android:text="@string/auth_text_prompt3"/>
+            </LinearLayout>
+            <ImageView android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/authselect_watermark" android:layout_alignTop="@+id/ll_l3_top" android:layout_alignParentRight="true"/>
+            <View android:id="@+id/view_l3" android:background="#dddee3" android:layout_width="match_parent" android:layout_height="0.3dp" android:layout_marginTop="0.5dp" android:layout_marginRight="15dp" android:layout_below="@+id/ll_l3_top" android:layout_alignLeft="@+id/ll_l3_top"/>
+            <TextView android:textSize="18dp" android:textColor="#222222" android:id="@+id/tv_l3" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="17dp" android:layout_marginBottom="18dp" android:text="@string/office_hall" android:layout_below="@+id/view_l3" android:layout_alignLeft="@+id/ll_l3_top"/>
+            <LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="24dp" android:layout_marginRight="19dp" android:layout_below="@+id/view_l3" android:layout_alignParentRight="true">
+                <ImageView android:id="@+id/iv_l3_arrow" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5dp" android:src="@drawable/auth_select_arrow"/>
+            </LinearLayout>
+        </RelativeLayout>
+        <LinearLayout android:gravity="center_vertical" android:layout_gravity="center_horizontal" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="25dp" android:layout_marginBottom="10dp">
+            <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/authlevel_safeguard_info"/>
+            <TextView android:textSize="14dp" android:textColor="#8e8e93" android:layout_gravity="center_horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5dp" android:text="@string/auth_information_safty"/>
+        </LinearLayout>
+        <LinearLayout android:gravity="center_vertical" android:layout_gravity="center_horizontal" android:orientation="horizontal" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="25dp" android:layout_marginBottom="10dp">
+            <TextView android:textSize="14dp" android:textColor="#007aff" android:layout_gravity="center_horizontal" android:id="@+id/tv_auth_agreement" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="《实名认证服务协议》"/>
+            <TextView android:textSize="14dp" android:textColor="#8e8e93" android:layout_gravity="center_horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="及"/>
+            <TextView android:textSize="14dp" android:textColor="#007aff" android:layout_gravity="center_horizontal" android:id="@+id/tv_auth_privacy" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="《隐私政策》"/>
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/c20" android:focusable="true" android:focusableInTouchMode="true" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include android:id="@id/in_1" layout="@layout/toon_item_navigation_bar" />
+    <com.zhengtoon.tuser.common.base.view.EditTextWithDel android:textColor="@color/color_222222" android:textColorHint="@color/color_c5c5c5" android:ellipsize="end" android:id="@id/et_set_name" android:background="@drawable/edit_bottom_line_gray" android:layout_width="fill_parent" android:layout_height="@dimen/dimen_54" android:layout_marginLeft="@dimen/dimen_24" android:layout_marginTop="@dimen/dimen_10" android:layout_marginRight="@dimen/dimen_24" android:maxEms="1" android:singleLine="true" android:textCursorDrawable="@drawable/edit_cursor_color" />
+    <Button android:enabled="false" android:textSize="@dimen/dimen_18" android:textColor="@color/c20" android:gravity="center" android:id="@id/btn_set_name_enter" android:background="@drawable/login_gray" android:layout_width="fill_parent" android:layout_height="@dimen/dimen_50" android:layout_marginLeft="@dimen/dimen_24" android:layout_marginTop="@dimen/dimen_20" android:layout_marginRight="@dimen/dimen_24" android:text="@string/finish" android:layout_below="@id/et_set_name" />
+</LinearLayout>

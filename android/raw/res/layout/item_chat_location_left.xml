@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/layout_location_left" android:background="@drawable/chat_item_left_bg" android:layout_width="@dimen/dimen_220" android:layout_height="@dimen/dimen_84" android:layout_alignWithParentIfMissing="true"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/iv_local_left_icon" android:layout_width="@dimen/dimen_38" android:layout_height="@dimen/dimen_42" android:layout_marginLeft="@dimen/dimen_12" android:layout_marginTop="@dimen/dimen_12" android:layout_marginRight="@dimen/dimen_10" android:src="@drawable/item_chat_location_icon" />
+    <RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginRight="@dimen/dimen_5" android:layout_toRightOf="@id/iv_local_left_icon" android:layout_alignTop="@id/iv_local_left_icon">
+        <TextView android:textSize="@dimen/dimen_15" android:textColor="@color/color_222222" android:ellipsize="end" android:id="@id/txt_local_title_left" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/chat_localname" android:maxLines="1" android:layout_alignParentLeft="true" />
+        <TextView android:textSize="@dimen/dimen_13" android:textColor="@color/c8" android:ellipsize="end" android:id="@id/txt_local_name_left" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/chat_localname" android:maxLines="2" android:layout_below="@id/txt_local_title_left" android:layout_alignParentLeft="true" />
+    </RelativeLayout>
+</RelativeLayout>

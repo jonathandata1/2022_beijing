@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/color_FFFFFF" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:id="@id/rl_myapps_edit" android:layout_width="fill_parent" android:layout_height="@dimen/hp_px_50">
+        <TextView android:textSize="@dimen/hp_px_16" android:textColor="@color/color_222222" android:id="@id/manager_myapps_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/hp_px_16" android:layout_marginRight="@dimen/hp_px_15" android:text="@string/hp_managerapps_myapps_title" android:layout_centerVertical="true" />
+        <TextView android:textSize="@dimen/hp_px_16" android:textColor="@color/color_222222" android:id="@id/manager_myapps_edit_btn" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/hp_px_15" android:layout_marginRight="@dimen/hp_px_16" android:text="@string/hp_managerapps_edit" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+        <ImageView android:id="@id/iv_more" android:visibility="gone" android:layout_width="@dimen/hp_px_24" android:layout_height="@dimen/hp_px_24" android:src="@drawable/hp_icon_more" android:layout_toLeftOf="@id/manager_myapps_edit_btn" android:layout_centerVertical="true" />
+        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/apps_ll" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_toLeftOf="@id/manager_myapps_edit_btn" android:layout_toRightOf="@id/manager_myapps_title" />
+    </RelativeLayout>
+    <View android:id="@id/lineview" android:background="@color/color_F8F8FB" android:layout_width="fill_parent" android:layout_height="@dimen/hp_px_8" />
+</LinearLayout>

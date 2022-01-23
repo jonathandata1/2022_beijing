@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="horizontal" android:background="@color/color_FFFFFF" android:scrollbars="horizontal" android:layout_width="match_parent" android:layout_height="@dimen/dimen_136">
+    <com.systoon.customhomepage.widget.HorizontalListView android:id="@+id/listview" android:scrollbars="none" android:layout_width="match_parent" android:layout_height="match_parent" android:listSelector="@color/transparent" android:overScrollMode="never"/>
+</LinearLayout>

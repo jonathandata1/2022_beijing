@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent" android:layout_height="match_parent">
+    <RelativeLayout android:id="@+id/title_bg" android:background="@color/maincolor" android:layout_width="match_parent" android:layout_height="48dp">
+        <TextView android:textSize="20sp" android:textColor="@color/all_white" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="客服demo" android:layout_centerInParent="true"/>
+    </RelativeLayout>
+    <Button android:textSize="18sp" android:textColor="@color/all_black" android:id="@+id/button" android:background="@drawable/kf_btn_bg" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="32dp" android:layout_marginRight="32dp" android:layout_marginBottom="16dp" android:text="联系客服" android:layout_alignParentBottom="true"/>
+    <ScrollView android:background="@drawable/kf_btn_bg" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_margin="16dp" android:layout_above="@+id/button" android:layout_below="@+id/title_bg">
+        <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+            <TextView android:textSize="20sp" android:textColor="@color/all_black" android:gravity="center_horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="8dp" android:text="公司简介"/>
+            <TextView android:textSize="18sp" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginLeft="16dp" android:layout_marginTop="8dp" android:layout_marginRight="8dp" android:text="@string/info"/>
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>

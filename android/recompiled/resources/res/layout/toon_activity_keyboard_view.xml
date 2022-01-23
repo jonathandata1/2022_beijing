@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:orientation="vertical" android:background="@color/tc_2" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true">
+        <EditText android:id="@+id/et_keyboard" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+        <TextView android:textColor="@color/white" android:gravity="center" android:id="@+id/tv_keyboard_tip" android:layout_width="match_parent" android:layout_height="@dimen/dimen_40" android:text="@string/keyboard_input_tip"/>
+        <com.zhengtoon.toon.view.keyboard.ToonKeyboardView android:id="@+id/keyboard_view" android:background="@color/tc_2" android:focusable="true" android:focusableInTouchMode="true" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:shadowColor="#ccc" android:shadowRadius="0" android:keyBackground="@drawable/selector_keyboard_key_bg" android:keyTextColor="@color/white" android:keyPreviewOffset="0dp"/>
+    </LinearLayout>
+</RelativeLayout>

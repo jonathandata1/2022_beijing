@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:background="@color/white" android:descendantFocusability="blocksDescendants" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="horizontal" android:id="@id/ll_mail_menu" android:background="#ffecedef" android:layout_width="fill_parent" android:layout_height="@dimen/dimen_52" android:layout_alignParentBottom="true">
+        <ImageView android:layout_gravity="center" android:id="@id/iv_mail_menu_all_reply" android:layout_width="0.0dip" android:layout_height="wrap_content" android:src="@drawable/icon_mail_all_reply" android:layout_weight="1.0" />
+        <ImageView android:layout_gravity="center" android:id="@id/iv_mail_menu_reply" android:layout_width="0.0dip" android:layout_height="wrap_content" android:src="@drawable/icon_mail_reply" android:layout_weight="1.0" />
+        <ImageView android:layout_gravity="center" android:id="@id/iv_mail_menu_forward" android:layout_width="0.0dip" android:layout_height="wrap_content" android:src="@drawable/icon_mail_forward" android:layout_weight="1.0" />
+    </LinearLayout>
+    <android.support.v7.widget.RecyclerView android:id="@id/rcv_mail" android:paddingTop="@dimen/dimen_12" android:scrollbars="none" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_above="@id/ll_mail_menu" android:layout_alignParentTop="true" android:overScrollMode="never" />
+</RelativeLayout>

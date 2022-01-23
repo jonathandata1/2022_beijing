@@ -1,0 +1,16 @@
+OnCdtpConnectionTopic.onConnect
+-com.msgseal.user.MQReceiver#onConnect
+System.foregroundBackgroundChaned
+-com.msgseal.global.MsgsealSubjects#foregroundBackgroundChaned
+OnCdtpConnectionTopic.onLoginResp
+-com.msgseal.user.MQReceiver#onLoginResp
+-com.msgseal.contact.export.contactexport.ContactSubjects#onLoginResp
+-com.msgseal.global.DNSLoadingCompleteSubjects#onDNSStaus
+OnCdtpConnectionTopic.onDisconnect
+-com.msgseal.user.MQReceiver#onDisconnect
+MainOnCreate
+-com.msgseal.global.MsgsealSubjects#mainOnCreate
+OnCdtpConnectionTopic.onLogoutResp
+-com.msgseal.user.MQReceiver#onLogoutResp
+ApplicationTopic.onCreate
+-com.msgseal.global.MsgsealSubjects#onCreate

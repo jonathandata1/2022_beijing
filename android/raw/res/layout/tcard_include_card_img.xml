@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@color/c20" android:layout_width="fill_parent" android:layout_height="@dimen/dimen_74"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="@dimen/dimen_16" android:textColor="@color/c12" android:gravity="center_vertical" android:id="@id/tv_title_setting_avatar" android:paddingLeft="@dimen/dimen_16" android:layout_width="@dimen/dimen_112" android:layout_height="fill_parent" android:text="@string/avatar" />
+    <com.msgseal.base.ui.AvatarView android:id="@id/setting_avatar_image" android:background="@color/c20" android:layout_width="@dimen/dimen_50" android:layout_height="@dimen/dimen_50" android:src="@drawable/createvcard_default_head_person" android:layout_toRightOf="@id/tv_title_setting_avatar" android:layout_centerVertical="true" />
+    <ImageView android:layout_gravity="center_vertical" android:id="@id/iv_setting_image_arrow" android:background="@drawable/common_arrow_right" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dimen_10" android:layout_marginRight="@dimen/dimen_15" android:scaleType="centerCrop" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+    <View android:id="@id/image_divider" android:background="@color/c6" android:layout_width="fill_parent" android:layout_height="0.30000007dip" android:layout_marginLeft="@dimen/dimen_16" />
+</RelativeLayout>

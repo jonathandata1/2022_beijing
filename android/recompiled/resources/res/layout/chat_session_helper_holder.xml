@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" android:paddingLeft="@dimen/dimen_20" android:paddingRight="@dimen/dimen_20" android:layout_width="match_parent" android:layout_height="@dimen/dimen_83">
+    <LinearLayout android:layout_gravity="center_vertical" android:orientation="vertical" android:paddingTop="@dimen/dimen_16" android:paddingBottom="@dimen/dimen_16" android:layout_width="wrap_content" android:layout_height="@dimen/dimen_83">
+        <TextView android:textSize="@dimen/dimen_18" android:ellipsize="end" android:id="@+id/chat_session_helper_holder_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="1" android:singleLine="true"/>
+        <TextView android:textSize="@dimen/dimen_15" android:ellipsize="end" android:id="@+id/chat_session_helper_holder_subtitle" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dimen_4" android:maxLines="1" android:singleLine="true"/>
+    </LinearLayout>
+    <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/common_arrow_right" android:scaleType="center" android:layout_alignParentRight="true" android:layout_centerVertical="true" android:layout_alignParentEnd="true"/>
+</RelativeLayout>

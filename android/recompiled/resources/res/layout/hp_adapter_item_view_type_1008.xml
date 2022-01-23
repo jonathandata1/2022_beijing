@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" android:gravity="center_vertical" android:id="@+id/noticeView" android:background="@color/color_FFFFFF" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <RelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_below="@+id/lineview" android:layout_centerVertical="true">
+        <ImageView android:id="@+id/iv_icon" android:layout_width="@dimen/hp_px_44" android:layout_height="@dimen/hp_px_44" android:layout_marginLeft="@dimen/hp_px_13" android:layout_marginTop="@dimen/hp_px_15" android:layout_marginBottom="@dimen/hp_px_15" android:src="@drawable/hp_icon_bj_topline" android:scaleType="centerCrop" android:layout_alignParentLeft="true" android:layout_centerVertical="true"/>
+        <com.gongwen.marqueen.MarqueeView android:id="@+id/switcher" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/hp_px_10" android:layout_marginRight="@dimen/hp_px_15" android:flipInterval="3000" android:layout_toRightOf="@+id/iv_icon" android:layout_centerVertical="true"/>
+    </RelativeLayout>
+</RelativeLayout>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" android:id="@+id/rl_item_navigation_bar_title_right" android:background="@color/transparent" android:layout_width="match_parent" android:layout_height="match_parent">
+    <include android:id="@+id/in_navigation_bar_back" layout="@layout/toon_item_navigation_bar_b_i"/>
+    <LinearLayout android:gravity="right|center_vertical|center_horizontal|center|end" android:id="@+id/ll_item_navigation_bar_right" android:background="@color/transparent" android:paddingLeft="@dimen/dimen_6" android:paddingRight="@dimen/dimen_12" android:layout_width="wrap_content" android:layout_height="match_parent" android:layout_alignParentRight="true" android:layout_centerVertical="true" android:paddingStart="@dimen/dimen_6" android:paddingEnd="@dimen/dimen_12" android:layout_alignParentEnd="true">
+        <TextView android:textSize="@dimen/dimen_17" android:textColor="@color/c12" android:gravity="center" android:id="@+id/tv_item_navigation_bar_right" android:background="@color/transparent" android:layout_width="wrap_content" android:layout_height="wrap_content" android:lines="1" android:singleLine="true"/>
+    </LinearLayout>
+    <TextView android:textSize="@dimen/dimen_18" android:textColor="@color/c12" android:gravity="center_vertical" android:id="@+id/tv_item_navigation_bar_title" android:background="@color/transparent" android:layout_width="match_parent" android:layout_height="match_parent" android:lines="1" android:singleLine="true" android:layout_toLeftOf="@+id/ll_item_navigation_bar_right" android:layout_toRightOf="@+id/in_navigation_bar_back" android:layout_centerInParent="true"/>
+    <View android:id="@+id/v_navigation_bar" android:background="@color/c6" android:layout_width="match_parent" android:layout_height="@dimen/res_0x7f070190_dimen_0_3" android:layout_alignParentBottom="true"/>
+</RelativeLayout>

@@ -1,0 +1,2 @@
+System.logoutEvent
+-com.systoon.tuser.common.TUserConfigUnregister#clearData

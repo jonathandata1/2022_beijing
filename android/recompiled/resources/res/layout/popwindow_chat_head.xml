@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:gravity="right" android:layout_width="match_parent" android:layout_height="match_parent">
+    <com.systoon.toon.view.ShapeImageView android:id="@+id/chat_head_img" android:layout_width="@dimen/dimen_53" android:layout_height="@dimen/dimen_53" android:src="@drawable/e_logo_toon" android:contentDescription="@string/app_name" app:shape="oval"/>
+    <RelativeLayout android:layout_width="@dimen/dimen_53" android:layout_height="wrap_content">
+        <TextView android:textColor="@color/c20" android:gravity="center" android:id="@+id/chat_corner_left" android:background="@drawable/txt_circle_bg" android:layout_width="18dp" android:layout_height="18dp" android:layout_alignParentLeft="true"/>
+        <TextView android:textColor="@color/c20" android:gravity="center" android:id="@+id/chat_corner_right" android:background="@drawable/txt_circle_bg" android:layout_width="18dp" android:layout_height="18dp" android:layout_alignParentRight="true"/>
+    </RelativeLayout>
+</RelativeLayout>

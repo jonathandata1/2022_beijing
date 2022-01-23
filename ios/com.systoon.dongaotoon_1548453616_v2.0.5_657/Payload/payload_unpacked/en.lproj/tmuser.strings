@@ -1,0 +1,47 @@
+/* 
+  tmuser.strings
+  Pods
+
+  Created by MAC on 2019/7/8.
+  
+*/
+
+"您好，欢迎来到秘邮" = "Hello, welcome to Msgseal";
+"激活企业秘邮" = "Activate Msgseal";
+"登录已有秘邮" = "Hava an account";
+"注册个人秘邮" = "Register";
+"请输入你的企业邮箱地址" = "Please enter your business email address";
+"设置头像" = "Set Avatar";
+
+"填写个人信息" = "My vCard";
+"请填写名称" = "Please enter your name";
+"检验激活码" = "Verify activation code";
+"请输入%@的激活码" = "Please enter the activation code of %@";
+
+"请先激活%@" = "Please activate %@";
+"激活" = "Activate";
+"请先注册" = "Please register first";
+"注册" = "Regsiter";
+"请稍后再试" = "please try again later";
+"格式错误" = "Incorrect format";
+
+"数据加载失败" = "Failed";
+"重试" = "Retry";
+
+"由于登录账号较多,需加载数据,\n%@ 请耐心等待" = "Due to login many accounts, need to loading.\nPlease waitting %@";
+"由于当前设备长期未登录账号,需要同步信息,\n%@ 请耐心等待" = "Due to the account not logged in for a long time, it needs to synchronize information.\nPlease waitting %@";
+"正在初始化账号信息,\n%@ 请耐心等待" = "Initializer account information.\nPlease waitting %@";
+"由于更换设备,需要同步信息,\n%@ 请耐心等待" = "Due to the replace the device, it needs to synchronization information.\nPlease waitting %@";
+
+"账号信息同步" = "Sync account";
+"加密空间建立" = "Establish encryption space";
+"加载共享的通讯录" = "Load contacts";
+"解密联系人数据" = "Contacts decryption";
+"近期消息列表获取" = "Get message list";
+"近期消息解密中" = "Messages decryption";
+
+"初始化账号数据" = "Initialize account";
+"正在加载通讯录数据" = "Load contacts";
+
+
+"图片上传失败"="图片上传失败";

@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" android:gravity="top|left|center_vertical|center_horizontal|center" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+    <FrameLayout android:layout_gravity="top" android:background="@color/htjc_live_bg" android:layout_width="match_parent" android:layout_height="match_parent">
+        <SurfaceView android:layout_gravity="top" android:id="@+id/sfv_preview" android:layout_width="match_parent" android:layout_height="match_parent"/>
+        <ImageView android:id="@+id/tv_person1" android:background="@color/htjc_live_bg" android:visibility="gone" android:layout_width="match_parent" android:layout_height="20dp"/>
+        <TextView android:textSize="20sp" android:textColor="@color/htjc_orange" android:gravity="center" android:layout_gravity="right" android:id="@+id/tv_count" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="20"/>
+        <TextView android:textSize="23sp" android:textColor="@color/htjc_red" android:gravity="top|center_vertical|center_horizontal|center" android:layout_gravity="center" android:id="@+id/info" android:paddingTop="80dp" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent" android:text="4521574545"/>
+    </FrameLayout>
+    <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+        <RelativeLayout android:background="@color/htjc_title_bg" android:layout_width="match_parent" android:layout_height="44dp">
+            <ImageView android:id="@+id/iv_return" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="16dp" android:src="@drawable/htjc_title_return" android:layout_centerVertical="true"/>
+            <TextView android:textSize="24sp" android:textColor="#ffffff" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/htjc_main_title" android:layout_centerInParent="true"/>
+        </RelativeLayout>
+        <RelativeLayout android:layout_width="match_parent" android:layout_height="match_parent">
+            <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+                <RelativeLayout android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="4">
+                    <ImageView android:id="@+id/iv_facerect" android:background="@drawable/htjc_line2" android:visibility="gone" android:layout_width="@dimen/htjc_img_range_bg_layout_width" android:layout_height="@dimen/htjc_img_range_bg_layout_height" android:layout_centerInParent="true"/>
+                    <ImageView android:id="@+id/iv_guider" android:background="@drawable/htjc_anim_livedetect_flickering" android:layout_width="match_parent" android:layout_height="match_parent"/>
+                    <ImageView android:id="@+id/iv_succeed" android:background="@drawable/htjc_anim_livedetect_succeed" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true"/>
+                    <RelativeLayout android:id="@+id/rl_tip" android:background="@drawable/htjc_remind_bg" android:visibility="gone" android:layout_width="220dp" android:layout_height="36dp" android:layout_centerInParent="true">
+                        <TextView android:textSize="19sp" android:textColor="@color/htjc_txt_black" android:gravity="center" android:id="@+id/tv_tip" android:layout_width="match_parent" android:layout_height="match_parent" android:text="@string/htjc_guide_remind_dark" android:layout_centerInParent="true"/>
+                    </RelativeLayout>
+                </RelativeLayout>
+                <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="3">
+                    <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:background="@color/htjc_main_bg" android:layout_width="match_parent" android:layout_height="match_parent">
+                        <TextView android:textSize="22sp" android:textColor="@color/htjc_white" android:gravity="center" android:id="@+id/txt_message" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5dp" android:text="@string/htjc_face_in_box"/>
+                        <RelativeLayout android:id="@+id/rl_progress_anim" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5dp">
+                            <RelativeLayout android:gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                                <com.livedetect.view.RoundProgressBar android:id="@+id/roundProgressBar" android:visibility="gone" android:layout_width="154dp" android:layout_height="154dp"/>
+                            </RelativeLayout>
+                            <RelativeLayout android:gravity="center" android:layout_width="140dp" android:layout_height="140dp" android:layout_centerInParent="true">
+                                <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:id="@+id/ll_start" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentTop="true" android:layout_centerInParent="true">
+                                    <ImageView android:layout_gravity="center_horizontal" android:id="@+id/iv_start" android:background="@drawable/htjc_dark" android:visibility="visible" android:layout_width="140dp" android:layout_height="140dp" android:contentDescription="@string/htjc_look_at_me"/>
+                                </LinearLayout>
+                                <LinearLayout android:orientation="vertical" android:id="@+id/ll_gaze3" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true">
+                                    <ImageView android:layout_gravity="center_horizontal" android:id="@+id/ll_gazeiv3" android:background="@drawable/htjc_normal" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:contentDescription="@string/htjc_look_at_me"/>
+                                </LinearLayout>
+                                <LinearLayout android:orientation="vertical" android:id="@+id/ll_shake" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true">
+                                    <ImageView android:layout_gravity="center_horizontal" android:id="@+id/img_shake" android:background="@drawable/htjc_miaodaianim" android:visibility="visible" android:layout_width="140dp" android:layout_height="140dp" android:contentDescription="@string/htjc_look_at_me"/>
+                                </LinearLayout>
+                                <LinearLayout android:orientation="vertical" android:id="@+id/ll_nod" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true">
+                                    <ImageView android:layout_gravity="center_horizontal" android:id="@+id/img_nod" android:background="@drawable/htjc_miaodaianimnod" android:visibility="visible" android:layout_width="140dp" android:layout_height="140dp" android:contentDescription="@string/htjc_look_at_me"/>
+                                </LinearLayout>
+                                <LinearLayout android:orientation="vertical" android:id="@+id/ll_left" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true">
+                                    <ImageView android:layout_gravity="center_horizontal" android:id="@+id/img_left" android:background="@drawable/htjc_miaodaianimleft" android:visibility="visible" android:layout_width="140dp" android:layout_height="140dp" android:contentDescription="@string/htjc_look_at_me"/>
+                                </LinearLayout>
+                                <LinearLayout android:orientation="vertical" android:id="@+id/ll_right" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true">
+                                    <ImageView android:layout_gravity="center_horizontal" android:id="@+id/img_right" android:background="@drawable/htjc_miaodaianimright" android:visibility="visible" android:layout_width="140dp" android:layout_height="140dp" android:contentDescription="@string/htjc_look_at_me"/>
+                                </LinearLayout>
+                                <LinearLayout android:orientation="vertical" android:id="@+id/ll_blink" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true">
+                                    <ImageView android:layout_gravity="center_horizontal" android:id="@+id/img_blink" android:background="@drawable/htjc_miaodaianimblink" android:visibility="visible" android:layout_width="140dp" android:layout_height="140dp" android:contentDescription="@string/htjc_look_at_me"/>
+                                </LinearLayout>
+                                <LinearLayout android:orientation="vertical" android:id="@+id/ll_openmouth" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true">
+                                    <ImageView android:layout_gravity="center_horizontal" android:id="@+id/img_openmouth" android:background="@drawable/htjc_miaodaianimopenmouth" android:visibility="visible" android:layout_width="140dp" android:layout_height="140dp" android:contentDescription="@string/htjc_look_at_me"/>
+                                </LinearLayout>
+                            </RelativeLayout>
+                        </RelativeLayout>
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+            <TextView android:textSize="15sp" android:textColor="#ffffff" android:gravity="center" android:id="@+id/tv_gaze" android:background="#7fff8410" android:visibility="gone" android:layout_width="match_parent" android:layout_height="30dp" android:text="请您尽量保持不动，采集照片中..." android:layout_alignParentTop="true"/>
+        </RelativeLayout>
+    </LinearLayout>
+    <FrameLayout android:id="@+id/fl_rocket" android:background="#7f000000" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent">
+        <LinearLayout android:layout_gravity="center" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <ImageView android:layout_gravity="center" android:background="@drawable/htjc_live_rocket" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+            <TextView android:textSize="16sp" android:textColor="#ffffff" android:layout_gravity="center_horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10dp" android:text="飞速加载中，请稍等！"/>
+        </LinearLayout>
+    </FrameLayout>
+</FrameLayout>

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@color/color_1F2022" android:paddingLeft="@dimen/dimen_42" android:paddingTop="@dimen/dimen_50" android:paddingRight="@dimen/dimen_42" android:layout_width="fill_parent" android:layout_height="fill_parent" android:baselineAligned="false"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:id="@id/assistant_setting_bottom_layout" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentLeft="true" android:layout_alignParentStart="true">
+        <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/icon_assistant_bottom" android:scaleType="center" />
+        <LinearLayout android:gravity="center_horizontal" android:orientation="horizontal" android:paddingTop="@dimen/dimen_20" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <ImageView android:id="@id/assistant_setting_bottom_sel_image" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/icon_bottom_right_corner_select" />
+            <TextView android:textColor="@color/color_F8F9FB" android:gravity="center_vertical" android:id="@id/assistant_setting_bottom_text" android:paddingLeft="@dimen/dimen_8" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/tmail_setting_bottom" android:paddingStart="@dimen/dimen_8" />
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout android:orientation="vertical" android:id="@id/assistant_setting_top_right_layout" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentRight="true" android:layout_alignParentEnd="true">
+        <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/icon_assistant_top_right" android:scaleType="center" />
+        <LinearLayout android:gravity="center_horizontal" android:orientation="horizontal" android:paddingTop="@dimen/dimen_20" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <ImageView android:id="@id/assistant_setting_top_right_sel_image" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/card_uncheck" />
+            <TextView android:textColor="@color/color_F8F9FB" android:gravity="center_vertical" android:id="@id/assistant_setting_top_right_text" android:paddingLeft="@dimen/dimen_8" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/tmail_setting_top_right" android:paddingStart="@dimen/dimen_8" />
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>

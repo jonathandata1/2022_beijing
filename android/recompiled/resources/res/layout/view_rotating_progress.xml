@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:layout_gravity="center" android:orientation="vertical" android:background="@drawable/bg_rotating_progress" android:padding="20dp" android:layout_width="wrap_content" android:layout_height="wrap_content">
+    <com.zhuanche.commonbase.widget.IndicatorView android:layout_gravity="center" android:layout_width="30dp" android:layout_height="30dp" android:color="#f1f1f1"/>
+    <TextView android:textSize="14sp" android:textColor="#ffffff" android:layout_gravity="center" android:id="@+id/tv_rotating_progress" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="8dp" android:text="@string/sy_str_loading"/>
+</LinearLayout>

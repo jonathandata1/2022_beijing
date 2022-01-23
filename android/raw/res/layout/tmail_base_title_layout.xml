@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.msgseal.base.ui.customView.FractionTranslateLayout android:orientation="vertical" android:id="@id/main_layout_container" android:background="@color/c20" android:clickable="true" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.systoon.toon.view.navigationBar.NavigationBar android:id="@id/tmail_title_bar" android:layout_width="fill_parent" android:layout_height="@dimen/dimen_49" />
+    <include android:id="@id/rl_base_empty" android:visibility="gone" layout="@layout/activity_base_empty" />
+</com.msgseal.base.ui.customView.FractionTranslateLayout>

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:background="@color/c20" android:paddingBottom="@dimen/px_10" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <View android:id="@id/line_one" android:background="@color/c6" android:layout_width="fill_parent" android:layout_height="@dimen/dimen_0.3" />
+    <ImageView android:id="@id/img_empty" android:layout_width="@dimen/px_120" android:layout_height="@dimen/px_120" android:layout_marginTop="@dimen/px_98" android:layout_marginBottom="@dimen/px_30" android:src="@drawable/interactive_no_connect" />
+    <TextView android:textSize="@dimen/px_16" android:textColor="@color/c28" android:id="@id/tv_empty" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/top_line_no_net_work1" />
+    <TextView android:textSize="@dimen/px_15" android:textColor="@color/search_result_color" android:id="@id/tv_try_again" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/px_15" android:text="@string/interactive_try_again" />
+</LinearLayout>

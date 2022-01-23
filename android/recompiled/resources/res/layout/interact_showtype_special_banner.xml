@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent" android:layout_height="@dimen/px_80">
+    <android.support.v4.view.ViewPager android:id="@+id/interact_showtype_special_banner_viewpager" android:layout_width="match_parent" android:layout_height="match_parent"/>
+    <TextView android:textSize="@dimen/px_17" android:textColor="@color/c20" android:ellipsize="end" android:gravity="center" android:id="@+id/interact_showtype_special_banner_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/px_15" android:layout_marginRight="@dimen/px_15" android:text="ddddddddddddddddddddddddddddddddddddddddddddddddddddddddd" android:maxLines="2" android:layout_centerInParent="true"/>
+    <LinearLayout android:orientation="horizontal" android:id="@+id/interact_showtype_special_banner_points" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/px_15" android:layout_alignParentRight="true" android:layout_alignParentBottom="true"/>
+</RelativeLayout>

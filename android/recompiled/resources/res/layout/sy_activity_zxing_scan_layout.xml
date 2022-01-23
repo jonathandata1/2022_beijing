@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+    <SurfaceView android:id="@+id/sy_preview_view" android:layout_width="match_parent" android:layout_height="match_parent"/>
+    <com.zhuanche.zxing.ViewfinderView android:id="@+id/sy_viewfinder_view" android:layout_width="match_parent" android:layout_height="match_parent"/>
+    <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="437dp">
+        <TextView android:textSize="12sp" android:textColor="@color/white" android:gravity="center_horizontal" android:id="@+id/sy_tv_scan_text_des" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/sy_scan_qr_text_des"/>
+        <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="80dp" android:layout_marginRight="80dp" android:layout_alignParentLeft="true">
+            <ImageView android:id="@+id/sy_iv_flashlight" android:layout_width="38dp" android:layout_height="38dp" android:layout_marginTop="70dp" android:src="@drawable/sy_scan_flashlight_icon"/>
+            <TextView android:textSize="12sp" android:textColor="@color/white" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10dp" android:text="@string/sy_scan_qr_flashlight"/>
+        </LinearLayout>
+    </LinearLayout>
+    <com.zhuanche.commonbase.widget.homewidget.TitleBar android:id="@+id/sy_title_bar" android:layout_width="match_parent" android:layout_height="wrap_content" app:backgroundColor="@android:color/transparent" app:leftDrawable="@drawable/sy_nav_left_bar" app:titleText="@string/sy_scan_sweep"/>
+</FrameLayout>

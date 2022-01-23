@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:background="@drawable/hp_adapter_item_type_1068_radio_4" android:layout_width="match_parent" android:layout_height="176dp">
+    <ImageView android:id="@+id/typebImage" android:layout_width="match_parent" android:layout_height="176dp"/>
+</android.support.constraint.ConstraintLayout>

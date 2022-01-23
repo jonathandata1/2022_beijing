@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@color/translucent" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:id="@id/ll_share_bottom" android:background="@color/shareBackgroundColor" android:paddingTop="@dimen/dimen_12" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true">
+        <TextView android:textSize="@dimen/dimen_12" android:textColor="@color/shareTitleColor" android:gravity="center" android:id="@id/share_title" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/share_title" />
+        <Button android:textSize="@dimen/dimen_16" android:textColor="@color/shareCancelBtTextColor" android:gravity="center" android:id="@id/share_view_cancel" android:background="@color/shareCancelBtBackgroundColor" android:layout_width="fill_parent" android:layout_height="@dimen/dimen_44" android:layout_marginTop="@dimen/dimen_16" android:text="@string/share_bt_cancel" android:textAllCaps="false" />
+    </LinearLayout>
+    <View android:id="@id/ll_share_top" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_above="@id/ll_share_bottom" />
+</RelativeLayout>

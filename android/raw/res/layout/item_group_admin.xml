@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="@dimen/dimen_71"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:layout_gravity="center_vertical" android:orientation="horizontal" android:paddingLeft="@dimen/dimen_16" android:paddingRight="@dimen/dimen_16" android:layout_width="fill_parent" android:layout_height="@dimen/dimen_70">
+        <com.msgseal.base.ui.AvatarView android:layout_gravity="center_vertical" android:id="@id/avatar_image" android:layout_width="@dimen/dimen_46" android:layout_height="@dimen/dimen_46" android:src="@drawable/default_head_person133" />
+        <LinearLayout android:orientation="vertical" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+            <TextView android:textSize="@dimen/dimen_14" android:textColor="@color/text_main_color2" android:ellipsize="end" android:gravity="bottom" android:layout_gravity="center_vertical" android:id="@id/tv_text1" android:layout_width="wrap_content" android:layout_height="40.0dip" android:layout_marginLeft="@dimen/dimen_12" android:singleLine="true" android:layout_weight="1.0" />
+            <TextView android:textSize="@dimen/dimen_16" android:textColor="@color/text_subtitle_color" android:ellipsize="end" android:gravity="top" android:layout_gravity="center_vertical" android:id="@id/tv_text2" android:layout_width="wrap_content" android:layout_height="40.0dip" android:layout_marginLeft="@dimen/dimen_12" android:layout_marginTop="@dimen/dimen_5" android:singleLine="true" android:layout_weight="1.0" />
+        </LinearLayout>
+        <TextView android:textColor="@color/text_subtitle_color" android:layout_gravity="center_vertical" android:id="@id/tv_owner_label" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/admin_me_flag" />
+    </LinearLayout>
+    <View android:id="@id/separator_line" android:background="@color/separator_color" android:layout_width="fill_parent" android:layout_height="@dimen/dimen_0.3" android:layout_marginLeft="@dimen/dimen_74" />
+</LinearLayout>

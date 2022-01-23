@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:background="@drawable/ic_share_bg" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <android.support.v7.widget.RecyclerView android:id="@+id/rv_share" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="11dp" android:layout_marginTop="28dp" android:layout_marginRight="11dp"/>
+    <View android:background="#17ffffff" android:layout_width="match_parent" android:layout_height="0.5dp" android:layout_marginLeft="25dp" android:layout_marginTop="16dp" android:layout_marginRight="25dp"/>
+    <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="11dp" android:layout_marginTop="18dp" android:layout_marginRight="11dp">
+        <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@+id/layout_copy_url" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1">
+            <ImageView android:background="@drawable/icon_share_copy_url" android:layout_width="@dimen/icon_share_size" android:layout_height="@dimen/icon_share_size"/>
+            <TextView android:text="复制链接" style="@style/shareTextStyle"/>
+        </LinearLayout>
+        <View android:gravity="center" android:orientation="vertical" android:layout_width="0dp" android:layout_height="0dp" android:layout_weight="3"/>
+    </LinearLayout>
+    <Button android:textSize="16sp" android:textColor="@color/white" android:id="@+id/btn_cancel" android:background="@drawable/bg_button" android:layout_width="match_parent" android:layout_height="50dp" android:layout_marginLeft="20dp" android:layout_marginTop="24dp" android:layout_marginRight="20dp" android:layout_marginBottom="30dp" android:text="取消"/>
+</LinearLayout>

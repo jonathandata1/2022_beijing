@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="@dimen/hp_px_446"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:orientation="vertical" android:background="@drawable/hp_selector_dialog_bg" android:layout_width="wrap_content" android:layout_height="wrap_content" android:minWidth="@dimen/hp_px_300" android:layout_centerInParent="true">
+        <RelativeLayout android:layout_width="fill_parent" android:layout_height="@dimen/hp_px_78">
+            <com.makeramen.roundedimageview.RoundedImageView android:layout_width="fill_parent" android:layout_height="fill_parent" android:src="@drawable/hp_icon_selector_header_role_bg" android:scaleType="centerCrop" android:layout_alignTop="@id/rl_header" android:layout_alignBottom="@id/rl_header" app:riv_corner_radius_top_left="@dimen/hp_px_5" app:riv_corner_radius_top_right="@dimen/hp_px_5" />
+            <RelativeLayout android:id="@id/rl_header" android:layout_width="fill_parent" android:layout_height="wrap_content" android:minHeight="@dimen/hp_px_75">
+                <ImageView android:id="@id/selector_header_icon" android:visibility="gone" android:layout_width="@dimen/hp_px_15" android:layout_height="@dimen/hp_px_16" android:layout_marginLeft="@dimen/hp_px_17" android:layout_marginRight="@dimen/hp_px_7" android:src="@drawable/hp_icon_selector_handover" android:layout_centerVertical="true" />
+                <TextView android:textSize="@dimen/hp_px_24" android:textColor="@color/color_FFFFFF" android:ellipsize="end" android:id="@id/selector_header_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="16.0dip" android:layout_marginTop="25.0dip" android:text="@string/hp_handover" android:maxLines="2" android:layout_toRightOf="@id/selector_header_icon" />
+                <ImageView android:id="@id/dialog_close" android:layout_width="@dimen/hp_px_20" android:layout_height="@dimen/hp_px_22" android:layout_margin="@dimen/hp_px_13" android:src="@drawable/hp_selector_close" android:layout_alignParentRight="true" />
+            </RelativeLayout>
+        </RelativeLayout>
+        <TextView android:textSize="@dimen/hp_px_12" android:layout_gravity="center_horizontal" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/hp_px_20" android:layout_marginBottom="@dimen/hp_px_16" android:text="@string/hp_dialog_handover_hint" />
+        <android.support.v7.widget.RecyclerView android:id="@id/selector_list" android:background="@color/transparent" android:paddingBottom="@dimen/hp_px_64" android:scrollbars="none" android:layout_width="fill_parent" android:layout_height="fill_parent" android:listSelector="@null" android:cacheColorHint="@color/transparent" android:divider="@null" />
+    </LinearLayout>
+</RelativeLayout>

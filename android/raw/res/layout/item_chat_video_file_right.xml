@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:id="@id/layout_video_right" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignWithParentIfMissing="true"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.msgseal.chat.customviews.ChatPicImageView android:id="@id/img_video_thumb_right" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dimen_39" android:scaleType="centerCrop" android:transitionName="preview_share" />
+    <ImageView android:layout_gravity="center" android:id="@id/img_video_status_right" android:visibility="gone" android:layout_width="@dimen/dimen_40" android:layout_height="@dimen/dimen_40" />
+    <com.msgseal.chat.customviews.CircleProgressView android:layout_gravity="center" android:id="@id/img_video_progress_right" android:visibility="gone" android:layout_width="@dimen/dimen_40" android:layout_height="@dimen/dimen_40" />
+    <TextView android:textSize="@dimen/dimen_12" android:textColor="@color/c20" android:gravity="center|left" android:layout_gravity="end|bottom|center" android:id="@id/img_video_size_right" android:paddingRight="11.0dip" android:paddingBottom="3.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+</FrameLayout>

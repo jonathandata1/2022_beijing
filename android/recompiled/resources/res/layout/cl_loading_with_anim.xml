@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:gravity="center" android:layout_gravity="center" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+    <FrameLayout android:layout_width="100dp" android:layout_height="100dp">
+        <com.lianjia.common.vr.view.VrLoadingView android:layout_gravity="center" android:id="@+id/loading_anim" android:layout_width="90dp" android:layout_height="90dp" app:repeat="false" app:showcircle="false" app:src="@drawable/vr_loading_decoration"/>
+        <com.lianjia.common.vr.view.CircleProgressView android:id="@+id/progress_circle" android:padding="0dp" android:layout_width="match_parent" android:layout_height="match_parent" app:vr_progress_background_color="#e5e5e5" app:vr_progress_color="#ffd076" app:vr_progress_radius="39dp" app:vr_progress_stroke_width="2dp"/>
+    </FrameLayout>
+</RelativeLayout>

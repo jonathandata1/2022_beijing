@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/ll_chat_meeting_detail" android:background="@drawable/chat_item_left_bg" android:padding="@dimen/dimen_10" android:layout_width="262.0dip" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="@dimen/dimen_16" android:id="@id/tv_meeting_title_hint" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/chat_meeting_message_title" />
+    <TextView android:textSize="@dimen/dimen_16" android:id="@id/tv_meeting_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dimen_2" android:singleLine="true" />
+    <TextView android:textSize="@dimen/dimen_16" android:id="@id/tv_meeting_date" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dimen_2" android:singleLine="true" />
+    <TextView android:textSize="@dimen/dimen_16" android:id="@id/tv_meeting_location" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dimen_2" android:singleLine="true" />
+</LinearLayout>

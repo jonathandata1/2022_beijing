@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:id="@id/item_linear_face" android:background="@drawable/kf_item_viewpager" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="4.0dip" android:layout_marginTop="9.0dip" android:layout_marginRight="4.0dip" android:layout_marginBottom="9.0dip">
+        <ImageView android:id="@id/item_iv_face" android:layout_width="28.0dip" android:layout_height="28.0dip" android:layout_marginLeft="6.0dip" android:layout_marginTop="6.0dip" android:layout_marginRight="6.0dip" android:layout_marginBottom="6.0dip" android:scaleType="fitXY" android:layout_centerInParent="true" />
+    </LinearLayout>
+</RelativeLayout>

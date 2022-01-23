@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:layout_width="match_parent" android:layout_height="match_parent">
+    <View android:id="@+id/placeholder" android:background="@color/color_2E3039" android:layout_width="wrap_content" android:layout_height="0dp"/>
+    <RelativeLayout android:orientation="horizontal" android:id="@+id/rl_tablayout" android:background="@color/navBar_backgroundColor" android:layout_width="match_parent" android:layout_height="@dimen/dimen_48" android:layout_below="@+id/placeholder" android:paddingStart="@dimen/dimen_16" android:paddingEnd="@dimen/dimen_16">
+        <ImageView android:id="@+id/top_back_icon" android:visibility="gone" android:layout_width="@dimen/dimen_20" android:layout_height="@dimen/dimen_20" android:layout_marginRight="@dimen/dimen_10" android:layout_centerVertical="true" android:layout_marginEnd="@dimen/dimen_10"/>
+        <FrameLayout android:id="@+id/fl_left_place" android:layout_width="wrap_content" android:layout_height="match_parent" android:layout_toRightOf="@+id/top_back_icon">
+            <RelativeLayout android:gravity="center_vertical" android:layout_gravity="center_vertical" android:id="@+id/top_left_place" android:layout_width="wrap_content" android:layout_height="match_parent"/>
+            <RelativeLayout android:gravity="center_vertical" android:layout_gravity="center_vertical" android:id="@+id/default_top_left_place" android:layout_width="wrap_content" android:layout_height="match_parent"/>
+        </FrameLayout>
+        <FrameLayout android:id="@+id/fl_right_place" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentRight="true" android:layout_centerVertical="true">
+            <LinearLayout android:gravity="center_vertical" android:layout_gravity="center_vertical" android:orientation="horizontal" android:id="@+id/top_right_place" android:layout_width="@dimen/dimen_24" android:layout_height="@dimen/dimen_24"/>
+            <LinearLayout android:gravity="center_vertical" android:layout_gravity="center_vertical" android:orientation="horizontal" android:id="@+id/default_top_right_place" android:layout_width="@dimen/dimen_24" android:layout_height="@dimen/dimen_24"/>
+        </FrameLayout>
+        <android.support.design.widget.TabLayout android:id="@+id/tablayout" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_toLeftOf="@+id/fl_right_place" android:layout_toRightOf="@+id/fl_left_place" android:layout_centerHorizontal="true" app:tabBackground="@color/transparent" app:tabIndicatorColor="#000000" app:tabIndicatorHeight="0dp" app:tabPaddingEnd="@dimen/dimen_0" app:tabPaddingStart="@dimen/dimen_0" app:tabRippleColor="@color/transparent" app:tabSelectedTextColor="#ffffff" app:tabTextAppearance="@style/TabStyle" app:tabTextColor="#c5c5c5"/>
+    </RelativeLayout>
+    <View android:id="@+id/main_layout_divider" android:background="@color/c6" android:visibility="gone" android:layout_width="match_parent" android:layout_height="1px" android:layout_below="@+id/rl_tablayout"/>
+    <com.msgseal.chat.customviews.NoSlideViewPager android:id="@+id/tab_viewpager" android:background="@android:color/white" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_weight="1" android:layout_below="@+id/main_layout_divider"/>
+</RelativeLayout>

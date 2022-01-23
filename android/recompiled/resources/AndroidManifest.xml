@@ -1,0 +1,588 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" android:versionCode="21123121" android:versionName="2.0.4" android:compileSdkVersion="30" android:compileSdkVersionCodename="11" package="com.systoon.dongaotoon" platformBuildVersionCode="21123121" platformBuildVersionName="2.0.4">
+    <uses-sdk android:minSdkVersion="21" android:targetSdkVersion="30"/>
+    <permission android:name="com.systoon.dongaotoon.permission.service.center" android:protectionLevel="normal"/>
+    <uses-permission android:name="com.systoon.dongaotoon.permission.service.center"/>
+    <uses-permission android:name="com.android.launcher.permission.INSTALL_SHORTCUT"/>
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW"/>
+    <uses-permission android:name="android.permission.KILL_BACKGROUND_PROCESSES"/>
+    <uses-permission android:name="android.permission.RESTART_PACKAGES"/>
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE"/>
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/>
+    <uses-permission android:name="android.permission.CAMERA"/>
+    <uses-permission android:name="android.permission.DOWNLOAD_WITHOUT_NOTIFICATION"/>
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"/>
+    <uses-permission android:name="android.permission.ACCESS_LOCATION_EXTRA_COMMANDS"/>
+    <uses-permission android:name="android.permission.WRITE_CONTACTS"/>
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"/>
+    <uses-permission android:name="android.permission.CHANGE_CONFIGURATION"/>
+    <uses-permission android:name="android.permission.WRITE_SETTINGS"/>
+    <uses-permission android:name="android.permission.RECORD_AUDIO"/>
+    <uses-permission android:name="android.permission.VIBRATE"/>
+    <uses-permission android:name="android.permission.CALL_PHONE"/>
+    <uses-permission android:name="android.permission.WAKE_LOCK"/>
+    <uses-permission android:name="android.permission.READ_LOGS"/>
+    <uses-feature android:name="android.hardware.camera"/>
+    <uses-feature android:name="android.hardware.camera.autofocus"/>
+    <uses-permission android:name="android.permission.RECEIVE_USER_PRESENT"/>
+    <uses-permission android:name="android.permission.MODIFY_AUDIO_SETTINGS"/>
+    <uses-permission android:name="android.permission.GET_TASKS"/>
+    <uses-permission android:name="android.permission.READ_FRAMEBUFFER"/>
+    <uses-permission android:name="android.permission.BLUETOOTH"/>
+    <uses-permission android:name="android.permission.BLUETOOTH_ADMIN"/>
+    <uses-permission android:name="com.dh.provider.bluelock.READPERMISSION"/>
+    <uses-permission android:name="com.dh.provider.bluelock.WRITEPERMISSION"/>
+    <uses-permission android:name="android.permission.CHANGE_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.NFC"/>
+    <uses-feature android:name="android.hardware.nfc.hce"/>
+    <uses-permission android:name="org.simalliance.openmobileapi.SMARTCARD"/>
+    <uses-permission android:name="android.permission.READ_APP_BADGE"/>
+    <uses-permission android:name="android.hardware.sensor.accelerometer"/>
+    <uses-permission android:name="android.permission.READ_PHONE_STATE"/>
+    <uses-permission android:name="android.permission.READ_CONTACTS"/>
+    <uses-permission android:name="android.permission.WRITE_CONTACTS"/>
+    <uses-permission android:name="android.permission.USE_FINGERPRINT"/>
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED"/>
+    <uses-permission android:name="com.android.launcher.permission.READ_SETTINGS"/>
+    <uses-feature android:name="android.hardware.sensor.stepcounter" android:required="true"/>
+    <uses-feature android:name="android.hardware.sensor.stepdetector" android:required="true"/>
+    <uses-permission android:name="android.permission.READ_CALENDAR"/>
+    <uses-permission android:name="android.permission.DISABLE_KEYGUARD"/>
+    <uses-permission android:name="android.permission.READ_PRIVILEGED_PHONE_STATE"/>
+    <uses-permission android:name="com.huawei.android.launcher.permission.CHANGE_BADGE"/>
+    <uses-permission android:name="com.sec.android.provider.badge.permission.READ"/>
+    <uses-permission android:name="com.sec.android.provider.badge.permission.WRITE"/>
+    <uses-feature android:name="android.hardware.nfc" android:required="true"/>
+    <uses-feature android:name="android.hardware.bluetooth_le" android:required="true"/>
+    <uses-permission android:name="android.permission.WRITE_CALENDAR"/>
+    <uses-permission-sdk-23 android:name="android.permission.ACCESS_COARSE_LOCATION"/>
+    <uses-permission android:name="android.permission.REORDER_TASKS"/>
+    <uses-permission android:name="android.permission.SYSTEM_OVERLAY_WINDOW"/>
+    <uses-permission android:name="android.permission.ACCESS_BACKGROUND_LOCATION"/>
+    <permission android:name="com.systoon.dongaotoon.permission.MIPUSH_RECEIVE" android:protectionLevel="signature"/>
+    <permission android:name="com.systoon.dongaotoon.push.permission.MESSAGE" android:protectionLevel="signature"/>
+    <permission android:name="com.systoon.dongaotoon.permission.C2D_MESSAGE" android:protectionLevel="signature"/>
+    <uses-permission android:name="com.systoon.dongaotoon.permission.MIPUSH_RECEIVE"/>
+    <uses-permission android:name="com.systoon.dongaotoon.permission.PROCESS_PUSH_MSG"/>
+    <uses-permission android:name="com.systoon.dongaotoon.push.permission.MESSAGE"/>
+    <uses-permission android:name="com.systoon.dongaotoon.permission.C2D_MESSAGE"/>
+    <uses-permission android:name="com.meizu.c2dm.permission.RECEIVE"/>
+    <uses-permission android:name="com.meizu.flyme.push.permission.RECEIVE"/>
+    <uses-permission android:name="com.coloros.mcs.permission.RECIEVE_MCS_MESSAGE"/>
+    <uses-permission android:name="com.heytap.mcs.permission.RECIEVE_MCS_MESSAGE"/>
+    <uses-permission android:name="android.permission.FLASHLIGHT"/>
+    <uses-feature android:name="android.hardware.camera.front" android:required="false"/>
+    <uses-feature android:name="android.hardware.camera.flash" android:required="false"/>
+    <uses-feature android:name="android.hardware.screen.landscape"/>
+    <uses-feature android:name="android.hardware.wifi" android:required="false"/>
+    <uses-feature android:name="android.hardware.touchscreen" android:required="false"/>
+    <uses-permission android:name="android.permission.READ_PHONE_NUMBERS"/>
+    <permission android:name="com.systoon.dongaotoon.permission.PROCESS_PUSH_MSG" android:protectionLevel="signatureOrSystem"/>
+    <permission android:name="com.systoon.dongaotoon.permission.PUSH_PROVIDER" android:protectionLevel="signatureOrSystem"/>
+    <permission android:name="com.systoon.dongaotoon.permission.PUSH_WRITE_PROVIDER" android:protectionLevel="signatureOrSystem"/>
+    <uses-permission android:name="com.systoon.dongaotoon.permission.PUSH_PROVIDER"/>
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE"/>
+    <uses-permission android:name="android.permission.REQUEST_INSTALL_PACKAGES"/>
+    <uses-permission android:name="com.huawei.appmarket.service.commondata.permission.GET_COMMON_DATA"/>
+    <application android:theme="@style/ThemeLeftAndRightAnimation" android:label="@string/app_name" android:icon="@drawable/app_launcher_logo" android:name="com.secneo.apkwrapper.AW" android:allowBackup="false" android:largeHeap="true" android:supportsRtl="false" android:extractNativeLibs="true" android:usesCleartextTraffic="true" android:resizeableActivity="false" android:networkSecurityConfig="@xml/network_security_config" android:roundIcon="@drawable/app_launcher_logo" android:appComponentFactory="android.support.v4.app.CoreComponentFactory" android:isSplitRequired="true" android:requestLegacyExternalStorage="true">
+        <activity android:theme="@style/welcome_tlauncher" android:name="com.systoon.launcher.business.activity.SplashActivity" android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity>
+        <activity android:name="com.systoon.tshare.third.share.view.OutSideShareActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.SEND"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <data android:mimeType="*/*"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.SEND_MULTIPLE"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <data android:mimeType="image/*"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <data android:mimeType="*/*"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:scheme="toon137"/>
+            </intent-filter>
+        </activity>
+        <activity android:name="com.idlefish.flutterboost.containers.BoostFlutterActivity" android:configChanges="locale|keyboard|keyboardHidden|orientation|screenLayout|screenSize|density|layoutDirection|fontScale" android:windowSoftInputMode="adjustResize" android:hardwareAccelerated="true"/>
+        <activity android:theme="@style/fullscreen_dialog" android:name="com.systoon.flutter.BoostFlutterDialogActivity" android:configChanges="locale|keyboard|keyboardHidden|orientation|screenLayout|screenSize|density|layoutDirection|fontScale" android:windowSoftInputMode="adjustResize" android:hardwareAccelerated="true"/>
+        <activity android:name="com.systoon.business.webpage.SubWebViewActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.systoon.business.match.SubMatchActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.fineway.uimaplocator.activity.XHListMapWebActivity"/>
+        <activity android:name="com.fineway.uimaplocator.activity.XHMapActivity"/>
+        <activity android:theme="@android:style/Theme.Translucent.NoTitleBar" android:name="com.systoon.phoenix.wxapi.WXPayEntryActivity" android:exported="true" android:launchMode="singleTop" android:screenOrientation="portrait"/>
+        <provider android:name="android.support.v4.content.FileProvider" android:exported="false" android:authorities="com.systoon.dongaotoon.fileProvider" android:grantUriPermissions="true">
+            <meta-data android:name="android.support.FILE_PROVIDER_PATHS" android:resource="@xml/file_path"/>
+        </provider>
+        <activity android:theme="@android:style/Theme.Translucent.NoTitleBar" android:name="com.systoon.foshantoon.wxapi.WXEntryActivity" android:exported="true" android:launchMode="singleTask" android:screenOrientation="portrait"/>
+        <activity android:theme="@android:style/Theme.Translucent.NoTitleBar" android:name="com.systoon.toon.wxapi.WXEntryActivity" android:exported="true" android:launchMode="singleTask" android:screenOrientation="portrait" android:configChanges="keyboardHidden|orientation|screenSize"/>
+        <activity android:name="com.tencent.tauth.AuthActivity" android:launchMode="singleTask" android:noHistory="true">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:scheme="tencent1105636982"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:scheme=""/>
+            </intent-filter>
+        </activity>
+        <receiver android:name="com.systoon.tnoticebox.receiver.MyTPushReceiver">
+            <intent-filter android:priority="10000">
+                <action android:name="com.systoon.tpush.MESSAGE"/>
+                <action android:name="com.systoon.tpush.REGISTER"/>
+                <action android:name="com.systoon.tpush.notify"/>
+            </intent-filter>
+        </receiver>
+        <meta-data android:name="com.amap.api.v2.apikey" android:value="2a8e34899e073e8b5099fce39fadc73a"/>
+        <meta-data android:name="gm_public_key" android:value="0459AD9DF2F16BDC1D45B29B3920AECD348C6A34B7DB33743B90FD8BA63059621EFEE3204A7227413C78422281B1937824ED1911EE1E78DDAC8B5462FCF91ABD00"/>
+        <meta-data android:name="com.fineway.ipscore.locator.API_KEY" android:value="AK"/>
+        <meta-data android:name="dns_basic_domain" android:value="https://my2022.beijing2022.cn/app-dns-api"/>
+        <meta-data android:name="NETWORK_LOG" android:value="true"/>
+        <meta-data android:name="toon_app_type" android:value="137"/>
+        <meta-data android:name="custom_service_access_id" android:value="785550d0-7747-11e7-9354-4fad5f9e96ea"/>
+        <meta-data android:name="allowRegisterMulti" android:value="false"/>
+        <meta-data android:name="tmailTddressSuffix" android:value="@tmail.systoon.com"/>
+        <meta-data android:name="UMENG_CHANNEL" android:value="1372012"/>
+        <meta-data android:name="dns_public_domain" android:value="https://my2022.beijing2022.cn/app-dns-api"/>
+        <meta-data android:name="dns_root_domain" android:value="https://tmail.beijing2022.cn/cdtpdns"/>
+        <meta-data android:name="ms_app_type" android:value="@string/ms_app_id"/>
+        <meta-data android:name="TPUSH_APP_ID" android:value="1137"/>
+        <meta-data android:name="flutterEmbedding" android:value="2"/>
+        <meta-data android:name="flutterProjectType" android:value="module"/>
+        <activity android:name="com.sina.weibo.sdk.web.WebActivity" android:exported="false" android:configChanges="orientation|screenSize" android:windowSoftInputMode="adjustResize"/>
+        <activity android:theme="@android:style/Theme.Translucent.NoTitleBar" android:name="com.sina.weibo.sdk.share.ShareTransActivity" android:exported="false" android:launchMode="singleTop" android:configChanges="keyboardHidden|orientation|screenSize"/>
+        <activity android:theme="@android:style/Theme.Translucent.NoTitleBar" android:name="com.sina.weibo.sdk.share.ShareStoryActivity" android:exported="false" android:launchMode="singleTop" android:configChanges="keyboardHidden|orientation|screenSize"/>
+        <activity android:theme="@android:style/Theme.Translucent.NoTitleBar" android:name="com.sina.weibo.sdk.share.ShareChatActivity" android:exported="false" android:launchMode="singleTop" android:configChanges="keyboardHidden|orientation|screenSize"/>
+        <activity android:theme="@android:style/Theme.Translucent.NoTitleBar" android:name="com.sina.weibo.sdk.share.ShareResultActivity" android:launchMode="singleTop" android:configChanges="keyboardHidden|orientation|screenSize">
+            <intent-filter>
+                <action android:name="com.sina.weibo.sdk.action.ACTION_SDK_REQ_ACTIVITY"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="com.sina.weibo.sdk.action.ACTION_SDK_REQ_STORY"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <activity android:name="com.systoon.interactive.view.ChannelManagerActivity"/>
+        <activity android:name="com.systoon.interactive.view.InteractiveSearchActivity"/>
+        <activity android:name="com.ui.template.bottom.tab.WindowTemplateActivity" android:launchMode="singleTask" android:screenOrientation="portrait"/>
+        <activity android:theme="@style/Theme.Transparent" android:name="com.zhengtoon.tuser.login.view.UserLoginByPwdActivity"/>
+        <activity android:theme="@style/Theme.Transparent" android:name="com.zhengtoon.tuser.login.view.UserLoginByCodeActivity"/>
+        <activity android:theme="@style/Theme.Transparent" android:name="com.zhengtoon.tuser.login.view.UserLoginByCardActivity"/>
+        <activity android:name="com.zhengtoon.tuser.login.view.UserRegisterActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.zhengtoon.tuser.login.view.ForgetPwdInputPhoneNumActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.zhengtoon.tuser.login.view.SettingPasswordActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.zhengtoon.tuser.setting.view.AccountSettingActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.zhengtoon.tuser.setting.view.SettingActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.zhengtoon.tuser.setting.view.LanguageSettingActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.zhengtoon.tuser.setting.view.EasyModeActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.zhengtoon.tuser.setting.view.SetNameActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.zhengtoon.tuser.setting.view.ChangePhoneWaysActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.zhengtoon.tuser.setting.view.ChangePasswordActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.zhengtoon.tuser.setting.view.SetEmailActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.zhengtoon.tuser.setting.view.VerifyCodeActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.zhengtoon.tuser.setting.view.ChangePhoneNumActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.zhengtoon.tuser.setting.view.SetQuestionActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.zhengtoon.tuser.setting.view.SelectQuestionActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.zhengtoon.tuser.common.base.view.camera.CCameraActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.zhengtoon.tuser.setting.view.ShowAvatarActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.zhengtoon.tuser.setting.view.AboutToonActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.zhengtoon.tuser.setting.view.ProtocolToonActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.zhengtoon.tuser.setting.view.LogoutActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.zhengtoon.tuser.setting.view.LogoutVerifyCodeActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.zhengtoon.tuser.setting.view.UserCommonSettingActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.zhengtoon.tuser.setting.view.NewFeatureIntroActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.zhengtoon.tuser.setting.view.HelpAndFeedBackActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.zhengtoon.tuser.setting.view.PersonalFeedBackActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.zhengtoon.tuser.setting.view.InformationManagerActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.zhengtoon.tuser.setting.view.AddressManagerActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.zhengtoon.tuser.setting.view.AddOrEditAddressActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.zhengtoon.tuser.setting.view.AddOrEditInformationActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.zhengtoon.tuser.login.view.ForgetPwdInputCardNumActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.zhengtoon.tuser.login.view.ChangeCardNumPwdActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.zhengtoon.tuser.login.view.ResetCardNumPwdActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.zhengtoon.tuser.setting.view.CommonQuestionActivity" android:screenOrientation="portrait" android:hardwareAccelerated="false"/>
+        <activity android:name="com.zhengtoon.tuser.login.view.PCToLoginActivity" android:launchMode="singleTask" android:screenOrientation="portrait"/>
+        <activity android:theme="@style/MyActivityDialogStyle" android:name="com.zhengtoon.tuser.login.view.RegisterProtocolActivity"/>
+        <activity android:theme="@style/MyActivityDialogStyle" android:name="com.zhengtoon.tuser.login.view.LoginSetFingerPrintActivity"/>
+        <activity android:theme="@style/MyActivityDialogStyle" android:name="com.zhengtoon.tuser.login.view.LoginByFingerPrintActivity"/>
+        <activity android:theme="@style/MyActivityDialogStyle" android:name="com.zhengtoon.tuser.setting.view.SetFingerPrintActivity"/>
+        <activity android:theme="@style/MyActivityDialogStyle" android:name="com.zhengtoon.tuser.login.view.UserKickOutDialogActivity"/>
+        <activity android:theme="@style/MyActivityDialogStyle" android:name="com.zhengtoon.tuser.foreigner.view.ForeignersLoginActivity"/>
+        <activity android:theme="@style/MyActivityDialogStyle" android:name="com.zhengtoon.tuser.foreigner.view.ForeignerRegistrationActivity"/>
+        <activity android:theme="@style/MyActivityDialogStyle" android:name="com.zhengtoon.tuser.foreigner.view.ForeignerRetrievePasswordActivity"/>
+        <activity android:theme="@style/MyActivityDialogStyle" android:name="com.zhengtoon.tuser.foreigner.view.ForeignerSetPasswordActivity"/>
+        <activity android:name="com.systoon.customhomepage.view.ServeSearchActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.systoon.customhomepage.view.CustomManagerAppActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.systoon.customhomepage.view.NoticeListActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.systoon.customhomepage.view.ServiceMapShowActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.systoon.customhomepage.affair.view.AffairNoticeListActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.systoon.customhomepage.affair.view.AffairServeSearchActivity" android:screenOrientation="portrait"/>
+        <activity android:label="@string/app_name" android:name="com.ccb.ccbnetpay.activity.CcbH5PayActivity" android:screenOrientation="portrait" android:configChanges="keyboardHidden|orientation|screenSize"/>
+        <activity android:label="@string/app_name" android:name="com.ccb.ccbnetpay.activity.appresult.ResultActivity" android:screenOrientation="portrait" android:configChanges="keyboardHidden|orientation|screenSize">
+            <intent-filter>
+                <action android:name="comccbpaycomccbgovpay"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <activity android:name="com.ccb.ccbnetpay.activity.CcbUnionPayActivity" android:screenOrientation="portrait" android:configChanges="keyboardHidden|orientation|screenSize"/>
+        <activity android:theme="@android:style/Theme.NoTitleBar" android:name="android.ccb.llbt.ynccbpaylibrary.bIllPay.PayDetaileActivity" android:launchMode="singleTask"/>
+        <activity android:theme="@android:style/Theme.NoTitleBar" android:name="android.ccb.llbt.ynccbpaylibrary.bIllPay.CheckDeskActivity"/>
+        <activity android:theme="@android:style/Theme.NoTitleBar" android:name="android.ccb.llbt.ynccbpaylibrary.SDKWebViewActivity" android:launchMode="singleTask"/>
+        <receiver android:name="com.systoon.customhomepage.receiver.NetChangeReceiver">
+            <intent-filter>
+                <action android:name="android.net.conn.CONNECTIVITY_CHANGE"/>
+                <action android:name="android.net.wifi.WIFI_STATE_CHANGED"/>
+                <action android:name="android.net.wifi.STATE_CHANGE"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:name="com.systoon.customhomepage.commonlib.stepcounter.receive.TodayStepBootCompleteReceiver" android:enabled="true" android:exported="false">
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:name="com.systoon.customhomepage.commonlib.stepcounter.receive.TodayStepShutdownReceiver">
+            <intent-filter>
+                <action android:name="android.intent.action.ACTION_SHUTDOWN"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:name="com.systoon.customhomepage.commonlib.stepcounter.receive.TodayStepAlertReceive" android:enabled="true" android:exported="false"/>
+        <service android:name="com.systoon.customhomepage.commonlib.stepcounter.TodayStepService" android:enabled="true" android:exported="false" android:process=":step" android:priority="1000" android:launchMode="singleInstance">
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED"/>
+                <action android:name="android.intent.action.DATE_CHANGED"/>
+                <action android:name="android.intent.action.MEDIA_MOUNTED"/>
+                <action android:name="android.intent.action.USER_PRESENT"/>
+                <action android:name="android.intent.action.ACTION_TIME_TICK"/>
+                <action android:name="android.intent.action.ACTION_POWER_CONNECTED"/>
+                <action android:name="android.intent.action.ACTION_POWER_DISCONNECTED"/>
+            </intent-filter>
+        </service>
+        <service android:name="com.systoon.customhomepage.commonlib.stepcounter.JobSchedulerService" android:permission="android.permission.BIND_JOB_SERVICE"/>
+        <activity android:name="com.systoon.interact.interactive.view.InteractiveSearchActivity"/>
+        <activity android:name="com.systoon.toonauth.authentication.view.activity.AuthProtocolActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.systoon.toonauth.authentication.view.activity.PrimaryAuthenticationActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.systoon.toonauth.authentication.view.activity.BJCameraActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.systoon.toonauth.authentication.view.activity.AuthenticationIntroduceActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.systoon.toonauth.authentication.view.activity.AuthenticationSelectActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.systoon.toonauth.authentication.view.activity.AuthCheckFaceSuccessActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.systoon.toonauth.authentication.view.activity.AuthSuccessActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.systoon.toonauth.authentication.view.activity.AuthLevelActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.systoon.toonauth.authentication.view.activity.PhoneVerifyActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.systoon.toonauth.authentication.view.activity.SetPwdActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.systoon.toonauth.authentication.view.activity.SetPwdAgainActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.systoon.toonauth.authentication.view.activity.PwdManagerActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.systoon.toonauth.authentication.view.activity.CropImgActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.systoon.toonauth.authentication.view.activity.AuthenticationBankCardActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.systoon.toonauth.authentication.view.activity.HaiXinActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.systoon.toonauth.authentication.view.activity.HaiXinStartActivity" android:screenOrientation="portrait"/>
+        <activity android:label="@string/htjc_app_name" android:name="com.livedetect.LiveDetectActivity" android:screenOrientation="portrait" android:configChanges="keyboardHidden|orientation|screenSize"/>
+        <activity android:theme="@style/MyActivityDialogStyle" android:name="com.systoon.toonauth.authentication.view.activity.AuthResponseDialogActivity"/>
+        <activity android:theme="@style/MyActivityDialogStyle" android:name="com.systoon.toonauth.authentication.view.activity.RegisterProtocolActivity"/>
+        <activity android:name="com.msgseal.card.vcardedit.VCardSettingActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.msgseal.user.init.TmailInitActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.msgseal.chat.common.chatRelate.ChatReportActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.msgseal.chat.utils.video.PhotoRecorderActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.msgseal.chat.common.chatRelate.ChatFilePreviewActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.msgseal.chat.common.chatRelate.ChatVideoPlayActivity" android:screenOrientation="portrait" android:hardwareAccelerated="true"/>
+        <activity android:name="com.msgseal.chat.common.chatRelate.ChatBurnActivity" android:screenOrientation="portrait" android:hardwareAccelerated="true"/>
+        <activity android:name="com.msgseal.chat.common.chatRelate.ChatTextMessageActivity" android:screenOrientation="portrait" android:hardwareAccelerated="true"/>
+        <activity android:name="com.msgseal.chat.receiverpage.ReceiverViewActivity" android:launchMode="singleTask" android:screenOrientation="portrait"/>
+        <activity android:theme="@style/edit_tcard_style" android:name="com.msgseal.card.vcardcreate.VCardCreateinfoActivity" android:windowSoftInputMode="stateHidden|adjustResize"/>
+        <activity android:theme="@style/edit_tcard_style" android:name="com.msgseal.card.vcardedit.VCardEditInfoActivity" android:windowSoftInputMode="stateHidden|adjustResize"/>
+        <activity android:name="com.msgseal.card.vcardphotopreview.CardPhotoPreviewActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.msgseal.card.qr.selectqr.TmailQRCodeListActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.msgseal.card.qr.myqr.QRCodeTmailActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.msgseal.card.qr.mylistqr.TmailQRListActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.msgseal.card.base.view.CCameraActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.msgseal.card.vcardphotopreview.PhotoPreViewActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.msgseal.card.vcardread.VcardReaderActivity" android:launchMode="singleTask" android:screenOrientation="portrait"/>
+        <activity android:theme="@style/NoBlack" android:name="com.msgseal.module.view.TmailTransitActivity" android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <activity android:name="com.msgseal.base.ui.filebrowser.FileBrowserActivity"/>
+        <activity android:theme="@style/Theme.AppCompat.DayNight.DarkActionBar" android:name="com.msgseal.performance.activity.FuncPerformanceActivity"/>
+        <activity android:name="com.msgseal.performance.activity.FuncDetailActivity"/>
+        <activity android:name="com.msgseal.performance.activity.FuncSettingActivity"/>
+        <activity android:name="com.msgseal.email.share.ShareNewTemailActivity"/>
+        <activity android:name="com.msgseal.chatapp.inputapp.ChooseFileFragmentActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.msgseal.base.ui.SingleFragmentActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.msgseal.card.operator.SetRemarkNameActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.msgseal.card.operator.CardOperatorActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.msgseal.chat.report.view.ReportListActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.msgseal.chat.report.view.ReportIntroduceActivity" android:screenOrientation="portrait"/>
+        <receiver android:name="com.msgseal.module.utils.PushReceiver" android:exported="false">
+            <intent-filter>
+                <action android:name="com.systoon.dongaotoon.action.push.msg"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="com.systoon.dongaotoon.action.push.notice"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="com.systoon.dongaotoon.action.push.common"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:name="com.msgseal.module.TmailSyncCenterManager" android:exported="false">
+            <intent-filter>
+                <action android:name="com.systoon.dongaotoon.synCenter"/>
+            </intent-filter>
+        </receiver>
+        <service android:name="com.msgseal.module.utils.ChatHeadService" android:exported="false">
+            <intent-filter>
+                <action android:name="com.toon.headservice"/>
+            </intent-filter>
+        </service>
+        <activity android:theme="@style/MyActivityDialogStyle" android:name="com.systoon.tconfigcenter.view.RegisterProtocolActivity"/>
+        <activity android:name="com.systoon.toongine.adapter.ToongineActivity" android:configChanges="keyboardHidden|orientation|screenSize" android:hardwareAccelerated="true">
+            <intent-filter>
+                <action android:name="android.nfc.action.NDEF_DISCOVERED"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <data android:scheme="http"/>
+                <data android:scheme="https"/>
+                <data android:scheme="ftp"/>
+                <data android:mimeType="text/plain"/>
+            </intent-filter>
+        </activity>
+        <activity android:label="@string/app_name" android:name="com.systoon.toongine.nativeapi.common.previewImage.PreviewImgActivity"/>
+        <activity android:label="@string/app_name" android:name="com.systoon.toongine.nativeapi.common.media.audio.play.AudioMediaActivity"/>
+        <activity android:name="com.systoon.toongine.nativeapi.common.media.video.play.VideoMediaActivity" android:screenOrientation="portrait" android:configChanges="keyboard|orientation|screenSize"/>
+        <activity android:label="@string/app_name" android:name="com.systoon.toongine.nativeapi.common.media.audio.record.AudioRecordActivity" android:screenOrientation="portrait"/>
+        <activity android:label="@string/app_name" android:name="com.systoon.toongine.nativeapi.common.media.video.record.VideoRecorderActivity" android:screenOrientation="portrait"/>
+        <activity android:label="@string/app_name" android:name="com.systoon.toongine.nativeapi.common.qrcode.view.ScannerActivity" android:screenOrientation="portrait"/>
+        <activity android:label="@string/app_name" android:name="com.systoon.toongine.common.utils.camera.CCameraActivity" android:screenOrientation="portrait"/>
+        <activity android:theme="@android:style/Theme.Translucent.NoTitleBar" android:name="com.tencent.connect.common.AssistActivity" android:configChanges="keyboardHidden|orientation|screenSize"/>
+        <activity android:theme="@android:style/Theme.Translucent.NoTitleBar" android:name="com.systoon.tshare.third.share.view.BlankActivity"/>
+        <meta-data android:name="wx_app_id" android:value="wx74cc6da60f9f9f33"/>
+        <meta-data android:name="wx_app_key" android:value="bc463387070a46219e369574ae5202ce"/>
+        <meta-data android:name="qq_app_id" android:value="101913887"/>
+        <meta-data android:name="qq_app_key" android:value="f60005e9ecd86510be5d44c23db1e31b"/>
+        <meta-data android:name="wb_app_id" android:value="1894078821"/>
+        <meta-data android:name="wb_app_key" android:value="0a1e44a1580c7d288a97cafe5911723c"/>
+        <uses-library android:name="org.apache.http.legacy" android:required="false"/>
+        <activity android:name="com.systoon.tskin.view.SkinShowActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.systoon.st.ChatActivity"/>
+        <activity android:name="com.syswin.email.sender.view.SendEmailActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.syswin.email.sender.view.EmailPreviewActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.syswin.email.view.AggregateMailsActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.syswin.email.view.AddEmailBoxActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.syswin.email.view.EmailSettingActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.syswin.email.view.EmailAccountActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.syswin.email.view.EmailNameActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.systoon.taccount.AccountManagerActivity" android:screenOrientation="portrait" android:windowSoftInputMode="adjustPan"/>
+        <activity android:name="com.systoon.taccount.AccountBrowserActivity" android:screenOrientation="portrait"/>
+        <activity android:theme="@style/Theme.Transparent" android:name="com.zhengtoon.toon.common.utils.cameras.CCameraActivity" android:screenOrientation="portrait" android:configChanges="keyboardHidden|orientation|screenSize"/>
+        <activity android:theme="@style/activity_theme" android:name="com.zhengtoon.toon.common.base.SingleFragmentActivity" android:screenOrientation="portrait"/>
+        <activity android:theme="@style/activity_theme" android:name="com.zhengtoon.toon.common.base.SinglePanFragmentActivity" android:screenOrientation="portrait" android:windowSoftInputMode="stateHidden|adjustPan"/>
+        <activity android:name="com.example.tagorartc.view.ChatVideoCallActivity" android:screenOrientation="portrait" android:configChanges="keyboardHidden|orientation"/>
+        <activity android:name="com.example.tagorartc.view.GroupVideoCallActivity" android:launchMode="singleInstance" android:screenOrientation="portrait" android:configChanges="keyboardHidden|orientation"/>
+        <activity android:name="com.systoon.tebackup.activity.BackupActivity" android:screenOrientation="portrait" android:windowSoftInputMode="adjustResize"/>
+        <activity android:name="com.systoon.tebackup.activity.BackupNextActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.systoon.tebackup.activity.RecoverActivity" android:screenOrientation="portrait" android:windowSoftInputMode="adjustResize"/>
+        <activity android:name="com.systoon.tebackup.activity.SelectImportActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.systoon.tebackup.activity.SelectBackupActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.systoon.tebackup.activity.RecoverCPListActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.systoon.tebackup.activity.BackupCPListActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.systoon.tebackup.activity.KeyManagerPromptActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.systoon.tebackup.activity.CPManagerActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.systoon.tebackup.activity.RegisterBackupActivity" android:screenOrientation="portrait" android:windowSoftInputMode="adjustResize"/>
+        <activity android:name="com.systoon.tebackup.activity.RegisterBackupNextActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.systoon.tcloud.view.TCloudLoginActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.systoon.tcloud.view.TCloudPhoneVerifyActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.systoon.tcloud.view.SelectCountryActivity" android:screenOrientation="portrait" android:windowSoftInputMode="adjustPan"/>
+        <activity android:name="com.m7.imkfsdk.chat.ChatActivity" android:launchMode="singleTask" android:screenOrientation="portrait"/>
+        <activity android:name="com.m7.imkfsdk.chat.OfflineMessageActicity" android:screenOrientation="portrait"/>
+        <activity android:name="com.m7.imkfsdk.chat.ImageViewLookActivity" android:screenOrientation="portrait"/>
+        <service android:name="com.moor.imkf.tcpservice.service.IMService"/>
+        <receiver android:name="com.moor.imkf.receiver.NetWorkReceiver">
+            <intent-filter>
+                <action android:name="android.net.conn.CONNECTIVITY_CHANGE"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:name="com.m7.imkfsdk.receiver.NewMsgReceiver" android:enabled="true">
+            <intent-filter android:priority="2147483647">
+                <action android:name="com.m7.imkfsdk.msgreceiver"/>
+            </intent-filter>
+        </receiver>
+        <activity android:name="com.systoon.toon.scan.view.ScannerActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.systoon.toon.scan.view.ScanResultActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.systoon.toon.scan.view.AppQRCodeActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.systoon.tmap.GPSNaviActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.systoon.tmap.MapDrivePlanActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.systoon.tmap.MapShowActivity" android:screenOrientation="portrait"/>
+        <activity android:theme="@style/TMap.Theme.Transparent" android:name="com.systoon.tmap.MapFragmentLoadActivity" android:screenOrientation="portrait" android:windowSoftInputMode="adjustNothing"/>
+        <activity android:theme="@android:style/Theme.NoTitleBar" android:name="com.amap.api.navi.AmapRouteActivity" android:configChanges="keyboardHidden|navigation|orientation|screenSize"/>
+        <service android:name="com.amap.api.location.APSService"/>
+        <activity android:name="com.systoon.inputapps.base.InputAppBaseActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.systoon.inputapps.translate.TranslateActivity" android:launchMode="singleTop" android:screenOrientation="portrait"/>
+        <activity android:name="com.systoon.inputapps.translate.TranslateListActivity" android:screenOrientation="portrait"/>
+        <activity android:theme="@style/TPhoto.Theme.Transparent" android:name="com.systoon.toon.photo.gallery.GalleryActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.systoon.toon.photo.gallery.VideoEditActivity" android:screenOrientation="portrait"/>
+        <receiver android:name="com.systoon.tutils.Multilingual.LanguageReceiver" android:enabled="true" android:exported="false">
+            <intent-filter android:priority="1000">
+                <action android:name="android.intent.action.LOCALE_CHANGED"/>
+            </intent-filter>
+        </receiver>
+        <activity android:name="com.systoon.tutils.cropimage.TCropImageActivity" android:screenOrientation="portrait"/>
+        <provider android:name="com.sensorsdata.analytics.android.sdk.SensorsDataContentProvider" android:enabled="true" android:exported="false" android:authorities="com.systoon.dongaotoon.SensorsDataContentProvider"/>
+        <meta-data android:name="com.sensorsdata.analytics.android.MainProcessName" android:value="com.systoon.dongaotoon"/>
+        <service android:name="com.vivo.push.sdk.service.CommandClientService" android:exported="true"/>
+        <activity android:theme="@android:style/Theme.Translucent.NoTitleBar" android:name="com.vivo.push.sdk.LinkProxyClientActivity" android:exported="false" android:screenOrientation="portrait"/>
+        <receiver android:name="com.systoon.push.VivoReceiver" android:exported="false">
+            <intent-filter>
+                <action android:name="com.vivo.pushclient.action.RECEIVE"/>
+            </intent-filter>
+        </receiver>
+        <meta-data android:name="com.vivo.push.api_key" android:value="@string/vivo_push_app_key"/>
+        <meta-data android:name="com.vivo.push.app_id" android:value="@string/vivo_push_app_id"/>
+        <service android:name="com.xiaomi.push.service.XMJobService" android:permission="android.permission.BIND_JOB_SERVICE" android:enabled="true" android:exported="false" android:process=":pushservice"/>
+        <service android:name="com.xiaomi.push.service.XMPushService" android:enabled="true" android:process=":pushservice"/>
+        <service android:name="com.xiaomi.mipush.sdk.PushMessageHandler" android:enabled="true" android:exported="true"/>
+        <service android:name="com.xiaomi.mipush.sdk.MessageHandleService" android:enabled="true"/>
+        <receiver android:name="com.systoon.push.XiaomiReceiver" android:exported="true">
+            <intent-filter>
+                <action android:name="com.xiaomi.mipush.RECEIVE_MESSAGE"/>
+                <action android:name="com.xiaomi.mipush.MESSAGE_ARRIVED"/>
+                <action android:name="com.xiaomi.mipush.ERROR"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:name="com.xiaomi.push.service.receivers.NetworkStatusReceiver" android:exported="true">
+            <intent-filter>
+                <action android:name="android.net.conn.CONNECTIVITY_CHANGE"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:name="com.xiaomi.push.service.receivers.PingReceiver" android:exported="false" android:process=":pushservice">
+            <intent-filter>
+                <action android:name="com.xiaomi.push.PING_TIMER"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:name="com.systoon.push.MeizuReceiver">
+            <intent-filter>
+                <action android:name="com.meizu.flyme.push.intent.MESSAGE"/>
+                <action android:name="com.meizu.flyme.push.intent.REGISTER.FEEDBACK"/>
+                <action android:name="com.meizu.flyme.push.intent.UNREGISTER.FEEDBACK"/>
+                <action android:name="com.meizu.c2dm.intent.REGISTRATION"/>
+                <action android:name="com.meizu.c2dm.intent.RECEIVE"/>
+                <category android:name="com.systoon.dongaotoon"/>
+            </intent-filter>
+        </receiver>
+        <service android:name="com.systoon.push.HuaweiService" android:exported="false">
+            <intent-filter>
+                <action android:name="com.huawei.push.action.MESSAGING_EVENT"/>
+            </intent-filter>
+        </service>
+        <service android:name="com.heytap.msp.push.service.CompatibleDataMessageCallbackService" android:permission="com.coloros.mcs.permission.SEND_MCS_MESSAGE">
+            <intent-filter>
+                <action android:name="com.coloros.mcs.action.RECEIVE_MCS_MESSAGE"/>
+            </intent-filter>
+        </service>
+        <service android:name="com.heytap.msp.push.service.DataMessageCallbackService" android:permission="com.heytap.mcs.permission.SEND_PUSH_MESSAGE">
+            <intent-filter>
+                <action android:name="com.heytap.mcs.action.RECEIVE_MCS_MESSAGE"/>
+                <action android:name="com.heytap.msp.push.RECEIVE_MCS_MESSAGE"/>
+            </intent-filter>
+        </service>
+        <meta-data android:name="sdk_version_vivo" android:value="480"/>
+        <service android:name="com.sitech.migurun.service.AudioPlayService" android:exported="false"/>
+        <provider android:name="android.arch.lifecycle.ProcessLifecycleOwnerInitializer" android:exported="false" android:multiprocess="true" android:authorities="com.systoon.dongaotoon.lifecycle-trojan"/>
+        <activity android:theme="@style/SyAppTheme" android:name="com.zhuanche.winterolympic.home.HomeActivity" android:launchMode="singleTask" android:screenOrientation="portrait" android:configChanges="orientation|screenSize"/>
+        <activity android:theme="@style/SyAppTheme" android:name="com.zhuanche.winterolympic.home.WalkRouteActivity" android:screenOrientation="portrait"/>
+        <activity android:theme="@style/SyAppTheme" android:name="com.zhuanche.winterolympic.dispatchorder.DispatchOrderActivity" android:screenOrientation="portrait"/>
+        <activity android:theme="@style/SyAppTheme" android:name="com.zhuanche.winterolympic.chooseaddress.ChooseAddressActivity" android:screenOrientation="portrait"/>
+        <activity android:theme="@style/ActivityTransparent" android:name="com.zhuanche.winterolympic.scan.SyCaptureActivity" android:clearTaskOnLaunch="true" android:stateNotNeeded="true" android:screenOrientation="portrait" android:configChanges="keyboardHidden|orientation" android:windowSoftInputMode="stateAlwaysHidden"/>
+        <activity android:theme="@style/SyAppTheme" android:name="com.zhuanche.winterolympic.trip.CurrentTripActivity" android:launchMode="singleTop" android:screenOrientation="portrait"/>
+        <activity android:theme="@style/SyAppTheme" android:name="com.zhuanche.winterolympic.trip.CompleteTripActivity" android:launchMode="singleTop" android:screenOrientation="portrait"/>
+        <activity android:theme="@style/SyAppTheme" android:name="com.zhuanche.winterolympic.trip.DailyTripActivity" android:screenOrientation="portrait"/>
+        <activity android:theme="@style/SyAppTheme" android:name="com.zhuanche.winterolympic.trip.BusTripActivity" android:screenOrientation="portrait"/>
+        <activity android:theme="@style/SyAppTheme" android:name="com.zhuanche.winterolympic.trip.TripListActivity" android:screenOrientation="portrait"/>
+        <activity android:theme="@style/SyAppTheme" android:name="com.zhuanche.winterolympic.home.scanchooseaddr.ScanNowOderCommitActivity" android:screenOrientation="portrait"/>
+        <receiver android:name="com.zhuanche.winterolympic.receiver.LanguageReceiver">
+            <intent-filter>
+                <action android:name="android.intent.action.LOCALE_CHANGED"/>
+            </intent-filter>
+        </receiver>
+        <activity android:theme="@style/CLTheme.TranslucentAnimation" android:name="com.lianjia.common.vr.webview.VrWebviewActivity" android:process="@string/cl_webview_process" android:screenOrientation="portrait" android:configChanges="keyboardHidden|orientation|screenSize"/>
+        <activity android:name="com.lianjia.common.vr.webview.VrWebviewPluginActivity"/>
+        <activity android:theme="@android:style/Theme.Translucent.NoTitleBar" android:name="com.lianjia.common.vr.activity.MsgScreenPromptActivity" android:launchMode="singleInstance" android:screenOrientation="portrait"/>
+        <service android:name="com.lianjia.common.vr.server.WebViewInProcessService" android:enabled="true" android:exported="false" android:process="@string/cl_webview_process"/>
+        <service android:name="com.lianjia.common.vr.server.WebViewServer" android:enabled="true" android:exported="false"/>
+        <activity android:theme="@style/ActivityStyle" android:name="com.lianjia.common.vr.client.VrActivityForResult" android:launchMode="singleInstance"/>
+        <service android:name="com.lianjia.common.vr.floatview.DebugService"/>
+        <service android:name="com.meizu.cloud.pushsdk.NotificationService" android:exported="true"/>
+        <receiver android:name="com.meizu.cloud.pushsdk.SystemReceiver" android:exported="false">
+            <intent-filter>
+                <action android:name="com.meizu.cloud.pushservice.action.PUSH_SERVICE_START"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:name="com.huawei.hms.support.api.push.PushMsgReceiver" android:permission="com.systoon.dongaotoon.permission.PROCESS_PUSH_MSG" android:directBootAware="true">
+            <intent-filter>
+                <action android:name="com.huawei.intent.action.PUSH_DELAY_NOTIFY"/>
+                <action android:name="com.huawei.intent.action.PUSH"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:name="com.huawei.hms.support.api.push.PushReceiver" android:permission="com.systoon.dongaotoon.permission.PROCESS_PUSH_MSG" android:directBootAware="true">
+            <intent-filter>
+                <action android:name="com.huawei.android.push.intent.REGISTRATION"/>
+                <action android:name="com.huawei.android.push.intent.RECEIVE"/>
+            </intent-filter>
+        </receiver>
+        <service android:name="com.huawei.hms.support.api.push.service.HmsMsgService" android:enabled="true" android:exported="true" android:process=":pushservice" android:directBootAware="true">
+            <intent-filter>
+                <action android:name="com.huawei.push.msg.NOTIFY_MSG"/>
+                <action android:name="com.huawei.push.msg.PASSBY_MSG"/>
+            </intent-filter>
+        </service>
+        <provider android:name="com.huawei.hms.support.api.push.PushProvider" android:permission="com.systoon.dongaotoon.permission.PUSH_PROVIDER" android:readPermission="com.systoon.dongaotoon.permission.PUSH_PROVIDER" android:writePermission="com.systoon.dongaotoon.permission.PUSH_WRITE_PROVIDER" android:exported="true" android:authorities="com.systoon.dongaotoon.huawei.push.provider"/>
+        <meta-data android:name="com.huawei.hms.client.service.name:push" android:value="push:5.0.4.302"/>
+        <meta-data android:name="com.huawei.hms.min_api_level:push:push" android:value="1"/>
+        <provider android:name="com.huawei.hms.aaid.InitProvider" android:exported="false" android:authorities="com.systoon.dongaotoon.aaidinitprovider" android:initOrder="500"/>
+        <meta-data android:name="com.huawei.hms.client.service.name:opendevice" android:value="opendevice:5.0.4.300"/>
+        <meta-data android:name="com.huawei.hms.min_api_level:opendevice:push" android:value="1"/>
+        <meta-data android:name="com.huawei.hms.client.service.name:base" android:value="base:5.0.4.301"/>
+        <meta-data android:name="com.huawei.hms.min_api_level:base:hmscore" android:value="1"/>
+        <meta-data android:name="availableLoaded" android:value="yes"/>
+        <provider android:name="com.huawei.hms.update.provider.UpdateProvider" android:exported="false" android:authorities="com.systoon.dongaotoon.hms.update.provider" android:grantUriPermissions="true"/>
+        <activity android:theme="@android:style/Theme.Translucent" android:name="com.huawei.hms.activity.BridgeActivity" android:exported="false" android:excludeFromRecents="true" android:screenOrientation="behind" android:configChanges="locale|orientation|screenLayout|uiMode|screenSize|smallestScreenSize|layoutDirection|fontScale" android:hardwareAccelerated="true">
+            <meta-data android:name="hwc-theme" android:value="androidhwext:style/Theme.Emui.Translucent"/>
+        </activity>
+        <activity android:name="com.huawei.hms.activity.EnableServiceActivity" android:exported="false" android:configChanges="keyboardHidden|orientation|screenLayout|screenSize|smallestScreenSize"/>
+        <provider android:name="com.huawei.agconnect.core.provider.AGConnectInitializeProvider" android:exported="false" android:authorities="com.systoon.dongaotoon.AGCInitializeProvider"/>
+        <service android:name="com.huawei.agconnect.core.ServiceDiscovery" android:exported="false"/>
+        <activity android:theme="@android:style/Theme.Translucent.NoTitleBar" android:name="com.huawei.updatesdk.service.otaupdate.AppUpdateActivity" android:exported="false" android:configChanges="orientation|screenSize">
+            <meta-data android:name="hwc-theme" android:value="androidhwext:style/Theme.Emui.Translucent.NoTitleBar"/>
+        </activity>
+        <activity android:theme="@android:style/Theme.Translucent.NoTitleBar" android:name="com.huawei.updatesdk.support.pm.PackageInstallerActivity" android:exported="false" android:configChanges="keyboardHidden|orientation|screenSize">
+            <meta-data android:name="hwc-theme" android:value="androidhwext:style/Theme.Emui.Translucent"/>
+        </activity>
+        <provider android:name="com.huawei.updatesdk.fileprovider.UpdateSdkFileProvider" android:exported="false" android:authorities="com.systoon.dongaotoon.updateSdk.fileProvider" android:grantUriPermissions="true"/>
+        <meta-data android:name="com.huawei.hms.client.appid" android:value="appid=103999097"/>
+        <meta-data android:name="com.android.vending.splits.required" android:value="true"/>
+        <meta-data android:name="com.android.stamp.source" android:value="https://play.google.com/store"/>
+        <meta-data android:name="com.android.stamp.type" android:value="STAMP_TYPE_DISTRIBUTION_APK"/>
+        <meta-data android:name="com.android.vending.splits" android:resource="@xml/splits0"/>
+        <meta-data android:name="com.android.vending.derived.apk.id" android:value="2"/>
+    </application>
+</manifest>

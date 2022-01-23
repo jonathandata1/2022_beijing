@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/color_FFFFFF" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <android.support.design.widget.TabLayout android:theme="@android:style/Theme.Light" android:layout_gravity="center" android:id="@id/tabLayout" android:layout_width="fill_parent" android:layout_height="@dimen/dimen_36" android:layout_marginLeft="@dimen/dimen_6" android:layout_marginRight="@dimen/dimen_6" app:tabIndicatorColor="@color/mainColor" app:tabMode="scrollable" app:tabPaddingBottom="@dimen/dimen_8" app:tabPaddingEnd="@dimen/dimen_10" app:tabPaddingStart="@dimen/dimen_10" app:tabPaddingTop="@dimen/dimen_8" app:tabRippleColor="@android:color/transparent" app:tabSelectedTextColor="@color/color_222222" app:tabTextAppearance="@style/HomepageMyCustomTabTextAppearance" app:tabTextColor="@color/color_8E8E93" />
+    <com.systoon.customhomepage.widget.HPViewPager android:id="@id/viewPager" android:layout_width="fill_parent" android:layout_height="@dimen/dimen_136" android:layout_marginTop="@dimen/dimen_5" />
+</LinearLayout>

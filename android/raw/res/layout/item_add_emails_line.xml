@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:minHeight="@dimen/dimen_50"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="@dimen/dimen_16" android:textColor="@color/tc_2" android:id="@id/selected_receiver_item_tv" android:layout_width="wrap_content" android:layout_height="@dimen/dimen_22" android:layout_centerVertical="true" />
+    <FrameLayout android:id="@id/add_tmail_btn" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="@dimen/dimen_50" android:layout_alignParentRight="true" android:layout_centerVertical="true" android:layout_alignParentEnd="true">
+        <ImageView android:layout_gravity="center_vertical" android:id="@id/add_tmail_iv" android:background="@drawable/icon_add_email" android:focusable="true" android:focusableInTouchMode="true" android:layout_width="@dimen/dimen_20" android:layout_height="@dimen/dimen_20" android:layout_marginLeft="@dimen/dimen_10" android:layout_marginRight="@dimen/dimen_16" android:layout_marginStart="@dimen/dimen_10" android:layout_marginEnd="@dimen/dimen_16" />
+    </FrameLayout>
+    <com.syswin.email.sender.itemView.EmailAutoCompleteTextView android:textSize="@dimen/dimen_16" android:ellipsize="end" android:gravity="start|center" android:id="@id/selected_tmail_edt" android:background="@null" android:paddingTop="@dimen/dimen_14" android:paddingBottom="@dimen/dimen_14" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dimen_16" android:layout_toLeftOf="@id/add_tmail_btn" android:layout_toRightOf="@id/selected_receiver_item_tv" android:layout_centerVertical="true" android:lineSpacingExtra="@dimen/dimen_11" android:layout_marginStart="@dimen/dimen_16" android:layout_marginEnd="@dimen/dimen_16" android:layout_toStartOf="@id/add_tmail_btn" android:layout_toEndOf="@id/selected_receiver_item_tv" />
+    <View android:background="@color/c36" android:layout_width="fill_parent" android:layout_height="@dimen/dimen_0.5" android:layout_below="@id/selected_tmail_edt" />
+</RelativeLayout>

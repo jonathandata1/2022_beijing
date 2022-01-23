@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content">
+    <RelativeLayout android:id="@+id/rl_input_voice" android:background="@drawable/input_voice_bg" android:layout_width="@dimen/dimen_144" android:layout_height="@dimen/dimen_40" android:layout_marginTop="@dimen/dimen_9" android:layout_marginRight="@dimen/dimen_9">
+        <ImageView android:id="@+id/iv_input_voice_play" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dimen_14" android:src="@drawable/item_voice_play_right_icon" android:layout_alignParentLeft="true" android:layout_centerVertical="true"/>
+        <ImageView android:id="@+id/iv_input_voice_playing" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/dimen_14" android:src="@drawable/item_voice_playing_right_icon" android:layout_alignParentRight="true" android:layout_centerVertical="true"/>
+        <TextView android:textSize="@dimen/dimen_14" android:textColor="@color/color_8E8E93" android:id="@+id/tv_input_voice_time" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dimen_12" android:layout_toLeftOf="@+id/iv_input_voice_playing" android:layout_toRightOf="@+id/iv_input_voice_play" android:layout_centerVertical="true"/>
+    </RelativeLayout>
+    <ImageView android:layout_gravity="top|right|center_vertical|center_horizontal|center" android:id="@+id/del_input_voice" android:layout_width="@dimen/dimen_18" android:layout_height="@dimen/dimen_18" android:src="@drawable/del_input_icon"/>
+</FrameLayout>

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:id="@id/layout_gif_right" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dimen_39"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <pl.droidsonroids.gif.GifImageView android:layout_gravity="end|center|top" android:id="@id/img_gif_right" android:layout_width="wrap_content" android:layout_height="wrap_content" android:scaleType="fitCenter" />
+    <com.msgseal.chat.customviews.MessageItemViewGroup android:id="@id/fl_gif_load_right" android:background="@color/c36" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <com.msgseal.chat.customviews.MessageLoadProgressView android:id="@id/view_gif_load_right" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true" />
+    </com.msgseal.chat.customviews.MessageItemViewGroup>
+</FrameLayout>

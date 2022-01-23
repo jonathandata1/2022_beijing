@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <solid android:color="@color/common_dialog_edit_background_clolr" />
+    <stroke android:width="@dimen/dimen_0.5" android:color="@color/view_divider_color" />
+</shape>

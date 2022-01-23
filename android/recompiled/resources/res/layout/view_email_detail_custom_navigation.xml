@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="wrap_content" android:layout_height="wrap_content">
+    <LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="match_parent">
+        <ImageView android:layout_gravity="center" android:id="@+id/iv_mail_delete" android:paddingRight="@dimen/dimen_12" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/icon_email_del"/>
+        <ImageView android:layout_gravity="center" android:id="@+id/iv_mail_next" android:paddingRight="@dimen/dimen_12" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/icon_email_next"/>
+        <ImageView android:layout_gravity="center" android:id="@+id/iv_mail_previous" android:paddingRight="@dimen/dimen_12" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/icon_email_previous"/>
+    </LinearLayout>
+</FrameLayout>

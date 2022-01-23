@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" android:background="#1e3762" android:layout_width="match_parent" android:layout_height="45dp">
+    <ImageView android:layout_gravity="left|center_vertical|center_horizontal|center" android:id="@+id/actionbar_left_btn" android:background="@drawable/cloudwalk_actionbar_btn_selector" android:clickable="true" android:layout_width="40dp" android:layout_height="match_parent" android:src="@drawable/cloudwalk_back" android:scaleType="center"/>
+    <TextView android:layout_gravity="center" android:id="@+id/actionbar_title" android:clickable="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/haixin_start_title" style="@style/normalTextwhite"/>
+    <ImageView android:layout_gravity="right|center_vertical|center_horizontal|center" android:id="@+id/actionbar_right_btn" android:background="@drawable/cloudwalk_actionbar_btn_selector" android:visibility="gone" android:clickable="true" android:layout_width="40dp" android:layout_height="50dp" android:scaleType="center"/>
+    <TextView android:textSize="16sp" android:textColor="@android:color/white" android:gravity="center" android:layout_gravity="right|center_vertical|center_horizontal|center" android:id="@+id/actionbar_right_text" android:background="@drawable/cloudwalk_actionbar_btn_selector" android:visibility="gone" android:clickable="true" android:layout_width="40dp" android:layout_height="50dp"/>
+</FrameLayout>

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:background="@color/color_FFFFFF" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <RelativeLayout android:id="@+id/lineview" android:background="@color/color_F2F2F4" android:visibility="gone" android:layout_width="match_parent" android:layout_height="@dimen/hp_px_11"/>
+    <include layout="@layout/hp_adapter_item_view_type_header"/>
+    <View android:background="@color/color_DDDEE3" android:layout_width="match_parent" android:layout_height="@dimen/hp_px_1" android:layout_marginLeft="@dimen/hp_px_15"/>
+    <com.systoon.customhomepage.widget.NoScrollGridView android:id="@+id/gridview" android:background="@color/color_FFFFFF" android:scrollbars="none" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/hp_px_5" android:layout_marginRight="@dimen/hp_px_5" android:layout_marginBottom="@dimen/hp_px_15" android:listSelector="@color/transparent" android:horizontalSpacing="@dimen/hp_px_7" android:verticalSpacing="@dimen/hp_px_8" android:columnWidth="@dimen/hp_px_10" android:overScrollMode="never"/>
+</LinearLayout>

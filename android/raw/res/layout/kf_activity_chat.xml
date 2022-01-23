@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/root_layout" android:background="#ffebebeb" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:id="@id/chat_title" android:background="@color/maincolor" android:layout_width="fill_parent" android:layout_height="50.0dip" android:layout_alignParentTop="true">
+        <ImageView android:id="@id/chat_btn_back" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="8.0dip" android:src="@drawable/kf_ic_arrow_left" android:layout_alignParentLeft="true" android:layout_centerVertical="true" />
+        <TextView android:textSize="16.0sp" android:textColor="@color/all_white" android:id="@id/other_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="" android:layout_centerInParent="true" />
+        <Button android:textColor="@color/all_white" android:id="@id/chat_btn_convert" android:background="@color/maincolor" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="8.0dip" android:text="转人工服务" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+    </RelativeLayout>
+    <LinearLayout android:orientation="vertical" android:id="@id/bar_bottom" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true">
+        <View android:background="#ffc0c0c0" android:layout_width="fill_parent" android:layout_height="0.5dip" />
+        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/rl_bottom" android:background="#ffffffff" android:paddingTop="4.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <Button android:id="@id/chat_set_mode_voice" android:background="@drawable/kf_icon_chat_voice" android:visibility="visible" android:layout_width="32.0dip" android:layout_height="32.0dip" android:layout_marginLeft="6.0dip" />
+            <Button android:id="@id/chat_set_mode_keyboard" android:background="@drawable/kf_chatting_setmode_keyboard_btn" android:visibility="gone" android:layout_width="32.0dip" android:layout_height="32.0dip" android:layout_marginLeft="6.0dip" />
+            <com.m7.imkfsdk.recordbutton.AudioRecorderButton android:textColor="#ff727272" android:gravity="center" android:id="@id/chat_press_to_speak" android:background="@drawable/kf_btn_recorder_normal" android:visibility="gone" android:layout_width="0.0dip" android:layout_height="33.0dip" android:layout_marginLeft="6.0dip" android:layout_marginTop="4.0dip" android:layout_marginRight="6.0dip" android:layout_marginBottom="6.0dip" android:text="@string/recorder_normal" android:layout_weight="1.0" />
+            <RelativeLayout android:gravity="bottom" android:id="@id/chat_edittext_layout" android:background="@drawable/kf_input_bar_bg_normal" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginLeft="6.0dip" android:layout_marginRight="6.0dip" android:layout_marginBottom="3.0dip" android:layout_weight="1.0">
+                <EditText android:textSize="16.0sp" android:id="@id/chat_input" android:background="@null" android:paddingLeft="1.0dip" android:paddingTop="3.0dip" android:paddingRight="1.0dip" android:paddingBottom="3.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginRight="35.0dip" android:minHeight="40.0dip" android:maxLines="4" />
+                <ImageView android:layout_gravity="center|right" android:id="@id/chat_emoji_normal" android:visibility="visible" android:layout_width="24.0dip" android:layout_height="24.0dip" android:layout_margin="1.0dip" android:src="@drawable/kf_icon_chat_emoji_normal" android:scaleType="fitCenter" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+                <ImageView android:layout_gravity="center|right" android:id="@id/chat_emoji_checked" android:visibility="invisible" android:layout_width="24.0dip" android:layout_height="24.0dip" android:layout_margin="1.0dip" android:src="@drawable/kf_icon_chat_emoji_checked" android:scaleType="fitCenter" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+            </RelativeLayout>
+            <Button android:id="@id/chat_more" android:background="@drawable/kf_icon_chattype_add" android:layout_width="32.0dip" android:layout_height="32.0dip" android:layout_marginLeft="6.0dip" android:layout_marginRight="16.0dip" />
+            <Button android:textSize="16.0sp" android:textColor="#ff666666" android:id="@id/chat_send" android:background="@drawable/kf_chat_send_btn_selector" android:visibility="gone" android:layout_width="48.0dip" android:layout_height="32.0dip" android:layout_marginRight="4.0dip" android:text="发送" />
+        </LinearLayout>
+        <LinearLayout android:orientation="vertical" android:id="@id/more" android:background="#ffffffff" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <RelativeLayout android:orientation="vertical" android:id="@id/chat_face_container" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="200.0dip">
+                <android.support.v4.view.ViewPager android:id="@id/chat_emoji_vPager" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+                <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@id/chat_iv_image_face" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="10.0dip" android:layout_alignParentBottom="true" />
+            </RelativeLayout>
+            <RelativeLayout android:orientation="vertical" android:id="@id/chat_more_container" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="200.0dip">
+                <android.support.v4.view.ViewPager android:id="@id/chat_more_vPager" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+                <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@id/chat_iv_image_more" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="10.0dip" android:layout_alignParentBottom="true" />
+            </RelativeLayout>
+        </LinearLayout>
+    </LinearLayout>
+    <RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_above="@id/bar_bottom" android:layout_below="@id/chat_title">
+        <com.m7.imkfsdk.view.ChatListView android:scrollbarStyle="outsideOverlay" android:id="@id/chat_list" android:layout_width="fill_parent" android:layout_height="fill_parent" android:listSelector="#00000000" android:transcriptMode="normal" android:cacheColorHint="@null" android:divider="@null" android:dividerHeight="5.0dip" />
+    </RelativeLayout>
+    <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@id/chat_queue_ll" android:background="@color/lightgrey" android:padding="4.0dip" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="16.0dip" android:layout_marginRight="16.0dip" android:layout_below="@id/chat_title" android:layout_alignParentRight="true">
+        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="当前咨询人数较多,你排在第" />
+        <TextView android:textColor="@color/maincolor" android:id="@id/chat_queue_tv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="1" />
+        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="位" />
+    </LinearLayout>
+</RelativeLayout>

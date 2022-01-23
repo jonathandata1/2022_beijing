@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/rv_topbar" android:background="#fff5f5f5" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <Button android:textSize="@dimen/pickerview_topbar_btn_textsize" android:textColor="@drawable/selector_pickerview_btn" android:gravity="center|left" android:id="@id/btnCancel" android:background="@android:color/transparent" android:paddingLeft="@dimen/pickerview_topbar_padding" android:layout_width="wrap_content" android:layout_height="fill_parent" android:text="@string/cancel" />
+    <TextView android:textSize="@dimen/pickerview_topbar_title_textsize" android:textColor="@color/pickerview_topbar_title" android:gravity="center" android:id="@id/tvTitle" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_toLeftOf="@id/btnSubmit" android:layout_toRightOf="@id/btnCancel" android:layout_centerVertical="true" />
+    <Button android:textSize="@dimen/pickerview_topbar_btn_textsize" android:textColor="@drawable/selector_pickerview_btn" android:gravity="center|right" android:id="@id/btnSubmit" android:background="@android:color/transparent" android:paddingRight="@dimen/pickerview_topbar_padding" android:layout_width="wrap_content" android:layout_height="fill_parent" android:text="@string/toongine_determine" android:layout_alignParentRight="true" />
+</RelativeLayout>

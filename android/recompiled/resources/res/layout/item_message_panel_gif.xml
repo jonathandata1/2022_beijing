@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" android:gravity="center_horizontal" android:padding="@dimen/dimen_12" android:layout_width="@dimen/dimen_84" android:layout_height="@dimen/dimen_84">
+    <ImageView android:id="@+id/panel_view" android:layout_width="@dimen/dimen_55" android:layout_height="@dimen/dimen_55" android:src="@drawable/message_face_default_hint" android:scaleType="fitCenter" android:layout_centerHorizontal="true" android:contentDescription="@string/app_name"/>
+    <TextView android:textSize="@dimen/ts_12px" android:textColor="@color/c12" android:gravity="center" android:id="@+id/panel_text" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dimen_6" android:text="@string/chat_media_photo" android:layout_below="@+id/panel_view" android:layout_centerHorizontal="true"/>
+</RelativeLayout>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:id="@id/ll_content" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <LinearLayout android:background="@drawable/news_details" android:layout_width="fill_parent" android:layout_height="@dimen/dimen_44">
+            <RelativeLayout android:id="@id/rl_news_details_back" android:layout_width="@dimen/dimen_50" android:layout_height="@dimen/dimen_50">
+                <ImageView android:id="@id/iv_news_details_back" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/icon_news_back" android:layout_centerVertical="true" android:layout_marginStart="@dimen/dimen_16" />
+            </RelativeLayout>
+        </LinearLayout>
+        <com.systoon.business.webpage.TabWebView android:id="@id/webview" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    </LinearLayout>
+    <include android:id="@id/empty_view" android:visibility="gone" layout="@layout/webpage_empty_view" />
+</RelativeLayout>

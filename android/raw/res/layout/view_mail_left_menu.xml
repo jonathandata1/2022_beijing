@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_gravity="left" android:background="@color/color_F8F8FB" android:focusable="true" android:focusableInTouchMode="true" android:clickable="true" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="@dimen/dimen_18" android:textColor="@color/color_222222" android:id="@id/tv_menu_title" android:background="@color/list_background_color" android:paddingLeft="@dimen/dimen_16" android:paddingTop="@dimen/dimen_8" android:paddingBottom="@dimen/dimen_20" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/mail_account" />
+    <android.support.v7.widget.RecyclerView android:id="@id/rv_menu_list" android:fitsSystemWindows="true" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_below="@id/tv_menu_title" android:overScrollMode="never" />
+    <LinearLayout android:id="@id/ll_menu_setting" android:background="@color/list_background_color" android:layout_width="fill_parent" android:layout_height="@dimen/dimen_55" android:layout_marginTop="@dimen/dimen_10" android:layout_below="@id/rv_menu_list">
+        <ImageView android:layout_gravity="center_vertical" android:id="@id/iv_menu_setting" android:layout_width="@dimen/dimen_26" android:layout_height="@dimen/dimen_26" android:layout_marginLeft="@dimen/dimen_20" android:src="@drawable/icon_menu_setting" />
+        <TextView android:textSize="@dimen/ts_17px" android:textColor="@color/color_222222" android:layout_gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dimen_16" android:layout_marginTop="@dimen/dimen_16" android:layout_marginRight="@dimen/dimen_16" android:layout_marginBottom="@dimen/dimen_16" android:text="@string/mail_setting" />
+    </LinearLayout>
+</RelativeLayout>

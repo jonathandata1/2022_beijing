@@ -1,0 +1,65 @@
+/*
+ scanLanguage.strings
+ Pods
+ 
+ Created by 王妍 on 2018/8/29.
+ 
+ */
+"扫一扫" = "Scan QR Code";
+
+"周边光线较暗轻触点亮" = "Tap to turn on flash";
+"轻触关闭" = "Tap to turn off flash";
+"将二维码/条形码放到框内" = "Place the QR/Bar Code in frame";
+
+"我的二维码" = "My QR Code";
+"下载秘邮" = "Download QRcode";
+"APP二维码" = "APP QRcode";
+"相册" = "Album";
+
+"提示" = "Note";
+
+"扫一扫上面的二维码，下载秘邮" = "Scan the QR Code to Download Msgseal";
+
+"保存" = "Save";
+"已保存到系统相册" = "Saved to album";
+"保存失败" = "Failed to save";
+
+"分享" = "Share";
+"分享取消" = "Failed";
+"分享成功" = "Shared";
+
+"扫描失败" = "Failed";
+"正在识别中" = "Identifying…";
+"识别失败" = "Failed";
+
+"确定" = "Confirm";
+
+"提示" = "Tips";
+"已扫描到以下内容" = "Scanned";
+"复制全部内容" = "Copy all content";
+"复制成功" = "Copied";
+"扫描结果提醒" = "The contents is not provided by the MsgSeal.\nCopy to use.";
+
+"当前网络不可用请检查网络设置" = "Network disconnected. Check network.";
+
+"无法访问相机" = "“%@”cannot access your camera";
+"允许访问相机" = "%@ Authorize the MsgSeal to access the device\'s camera";
+
+"无法识别的二维码" = "No Code Found";
+"未识别到二维码，请重试" = "No Code Found，Try again";
+"去设置" = "Settings";
+"取消" = "Cancel";
+"二维码失效" = "Invalid QR Code";
+
+"未检测到相机设备" = "Unable to access your camera";
+"联系人" = "Contacts";
+"无法保存图片" = "Failed to save";
+"允许访问照片" = "Please go to [Settings]->[Privacy]->[Album]and allow %@ to access your Album";
+
+"我在秘邮等你" = "Hi，I am waiting for you with Msgseal！";
+"我在使用秘邮" = "MsgSeal, a new generation of mailboxes, an end-to-end encrypted communication and storage tool.\nHurry and apply for your preferred email address.\nDownload :";
+"分享微博描述" = "MsgSeal is a new generation of mailboxes with end-to-end encryption. It has many functions such as instant messaging, group, audio and video calls. We all use MsgSeal to make communication more secure and more privacy.\nNow you can apply for your preferred email address.\nIf you also use the MsgSeal ,tell me your new address.\nDownload :";
+"分享短信描述" = "【秘邮msgseal】MsgSeal is a new generation of mailboxes with end-to-end encryption. It has many functions such as instant messaging, group, audio and video calls. We all use MsgSeal to make communication more secure and more privacy.\nNow you can apply for your preferred email address.\nIf you also use the MsgSeal ,tell me your new address.\nDownload :";
+
+
+"分享到" = "Share";

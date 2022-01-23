@@ -1,0 +1,11 @@
+{
+    "TSkin_resources": {
+        "skin_back_icon": "0003_header_icon_back", 
+        "skin_default_select": "skin_default_select", 
+        "skin_default_unselect": "skin_default_unselect", 
+        "skin_net_place": "skin_net_place", 
+        "skin_net_select": "skin_net_select", 
+        "skin_select_black": "skin_select_black", 
+        "skin_select_white": "skin_select_white"
+    }
+}

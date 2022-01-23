@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:orientation="vertical" android:background="@color/c20" android:layout_width="match_parent" android:layout_height="match_parent">
+    <include android:id="@+id/in_1" layout="@layout/item_navigation_bar"/>
+    <com.systoon.toon.view.ShapeImageView android:layout_gravity="center_horizontal" android:id="@+id/siv_app_logo" android:layout_width="72dp" android:layout_height="72dp" android:layout_marginTop="40dp" app:radius_x="2" app:radius_y="2" app:shape="ring"/>
+    <TextView android:textSize="22dp" android:textColor="#000" android:layout_gravity="center_horizontal" android:id="@+id/tv_app_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="11dp" android:text="社保"/>
+    <View android:background="#dddee3" android:layout_width="match_parent" android:layout_height="1px" android:layout_marginLeft="15dp" android:layout_marginTop="29dp" android:layout_marginRight="15dp"/>
+    <TextView android:textSize="16dp" android:textColor="#222222" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="35dp" android:layout_marginTop="29dp" android:text="本服务需要获得以下权限"/>
+    <TextView android:textSize="14dp" android:textColor="#8e8e93" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="35dp" android:layout_marginTop="15dp" android:text="•  读取您的身份证信息"/>
+    <Button android:textSize="18dp" android:textColor="@color/c20" android:gravity="center" android:id="@+id/btn_agreeAuth" android:background="@drawable/btn_login_red" android:layout_width="match_parent" android:layout_height="@dimen/dimen_50" android:layout_marginLeft="@dimen/dimen_24" android:layout_marginTop="@dimen/dimen_20" android:layout_marginRight="@dimen/dimen_24" android:text="同意授权" android:onClick="agreeAuth"/>
+</LinearLayout>

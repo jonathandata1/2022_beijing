@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <View android:background="@color/black" android:layout_width="fill_parent" android:layout_height="1.0px" />
+    <include layout="@layout/adapter_performance_list" />
+    <View android:background="@color/black" android:layout_width="fill_parent" android:layout_height="1.0px" />
+    <ListView android:id="@id/lv_content" android:layout_width="fill_parent" android:layout_height="fill_parent" android:divider="@color/black" android:dividerHeight="1.0px" />
+</LinearLayout>

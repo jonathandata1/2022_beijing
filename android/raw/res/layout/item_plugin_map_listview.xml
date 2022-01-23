@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@color/c20" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:id="@id/rl_item_plugin_map_listview_choose" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginRight="10.0dip">
+        <ImageView android:id="@id/iv_item_plugin_map_listview_choose" android:background="@drawable/tmap_check" android:visibility="gone" android:layout_width="16.0dip" android:layout_height="12.0dip" android:layout_alignParentRight="true" android:layout_centerVertical="true" android:contentDescription="@string/contentdescription" />
+        <LinearLayout android:orientation="vertical" android:paddingTop="9.0dip" android:paddingBottom="9.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_toLeftOf="@id/iv_item_plugin_map_listview_choose" android:layout_alignParentLeft="true">
+            <TextView android:textSize="@dimen/dimen_16" android:textColor="@color/c12" android:gravity="center|left" android:id="@id/tv_item_plugin_map_listview_district" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="5.0dip" android:singleLine="true" />
+            <TextView android:textSize="@dimen/dimen_14" android:textColor="@color/c27" android:gravity="center|left" android:id="@id/tv_item_plugin_map_listview_addr" android:layout_width="fill_parent" android:layout_height="wrap_content" android:singleLine="true" />
+        </LinearLayout>
+    </RelativeLayout>
+    <View android:id="@id/map_adapter_divider" android:background="#ff4e5052" android:layout_width="fill_parent" android:layout_height="@dimen/dimen_0.5" android:layout_alignParentBottom="true" />
+</RelativeLayout>

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:gravity="center" android:layout_gravity="center" android:orientation="horizontal" android:background="@drawable/common_dialog_bg" android:paddingLeft="15dp" android:paddingTop="7dp" android:paddingRight="15dp" android:paddingBottom="7dp" android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <com.systoon.tuser.common.base.view.MoveRoundView android:id="@+id/loading_progress" android:layout_width="25dp" android:layout_height="25dp"/>
+        <TextView android:textAppearance="?android:attr/textAppearanceMedium" android:textSize="14sp" android:textStyle="bold" android:textColor="@color/c20" android:gravity="center" android:id="@+id/loading_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10dp" android:text="@string/tuser_loading_tip"/>
+    </LinearLayout>
+</FrameLayout>

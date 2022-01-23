@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content">
+    <LinearLayout android:gravity="center" android:orientation="vertical" android:background="@drawable/record_microphone_bj" android:padding="16dp" android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <ImageView android:id="@+id/iv_recording_icon" android:layout_width="48dp" android:layout_height="48dp" android:src="@drawable/record_microphone"/>
+        <TextView android:textSize="16sp" android:textColor="#ffffff" android:gravity="center" android:id="@+id/tv_recording_text" android:layout_width="150dp" android:layout_height="wrap_content" android:layout_marginTop="@dimen/record_margin" android:text="聆听中"/>
+    </LinearLayout>
+</LinearLayout>

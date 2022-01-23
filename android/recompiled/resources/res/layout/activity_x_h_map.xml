@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+    <RelativeLayout android:background="#f9f9f9" android:layout_width="match_parent" android:layout_height="48dp">
+        <TextView android:textSize="18sp" android:textColor="@android:color/background_dark" android:gravity="center" android:id="@+id/base_title_textview" android:layout_width="match_parent" android:layout_height="match_parent" android:text="" android:textAlignment="center"/>
+        <TextView android:textSize="17sp" android:textColor="@android:color/background_dark" android:gravity="center" android:id="@+id/base_title_back_textview" android:layout_width="wrap_content" android:layout_height="match_parent" android:layout_marginLeft="15dp" android:text="" android:drawableLeft="@mipmap/icon_xh_nv_back" android:drawablePadding="5dp" android:textAlignment="center"/>
+    </RelativeLayout>
+    <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@+id/setting_ll_1" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_below="@+id/at_colloct_title">
+        <Button android:textSize="17sp" android:textColor="@android:color/white" android:gravity="center" android:id="@+id/button_start" android:background="#11000000" android:layout_width="0dp" android:layout_height="40dp" android:layout_margin="10dp" android:text="开  始" android:layout_weight="1" android:layout_below="@+id/at_colloct_title" android:layout_alignParentRight="true" android:textAlignment="center"/>
+        <Button android:textSize="17sp" android:textColor="@android:color/white" android:gravity="center" android:id="@+id/button_setting" android:background="#11000000" android:layout_width="0dp" android:layout_height="40dp" android:layout_margin="10dp" android:text="打  点" android:layout_weight="1" android:layout_below="@+id/at_colloct_title" android:layout_alignParentRight="true" android:textAlignment="center"/>
+    </LinearLayout>
+    <com.fineway.uimaplocator.activity.XHWebView android:id="@+id/xh_map_webview" android:layout_width="match_parent" android:layout_height="match_parent"/>
+</LinearLayout>

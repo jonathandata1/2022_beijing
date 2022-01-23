@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:background="@drawable/APKTOOL_DUMMY_765" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="20.0dip" android:layout_centerInParent="true">
+        <View android:layout_width="15.0dip" android:layout_height="15.0dip" />
+        <TextView android:textSize="16.0dip" android:textColor="@color/c12" android:gravity="center" android:id="@id/Tv_title_dialgask" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="15.0dip" android:layout_marginRight="15.0dip" android:layout_marginBottom="15.0dip" android:minHeight="30.0dip" />
+        <TextView android:textSize="16.0dip" android:textColor="@color/c12" android:gravity="center" android:id="@id/Tv_message_dialgask" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="15.0dip" android:layout_marginRight="15.0dip" android:layout_marginBottom="15.0dip" android:text="" />
+        <View android:background="@color/guide_light_gray" android:layout_width="fill_parent" android:layout_height="0.30000007dip" />
+        <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="39.0dip">
+            <Button android:textSize="16.0dip" android:textColor="@color/black" android:gravity="center" android:id="@id/Btn_okdialog_dialogask" android:background="@drawable/dialog_ask_btn_selector" android:layout_width="fill_parent" android:layout_height="fill_parent" android:text="@string/finish" android:layout_weight="1.0" />
+            <View android:id="@id/line1" android:background="@color/guide_light_gray" android:layout_width="0.30000007dip" android:layout_height="fill_parent" />
+            <Button android:textSize="16.0dip" android:textColor="@drawable/org_blue_black_select" android:gravity="center" android:id="@id/Btn_mark_already_dialogask" android:background="@drawable/dialog_ask_btn_selector" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_weight="1.0" />
+            <View android:id="@id/line2" android:background="@color/guide_light_gray" android:layout_width="0.30000007dip" android:layout_height="fill_parent" />
+            <Button android:textSize="16.0dip" android:textColor="@color/black" android:gravity="center" android:id="@id/Btn_cancledialog_dialogask" android:background="@drawable/dialog_ask_btn_selector" android:layout_width="fill_parent" android:layout_height="fill_parent" android:text="@string/cancel" android:layout_weight="1.0" />
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>

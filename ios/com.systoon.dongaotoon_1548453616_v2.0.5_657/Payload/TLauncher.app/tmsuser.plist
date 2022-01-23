@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>loginTmailsOnly</key>
+	<dict>
+		<key>in</key>
+		<string>NSDictionary</string>
+		<key>out</key>
+		<string>NSDictionary</string>
+		<key>excutor</key>
+		<string>TNCLoginTmailsOnlyExcutor</string>
+		<key>desc</key>
+		<string>只登陆,不做页面跳转, 不传tmails则登陆本地所有账号</string>
+	</dict>
+    <key>loginTmailOnly</key>
+    <dict>
+        <key>in</key>
+        <string>NSDictionary</string>
+        <key>out</key>
+        <string>NSDictionary</string>
+        <key>excutor</key>
+        <string>TNCLoginTmailOnlyExcutor</string>
+        <key>desc</key>
+        <string>只登陆,不做页面跳转</string>
+    </dict>
+	<key>loginTmails</key>
+	<dict>
+		<key>in</key>
+		<string>NSDictionary</string>
+		<key>out</key>
+		<string>NSDictionary</string>
+		<key>excutor</key>
+		<string>TNCLoginTmailsExcutor</string>
+		<key>desc</key>
+		<string>!!!注意, 目前此协议只有导入密证可用, 会进入初始化流程, 然后跳转到首页, 不传tmails则登陆本地所有账号</string>
+	</dict>
+	<key>register</key>
+	<dict>
+		<key>in</key>
+		<string>NSDictionary</string>
+		<key>out</key>
+		<string>NSDictionary</string>
+		<key>excutor</key>
+		<string>TNCRegisterExcutor</string>
+	</dict>
+	<key>dispatch</key>
+	<dict>
+		<key>in</key>
+		<string>NSDictionary</string>
+		<key>out</key>
+		<string>NSDictionary</string>
+		<key>excutor</key>
+		<string>TNCUserExcutor</string>
+	</dict>
+	<key>autoImportCer</key>
+	<dict>
+		<key>in</key>
+		<string>NSDictionary</string>
+		<key>out</key>
+		<string>NSDictionary</string>
+		<key>excutor</key>
+		<string>TNCAutoImportCerExcutor</string>
+	</dict>
+	<key>version</key>
+	<string>1.0</string>
+</dict>
+</plist>

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:id="@+id/ll_tebackup_common_root" android:background="@color/c20" android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginTop="134dp">
+        <ImageView android:layout_gravity="center" android:id="@+id/iv_common_empty_icon" android:background="@drawable/icon_local_save" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+        <TextView android:textSize="@dimen/dimen_17" android:textColor="@color/tc_2" android:gravity="center" android:id="@+id/tv_common_empty_tip" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dimen_60" android:layout_marginTop="@dimen/dimen_38" android:layout_marginRight="@dimen/dimen_60" android:layout_marginBottom="@dimen/dimen_30" android:text="@string/tebackup_cp_save_success"/>
+    </LinearLayout>
+</LinearLayout>

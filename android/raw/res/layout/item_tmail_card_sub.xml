@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:id="@id/vcard_content_layout" android:background="@drawable/bg_vcard_corner" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dimen_16" android:layout_marginRight="@dimen/dimen_16">
+        <RelativeLayout android:id="@id/rl_tmail_card_container" android:layout_width="fill_parent" android:layout_height="@dimen/dimen_88">
+            <com.msgseal.base.ui.AvatarView android:id="@id/siv_tmail_card_avatar" android:layout_width="@dimen/dimen_56" android:layout_height="@dimen/dimen_56" android:layout_marginLeft="@dimen/dimen_16" android:layout_marginRight="@dimen/dimen_14" android:src="@drawable/default_head_person132" android:scaleType="fitCenter" android:layout_centerVertical="true" />
+            <ImageView android:visibility="gone" android:layout_width="@dimen/dimen_60" android:layout_height="@dimen/dimen_60" android:layout_marginTop="@dimen/dimen_8" android:src="@drawable/card_shading" android:layout_alignParentRight="true" android:layout_alignParentEnd="true" />
+            <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginRight="@dimen/dimen_16" android:layout_toRightOf="@id/siv_tmail_card_avatar" android:layout_centerVertical="true">
+                <TextView android:textSize="@dimen/dimen_20" android:textColor="@color/color_F8F9FB" android:ellipsize="end" android:id="@id/tv_tmail_card_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="1" android:singleLine="true" />
+                <TextView android:textSize="@dimen/dimen_16" android:textColor="@color/color_CCF8F9FB" android:ellipsize="end" android:id="@id/tv_tmail" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dimen_2" android:layout_marginRight="@dimen/dimen_16" android:maxLines="1" />
+            </LinearLayout>
+        </RelativeLayout>
+        <View android:id="@id/groupline" android:background="@color/separator_color" android:layout_width="fill_parent" android:layout_height="@dimen/dimen_0.3" android:layout_below="@id/rl_tmail_card_container" />
+        <RelativeLayout android:paddingLeft="@dimen/dimen_16" android:paddingRight="@dimen/dimen_16" android:layout_width="fill_parent" android:layout_height="@dimen/dimen_45" android:layout_below="@id/groupline">
+            <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/setDefVcard" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_centerVertical="true">
+                <ImageView android:id="@id/iv_tmail_card_default" android:layout_width="@dimen/dimen_18" android:layout_height="@dimen/dimen_18" android:layout_marginRight="@dimen/dimen_8" android:src="@drawable/card_uncheck" android:scaleType="centerCrop" android:contentDescription="@string/app_name" />
+                <TextView android:textSize="@dimen/dimen_13" android:textColor="@color/color_e1e1e1" android:gravity="center_vertical" android:id="@id/tv_tmail_card_default" android:layout_width="wrap_content" android:layout_height="fill_parent" android:text="@string/tmail_card_default_setting" />
+            </LinearLayout>
+            <LinearLayout android:gravity="center|right" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginLeft="@dimen/dimen_8" android:layout_toRightOf="@id/setDefVcard">
+                <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/signatureView" android:layout_width="wrap_content" android:layout_height="fill_parent">
+                    <ImageView android:background="@drawable/signature_icon" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/dimen_4" android:contentDescription="@string/app_name" android:layout_marginEnd="@dimen/dimen_4" />
+                    <TextView android:textSize="@dimen/dimen_13" android:textColor="@color/color_e1e1e1" android:gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_marginRight="@dimen/dimen_10" android:text="@string/tmail_card_signature" />
+                </LinearLayout>
+                <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/editVcard" android:layout_width="wrap_content" android:layout_height="fill_parent">
+                    <ImageView android:background="@drawable/card_edit" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/dimen_4" android:contentDescription="@string/app_name" android:layout_marginEnd="@dimen/dimen_4" />
+                    <TextView android:textSize="@dimen/dimen_13" android:textColor="@color/color_e1e1e1" android:gravity="center_vertical" android:id="@id/tv_tmail_card_edit" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_marginRight="@dimen/dimen_10" android:text="@string/tmail_card_edit" />
+                </LinearLayout>
+                <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/delVcard" android:layout_width="wrap_content" android:layout_height="fill_parent">
+                    <ImageView android:background="@drawable/card_delete" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/dimen_4" android:contentDescription="@string/app_name" android:layout_marginEnd="@dimen/dimen_4" />
+                    <TextView android:textSize="@dimen/dimen_13" android:textColor="@color/color_e1e1e1" android:gravity="center_vertical" android:id="@id/tv_tmail_card_delete" android:layout_width="wrap_content" android:layout_height="fill_parent" android:text="@string/tmail_card_delete" />
+                </LinearLayout>
+            </LinearLayout>
+        </RelativeLayout>
+    </RelativeLayout>
+    <View android:id="@id/divider" android:layout_width="fill_parent" android:layout_height="@dimen/dimen_1" />
+</LinearLayout>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:background="@color/c20" android:layout_width="match_parent" android:layout_height="match_parent">
+    <include android:id="@+id/in_1" layout="@layout/toon_item_navigation_bar"/>
+    <ImageView android:id="@+id/iv_background" android:background="@drawable/easy_mode_bg" android:layout_width="match_parent" android:layout_height="@dimen/dimen_180" android:layout_marginTop="@dimen/dimen_49"/>
+    <LinearLayout android:orientation="vertical" android:id="@+id/view_container" android:background="@drawable/easy_mode_center_bg" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dimen_16" android:layout_marginTop="@dimen/dimen_140" android:layout_marginRight="@dimen/dimen_16">
+        <TextView android:textSize="@dimen/dimen_30" android:textColor="@color/color_222222" android:layout_gravity="center_horizontal" android:id="@+id/tv_esay_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dimen_40" android:text="@string/easy_mode_title"/>
+        <TextView android:textSize="@dimen/dimen_22" android:textColor="@color/color_444444" android:gravity="center" android:layout_gravity="center_horizontal" android:id="@+id/tv_esay_subtitle" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dimen_12" android:text="@string/easy_mode_desc"/>
+        <TextView android:textSize="@dimen/dimen_24" android:textColor="@color/c20" android:gravity="center" android:layout_gravity="center_horizontal" android:id="@+id/tv_enable" android:background="@drawable/btn_enable_bg" android:layout_width="match_parent" android:layout_height="@dimen/dimen_52" android:layout_marginLeft="@dimen/dimen_30" android:layout_marginTop="@dimen/dimen_40" android:layout_marginRight="@dimen/dimen_30" android:text="@string/easy_mode_enable"/>
+    </LinearLayout>
+</FrameLayout>

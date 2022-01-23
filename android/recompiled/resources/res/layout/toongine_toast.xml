@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" android:layout_gravity="center" android:background="@drawable/toongine_prompt_bg" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10dp" android:layout_marginRight="10dp" android:minWidth="@dimen/dimen_104" android:minHeight="@dimen/dimen_50">
+    <TextView android:textSize="@dimen/ts_16px" android:textColor="@color/c20" android:gravity="center" android:layout_gravity="center" android:id="@+id/tvToast" android:padding="10dp" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+</FrameLayout>

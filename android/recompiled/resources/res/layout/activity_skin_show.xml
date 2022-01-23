@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:background="#141517" android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:gravity="center" android:id="@+id/skin_linearLayout" android:layout_width="match_parent" android:layout_height="@dimen/dimen_94" android:layout_alignParentBottom="true" android:layout_centerVertical="true">
+        <android.support.v7.widget.RecyclerView android:layout_gravity="center_vertical" android:id="@+id/gv_color" android:layout_width="wrap_content" android:layout_height="wrap_content" android:overScrollMode="never"/>
+    </LinearLayout>
+    <View android:id="@+id/skin_separator" android:background="#4e5052" android:layout_width="match_parent" android:layout_height="@dimen/res_0x7f070190_dimen_0_3" android:layout_above="@+id/skin_linearLayout"/>
+    <ImageView android:id="@+id/id_image_show" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginLeft="@dimen/dimen_57" android:layout_marginTop="@dimen/dimen_25" android:layout_marginRight="@dimen/dimen_57" android:layout_marginBottom="@dimen/dimen_27" android:layout_above="@+id/skin_separator" android:layout_centerHorizontal="true"/>
+</RelativeLayout>

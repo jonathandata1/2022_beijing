@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <PreferenceCategory android:title="@string/sy_str_scanning_title">
+        <CheckBoxPreference android:title="@string/sy_str_decode_1D_product_title" android:key="preferences_decode_1D_product" android:defaultValue="true" />
+        <CheckBoxPreference android:title="@string/sy_str_decode_1D_industrial_title" android:key="preferences_decode_1D_industrial" android:defaultValue="true" />
+        <CheckBoxPreference android:title="@string/sy_str_decode_QR_title" android:key="preferences_decode_QR" android:defaultValue="true" />
+        <CheckBoxPreference android:title="@string/sy_str_decode_Data_Matrix_title" android:key="preferences_decode_Data_Matrix" android:defaultValue="true" />
+        <CheckBoxPreference android:title="@string/sy_str_decode_Aztec_title" android:key="preferences_decode_Aztec" android:defaultValue="false" />
+        <CheckBoxPreference android:title="@string/sy_str_decode_PDF417_title" android:key="preferences_decode_PDF417" android:defaultValue="false" />
+    </PreferenceCategory>
+    <PreferenceCategory android:title="@string/sy_str_actions_title">
+        <CheckBoxPreference android:title="@string/sy_str_play_beep_title" android:key="preferences_play_beep" android:defaultValue="true" />
+        <CheckBoxPreference android:title="@string/sy_str_vibrate_title" android:key="preferences_vibrate" android:defaultValue="false" />
+        <CheckBoxPreference android:title="@string/sy_str_copy_to_clipboard_title" android:key="preferences_copy_to_clipboard" android:defaultValue="true" />
+        <CheckBoxPreference android:title="@string/sy_str_auto_open_web_title" android:key="preferences_auto_open_web" android:defaultValue="false" />
+        <CheckBoxPreference android:title="@string/sy_str_remember_duplicates_title" android:key="preferences_remember_duplicates" android:summary="@string/sy_str_remember_duplicates_summary" android:defaultValue="false" />
+        <CheckBoxPreference android:title="@string/sy_str_history_title" android:key="preferences_history" android:summary="@string/sy_str_history_summary" android:defaultValue="true" />
+        <CheckBoxPreference android:title="@string/sy_str_supplemental_title" android:key="preferences_supplemental" android:summary="@string/sy_str_supplemental_summary" android:defaultValue="true" />
+    </PreferenceCategory>
+    <PreferenceCategory android:title="@string/sy_str_general_title">
+        <ListPreference android:entries="@array/preferences_front_light_options" android:title="@string/sy_str_front_light_title" android:key="preferences_front_light_mode" android:summary="@string/sy_str_front_light_summary" android:defaultValue="OFF" android:entryValues="@array/preferences_front_light_values" />
+        <CheckBoxPreference android:title="@string/sy_str_auto_focus_title" android:key="preferences_auto_focus" android:defaultValue="true" />
+        <CheckBoxPreference android:title="@string/sy_str_invert_scan_title" android:key="preferences_invert_scan" android:summary="@string/sy_str_invert_scan_summary" android:defaultValue="false" />
+        <CheckBoxPreference android:title="@string/sy_str_bulk_mode_title" android:key="preferences_bulk_mode" android:summary="@string/sy_str_bulk_mode_summary" android:defaultValue="false" />
+        <CheckBoxPreference android:title="@string/sy_str_orientation_title" android:key="preferences_orientation" android:defaultValue="true" />
+    </PreferenceCategory>
+    <PreferenceCategory android:title="@string/sy_str_result_title">
+        <EditTextPreference android:title="@string/sy_str_custom_product_search_title" android:key="preferences_custom_product_search" android:summary="@string/sy_str_custom_product_search_summary" />
+        <ListPreference android:entries="@array/country_codes" android:title="@string/sy_str_search_country" android:key="preferences_search_country" android:defaultValue="-" android:entryValues="@array/country_codes" />
+    </PreferenceCategory>
+    <PreferenceCategory android:title="@string/sy_str_device_bug_workarounds_title">
+        <CheckBoxPreference android:title="@string/sy_str_disable_continuous_focus_title" android:key="preferences_disable_continuous_focus" android:summary="@string/sy_str_disable_continuous_focus_summary" android:defaultValue="true" />
+        <CheckBoxPreference android:title="@string/sy_str_disable_exposure_title" android:key="preferences_disable_exposure" android:defaultValue="true" />
+        <CheckBoxPreference android:title="@string/sy_str_disable_metering_title" android:key="preferences_disable_metering" android:defaultValue="true" />
+        <CheckBoxPreference android:title="@string/sy_str_disable_barcode_scene_mode_title" android:key="preferences_disable_barcode_scene_mode" android:defaultValue="true" />
+    </PreferenceCategory>
+</PreferenceScreen>

@@ -1,0 +1,3 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TextView android:background="@color/color_f8f8f8" android:paddingLeft="@dimen/dimen_15" android:paddingRight="@dimen/dimen_20" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="@dimen/dimen_23"
+  xmlns:android="http://schemas.android.com/apk/res/android" />

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" android:id="@+id/cramea" android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:orientation="vertical" android:id="@+id/rl_cramea" android:background="0x7f080765" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="20dp" android:layout_centerInParent="true">
+        <TextView android:textSize="16dp" android:textColor="@color/c12" android:gravity="center_horizontal" android:layout_gravity="center_horizontal" android:id="@+id/tv_title" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="15dp" android:text="@string/is_logout"/>
+        <TextView android:textSize="14dp" android:textColor="@color/c12" android:gravity="center_horizontal" android:id="@+id/tv_content" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_margin="10dp" android:text="退出后扫描记录无法保存" android:layout_below="@+id/tv_title" android:layout_centerHorizontal="true"/>
+        <RelativeLayout android:layout_width="match_parent" android:layout_height="48dp" android:layout_marginTop="12dp" android:layout_below="@+id/tv_content">
+            <TextView android:textSize="@dimen/ts_14px" android:textColor="@color/c25" android:gravity="center" android:id="@+id/tv_dialog_confirm" android:layout_width="75dp" android:layout_height="36dp" android:layout_marginRight="12dp" android:text="@string/continue_photo" android:layout_alignParentRight="true" android:layout_centerVertical="true"/>
+            <TextView android:textSize="@dimen/ts_14px" android:textColor="@color/c25" android:gravity="center" android:id="@+id/tv_dialog_cancle" android:layout_width="75dp" android:layout_height="36dp" android:layout_marginRight="12dp" android:text="@string/ok_logout" android:layout_toLeftOf="@+id/tv_dialog_confirm" android:layout_centerVertical="true"/>
+        </RelativeLayout>
+    </LinearLayout>
+</RelativeLayout>

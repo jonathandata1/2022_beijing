@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ripple android:color="#b3ffffff"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item>
+        <selector>
+            <item android:state_enabled="false" android:drawable="@drawable/sy_shape_black_btn_disable" />
+            <item android:drawable="@drawable/sy_shape_black_btn_enable" />
+        </selector>
+    </item>
+</ripple>

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.zhuanche.winterolympic.view.refreshlayout.PtrClassicFrameLayout android:id="@id/sy_refresh" android:layout_width="fill_parent" android:layout_height="fill_parent" app:ptr_duration_to_close="200" app:ptr_duration_to_close_header="1000" app:ptr_keep_header_when_refresh="true" app:ptr_pull_to_fresh="false" app:ptr_ratio_of_header_height_to_refresh="1.2" app:ptr_resistance="1.7">
+        <android.support.v7.widget.RecyclerView android:id="@id/sy_rlv_trip_list" android:layout_width="fill_parent" android:layout_height="fill_parent" android:overScrollMode="never" />
+    </com.zhuanche.winterolympic.view.refreshlayout.PtrClassicFrameLayout>
+    <include layout="@layout/sy_loading_layout" />
+</FrameLayout>

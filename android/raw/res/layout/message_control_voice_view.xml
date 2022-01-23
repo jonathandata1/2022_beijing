@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.msgseal.inputtablet.utils.BlurringView android:id="@id/blurringView" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <FrameLayout android:id="@id/fl_control_voice_close" android:layout_width="@dimen/dimen_35" android:layout_height="@dimen/dimen_35" android:layout_marginLeft="@dimen/dimen_20" android:layout_marginTop="@dimen/dimen_30" android:layout_marginRight="@dimen/dimen_20">
+        <ImageView android:layout_gravity="center" android:id="@id/iv_control_voice_close" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/icon_close_input_view" />
+    </FrameLayout>
+    <LinearLayout android:orientation="vertical" android:id="@id/ll_control_voice_container" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dimen_20" android:layout_marginTop="@dimen/dimen_44" android:layout_marginRight="@dimen/dimen_20" android:layout_below="@id/fl_control_voice_close" android:layout_centerHorizontal="true">
+        <ImageView android:id="@id/iv_control_voice_animation" android:layout_width="fill_parent" android:layout_height="@dimen/dimen_68" android:src="@drawable/icon_helper_record0" />
+        <TextView android:textSize="@dimen/ts_20px" android:textColor="@color/c20" android:gravity="center" android:layout_gravity="center" android:id="@id/tv_control_voice_time" android:paddingTop="@dimen/dimen_10" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="00:00" />
+    </LinearLayout>
+    <LinearLayout android:orientation="vertical" android:paddingBottom="@dimen/dimen_40" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true">
+        <TextView android:textSize="@dimen/dimen_15" android:textColor="@color/c20" android:layout_gravity="center" android:id="@id/tv_control_voice_record" android:paddingBottom="@dimen/dimen_14" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/message_voice_start_record" />
+        <com.msgseal.inputtablet.widgets.VoiceRecordProgressView android:id="@id/view_control_voice_time" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    </LinearLayout>
+    <TextView android:textSize="@dimen/dimen_12" android:textColor="#66f8f9fb" android:id="@id/tv_voice_mark" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/dimen_5" android:maxLines="1" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true" />
+</RelativeLayout>

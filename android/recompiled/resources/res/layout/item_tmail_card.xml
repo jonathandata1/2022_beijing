@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <RelativeLayout android:id="@+id/rl_tmail_card_container" android:clipChildren="false" android:clipToPadding="false" android:layout_width="match_parent" android:layout_height="@dimen/dimen_50">
+        <ImageView android:id="@+id/tv_item_tmail_card_arrow" android:layout_width="@dimen/dimen_6" android:layout_height="@dimen/dimen_10" android:layout_marginLeft="@dimen/dimen_10" android:layout_marginRight="@dimen/dimen_16" android:src="@drawable/common_arrow_right" android:layout_alignParentRight="true" android:layout_centerVertical="true" android:contentDescription="@string/app_name" android:layout_alignParentEnd="true"/>
+        <LinearLayout android:gravity="left|center_vertical|center_horizontal|center" android:orientation="vertical" android:paddingLeft="@dimen/dimen_16" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/dimen_32" android:layout_centerVertical="true">
+            <TextView android:textSize="@dimen/dimen_16" android:ellipsize="end" android:id="@+id/tv_item_tmail_card_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="1"/>
+        </LinearLayout>
+    </RelativeLayout>
+</LinearLayout>

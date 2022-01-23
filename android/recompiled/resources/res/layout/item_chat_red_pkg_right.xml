@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" android:id="@+id/layout_red_pkg_right" android:layout_width="@dimen/dimen_226" android:layout_height="@dimen/dimen_92" android:layout_alignWithParentIfMissing="true">
+    <com.msgseal.chat.customviews.ChatImageView android:id="@+id/bg_white_pkg" android:paddingLeft="@dimen/dimen_17" android:paddingTop="@dimen/dimen_10" android:paddingBottom="@dimen/dimen_3" android:layout_width="match_parent" android:layout_height="match_parent" android:scaleType="fitXY" android:layout_alignParentTop="true"/>
+    <com.msgseal.chat.customviews.ChatImageView android:id="@+id/bg_red_pkg" android:paddingLeft="@dimen/dimen_17" android:paddingTop="@dimen/dimen_10" android:paddingBottom="@dimen/dimen_3" android:layout_width="match_parent" android:layout_height="@dimen/dimen_68" android:layout_alignParentTop="true"/>
+    <ImageView android:id="@+id/icon_red_pkg" android:layout_width="@dimen/dimen_34" android:layout_height="@dimen/dimen_34" android:layout_marginLeft="@dimen/dimen_12" android:layout_marginTop="@dimen/dimen_17" android:layout_alignParentTop="true"/>
+    <LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dimen_12" android:layout_marginTop="@dimen/dimen_16" android:layout_marginRight="@dimen/dimen_18" android:layout_toRightOf="@+id/icon_red_pkg" android:layout_alignParentTop="true">
+        <TextView android:textSize="@dimen/dimen_15" android:textColor="@color/c20" android:ellipsize="end" android:id="@+id/tv_right_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="1"/>
+        <TextView android:textSize="@dimen/dimen_14" android:textColor="@color/c20" android:id="@+id/tv_right_subtitle" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+    </LinearLayout>
+    <TextView android:textSize="@dimen/dimen_12" android:textColor="@color/c27" android:id="@+id/tv_red_pkg_type" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dimen_12" android:layout_marginBottom="@dimen/dimen_5" android:layout_alignParentBottom="true"/>
+</RelativeLayout>

@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" android:id="@+id/face_detail_bg" android:background="@color/c20" android:layout_width="@dimen/dimen_70" android:layout_height="@dimen/dimen_70">
+    <pl.droidsonroids.gif.GifImageView android:id="@+id/face_grid_item_image" android:layout_width="@dimen/dimen_50" android:layout_height="@dimen/dimen_50" android:layout_marginLeft="@dimen/dimen_10" android:layout_marginTop="@dimen/dimen_5" android:layout_marginRight="@dimen/dimen_10" android:layout_marginBottom="@dimen/dimen_15"/>
+    <ImageView android:id="@+id/face_grid_item_image_bg" android:background="@drawable/face_detail_grid_bg" android:visibility="gone" android:layout_width="@dimen/dimen_50" android:layout_height="@dimen/dimen_50" android:layout_marginLeft="@dimen/dimen_10" android:layout_marginTop="@dimen/dimen_5" android:layout_marginRight="@dimen/dimen_10" android:layout_marginBottom="@dimen/dimen_15" android:contentDescription="@string/app_name"/>
+</RelativeLayout>

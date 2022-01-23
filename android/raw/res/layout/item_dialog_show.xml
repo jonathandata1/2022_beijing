@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:layout_gravity="center" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:layout_gravity="center" android:orientation="vertical" android:background="@drawable/login_pop_bg" android:layout_width="wrap_content" android:layout_height="@dimen/dimen_44">
+        <TextView android:textSize="@dimen/dimen_16" android:textColor="@color/c12" android:gravity="center_vertical" android:id="@id/tv_dialog_title" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginLeft="@dimen/dimen_10" android:layout_marginRight="@dimen/dimen_10" android:singleLine="true" />
+    </RelativeLayout>
+</LinearLayout>

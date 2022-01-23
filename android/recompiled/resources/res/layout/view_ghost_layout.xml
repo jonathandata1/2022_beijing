@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:background="@color/transparent" android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:orientation="vertical" android:id="@+id/ll_whole" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_centerInParent="true">
+        <RelativeLayout android:id="@+id/rl_content" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <ImageView android:id="@+id/iv_top_bg" android:layout_width="match_parent" android:layout_height="wrap_content" android:scaleType="fitXY" android:minHeight="@dimen/dimen_120"/>
+            <TextView android:textSize="@dimen/dimen_18" android:textColor="@color/white" android:id="@+id/tv_tip" android:paddingLeft="@dimen/dimen_30" android:paddingRight="@dimen/dimen_30" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dimen_30" android:layout_marginBottom="@dimen/dimen_10" android:text="服务提醒："/>
+            <TextView android:textSize="@dimen/dimen_16" android:textColor="@color/white" android:id="@+id/tv_show_content" android:paddingLeft="@dimen/dimen_30" android:paddingRight="@dimen/dimen_30" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_below="@+id/tv_tip"/>
+        </RelativeLayout>
+        <ImageView android:background="@drawable/appcenter_ghost_bottom_bg" android:layout_width="match_parent" android:layout_height="@dimen/dimen_65"/>
+        <ImageView android:layout_gravity="center" android:id="@+id/iv_close" android:layout_width="@dimen/dimen_44" android:layout_height="@dimen/dimen_44" android:layout_marginTop="@dimen/dimen_22" android:src="@drawable/appcenter_icon_close"/>
+    </LinearLayout>
+</RelativeLayout>

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.lianjia.common.vr.view.NativeVRView android:id="@id/nativeVrView" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <com.lianjia.common.vr.panorama.DirectionCircle android:layout_gravity="end|center" android:id="@id/directionCircle" android:layout_width="100.0dip" android:layout_height="100.0dip" />
+    <ImageView android:layout_gravity="center" android:id="@id/iv_vr_cover" android:layout_width="fill_parent" android:layout_height="fill_parent" android:scaleType="centerCrop" />
+</FrameLayout>

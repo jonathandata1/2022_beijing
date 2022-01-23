@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:layout_gravity="center" android:orientation="vertical" android:id="@id/common_tdialog_ll" android:background="@drawable/tdialog_bg" android:layout_width="292.0dip" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="@dimen/ts_19px" android:textColor="@color/common_dialog_tv_title_color" android:gravity="left" android:layout_gravity="center_horizontal" android:id="@id/dialog_tv_title" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dimen_24" android:layout_marginTop="@dimen/dimen_20" android:layout_marginRight="@dimen/dimen_24" android:text="提示" />
+    <TextView android:textSize="@dimen/ts_16px" android:textColor="@color/common_dialog_tv_content_color" android:gravity="left" android:id="@id/dialog_tv_content" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dimen_24" android:layout_marginTop="@dimen/dimen_8" android:layout_marginRight="@dimen/dimen_24" android:text="nihao" />
+    <RelativeLayout android:id="@id/dialog_relativeLayout" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dimen_20" android:layout_marginBottom="@dimen/dimen_20">
+        <TextView android:textSize="@dimen/ts_16px" android:textColor="@color/common_dialog_right_bt_color" android:id="@id/dialog_right_bt" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/dimen_24" android:text="确定" android:layout_alignParentRight="true" />
+        <TextView android:textSize="@dimen/ts_16px" android:textColor="@color/common_dialog_left_bt_color" android:id="@id/dialog_left_bt" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/dimen_24" android:text="取消" android:layout_toLeftOf="@id/dialog_right_bt" />
+    </RelativeLayout>
+</LinearLayout>

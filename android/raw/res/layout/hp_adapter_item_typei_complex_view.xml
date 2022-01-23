@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:id="@id/rl_top" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <TextView android:textSize="@dimen/hp_px_10" android:textColor="@color/color_DF3031" android:gravity="center" android:id="@id/tv_tag_top" android:background="@drawable/hp_topline_typei_notice_tag_bg" android:paddingLeft="@dimen/hp_px_3" android:paddingTop="@dimen/hp_px_1" android:paddingRight="@dimen/hp_px_3" android:paddingBottom="@dimen/hp_px_1" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/hp_px_4" android:text="@string/hp_newest" android:layout_centerVertical="true" />
+        <TextView android:textSize="@dimen/hp_px_14" android:textColor="@color/color_000000" android:ellipsize="end" android:gravity="center_vertical" android:id="@id/title_top" android:layout_width="fill_parent" android:layout_height="wrap_content" android:maxLines="1" android:singleLine="true" android:maxLength="100" android:layout_toRightOf="@id/tv_tag_top" android:layout_centerVertical="true" />
+    </RelativeLayout>
+    <RelativeLayout android:id="@id/rl_bottom" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/hp_px_5" android:layout_below="@id/rl_top">
+        <TextView android:textSize="@dimen/hp_px_10" android:textColor="@color/color_DF3031" android:gravity="center" android:id="@id/tv_tag_bottom" android:background="@drawable/hp_topline_typei_notice_tag_bg" android:paddingLeft="@dimen/hp_px_3" android:paddingTop="@dimen/hp_px_1" android:paddingRight="@dimen/hp_px_3" android:paddingBottom="@dimen/hp_px_1" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/hp_px_4" android:text="@string/hp_newest" android:layout_centerVertical="true" />
+        <TextView android:textSize="@dimen/hp_px_14" android:textColor="@color/color_000000" android:ellipsize="end" android:gravity="center_vertical" android:id="@id/title_bottom" android:layout_width="fill_parent" android:layout_height="wrap_content" android:maxLines="1" android:singleLine="true" android:maxLength="100" android:layout_toRightOf="@id/tv_tag_bottom" android:layout_centerVertical="true" />
+    </RelativeLayout>
+</RelativeLayout>

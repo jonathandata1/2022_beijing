@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:background="@drawable/hp_prompt_bg" android:layout_width="wrap_content" android:layout_height="wrap_content" android:minWidth="@dimen/hp_px_104" android:minHeight="@dimen/hp_px_50"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center_vertical" android:layout_gravity="center" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/hp_px_20" android:layout_marginTop="@dimen/hp_px_14" android:layout_marginRight="@dimen/hp_px_20" android:layout_marginBottom="@dimen/hp_px_14">
+        <ImageView android:id="@id/image_toast_prompt" android:background="@drawable/hp_toast_show_right" android:layout_width="@dimen/hp_px_50" android:layout_height="@dimen/hp_px_50" android:layout_marginRight="@dimen/hp_px_20" />
+        <TextView android:textSize="@dimen/hp_px_16" android:textColor="@color/color_FFFFFF" android:gravity="center" android:id="@id/tv_toast_prompt" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    </LinearLayout>
+</FrameLayout>

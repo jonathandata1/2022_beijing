@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:background="@color/backgroundColor_dark" android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:orientation="horizontal" android:id="@+id/ll_admin_manager" android:background="@color/backgroundColor" android:paddingLeft="@dimen/dimen_16" android:paddingRight="@dimen/dimen_16" android:layout_width="match_parent" android:layout_height="@dimen/dimen_50">
+        <TextView android:textSize="@dimen/dimen_16" android:textColor="@color/text_main_color2" android:layout_gravity="center_vertical" android:id="@+id/label_admin_manager" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/d_group_admin_manager"/>
+        <View android:layout_width="@dimen/dimen_0" android:layout_height="@dimen/dimen_1" android:layout_weight="1"/>
+        <ImageView android:layout_gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/right_arrows"/>
+    </LinearLayout>
+</LinearLayout>

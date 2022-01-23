@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="@dimen/px_120">
+        <android.support.v4.view.ViewPager android:id="@id/interact_showtype_things_banner_viewpager" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/interact_showtype_things_banner_points" android:layout_width="wrap_content" android:layout_height="@dimen/px_35" android:layout_marginRight="@dimen/px_15" android:layout_alignParentRight="true" android:layout_alignParentBottom="true" />
+    </RelativeLayout>
+    <View android:background="@color/c5" android:layout_width="fill_parent" android:layout_height="@dimen/px_10" />
+</LinearLayout>

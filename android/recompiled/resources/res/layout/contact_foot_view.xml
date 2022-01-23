@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:id="@+id/ll_number" android:background="@color/contact_bg_color" android:layout_width="match_parent" android:layout_height="match_parent">
+    <TextView android:textSize="@dimen/dimen_16" android:textColor="@color/c9" android:gravity="center" android:id="@+id/tv_number" android:layout_width="match_parent" android:layout_height="@dimen/dimen_44" android:layout_marginBottom="@dimen/dimen_20"/>
+</LinearLayout>

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/rl_item_navigation_high_bar_left_right" android:background="@color/transparent" android:layout_width="fill_parent" android:layout_height="@dimen/dimen_68"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include android:id="@id/in_navigation_bar_back" android:layout_width="@dimen/dimen_49" android:layout_height="@dimen/dimen_49" layout="@layout/toon_item_navigation_bar_b_i" />
+    <com.zhengtoon.toon.view.ShapeImageView android:id="@id/sv_item_navigation_bar_title_avatar" android:layout_width="@dimen/dimen_38" android:layout_height="@dimen/dimen_38" android:layout_marginTop="@dimen/dimen_6" android:layout_centerHorizontal="true" />
+    <RelativeLayout android:gravity="center" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_below="@id/sv_item_navigation_bar_title_avatar" android:layout_alignParentBottom="true">
+        <TextView android:textSize="@dimen/dimen_12" android:textColor="@color/c12" android:gravity="center" android:id="@id/tv_item_navigation_bar_title" android:background="@color/transparent" android:layout_width="wrap_content" android:layout_height="@dimen/dimen_20" android:text="xxx" android:maxLines="1" android:lines="1" android:singleLine="true" />
+        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/ll_bar_title_right" android:layout_width="wrap_content" android:layout_height="@dimen/dimen_20" android:layout_toRightOf="@id/tv_item_navigation_bar_title" />
+    </RelativeLayout>
+    <LinearLayout android:gravity="end|center" android:id="@id/ll_item_navigation_bar_right" android:background="@color/transparent" android:paddingRight="@dimen/dimen_12" android:layout_width="@dimen/dimen_49" android:layout_height="@dimen/dimen_49" android:layout_alignParentRight="true" android:paddingEnd="@dimen/dimen_12" android:layout_alignParentEnd="true">
+        <TextView android:textSize="@dimen/dimen_17" android:textColor="@color/c12" android:gravity="center" android:id="@id/tv_item_navigation_bar_right" android:background="@color/transparent" android:layout_width="wrap_content" android:layout_height="wrap_content" android:lines="1" android:singleLine="true" />
+    </LinearLayout>
+    <LinearLayout android:gravity="end|center" android:id="@id/ll_item_navigation_bar_right_left" android:background="@color/transparent" android:paddingRight="@dimen/dimen_12" android:layout_width="@dimen/dimen_49" android:layout_height="@dimen/dimen_49" android:layout_toLeftOf="@id/ll_item_navigation_bar_right" android:paddingEnd="@dimen/dimen_12">
+        <TextView android:textSize="@dimen/dimen_17" android:textColor="@color/c12" android:gravity="center" android:id="@id/tv_item_navigation_bar_right_left" android:background="@color/transparent" android:layout_width="wrap_content" android:layout_height="wrap_content" android:lines="1" android:singleLine="true" />
+    </LinearLayout>
+    <View android:id="@id/v_navigation_bar" android:background="@color/c6" android:layout_width="fill_parent" android:layout_height="@dimen/dimen_0.3" android:layout_alignParentBottom="true" />
+</RelativeLayout>

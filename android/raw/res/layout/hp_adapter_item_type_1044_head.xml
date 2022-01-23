@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/rl_background" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.zyp.cardview.YcCardView android:background="@color/transparent" android:layout_width="fill_parent" android:layout_height="wrap_content" app:ycCardCornerRadius="8.0dip" app:ycCardElevation="6.0dip" app:ycEndShadowColor="@color/transparent" app:ycStartShadowColor="@color/color_03000000">
+        <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <ImageView android:id="@id/iv_app_icon" android:layout_width="@dimen/dimen_40" android:layout_height="@dimen/dimen_40" android:layout_marginTop="@dimen/dimen_12" />
+            <TextView android:textSize="16.0sp" android:textColor="@color/color_5B5B5B" android:id="@id/tv_app_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dimen_4" android:text="@string/apptitle1044" />
+            <TextView android:textSize="@dimen/dimen_12" android:textColor="@color/color_9C9C9C" android:id="@id/tv_app_sub_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/dimen_12" android:text="@string/subAppTitle1044" />
+        </LinearLayout>
+    </com.zyp.cardview.YcCardView>
+</LinearLayout>

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" android:id="@+id/bannerContainer" android:clipChildren="false" android:layout_width="match_parent" android:layout_height="match_parent">
+    <com.youth.banner.view.BannerViewPager android:id="@+id/bannerViewPager" android:clipChildren="false" android:layout_width="match_parent" android:layout_height="match_parent"/>
+    <RelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true">
+        <LinearLayout android:gravity="center" android:layout_gravity="bottom" android:orientation="horizontal" android:id="@+id/circleIndicator" android:padding="10dp" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+        <TextView android:textColor="#ffffff" android:gravity="center" android:id="@+id/numIndicator" android:background="@drawable/black_background" android:visibility="gone" android:layout_width="40dp" android:layout_height="40dp" android:layout_margin="8dp" android:text="1/1" android:layout_alignParentRight="true"/>
+        <LinearLayout android:orientation="horizontal" android:id="@+id/titleView" android:background="#44000000" android:visibility="gone" android:layout_width="match_parent" android:layout_height="40dp" android:layout_below="@+id/circleIndicator">
+            <TextView android:textColor="#ffffff" android:ellipsize="marquee" android:gravity="center_vertical" android:id="@+id/bannerTitle" android:paddingLeft="10dp" android:focusable="true" android:focusableInTouchMode="true" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent" android:singleLine="true" android:layout_weight="1000"/>
+            <FrameLayout android:paddingLeft="10dp" android:paddingRight="10dp" android:layout_width="wrap_content" android:layout_height="match_parent">
+                <TextView android:textColor="#ffffff" android:gravity="center_vertical" android:id="@+id/numIndicatorInside" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="match_parent" android:text="1/1"/>
+                <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@+id/indicatorInside" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="match_parent"/>
+            </FrameLayout>
+        </LinearLayout>
+    </RelativeLayout>
+    <ImageView android:id="@+id/bannerDefaultImage" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent" android:scaleType="centerCrop"/>
+</RelativeLayout>

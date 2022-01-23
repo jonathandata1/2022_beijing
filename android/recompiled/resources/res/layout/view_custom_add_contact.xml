@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="horizontal" android:background="@color/backgroundColor" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <ImageView android:layout_gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dimen_16" android:src="@drawable/icon_select_add"/>
+    <TextView android:textSize="@dimen/dimen_16" android:textColor="@color/text_main_color" android:layout_gravity="center_vertical" android:id="@+id/tv_add_contact" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dimen_8" android:text="@string/contact_add_contact" android:layout_weight="1"/>
+    <View android:layout_gravity="center_vertical" android:id="@+id/separator_line" android:background="@color/separator_color" android:layout_width="@dimen/dimen_1" android:layout_height="@dimen/dimen_30"/>
+    <ImageView android:layout_gravity="center_vertical" android:id="@+id/iv_scan_contact" android:paddingLeft="@dimen/dimen_20" android:paddingTop="@dimen/dimen_15" android:paddingRight="@dimen/dimen_20" android:paddingBottom="@dimen/dimen_15" android:layout_width="@dimen/dimen_60" android:layout_height="@dimen/dimen_50" android:src="@drawable/icon_select_scan"/>
+</LinearLayout>

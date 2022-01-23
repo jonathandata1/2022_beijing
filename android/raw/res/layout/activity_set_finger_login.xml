@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/c20" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <TextView android:textSize="@dimen/dimen_17" android:textColor="@color/tc_3" android:layout_gravity="right" android:id="@id/tv_finger_print_jump" android:padding="@dimen/dimen_15" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/finger_print_jump" />
+    <TextView android:textSize="@dimen/dimen_26" android:textStyle="bold" android:textColor="@color/c28" android:paddingLeft="@dimen/dimen_24" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dimen_40" android:text="@string/finger_set_tip" android:lineSpacingMultiplier="1.2" />
+    <ImageView android:layout_gravity="center" android:id="@id/iv_set_finger_print" android:background="@drawable/icon_fingerprint" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dimen_40" />
+    <TextView android:textColor="@color/tc_1" android:layout_gravity="center" android:id="@id/tv_set_finger_print" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="20.0dip" android:text="@string/toonuser_finger_click_login" />
+    <LinearLayout android:gravity="bottom|center" android:layout_gravity="bottom" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginBottom="30.0dip">
+        <LinearLayout android:gravity="center" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="@dimen/dimen_40">
+            <LinearLayout android:gravity="center" android:id="@id/ll_finger_print_state" android:layout_width="@dimen/dimen_30" android:layout_height="@dimen/dimen_40">
+                <CheckBox android:id="@id/ck_finger_print_state" android:background="@drawable/user_protocol_check_bg" android:layout_width="@dimen/dimen_15" android:layout_height="@dimen/dimen_15" android:button="@null" />
+            </LinearLayout>
+            <TextView android:textSize="@dimen/dimen_13" android:textColor="#ff8e8e93" android:gravity="center" android:id="@id/tv_notice_tip" android:layout_width="wrap_content" android:layout_height="@dimen/dimen_40" android:text="@string/finger_set_state_tip" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

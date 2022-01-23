@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/view_type_a" android:background="@color/color_FFFFFF" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="@dimen/hp_px_17" android:textStyle="bold" android:textColor="@color/color_5B5B5B" android:gravity="center_vertical" android:id="@id/serviceType" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/hp_px_16" android:layout_marginTop="@dimen/hp_px_12" android:layout_marginRight="@dimen/hp_px_22" android:layout_marginBottom="@dimen/hp_px_11" android:text="@string/hp_customized_service" android:maxLines="1" />
+    <com.systoon.customhomepage.widget.NoScrollGridView android:id="@id/gridview" android:background="@color/color_FFFFFF" android:scrollbars="none" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/hp_px_15" android:layout_marginTop="@dimen/hp_px_5" android:layout_marginRight="@dimen/hp_px_15" android:layout_marginBottom="@dimen/hp_px_10" android:listSelector="@color/transparent" android:horizontalSpacing="@dimen/hp_px_3" android:verticalSpacing="@dimen/hp_px_5" android:overScrollMode="never" />
+</LinearLayout>

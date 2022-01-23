@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" android:id="@+id/search_view" android:background="@color/transparent" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <View android:id="@+id/search_rl_bg" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_alignTop="@+id/search_bar_bg" android:layout_alignBottom="@+id/search_ll"/>
+    <View android:id="@+id/search_bar_bg" android:background="@color/color_C6C6C8" android:layout_width="match_parent" android:layout_height="@dimen/hp_px_25"/>
+    <RelativeLayout android:gravity="center_vertical" android:id="@+id/search_ll" android:layout_width="match_parent" android:layout_height="@dimen/hp_px_44" android:layout_below="@+id/search_bar_bg">
+        <Space android:id="@+id/space" android:layout_width="@dimen/hp_px_15" android:layout_height="wrap_content" android:layout_centerVertical="true"/>
+        <RelativeLayout android:gravity="center_vertical" android:id="@+id/choose_rl" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="match_parent" android:layout_marginRight="@dimen/hp_px_5" android:layout_toRightOf="@+id/space">
+            <TextView android:textSize="@dimen/hp_px_16" android:textColor="@color/color_FFFFFF" android:ellipsize="end" android:id="@+id/choose_city_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxWidth="@dimen/hp_px_100" android:text="@string/hp_city_name" android:maxLines="1" android:singleLine="true" android:maxLength="20"/>
+            <ImageView android:id="@+id/city_handover" android:layout_width="@dimen/hp_px_12" android:layout_height="@dimen/hp_px_12" android:layout_marginLeft="@dimen/hp_px_3" android:src="@drawable/hp_handover_icon" android:layout_toRightOf="@+id/choose_city_text"/>
+        </RelativeLayout>
+        <LinearLayout android:orientation="horizontal" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/hp_px_10" android:layout_centerVertical="true">
+            <TextView android:textSize="@dimen/hp_px_26" android:textColor="@color/color_FFFFFF" android:gravity="bottom" android:layout_gravity="bottom" android:id="@+id/weatherText" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/hp_px_6"/>
+            <RelativeLayout android:layout_gravity="bottom" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                <ImageView android:layout_gravity="bottom" android:id="@+id/weater_icon" android:visibility="gone" android:layout_width="@dimen/hp_px_20" android:layout_height="@dimen/hp_px_20" android:layout_marginBottom="@dimen/hp_px_3"/>
+                <TextView android:textSize="@dimen/hp_px_12" android:textColor="@color/color_FFFFFF" android:layout_gravity="bottom" android:id="@+id/weather_describe" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/hp_px_3"/>
+            </RelativeLayout>
+            <TextView android:textSize="@dimen/hp_px_12" android:textColor="@color/color_FFFFFF" android:gravity="bottom" android:layout_gravity="bottom" android:id="@+id/step_today" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/hp_px_6" android:text="@string/hp_step_today"/>
+        </LinearLayout>
+        <ImageView android:id="@+id/search_icon" android:layout_width="@dimen/hp_px_28" android:layout_height="@dimen/hp_px_28" android:layout_marginRight="@dimen/hp_px_10" android:src="@drawable/hp_icon_search" android:layout_toLeftOf="@+id/richscan" android:layout_centerVertical="true"/>
+        <ImageView android:id="@+id/richscan" android:layout_width="@dimen/hp_px_28" android:layout_height="@dimen/hp_px_28" android:layout_marginRight="@dimen/hp_px_10" android:src="@drawable/hp_icon_richscan" android:layout_toLeftOf="@+id/qrcode" android:layout_centerVertical="true"/>
+        <ImageView android:id="@+id/qrcode" android:layout_width="@dimen/hp_px_28" android:layout_height="@dimen/hp_px_28" android:layout_marginRight="@dimen/hp_px_15" android:src="@drawable/hp_icon_qrcode" android:layout_alignParentRight="true" android:layout_centerVertical="true"/>
+    </RelativeLayout>
+</RelativeLayout>

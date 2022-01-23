@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:background="@color/white" android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:gravity="left" android:orientation="vertical" android:background="@color/white" android:layout_width="match_parent" android:layout_height="175dp">
+        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="40dp" android:layout_marginLeft="25dp">
+            <TextView android:layout_width="0dp" android:layout_height="wrap_content" android:text="缴费单位" android:layout_weight="1"/>
+            <TextView android:id="@+id/company_text" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_marginLeft="30dp" android:text="" android:layout_weight="3"/>
+            <LinearLayout android:gravity="right" android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="1">
+                <ImageView android:layout_gravity="right" android:id="@+id/chose_company_arrow" android:layout_width="wrap_content" android:layout_height="match_parent" android:layout_marginRight="10dp" android:src="0x7f080319"/>
+            </LinearLayout>
+        </LinearLayout>
+        <LinearLayout android:background="@color/ccbpay_gray" android:layout_width="match_parent" android:layout_height="1dp"/>
+        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="40dp" android:layout_marginLeft="25dp">
+            <TextView android:layout_width="0dp" android:layout_height="wrap_content" android:text="缴费号码" android:layout_weight="1"/>
+            <EditText android:textSize="13dp" android:id="@+id/accountNum" android:background="@null" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_marginLeft="30dp" android:layout_weight="3" android:inputType="number"/>
+            <LinearLayout android:gravity="right" android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="1">
+                <ImageView android:layout_gravity="right" android:id="@+id/select_account" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="match_parent" android:layout_marginRight="10dp" android:src="@drawable/test_btn_2"/>
+            </LinearLayout>
+        </LinearLayout>
+        <LinearLayout android:background="@color/ccbpay_gray" android:layout_width="match_parent" android:layout_height="1dp"/>
+        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="25dp" android:layout_marginTop="20dp" android:text="缴费项目说明"/>
+        <TextView android:id="@+id/meiyong" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="25dp" android:text="电力客户号可拨打95598查询"/>
+    </LinearLayout>
+    <LinearLayout android:gravity="bottom" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="match_parent">
+        <Button android:textColor="@color/white" android:id="@+id/next" android:background="@drawable/btn_shap" android:layout_width="0dp" android:layout_height="50dp" android:layout_margin="8dp" android:text="查询" android:layout_weight="1"/>
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:background="@color/c20" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="-10dp">
+    <View android:id="@+id/interact_line" android:background="@color/c5" android:visibility="gone" android:layout_width="match_parent" android:layout_height="@dimen/px_10"/>
+    <RelativeLayout android:id="@+id/title" android:visibility="gone" android:layout_width="match_parent" android:layout_height="@dimen/px_50">
+        <TextView android:textSize="@dimen/px_18" android:textColor="@color/topline_title" android:id="@+id/tv_title1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/px_16" android:layout_centerVertical="true"/>
+        <TextView android:textSize="@dimen/px_12" android:textColor="@color/c8" android:id="@+id/tv_more" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/px_16" android:text="更多" android:drawableRight="@drawable/recommend_more" android:drawablePadding="@dimen/px_10" android:layout_alignParentRight="true" android:layout_centerVertical="true"/>
+    </RelativeLayout>
+    <LinearLayout android:orientation="vertical" android:id="@+id/ll_content" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <TextView android:textSize="@dimen/px_18" android:textColor="@color/topline_title" android:ellipsize="end" android:id="@+id/interact_showtype_news_video_title" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/px_15" android:layout_marginTop="@dimen/dimen_2" android:layout_marginRight="@dimen/px_15" android:maxLines="2" android:lineSpacingExtra="@dimen/px_4"/>
+        <LinearLayout android:id="@+id/interact_showtype_news_video_picparent" android:layout_width="match_parent" android:layout_height="@dimen/px_193" android:layout_marginLeft="@dimen/px_15" android:layout_marginRight="@dimen/px_15">
+            <LinearLayout android:layout_width="match_parent" android:layout_height="match_parent">
+                <cn.jzvd.JzvdStd android:id="@+id/jz_video" android:layout_width="match_parent" android:layout_height="match_parent"/>
+            </LinearLayout>
+        </LinearLayout>
+        <RelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dimen_5">
+            <TextView android:textSize="@dimen/px_12" android:textColor="#8e8e93" android:ellipsize="end" android:id="@+id/interact_showtype_news_video_subtitle" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/px_15" android:maxLines="1"/>
+            <TextView android:textSize="@dimen/px_12" android:textColor="#8e8e93" android:ellipsize="end" android:id="@+id/interact_showtype_news_video_time" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/px_15" android:maxLines="1" android:layout_alignParentRight="true"/>
+        </RelativeLayout>
+    </LinearLayout>
+    <View android:id="@+id/interact_showtype_news_morepic_line" android:background="@color/c6" android:layout_width="match_parent" android:layout_height="@dimen/res_0x7f070190_dimen_0_3" android:layout_marginLeft="@dimen/px_15" android:layout_marginTop="@dimen/px_11" android:layout_marginRight="@dimen/px_15"/>
+</LinearLayout>

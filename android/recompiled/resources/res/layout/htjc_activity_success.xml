@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+    <RelativeLayout android:background="@color/htjc_title_bg" android:layout_width="match_parent" android:layout_height="44dp">
+        <ImageView android:id="@+id/iv_return" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="16dp" android:src="@drawable/htjc_title_return" android:layout_centerVertical="true"/>
+        <TextView android:textSize="24sp" android:textColor="#ffffff" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/htjc_success_title" android:layout_centerInParent="true"/>
+    </RelativeLayout>
+    <LinearLayout android:orientation="vertical" android:background="@color/htjc_main_bg" android:layout_width="match_parent" android:layout_height="match_parent">
+        <RelativeLayout android:layout_gravity="center_horizontal" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="75dp">
+            <ImageView android:id="@+id/success_img" android:background="#ef7c01" android:padding="3dp" android:layout_width="140dp" android:layout_height="186dp" android:layout_margin="5dp" android:scaleType="fitXY" android:layout_centerHorizontal="true"/>
+            <TextView android:textSize="22sp" android:textColor="#ffffff" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10dp" android:text="@string/htjc_success_result" android:layout_below="@+id/success_img" android:layout_centerHorizontal="true"/>
+        </RelativeLayout>
+        <LinearLayout android:layout_gravity="center_horizontal" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="15dp" android:layout_marginTop="70dp" android:layout_marginRight="15dp">
+            <ImageView android:id="@+id/btn_again" android:layout_width="111dp" android:layout_height="42dp" android:layout_marginRight="5dp" android:src="@drawable/htjc_btn_again_selector" android:layout_weight="1"/>
+            <ImageView android:id="@+id/btn_return" android:layout_width="111dp" android:layout_height="42dp" android:layout_marginLeft="5dp" android:src="@drawable/htjc_btn_return_selector" android:layout_weight="1"/>
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

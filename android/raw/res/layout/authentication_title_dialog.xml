@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:background="@drawable/dialog_prompt_authentication_bg" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="15.0dip" android:layout_marginRight="15.0dip" android:layout_centerInParent="true">
+        <TextView android:textSize="17.0sp" android:textColor="#ff222222" android:layout_gravity="center_horizontal" android:id="@id/tv_dialog_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="25.0dip" android:layout_marginTop="24.0dip" android:layout_marginRight="24.0dip" android:text="@string/change_tie" android:lineSpacingMultiplier="1.5" />
+        <TextView android:textSize="17.0sp" android:textColor="#ff222222" android:layout_gravity="center_horizontal" android:id="@id/tv_dialog_content" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="25.0dip" android:layout_marginTop="15.0dip" android:layout_marginRight="24.0dip" android:text="身份证239022983492873498已经换绑当前186002972876手机号。" android:lineSpacingMultiplier="1.5" />
+        <View android:id="@id/view_border" android:background="#3f000000" android:layout_width="fill_parent" android:layout_height="1.0dip" android:layout_marginTop="15.0dip" />
+        <TextView android:textSize="17.0sp" android:textColor="#ff222222" android:gravity="center" android:id="@id/tv_sure" android:paddingTop="11.0dip" android:paddingBottom="14.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/ok" />
+    </LinearLayout>
+</RelativeLayout>

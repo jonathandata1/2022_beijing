@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape
+  xmlns:android="http://schemas.android.com/apk/res/android"> android:shape="rectangle">                      //shape用于定义形状，有四种形状(矩形rectangle| 椭圆oval | 直线line | 圆形ring <solid android:color="@color/tittle_blue" /> //solid用于设置填充形状的颜色 <corners android:topLeftRadius="10.0dip" android:topRightRadius="10.0dip" android:bottomLeftRadius="10.0dip" android:bottomRightRadius="10.0dip" />
+</shape>

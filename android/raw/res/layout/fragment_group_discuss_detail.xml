@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@color/c20" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <ImageView android:background="@null" android:layout_width="fill_parent" android:layout_height="wrap_content" android:src="@drawable/reader_bg" android:scaleType="fitXY" />
+    <RelativeLayout android:id="@id/operationhead" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <ImageView android:id="@id/group_back" android:paddingLeft="@dimen/dimen_12" android:paddingTop="@dimen/dimen_15" android:paddingRight="@dimen/dimen_12" android:paddingBottom="@dimen/dimen_15" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_back_white" />
+        <TextView android:textSize="@dimen/dimen_17" android:textColor="@color/color_F8F9FB" android:id="@id/group_more_text" android:paddingLeft="@dimen/dimen_12" android:paddingTop="@dimen/dimen_15" android:paddingRight="@dimen/dimen_12" android:paddingBottom="@dimen/dimen_15" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/vcard_edit" android:singleLine="true" android:layout_alignParentRight="true" />
+    </RelativeLayout>
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/group_info" android:paddingLeft="@dimen/dimen_20" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dimen_70">
+        <ImageView android:id="@id/img_group_avatar" android:layout_width="@dimen/dimen_80" android:layout_height="@dimen/dimen_80" android:src="@drawable/group_d_avatar" />
+        <TextView android:textSize="@dimen/dimen_26" android:textColor="@color/c20" android:id="@id/txt_group_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dimen_20" android:layout_marginRight="@dimen/dimen_10" />
+    </LinearLayout>
+    <com.msgseal.base.ui.ShadowContainer android:id="@id/ll_group_card_desc" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dimen_5" android:layout_marginTop="17.0dip" android:layout_marginRight="@dimen/dimen_5" android:layout_below="@id/group_info" app:containerCornerRadius="5.0dip" app:containerDeltaLength="15.0dip" app:containerShadowColor="#14000000" app:containerShadowRadius="5.0dip">
+        <LinearLayout android:orientation="vertical" android:background="@drawable/bg_vcard_head_info" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <TextView android:textSize="@dimen/dimen_14" android:textColor="@color/color_8E8E93" android:id="@id/label_description" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dimen_20" android:layout_marginTop="@dimen/dimen_16" android:layout_marginRight="@dimen/dimen_20" android:layout_marginBottom="@dimen/dimen_16" android:text="@string/d_group_note" />
+            <TextView android:textSize="@dimen/dimen_18" android:textColor="@color/color_4A4A4A" android:id="@id/txt_group_description" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dimen_20" android:layout_marginRight="@dimen/dimen_20" android:layout_marginBottom="@dimen/dimen_20" />
+        </LinearLayout>
+    </com.msgseal.base.ui.ShadowContainer>
+    <LinearLayout android:orientation="vertical" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginTop="545.0dip">
+        <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="@dimen/dimen_66" android:layout_marginTop="@dimen/dimen_32">
+            <ImageView android:layout_gravity="center" android:layout_width="@dimen/dimen_30" android:layout_height="@dimen/dimen_32" android:layout_marginLeft="@dimen/dimen_16" android:layout_marginRight="@dimen/dimen_16" android:src="@drawable/ic_email" />
+            <LinearLayout android:gravity="center_vertical" android:layout_gravity="center_vertical" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="@dimen/dimen_66">
+                <TextView android:textSize="@dimen/dimen_13" android:textColor="@color/color_8e8e93" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/group_email" />
+                <TextView android:textSize="@dimen/dimen_16" android:textColor="@color/txt_button_Color" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+            </LinearLayout>
+        </LinearLayout>
+        <View android:id="@id/line1" android:background="@color/color_e1e1e1" android:layout_width="fill_parent" android:layout_height="@dimen/dimen_0.5" android:layout_marginLeft="@dimen/dimen_64" />
+        <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:minHeight="@dimen/dimen_66">
+            <ImageView android:layout_gravity="center|top" android:layout_width="@dimen/dimen_30" android:layout_height="@dimen/dimen_32" android:layout_marginLeft="@dimen/dimen_16" android:layout_marginTop="@dimen/dimen_17" android:layout_marginRight="@dimen/dimen_16" android:src="@drawable/ic_description" />
+            <LinearLayout android:gravity="center_vertical" android:layout_gravity="center_vertical" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:minHeight="@dimen/dimen_66">
+                <TextView android:textSize="@dimen/dimen_13" android:textColor="@color/color_8e8e93" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/group_description" />
+                <TextView android:textSize="@dimen/dimen_16" android:textColor="@color/color_222222" android:scrollbars="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:fadeScrollbars="false" />
+            </LinearLayout>
+        </LinearLayout>
+        <View android:id="@id/line2" android:background="@color/color_e1e1e1" android:layout_width="fill_parent" android:layout_height="@dimen/dimen_0.5" android:layout_marginLeft="@dimen/dimen_64" />
+    </LinearLayout>
+</RelativeLayout>

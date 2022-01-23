@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:id="@+id/action" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="24dp" android:layout_marginRight="16dp" android:layout_marginBottom="16dp" android:layout_marginStart="24dp" android:layout_marginEnd="16dp">
+        <RelativeLayout android:paddingTop="24dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="4dp">
+            <TextView android:textSize="@dimen/upsdk_master_body_2" android:textColor="@color/upsdk_color_gray_7" android:id="@+id/third_app_dl_progress_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="48dp" android:layout_alignParentRight="true" android:layout_marginEnd="48dp" android:layout_alignParentEnd="true"/>
+            <TextView android:textSize="@dimen/upsdk_master_body_2" android:textColor="@color/upsdk_color_gray_10" android:id="@+id/third_app_warn_text" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginRight="16dp" android:text="@string/upsdk_app_dl_installing" android:layout_toLeftOf="@+id/third_app_dl_progress_text" android:layout_marginEnd="16dp" android:layout_toStartOf="@+id/third_app_dl_progress_text"/>
+        </RelativeLayout>
+        <RelativeLayout android:gravity="center_vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <RelativeLayout android:id="@+id/cancel_bg" android:background="@drawable/upsdk_third_download_bg" android:focusable="true" android:layout_width="40dp" android:layout_height="40dp" android:layout_alignParentRight="true" android:layout_centerVertical="true" android:layout_alignParentEnd="true">
+                <ImageView android:id="@+id/cancel_imageview" android:background="0x7f0809bc" android:layout_width="24dp" android:layout_height="24dp" android:layout_centerInParent="true"/>
+            </RelativeLayout>
+            <ProgressBar android:id="@+id/third_app_dl_progressbar" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginRight="8dp" android:layout_toLeftOf="@+id/cancel_bg" android:layout_centerVertical="true" android:layout_marginEnd="8dp" android:layout_toStartOf="@+id/cancel_bg" style="?android:attr/progressBarStyleHorizontal"/>
+        </RelativeLayout>
+    </LinearLayout>
+</LinearLayout>

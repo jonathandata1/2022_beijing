@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<item-list>
+    <!--扫一扫扫描结果跳转配置，如果扫描结果包含配置中的name，则根据配置做跳转。
+    type为1是toon内部跳转，调用配置的router，扫一扫模块会传参数"scanResult"扫描结果和"activity";
+    type为2是跳转到内部浏览器，如果addUserIdParam配置为true，则增加"userId"参数，否则直接跳转;
+    type为3是跳转到外部浏览器;
+    可配置过滤器 filter，格式例如 filter="test|open" 或 filter="test,open",
+    "|" 表示或者，"|"分隔的关键字只要有一个包含及成立; "," 表示并且，","分隔的关键字必须要不包含才成立
+    可配置服务端配置项 severKey，格式例如 severKey="QRCodeURL_ScanQRCod", 值为服务端配置管理中对应的键值 -->
+    <!--示例1：
+    <item name="http://tqrcode.toon.mobi/index.html" type="1" routerPath="/openFrameByObj" host="frameProvider"  scheme="toon"/>-->
+    <!--示例2：
+    <item name="http://tqrcode.toon.mobi/index.html" type="2" isAddUserId="true"/>-->
+    <!--示例3：
+    <item name="http://www.baidu.com" type="3"/>-->
+    <!--示例4：
+    <item name="http://tqrcode.toon.mobi/index.html" host="forum" filter="test|open" severKey="QRCodeURL_ScanQRCod" parameterName="params" routerPath="/qrForumMain" scheme="toon" type="1"/>-->
+    <item name="http://appdown.systoon.com/tmailDetail" host="message"
+          parameterName="url" routerPath="/openTmailDetail" scheme="tmail" type="1"/>
+</item-list>

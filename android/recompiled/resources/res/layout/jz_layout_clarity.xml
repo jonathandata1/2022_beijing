@@ -1,0 +1,2 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:id="@+id/video_quality_wrapper_area" android:background="0x7f08064a" android:paddingTop="10dp" android:paddingBottom="16dp" android:layout_width="80dp" android:layout_height="wrap_content"/>

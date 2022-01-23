@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<de.mrapp.android.bottomsheet.view.DraggableView xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:background="?android:attr/colorBackground" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <RelativeLayout android:id="@+id/title_container" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+    <RelativeLayout android:id="@+id/content_container" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+</de.mrapp.android.bottomsheet.view.DraggableView>

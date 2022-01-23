@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android">
+    <corners android:topLeftRadius="@dimen/dimen_0" android:topRightRadius="@dimen/dimen_30" android:bottomLeftRadius="@dimen/dimen_0" android:bottomRightRadius="@dimen/dimen_30"/>
+    <solid android:color="@color/tebackup_c17"/>
+</shape>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" android:layout_gravity="center_vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <com.msgseal.base.ui.AvatarView android:id="@+id/iv_avatar" android:layout_width="@dimen/dimen_50" android:layout_height="@dimen/dimen_50" android:layout_marginTop="@dimen/dimen_12" android:layout_marginBottom="@dimen/dimen_12" android:src="@drawable/default_head_person133" android:layout_centerVertical="true" android:layout_marginStart="@dimen/dimen_16"/>
+    <LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_toRightOf="@+id/iv_avatar" android:layout_centerVertical="true" android:layout_marginStart="@dimen/dimen_12" android:layout_marginEnd="@dimen/dimen_40">
+        <TextView android:textSize="16dp" android:textColor="@color/text_main_color" android:ellipsize="end" android:id="@+id/tv_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="1" android:singleLine="true"/>
+        <TextView android:textSize="14dp" android:textColor="@color/text_main_color" android:ellipsize="end" android:id="@+id/tv_org" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dimen_6" android:maxLines="1" android:singleLine="true"/>
+    </LinearLayout>
+    <ImageView android:id="@+id/iv_check" android:layout_width="@dimen/dimen_22" android:layout_height="@dimen/dimen_22" android:src="@drawable/contact_select_mark_icon" android:layout_alignParentRight="true" android:layout_centerVertical="true" android:layout_marginEnd="@dimen/dimen_16"/>
+    <View android:id="@+id/line_separator" android:background="@color/separator_color" android:layout_width="match_parent" android:layout_height="@dimen/res_0x7f070190_dimen_0_3" android:layout_alignParentBottom="true"/>
+</RelativeLayout>

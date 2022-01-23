@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:layout_width="fill_parent" android:layout_height="@dimen/dimen_48" android:layout_alignParentBottom="true">
+        <ProgressBar android:id="@id/toongine_footer_progress" android:layout_width="@dimen/dimen_24" android:layout_height="@dimen/dimen_24" android:layout_marginLeft="@dimen/dimen_30" android:layout_centerVertical="true" />
+        <TextView android:textSize="@dimen/textsize_24px" android:textColor="@android:color/black" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/toongine_loading_more" android:layout_centerInParent="true" />
+    </RelativeLayout>
+</RelativeLayout>

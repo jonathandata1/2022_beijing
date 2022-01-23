@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:background="@color/c20" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <com.systoon.toon.common.ui.view.NoScrollGridView android:gravity="center" android:layout_gravity="center" android:id="@+id/interact_showtype_special_SubCategory_gridview" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_margin="@dimen/px_15" android:horizontalSpacing="@dimen/px_15" android:verticalSpacing="@dimen/px_15" android:numColumns="4"/>
+    <View android:background="@color/c6" android:layout_width="match_parent" android:layout_height="@dimen/res_0x7f070190_dimen_0_3"/>
+    <View android:background="@color/c5" android:layout_width="match_parent" android:layout_height="@dimen/px_10"/>
+    <View android:background="@color/c6" android:layout_width="match_parent" android:layout_height="@dimen/res_0x7f070190_dimen_0_3"/>
+</LinearLayout>

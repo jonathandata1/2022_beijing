@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android" android:shape="rectangle">
+    <corners android:radius="@dimen/vr_small_window_radius"/>
+    <stroke android:width="@dimen/vr_small_window_border_width" android:color="@color/vr_small_window_border_color"/>
+    <size android:height="@dimen/vr_small_window_height" android:width="@dimen/vr_small_window_width"/>
+</shape>

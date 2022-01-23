@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include android:id="@id/in_1" layout="@layout/toon_item_navigation_bar" />
+    <android.support.v7.widget.RecyclerView android:id="@id/rv_intros_list" android:paddingTop="@dimen/dimen_10" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <LinearLayout android:orientation="vertical" android:id="@id/empty_view" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <ImageView android:layout_gravity="center_horizontal" android:layout_width="@dimen/dimen_120" android:layout_height="@dimen/dimen_120" android:layout_marginTop="154.0dip" android:src="@drawable/no_data_icon" />
+        <TextView android:textSize="15.0dip" android:textColor="#ff4a4a4a" android:gravity="center" android:layout_width="fill_parent" android:layout_height="@dimen/dimen_21" android:layout_marginTop="@dimen/dimen_30" android:text="@string/feature_no_net_tip" />
+        <TextView android:textSize="15.0dip" android:textColor="#ffdf3031" android:gravity="center" android:layout_width="fill_parent" android:layout_height="@dimen/dimen_20" android:layout_marginTop="@dimen/dimen_12" android:text="@string/feature_try_once" />
+    </LinearLayout>
+</LinearLayout>

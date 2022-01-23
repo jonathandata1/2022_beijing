@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_gravity="bottom" android:background="@color/transparent" android:clipChildren="false" android:clipToPadding="false" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/main_tab_icon" android:layout_width="@dimen/dimen_30" android:layout_height="@dimen/dimen_30" android:layout_above="@id/main_tab_text" android:layout_centerHorizontal="true" android:contentDescription="@null" />
+    <TextView android:textSize="@dimen/dimen_10" android:textColor="@drawable/toolbar_tab_textcolor" android:id="@id/main_tab_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/dimen_4" android:text="" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true" />
+    <LinearLayout android:clipChildren="false" android:clipToPadding="false" android:layout_width="fill_parent" android:layout_height="@dimen/dimen_50" android:layout_marginLeft="-10.0dip" android:layout_marginTop="50.0dip" android:layout_toRightOf="@id/main_tab_icon">
+        <com.systoon.toon.view.DragBubbleView android:id="@id/main_tab_drag" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="-10.0dip" android:layout_marginTop="@dimen/dimen_0.5" android:layout_toRightOf="@id/main_tab_icon" android:layout_alignParentTop="true" />
+    </LinearLayout>
+</RelativeLayout>

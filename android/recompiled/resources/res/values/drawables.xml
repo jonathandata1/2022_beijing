@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <drawable name="exo_controls_fastforward">?unknown_ref: 7f080300</drawable>
+    <drawable name="exo_controls_next">?unknown_ref: 7f080301</drawable>
+    <drawable name="exo_controls_pause">?unknown_ref: 7f080302</drawable>
+    <drawable name="exo_controls_play">?unknown_ref: 7f080303</drawable>
+    <drawable name="exo_controls_previous">?unknown_ref: 7f080304</drawable>
+    <drawable name="exo_controls_rewind">?unknown_ref: 7f080305</drawable>
+    <drawable name="exo_notification_fastforward">?unknown_ref: 7f080300</drawable>
+    <drawable name="exo_notification_next">?unknown_ref: 7f080301</drawable>
+    <drawable name="exo_notification_pause">?unknown_ref: 7f080302</drawable>
+    <drawable name="exo_notification_play">?unknown_ref: 7f080303</drawable>
+    <drawable name="exo_notification_previous">?unknown_ref: 7f080304</drawable>
+    <drawable name="exo_notification_rewind">?unknown_ref: 7f080305</drawable>
+    <drawable name="exo_notification_stop">?unknown_ref: 7f080306</drawable>
+    <drawable name="ic_menu_about">@android:drawable/ic_menu_info_details</drawable>
+    <drawable name="ic_menu_camera">@android:drawable/ic_menu_camera</drawable>
+    <drawable name="ic_menu_gallery">@android:drawable/ic_menu_gallery</drawable>
+    <drawable name="ic_menu_manage">@android:drawable/ic_menu_manage</drawable>
+    <drawable name="ic_menu_send">@android:drawable/ic_menu_send</drawable>
+    <drawable name="ic_menu_share">@android:drawable/ic_menu_share</drawable>
+    <drawable name="ic_menu_slideshow">@android:drawable/ic_menu_slideshow</drawable>
+    <drawable name="notification_template_icon_bg">#3333b5e5</drawable>
+    <drawable name="notification_template_icon_low_bg">#0cffffff</drawable>
+    <drawable name="null_drawable">#00ffffff</drawable>
+    <drawable name="sy_null_drawable">#00ffffff</drawable>
+</resources>

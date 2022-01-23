@@ -1,0 +1,50 @@
+{
+    "tsetting": {
+        "agreement": [
+            {
+                "protocolTitle":"秘邮服务协议",
+                "routerUrl":"toon://tsetting/openTemailUserAgreement",
+                "param":{
+                    "isShowTitle":"0",
+                    "protocolList":[
+                        "TSetting_userAgreement_zh-Hans",
+                        "TSetting_userAgreement_en"
+                    ]
+                }
+            },
+            {
+                "protocolTitle":"隐私政策",
+                "routerUrl":"toon://tsetting/openPrivacyAgreement",
+                "param":{
+                    "isShowTitle":"0",
+                    "protocolList":[
+                        "TSetting_secretAgreement_zh-Hans",
+                        "TSetting_secretAgreement_en"
+                    ]
+                }
+            },
+            {
+                "protocolTitle":"数字护照使用协议",
+                "routerUrl":"toon://tsetting/openTcloudUseProtocol",
+                "param":{
+                    "isShowTitle":"0",
+                    "protocolList":[
+                        "TSetting_tcloudUseProtocol_zh-Hans",
+                        "TSetting_tcloudUseProtocol_en"
+                    ]
+                }
+            },
+            {
+                "protocolTitle":"秘邮群服务协议",
+                "routerUrl":"toon://tsetting/openGroupAgreement",
+                "param":{
+                    "isShowTitle":"0",
+                    "protocolList":[
+                        "TSetting_groupProtocol_zh-Hans",
+                        "TSetting_groupProtocol_en"
+                    ]
+                }
+            }
+        ]
+    }
+}

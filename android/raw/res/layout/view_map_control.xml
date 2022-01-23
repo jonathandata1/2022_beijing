@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:id="@id/map_layout" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <RelativeLayout android:id="@id/map_search_begin" android:background="#ff1f2022" android:paddingLeft="@dimen/dimen_18" android:paddingTop="@dimen/dimen_10" android:paddingRight="@dimen/dimen_14" android:paddingBottom="@dimen/dimen_10" android:descendantFocusability="blocksDescendants" android:layout_width="fill_parent" android:layout_height="@dimen/dimen_56">
+            <TextView android:id="@id/map_search_tv" android:background="#ff656668" android:layout_width="fill_parent" android:layout_height="@dimen/dimen_36" android:layout_centerVertical="true" />
+            <TextView android:textSize="@dimen/ts_16px" android:textColor="#ff8e8e93" android:id="@id/hint_tv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/search_text" android:drawableLeft="@drawable/map_search_icon" android:drawablePadding="@dimen/dimen_8" android:layout_centerInParent="true" />
+        </RelativeLayout>
+        <View android:id="@id/map_page_divider" android:background="#ff4e5052" android:layout_width="fill_parent" android:layout_height="@dimen/divider_high" />
+        <FrameLayout android:orientation="vertical" android:id="@id/map_out_wrap" android:layout_width="fill_parent" android:layout_height="@dimen/dimen_260">
+            <com.amap.api.maps.MapView android:id="@id/map_main" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+            <ImageView android:layout_gravity="center" android:id="@id/point_image" android:layout_width="@dimen/dimen_20" android:layout_height="@dimen/dimen_20" android:layout_marginTop="@dimen/dimen_5" android:src="@drawable/common_icon_mark" android:contentDescription="@string/contentdescription" />
+        </FrameLayout>
+        <com.systoon.tmstore.pulltorefresh.PullToRefreshListView android:id="@id/map_pull_refresh" android:fadingEdge="none" android:layout_width="fill_parent" android:layout_height="fill_parent" android:listSelector="@color/transparent" android:cacheColorHint="@color/transparent" android:divider="@null" android:dividerHeight="0.5dip" />
+    </LinearLayout>
+    <LinearLayout android:orientation="vertical" android:id="@id/map_search_layout" android:background="#ff1f2022" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <RelativeLayout android:id="@id/search_page_top_bg" android:background="#ff2e3039" android:paddingLeft="@dimen/dimen_16" android:paddingTop="@dimen/dimen_10" android:paddingRight="@dimen/dimen_12" android:paddingBottom="@dimen/dimen_10" android:layout_width="fill_parent" android:layout_height="@dimen/dimen_56">
+            <TextView android:textSize="@dimen/ts_17px" android:textColor="#fff8f9fb" android:id="@id/map_search_cancel" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/cancel" android:layout_alignParentRight="true" android:layout_centerVertical="true" android:textAllCaps="false" />
+            <RelativeLayout android:gravity="center_vertical" android:id="@id/search_page_et_bg" android:paddingLeft="@dimen/dimen_12" android:paddingRight="@dimen/dimen_8" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginRight="@dimen/dimen_9" android:layout_toLeftOf="@id/map_search_cancel">
+                <ImageView android:id="@id/search_view" android:layout_width="@dimen/dimen_16" android:layout_height="@dimen/dimen_16" android:src="@drawable/map_search_icon" android:layout_alignParentLeft="true" android:layout_centerVertical="true" android:contentDescription="@string/contentdescription" />
+                <ImageView android:id="@id/map_search_clear" android:visibility="gone" android:layout_width="@dimen/dimen_14" android:layout_height="@dimen/dimen_14" android:src="@drawable/map_clear_bt" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+                <EditText android:textSize="@dimen/ts_16px" android:textColor="#fff8f9fb" android:textColorHint="#ff8e8e93" android:gravity="center|left" android:id="@id/map_search_editView" android:background="@null" android:paddingLeft="@dimen/dimen_5" android:paddingRight="@dimen/dimen_5" android:layout_width="fill_parent" android:layout_height="fill_parent" android:hint="@string/search_text" android:singleLine="true" android:layout_toLeftOf="@id/map_search_clear" android:layout_toRightOf="@id/search_view" android:imeOptions="actionSearch" />
+            </RelativeLayout>
+        </RelativeLayout>
+        <View android:id="@id/search_page_divider" android:layout_width="fill_parent" android:layout_height="@dimen/dimen_0.5" />
+        <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:id="@id/empty_view" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <ImageView android:layout_width="136.0dip" android:layout_height="146.0dip" android:layout_marginTop="@dimen/dimen_92" android:src="@drawable/map_search_empty" />
+            <TextView android:textSize="@dimen/dimen_15" android:textColor="@color/c9" android:id="@id/tv_notice" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dimen_20" android:text="@string/not_search_data" />
+        </LinearLayout>
+        <com.systoon.tmstore.pulltorefresh.PullToRefreshListView android:id="@id/map_search_pull_refresh" android:fadingEdge="none" android:layout_width="fill_parent" android:layout_height="@dimen/dimen_0" android:layout_marginTop="@dimen/dimen_3" android:listSelector="@color/transparent" android:cacheColorHint="@color/transparent" android:divider="@null" android:dividerHeight="0.5dip" android:layout_weight="1.0" />
+    </LinearLayout>
+</merge>

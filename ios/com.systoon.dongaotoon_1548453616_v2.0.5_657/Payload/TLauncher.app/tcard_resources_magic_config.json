@@ -1,0 +1,20 @@
+{
+    "tcard_resources": {
+        "cardReader_card_delete_nomal": "cardReader_card_delete_nomal", 
+        "group_friend_icon": "group_friend_icon", 
+        "tcardReader_bg_image": "tcardReader_bg_image", 
+        "tcard_card_default_icon_en": "tcard_card_default_icon_en", 
+        "tcard_createCard_default": "tcard_createCard_default", 
+        "tcard_group_default": "tcard_group_default", 
+        "tcard_group_default_en": "tcard_group_default_en", 
+        "tcard_homepage_group": "tcard_homepage_group", 
+        "tcard_homepage_mask_app": "tcard_homepage_mask_app", 
+        "tcard_homepage_mask_petal": "tcard_homepage_mask_petal", 
+        "tcardreader_back_while": "tcardreader_back_while", 
+        "tn_phenix_card_accessory_img": "0006_arrow_right1", 
+        "tnc_card_delete_icon": "0016_delete_red", 
+        "tnc_card_plugin_icon": "tnc_card_plugin_icon",
+        "tnc_card_hide_detail": "hide_detail",
+        "tnc_card_show_detail": "show_detail"
+    }
+}

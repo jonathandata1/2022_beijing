@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/ll_phone_num" android:background="@color/backgroundColor" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="@dimen/dimen_17" android:textStyle="bold" android:textColor="@color/color_535864" android:gravity="center_vertical" android:paddingLeft="@dimen/dimen_20" android:layout_width="fill_parent" android:layout_height="@dimen/dimen_55" android:text="@string/mail_account_manager" />
+    <android.support.v7.widget.RecyclerView android:id="@id/rv_mail_list" android:fitsSystemWindows="true" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_below="@id/tv_menu_title" android:overScrollMode="never" />
+    <RelativeLayout android:id="@id/rl_add_email" android:background="@color/list_background_color" android:layout_width="fill_parent" android:layout_height="@dimen/dimen_50">
+        <TextView android:textSize="@dimen/ts_17px" android:textColor="@color/color_222222" android:ellipsize="end" android:gravity="center|left" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dimen_20" android:layout_marginRight="@dimen/dimen_40" android:layout_marginBottom="@dimen/dimen_16" android:text="@string/mail_add_email" android:singleLine="true" android:layout_centerVertical="true" />
+        <ImageView android:id="@id/iv_arrow" android:layout_width="@dimen/dimen_14" android:layout_height="@dimen/dimen_14" android:layout_marginRight="@dimen/dimen_20" android:src="@drawable/common_arrow_right" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+        <View android:id="@id/divider_line" android:background="@color/color_E8E8E8" android:layout_width="fill_parent" android:layout_height="@dimen/dimen_0.5" android:layout_marginLeft="@dimen/dimen_58" android:layout_alignParentBottom="true" />
+    </RelativeLayout>
+</LinearLayout>

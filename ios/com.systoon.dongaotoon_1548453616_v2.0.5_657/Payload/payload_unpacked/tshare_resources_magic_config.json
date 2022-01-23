@@ -1,0 +1,24 @@
+{
+    "tshare_resources": {
+        "qq好友": "0043_QQFriend",
+        "toon好友": "0045_toonFriend", 
+        "信息": "0019_message",
+        "刷新": "刷新",
+        "服务评价": "服务评价",
+        "添加到桌面": "添加到桌面",
+        "动态": "动态", 
+        "小组": "小组", 
+        "微信": "0025_wechat", 
+        "微博": "0044_weibo",
+        "朋友圈": "0031_wechat_round", 
+        "空间": "0020_qq_zone",
+        
+        "scanMessage": "0019_message",
+        "scanQQFriend": "0043_QQFriend",
+        "scanQQZone": "0020_qq_zone",
+        "scanWeibo": "0044_weibo",
+        "scanWeixin": "0025_wechat",
+        "scanWeixinRound": "0031_wechat_round",
+        "scantoonFriend": "0045_toonFriend"
+    }
+}

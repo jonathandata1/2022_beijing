@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:gravity="center_vertical" android:background="@color/c20" android:layout_width="fill_parent" android:layout_height="@dimen/dimen_70"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:gravity="center_vertical" android:layout_width="fill_parent" android:layout_height="@dimen/dimen_70">
+        <LinearLayout android:gravity="center_vertical" android:layout_gravity="center_vertical" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dimen_16" android:layout_marginRight="@dimen/dimen_30" android:layout_alignParentLeft="true" android:layout_centerVertical="true">
+            <TextView android:textSize="@dimen/dimen_16" android:textColor="@color/color_222222" android:ellipsize="end" android:gravity="start|center" android:id="@id/tv_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true" />
+            <TextView android:textSize="@dimen/dimen_14" android:textColor="@color/color_8E8E93" android:gravity="start|center" android:id="@id/tv_name_en" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dimen_3" android:maxLines="1" android:singleLine="true" />
+        </LinearLayout>
+        <ImageView android:id="@id/iv_arrow" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/dimen_16" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+    </RelativeLayout>
+    <include android:id="@id/view_line" android:layout_width="fill_parent" android:layout_height="@dimen/dimen_0.3" android:layout_alignParentBottom="true" layout="@layout/contact_divider" />
+</RelativeLayout>

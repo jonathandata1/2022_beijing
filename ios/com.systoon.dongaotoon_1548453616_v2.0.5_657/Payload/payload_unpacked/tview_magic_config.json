@@ -1,0 +1,7 @@
+{
+    "tview": {
+        "loading":"tview-loading",
+        "loading-black":"tview-loading-black",
+        "loading-white":"tview-loading-white",
+    }
+}

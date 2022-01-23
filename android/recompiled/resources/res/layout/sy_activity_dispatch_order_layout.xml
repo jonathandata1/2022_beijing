@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+    <FrameLayout android:layout_width="match_parent" android:layout_height="match_parent">
+        <com.amap.api.maps.MapView android:id="@+id/sy_dispatch_order_map" android:layout_width="match_parent" android:layout_height="match_parent"/>
+        <com.zhuanche.winterolympic.view.RippleLayout android:layout_gravity="center" android:id="@+id/sy_dispatch_order_ripple_layout" android:layout_width="match_parent" android:layout_height="match_parent" app:rl_color="#4d5689e9" app:rl_duration="5000" app:rl_radius="20dp" app:rl_rippleAmount="3" app:rl_scale="10">
+            <View android:id="@+id/sy_dispatch_order_ripple_center" android:layout_width="0.1dp" android:layout_height="0.1dp" android:layout_centerInParent="true"/>
+            <LinearLayout android:gravity="center" android:orientation="vertical" android:paddingLeft="5dp" android:paddingRight="5dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="-2dp" android:layout_above="@+id/sy_dispatch_order_ripple_center" android:layout_centerInParent="true" android:animateLayoutChanges="true">
+                <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@+id/sy_dispatch_order_map_pop_ll" android:background="@drawable/sy_big_pop" android:paddingLeft="24dp" android:paddingTop="6dp" android:paddingRight="24dp" android:paddingBottom="10dp" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                    <TextView android:textSize="13dp" android:textColor="@color/v555555" android:gravity="center" android:layout_gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/sy_str_dispatch_wait_tip"/>
+                </LinearLayout>
+                <ImageView android:layout_gravity="center" android:id="@+id/sy_dispatch_pin_label" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/sy_ic_start"/>
+            </LinearLayout>
+        </com.zhuanche.winterolympic.view.RippleLayout>
+    </FrameLayout>
+    <include layout="@layout/sy_layout_dispatch_info"/>
+</RelativeLayout>

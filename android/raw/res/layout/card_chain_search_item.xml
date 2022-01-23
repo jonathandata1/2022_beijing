@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:id="@id/type_head_view" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <View android:id="@id/intervalView" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="@dimen/dimen_2" />
+    </LinearLayout>
+    <RelativeLayout android:id="@id/search_result_item_info" android:layout_width="fill_parent" android:layout_height="@dimen/dimen_72">
+        <com.msgseal.base.ui.AvatarView android:id="@id/search_result_icon" android:layout_width="@dimen/dimen_50" android:layout_height="@dimen/dimen_50" android:layout_marginLeft="@dimen/dimen_12" android:layout_marginRight="@dimen/dimen_12" android:layout_centerVertical="true" />
+        <LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:id="@id/search_result_item_name" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginRight="@dimen/dimen_16" android:layout_toRightOf="@id/search_result_icon" android:layout_centerVertical="true">
+            <TextView android:textSize="@dimen/dimen_17" android:ellipsize="end" android:id="@id/search_result_tmail" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="1" />
+            <LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dimen_4">
+                <TextView android:textSize="@dimen/dimen_17" android:ellipsize="end" android:id="@id/search_result_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="123" android:maxLines="1" />
+            </LinearLayout>
+        </LinearLayout>
+        <View android:id="@id/search_result_lineview" android:layout_width="fill_parent" android:layout_height="@dimen/dimen_0.5" android:layout_alignLeft="@id/search_result_item_name" android:layout_alignParentBottom="true" />
+    </RelativeLayout>
+</LinearLayout>

@@ -1,0 +1,11 @@
+{
+  "tncustomcontact": {
+
+    "governmentCell": {
+	"cellTitle": "政府通讯录",
+        "cellIcon": "contact_gov_contact_icon"
+    },
+    "showGovernment":true,
+    "govRequestDomain":"http://t100govcontact.fztoon.com"
+  }
+}

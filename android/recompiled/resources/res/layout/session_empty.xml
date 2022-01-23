@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+    <ImageView android:layout_gravity="center_horizontal" android:id="@+id/session_empty_icon" android:layout_width="@dimen/dimen_136" android:layout_height="@dimen/dimen_146" android:layout_marginTop="@dimen/dimen_134" android:layout_marginBottom="@dimen/dimen_16" android:src="@drawable/icon_tmail_inbox_empty" android:scaleType="centerCrop"/>
+    <TextView android:gravity="center_horizontal" android:id="@+id/session_empty_main_title" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/dimen_8"/>
+    <TextView android:gravity="center_horizontal" android:id="@+id/session_empty_sub_title" android:visibility="gone" android:clickable="true" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+</merge>

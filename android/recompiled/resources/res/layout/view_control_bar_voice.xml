@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <ImageView android:id="@+id/iv_voice_close_icon" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dimen_6" android:src="@drawable/icon_input_voice_close" android:layout_alignBottom="@+id/tv_voice_control" android:layout_alignParentRight="true" android:layout_marginStart="@dimen/dimen_6" android:layout_alignParentEnd="true"/>
+    <com.msgseal.inputtablet.widgets.VoiceRecordTouchView android:textSize="@dimen/ts_16px" android:textColor="#222222" android:gravity="center" android:id="@+id/tv_voice_control" android:background="@drawable/chat_inputbar_edit_corners_bg" android:layout_width="match_parent" android:layout_height="@dimen/dimen_36" android:layout_toLeftOf="@+id/iv_voice_close_icon" android:layout_toStartOf="@+id/iv_voice_close_icon"/>
+</RelativeLayout>

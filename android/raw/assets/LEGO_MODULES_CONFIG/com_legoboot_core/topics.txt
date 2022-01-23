@@ -1,0 +1,25 @@
+TOPIC {ApplicationTopic.attachBaseContext} Application attachBaseContext生命周期
+android.app.Application [application]
+
+TOPIC {ApplicationTopic.onCreate} Application onCreate生命周期
+android.app.Application [application]
+
+TOPIC {ApplicationTopic.onLowMemory} Application onLowMemory生命周期
+android.app.Application [application]
+
+TOPIC {ApplicationTopic.onTrimMemory} Application onTrimMemory生命周期
+android.app.Application [application]
+int [level]
+
+TOPIC {ApplicationTopic.onConfigurationChanged} Application onConfigurationChanged生命周期
+android.app.Application [application]
+android.content.res.Configuration [newConfig]
+
+TOPIC {System.loginEvent} 登录TOPIC，可被中断
+android.app.Application [application]
+java.util.Map<java.lang.String,java.lang.Object> [params]
+
+TOPIC {System.logoutEvent} 登出TOPIC，可被中断
+android.app.Application [application]
+java.util.Map<java.lang.String,java.lang.Object> [params]
+

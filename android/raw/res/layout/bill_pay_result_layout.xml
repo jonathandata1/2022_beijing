@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center" android:layout_width="fill_parent" android:layout_height="150.0dip" android:layout_marginTop="150.0dip">
+        <ImageView android:id="@id/result_image" android:layout_width="wrap_content" android:layout_height="wrap_content" android:scaleType="centerInside" />
+    </LinearLayout>
+    <TextView android:textSize="62.0px" android:textColor="#ff000000" android:gravity="center" android:id="@id/pay_result" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="" />
+    <TextView android:textSize="36.0px" android:textColor="#ff999999" android:gravity="center" android:id="@id/message_tv" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="" />
+    <LinearLayout android:gravity="bottom" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <Button android:textColor="@color/white" android:id="@id/next" android:background="@drawable/btn_shap" android:layout_width="0.0dip" android:layout_height="50.0dip" android:layout_margin="8.0dip" android:text="完成" android:layout_weight="1.0" />
+    </LinearLayout>
+</LinearLayout>

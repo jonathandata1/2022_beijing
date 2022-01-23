@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" android:id="@+id/rl_aiui_chat_fragment_parent" android:background="@color/bg_content" android:layout_width="match_parent" android:layout_height="match_parent">
+    <com.systoon.toon.view.navigationBar.NavigationBar android:id="@+id/nv_aiui_chat_fragment_navbar" android:background="@color/black" android:layout_width="match_parent" android:layout_height="50dp"/>
+    <FrameLayout android:layout_width="match_parent" android:layout_height="match_parent" android:layout_below="@+id/nv_aiui_chat_fragment_navbar">
+        <RelativeLayout android:id="@+id/chat_page" android:background="@android:color/transparent" android:layout_width="match_parent" android:layout_height="match_parent">
+            <include android:id="@+id/play_control_bar" android:layout_alignParentTop="true" layout="@layout/aiui_player_controller"/>
+            <FrameLayout android:id="@+id/trans_container" android:background="@color/transparent" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_below="@+id/play_control_bar">
+                <LinearLayout android:gravity="center" android:layout_width="match_parent" android:layout_height="wrap_content">
+                    <com.jaredrummler.materialspinner.MaterialSpinner android:id="@+id/src_languege_spinner" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+                    <ImageView android:layout_width="24dp" android:layout_height="24dp" android:layout_marginLeft="12dp" android:src="@drawable/arrow" android:layout_marginStart="12dp"/>
+                    <com.jaredrummler.materialspinner.MaterialSpinner android:id="@+id/dst_languege_spinner" android:background="@color/bg_content" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="12dp" android:layout_marginStart="12dp"/>
+                </LinearLayout>
+            </FrameLayout>
+            <android.support.v7.widget.RecyclerView android:id="@+id/chat_list" android:background="@color/transparent" android:padding="0dp" android:scrollbars="vertical" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginTop="@dimen/dimen_13" android:layout_marginBottom="@dimen/dimen_135" android:layout_below="@+id/trans_container"/>
+        </RelativeLayout>
+        <RelativeLayout android:id="@+id/chat_page_1" android:background="@android:color/transparent" android:clipChildren="false" android:layout_width="match_parent" android:layout_height="match_parent" android:fillViewport="true">
+            <RelativeLayout android:id="@+id/rl_aiui_chat_fragment_opt" android:clipChildren="false" android:layout_width="match_parent" android:layout_height="@dimen/dimen_135" android:layout_alignParentBottom="true">
+                <ImageView android:id="@+id/press_bar_ware" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/icon_aiui_voice_wave_0" android:layout_centerInParent="true"/>
+                <ImageView android:id="@+id/press_bar" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true"/>
+                <TextView android:id="@+id/press_bar_prompt" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dimen_6" android:text="@string/press_to_say" android:maxLines="1" android:singleLine="true" android:layout_below="@+id/press_bar" android:layout_centerHorizontal="true"/>
+                <ImageView android:id="@+id/press_about" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dimen_16" android:layout_marginBottom="@dimen/dimen_36" android:src="@drawable/icon_aiui_about" android:layout_alignParentLeft="true" android:layout_alignParentBottom="true"/>
+                <ImageView android:id="@+id/press_close" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/dimen_16" android:layout_marginBottom="@dimen/dimen_36" android:src="@drawable/icon_aiui_close" android:layout_alignParentRight="true" android:layout_alignParentBottom="true"/>
+            </RelativeLayout>
+            <View android:id="@+id/v_rl_aiui_chat_fragment_opt" android:visibility="gone" android:layout_width="match_parent" android:layout_height="@dimen/res_0x7f070190_dimen_0_3" android:layout_above="@+id/rl_aiui_chat_fragment_opt"/>
+        </RelativeLayout>
+    </FrameLayout>
+</RelativeLayout>

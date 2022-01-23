@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <EditText android:id="@id/et_accessId" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="16.0dip" android:text="1cf5bdb0-c66d-11e5-9875-63635d52845f" android:hint="输入accessId" />
+    <EditText android:id="@id/et_name" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="16.0dip" android:text="正式环境测试号0801" android:hint="输入name" />
+    <EditText android:id="@id/et_userId" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="16.0dip" android:text="8888" android:hint="输入userId" />
+    <EditText android:id="@id/et_tcp_ip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="16.0dip" android:text="115.29.190.253" android:hint="输入tcp_ip" />
+    <EditText android:id="@id/et_http_ip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="16.0dip" android:text="http://115.29.190.253:4999/sdkChat" android:hint="输入http_ip" />
+    <Button android:id="@id/btn_save" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="16.0dip" android:text="保存" />
+</LinearLayout>

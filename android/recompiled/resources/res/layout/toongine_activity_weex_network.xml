@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:id="@+id/activity_network" android:fitsSystemWindows="true" android:clipToPadding="true" android:layout_width="match_parent" android:layout_height="match_parent">
+    <com.systoon.toongine.adapter.view.NavigationBarView android:id="@+id/toongine_navigationBarView" android:visibility="visible" android:layout_width="match_parent" android:layout_height="@dimen/dimen_48"/>
+    <FrameLayout android:layout_width="match_parent" android:layout_height="match_parent">
+        <Button android:layout_gravity="top|right|center_vertical|center_horizontal|center" android:id="@+id/toongine_hidecloseButton" android:visibility="gone" android:layout_width="@dimen/dimen_24" android:layout_height="@dimen/dimen_24" android:layout_marginTop="@dimen/dimen_10" android:layout_marginRight="@dimen/dimen_10"/>
+        <FrameLayout android:id="@+id/container" android:layout_width="match_parent" android:layout_height="match_parent"/>
+    </FrameLayout>
+</LinearLayout>

@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <integer name="abc_config_activityDefaultDur">220</integer>
+    <integer name="abc_config_activityShortDur">150</integer>
+    <integer name="animation_duration">300</integer>
+    <integer name="app_bar_elevation_anim_duration">150</integer>
+    <integer name="bottom_sheet_slide_duration">150</integer>
+    <integer name="cancel_button_image_alpha">127</integer>
+    <integer name="card_flip_time_full">200</integer>
+    <integer name="config_tooltipAnimTime">150</integer>
+    <integer name="content_moments_message_detail_discription_line_count">6</integer>
+    <integer name="content_moments_request_subs_empty_height">352</integer>
+    <integer name="content_moments_request_subs_empty_width">383</integer>
+    <integer name="content_moments_transmit_max_length">500</integer>
+    <integer name="design_snackbar_text_max_lines">2</integer>
+    <integer name="design_tab_indicator_anim_duration_ms">300</integer>
+    <integer name="elevation_shadow_view_shadow_orientation_default_value">3</integer>
+    <integer name="emailTimerInterval">600000</integer>
+    <integer name="email_pop_port">110</integer>
+    <integer name="email_smtp_port">25</integer>
+    <integer name="event_name_max_length">20</integer>
+    <integer name="event_subtitle_max_length">40</integer>
+    <integer name="hide_password_duration">320</integer>
+    <integer name="history_app_max_number">4</integer>
+    <integer name="htjc_round_width">7</integer>
+    <integer name="main_tab_index">0</integer>
+    <integer name="mtrl_btn_anim_delay_ms">100</integer>
+    <integer name="mtrl_btn_anim_duration_ms">100</integer>
+    <integer name="mtrl_chip_anim_duration">100</integer>
+    <integer name="mtrl_tab_indicator_anim_duration_ms">250</integer>
+    <integer name="show_password_duration">200</integer>
+    <integer name="status_bar_notification_info_maxnum">999</integer>
+</resources>

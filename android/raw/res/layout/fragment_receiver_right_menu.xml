@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.msgseal.chat.receiverpage.RightMenuView android:id="@id/notice_top_right_add" android:layout_width="@dimen/dimen_24" android:layout_height="@dimen/dimen_24" android:src="@drawable/icon_add_chat_business" android:scaleType="centerCrop" android:layout_centerVertical="true" android:layout_alignParentEnd="true" />
+</LinearLayout>

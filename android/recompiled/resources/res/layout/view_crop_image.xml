@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent" android:layout_height="match_parent">
+    <ImageView android:id="@+id/iv_crop_bottom_view" android:layout_width="match_parent" android:layout_height="match_parent"/>
+    <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+        <View android:id="@+id/v_top" android:background="#80000000" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+        <ImageView android:id="@+id/iv_crop_top_image" android:layout_width="match_parent" android:layout_height="wrap_content" android:scaleType="fitCenter"/>
+        <View android:id="@+id/v_bottom" android:background="#80000000" android:layout_width="wrap_content" android:layout_height="match_parent"/>
+    </LinearLayout>
+</FrameLayout>

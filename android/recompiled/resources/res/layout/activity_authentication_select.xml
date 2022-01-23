@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:orientation="vertical" android:background="#f2f2f4" android:layout_width="match_parent" android:layout_height="match_parent">
+        <LinearLayout android:orientation="vertical" android:id="@+id/ll_l1" android:background="@drawable/auth_select_bg" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="11dp" android:layout_marginTop="8dp" android:layout_marginRight="11dp">
+            <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:baselineAligned="false">
+                <ImageView android:layout_width="70dp" android:layout_height="wrap_content" android:layout_marginLeft="20dp" android:layout_marginTop="15dp" android:layout_marginBottom="16dp" android:src="@drawable/auth_two_level"/>
+                <TextView android:textSize="14dp" android:textColor="#acb3bf" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_marginLeft="3dp" android:text="@string/auth_text_prompt" android:layout_weight="1"/>
+                <ImageView android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/authselect_watermark"/>
+            </LinearLayout>
+            <View android:background="#dddee3" android:layout_width="match_parent" android:layout_height="0.5dp" android:layout_marginLeft="14dp" android:layout_marginRight="14dp"/>
+            <RelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="19dp" android:layout_marginTop="11dp" android:layout_marginRight="19dp" android:layout_marginBottom="10dp">
+                <ImageView android:id="@+id/iv_realname_auth" android:layout_width="64dp" android:layout_height="64dp" android:src="@drawable/auth_realname_icon"/>
+                <LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10dp" android:layout_toRightOf="@+id/iv_realname_auth" android:layout_centerVertical="true">
+                    <TextView android:textSize="18dp" android:textColor="#222222" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/real_name_auth"/>
+                    <TextView android:textSize="14dp" android:textColor="#8e8e93" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="3dp" android:text="@string/check_auth_info"/>
+                </LinearLayout>
+                <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/auth_select_arrow" android:layout_alignParentRight="true" android:layout_centerVertical="true"/>
+            </RelativeLayout>
+        </LinearLayout>
+        <LinearLayout android:orientation="vertical" android:id="@+id/ll_l2" android:background="@drawable/auth_select_bg" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="11dp" android:layout_marginTop="8dp" android:layout_marginRight="11dp">
+            <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:baselineAligned="false">
+                <ImageView android:layout_width="73dp" android:layout_height="wrap_content" android:layout_marginLeft="20dp" android:layout_marginTop="15dp" android:layout_marginBottom="16dp" android:src="@drawable/auth_three_level"/>
+                <TextView android:textSize="14dp" android:textColor="#acb3bf" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_marginLeft="5dp" android:text="@string/auth_text_prompt2" android:layout_weight="1"/>
+                <ImageView android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/authselect_watermark"/>
+            </LinearLayout>
+            <View android:background="#dddee3" android:layout_width="match_parent" android:layout_height="0.5dp" android:layout_marginLeft="14dp" android:layout_marginRight="14dp"/>
+            <RelativeLayout android:id="@+id/rl_l2_checkface" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="19dp" android:layout_marginTop="11dp" android:layout_marginRight="19dp" android:layout_marginBottom="10dp">
+                <ImageView android:id="@+id/iv_face_auth" android:layout_width="64dp" android:layout_height="64dp" android:src="@drawable/auth_select_face"/>
+                <LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10dp" android:layout_toRightOf="@+id/iv_face_auth" android:layout_centerVertical="true">
+                    <TextView android:textSize="18dp" android:textColor="#222222" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/face_auth"/>
+                    <TextView android:textSize="14dp" android:textColor="#8e8e93" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="3dp" android:text="@string/open_camera"/>
+                </LinearLayout>
+                <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/auth_select_arrow" android:layout_alignParentRight="true" android:layout_centerVertical="true"/>
+            </RelativeLayout>
+            <View android:background="#dddee3" android:layout_width="match_parent" android:layout_height="0.5dp" android:layout_marginLeft="14dp" android:layout_marginRight="14dp"/>
+            <RelativeLayout android:id="@+id/rl_l2_bankcard" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="19dp" android:layout_marginTop="11dp" android:layout_marginRight="19dp" android:layout_marginBottom="10dp">
+                <ImageView android:id="@+id/iv_bankcard" android:layout_width="64dp" android:layout_height="64dp" android:src="@drawable/auth_leveltwo_bankcard_icon"/>
+                <LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10dp" android:layout_toRightOf="@+id/iv_bankcard" android:layout_centerVertical="true">
+                    <TextView android:textSize="18dp" android:textColor="#222222" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/card_verify_title"/>
+                    <TextView android:textSize="14dp" android:textColor="#8e8e93" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="3dp" android:text="@string/card_verify_title_hint"/>
+                </LinearLayout>
+                <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/auth_select_arrow" android:layout_alignParentRight="true" android:layout_centerVertical="true"/>
+            </RelativeLayout>
+        </LinearLayout>
+        <LinearLayout android:orientation="vertical" android:id="@+id/ll_l3" android:background="@drawable/auth_select_bg" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="11dp" android:layout_marginTop="8dp" android:layout_marginRight="11dp">
+            <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:baselineAligned="false">
+                <ImageView android:layout_width="73dp" android:layout_height="wrap_content" android:layout_marginLeft="20dp" android:layout_marginTop="15dp" android:layout_marginBottom="16dp" android:src="@drawable/auth_four_level"/>
+                <TextView android:textSize="14dp" android:textColor="#acb3bf" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_marginLeft="5dp" android:text="@string/auth_text_prompt3" android:layout_weight="1"/>
+                <ImageView android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/authselect_watermark"/>
+            </LinearLayout>
+            <View android:background="#dddee3" android:layout_width="match_parent" android:layout_height="0.5dp" android:layout_marginLeft="14dp" android:layout_marginRight="14dp"/>
+            <RelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="19dp" android:layout_marginTop="11dp" android:layout_marginRight="19dp" android:layout_marginBottom="10dp">
+                <ImageView android:id="@+id/iv_officehall_auth" android:layout_width="64dp" android:layout_height="64dp" android:src="@drawable/auth_select_officehall"/>
+                <LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10dp" android:layout_toRightOf="@+id/iv_officehall_auth" android:layout_centerVertical="true">
+                    <TextView android:textSize="18dp" android:textColor="#222222" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/office_hall"/>
+                    <TextView android:textSize="14dp" android:textColor="#8e8e93" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="6dp" android:text="@string/offline_certification"/>
+                </LinearLayout>
+                <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/auth_select_arrow" android:layout_alignParentRight="true" android:layout_centerVertical="true"/>
+            </RelativeLayout>
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:orientation="vertical" android:id="@+id/root_layout" android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:layout_width="match_parent" android:layout_height="@dimen/dimen_50"/>
+    <LinearLayout android:orientation="vertical" android:id="@+id/layout_container" android:layout_width="match_parent" android:layout_height="match_parent">
+        <com.syswin.email.view.EmailTipView android:id="@+id/tip_view" android:visibility="gone" android:layout_width="match_parent" android:layout_height="@dimen/dimen_44"/>
+        <com.systoon.toon.view.RefreshLoadLayout android:id="@+id/refresh_load_layout" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginBottom="@dimen/dimen_50" app:behavior="0x1">
+            <include android:id="@+id/id_refresh_view" layout="@layout/pull_to_refresh_header"/>
+            <android.support.v7.widget.RecyclerView android:id="@+id/id_content_view" android:background="@null" android:focusable="false" android:focusableInTouchMode="false" android:scrollbars="none" android:layout_width="match_parent" android:layout_height="match_parent" android:overScrollMode="never"/>
+        </com.systoon.toon.view.RefreshLoadLayout>
+        <LinearLayout android:gravity="top|center_vertical|center_horizontal|center" android:orientation="vertical" android:id="@+id/layout_empty" android:background="@color/c20" android:paddingTop="@dimen/dimen_120" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent">
+            <ImageView android:id="@+id/iv_empty" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/icon_email_inbox_empty" android:contentDescription="@string/app_name"/>
+            <TextView android:textSize="@dimen/ts_16px" android:textColor="@color/c28" android:gravity="center" android:id="@+id/tv_empty" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dimen_16" android:text="@string/mail_empty"/>
+        </LinearLayout>
+    </LinearLayout>
+    <com.syswin.email.view.EmailLeftMenuView android:layout_gravity="start" android:id="@+id/left_menu_view" android:visibility="gone" android:layout_width="@dimen/dimen_300" android:layout_height="match_parent"/>
+</android.support.v4.widget.DrawerLayout>

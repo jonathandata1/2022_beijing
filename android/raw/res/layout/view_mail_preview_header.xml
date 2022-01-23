@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dimen_12" android:layout_marginRight="@dimen/dimen_12" android:animateLayoutChanges="true" layout="@layout/email_preview_head" />
+    <View android:background="@color/c36" android:layout_width="fill_parent" android:layout_height="@dimen/dimen_0.3" android:layout_marginLeft="@dimen/dimen_12" android:layout_marginTop="@dimen/dimen_16" android:layout_marginRight="@dimen/dimen_12" />
+    <LinearLayout android:orientation="vertical" android:id="@id/ll_wb_mail" android:paddingLeft="@dimen/dimen_4" android:paddingRight="@dimen/dimen_4" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <com.syswin.email.base.view.NoScrollWebView android:id="@id/wb_mail_content" android:scrollbars="none" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dimen_16" android:layout_marginBottom="@dimen/dimen_16" android:overScrollMode="never" />
+    </LinearLayout>
+</LinearLayout>

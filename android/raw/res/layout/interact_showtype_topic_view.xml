@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/c20" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/interact_showtype_topic_img" android:layout_width="fill_parent" android:layout_height="@dimen/px_190" android:scaleType="centerCrop" />
+    <TextView android:textSize="@dimen/px_18" android:textColor="@color/c11" android:ellipsize="end" android:id="@id/interact_showtype_topic_title" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/px_15" android:layout_marginTop="@dimen/px_15" android:layout_marginRight="@dimen/px_15" android:maxLines="2" android:lineSpacingExtra="@dimen/px_7" />
+    <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/px_15" android:layout_marginTop="@dimen/px_12">
+        <TextView android:textSize="@dimen/px_14" android:textColor="@color/c8" android:id="@id/interact_showtype_topic_type" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+        <TextView android:textSize="@dimen/px_14" android:textColor="#ffff804a" android:id="@id/interact_showtype_topic_num" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    </LinearLayout>
+    <LinearLayout android:background="@color/c5" android:layout_width="fill_parent" android:layout_height="@dimen/px_10" android:layout_marginTop="@dimen/px_20">
+        <include layout="@layout/divider" />
+    </LinearLayout>
+</LinearLayout>

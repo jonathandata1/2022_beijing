@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_horizontal" android:layout_gravity="center" android:orientation="vertical" android:background="@color/c20" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/iv_data_empty" android:background="@drawable/contact_no_data_icon" android:layout_width="120.0dip" android:layout_height="120.0dip" android:layout_marginTop="@dimen/dimen_120" />
+    <TextView android:textSize="@dimen/dimen_15" android:textColor="@color/c12" android:id="@id/tv_data_empty_tip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="30.0dip" android:text="@string/contact_type_empty" />
+</LinearLayout>

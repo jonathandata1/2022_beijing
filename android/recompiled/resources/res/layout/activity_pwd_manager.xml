@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:background="@color/c5" android:layout_width="match_parent" android:layout_height="match_parent">
+    <View android:background="#dddee3" android:layout_width="match_parent" android:layout_height="1dp"/>
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:baselineAligned="false">
+        <TextView android:textSize="14dp" android:textColor="#8e8e93" android:id="@+id/pwd_manager_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="15dp" android:layout_marginTop="15dp" android:layout_marginBottom="7dp" android:text="@string/pwd_manager"/>
+        <TextView android:textSize="12dp" android:textColor="#8e8e93" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5dp" android:layout_marginTop="16dp" android:layout_marginBottom="6dp" android:text="@string/pwd_manage_prompt"/>
+    </LinearLayout>
+    <View android:background="#dddee3" android:layout_width="match_parent" android:layout_height="1dp" android:layout_marginTop="5dp"/>
+    <LinearLayout android:orientation="vertical" android:background="#ffffff" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <RelativeLayout android:orientation="horizontal" android:id="@+id/rl_pwdlogin" android:layout_width="match_parent" android:layout_height="@dimen/item_single_line_height">
+            <TextView android:textSize="15dp" android:textColor="#000000" android:id="@+id/tv_pwdlogin" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/item_margin_left" android:text="密码登录" android:layout_centerVertical="true"/>
+            <ImageView android:id="@+id/iv_pwdlogin_switch" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="15dp" android:layout_alignParentRight="true" android:layout_centerVertical="true"/>
+        </RelativeLayout>
+        <View android:id="@+id/reset__pwd_line" android:background="@color/c6" android:visibility="gone" android:layout_width="match_parent" android:layout_height="0.3dp" android:layout_marginLeft="15dp"/>
+        <RelativeLayout android:orientation="horizontal" android:id="@+id/rl_reset_loginpwd" android:visibility="gone" android:layout_width="match_parent" android:layout_height="@dimen/item_single_line_height">
+            <TextView android:textSize="15dp" android:textColor="@color/c12" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/item_margin_left" android:text="@string/reset_pwd" android:layout_centerVertical="true"/>
+            <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/item_margin_right" android:src="@drawable/common_arrow" android:layout_alignParentRight="true" android:layout_centerVertical="true"/>
+        </RelativeLayout>
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <LinearLayout android:orientation="horizontal" android:id="@+id/search_view" android:background="@color/c20" android:paddingLeft="@dimen/dimen_15" android:paddingTop="@dimen/dimen_10" android:paddingRight="@dimen/dimen_15" android:paddingBottom="@dimen/dimen_10" android:layout_width="match_parent" android:layout_height="@dimen/dimen_56">
+        <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@+id/search_input_layout" android:background="@drawable/contact_bg_notice_search" android:paddingTop="@dimen/dimen_10" android:paddingRight="@dimen/dimen_8" android:paddingBottom="@dimen/dimen_10" android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="1">
+            <EditText android:textSize="@dimen/dimen_14" android:textColor="@color/c12" android:gravity="left|center_vertical|center_horizontal|center" android:id="@+id/search_input" android:background="@null" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dimen_10" android:layout_marginRight="@dimen/dimen_5" android:hint="@string/contact_et_search" android:singleLine="true" android:drawableLeft="@drawable/contact_search_icon" android:drawablePadding="@dimen/dimen_5" android:layout_weight="1"/>
+            <ImageView android:id="@+id/search_et_delete" android:visibility="gone" android:layout_width="@dimen/dimen_14" android:layout_height="@dimen/dimen_14" android:src="@drawable/common_close_gray" android:scaleType="fitCenter"/>
+        </LinearLayout>
+        <TextView android:textSize="@dimen/dimen_17" android:textColor="@color/color_383C47" android:layout_gravity="center_vertical" android:id="@+id/search_cancel" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="@dimen/dimen_24" android:layout_marginLeft="8dp" android:text="@string/cancel"/>
+    </LinearLayout>
+    <View android:id="@+id/search_top_line" android:background="@color/color_business_notice_list_divider" android:layout_width="match_parent" android:layout_height="@dimen/res_0x7f070190_dimen_0_3"/>
+    <RelativeLayout android:id="@+id/rl_search_data" android:background="#7f000000" android:visibility="gone" android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="1">
+        <include layout="@layout/contact_search_empty_view"/>
+        <android.support.v7.widget.RecyclerView android:id="@+id/search_content_list" android:background="@null" android:scrollbars="none" android:layout_width="match_parent" android:layout_height="match_parent" android:overScrollMode="never"/>
+    </RelativeLayout>
+</LinearLayout>

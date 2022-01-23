@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" android:background="@color/sy_white" android:layout_width="match_parent" android:layout_height="match_parent">
+    <FrameLayout android:id="@+id/sy_layout_home_title_bar" android:layout_width="match_parent" android:layout_height="44dp">
+        <ImageView android:layout_gravity="center_vertical" android:id="@+id/sy_imv_back" android:layout_width="44dp" android:layout_height="44dp" android:src="@drawable/sy_ic_back" android:scaleType="centerInside"/>
+        <TextView android:textSize="16sp" android:textStyle="bold" android:textColor="#222222" android:gravity="center" android:layout_gravity="center_horizontal" android:layout_width="wrap_content" android:layout_height="match_parent" android:text="@string/sy_str_winter_olympics_car_system"/>
+        <TextView android:textSize="14sp" android:textColor="#222222" android:gravity="center" android:layout_gravity="right" android:id="@+id/sy_tv_skip_trip_list" android:layout_width="wrap_content" android:layout_height="match_parent" android:layout_marginRight="16dp" android:text="@string/sy_str_my_itinerary"/>
+    </FrameLayout>
+    <com.zhuanche.commonbase.widget.tablayout.MagicTabLayout android:id="@+id/sy_home_tab_layout_top" android:layout_width="match_parent" android:layout_height="44dp" android:layout_below="@+id/sy_layout_home_title_bar"/>
+    <com.amap.api.maps.TextureMapView android:id="@+id/sy_map_home" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_below="@+id/sy_home_tab_layout_top"/>
+    <FrameLayout android:id="@+id/sy_container_home" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_below="@+id/sy_home_tab_layout_top"/>
+    <include android:layout_width="match_parent" android:layout_height="match_parent" android:layout_below="@+id/sy_home_tab_layout_top" layout="@layout/sy_loading_layout"/>
+    <View android:background="@drawable/sy_by_home_title_bar" android:layout_width="match_parent" android:layout_height="10dp" android:layout_below="@+id/sy_home_tab_layout_top"/>
+</RelativeLayout>

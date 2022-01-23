@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/view_type_a" android:background="@color/color_FFFFFF" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="14.0dip" android:textColor="@color/color_8E8E93" android:id="@id/serviceType" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/hp_px_20" android:layout_marginTop="@dimen/hp_px_25" android:layout_marginBottom="@dimen/hp_px_10" android:text="@string/hp_customized_service" />
+    <com.systoon.customhomepage.widget.NoScrollGridView android:id="@id/gridview" android:background="@color/color_FFFFFF" android:scrollbars="none" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/hp_px_15" android:layout_marginRight="@dimen/hp_px_15" android:listSelector="@color/transparent" android:horizontalSpacing="@dimen/hp_px_3" android:verticalSpacing="@dimen/hp_px_10" android:overScrollMode="never" />
+    <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/noapp" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="@dimen/hp_px_107" android:layout_marginTop="@dimen/hp_px_n25">
+        <TextView android:textSize="@dimen/hp_px_15" android:textColor="@color/color_95989F" android:gravity="center" android:id="@id/tv_noapp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/hp_no_app" />
+    </LinearLayout>
+    <RelativeLayout android:id="@id/lineview" android:background="@color/color_FFFFFF" android:layout_width="fill_parent" android:layout_height="@dimen/hp_px_15">
+        <View android:background="@color/color_DDDEE3" android:layout_width="fill_parent" android:layout_height="@dimen/hp_px_1" android:layout_marginLeft="@dimen/hp_px_15" android:layout_marginRight="@dimen/hp_px_15" android:layout_alignParentBottom="true" />
+    </RelativeLayout>
+</LinearLayout>

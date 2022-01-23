@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="horizontal" android:background="@color/white" android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <View android:id="@id/v_left_space" android:visibility="gone" android:layout_width="@dimen/dimen_16" android:layout_height="fill_parent" />
+    <View android:id="@id/v_margin" android:layout_width="@dimen/dimen_8" android:layout_height="fill_parent" />
+    <FrameLayout android:layout_width="124.0dip" android:layout_height="wrap_content">
+        <ImageView android:id="@id/iv_image" android:layout_width="124.0dip" android:layout_height="@dimen/dimen_66" android:scaleType="centerCrop" />
+        <TextView android:textSize="@dimen/dimen_14" android:textStyle="bold" android:textColor="@color/color_4A4A4A" android:id="@id/tv_title" android:layout_width="124.0dip" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dimen_8" android:layout_marginTop="@dimen/dimen_12" android:text="title" />
+        <TextView android:textSize="@dimen/dimen_12" android:textColor="@color/color_9C9C9C" android:id="@id/tv_sub_title" android:layout_width="124.0dip" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dimen_8" android:layout_marginTop="@dimen/dimen_34" android:text="subtitle" />
+        <View android:layout_width="124.0dip" android:layout_height="@dimen/dimen_20" />
+    </FrameLayout>
+    <View android:id="@id/v_right_space" android:visibility="gone" android:layout_width="@dimen/dimen_16" android:layout_height="fill_parent" />
+</LinearLayout>

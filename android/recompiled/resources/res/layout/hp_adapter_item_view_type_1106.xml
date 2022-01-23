@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:orientation="horizontal" android:background="@color/color_FFFFFF" android:layout_width="wrap_content" android:layout_height="@dimen/dimen_104">
+    <View android:id="@+id/v_left_space" android:visibility="gone" android:layout_width="@dimen/dimen_16" android:layout_height="match_parent"/>
+    <View android:id="@+id/v_margin" android:layout_width="@dimen/dimen_8" android:layout_height="match_parent"/>
+    <FrameLayout android:background="@drawable/affair_1106_item_background" android:layout_width="@dimen/dimen_90" android:layout_height="@dimen/dimen_84">
+        <com.makeramen.roundedimageview.RoundedImageView android:id="@+id/iv_image" android:layout_width="@dimen/dimen_90" android:layout_height="@dimen/dimen_60" android:layout_marginTop="@dimen/dimen_24" android:scaleType="centerCrop" app:riv_corner_radius_bottom_left="@dimen/dimen_12" app:riv_corner_radius_bottom_right="@dimen/dimen_12" app:riv_mutate_background="true"/>
+        <TextView android:textSize="@dimen/dimen_14" android:textStyle="bold" android:textColor="@color/color_4A4A4A" android:id="@+id/tv_title" android:paddingLeft="@dimen/dimen_10" android:layout_width="@dimen/dimen_90" android:layout_height="@dimen/dimen_40" android:layout_marginTop="@dimen/dimen_12" android:text="title"/>
+    </FrameLayout>
+    <View android:id="@+id/v_right_space" android:visibility="gone" android:layout_width="@dimen/dimen_16" android:layout_height="match_parent"/>
+</LinearLayout>

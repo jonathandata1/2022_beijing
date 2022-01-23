@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:id="@id/fl_main_activity" android:clickable="true" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:background="@color/c5" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <base.view.widget.CSTAuthModuleNoSlideViewPager android:id="@id/fragment_activity_pager" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginBottom="@dimen/dimen_48" />
+        <LinearLayout android:orientation="horizontal" android:id="@id/tab_container" android:background="@color/c20" android:layout_width="fill_parent" android:layout_height="@dimen/dimen_48" android:layout_marginTop="@dimen/dimen_1" android:layout_alignParentBottom="true" />
+    </RelativeLayout>
+</FrameLayout>

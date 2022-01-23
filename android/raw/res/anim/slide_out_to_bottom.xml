@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<set android:duration="@android:integer/config_longAnimTime" android:fillAfter="true"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <translate android:interpolator="@android:anim/linear_interpolator" android:fromYDelta="0.0" android:toYDelta="100.0%p"
+      xmlns:android="http://schemas.android.com/apk/res/android" />
+    <alpha android:fromAlpha="0.1" android:toAlpha="1.0" />
+</set>

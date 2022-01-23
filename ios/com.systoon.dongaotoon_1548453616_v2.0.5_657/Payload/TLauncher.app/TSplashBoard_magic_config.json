@@ -1,0 +1,9 @@
+{
+  "tSplash":{
+    "config":{
+      "t_dataContext":{
+          "service_domain":"otm.temail.manage"
+      }
+    }
+  }
+}

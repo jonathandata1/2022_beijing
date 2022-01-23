@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:id="@id/scan_code_area" android:background="@drawable/scan_qr_code_bg" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dimen_23" android:layout_marginTop="@dimen/dimen_30" android:layout_marginRight="@dimen/dimen_23">
+        <ImageView android:id="@id/app_code_image" android:layout_width="@dimen/scan_app_qr_code_logo_width" android:layout_height="@dimen/dimen_28" android:layout_marginTop="@dimen/dimen_20" android:layout_centerHorizontal="true" />
+        <View android:id="@id/app_code_divide" android:background="@color/tc_7" android:layout_width="fill_parent" android:layout_height="@dimen/dimen_0.5" android:layout_marginLeft="@dimen/dimen_10" android:layout_marginTop="@dimen/dimen_17" android:layout_marginRight="@dimen/dimen_10" android:layout_below="@id/app_code_image" />
+        <ImageView android:id="@id/scan_app_qr_code_iv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dimen_36" android:layout_marginBottom="@dimen/dimen_36" android:layout_below="@id/app_code_divide" android:layout_centerHorizontal="true" />
+        <View android:id="@id/scan_right_circle" android:background="@drawable/scan_qr_code_circle_right" android:layout_width="@dimen/dimen_9" android:layout_height="@dimen/dimen_18" android:layout_marginTop="@dimen/dimen_56" />
+        <View android:id="@id/scan_left_circle" android:background="@drawable/scan_qr_code_circle_left" android:layout_width="@dimen/dimen_9" android:layout_height="@dimen/dimen_18" android:layout_marginTop="@dimen/dimen_56" android:layout_alignParentRight="true" />
+    </RelativeLayout>
+    <TextView android:textSize="@dimen/ts_14px" android:textColor="@color/c9" android:id="@id/prompt_tv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dimen_18" android:text="@string/scan_app_qr_code_prompt" android:layout_below="@id/scan_code_area" android:layout_centerHorizontal="true" />
+    <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dimen_24" android:layout_marginTop="@dimen/dimen_30" android:layout_marginRight="@dimen/dimen_24" android:layout_below="@id/prompt_tv">
+        <Button android:textSize="@dimen/ts_18px" android:id="@id/scan_app_save" android:background="@drawable/scan_qr_code_bt_bg" android:layout_width="0.0dip" android:layout_height="@dimen/dimen_45" android:text="@string/scan_app_qr_code_save" android:layout_weight="1.0" android:onClick="savePhoto" android:textAllCaps="false" />
+        <Button android:textSize="@dimen/ts_18px" android:id="@id/scan_app_share" android:background="@drawable/scan_qr_code_bt_bg" android:layout_width="0.0dip" android:layout_height="@dimen/dimen_45" android:layout_marginLeft="@dimen/dimen_17" android:text="@string/scan_app_qr_code_share" android:layout_weight="1.0" android:onClick="shareTo" android:textAllCaps="false" />
+    </LinearLayout>
+</RelativeLayout>

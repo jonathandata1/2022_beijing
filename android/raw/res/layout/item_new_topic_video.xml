@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:paddingLeft="@dimen/dimen_16" android:paddingTop="@dimen/dimen_16" android:paddingRight="@dimen/dimen_16" android:paddingBottom="@dimen/dimen_16" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/topic_text_item_move" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dimen_12" android:src="@drawable/icon_topic_item_move" android:layout_alignParentRight="true" android:layout_centerVertical="true" android:layout_marginStart="@dimen/dimen_12" android:layout_alignParentEnd="true" />
+    <ImageView android:id="@id/topic_text_item_cut" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/dimen_12" android:src="@drawable/icon_topic_item_delete" android:layout_alignParentLeft="true" android:layout_centerVertical="true" android:layout_marginEnd="@dimen/dimen_12" android:layout_alignParentStart="true" />
+    <FrameLayout android:id="@id/topic_video_layout" android:focusable="true" android:clickable="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_toRightOf="@id/topic_text_item_cut" android:layout_toEndOf="@id/topic_text_item_cut">
+        <ImageView android:id="@id/item_topic_image" android:layout_width="@dimen/dimen_140" android:layout_height="@dimen/dimen_100" android:scaleType="centerCrop" />
+        <ImageView android:layout_gravity="center" android:id="@id/iv_input_video_status" android:layout_width="@dimen/dimen_44" android:layout_height="@dimen/dimen_44" android:src="@drawable/chat_video_play" />
+        <com.msgseal.chat.customviews.CircleProgressView android:layout_gravity="center" android:visibility="gone" android:layout_width="@dimen/dimen_40" android:layout_height="@dimen/dimen_40" />
+        <com.msgseal.chat.customviews.MessageLoadProgressView android:layout_gravity="center" android:id="@id/holder_topic_video_load" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    </FrameLayout>
+</RelativeLayout>

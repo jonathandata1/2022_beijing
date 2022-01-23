@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:background="@color/white" android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:gravity="left" android:orientation="vertical" android:background="@color/white" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="40dp">
+            <TextView android:layout_width="0dp" android:layout_height="wrap_content" android:layout_marginLeft="10dp" android:text="欠费金额:" android:layout_weight="1"/>
+            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="30dp" android:text="￥"/>
+            <TextView android:id="@+id/arrearage_ampunt" android:layout_width="0dp" android:layout_height="wrap_content" android:text="1000" android:layout_weight="3"/>
+        </LinearLayout>
+        <TextView android:background="@color/ccbpay_gray" android:layout_width="match_parent" android:layout_height="1dp"/>
+        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="40dp">
+            <TextView android:layout_width="0dp" android:layout_height="wrap_content" android:layout_marginLeft="10dp" android:text="缴费金额:" android:layout_weight="1"/>
+            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="30dp" android:text="￥"/>
+            <EditText android:textSize="13dp" android:id="@+id/input_edit" android:background="@null" android:layout_width="0dp" android:layout_height="wrap_content" android:hint="0.00" android:maxLength="14" android:layout_weight="3" android:inputType="numberDecimal"/>
+        </LinearLayout>
+        <TextView android:background="@color/ccbpay_gray" android:layout_width="match_parent" android:layout_height="1dp"/>
+        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="40dp">
+            <TextView android:layout_width="0dp" android:layout_height="wrap_content" android:layout_marginLeft="10dp" android:text="缴费说明:" android:layout_weight="1"/>
+            <TextView android:id="@+id/message_tv" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_marginLeft="30dp" android:text="倚山居1号楼2单元101" android:layout_weight="3"/>
+        </LinearLayout>
+        <TextView android:background="@color/ccbpay_gray" android:layout_width="match_parent" android:layout_height="1dp"/>
+    </LinearLayout>
+    <LinearLayout android:gravity="bottom" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="match_parent">
+        <Button android:textColor="@color/white" android:id="@+id/next" android:background="@drawable/btn_shap" android:layout_width="0dp" android:layout_height="50dp" android:layout_margin="8dp" android:text="确认缴费" android:layout_weight="1"/>
+    </LinearLayout>
+</LinearLayout>

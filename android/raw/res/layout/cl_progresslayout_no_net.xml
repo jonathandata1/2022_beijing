@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <ImageView android:id="@id/iv_no_net" android:layout_width="wrap_content" android:layout_height="wrap_content" android:scaleType="centerCrop" app:srcCompat="@drawable/img_no_net" />
+    <TextView android:textSize="16.0dip" android:textColor="@color/color_999999" android:id="@id/tv_no_net" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="20.0dip" android:text="@string/cl_network_error" />
+</LinearLayout>

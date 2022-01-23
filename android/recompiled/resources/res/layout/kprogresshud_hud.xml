@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.kaopiz.kprogresshud.BackgroundLayout xmlns:android="http://schemas.android.com/apk/res/android" android:gravity="center" android:orientation="vertical" android:id="@+id/background" android:background="@android:color/transparent" android:padding="16dp" android:layout_width="wrap_content" android:layout_height="wrap_content">
+    <FrameLayout android:id="@+id/container" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+    <TextView android:textSize="16sp" android:textColor="@android:color/white" android:id="@+id/label" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="8dp" android:layout_marginBottom="4dp"/>
+    <TextView android:textSize="13sp" android:textColor="@android:color/white" android:id="@+id/details_label" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+</com.kaopiz.kprogresshud.BackgroundLayout>

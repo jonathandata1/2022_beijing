@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:layout_width="120.0dip" android:layout_height="120.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/item_chat_video_img" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <com.msgseal.chat.customviews.CircleProgressView android:id="@id/item_chat_video_process" android:visibility="gone" android:layout_width="@dimen/dimen_30" android:layout_height="@dimen/dimen_30" android:layout_centerInParent="true" />
+    <ImageView android:id="@id/item_chat_video_status" android:visibility="visible" android:layout_width="@dimen/dimen_30" android:layout_height="@dimen/dimen_30" android:layout_centerInParent="true" />
+    <CheckBox android:id="@id/item_chat_video_select" android:background="@drawable/chat_checkbox_blue_style" android:focusable="false" android:visibility="gone" android:clickable="false" android:layout_width="@dimen/dimen_20" android:layout_height="@dimen/dimen_20" android:layout_margin="@dimen/dimen_7" android:button="@null" android:layout_alignParentRight="true" />
+    <TextView android:textSize="@dimen/dimen_12" android:textColor="@color/c20" android:id="@id/item_chat_video_time" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="@dimen/dimen_7" android:layout_alignParentBottom="true" />
+</RelativeLayout>

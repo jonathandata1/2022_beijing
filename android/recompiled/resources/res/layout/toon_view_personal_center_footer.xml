@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:background="@color/c5" android:layout_width="match_parent" android:layout_height="match_parent">
+    <View android:background="@color/c6" android:layout_width="match_parent" android:layout_height="@dimen/res_0x7f070190_dimen_0_3" android:layout_marginTop="20dp"/>
+    <RelativeLayout android:id="@+id/rl_again_enter" android:background="@color/c20" android:layout_width="match_parent" android:layout_height="@dimen/dimen_44">
+        <TextView android:textSize="@dimen/ts_16px" android:textColor="@color/c14" android:gravity="center" android:id="@+id/tv_setting_quit" android:layout_width="match_parent" android:layout_height="match_parent" android:text="@string/quit_login"/>
+    </RelativeLayout>
+    <View android:background="@color/c6" android:layout_width="match_parent" android:layout_height="@dimen/res_0x7f070190_dimen_0_3" android:layout_marginBottom="30dp"/>
+</LinearLayout>

@@ -1,0 +1,158 @@
+!!brut.androlib.meta.MetaInfo
+apkFileName: base.apk
+compressionType: false
+doNotCompress:
+- resources.arsc
+- META-INF/android.arch.core_runtime.version
+- META-INF/android.arch.lifecycle_extensions.version
+- META-INF/android.arch.lifecycle_livedata-core.version
+- META-INF/android.arch.lifecycle_livedata.version
+- META-INF/android.arch.lifecycle_runtime.version
+- META-INF/android.arch.lifecycle_viewmodel.version
+- META-INF/android.support.design_material.version
+- META-INF/androidx.appcompat_appcompat.version
+- META-INF/androidx.asynclayoutinflater_asynclayoutinflater.version
+- META-INF/androidx.cardview_cardview.version
+- META-INF/androidx.coordinatorlayout_coordinatorlayout.version
+- META-INF/androidx.core_core.version
+- META-INF/androidx.cursoradapter_cursoradapter.version
+- META-INF/androidx.customview_customview.version
+- META-INF/androidx.documentfile_documentfile.version
+- META-INF/androidx.drawerlayout_drawerlayout.version
+- META-INF/androidx.exifinterface_exifinterface.version
+- META-INF/androidx.fragment_fragment.version
+- META-INF/androidx.interpolator_interpolator.version
+- META-INF/androidx.legacy_legacy-support-core-ui.version
+- META-INF/androidx.legacy_legacy-support-core-utils.version
+- META-INF/androidx.legacy_legacy-support-v4.version
+- META-INF/androidx.loader_loader.version
+- META-INF/androidx.localbroadcastmanager_localbroadcastmanager.version
+- META-INF/androidx.media_media.version
+- META-INF/androidx.print_print.version
+- META-INF/androidx.recyclerview_recyclerview.version
+- META-INF/androidx.slidingpanelayout_slidingpanelayout.version
+- META-INF/androidx.sqlite_sqlite.version
+- META-INF/androidx.swiperefreshlayout_swiperefreshlayout.version
+- META-INF/androidx.transition_transition.version
+- META-INF/androidx.vectordrawable_vectordrawable-animated.version
+- META-INF/androidx.vectordrawable_vectordrawable.version
+- META-INF/androidx.versionedparcelable_versionedparcelable.version
+- META-INF/androidx.viewpager_viewpager.version
+- META-INF/com.android.support_preference-v14.version
+- META-INF/com.android.support_preference-v7.version
+- META-INF/com.google.android.material_material.version
+- META-INF/proguard/rxjava3.pro
+- png
+- assets/JsBridge.js
+- assets/PLACEHOLDER
+- assets/ap.data
+- assets/ap1.data
+- gif
+- jpg
+- assets/copylist.txt
+- assets/highlight.pack.js
+- assets/highlightjs-line-numbers.min.js
+- assets/toon.cer
+- assets/toon.chain.cer
+- assets/LEGO_MODULES_CONFIG/main_boot.json
+- assets/LEGO_MODULES_CONFIG/com_digitalchina_mobile_dfhfz1/__init__.json
+- assets/LEGO_MODULES_CONFIG/com_email_t_message/__init__.json
+- assets/LEGO_MODULES_CONFIG/com_example_flutter_homepage/__init__.json
+- assets/LEGO_MODULES_CONFIG/com_legoboot_core/__init__.json
+- assets/LEGO_MODULES_CONFIG/com_systoon_beijinghaidiantoon/__init__.json
+- assets/LEGO_MODULES_CONFIG/com_systoon_beijinghuairoutoon/__init__.json
+- assets/LEGO_MODULES_CONFIG/com_systoon_customhomepage/__init__.json
+- assets/LEGO_MODULES_CONFIG/com_systoon_dongaotoon/__init__.json
+- assets/LEGO_MODULES_CONFIG/com_systoon_foshantoon/__init__.json
+- assets/LEGO_MODULES_CONFIG/com_systoon_foshantoon1/__init__.json
+- assets/LEGO_MODULES_CONFIG/com_systoon_huairoutoon/__init__.json
+- assets/LEGO_MODULES_CONFIG/com_systoon_interact_interactive/__init__.json
+- assets/LEGO_MODULES_CONFIG/com_systoon_tconfigcenter/__init__.json
+- assets/LEGO_MODULES_CONFIG/com_systoon_tdns/__init__.json
+- assets/LEGO_MODULES_CONFIG/com_systoon_torg/__init__.json
+- assets/LEGO_MODULES_CONFIG/com_systoon_trusted_authentication_trustauth/__init__.json
+- assets/LEGO_MODULES_CONFIG/com_systoon_tshare/__init__.json
+- assets/LEGO_MODULES_CONFIG/com_systoon_tskin/__init__.json
+- assets/LEGO_MODULES_CONFIG/com_systoon_tsplash/__init__.json
+- assets/LEGO_MODULES_CONFIG/com_systoon_tsplash/splash.json
+- assets/LEGO_MODULES_CONFIG/com_systoon_tsplash/welcome.json
+- assets/LEGO_MODULES_CONFIG/com_systoon_tuser/__init__.json
+- assets/LEGO_MODULES_CONFIG/com_systoon_voicetotext/__init__.json
+- assets/LEGO_MODULES_CONFIG/com_systoon_zhungeer/__init__.json
+- assets/LEGO_MODULES_CONFIG/com_systoon_zhungeerjia/__init__.json
+- assets/LEGO_MODULES_CONFIG/com_syswin_msgseal/__init__.json
+- assets/LEGO_MODULES_CONFIG/com_ui_template_bottom_tab/__init__.json
+- assets/LEGO_MODULES_CONFIG/com_zhengtoon_tuser/__init__.json
+- assets/ae/res.ck
+- assets/flutter_assets/packages/flutter_common/res/color.json
+- jet
+- assets/map_assets/config_2_17_1594715854.data
+- assets/map_assets/icons_10_17_1597738891.data
+- assets/map_assets/icons_1_17_1597895142.data
+- assets/map_assets/icons_2_17_1597738874.data
+- assets/map_assets/icons_3_17_1597738877.data
+- assets/map_assets/icons_40_17_1597739013.data
+- assets/map_assets/icons_4_17_1594719480.data
+- assets/map_assets/icons_50_17_1594748499.data
+- assets/map_assets/icons_5_17_1597739000.data
+- assets/map_assets/icons_6_17_1594719483.data
+- assets/map_assets/mapprofile_1_17_1594760814.data
+- assets/map_assets/mapprofile_2_17_1594770801.data
+- assets/map_assets/style_17_17_1594715345.data
+- assets/map_assets/style_50_17_1594771321.data
+- ogg
+- mp3
+- webp
+- res/raw/cfca_ov_oca.cer
+isFrameworkApk: false
+packageInfo:
+  forcedPackageId: '127'
+  renameManifestPackage: null
+sdkInfo:
+  minSdkVersion: '21'
+  targetSdkVersion: '30'
+sharedLibrary: false
+sparseResources: false
+unknownFiles:
+  HMSCore-availableupdate.properties: '0'
+  HMSCore-base.properties: '0'
+  HMSCore-device.properties: '0'
+  HMSCore-log.properties: '0'
+  HMSCore-stats.properties: '0'
+  HMSCore-ui.properties: '0'
+  LICENSE-junit.txt: '8'
+  agconnect-core.properties: '0'
+  builddef.lst: '8'
+  content-provider.ftl: '8'
+  dao-deep.ftl: '8'
+  dao-master.ftl: '8'
+  dao-session.ftl: '8'
+  dao-unit-test.ftl: '8'
+  dao.ftl: '8'
+  entity.ftl: '8'
+  isoparser-default.properties: '8'
+  version.txt: '0'
+  stamp-cert-sha256: '8'
+  com/vladsch/flexmark/internal/util/entities.properties: '8'
+  freemarker/version.properties: '8'
+  freemarker/ext/beans/unsafeMethods.txt: '8'
+  freemarker/ext/jsp/web-app_2_2.dtd: '8'
+  freemarker/ext/jsp/web-app_2_3.dtd: '8'
+  freemarker/ext/jsp/web-jsptaglibrary_1_1.dtd: '8'
+  freemarker/ext/jsp/web-jsptaglibrary_1_2.dtd: '8'
+  junit/runner/logo.gif: '0'
+  junit/runner/smalllogo.gif: '0'
+  okhttp3/internal/publicsuffix/NOTICE: '8'
+  okhttp3/internal/publicsuffix/publicsuffixes.gz: '0'
+  pinyindb/multi_pinyin.txt: '8'
+  pinyindb/pinyin_gwoyeu_mapping.xml: '8'
+  pinyindb/pinyin_mapping.xml: '8'
+  pinyindb/unicode_to_hanyu_pinyin.txt: '8'
+usesFramework:
+  ids:
+  - 1
+  tag: null
+version: 2.6.0
+versionInfo:
+  versionCode: '21123121'
+  versionName: 2.0.4

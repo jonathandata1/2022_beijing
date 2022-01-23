@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <FrameLayout android:layout_width="match_parent" android:layout_height="wrap_content">
+        <com.lianjia.common.vr.view.NaspectRatioImageView android:id="@+id/iv_second_hand_house_image" android:layout_width="match_parent" android:layout_height="wrap_content" android:scaleType="centerCrop" android:contentDescription="" app:aspect_ratio="2" app:dominant_measurement="0"/>
+        <ImageView android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" app:srcCompat="@drawable/cl_chatui_rushi_logo"/>
+    </FrameLayout>
+    <TextView android:textSize="16dp" android:textColor="@color/cl_chatui_chat_msg_text_color" android:ellipsize="end" android:id="@+id/tv_house_source_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="15dp" android:layout_marginTop="9dp" android:layout_marginRight="15dp" android:maxLines="2"/>
+    <TextView android:textSize="13dp" android:textColor="@color/cl_chatui_chat_input_hint" android:ellipsize="end" android:id="@+id/tv_house_source_description" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="15dp" android:layout_marginTop="4dp" android:layout_marginRight="15dp" android:maxLines="1"/>
+    <TextView android:textSize="13dp" android:textColor="@color/cl_chatui_red_text" android:id="@+id/tv_house_source_price_tag" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="15dp" android:layout_marginTop="5dp" android:layout_marginRight="15dp"/>
+</merge>

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:layout_gravity="center_horizontal" android:id="@id/iv_view_common_empty_image" android:background="@drawable/icon_view_empty_no_result" android:layout_width="@dimen/dimen_120" android:layout_height="@dimen/dimen_120" android:layout_marginTop="@dimen/dimen_110" />
+    <TextView android:textSize="@dimen/dimen_17" android:textColor="@color/c35" android:layout_gravity="center_horizontal" android:id="@id/tv_view_common_empty_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dimen_30" />
+    <TextView android:textSize="@dimen/dimen_15" android:textColor="@color/c37" android:layout_gravity="center_horizontal" android:id="@id/tv_view_common_empty_detail" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dimen_8" />
+    <TextView android:textSize="@dimen/dimen_15" android:textColor="@color/c35" android:gravity="center" android:layout_gravity="center_horizontal" android:id="@id/tv_view_common_empty_button" android:background="@drawable/bg_view_common_empty_button" android:paddingLeft="@dimen/dimen_25" android:paddingRight="@dimen/dimen_25" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="@dimen/dimen_36" android:layout_marginTop="@dimen/dimen_25" />
+</LinearLayout>

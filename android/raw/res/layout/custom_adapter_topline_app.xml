@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:gravity="center_horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_centerInParent="true"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/topline_app_icon" android:layout_width="@dimen/dimen_50" android:layout_height="@dimen/dimen_56" android:scaleType="centerCrop" android:layout_centerHorizontal="true" />
+    <TextView android:textSize="@dimen/dimen_12" android:textColor="@color/c10" android:id="@id/topline_app_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dimen_57" android:singleLine="true" android:layout_centerHorizontal="true" />
+</RelativeLayout>

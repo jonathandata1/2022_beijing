@@ -1,0 +1,74 @@
+TOPIC {OnUnreadMessageChangeTopic.onTmailChange}
+java.lang.String [tmail] 秘邮地址
+
+TOPIC {OnLegoGroupListener.onLeaveGroup}
+java.lang.String [groupId]
+java.lang.String [whoLeaves]
+java.lang.String [whoReceives]
+
+TOPIC {OnUnreadMessageChangeTopic.onSyncUnreadCount}
+java.util.List<java.lang.String> [sessionIdList] sessionId列表
+
+TOPIC {OnLegoGroupListener.onKickedOutOfGroup}
+java.lang.String [groupId]
+java.lang.String [whoLeaves]
+java.lang.String [whoReceives]
+
+TOPIC {OnCdtpConnectionTopic.onLoginResp}
+java.lang.String [temail]
+int [code] 状态码
+
+TOPIC {OnLegoGroupListener.onNewMemberJoinGroup}
+java.lang.String [groupId]
+java.lang.String [member]
+
+TOPIC {OnLegoGroupListener.onReceiveGroupCardUpdated}
+java.lang.String [groupId]
+java.lang.String [who]
+
+TOPIC {OnUnreadMessageChangeTopic.onUnreadChange}
+
+TOPIC {OnCdtpConnectionTopic.onDisconnect}
+int [code] 状态码
+java.lang.String [desc] 状态码描述
+
+TOPIC {OnCdtpConnectionTopic.onConnect}
+
+TOPIC {OnLegoGroupListener.onRecvDeclination}
+java.lang.String [groupId]
+java.lang.String [invitee]
+
+TOPIC {OnLegoGroupListener.onCreateGroup}
+java.lang.String [sessionId]
+java.lang.String [groupName]
+
+TOPIC {OnLegoGroupListener.onRecvAcception}
+java.lang.String [groupId]
+java.lang.String [invitee]
+
+TOPIC {OnLegoGroupListener.onRecvJoinRejection}
+java.lang.String [groupId]
+java.lang.String [message]
+
+TOPIC {OnLegoGroupListener.onRecvJoinApplication}
+java.lang.String [groupId]
+java.lang.String [from]
+java.lang.String [auditor]
+
+TOPIC {OnLegoGroupListener.onRecvInvitation}
+java.lang.String [invitee]
+java.lang.String [inviteePubKey]
+java.lang.String [groupTemail]
+
+TOPIC {OnLegoGroupListener.onGroupDisbanded}
+java.lang.String [groupId]
+java.lang.String [whoDisbands]
+
+TOPIC {OnLegoGroupListener.onRecvJoinApproval}
+java.lang.String [groupId]
+java.lang.String [who]
+
+TOPIC {OnCdtpConnectionTopic.onLogoutResp}
+java.lang.String [temail]
+int [code] 状态码
+

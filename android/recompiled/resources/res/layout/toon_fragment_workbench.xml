@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" android:background="@color/c5" android:layout_width="match_parent" android:layout_height="match_parent">
+    <com.zhengtoon.tuser.workbench.view.DefinedListView android:id="@+id/lv_root" android:background="@color/c5" android:scrollbars="none" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginBottom="@dimen/dimen_50" android:listSelector="#00000000" android:cacheColorHint="@color/transparent" android:divider="@null" android:dividerHeight="0dp" android:overScrollMode="never"/>
+</RelativeLayout>

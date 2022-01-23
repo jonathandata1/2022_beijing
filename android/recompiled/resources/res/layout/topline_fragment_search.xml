@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" android:id="@+id/topline_search" android:background="@color/transparent" android:layout_width="match_parent" android:layout_height="@dimen/dimen_67">
+    <View android:id="@+id/search_bg" android:background="@color/c20" android:layout_width="match_parent" android:layout_height="match_parent"/>
+    <View android:id="@+id/search_bar_bg" android:background="#2e000000" android:layout_width="match_parent" android:layout_height="25dp"/>
+    <RelativeLayout android:id="@+id/search_rl" android:background="@drawable/topline_search_bg" android:paddingLeft="@dimen/dimen_6" android:paddingRight="@dimen/dimen_10" android:layout_width="match_parent" android:layout_height="@dimen/dimen_28" android:layout_marginLeft="@dimen/dimen_20" android:layout_marginRight="@dimen/dimen_20" android:layout_marginBottom="@dimen/dimen_8" android:layout_alignParentBottom="true">
+        <ImageView android:id="@+id/search_icon" android:layout_width="@dimen/dimen_15" android:layout_height="@dimen/dimen_15" android:src="@drawable/icon_topline_search" android:layout_centerVertical="true"/>
+        <ImageView android:id="@+id/voice_icon" android:layout_width="@dimen/dimen_15" android:layout_height="@dimen/dimen_15" android:src="@drawable/icon_voice" android:layout_alignParentRight="true" android:layout_centerVertical="true"/>
+        <TextView android:textSize="@dimen/dimen_14" android:textColor="@color/c20" android:gravity="center_vertical" android:id="@+id/search_text" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginLeft="@dimen/dimen_4" android:text="@string/topline_search" android:layout_toLeftOf="@+id/voice_icon" android:layout_toRightOf="@+id/search_icon" android:layout_centerVertical="true"/>
+    </RelativeLayout>
+    <View android:id="@+id/search_line" android:background="@color/c6" android:layout_width="match_parent" android:layout_height="0.5dp" android:layout_alignParentBottom="true"/>
+</RelativeLayout>

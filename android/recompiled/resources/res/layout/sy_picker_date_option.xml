@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <FrameLayout android:background="@android:color/white" android:paddingLeft="20dp" android:paddingTop="14dp" android:paddingRight="10dp" android:paddingBottom="14dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:minHeight="60dp">
+        <LinearLayout android:layout_gravity="center_vertical" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <TextView android:textSize="20sp" android:textStyle="bold" android:textColor="#333333" android:layout_gravity="center_vertical" android:id="@+id/sy_tv_picker_view_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/sy_str_select_date"/>
+            <TextView android:textSize="12sp" android:textColor="#8a8d95" android:layout_gravity="center_vertical" android:id="@+id/sy_tv_picker_view_desc" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="2dp" android:layout_marginRight="50dp" android:text="@string/sy_str_select_date_desc"/>
+        </LinearLayout>
+        <ImageView android:layout_gravity="right|center_vertical|center_horizontal|center" android:id="@+id/sy_imv_picker_date_cancel" android:padding="10dp" android:layout_width="35dp" android:layout_height="35dp" android:src="@drawable/sy_ic_dialog_close" android:layout_marginEnd="10dp"/>
+    </FrameLayout>
+    <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@+id/sy_layout_options_picker" android:background="@android:color/white" android:layout_width="match_parent" android:layout_height="match_parent" android:minHeight="180dp">
+        <com.zhuanche.commonbase.widget.datapicker.wheelview.WheelView android:id="@+id/sy_wheel_options_one" android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="1"/>
+        <com.zhuanche.commonbase.widget.datapicker.wheelview.WheelView android:id="@+id/sy_wheel_options_two" android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="1"/>
+        <com.zhuanche.commonbase.widget.datapicker.wheelview.WheelView android:id="@+id/sy_wheel_options_three" android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="0"/>
+    </LinearLayout>
+    <FrameLayout android:background="@android:color/white" android:paddingTop="28dp" android:paddingBottom="20dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <Button android:textSize="16sp" android:textStyle="bold" android:textColor="#f6f6f6" android:id="@+id/sy_btn_picker_date_submit" android:layout_width="match_parent" android:layout_height="48dp" android:layout_marginLeft="30dp" android:layout_marginRight="30dp" android:text="@string/sy_str_ok" android:textAllCaps="false" style="@style/SyDeepBtnBase"/>
+    </FrameLayout>
+</LinearLayout>

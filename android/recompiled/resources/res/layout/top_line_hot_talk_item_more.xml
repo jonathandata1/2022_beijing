@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="wrap_content" android:layout_height="match_parent">
+    <ImageView android:id="@+id/img" android:layout_width="118dp" android:layout_height="75dp" android:scaleType="fitCenter" android:layout_centerInParent="true"/>
+    <LinearLayout android:gravity="center" android:orientation="vertical" android:background="@drawable/shape_top_line_hot_talk_more" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignLeft="@+id/img" android:layout_alignTop="@+id/img" android:layout_alignRight="@+id/img" android:layout_alignBottom="@+id/img">
+        <TextView android:textSize="15dp" android:textColor="#5c5c5c" android:id="@+id/title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="查看更多"/>
+        <ImageView android:id="@+id/talk_num" android:background="@drawable/icon_top_line_hot_talk_more" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5dp"/>
+    </LinearLayout>
+</RelativeLayout>

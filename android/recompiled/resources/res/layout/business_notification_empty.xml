@@ -1,0 +1,2 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TextView xmlns:android="http://schemas.android.com/apk/res/android" android:textSize="@dimen/ts_15px" android:textColor="@color/c28" android:gravity="center_horizontal" android:background="@color/c20" android:paddingTop="@dimen/dimen_54" android:layout_width="match_parent" android:layout_height="match_parent" android:text="@string/notification_empty_tip" android:drawableTop="@drawable/icon_tmail_notice_empty" android:drawablePadding="@dimen/dimen_30"/>

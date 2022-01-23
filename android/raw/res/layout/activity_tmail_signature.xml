@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="@dimen/dimen_14" android:id="@id/reminderTitle" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dimen_16" android:layout_marginTop="@dimen/dimen_20" android:layout_marginBottom="@dimen/dimen_8" android:text="@string/tmail_signature" />
+    <LinearLayout android:orientation="vertical" android:id="@id/signatureView" android:background="@color/color_1F2022" android:layout_width="fill_parent" android:layout_height="@dimen/dimen_160">
+        <EditText android:textSize="@dimen/dimen_16" android:gravity="center|left|top" android:id="@id/signature_content" android:background="@null" android:focusable="true" android:focusableInTouchMode="true" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_margin="@dimen/dimen_16" android:hint="@string/tmail_default_signature" />
+    </LinearLayout>
+</LinearLayout>

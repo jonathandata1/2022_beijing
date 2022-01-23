@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:background="@color/white" android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:gravity="bottom" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="match_parent">
+        <Button android:textColor="@color/white" android:id="@+id/next" android:background="@color/tittle_blue" android:layout_width="0dp" android:layout_height="50dp" android:text="确认缴费" android:layout_weight="1"/>
+    </LinearLayout>
+</LinearLayout>

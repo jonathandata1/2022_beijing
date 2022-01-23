@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="horizontal" android:background="@color/c20" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:id="@id/rl_item_recover_bg" android:background="@color/c20" android:layout_width="fill_parent" android:layout_height="@dimen/dimen_68">
+        <ImageView android:id="@id/iv_item_keys_save_cloud_icon" android:background="@drawable/keys_cloud_icon" android:layout_width="@dimen/dimen_38" android:layout_height="@dimen/dimen_32" android:layout_marginLeft="@dimen/dimen_16" android:layout_centerVertical="true" android:layout_marginStart="@dimen/dimen_16" />
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginLeft="@dimen/dimen_16" android:layout_toRightOf="@id/iv_item_keys_save_cloud_icon" android:layout_marginStart="@dimen/dimen_16" android:layout_toEndOf="@id/iv_item_keys_save_cloud_icon">
+            <TextView android:textSize="@dimen/dimen_16" android:textColor="@color/c26" android:gravity="bottom" android:id="@id/tv_item_keys_save_cloud_name" android:paddingBottom="@dimen/dimen_3" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_marginRight="@dimen/dimen_15" android:maxLines="1" android:singleLine="true" android:layout_weight="7.0" />
+            <TextView android:textSize="@dimen/dimen_13" android:textColor="@color/c8" android:gravity="start" android:id="@id/tv_item_keys_save_cloud_time" android:paddingTop="@dimen/dimen_3" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_marginRight="@dimen/dimen_15" android:maxLines="1" android:singleLine="true" android:layout_weight="6.0" />
+        </LinearLayout>
+        <View android:id="@id/v_tebackup_cp_list_driver" android:background="@color/c36" android:layout_width="fill_parent" android:layout_height="@dimen/dimen_1" android:layout_marginLeft="@dimen/dimen_70" android:layout_alignParentBottom="true" android:layout_marginStart="@dimen/dimen_70" />
+    </RelativeLayout>
+</LinearLayout>

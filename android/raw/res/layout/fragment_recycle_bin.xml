@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="#fff6f6f6" android:paddingLeft="@dimen/dimen_20" android:paddingTop="@dimen/dimen_20" android:paddingRight="@dimen/dimen_20" android:paddingBottom="@dimen/dimen_20" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="@dimen/dimen_18" android:textStyle="bold" android:textColor="#ff333333" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="共有100条废纸篓消息" />
+    <LinearLayout android:orientation="horizontal" android:id="@id/ll_recycle_bin_manager" android:background="@drawable/bg_recycler_card" android:paddingLeft="@dimen/dimen_16" android:paddingRight="@dimen/dimen_16" android:layout_width="fill_parent" android:layout_height="90.0dip" android:layout_marginTop="@dimen/dimen_20" android:elevation="@dimen/dimen_4">
+        <ImageView android:layout_gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/recycle_manager" />
+        <TextView android:textSize="@dimen/dimen_20" android:textStyle="bold" android:textColor="#ff383838" android:layout_gravity="center_vertical" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dimen_14" android:text="管理废纸篓" android:layout_weight="1.0" />
+        <ImageView android:layout_gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/dimen_4" android:src="@drawable/recyclebin_right_arraws" />
+    </LinearLayout>
+    <LinearLayout android:orientation="horizontal" android:background="@drawable/bg_recycler_card" android:paddingLeft="@dimen/dimen_16" android:paddingRight="@dimen/dimen_16" android:layout_width="fill_parent" android:layout_height="90.0dip" android:layout_marginTop="@dimen/dimen_20" android:elevation="@dimen/dimen_4">
+        <ImageView android:layout_gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/recycle_restore_all" />
+        <TextView android:textSize="@dimen/dimen_20" android:textStyle="bold" android:textColor="#ff383838" android:layout_gravity="center_vertical" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dimen_14" android:text="全部恢复" android:layout_weight="1.0" />
+        <ImageView android:layout_gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/dimen_4" android:src="@drawable/recyclebin_right_arraws" />
+    </LinearLayout>
+    <LinearLayout android:orientation="horizontal" android:background="@drawable/bg_recycler_card" android:paddingLeft="@dimen/dimen_16" android:paddingRight="@dimen/dimen_16" android:layout_width="fill_parent" android:layout_height="90.0dip" android:layout_marginTop="@dimen/dimen_20" android:elevation="@dimen/dimen_4">
+        <ImageView android:layout_gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/recycle_restore_all" />
+        <TextView android:textSize="@dimen/dimen_20" android:textStyle="bold" android:textColor="#ff383838" android:layout_gravity="center_vertical" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dimen_14" android:text="全部删除" android:layout_weight="1.0" />
+        <ImageView android:layout_gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/dimen_4" android:src="@drawable/recyclebin_right_arraws" />
+    </LinearLayout>
+</LinearLayout>

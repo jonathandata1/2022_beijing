@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:gravity="center_horizontal" android:orientation="vertical" android:padding="10dp" android:focusable="true" android:focusableInTouchMode="true" android:layout_width="match_parent" android:layout_height="match_parent">
+    <FrameLayout android:layout_gravity="center_horizontal" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_margin="10dp" android:layout_marginBottom="2dp">
+        <TextView android:textSize="30sp" android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="10dp" android:text="讯飞语义示例"/>
+        <TextView android:textColor="#00ff00" android:id="@+id/txt_time_spent" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text=""/>
+    </FrameLayout>
+    <EditText android:textSize="20sp" android:gravity="top|left|center_vertical|center_horizontal|center" android:id="@+id/nlp_text" android:paddingBottom="40dp" android:layout_width="match_parent" android:layout_height="0dp" android:hint="" android:layout_weight="1"/>
+    <LinearLayout android:gravity="center_horizontal" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="10dp" android:layout_marginRight="10dp" android:layout_marginBottom="2dp">
+        <Button android:textSize="20sp" android:id="@+id/nlp_create" android:layout_width="0dp" android:layout_height="wrap_content" android:text="创建Agent" android:layout_weight="1"/>
+        <Button android:textSize="20sp" android:id="@+id/nlp_destroy" android:layout_width="0dp" android:layout_height="wrap_content" android:text="销毁Agent" android:layout_weight="1"/>
+    </LinearLayout>
+    <LinearLayout android:gravity="center_horizontal" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="10dp" android:layout_marginRight="10dp" android:layout_marginBottom="2dp">
+        <Button android:textSize="20sp" android:id="@+id/nlp_start" android:layout_width="0dp" android:layout_height="wrap_content" android:text="语音语义" android:layout_weight="1"/>
+        <Button android:textSize="20sp" android:id="@+id/nlp_stop_rec" android:layout_width="0dp" android:layout_height="wrap_content" android:text="停止录音" android:layout_weight="1"/>
+    </LinearLayout>
+    <Button android:textSize="20sp" android:id="@+id/text_nlp_start" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="10dp" android:layout_marginRight="10dp" android:layout_marginBottom="2dp" android:text="文本语义"/>
+    <LinearLayout android:gravity="center_horizontal" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="10dp" android:layout_marginRight="10dp">
+        <Button android:textSize="20sp" android:id="@+id/sync_contacts" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_marginBottom="2dp" android:text="上传联系人" android:layout_weight="1"/>
+        <Button android:textSize="20sp" android:id="@+id/sync_query" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_marginBottom="2dp" android:text="打包查询" android:layout_weight="1"/>
+    </LinearLayout>
+</LinearLayout>

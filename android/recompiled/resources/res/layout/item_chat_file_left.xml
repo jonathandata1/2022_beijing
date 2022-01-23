@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content">
+    <LinearLayout android:orientation="vertical" android:id="@+id/layout_file_left" android:background="@drawable/chat_item_left_bg" android:layout_width="@dimen/dimen_220" android:layout_height="wrap_content" android:minHeight="@dimen/dimen_66">
+        <RelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dimen_12" android:layout_marginTop="@dimen/dimen_12" android:layout_marginRight="@dimen/dimen_17">
+            <ImageView android:id="@+id/img_file_icon_left" android:layout_width="@dimen/dimen_42" android:layout_height="@dimen/dimen_38" android:layout_marginRight="@dimen/dimen_10" android:src="@drawable/chat_file_default_icon"/>
+            <TextView android:textSize="@dimen/dimen_15" android:textColor="@color/color_222222" android:ellipsize="middle" android:gravity="start" android:id="@+id/txt_file_title_left" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="2" android:layout_toRightOf="@+id/img_file_icon_left"/>
+            <TextView android:textSize="@dimen/dimen_13" android:textColor="@color/c8" android:id="@+id/tv_file_size_left" android:paddingTop="@dimen/dimen_3" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_toRightOf="@+id/img_file_icon_left" android:layout_below="@+id/txt_file_title_left"/>
+        </RelativeLayout>
+        <RelativeLayout android:visibility="visible" android:layout_width="match_parent" android:layout_height="@dimen/dimen_12" android:layout_marginLeft="@dimen/dimen_12" android:layout_marginRight="@dimen/dimen_12">
+            <com.msgseal.chat.customviews.FileProgressView android:id="@+id/file_progress_left" android:layout_width="match_parent" android:layout_height="@dimen/dimen_2"/>
+        </RelativeLayout>
+    </LinearLayout>
+    <ImageView android:layout_gravity="center_vertical" android:id="@+id/iv_file_download_status" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dimen_8" android:src="@drawable/item_msg_download"/>
+</LinearLayout>

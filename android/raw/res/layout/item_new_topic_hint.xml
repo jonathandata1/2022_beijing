@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:paddingLeft="@dimen/dimen_16" android:paddingTop="@dimen/dimen_16" android:paddingRight="@dimen/dimen_16" android:paddingBottom="@dimen/dimen_16" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="@dimen/dimen_16" android:textColor="@color/text_subtitle_color" android:id="@id/item_new_topic_hint_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/email_input_hint_tip" />
+</LinearLayout>

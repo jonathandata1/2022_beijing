@@ -1,0 +1,2 @@
+System.logoutEvent
+-com.zhengtoon.tuser.common.TUserConfigUnregister#clearData

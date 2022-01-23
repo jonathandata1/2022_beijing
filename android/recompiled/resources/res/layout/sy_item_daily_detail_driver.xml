@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="60dp">
+    <ImageView android:layout_gravity="center_vertical" android:id="@+id/sy_iv_driver_avtar" android:layout_width="40dp" android:layout_height="40dp" android:src="@drawable/sy_icon_driver_default" android:layout_marginStart="20dp" android:layout_marginEnd="10dp"/>
+    <TextView android:textSize="14sp" android:textColor="@color/sy_v222222" android:layout_gravity="center_vertical" android:id="@+id/sy_tv_driver_name" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+    <TextView android:textSize="10sp" android:textColor="@color/sy_vffffff" android:layout_gravity="center_vertical" android:id="@+id/sy_tv_service_status" android:background="@drawable/bg_solid_788efe_corners_2" android:paddingLeft="4dp" android:paddingTop="1dp" android:paddingRight="4dp" android:paddingBottom="1dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginStart="10dp"/>
+    <View android:layout_width="0dp" android:layout_height="0dp" android:layout_weight="1"/>
+    <ImageView android:layout_gravity="center_vertical" android:id="@+id/sy_iv_call_phone" android:layout_width="38dp" android:layout_height="38dp" android:src="@drawable/sy_icon_call_phone" android:layout_marginEnd="24dp"/>
+</LinearLayout>

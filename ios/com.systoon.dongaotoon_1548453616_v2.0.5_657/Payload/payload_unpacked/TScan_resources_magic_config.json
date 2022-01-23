@@ -1,0 +1,24 @@
+{
+    "TScan_resources": {
+        "flashlightNormal": "flashlightNormal", 
+        "flashlightSelect": "flashlightSelect", 
+        "header_icon_back_white": "0009_arrow_left_white", 
+        "myQrcode": "myQrcode", 
+        "qrcode_scan_appHeader_CN3": "qrcode_scan_appHeader_CN3", 
+        "qrcode_scan_appHeader_EN3": "qrcode_scan_appHeader_EN3", 
+        "qrcode_scan_frame": "qrcode_scan_frame", 
+        "qrcode_scan_line": "qrcode_scan_line", 
+        "qrcode_scan_logo": "0001_app_logo", 
+        "scanBack": "0010_arrow_left_white2", 
+        "scanMessage": "0019_message", 
+        "scanPhoto": "scanPhoto", 
+        "scanQQFriend": "0043_QQFriend", 
+        "scanQQZone": "0020_qq_zone",
+        "scanWeibo": "0044_weibo", 
+        "scanWeixin": "0025_wechat",
+        "scanApp": "scanApp",
+        "scanWeixinRound": "0031_wechat_round",
+        "scantoonFriend": "0045_toonFriend"
+        
+    }
+}

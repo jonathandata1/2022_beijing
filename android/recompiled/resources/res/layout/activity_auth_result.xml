@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android" android:background="#fff" android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:background="#fff" android:layout_width="match_parent" android:layout_height="match_parent">
+        <LinearLayout android:gravity="center_vertical" android:layout_gravity="center_horizontal" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="40dp">
+            <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/auth_succ_icon"/>
+            <TextView android:textSize="26dp" android:textColor="#000000" android:id="@+id/tv_auth_status" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="7dp" android:text="@string/auth_success"/>
+        </LinearLayout>
+        <TextView android:textSize="16dp" android:textColor="#222222" android:id="@+id/tv_received_bjcard" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="33dp" android:text=""/>
+        <ImageView android:id="@+id/iv_show_card" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="14dp" android:layout_marginTop="14dp" android:layout_marginRight="14dp" android:scaleType="fitXY"/>
+        <TextView android:textSize="14dp" android:textColor="#8e8e93" android:gravity="center" android:layout_gravity="center_horizontal" android:id="@+id/tv_auth_tip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="50dp" android:text="@string/auth_tip"/>
+        <TextView android:textSize="17dp" android:textColor="#ffffff" android:gravity="center" android:layout_gravity="center_horizontal" android:id="@+id/tv_setpwd" android:background="@drawable/authsucc_setpwd_bg" android:layout_width="300dp" android:layout_height="44dp" android:layout_marginTop="50dp" android:text="@string/set_safe_pwd"/>
+    </LinearLayout>
+</ScrollView>

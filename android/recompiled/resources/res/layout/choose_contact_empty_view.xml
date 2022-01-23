@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:background="@color/c20" android:layout_width="match_parent" android:layout_height="match_parent">
+    <ImageView android:id="@+id/iv_empty_contact" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dimen_120" android:src="@drawable/contact_empty_data_icon" android:layout_centerHorizontal="true"/>
+    <TextView android:textSize="@dimen/ts_16px" android:textColor="@color/color_383838" android:id="@+id/tv_empty_contact" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dimen_16" android:text="@string/chat_empty_contact" android:layout_below="@+id/iv_empty_contact" android:layout_centerHorizontal="true"/>
+    <TextView android:textSize="@dimen/ts_16px" android:textColor="@color/txt_button_Color" android:id="@+id/tv_add_contact" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dimen_16" android:text="@string/contact_add_contact" android:layout_below="@+id/tv_empty_contact" android:layout_centerHorizontal="true"/>
+    <View android:layout_width="match_parent" android:layout_height="match_parent" android:layout_below="@+id/tv_empty_contact" android:layout_alignParentBottom="true"/>
+</RelativeLayout>

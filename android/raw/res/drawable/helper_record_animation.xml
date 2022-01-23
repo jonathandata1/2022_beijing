@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<animation-list android:oneshot="false"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:duration="50" android:drawable="@drawable/icon_helper_record0" />
+    <item android:duration="50" android:drawable="@drawable/icon_helper_record1" />
+    <item android:duration="50" android:drawable="@drawable/icon_helper_record2" />
+    <item android:duration="50" android:drawable="@drawable/icon_helper_record3" />
+    <item android:duration="50" android:drawable="@drawable/icon_helper_record4" />
+    <item android:duration="50" android:drawable="@drawable/icon_helper_record5" />
+    <item android:duration="50" android:drawable="@drawable/icon_helper_record6" />
+    <item android:duration="50" android:drawable="@drawable/icon_helper_record7" />
+    <item android:duration="50" android:drawable="@drawable/icon_helper_record8" />
+    <item android:duration="50" android:drawable="@drawable/icon_helper_record9" />
+    <item android:duration="50" android:drawable="@drawable/icon_helper_record10" />
+    <item android:duration="50" android:drawable="@drawable/icon_helper_record11" />
+    <item android:duration="50" android:drawable="@drawable/icon_helper_record12" />
+    <item android:duration="50" android:drawable="@drawable/icon_helper_record13" />
+    <item android:duration="50" android:drawable="@drawable/icon_helper_record14" />
+    <item android:duration="50" android:drawable="@drawable/icon_helper_record15" />
+    <item android:duration="50" android:drawable="@drawable/icon_helper_record16" />
+    <item android:duration="50" android:drawable="@drawable/icon_helper_record17" />
+    <item android:duration="50" android:drawable="@drawable/icon_helper_record18" />
+    <item android:duration="50" android:drawable="@drawable/icon_helper_record19" />
+    <item android:duration="50" android:drawable="@drawable/icon_helper_record20" />
+    <item android:duration="50" android:drawable="@drawable/icon_helper_record21" />
+    <item android:duration="50" android:drawable="@drawable/icon_helper_record22" />
+    <item android:duration="50" android:drawable="@drawable/icon_helper_record23" />
+    <item android:duration="50" android:drawable="@drawable/icon_helper_record24" />
+    <item android:duration="50" android:drawable="@drawable/icon_helper_record25" />
+    <item android:duration="50" android:drawable="@drawable/icon_helper_record26" />
+    <item android:duration="50" android:drawable="@drawable/icon_helper_record27" />
+    <item android:duration="50" android:drawable="@drawable/icon_helper_record28" />
+</animation-list>

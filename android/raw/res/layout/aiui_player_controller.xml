@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <android.support.design.widget.CoordinatorLayout android:id="@id/control_container" android:background="@color/transparent" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <LinearLayout android:layout_gravity="center" android:orientation="vertical" android:id="@id/play_control" android:background="@color/transparent" android:paddingTop="10.0dip" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layoutDirection="ltr" android:elevation="3.0dip">
+            <LinearLayout android:gravity="center" android:orientation="horizontal" android:paddingTop="4.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <ImageButton android:id="@id/control_prev" android:background="@null" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/play_control_margin" android:layout_marginRight="@dimen/play_control_margin" app:srcCompat="@drawable/APKTOOL_DUMMY_48a" />
+                <ImageButton android:id="@id/control_play" android:background="@null" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/play_control_margin" android:layout_marginRight="@dimen/play_control_margin" />
+                <ImageButton android:id="@id/control_next" android:background="@null" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/play_control_margin" android:layout_marginRight="@dimen/play_control_margin" app:srcCompat="@drawable/APKTOOL_DUMMY_489" />
+            </LinearLayout>
+            <TextView android:textSize="18.0sp" android:textColor="@color/black" android:ellipsize="marquee" android:layout_gravity="center" android:id="@id/control_songName" android:paddingLeft="4.0dip" android:paddingTop="10.0dip" android:paddingRight="4.0dip" android:paddingBottom="6.0dip" android:focusable="true" android:focusableInTouchMode="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true" android:includeFontPadding="false" android:marqueeRepeatLimit="marquee_forever" />
+        </LinearLayout>
+    </android.support.design.widget.CoordinatorLayout>
+</RelativeLayout>

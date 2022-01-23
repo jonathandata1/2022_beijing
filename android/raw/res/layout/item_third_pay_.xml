@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:paddingLeft="@dimen/dimen_20" android:paddingRight="@dimen/dimen_20" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dimen_12"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <ImageView android:layout_gravity="center_vertical" android:id="@id/img_pay_icon" android:layout_width="@dimen/dimen_26" android:layout_height="@dimen/dimen_26" android:src="@drawable/ic_weixin_pay" />
+        <LinearLayout android:gravity="center_vertical" android:layout_gravity="center_vertical" android:orientation="vertical" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dimen_20" android:layout_weight="1.0">
+            <TextView android:textSize="@dimen/dimen_15" android:textColor="@color/color_222222" android:id="@id/txt_pay_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="微信支付" />
+            <TextView android:textSize="@dimen/dimen_14" android:textColor="@color/color_9c9c9c" android:id="@id/txt_pay_description" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="微信安全支付" />
+        </LinearLayout>
+        <CheckBox android:layout_gravity="center_vertical" android:id="@id/cb_pay_select" android:background="@drawable/card_checked_selector" android:layout_width="@dimen/dimen_23" android:layout_height="@dimen/dimen_23" android:button="@null" />
+    </LinearLayout>
+    <View android:background="@color/color_e1e1e1" android:layout_width="fill_parent" android:layout_height="@dimen/dimen_0.5" android:layout_marginTop="10.0dip" />
+</LinearLayout>

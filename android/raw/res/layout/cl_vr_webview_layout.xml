@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:background="#ffffffff" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <FrameLayout android:id="@id/webView_container" android:visibility="invisible" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <FrameLayout android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <com.lianjia.common.vr.VrView android:id="@id/vrView" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+        </FrameLayout>
+        <ImageButton android:id="@id/small_screen" android:background="#66666666" android:visibility="gone" android:layout_width="30.0dip" android:layout_height="30.0dip" android:layout_marginLeft="15.0dip" android:layout_marginTop="100.0dip" app:srcCompat="@drawable/vr_ic_small" />
+    </FrameLayout>
+    <FrameLayout android:id="@id/state_layout" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <ProgressBar android:id="@id/lib_cwb_progressbar" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="0.0dip" android:max="100" android:progress="0" style="@android:style/Widget.ProgressBar.Horizontal" />
+    <FrameLayout android:id="@id/container_layout" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <ImageView android:id="@id/iv_cover" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+        <LinearLayout android:gravity="center_horizontal" android:layout_gravity="bottom|center" android:orientation="horizontal" android:id="@id/warn_layout" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="18.299988dip">
+            <ImageView android:layout_gravity="center_vertical" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="5.0dip" app:srcCompat="@drawable/vr_star" />
+            <LinearLayout android:orientation="vertical" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                <TextView android:textSize="12.0dip" android:textColor="@color/color_b2ffffff" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/cl_text_vr_net" />
+                <TextView android:textSize="12.0dip" android:textColor="@color/color_b2ffffff" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5.0dip" android:text="@string/cl_text_vr_warn" />
+            </LinearLayout>
+        </LinearLayout>
+    </FrameLayout>
+    <LinearLayout android:layout_gravity="center" android:orientation="vertical" android:id="@id/icon_loading" android:paddingBottom="40.0dip" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <com.lianjia.common.vr.view.VrLoadingView android:layout_gravity="center_horizontal" android:layout_width="70.0dip" android:layout_height="70.0dip" app:repeat="true" app:showcircle="false" />
+        <ProgressBar android:layout_gravity="center_horizontal" android:id="@id/vr_progressbar" android:layout_width="60.0dip" android:layout_height="4.0dip" android:layout_marginTop="0.0dip" android:progress="0" android:progressDrawable="@drawable/cl_progress_drawable" style="@android:style/Widget.ProgressBar.Horizontal" />
+        <ImageView android:layout_gravity="center_horizontal" android:id="@id/iv_logo" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" app:srcCompat="@drawable/vrlogo" />
+        <ImageView android:layout_gravity="center_horizontal" android:id="@id/iv_logo_beike" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="14.599976dip" app:srcCompat="@drawable/vrlogo_beike" />
+    </LinearLayout>
+</FrameLayout>

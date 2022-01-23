@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:background="@color/white" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <TextView android:textSize="@dimen/dimen_16" android:textColor="@color/c8" android:gravity="center" android:id="@+id/tv_operator_title" android:paddingLeft="@dimen/dimen_40" android:paddingTop="@dimen/dimen_11" android:paddingRight="@dimen/dimen_40" android:paddingBottom="@dimen/dimen_11" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:minHeight="@dimen/dimen_40"/>
+    <View android:id="@+id/v_tv_operator_title" android:background="@color/view_divider_color" android:visibility="gone" android:layout_width="match_parent" android:layout_height="@dimen/res_0x7f070190_dimen_0_3"/>
+    <ListView android:id="@+id/operate_dialog_list_view" android:layout_width="match_parent" android:layout_height="wrap_content" android:divider="@null"/>
+    <View android:id="@+id/black_area" android:background="@color/common_dialog_bt_background_color" android:layout_width="match_parent" android:layout_height="@dimen/dimen_8"/>
+    <TextView android:textSize="@dimen/ts_16px" android:textColor="@color/operate_dialog_bottom_str_color" android:gravity="center" android:id="@+id/bottom_tv" android:layout_width="match_parent" android:layout_height="@dimen/dimen_50" android:text="@string/operate_dialog_str"/>
+</LinearLayout>

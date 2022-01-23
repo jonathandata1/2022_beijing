@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/c5" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="15.0dip" android:layout_marginTop="15.0dip" android:layout_marginBottom="7.0dip">
+        <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/authentication_icon" />
+        <TextView android:textSize="12.0sp" android:textColor="#ffeea22e" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:text="高级实名认证" />
+        <TextView android:textSize="12.0sp" android:textColor="#ff8e8e93" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="(开通可享受全部实名服务)" />
+    </LinearLayout>
+    <RelativeLayout android:id="@id/rl_highlevel" android:background="#ffffffff" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <TextView android:textSize="15.0sp" android:textColor="#ff000000" android:id="@id/tv_highlivel_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="15.0dip" android:layout_marginTop="13.0dip" android:text="人脸识别认证" />
+        <TextView android:textSize="14.0sp" android:textColor="#ff8e8e93" android:id="@id/tv_highlevel_subtitle" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="7.0dip" android:text="身份证拍照+人脸视频" android:layout_below="@id/tv_highlivel_title" android:layout_alignLeft="@id/tv_highlivel_title" />
+        <ImageView android:id="@id/tv_highlevel_arrow" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="15.0dip" android:src="@drawable/gray_left_arrows" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+        <TextView android:textSize="15.0sp" android:textColor="#ff777e8c" android:id="@id/tv_highlevel_info" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="30.0dip" android:text="已认证" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+        <View android:background="#ffdddee3" android:layout_width="fill_parent" android:layout_height="1.0dip" android:layout_marginLeft="15.0dip" android:layout_marginTop="14.0dip" android:layout_below="@id/tv_highlevel_subtitle" />
+    </RelativeLayout>
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="15.0dip" android:layout_marginTop="15.0dip" android:layout_marginBottom="7.0dip">
+        <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/authentication_icon" />
+        <TextView android:textSize="12.0sp" android:textColor="#ffeea22e" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:text="初级实名认证" />
+        <TextView android:textSize="12.0sp" android:textColor="#ff8e8e93" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="(开通可享受初级实名服务)" />
+    </LinearLayout>
+    <RelativeLayout android:id="@id/rl_primarylevel" android:background="#ffffffff" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <View android:id="@id/high_top_border" android:background="#ffdddee3" android:layout_width="fill_parent" android:layout_height="1.0dip" />
+        <TextView android:textSize="15.0sp" android:textColor="#ff000000" android:id="@id/tv_primarylivel_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="15.0dip" android:layout_marginTop="13.0dip" android:text="身份证信息认证" android:layout_below="@id/high_top_border" />
+        <ImageView android:id="@id/tv_primarylevel_arrow" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="15.0dip" android:src="@drawable/gray_left_arrows" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+        <TextView android:textSize="15.0sp" android:textColor="#ff777e8c" android:id="@id/tv_primarylevel_info" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="30.0dip" android:text="已认证" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+        <View android:background="#ffdddee3" android:layout_width="fill_parent" android:layout_height="1.0dip" android:layout_marginLeft="15.0dip" android:layout_marginTop="14.0dip" android:layout_below="@id/tv_primarylivel_title" />
+    </RelativeLayout>
+</LinearLayout>

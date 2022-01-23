@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:state_selected="true" android:drawable="@drawable/sy_choose_addr_up_arrow_drawable"/>
+    <item android:state_selected="false" android:drawable="@drawable/sy_choose_addr_down_arrow_drawable"/>
+</selector>

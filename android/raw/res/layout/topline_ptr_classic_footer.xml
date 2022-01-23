@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:layout_width="fill_parent" android:layout_height="60.0dip">
+        <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/ptr_classic_header_rotate_view_header_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true">
+            <TextView android:textSize="15.0dip" android:textColor="#ff5c5c5c" android:id="@id/ptr_classic_header_rotate_view_header_title" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+        </LinearLayout>
+        <FrameLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="8.0dip" android:layout_toLeftOf="@id/ptr_classic_header_rotate_view_header_text" android:layout_centerVertical="true">
+            <ProgressBar android:layout_gravity="center" android:id="@id/ptr_classic_header_rotate_view_progressbar" android:background="@android:color/transparent" android:layout_width="@dimen/dimen_20" android:layout_height="@dimen/dimen_20" android:indeterminate="true" android:indeterminateDrawable="@drawable/ptr_loading_progress" style="?android:progressBarStyleSmall" />
+        </FrameLayout>
+    </RelativeLayout>
+</LinearLayout>

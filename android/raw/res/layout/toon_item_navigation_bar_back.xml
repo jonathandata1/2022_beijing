@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:id="@id/rl_item_navigation_bar_back" android:background="@color/transparent" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include android:id="@id/in_navigation_bar_back" layout="@layout/toon_item_navigation_bar_b_i" />
+    <View android:id="@id/v_navigation_bar" android:background="@color/c6" android:layout_width="fill_parent" android:layout_height="@dimen/dimen_0.3" android:layout_alignParentBottom="true" />
+</RelativeLayout>

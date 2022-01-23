@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@android:color/transparent" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/tipbox_bg" android:layout_width="200.0dip" android:layout_height="wrap_content" android:src="@drawable/htjc_img_error_bg_1" android:layout_centerInParent="true" android:contentDescription="@string/htjc_friendly_tip_0" />
+    <TextView android:textSize="20.0sp" android:textColor="@color/htjc_white" android:id="@id/friendly_tip" android:background="@android:color/transparent" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/htjc_friendly_tip_1" android:layout_centerInParent="true" />
+    <ImageView android:id="@id/tipbox_bgicon" android:visibility="gone" android:layout_width="50.0dip" android:layout_height="50.0dip" android:src="@drawable/htjc_success" android:layout_centerInParent="true" />
+</RelativeLayout>

@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0,maximum-scale=1.0, user-scalable=no" />
+    <meta name="apple-mobile-web-app-title" content="<%= htmlWebpackPlugin.options.title %>">
+    <meta name="format-detection" content="telephone=no">
+    <title>服务升级中</title>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+        }
+
+        body {
+            box-sizing: border-box;
+            width: 100%;
+            min-height: 100vh;
+            background: #ffffff;
+            font-family: PingFangSC-Regular;
+            color: #333333;
+            text-align: center;
+            position: relative;
+        }
+
+        .body {
+            width: 100%;
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%, -50%);
+        }
+
+        .app-logo {
+            content: '';
+            box-sizing: border-box;
+            width: 156px;
+            height: 120px;
+            background: url("https://my2022.beijing2022.cn/fdfsdownload/group1/M00/00/97/wHw7iGG5UvuASE9wAABcl40U_8U165.png") no-repeat;
+            background-size: 100% 100%;
+            background-position: center;
+            margin: 0 auto;
+        }
+
+        .download {
+            box-sizing: border-box;
+            width: 100%;
+            margin-top: 20px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .download a {
+            display: block;
+            width: 210px;
+            height: 40px;
+            margin-bottom: 30px;
+        }
+
+        .tip {
+            font-size: 13px;
+            color: #494949;
+            line-height: 18px;
+            margin-bottom: 10px;
+            padding: 0 10px 0 10px;
+            text-align: center;
+            font-family: PingFangSC-Regular;
+
+        }
+
+        .tip-en {
+            font-size: 13px;
+            color: #858585;
+            line-height: 16px;
+            margin-bottom: 20px;
+            padding: 0 10px 0 10px;
+            text-align: center;
+            font-family: PingFangSC-Regular;
+
+        }
+    </style>
+</head>
+
+<body>
+    <div class="body">
+        <div class="app-logo"></div>
+        <div class="download">
+            <p class="tip">服务升级中，请稍后重试</p>
+            <p class="tip-en">Service upgrade, please try again later</p>
+        </div>
+    </div>
+</body>
+
+</html>

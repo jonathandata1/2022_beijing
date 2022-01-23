@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<message_list>
+    <!-- example body 自定义消息数据model  type 自定义消息类型 view 自定义消息的view类 -->
+    <!--<message-->
+    <!--body=""-->
+    <!--type="1"-->
+    <!--view="com.systoon.toon.message.itemholder.TestCustom">-->
+    <!--</message>-->
+</message_list>
+

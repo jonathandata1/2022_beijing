@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/ll_main" android:background="#fff2f2f4" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:psd="http://schemas.android.com/apk/res-auto">
+    <TextView android:textSize="17.0dip" android:textColor="#ff222222" android:gravity="center" android:layout_gravity="center_horizontal" android:id="@id/tv_tip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="77.0dip" android:text="@string/please_input_secure_password" android:layout_alignParentRight="true" />
+    <com.systoon.toonauth.authentication.view.widget.OAuthPwdInputView android:layout_gravity="center_horizontal" android:id="@id/et_password" android:background="#ffffffff" android:layout_width="264.0dip" android:layout_height="44.0dip" android:layout_marginLeft="10.0dip" android:layout_marginTop="39.0dip" android:layout_marginRight="10.0dip" android:layout_marginBottom="46.0dip" android:inputType="number" psd:maxCount="6" psd:psdType="weChat" psd:rectAngle="0.0dip" />
+</LinearLayout>

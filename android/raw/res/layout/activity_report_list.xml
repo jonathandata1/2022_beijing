@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="@dimen/dimen_14" android:textColor="@color/c9" android:background="@color/c5" android:paddingLeft="@dimen/dimen_15" android:paddingTop="@dimen/dimen_15" android:paddingBottom="@dimen/dimen_7" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/report_need_reason" />
+    <View android:background="@color/guide_divider" android:layout_width="fill_parent" android:layout_height="@dimen/dimen_1" />
+    <com.msgseal.chat.customviews.NoScrollListView android:id="@id/lv_report" android:fadingEdge="none" android:layout_width="fill_parent" android:layout_height="wrap_content" android:listSelector="@color/comment_selected_background" android:cacheColorHint="@color/transparent" android:divider="@null" android:choiceMode="singleChoice" android:fastScrollEnabled="false" android:headerDividersEnabled="true" android:footerDividersEnabled="false" />
+    <View android:background="@color/c5" android:layout_width="fill_parent" android:layout_height="@dimen/dimen_10" />
+    <View android:background="@color/guide_divider" android:layout_width="fill_parent" android:layout_height="@dimen/dimen_0.3" />
+    <RelativeLayout android:id="@id/rl_report_need_know" android:background="@color/c20" android:paddingLeft="@dimen/dimen_12" android:paddingTop="@dimen/dimen_12" android:paddingRight="@dimen/dimen_10" android:paddingBottom="@dimen/dimen_12" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <TextView android:textSize="@dimen/dimen_16" android:textColor="@color/c12" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/report_needToKnow_title" android:singleLine="true" android:layout_centerVertical="true" />
+        <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/common_arrow_right" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+    </RelativeLayout>
+    <View android:background="@color/guide_divider" android:layout_width="fill_parent" android:layout_height="@dimen/dimen_0.3" />
+</LinearLayout>

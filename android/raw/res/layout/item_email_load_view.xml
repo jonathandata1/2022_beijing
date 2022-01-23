@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.syswin.email.view.LoadProgressView android:id="@id/view_load_progress" android:layout_width="@dimen/dimen_40" android:layout_height="@dimen/dimen_40" android:layout_centerInParent="true" />
+    <ImageView android:id="@id/iv_load_bg_icon" android:layout_width="@dimen/dimen_40" android:layout_height="@dimen/dimen_40" android:src="@drawable/item_email_load_bg_icon" android:layout_centerInParent="true" />
+</RelativeLayout>

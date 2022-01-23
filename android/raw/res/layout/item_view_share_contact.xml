@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="@dimen/dimen_70"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <View android:layout_width="fill_parent" android:layout_height="@dimen/dimen_0.5" />
+    <LinearLayout android:orientation="horizontal" android:paddingLeft="@dimen/dimen_16" android:paddingTop="@dimen/dimen_10" android:paddingRight="@dimen/dimen_16" android:paddingBottom="@dimen/dimen_10" android:layout_width="fill_parent" android:layout_height="@dimen/dimen_67">
+        <com.systoon.toon.view.ShapeImageView android:layout_gravity="center_vertical" android:id="@id/iv_item_view_share_contact_avatar" android:layout_width="@dimen/dimen_46" android:layout_height="@dimen/dimen_46" android:src="@drawable/default_head_employee132" />
+        <TextView android:textSize="@dimen/dimen_16" android:textColor="@color/color_222222" android:ellipsize="end" android:gravity="start|center" android:id="@id/tv_item_view_share_contact_basic_name" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_marginLeft="@dimen/dimen_12" android:layout_marginRight="@dimen/dimen_12" android:singleLine="true" android:layout_weight="1.0" />
+        <LinearLayout android:layout_gravity="center_vertical" android:orientation="horizontal" android:id="@id/ll_item_view_share_contact_right" android:paddingRight="@dimen/dimen_16" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <ImageView android:layout_gravity="center_vertical" android:layout_width="@dimen/dimen_20" android:layout_height="@dimen/dimen_20" android:layout_marginRight="@dimen/dimen_8" android:src="@drawable/chat_icon_replace" />
+            <com.systoon.toon.view.ShapeImageView android:layout_gravity="center_vertical" android:id="@id/iv_item_view_share_contact_other_avatar" android:layout_width="@dimen/dimen_32" android:layout_height="@dimen/dimen_32" android:src="@drawable/default_head_person132" />
+        </LinearLayout>
+    </LinearLayout>
+    <View android:id="@id/v_item_view_share_contact_divider_short" android:background="@color/c36" android:layout_width="fill_parent" android:layout_height="@dimen/dimen_0.5" android:layout_marginLeft="@dimen/dimen_74" />
+</LinearLayout>

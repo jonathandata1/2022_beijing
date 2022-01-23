@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="10.0sp" android:gravity="center" android:id="@id/chatting_time_tv" android:background="@color/lightgrey" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="2.0dip" android:layout_centerHorizontal="true" />
+    <RelativeLayout android:id="@id/chart_from_container" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginRight="48.0dip" android:layout_below="@id/chatting_time_tv" android:layout_alignParentLeft="true">
+        <ImageView android:id="@id/chatting_avatar_iv" android:layout_width="50.0dip" android:layout_height="50.0dip" android:layout_marginLeft="8.0dip" android:src="@drawable/kf_head_default_robot" android:scaleType="fitXY" />
+        <TextView android:textSize="10.0sp" android:textColor="@color/all_black" android:id="@id/chatfrom_tv_name" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="8.0dip" android:text="姓名" android:layout_toRightOf="@id/chatting_avatar_iv" />
+        <FrameLayout android:id="@id/chat_from_layout_img" android:background="@drawable/kf_chatfrom_bg_normal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_toRightOf="@id/chatting_avatar_iv" android:layout_below="@id/chatfrom_tv_name">
+            <WebView android:id="@id/chat_webview" android:layout_width="160.0dip" android:layout_height="100.0dip" android:scaleType="fitXY" />
+        </FrameLayout>
+    </RelativeLayout>
+    <TextView android:textSize="12.0sp" android:gravity="center" android:id="@id/chatting_withdraw_tv" android:background="@color/lightgrey" android:paddingLeft="16.0dip" android:paddingTop="4.0dip" android:paddingRight="16.0dip" android:paddingBottom="4.0dip" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="2.0dip" android:text="对方撤回了一条消息" android:layout_below="@id/chatting_time_tv" android:layout_centerHorizontal="true" />
+</RelativeLayout>

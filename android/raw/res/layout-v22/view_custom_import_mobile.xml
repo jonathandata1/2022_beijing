@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:id="@id/rl_new_friends_prompt" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:background="@drawable/bg_new_friends_prompt" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dimen_16" android:layout_marginTop="@dimen/dimen_10" android:layout_marginRight="@dimen/dimen_16" android:layout_marginBottom="@dimen/dimen_10">
+        <android.support.v7.widget.AppCompatTextView android:textSize="@dimen/dimen_15" android:textColor="@color/c20" android:gravity="center_vertical" android:paddingLeft="@dimen/dimen_18" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/new_friends_import_tip" android:maxLines="1" android:drawableRight="@drawable/icon_new_friend_arrow" android:drawablePadding="@dimen/dimen_4" android:layout_centerInParent="true" android:autoSizeTextType="uniform" android:autoSizeMinTextSize="@dimen/dimen_8" android:autoSizeMaxTextSize="@dimen/dimen_15" />
+    </RelativeLayout>
+</LinearLayout>

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" android:id="@+id/search_service_title" android:background="@color/color_FFFFFF" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <RelativeLayout android:id="@+id/rzsearchhead_view" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/hp_px_5" android:layout_marginTop="@dimen/hp_px_8" android:layout_marginRight="@dimen/hp_px_5" android:layout_marginBottom="@dimen/hp_px_8" android:layout_centerInParent="true">
+        <RelativeLayout android:id="@+id/back_rl" android:paddingLeft="@dimen/hp_px_4" android:paddingRight="@dimen/hp_px_4" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerVertical="true">
+            <ImageView android:id="@+id/backBtn" android:layout_width="@dimen/hp_px_24" android:layout_height="@dimen/hp_px_24" android:src="@drawable/hp_manager_back_icon"/>
+            <TextView android:textSize="@dimen/hp_px_17" android:textColor="@color/color_222222" android:id="@+id/backTvBtn" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/hp_cancel"/>
+        </RelativeLayout>
+        <TextView android:textSize="@dimen/hp_px_17" android:textColor="@color/color_222222" android:gravity="center" android:id="@+id/operationBtn" android:padding="@dimen/hp_px_4" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/hp_px_4" android:text="@string/hp_manage_text" android:layout_alignParentRight="true" android:layout_centerVertical="true"/>
+        <TextView android:textSize="@dimen/hp_px_18" android:textColor="@color/color_383838" android:gravity="center" android:id="@+id/service_title" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="@dimen/hp_px_28" android:text="@string/hp_managerapps_apps_edit" android:layout_centerInParent="true"/>
+        <RelativeLayout android:id="@+id/rl_search_bg" android:background="@drawable/hp_search2_bg" android:paddingLeft="@dimen/hp_px_8" android:paddingRight="@dimen/hp_px_8" android:layout_width="match_parent" android:layout_height="@dimen/hp_px_28" android:layout_marginRight="@dimen/hp_px_10" android:layout_toLeftOf="@+id/operationBtn" android:layout_toRightOf="@+id/back_rl" android:layout_centerVertical="true">
+            <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@+id/ll_search" android:layout_width="match_parent" android:layout_height="@dimen/hp_px_28" android:layout_centerVertical="true">
+                <ImageView android:id="@+id/searchIcon" android:layout_width="@dimen/hp_px_16" android:layout_height="@dimen/hp_px_16" android:src="@drawable/hp_social_vicinity_search_ic" android:scaleType="fitXY" android:contentDescription="@null"/>
+                <TextView android:textSize="@dimen/hp_px_14" android:textColor="@color/color_8E8E93" android:gravity="center_vertical" android:id="@+id/searchText" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginLeft="@dimen/hp_px_6" android:text="@string/hp_managerapps_search"/>
+            </LinearLayout>
+        </RelativeLayout>
+    </RelativeLayout>
+    <View android:background="@color/color_B2B2B2" android:layout_width="match_parent" android:layout_height="@dimen/hp_px_1" android:layout_below="@+id/rzsearchhead_view"/>
+</RelativeLayout>

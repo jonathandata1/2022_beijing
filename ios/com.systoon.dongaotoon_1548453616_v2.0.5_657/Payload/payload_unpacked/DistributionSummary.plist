@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>TLauncher.ipa</key>
+	<array>
+		<dict>
+			<key>architectures</key>
+			<array>
+				<string>arm64</string>
+			</array>
+			<key>certificate</key>
+			<dict>
+				<key>SHA1</key>
+				<string>C2BD2FAD4BB55DB0FA75A11A3F6E6CBEE6D7B46A</string>
+				<key>dateExpires</key>
+				<string>2022/11/14</string>
+				<key>type</key>
+				<string>iOS Distribution</string>
+			</dict>
+			<key>embeddedBinaries</key>
+			<array>
+				<dict>
+					<key>architectures</key>
+					<array>
+						<string>arm64</string>
+					</array>
+					<key>certificate</key>
+					<dict>
+						<key>SHA1</key>
+						<string>C2BD2FAD4BB55DB0FA75A11A3F6E6CBEE6D7B46A</string>
+						<key>dateExpires</key>
+						<string>2022/11/14</string>
+						<key>type</key>
+						<string>iOS Distribution</string>
+					</dict>
+					<key>name</key>
+					<string>App.framework</string>
+					<key>team</key>
+					<dict>
+						<key>id</key>
+						<string>TLWP697Z5D</string>
+						<key>name</key>
+						<string>Beijing Syswin Internet Technology Co. Ltd.</string>
+					</dict>
+				</dict>
+				<dict>
+					<key>architectures</key>
+					<array>
+						<string>arm64</string>
+					</array>
+					<key>certificate</key>
+					<dict>
+						<key>SHA1</key>
+						<string>C2BD2FAD4BB55DB0FA75A11A3F6E6CBEE6D7B46A</string>
+						<key>dateExpires</key>
+						<string>2022/11/14</string>
+						<key>type</key>
+						<string>iOS Distribution</string>
+					</dict>
+					<key>name</key>
+					<string>Flutter.framework</string>
+					<key>team</key>
+					<dict>
+						<key>id</key>
+						<string>TLWP697Z5D</string>
+						<key>name</key>
+						<string>Beijing Syswin Internet Technology Co. Ltd.</string>
+					</dict>
+				</dict>
+			</array>
+			<key>entitlements</key>
+			<dict>
+				<key>application-identifier</key>
+				<string>TLWP697Z5D.com.systoon.enterprise.zhungeerjia</string>
+				<key>aps-environment</key>
+				<string>production</string>
+				<key>com.apple.developer.team-identifier</key>
+				<string>TLWP697Z5D</string>
+				<key>get-task-allow</key>
+				<false/>
+			</dict>
+			<key>name</key>
+			<string>TLauncher.app</string>
+			<key>profile</key>
+			<dict>
+				<key>UUID</key>
+				<string>a15710bf-5335-4f2e-a789-4b385a15eab8</string>
+				<key>name</key>
+				<string>zhungeerjia_Distribution</string>
+			</dict>
+			<key>team</key>
+			<dict>
+				<key>id</key>
+				<string>TLWP697Z5D</string>
+				<key>name</key>
+				<string>Beijing Syswin Internet Technology Co. Ltd.</string>
+			</dict>
+		</dict>
+	</array>
+</dict>
+</plist>

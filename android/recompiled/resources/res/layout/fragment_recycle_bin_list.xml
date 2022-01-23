@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:orientation="vertical" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dimen_134" android:layout_alignParentTop="true" android:layout_centerHorizontal="true">
+        <ImageView android:layout_width="@dimen/dimen_120" android:layout_height="@dimen/dimen_120" android:src="@drawable/recycle_no_info"/>
+        <TextView android:textSize="@dimen/dimen_15" android:textColor="#383838" android:layout_gravity="center_horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dimen_16" android:text="暂无废纸篓信息"/>
+    </LinearLayout>
+    <android.support.v7.widget.RecyclerView android:id="@+id/recycle_list" android:background="#f6f6f6" android:layout_width="match_parent" android:layout_height="match_parent"/>
+</RelativeLayout>

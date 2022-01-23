@@ -1,0 +1,68 @@
+
+
+"cancel" = "取消";
+"goSetting" = "去设置";
+
+
+"cameraPrivacyTitle" = "提示";
+"cameraPrivacyMsg" = "因您未授予该功能相机和录音权限，你需要到 [设置] 进行授权";
+
+"bluetoothPrivacyTitle" = "提示";
+"bluetoothPrivacyMsg" = "因您未授予该功能访问蓝牙权限，你需要到 [设置] 进行授权";
+
+"calendarsPrivacyTitle" = "提示";
+"calendarsPrivacyMsg" = "因您未授予该功能访问日历权限，你需要到 [设置] 进行授权";
+
+
+"contactsPrivacyTitle" = "提示";
+"contactsPrivacyMsg" = "因您未授予该功能修改联系人权限，你需要到 [设置] 进行授权";
+
+
+"healthPrivacyTitle" = "提示";
+"healthPrivacyMsg" = "因您未授予该功能访问健康权限，你需要到 [设置] 进行授权";
+
+
+"locationPrivacyTitle" = "提示";
+"locationPrivacyMsg" = "因您未授予该功能访问位置权限，你需要到 [设置] 进行授权";
+
+"mediaPrivacyTitle" = "提示";
+"mediaPrivacyMsg" = "因您未授予该功能访问多媒体权限，你需要到 [设置] 进行授权";
+
+"microphonePrivacyTitle" = "提示";
+"microphonePrivacyMsg" = "因您未授予该功能录音权限，你需要到 [设置] 进行授权";
+
+"fitnessPrivacyTitle" = "提示";
+"fitnessPrivacyMsg" = "因您未授予该功能访问运动与健身权限，你需要到 [设置] 进行授权";
+
+"photoPrivacyTitle" = "提示";
+"photoPrivacyMsg" = "因您未授予该功能访问相册权限，你需要到 [设置] 进行授权";
+
+"remindersPrivacyTitle" = "提示";
+"remindersPrivacyMsg" = "因您未授予该功能访问提醒事项权限，你需要到 [设置] 进行授权";
+
+"speechPrivacyTitle" = "提示";
+"speechPrivacyMsg" = "因您未授予该功能访问语音识别权限，你需要到 [设置] 进行授权";
+
+
+
+
+/*
+ "" = "";
+ "" = "";
+ "" = "";
+ "" = "";
+ "" = "";
+ "" = "";
+ "" = "";
+ "" = "";
+ "" = "";
+ "" = "";
+ "" = "";
+ "" = "";
+ "" = "";
+ "" = "";
+ "" = "";
+ "" = "";
+ "" = "";
+ "" = "";
+ */

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>bugly-bundleID</key>
+	<dict>
+		<key>com.systoon.beijinghaidiantoon</key>
+		<string>10752fdff7</string>
+		<key>com.systoon.enterprise.beijinghaidiantoon</key>
+		<string>10752fdff7</string>
+	</dict>
+	<key>QQAppId</key>
+	<string>1106653695</string>
+	<key>weixinAppId</key>
+	<string>wxf3404f365784c778</string>
+	<key>weiboAppId</key>
+	<string>1944734527</string>
+</dict>
+</plist>

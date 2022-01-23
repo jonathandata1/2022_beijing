@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:paddingRight="@dimen/dimen_10" android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.makeramen.roundedimageview.RoundedImageView android:id="@id/img" android:layout_width="118.0dip" android:layout_height="75.0dip" android:scaleType="centerCrop" app:riv_corner_radius="2.0dip" app:riv_mutate_background="true" xmlns:app="http://schemas.android.com/apk/res-auto" />
+    <LinearLayout android:gravity="center" android:orientation="vertical" android:layout_width="118.0dip" android:layout_height="75.0dip" android:layout_alignParentLeft="true" android:layout_alignParentTop="true" android:layout_alignParentStart="true">
+        <TextView android:textSize="15.0dip" android:textColor="#ffffffff" android:id="@id/title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/app_name" android:shadowColor="#80000000" android:shadowDy="3.0" android:shadowRadius="3.0" />
+        <TextView android:textSize="12.0dip" android:textColor="#ffffd861" android:id="@id/talk_num" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5.0dip" android:text="" android:shadowColor="#80000000" android:shadowDy="3.0" android:shadowRadius="3.0" />
+    </LinearLayout>
+</RelativeLayout>

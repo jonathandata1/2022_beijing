@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:id="@id/linear" android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <RelativeLayout android:gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <ImageView android:id="@id/item_icon" android:layout_width="@dimen/dimen_42" android:layout_height="@dimen/dimen_42" android:scaleType="centerCrop" android:layout_centerHorizontal="true" />
+        <TextView android:textSize="@dimen/dimen_13" android:textColor="#ff4a4a4a" android:gravity="center" android:id="@id/item_text" android:layout_width="@dimen/dimen_86" android:layout_height="@dimen/dimen_18" android:layout_marginTop="@dimen/dimen_8" android:text="发布诉求" android:layout_below="@id/item_icon" />
+    </RelativeLayout>
+</LinearLayout>

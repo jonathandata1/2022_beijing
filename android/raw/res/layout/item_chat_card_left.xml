@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/layout_card_left" android:background="@drawable/chat_item_left_bg" android:layout_width="@dimen/dimen_255" android:layout_height="wrap_content" android:minHeight="@dimen/dimen_82"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:background="@drawable/item_card_bg_icon" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+    <com.msgseal.base.ui.AvatarView android:id="@id/img_cardicon_left" android:layout_width="@dimen/dimen_50" android:layout_height="@dimen/dimen_50" android:layout_marginLeft="@dimen/dimen_12" android:src="@drawable/default_head_person132" android:layout_alignParentLeft="true" android:layout_centerVertical="true" />
+    <LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dimen_8" android:layout_marginRight="@dimen/dimen_10" android:layout_toRightOf="@id/img_cardicon_left" android:layout_centerVertical="true">
+        <TextView android:textSize="@dimen/dimen_16" android:textColor="@color/color_F8F9FB" android:ellipsize="end" android:gravity="start|center" android:id="@id/txt_cardname_left" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/chat_cardname" android:maxLines="1" />
+        <TextView android:textSize="@dimen/dimen_14" android:textColor="@color/color_e1e1e1" android:ellipsize="end" android:id="@id/txt_card_intro_left" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/chat_card_indro" android:maxLines="1" />
+    </LinearLayout>
+</RelativeLayout>

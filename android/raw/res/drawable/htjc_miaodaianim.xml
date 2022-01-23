@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<animation-list android:oneshot="false"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:duration="250" android:drawable="@drawable/htjc_normal" />
+    <item android:duration="250" android:drawable="@drawable/htjc_left" />
+    <item android:duration="250" android:drawable="@drawable/htjc_normal" />
+    <item android:duration="250" android:drawable="@drawable/htjc_normal" />
+    <item android:duration="250" android:drawable="@drawable/htjc_right" />
+    <item android:duration="250" android:drawable="@drawable/htjc_normal" />
+</animation-list>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_gravity="center" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <View android:id="@id/fill_height" android:layout_width="fill_parent" android:layout_height="33.0dip" android:layout_centerInParent="true" />
+    <ImageView android:layout_gravity="center_horizontal" android:id="@id/logoView" android:layout_width="wrap_content" android:layout_height="wrap_content" android:scaleType="fitCenter" android:layout_above="@id/fill_height" android:layout_centerHorizontal="true" app:srcCompat="@drawable/vrlogo_bk" />
+    <FrameLayout android:id="@id/progressView" android:layout_width="72.0dip" android:layout_height="72.0dip" android:layout_marginBottom="35.0dip" android:layout_above="@id/logoView" android:layout_centerHorizontal="true">
+        <com.lianjia.common.vr.view.CircleProgressView android:id="@id/progressCircle" android:padding="0.0dip" android:layout_width="72.0dip" android:layout_height="72.0dip" app:vr_progress_background_color="#33ffffff" app:vr_progress_color="#ffffffff" app:vr_progress_radius="35.0dip" app:vr_progress_stroke_width="1.5dip" />
+        <com.lianjia.common.vr.view.VrLoadingView android:layout_gravity="center_horizontal" android:id="@id/loadingView" android:layout_width="70.0dip" android:layout_height="70.0dip" app:repeat="true" app:showcircle="false" />
+    </FrameLayout>
+    <LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="36.0dip" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true">
+        <View android:layout_width="5.0dip" android:layout_height="1.0dip" />
+        <ImageView android:layout_gravity="center" android:id="@id/rs_logo" android:layout_width="108.0dip" android:layout_height="14.0dip" app:srcCompat="@drawable/logo_rs" />
+    </LinearLayout>
+</RelativeLayout>

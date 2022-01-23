@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/color_FFFFFF" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="@dimen/hp_px_24" android:textColor="#ff000000" android:id="@id/tv_notice_item_year" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/hp_px_23" android:layout_marginBottom="@dimen/hp_px_20" />
+    <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:layout_width="@dimen/hp_px_55" android:layout_height="wrap_content">
+            <TextView android:textSize="@dimen/hp_px_19" android:textColor="#ff333333" android:id="@id/tv_notice_item_day" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="00" />
+            <TextView android:textSize="@dimen/hp_px_12" android:textColor="#ff333333" android:id="@id/tv_notice_item_month" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+        </LinearLayout>
+        <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:layout_width="@dimen/hp_px_18" android:layout_height="fill_parent">
+            <ImageView android:id="@id/image_notice_point" android:layout_width="@dimen/hp_px_18" android:layout_height="@dimen/hp_px_18" android:src="@drawable/hp_ic_notice_point_red" />
+            <View android:id="@id/divider_notice_item" android:background="#ffdddee3" android:layout_width="@dimen/hp_px_1" android:layout_height="fill_parent" />
+        </LinearLayout>
+        <LinearLayout android:orientation="vertical" android:id="@id/layout_notice_item_title" android:paddingLeft="@dimen/hp_px_9" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginRight="@dimen/hp_px_33">
+            <TextView android:textSize="@dimen/hp_px_18" android:textColor="#ff000000" android:ellipsize="end" android:id="@id/tv_notice_item_title" android:layout_width="fill_parent" android:layout_height="wrap_content" android:maxLines="2" android:lineSpacingExtra="@dimen/hp_px_3" />
+            <TextView android:textSize="@dimen/hp_px_12" android:textColor="#ff8e8e93" android:ellipsize="end" android:id="@id/tv_notice_item_summary" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/hp_px_5" android:lines="1" android:lineSpacingExtra="@dimen/hp_px_3" />
+            <TextView android:textSize="@dimen/hp_px_12" android:textColor="#ffb6b6b6" android:id="@id/tv_notice_item_time" android:background="@drawable/hp_bg_notice_item_time" android:paddingLeft="@dimen/hp_px_3" android:paddingRight="@dimen/hp_px_5" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/hp_px_7" android:layout_marginBottom="@dimen/hp_px_35" android:text="00:00" android:lines="1" android:drawableLeft="@drawable/hp_ic_time_notice_item" android:drawablePadding="@dimen/hp_px_2" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

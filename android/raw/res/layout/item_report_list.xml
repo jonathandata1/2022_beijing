@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/c20" android:layout_width="fill_parent" android:layout_height="@dimen/dimen_48"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:paddingLeft="@dimen/dimen_12" android:paddingTop="@dimen/dimen_12" android:paddingRight="@dimen/dimen_10" android:paddingBottom="@dimen/dimen_12" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <TextView android:textSize="@dimen/dimen_16" android:textColor="@color/c12" android:id="@id/report_value" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerVertical="true" />
+        <ImageView android:id="@id/iv_report_select" android:background="@drawable/picth_on" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+    </RelativeLayout>
+    <View android:background="@color/guide_divider" android:layout_width="fill_parent" android:layout_height="@dimen/dimen_0.3" />
+</LinearLayout>

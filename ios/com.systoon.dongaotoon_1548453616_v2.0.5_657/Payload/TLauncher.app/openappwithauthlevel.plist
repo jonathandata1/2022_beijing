@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>openApp</key>
+	<dict>
+		<key>in</key>
+		<string>TNCusProOpenAppInModel</string>
+		<key>out</key>
+		<string></string>
+		<key>excutor</key>
+		<string>TNCusProOpenAppExcutorModel</string>
+	</dict>
+</dict>
+</plist>

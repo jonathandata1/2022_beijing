@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/ll_chat_doc" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="horizontal" android:paddingLeft="@dimen/dimen_15" android:paddingRight="5.0dip" android:layout_width="fill_parent" android:layout_height="@dimen/dimen_72">
+        <LinearLayout android:gravity="start|center" android:id="@id/cd_doc_file_choice_lin" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_marginRight="@dimen/dimen_8">
+            <CheckBox android:id="@id/cb_doc_file_choice" android:background="@drawable/chat_checkbox_blue_style" android:focusable="false" android:clickable="false" android:layout_width="@dimen/dimen_23" android:layout_height="@dimen/dimen_23" android:button="@null" />
+        </LinearLayout>
+        <ImageView android:layout_gravity="center_vertical" android:id="@id/iv_doc_icon" android:layout_width="@dimen/dimen_40" android:layout_height="@dimen/dimen_40" />
+        <RelativeLayout android:gravity="center_vertical" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginLeft="@dimen/dimen_10" android:layout_weight="9.0">
+            <TextView android:textSize="@dimen/dimen_18" android:ellipsize="middle" android:id="@id/tv_doc_title" android:layout_width="@dimen/dimen_200" android:layout_height="wrap_content" android:singleLine="true" android:layout_alignParentLeft="true" android:layout_alignParentTop="true" />
+            <TextView android:textSize="@dimen/dimen_14" android:id="@id/tv_doc_size" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_below="@id/tv_doc_title" android:layout_alignParentLeft="true" />
+            <TextView android:textSize="@dimen/dimen_12" android:id="@id/tv_doc_create_time" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_below="@id/tv_doc_size" />
+            <com.msgseal.chat.customviews.FileProgressView android:id="@id/file_progress" android:visibility="invisible" android:layout_width="fill_parent" android:layout_height="@dimen/dimen_2" android:layout_marginTop="3.0dip" android:layout_below="@id/tv_doc_create_time" />
+        </RelativeLayout>
+        <TextView android:textSize="14.0dip" android:textColor="@color/c1" android:gravity="center" android:layout_gravity="center_vertical" android:id="@id/file_download" android:background="@drawable/bg_blue_stroke_corner" android:paddingTop="2.0dip" android:paddingBottom="2.0dip" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="5.0dip" android:minWidth="45.0dip" android:text="下载" android:layout_weight="0.0" />
+    </LinearLayout>
+    <View android:id="@id/choose_file_group_short_diver" android:layout_width="fill_parent" android:layout_height="@dimen/dimen_0.3" android:layout_marginLeft="@dimen/dimen_15" />
+</LinearLayout>

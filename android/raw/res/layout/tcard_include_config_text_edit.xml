@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:background="@color/c20" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:layout_gravity="center|left" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <TextView android:textSize="@dimen/ts_16px" android:textColor="@color/tc222222" android:id="@id/tv_card_config_text_edit_title" android:paddingLeft="@dimen/dimen_16" android:layout_width="@dimen/dimen_112" android:layout_height="wrap_content" />
+        <com.msgseal.chat.customviews.EditTextWithDel android:textSize="@dimen/dimen_16" android:textColor="@color/tc222222" android:textColorHint="@color/tc5c5c5" android:ellipsize="end" android:id="@id/et_card_config_text_edit_value" android:background="@color/c20" android:paddingRight="@dimen/dimen_15" android:layout_width="fill_parent" android:layout_height="wrap_content" android:hint="@string/card_text_empty_hint" android:singleLine="true" android:inputType="text" />
+    </LinearLayout>
+    <View android:id="@id/v_card_config_text_edit_line" android:background="@color/c8" android:layout_width="fill_parent" android:layout_height="@dimen/dimen_0.3" android:layout_marginLeft="@dimen/dimen_16" />
+</FrameLayout>

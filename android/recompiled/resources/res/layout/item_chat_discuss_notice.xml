@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:paddingLeft="@dimen/dimen_16" android:paddingRight="@dimen/dimen_16" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <LinearLayout android:layout_gravity="center_vertical" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="@dimen/dimen_70">
+        <com.msgseal.base.ui.AvatarView android:layout_gravity="center_vertical" android:id="@+id/notice_avatar_image" android:layout_width="@dimen/dimen_46" android:layout_height="@dimen/dimen_46" android:src="@drawable/default_head_person133"/>
+        <LinearLayout android:orientation="vertical" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1">
+            <TextView android:textSize="@dimen/dimen_14" android:textColor="@color/text_main_color2" android:ellipsize="end" android:gravity="bottom" android:layout_gravity="center_vertical" android:id="@+id/notice_avatar_name" android:layout_width="wrap_content" android:layout_height="40dp" android:layout_marginLeft="@dimen/dimen_12" android:singleLine="true" android:layout_weight="1"/>
+            <TextView android:textSize="@dimen/dimen_16" android:textColor="@color/text_subtitle_color" android:ellipsize="end" android:gravity="top" android:layout_gravity="center_vertical" android:id="@+id/notice_avatar_time" android:layout_width="wrap_content" android:layout_height="40dp" android:layout_marginLeft="@dimen/dimen_12" android:layout_marginTop="@dimen/dimen_5" android:singleLine="true" android:layout_weight="1"/>
+        </LinearLayout>
+        <ImageView android:layout_gravity="center_vertical" android:id="@+id/notice_del_icon" android:paddingLeft="@dimen/dimen_5" android:paddingRight="@dimen/dimen_5" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="match_parent" android:src="@drawable/common_close_gray"/>
+    </LinearLayout>
+    <View android:id="@+id/notice_line" android:background="@color/separator_color" android:layout_width="match_parent" android:layout_height="@dimen/res_0x7f070190_dimen_0_3"/>
+    <TextView android:textSize="@dimen/dimen_16" android:textColor="@color/tc_2" android:textColorHint="@color/tc_6" android:gravity="top" android:id="@+id/group_notice_text" android:background="@null" android:paddingTop="@dimen/dimen_12" android:paddingBottom="@dimen/dimen_12" android:layout_width="match_parent" android:layout_height="wrap_content" android:textCursorDrawable="@null"/>
+</LinearLayout>

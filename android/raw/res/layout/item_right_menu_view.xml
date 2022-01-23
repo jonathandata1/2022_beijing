@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.systoon.toon.view.ShapeImageView android:id="@id/iv_right_menu_icon" android:visibility="gone" android:layout_width="@dimen/dimen_28" android:layout_height="@dimen/dimen_28" android:layout_marginLeft="@dimen/dimen_16" android:scaleType="fitXY" android:layout_alignParentLeft="true" android:layout_centerVertical="true" android:layout_alignParentStart="true" />
+    <TextView android:textSize="@dimen/ts_17px" android:textColor="@color/color_444444" android:ellipsize="end" android:gravity="center|left" android:id="@id/tv_right_menu_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dimen_8" android:layout_marginTop="@dimen/dimen_16" android:layout_marginRight="@dimen/dimen_16" android:layout_marginBottom="@dimen/dimen_16" android:singleLine="true" android:layout_toRightOf="@id/iv_right_menu_icon" android:layout_centerVertical="true" />
+    <View android:id="@id/divider_line" android:background="@color/contact_right_menu_divider" android:layout_width="fill_parent" android:layout_height="@dimen/dimen_0.5" android:layout_alignLeft="@id/tv_right_menu_title" android:layout_alignParentBottom="true" />
+</RelativeLayout>

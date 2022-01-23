@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="@dimen/px_190"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <android.support.v4.view.ViewPager android:id="@id/interact_showtype_news_banner_viewpager" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <RelativeLayout android:background="#9a000000" android:layout_width="fill_parent" android:layout_height="@dimen/px_35" android:layout_alignParentBottom="true">
+        <LinearLayout android:orientation="horizontal" android:id="@id/interact_showtype_news_banner_points" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/px_15" android:layout_marginBottom="@dimen/px_10" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+        <TextView android:textSize="@dimen/px_17" android:textColor="@color/c20" android:ellipsize="end" android:gravity="center_vertical" android:id="@id/interact_showtype_news_banner_title" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginLeft="@dimen/px_15" android:layout_marginRight="@dimen/px_15" android:maxLines="1" android:layout_toLeftOf="@id/interact_showtype_news_banner_points" />
+    </RelativeLayout>
+</RelativeLayout>

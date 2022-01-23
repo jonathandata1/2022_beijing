@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/layout_pic_left" android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.msgseal.chat.customviews.ChatPicImageView android:id="@id/img_pic_left" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/dimen_36" android:src="@color/c36" android:scaleType="centerCrop" />
+    <com.msgseal.chat.customviews.ChatPicImageView android:id="@id/img_fail_left" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dimen_6" android:src="@drawable/chat_pic_load_fail" android:scaleType="centerInside" android:layout_alignLeft="@id/img_pic_left" android:layout_alignTop="@id/img_pic_left" android:layout_alignRight="@id/img_pic_left" android:layout_alignBottom="@id/img_pic_left" android:layout_centerInParent="true" />
+    <com.msgseal.chat.customviews.MessageLoadProgressView android:id="@id/view_img_load_left" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true" />
+</RelativeLayout>

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.m7.imkfsdk.view.TouchImageView android:id="@id/matrixImageView" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <Button android:id="@id/image_btn_save" android:background="@drawable/kf_ic_get_app_grey600_36dp" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="16.0dip" android:layout_marginBottom="16.0dip" android:layout_alignParentRight="true" android:layout_alignParentBottom="true" />
+</RelativeLayout>

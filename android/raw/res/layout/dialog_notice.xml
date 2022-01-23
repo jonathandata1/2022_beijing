@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:gravity="center" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:id="@id/rl_content" android:background="@drawable/notice_dialog_bg" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/hp_px_40" android:layout_marginRight="@dimen/hp_px_40">
+        <TextView android:textSize="@dimen/hp_px_20" android:textColor="@color/color_222222" android:ellipsize="end" android:gravity="center" android:id="@id/tv_notice_title" android:layout_width="fill_parent" android:layout_height="@dimen/hp_px_50" android:singleLine="true" />
+        <View android:id="@id/line" android:background="@color/color_DDDEE3" android:layout_width="fill_parent" android:layout_height="@dimen/hp_px_1" android:layout_below="@id/tv_notice_title" />
+        <ScrollView android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_below="@id/line">
+            <TextView android:textSize="@dimen/hp_px_16" android:textColor="@color/color_4A4A4A" android:gravity="start|center|top" android:id="@id/tv_notice_content" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/hp_px_24" android:layout_marginTop="@dimen/hp_px_20" android:layout_marginRight="@dimen/hp_px_24" android:layout_marginBottom="@dimen/hp_px_28" android:minLines="4" android:lineSpacingExtra="@dimen/hp_px_4" />
+        </ScrollView>
+    </RelativeLayout>
+    <ImageView android:id="@id/iv_close" android:layout_width="@dimen/hp_px_40" android:layout_height="@dimen/hp_px_40" android:layout_marginTop="@dimen/hp_px_30" android:src="@drawable/ic_dialog_notice_close" android:layout_below="@id/rl_content" android:layout_centerHorizontal="true" />
+</RelativeLayout>

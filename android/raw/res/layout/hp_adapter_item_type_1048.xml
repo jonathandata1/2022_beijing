@@ -1,0 +1,3 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TextView android:textSize="14.0sp" android:textColor="@color/color_5C5C5C" android:ellipsize="end" android:gravity="center" android:background="@drawable/hp_1044_item_bg" android:paddingLeft="@dimen/dimen_8" android:paddingTop="@dimen/dimen_4" android:paddingRight="@dimen/dimen_8" android:paddingBottom="@dimen/dimen_4" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/dimen_12" android:layout_marginBottom="@dimen/dimen_12" android:text="鼓楼画卷" android:maxLines="1" android:singleLine="true"
+  xmlns:android="http://schemas.android.com/apk/res/android" />

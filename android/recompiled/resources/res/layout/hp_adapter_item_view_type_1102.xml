@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:orientation="vertical" android:background="@color/color_FFFFFF" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <com.systoon.customhomepage.widget.PageGridView android:id="@+id/page_gridview" android:layout_width="match_parent" android:layout_height="wrap_content" app:PagingColums="4" app:PagingDiver="@drawable/divider_bg" app:PagingRows="2"/>
+        <com.systoon.customhomepage.widget.MyPageIndicator android:gravity="center" android:id="@+id/indicator" android:background="#ffffff" android:layout_width="match_parent" android:layout_height="@dimen/dimen_4" android:layout_marginTop="@dimen/dimen_4" android:layout_marginBottom="@dimen/dimen_8"/>
+    </LinearLayout>
+</LinearLayout>

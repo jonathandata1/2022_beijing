@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="bottom" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <Button android:textSize="@dimen/textsize_30px" android:textColor="@color/guide_blue" android:id="@id/btn_call" android:background="@drawable/rectangle_top" android:layout_width="fill_parent" android:layout_height="48.0dip" />
+    <View android:background="@color/guide_divider" android:layout_width="fill_parent" android:layout_height="0.5dip" />
+    <Button android:textSize="@dimen/textsize_30px" android:textColor="@color/guide_blue" android:id="@id/btn_copy" android:background="@color/c20" android:layout_width="fill_parent" android:layout_height="48.0dip" />
+    <View android:background="@color/guide_divider" android:layout_width="fill_parent" android:layout_height="0.5dip" />
+    <Button android:textSize="@dimen/textsize_30px" android:textColor="@color/guide_blue" android:id="@id/btn_new_contacts" android:background="@color/c20" android:layout_width="fill_parent" android:layout_height="48.0dip" />
+    <View android:background="@color/guide_divider" android:layout_width="fill_parent" android:layout_height="0.5dip" />
+    <Button android:textSize="@dimen/textsize_30px" android:textColor="@color/guide_blue" android:id="@id/btn_cancel" android:background="@color/c20" android:layout_width="fill_parent" android:layout_height="48.0dip" android:text="取消" />
+</LinearLayout>

@@ -1,0 +1,20 @@
+<?xmlversion="1.0"encoding="UTF-8"?>
+<config>
+  
+	<!-- 活检过程配置参数  -->
+	<live_config>
+	   
+		<!-- 活体动作组合是否随机  -->
+		<isRandomable>true</isRandomable>
+		<!-- 活检动作组合	0:静止	 1：摇头		2：点头		3：左转头	4:右转头		5：运动中的3D检测	6：无动作   7：张嘴	9:眨眼-->
+		<actions>01279</actions>
+		<!-- 选择动作模式：-1：默认活检使用actions个动作     1： actions个动作中选择一个 动作  （不能设置为0） -->
+		<selectActionsNum>1</selectActionsNum>  
+		<!-- 单个动作活检时间    超过则为超时  -->
+		<singleActionDectTime>8</singleActionDectTime>
+		<isWaterable>false</isWaterable>
+		<openSound>true</openSound>
+	</live_config>
+	
+</config>
+

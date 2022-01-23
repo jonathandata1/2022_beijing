@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>帮助中心</title>
+    <script>
+    !function(a,b){function c(){var b=f.getBoundingClientRect().width;b/i>540&&(b=540*i);var c=b/10;f.style.fontSize=c+"px",k.rem=a.rem=c}var d,e=a.document,f=e.documentElement,g=e.querySelector('meta[name="viewport"]'),h=e.querySelector('meta[name="flexible"]'),i=0,j=0,k=b.flexible||(b.flexible={});if(g){console.warn("将根据已有的meta标签来设置缩放比例");var l=g.getAttribute("content").match(/initial\-scale=([\d\.]+)/);l&&(j=parseFloat(l[1]),i=parseInt(1/j))}else if(h){var m=h.getAttribute("content");if(m){var n=m.match(/initial\-dpr=([\d\.]+)/),o=m.match(/maximum\-dpr=([\d\.]+)/);n&&(i=parseFloat(n[1]),j=parseFloat((1/i).toFixed(2))),o&&(i=parseFloat(o[1]),j=parseFloat((1/i).toFixed(2)))}}if(!i&&!j){var p=a.navigator.userAgent,q=(!!p.match(/android/gi),!!p.match(/iphone/gi)),r=q&&!!p.match(/OS 9_3/),s=a.devicePixelRatio;i=q&&!r?s>=3&&(!i||i>=3)?3:s>=2&&(!i||i>=2)?2:1:1,j=1/i}if(f.setAttribute("data-dpr",i),!g)if(g=e.createElement("meta"),g.setAttribute("name","viewport"),g.setAttribute("content","initial-scale="+j+", maximum-scale="+j+", minimum-scale="+j+", user-scalable=no"),f.firstElementChild)f.firstElementChild.appendChild(g);else{var t=e.createElement("div");t.appendChild(g),e.write(t.innerHTML)}a.addEventListener("resize",function(){clearTimeout(d),d=setTimeout(c,300)},!1),a.addEventListener("pageshow",function(a){a.persisted&&(clearTimeout(d),d=setTimeout(c,300))},!1),"complete"===e.readyState?e.body.style.fontSize=12*i+"px":e.addEventListener("DOMContentLoaded",function(){e.body.style.fontSize=12*i+"px"},!1),c(),k.dpr=a.dpr=i,k.refreshRem=c,k.rem2px=function(a){var b=parseFloat(a)*this.rem;return"string"==typeof a&&a.match(/rem$/)&&(b+="px"),b},k.px2rem=function(a){var b=parseFloat(a)/this.rem;return"string"==typeof a&&a.match(/px$/)&&(b+="rem"),b}}(window,window.lib||(window.lib={}));
+
+    </script>
+    <style>
+    html, body {
+      font-family: PingFangSC-Regular;
+      background: #fff;
+      user-select: none;
+      -webkit-user-select: none;
+    }
+
+    html {
+      overflow: hidden;
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+    }
+    .title-box {
+      height:4.8rem;
+      width: 100%;
+      background: url("./bg.png") center no-repeat;
+      background-size: cover;
+      margin-bottom: 0.48rem;
+    }
+    .title {
+      font-family: PingFangSC-Semibold;
+      font-size: 0.64rem;
+      color: #FFFFFF;
+      padding: 1.975rem 0 0 1.333rem;
+    }
+    h1 {
+      padding: 0.32rem 0.427rem;
+      font-family: PingFangSC-Medium;
+      font-size: 0.533rem;
+      color: #222222;
+      letter-spacing: 0;
+      line-height: 0.64rem;
+    }
+    p {
+      padding: 0 0.427rem;
+      font-family: PingFangSC-Regular;
+      font-size: 0.427rem;
+      color: #222222;
+      letter-spacing: 0;
+      text-align: justify;
+      line-height: 0.64rem;
+    }
+
+    </style>
+
+</head>
+<body>
+<div class="title-box">
+    <p class="title">帮助中心</p>
+</div>
+<h1>什么是秘邮？</h1>
+<p>秘邮是一款端到端加密（E2EE）通讯、存储工具。</p>
+<h1>密照有什么用？</h1>
+<p>用全新的方式保护账号更安全，跨端登录用密照，更换设备用密照。</p>
+<h1>秘邮与传统邮箱的区别？</h1>
+<p>我们让邮箱具备了即时通讯、组群、音视频通话等一系列能力，但由于安全原因，秘邮不兼容传统邮箱如：gmail、163、QQ等邮箱绑定和接入，但可以和所有邮箱进行正常通讯。</p>
+</body>
+</html>

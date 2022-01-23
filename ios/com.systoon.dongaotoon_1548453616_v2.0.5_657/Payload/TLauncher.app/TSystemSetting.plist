@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<array>
+	<dict>
+		<key>entryList</key>
+		<array>
+			<dict>
+				<key>title</key>
+				<string>通用设置</string>
+				<key>url</key>
+				<string>toon://tuser/openGeneralSetting</string>
+			</dict>
+			<dict>
+				<key>title</key>
+				<string>新消息通知</string>
+				<key>url</key>
+				<string>toon://message/openNewMsgSet</string>
+			</dict>
+		</array>
+	</dict>
+	<dict>
+		<key>entryList</key>
+		<array>
+			<dict>
+				<key>title</key>
+				<string>在线客服</string>
+				<key>url</key>
+				<string>toon://customerservices/open?params={&quot;accessId&quot;:&quot;785550d0-7747-11e7-9354-4fad5f9e96ea&quot;}</string>
+			</dict>
+			<dict>
+				<key>title</key>
+				<string>客服热线</string>
+				<key>url</key>
+				<string>toon://tuser/callKeFuPhone</string>
+			</dict>
+		</array>
+	</dict>
+	<dict>
+		<key>entryList</key>
+		<array>
+			<dict>
+				<key>title</key>
+				<string>帮助与反馈</string>
+				<key>url</key>
+				<string>toon://tuser/openHelpAndFeedback</string>
+			</dict>
+		</array>
+	</dict>
+	<dict>
+		<key>entryList</key>
+		<array>
+			<dict>
+				<key>title</key>
+				<string>关于e福州</string>
+				<key>url</key>
+				<string>toon://tuser/openAbout</string>
+			</dict>
+		</array>
+	</dict>
+</array>
+</plist>

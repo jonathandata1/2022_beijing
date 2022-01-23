@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:background="@color/c20" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <ImageView android:layout_gravity="right" android:id="@id/iv_close" android:background="@drawable/common_close" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dimen_15" android:layout_marginRight="@dimen/dimen_24" android:layout_alignParentRight="true" />
+        <TextView android:textSize="@dimen/dimen_26" android:textStyle="bold" android:textColor="@color/c28" android:gravity="center" android:id="@id/tv_login_phone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dimen_40" />
+        <ImageView android:layout_gravity="center" android:id="@id/iv_fingerprint_login" android:background="@drawable/icon_fingerprint" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dimen_40" />
+        <TextView android:textColor="@color/tc_1" android:layout_gravity="center" android:id="@id/tv_fingerprint_login" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="20.0dip" android:text="@string/toonuser_finger_click_login" />
+    </LinearLayout>
+    <TextView android:textColor="@color/tc_2" android:gravity="center" android:id="@id/tv_other_login_way" android:paddingTop="10.0dip" android:paddingBottom="10.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/dimen_40" android:text="@string/other_way_to_login" android:layout_alignParentBottom="true" />
+</RelativeLayout>

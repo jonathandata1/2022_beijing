@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:background="@color/color_F8F8FB" android:focusable="true" android:focusableInTouchMode="true" android:layout_width="match_parent" android:layout_height="match_parent">
+    <com.systoon.customhomepage.widget.HomepageCusPtrClassicFrameLayout android:id="@+id/rotate_header_web_view_frame" android:layout_width="match_parent" android:layout_height="match_parent" cube_ptr:ptr_duration_to_close_header="1000" cube_ptr:ptr_keep_header_when_refresh="true" cube_ptr:ptr_mode="1" cube_ptr:ptr_pull_to_fresh="false" cube_ptr:ptr_ratio_of_header_height_to_refresh="1.5" cube_ptr:ptr_resistance_header="3">
+        <android.support.v4.widget.NestedScrollView android:id="@+id/nested_scroll_view" android:layout_width="match_parent" android:layout_height="match_parent">
+            <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+                <FrameLayout android:id="@+id/fragment_rv_header" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+                <com.systoon.customhomepage.widget.BetterRecyclerView android:id="@+id/mc_hplist" android:paddingBottom="58dp" android:scrollbars="none" android:layout_width="match_parent" android:layout_height="match_parent" android:listSelector="@null" android:cacheColorHint="@color/transparent" android:divider="@null"/>
+            </LinearLayout>
+        </android.support.v4.widget.NestedScrollView>
+    </com.systoon.customhomepage.widget.HomepageCusPtrClassicFrameLayout>
+    <FrameLayout android:id="@+id/fragment_custom_search" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+</RelativeLayout>

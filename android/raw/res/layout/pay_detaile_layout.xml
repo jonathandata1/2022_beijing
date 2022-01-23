@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="50.0dip">
+            <TextView android:gravity="left" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:text="缴费金额" android:layout_weight="1.0" />
+            <LinearLayout android:gravity="center|right" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="5.0">
+                <TextView android:textStyle="bold" android:id="@id/tv_1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="5.0dip" android:text="-" />
+            </LinearLayout>
+        </LinearLayout>
+        <TextView android:background="@color/ccbpay_gray" android:layout_width="fill_parent" android:layout_height="1.0dip" />
+        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="50.0dip">
+            <TextView android:gravity="left" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:text="缴费单位" android:layout_weight="1.0" />
+            <LinearLayout android:gravity="center|right" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="5.0">
+                <TextView android:textStyle="bold" android:id="@id/tv_2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="5.0dip" android:text="-" android:singleLine="true" />
+            </LinearLayout>
+        </LinearLayout>
+        <TextView android:background="@color/ccbpay_gray" android:layout_width="fill_parent" android:layout_height="1.0dip" />
+        <TextView android:background="@color/ccbpay_gray" android:layout_width="fill_parent" android:layout_height="1.0dip" />
+        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="50.0dip">
+            <TextView android:gravity="left" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:text="缴费户号" android:layout_weight="1.0" />
+            <LinearLayout android:gravity="center|right" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="5.0">
+                <TextView android:textStyle="bold" android:id="@id/tv_4" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="5.0dip" android:text="-" />
+            </LinearLayout>
+        </LinearLayout>
+        <TextView android:background="@color/ccbpay_gray" android:layout_width="fill_parent" android:layout_height="1.0dip" />
+        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="50.0dip">
+            <TextView android:gravity="left" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:text="缴费事项" android:layout_weight="1.0" />
+            <LinearLayout android:gravity="center|right" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="5.0">
+                <TextView android:textStyle="bold" android:id="@id/tv_5" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="5.0dip" android:text="-" />
+            </LinearLayout>
+        </LinearLayout>
+        <TextView android:background="@color/ccbpay_gray" android:layout_width="fill_parent" android:layout_height="1.0dip" />
+        <TextView android:background="@color/ccbpay_gray" android:layout_width="fill_parent" android:layout_height="1.0dip" />
+        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="50.0dip">
+            <TextView android:gravity="left" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:text="支付单号" android:layout_weight="1.0" />
+            <LinearLayout android:gravity="center|right" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="5.0">
+                <TextView android:textStyle="bold" android:id="@id/tv_7" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="5.0dip" android:text="" android:singleLine="true" />
+            </LinearLayout>
+        </LinearLayout>
+        <TextView android:background="@color/ccbpay_gray" android:layout_width="fill_parent" android:layout_height="1.0dip" />
+        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="50.0dip">
+            <TextView android:gravity="left" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:text="缴费状态" android:layout_weight="1.0" />
+            <LinearLayout android:gravity="center|right" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="5.0">
+                <TextView android:textStyle="bold" android:id="@id/tv_8" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="5.0dip" android:text="-" />
+            </LinearLayout>
+        </LinearLayout>
+        <TextView android:background="@color/ccbpay_gray" android:layout_width="fill_parent" android:layout_height="1.0dip" />
+    </LinearLayout>
+</LinearLayout>

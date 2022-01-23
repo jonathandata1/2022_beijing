@@ -1,0 +1,57 @@
+{
+    "tscan": {
+        "scanQrcodeBottomActionArray":[
+                      {
+                          "title":"我的二维码",
+                          "imageName":"myQrcode",
+                          "ToonRouterModule":"chat",
+                          "ToonRouterPath":"qrcodeMytmails"
+                      },
+                      {
+                          "title":"App二维码",
+                          "imageName":"scanApp",
+                          "ToonRouterModule":"qrcode",
+                          "ToonRouterPath":"openmyappqrcode"
+                      },
+                      {
+                          "title":"相册",
+                          "imageName":"scanPhoto",
+                          "ToonRouterModule":"tphoto",
+                          "ToonRouterPath":"photo"
+                      }
+        ],
+        
+        
+        "scanQrcode":[
+                      {
+                      "url":"https://app.systoon.com/efz",
+                      "module":"tuser",
+                      "path":"jumpToPCLogin"
+                      },
+                      {
+                      "url":"https://app.systoon.com/efz",
+                      "module":"tuser",
+                      "path":"jumpToPCLogin"
+                      }
+        ],
+        "scanDefaultUrl":{
+            "cardAndGroup" : "https://tqrcode.toon.mobi/index.html?frame:1",
+            "groupChat" : "appdown.systoon.com/joinGroup?",
+            "TmailQRcode" : "appdown.systoon.com/tmailDetail?",
+            "frumQRcode" : "app.systoon.com/efz?forumType="
+        },
+
+        "appQrcode":
+        {
+            "url" : "https://app.systoon.com/syt/",
+            "logoImageName" : "qrcode_scan_logo",
+            "saveAppQrcodeButton" : "",
+            "shareAppQrcodeButton" : ""
+        },
+        
+        "SCAN_LocalStringWithKeyFromTable" : "scanLanguage",
+        "useCacheCookiesUrlList":[
+          
+        ]
+    }
+}

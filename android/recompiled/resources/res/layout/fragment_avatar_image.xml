@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent" android:layout_height="match_parent">
+    <com.msgseal.base.ui.AvatarView android:id="@+id/image_avatar" android:background="@drawable/default_head_chatgroup" android:layout_width="@dimen/dimen_300" android:layout_height="@dimen/dimen_300" android:layout_centerInParent="true"/>
+</RelativeLayout>

@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:background="@color/tnt_color_ffffff" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <include android:id="@id/rl_search" layout="@layout/interactive_fragment_search" />
+    <RelativeLayout android:id="@id/rl_head" android:background="@color/transparent" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_below="@id/rl_search">
+        <ImageView android:id="@id/interactive_header_banner_bg2" android:layout_width="fill_parent" android:layout_height="@dimen/px_175" android:scaleType="centerCrop" />
+        <android.support.design.widget.TabLayout android:layout_gravity="center" android:id="@id/tabLayout" android:layout_width="@dimen/px_339" android:layout_height="@dimen/px_52" android:layout_marginLeft="@dimen/px_16" android:layout_marginRight="@dimen/px_36" android:layout_alignParentTop="true" app:tabBackground="@drawable/topline_tab_backgroud_selector" app:tabIndicatorColor="@null" app:tabMode="scrollable" app:tabPaddingEnd="@dimen/px_10" app:tabPaddingStart="@dimen/px_10" app:tabPaddingTop="@dimen/px_12" app:tabSelectedTextColor="@color/c20" app:tabTextAppearance="@style/TabLayoutTextStyle" app:tabTextColor="#ffd4eafe" />
+        <RelativeLayout android:id="@id/channel_manager" android:background="#00ffffff" android:layout_width="@dimen/px_36" android:layout_height="@dimen/px_52" android:layout_alignParentRight="true">
+            <View android:background="#ffe1e1e1" android:layout_width="0.5px" android:layout_height="@dimen/px_30" android:layout_alignParentLeft="true" android:layout_centerVertical="true" />
+            <RelativeLayout android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerHorizontal="true" android:layout_centerVertical="true">
+                <View android:id="@id/view_one" android:background="@drawable/tab_channel_manager_bg" android:layout_width="@dimen/px_12" android:layout_height="@dimen/px_2" android:layout_centerHorizontal="true" />
+                <View android:id="@id/view_two" android:background="@drawable/tab_channel_manager_bg" android:layout_width="@dimen/px_12" android:layout_height="@dimen/px_2" android:layout_marginTop="@dimen/dimen_5" android:layout_below="@id/view_one" android:layout_centerHorizontal="true" />
+                <View android:background="@drawable/tab_channel_manager_bg" android:layout_width="@dimen/px_12" android:layout_height="@dimen/px_2" android:layout_marginTop="@dimen/dimen_5" android:layout_below="@id/view_two" android:layout_centerHorizontal="true" />
+            </RelativeLayout>
+            <ImageView android:layout_width="@dimen/px_20" android:layout_height="@dimen/px_20" android:src="@drawable/edit_channel" android:layout_centerInParent="true" />
+        </RelativeLayout>
+        <com.systoon.topline.widget.NoScollerViewPager android:id="@id/viewPager" android:background="@color/transparent" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginBottom="@dimen/dimen_48" android:layout_below="@id/tabLayout" />
+    </RelativeLayout>
+    <include android:id="@id/layout_loading" layout="@layout/interactive_content_loading" />
+    <FrameLayout android:id="@id/fl_btn" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <RelativeLayout android:layout_gravity="bottom" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/px_26" android:layout_marginBottom="@dimen/px_54">
+            <RelativeLayout android:gravity="center_vertical" android:id="@id/rl_interactive_bg" android:background="@drawable/icon_interact_release_backgraoud" android:visibility="gone" android:layout_width="@dimen/px_192" android:layout_height="@dimen/px_55" android:layout_marginTop="@dimen/px_4" android:layout_marginRight="@dimen/px_4" android:layout_marginBottom="@dimen/px_5" android:layout_alignParentRight="true">
+                <TextView android:textSize="@dimen/px_12" android:textColor="@color/c20" android:gravity="center" android:id="@id/tv_release" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/px_33" android:layout_marginTop="@dimen/px_3" android:layout_marginBottom="@dimen/px_3" android:text="发布" android:drawableTop="@drawable/interactive_release_bg" />
+                <TextView android:textSize="@dimen/px_12" android:textColor="@color/c20" android:gravity="center" android:id="@id/tv_my" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/px_29" android:layout_marginTop="@dimen/px_3" android:layout_marginBottom="@dimen/px_3" android:text="我的" android:drawableTop="@drawable/interactive_my_release" android:layout_toRightOf="@id/tv_release" />
+            </RelativeLayout>
+            <RelativeLayout android:id="@id/rl_interactive1" android:background="@drawable/icon_interact_release_bg" android:visibility="gone" android:layout_width="@dimen/px_55" android:layout_height="@dimen/px_55" android:layout_alignParentRight="true" android:layout_centerVertical="true">
+                <RelativeLayout android:id="@id/rl_interactive" android:background="@drawable/icon_interact_release_red" android:layout_width="@dimen/px_42" android:layout_height="@dimen/px_42" android:layout_centerInParent="true">
+                    <ImageView android:id="@id/iv_interactive" android:layout_width="@dimen/px_28" android:layout_height="@dimen/px_28" android:src="@drawable/interactive_release" android:layout_centerInParent="true" />
+                </RelativeLayout>
+            </RelativeLayout>
+        </RelativeLayout>
+    </FrameLayout>
+    <include android:id="@id/empty_view" android:visibility="gone" layout="@layout/interactive_empty_view" />
+</RelativeLayout>

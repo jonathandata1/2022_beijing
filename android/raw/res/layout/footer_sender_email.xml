@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:paddingLeft="@dimen/dimen_16" android:paddingRight="@dimen/dimen_12" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:id="@id/send_attachment_container" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <View android:background="@color/c36" android:layout_width="fill_parent" android:layout_height="@dimen/dimen_0.5" />
+        <android.support.v7.widget.RecyclerView android:id="@id/rcy_send_attachment" android:scrollbars="none" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dimen_12" android:layout_marginBottom="@dimen/dimen_12" android:overScrollMode="never" />
+    </LinearLayout>
+    <View android:background="@color/c36" android:layout_width="fill_parent" android:layout_height="@dimen/dimen_0.5" />
+    <LinearLayout android:orientation="horizontal" android:id="@id/send_func_container" android:layout_width="fill_parent" android:layout_height="@dimen/dimen_50" />
+</LinearLayout>

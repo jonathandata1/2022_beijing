@@ -1,0 +1,41 @@
+{
+    "TabBarContainer": {
+        "custom1":{
+            "delegates":{
+                "customDelegate":"TNTabDelegate",
+                "customDelegate2":"TNTabDelegate"
+            }
+        },
+        "testvc":{
+            "delegates":{
+                "customDelegate":"TTestVCDelegate",
+                "customDelegate2":"TTestVCDelegate"
+            }
+        },
+        "items":[
+            {
+                "name": "TMail",
+                "title":"通知",
+                "sharedInstanceMethod": "sharedInstance",
+                "viewControllerClass": "TTestViewController",
+                "tabbarItemIcon": "m49_normal",
+                "tabbarItemSelectedIcon": "m49_selected"
+            },
+            {
+                "name": "TContacts",
+                "title": "通讯录",
+                "viewControllerClass": "TTestViewController",
+                "tabbarItemIcon": "m50_normal",
+                "tabbarItemSelectedIcon": "m50_selected"
+            },
+            {
+                "name": "TMy",
+                "title": "我的",
+                "viewControllerClass": "TTestViewController",
+                "tabbarItemIcon": "m53_normal",
+                "tabbarItemSelectedIcon": "m53_selected"
+            }
+        ]
+    }
+
+}

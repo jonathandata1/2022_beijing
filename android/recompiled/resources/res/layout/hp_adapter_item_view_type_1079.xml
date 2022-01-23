@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:orientation="vertical" android:background="@color/color_FFFFFF" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <com.systoon.customhomepage.widget.HomepageHeanderBanner android:id="@+id/banner" android:layout_width="match_parent" android:layout_height="176dp" app:indicator_drawable_selected="@drawable/hp_icon_news_typek_white_dot" app:indicator_drawable_unselected="@drawable/hp_icon_news_typek_gray_dot" app:indicator_height="@dimen/hp_px_5" app:indicator_margin="@dimen/hp_px_3" app:indicator_width="@dimen/hp_px_5"/>
+</LinearLayout>

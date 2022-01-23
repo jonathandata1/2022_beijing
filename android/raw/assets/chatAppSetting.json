@@ -1,0 +1,30 @@
+//type类型  0 普通单聊模式 带创建群聊icon  1 应用显示样式 仅显示头像和名称  2 带箭头  3 带开关  4 普通文本
+//nameKey 是string的字符串key  可为空  如有特殊定制 请确定string文件里面有此key
+//marginTop 上边距
+[
+  {
+    "nameKey": "",
+    "type": "1",
+    "marginTop": 0
+  },
+  {
+    "nameKey": "setting_message_record",
+    "type": "2",
+    "marginTop": 20
+  },
+  {
+    "nameKey": "setting_group_no_disturb",
+    "type": "3",
+    "marginTop": 20
+  },
+  {
+    "nameKey": "setting_report",
+    "type": "2",
+    "marginTop": 20
+  },
+  {
+    "nameKey": "setting_clean_chat",
+    "type": "4",
+    "marginTop": 20
+  }
+]

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:id="@id/input_card_container" android:background="@drawable/input_card_bg" android:layout_width="@dimen/dimen_255" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dimen_9" android:layout_marginRight="@dimen/dimen_9" android:minHeight="@dimen/dimen_82">
+        <ImageView android:background="@drawable/item_card_bg_icon" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+        <com.msgseal.base.ui.AvatarView android:id="@id/avatar_input_card" android:layout_width="@dimen/dimen_50" android:layout_height="@dimen/dimen_50" android:layout_marginLeft="@dimen/dimen_12" android:src="@drawable/default_head_person132" android:layout_alignParentLeft="true" android:layout_centerVertical="true" />
+        <LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dimen_8" android:layout_marginRight="@dimen/dimen_10" android:layout_toRightOf="@id/avatar_input_card" android:layout_centerVertical="true">
+            <TextView android:textSize="@dimen/dimen_18" android:textColor="@color/color_F8F9FB" android:ellipsize="end" android:gravity="start|center" android:id="@id/tv_card_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true" />
+            <TextView android:textSize="@dimen/dimen_14" android:textColor="@color/color_8e8e93" android:ellipsize="end" android:gravity="start|center" android:id="@id/tv_card_subtitle" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true" />
+        </LinearLayout>
+    </RelativeLayout>
+    <FrameLayout android:layout_gravity="center|right|top" android:id="@id/del_input_voice" android:layout_width="@dimen/dimen_30" android:layout_height="@dimen/dimen_30">
+        <ImageView android:layout_gravity="center|right|top" android:layout_width="@dimen/dimen_18" android:layout_height="@dimen/dimen_18" android:src="@drawable/del_input_icon" />
+    </FrameLayout>
+</FrameLayout>

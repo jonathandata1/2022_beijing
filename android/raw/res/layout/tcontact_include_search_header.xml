@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="@dimen/dimen_56" android:minHeight="@dimen/dimen_56"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.msgseal.contact.base.view.SearchBar android:id="@id/search_bar" android:background="@drawable/tcontact_main_rectangle_gray" android:layout_width="fill_parent" android:layout_height="@dimen/dimen_56" android:layout_centerVertical="true" />
+    <View android:id="@id/search_separator" android:background="@color/c36" android:layout_width="fill_parent" android:layout_height="@dimen/dimen_1" android:layout_alignParentBottom="true" />
+</RelativeLayout>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+    <include android:id="@+id/in_1" layout="@layout/toon_item_navigation_bar"/>
+    <EditText android:textSize="@dimen/ts_18px" android:textColor="@color/color_222222" android:textColorHint="@color/color_c5c5c5" android:gravity="center_vertical" android:id="@+id/et_address_title" android:background="@color/c20" android:paddingLeft="@dimen/dimen_16" android:paddingRight="@dimen/dimen_16" android:layout_width="match_parent" android:layout_height="@dimen/dimen_50" android:hint="@string/common_address_name" android:singleLine="true" android:textCursorDrawable="@null"/>
+    <View android:background="@color/c6" android:layout_width="match_parent" android:layout_height="0.3dp" android:layout_marginLeft="@dimen/dimen_16"/>
+    <RelativeLayout android:background="@color/c20" android:layout_width="match_parent" android:layout_height="@dimen/dimen_50">
+        <ImageView android:id="@+id/iv_add_address" android:paddingRight="@dimen/dimen_16" android:layout_width="wrap_content" android:layout_height="match_parent" android:src="@drawable/icon_add_address" android:layout_alignParentRight="true"/>
+        <TextView android:textSize="@dimen/ts_18px" android:textColor="@color/color_4a4a4a" android:textColorHint="@color/color_c5c5c5" android:ellipsize="end" android:gravity="center_vertical" android:id="@+id/tv_address_content" android:background="@color/c20" android:paddingLeft="@dimen/dimen_16" android:paddingTop="10dp" android:paddingRight="@dimen/dimen_16" android:layout_width="match_parent" android:layout_height="@dimen/dimen_50" android:hint="@string/common_address_content" android:singleLine="true" android:layout_toLeftOf="@+id/iv_add_address" android:textCursorDrawable="@null"/>
+    </RelativeLayout>
+</LinearLayout>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:gravity="center" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="60dp">
+    <FrameLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="10dp">
+        <ImageView android:layout_gravity="center" android:id="@+id/ptr_classic_header_rotate_view" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/sy_ptr_rotate_arrow"/>
+        <com.zhuanche.commonbase.widget.dialog.CustomColorProgressBar android:layout_gravity="center" android:id="@+id/ptr_classic_header_rotate_view_progressbar" android:layout_width="20dp" android:layout_height="20dp"/>
+    </FrameLayout>
+    <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@+id/ptr_classic_header_rotate_view_header_text" android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <TextView android:textSize="12sp" android:textColor="#666666" android:id="@+id/ptr_classic_header_rotate_view_header_title" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+        <TextView android:textSize="10sp" android:textColor="#999999" android:id="@+id/ptr_classic_header_rotate_view_header_last_update" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="2dp"/>
+    </LinearLayout>
+</LinearLayout>

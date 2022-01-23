@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <TextView android:textSize="@dimen/ts_16px" android:textColor="@color/operate_dialog_bottom_str_color" android:ellipsize="end" android:gravity="center" android:id="@+id/operate_tdialog_tv" android:background="@color/common_dialog_background" android:paddingLeft="@dimen/dimen_48" android:paddingRight="@dimen/dimen_48" android:layout_width="match_parent" android:layout_height="@dimen/dimen_50" android:singleLine="true"/>
+        <View android:id="@+id/operate_tdialog_divider" android:background="@color/common_dialog_bt_background_color" android:visibility="gone" android:layout_width="match_parent" android:layout_height="@dimen/res_0x7f070190_dimen_0_3"/>
+    </LinearLayout>
+</LinearLayout>

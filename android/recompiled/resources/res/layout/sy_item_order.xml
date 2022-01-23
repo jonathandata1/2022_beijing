@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <View android:id="@+id/sy_tv_line" android:layout_width="match_parent" android:layout_height="7dp"/>
+    <LinearLayout android:orientation="vertical" android:background="@color/sy_vffffff" android:paddingLeft="20dp" android:paddingTop="14dp" android:paddingRight="20dp" android:paddingBottom="14dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="14dp">
+            <TextView android:textSize="14sp" android:textColor="@color/sy_v000000" android:id="@+id/sy_tv_trip_title" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+            <View android:layout_width="0dp" android:layout_height="0dp" android:layout_weight="1"/>
+            <TextView android:textSize="13sp" android:textColor="@color/sy_vabacb0" android:id="@+id/sy_tv_service_status" android:layout_width="wrap_content" android:layout_height="wrap_content" android:drawableRight="@drawable/sy_icon_trip_item_right_arrow"/>
+        </LinearLayout>
+        <include layout="@layout/sy_layout_order_info"/>
+        <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@+id/sy_ll_none_icon_row" android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <ImageView android:layout_width="5dp" android:layout_height="5dp" android:scaleType="fitXY"/>
+            <TextView android:textSize="13sp" android:textColor="@color/sy_v6e7073" android:ellipsize="end" android:id="@+id/sy_tv_none_icon_row" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="8dp" android:maxLines="1"/>
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@id/rl_background" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:card_view="http://schemas.android.com/apk/res-auto">
+    <TextView android:textSize="16.0sp" android:textColor="@color/color_383838" android:id="@id/tv_title" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dimen_16" android:text="街道办" android:layout_weight="1.0" android:layout_marginStart="@dimen/dimen_16" />
+    <ImageView android:id="@id/line" android:background="@color/color_E1E1E1" android:layout_width="1.0dip" android:layout_height="16.0dip" android:layout_marginLeft="12.0dip" />
+</LinearLayout>

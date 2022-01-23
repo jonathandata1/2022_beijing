@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple Computer//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+    <dict>
+        <key>setup</key>
+        <dict>
+            <key>out</key>
+            <string>NSDictionary</string>
+            <key>in</key>
+            <string>NSDictionary</string>
+            <key>excutor</key>
+            <string>TNetworkExecutor</string>
+            <key>des</key>
+            <string>初始化</string>
+        </dict>
+        <key>reset</key>
+        <dict>
+            <key>out</key>
+            <string>NSDictionary</string>
+            <key>in</key>
+            <string>NSDictionary</string>
+            <key>excutor</key>
+            <string>TNetworkExecutor</string>
+            <key>des</key>
+            <string>重置</string>
+        </dict>
+    </dict>
+</plist>

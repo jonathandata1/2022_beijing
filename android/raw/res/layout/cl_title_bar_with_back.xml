@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/base_title_action_bar_container" android:background="#ff2e313b" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/base_title_action_bar" android:layout_width="fill_parent" android:layout_height="48.0dip" android:baselineAligned="false">
+        <LinearLayout android:gravity="start|center" android:layout_gravity="center" android:orientation="horizontal" android:id="@id/base_title_left_container" android:layout_width="wrap_content" android:layout_height="fill_parent" android:minWidth="48.0dip">
+            <TextView android:textSize="16.0dip" android:textColor="#ffffffff" android:gravity="center" android:id="@id/base_title_action_back" android:background="@android:color/transparent" android:paddingLeft="15.0dip" android:paddingRight="15.0dip" android:layout_width="fill_parent" android:layout_height="fill_parent" android:drawableLeft="@drawable/cl_btn_back_normal" android:drawablePadding="3.0dip" android:contentDescription="@string/chatui_action_back" />
+        </LinearLayout>
+        <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@id/base_title_center_container" android:paddingLeft="60.0dip" android:paddingRight="60.0dip" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <TextView android:textSize="18.0dip" android:textColor="#ffffffff" android:ellipsize="end" android:gravity="center" android:id="@id/base_title_center_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="1" />
+        </LinearLayout>
+    </RelativeLayout>
+    <View android:id="@id/base_title_bottom_divider" android:background="#ff31343c" android:layout_width="fill_parent" android:layout_height="0.0dip" />
+</LinearLayout>

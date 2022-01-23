@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:layout_gravity="center_horizontal" android:layout_width="@dimen/dimen_120" android:layout_height="@dimen/dimen_120" android:src="@drawable/icon_fingerprint" />
+    <TextView android:textSize="16.0sp" android:textColor="#ff000000" android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="20.0dip" android:text="@string/finger_dialog_tip" />
+    <TextView android:textSize="12.0sp" android:textColor="#ffff4455" android:layout_gravity="center" android:id="@id/error_msg" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5.0dip" android:maxLines="1" />
+    <View android:background="#ffcccccc" android:layout_width="fill_parent" android:layout_height="0.5dip" android:layout_marginTop="10.0dip" />
+    <TextView android:textSize="16.0sp" android:textColor="#ff5d7883" android:gravity="center" android:id="@id/cancel" android:layout_width="fill_parent" android:layout_height="50.0dip" android:text="@string/cancel" />
+</LinearLayout>

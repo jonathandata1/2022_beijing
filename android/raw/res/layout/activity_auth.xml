@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/c20" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <include android:id="@id/in_1" layout="@layout/item_navigation_bar" />
+    <com.systoon.toon.view.ShapeImageView android:layout_gravity="center_horizontal" android:id="@id/siv_app_logo" android:layout_width="72.0dip" android:layout_height="72.0dip" android:layout_marginTop="40.0dip" app:radius_x="2.0" app:radius_y="2.0" app:shape="round_rectangle" />
+    <TextView android:textSize="22.0dip" android:textColor="#ff000000" android:layout_gravity="center_horizontal" android:id="@id/tv_app_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="11.0dip" android:text="社保" />
+    <View android:background="#ffdddee3" android:layout_width="fill_parent" android:layout_height="1.0px" android:layout_marginLeft="15.0dip" android:layout_marginTop="29.0dip" android:layout_marginRight="15.0dip" />
+    <TextView android:textSize="16.0dip" android:textColor="#ff222222" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="35.0dip" android:layout_marginTop="29.0dip" android:text="本服务需要获得以下权限" />
+    <TextView android:textSize="14.0dip" android:textColor="#ff8e8e93" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="35.0dip" android:layout_marginTop="15.0dip" android:text="•  读取您的身份证信息" />
+    <Button android:textSize="18.0dip" android:textColor="@color/c20" android:gravity="center" android:id="@id/btn_agreeAuth" android:background="@drawable/btn_login_red" android:layout_width="fill_parent" android:layout_height="@dimen/dimen_50" android:layout_marginLeft="@dimen/dimen_24" android:layout_marginTop="@dimen/dimen_20" android:layout_marginRight="@dimen/dimen_24" android:text="同意授权" android:onClick="agreeAuth" />
+</LinearLayout>

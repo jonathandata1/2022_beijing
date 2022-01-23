@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:id="@+id/contact_base_search_layout" android:layout_width="match_parent" android:layout_height="match_parent">
+    <View android:id="@+id/placeholder" android:background="@color/color_2E3039" android:layout_width="wrap_content" android:layout_height="0dp"/>
+    <include android:id="@+id/rl_search_header" android:visibility="gone" layout="@layout/view_search_header"/>
+    <LinearLayout android:orientation="vertical" android:id="@+id/custom_view" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_below="@+id/rl_search_header"/>
+    <com.msgseal.contact.base.view.ChatViewGroup android:id="@+id/view_group_container" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_above="@+id/view_selected_panel" android:layout_below="@+id/custom_view">
+        <include layout="@layout/chat_search_empty_view"/>
+        <android.support.v7.widget.RecyclerView android:id="@+id/chat_content_list" android:background="@null" android:scrollbars="none" android:layout_width="match_parent" android:layout_height="wrap_content" android:overScrollMode="never"/>
+        <android.support.v7.widget.RecyclerView android:id="@+id/search_content_list" android:background="@null" android:visibility="gone" android:scrollbars="none" android:layout_width="match_parent" android:layout_height="match_parent" android:overScrollMode="never"/>
+        <com.systoon.toon.view.alphabetical.LetterView android:layout_gravity="right|center_vertical|center_horizontal|center|end" android:id="@+id/lv_letter_view" android:background="#00000000" android:visibility="invisible" android:layout_width="@dimen/dimen_20" android:layout_height="420dp"/>
+    </com.msgseal.contact.base.view.ChatViewGroup>
+    <View android:id="@+id/view_mask_layer" android:background="#7f000000" android:visibility="gone" android:clickable="true" android:layout_width="match_parent" android:layout_height="match_parent"/>
+    <com.msgseal.contact.selectedcontact.SelectedContactPanel android:id="@+id/view_selected_panel" android:visibility="gone" android:layout_width="match_parent" android:layout_height="@dimen/dimen_54" android:layout_alignParentBottom="true"/>
+</RelativeLayout>

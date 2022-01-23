@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/sy_layout_home_order_info" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/sy_layout_home_pickup" android:layout_width="fill_parent" android:layout_height="@dimen/dp_50">
+        <ImageView android:layout_width="@dimen/dp_14" android:layout_height="@dimen/dp_14" android:src="@drawable/base_dot_red" android:scaleType="centerInside" />
+        <TextView android:textSize="15.0sp" android:textColor="@color/sy_v222222" android:id="@id/sy_tv_pick_up_address" android:paddingLeft="@dimen/dp_8" android:paddingRight="@dimen/dp_8" android:layout_width="0.0dip" android:layout_height="wrap_content" android:hint="@string/sy_str_pickup_home_hint" android:singleLine="true" android:layout_weight="1.0" />
+        <ImageView android:id="@id/sy_tv_pick_up_address_arrow" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/base_icon_right_arrow_driver_info" android:layout_marginEnd="@dimen/dp_4" />
+    </LinearLayout>
+    <View android:background="#ffe5e5e5" android:layout_width="fill_parent" android:layout_height="@dimen/dp_0_5" />
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/sy_layout_home_drop_off" android:layout_width="fill_parent" android:layout_height="@dimen/dp_50">
+        <ImageView android:layout_width="@dimen/dp_14" android:layout_height="@dimen/dp_14" android:src="@drawable/base_dot_dark" android:scaleType="centerInside" />
+        <TextView android:textSize="15.0sp" android:textColor="@color/sy_v222222" android:id="@id/sy_tv_drop_off_address" android:paddingLeft="@dimen/dp_8" android:paddingRight="@dimen/dp_8" android:layout_width="0.0dip" android:layout_height="wrap_content" android:hint="@string/sy_str_drop_off_home_hint" android:singleLine="true" android:layout_weight="1.0" />
+        <TextView android:textSize="12.0sp" android:textColor="@color/sy_v4a4a4a" android:id="@id/sy_tv_drop_off_address_modify" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/sy_now_start_addr_modify" android:paddingStart="@dimen/dp_5" android:paddingEnd="@dimen/dp_7" />
+        <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/base_icon_right_arrow_driver_info" android:layout_marginEnd="@dimen/dp_4" />
+    </LinearLayout>
+    <View android:id="@id/sy_view_home_time_line" android:background="#ffe5e5e5" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="@dimen/dp_0_5" />
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/sy_layout_home_car_time" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="@dimen/dp_50">
+        <ImageView android:layout_width="@dimen/dp_14" android:layout_height="@dimen/dp_14" android:src="@drawable/sy_ic_home_time" android:scaleType="centerInside" />
+        <TextView android:textSize="15.0sp" android:textColor="@color/sy_v222222" android:paddingLeft="@dimen/dp_8" android:paddingRight="@dimen/dp_8" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="@string/sy_str_car_time" android:singleLine="true" android:layout_weight="1.0" />
+        <TextView android:textSize="14.0sp" android:textColor="@color/sy_v222222" android:id="@id/sy_tv_home_select_time" android:paddingLeft="@dimen/dp_7" android:paddingRight="@dimen/dp_7" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true" />
+        <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/base_icon_right_arrow_driver_info" android:layout_marginEnd="@dimen/dp_4" />
+    </LinearLayout>
+    <View android:id="@id/sy_view_home_rider_line" android:background="#ffe5e5e5" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="@dimen/dp_0_5" />
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/sy_layout_home_rider_num" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="@dimen/dp_50">
+        <ImageView android:layout_width="@dimen/dp_14" android:layout_height="@dimen/dp_14" android:src="@drawable/sy_ic_home_rider" android:scaleType="centerInside" />
+        <TextView android:textSize="15.0sp" android:textColor="@color/sy_v222222" android:paddingLeft="@dimen/dp_8" android:paddingRight="@dimen/dp_8" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="@string/sy_str_rider_num" android:singleLine="true" android:layout_weight="1.0" />
+        <TextView android:textSize="14.0sp" android:textColor="@color/sy_v222222" android:id="@id/sy_tv_home_rider_num" android:paddingLeft="@dimen/dp_7" android:paddingRight="@dimen/dp_7" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true" />
+        <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/base_icon_right_arrow_driver_info" android:layout_marginEnd="@dimen/dp_4" />
+    </LinearLayout>
+    <View android:id="@id/sy_view_home_check_line" android:background="#ffe5e5e5" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="@dimen/dp_0_5" />
+    <android.support.constraint.ConstraintLayout android:orientation="horizontal" android:id="@id/sy_layout_home_check" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="@dimen/dp_50">
+        <CheckBox android:ellipsize="end" android:id="@id/sy_cb_one" android:paddingTop="@dimen/dp_15" android:paddingBottom="@dimen/dp_15" android:layout_width="wrap_content" android:layout_height="fill_parent" android:text="@string/sy_str_accept_carpooling" android:maxLines="1" app:layout_constrainedWidth="true" app:layout_constraintEnd_toStartOf="@id/sy_line_check" app:layout_constraintHorizontal_bias="0.0" app:layout_constraintStart_toStartOf="parent" style="@style/CheckBoxStyle" />
+        <View android:layout_gravity="center_vertical" android:id="@id/sy_line_check" android:background="@color/sy_ve5e5e5" android:layout_width="@dimen/dp_0_5" android:layout_height="@dimen/dp_15" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent" />
+        <CheckBox android:id="@id/sy_cb_two" android:paddingTop="@dimen/dp_15" android:paddingBottom="@dimen/dp_15" android:layout_width="wrap_content" android:layout_height="fill_parent" android:text="@string/sy_str_need_welfare_car" app:layout_constrainedWidth="true" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toEndOf="@id/sy_line_check" style="@style/CheckBoxStyle" />
+    </android.support.constraint.ConstraintLayout>
+</LinearLayout>

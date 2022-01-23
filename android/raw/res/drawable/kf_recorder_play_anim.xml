@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<animation-list
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:duration="300" android:drawable="@drawable/kf_v_anim1" />
+    <item android:duration="300" android:drawable="@drawable/kf_v_anim2" />
+    <item android:duration="300" android:drawable="@drawable/kf_v_anim3" />
+</animation-list>

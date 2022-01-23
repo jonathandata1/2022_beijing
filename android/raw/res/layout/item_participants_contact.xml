@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:layout_gravity="center_vertical" android:orientation="horizontal" android:id="@id/parendView" android:background="@color/backgroundColor" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.msgseal.base.ui.AvatarView android:id="@id/item_participants_header" android:layout_width="@dimen/dimen_46" android:layout_height="@dimen/dimen_46" android:layout_marginLeft="@dimen/dimen_16" android:layout_marginTop="@dimen/dimen_12" android:layout_marginRight="@dimen/dimen_12" android:layout_marginBottom="@dimen/dimen_12" android:layout_marginStart="@dimen/dimen_16" android:layout_marginEnd="@dimen/dimen_12" />
+    <LinearLayout android:layout_gravity="center_vertical" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dimen_8" android:layout_marginBottom="@dimen/dimen_8">
+        <TextView android:textSize="@dimen/dimen_16" android:textColor="@color/text_main_color" android:id="@id/item_participants_title" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+        <TextView android:textSize="@dimen/dimen_14" android:textColor="@color/text_subtitle_color" android:id="@id/item_participants_sub_title" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    </LinearLayout>
+</LinearLayout>

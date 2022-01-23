@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:background="@color/transparent" android:layout_width="match_parent" android:layout_height="match_parent">
+    <RelativeLayout android:id="@+id/rl_pw" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true">
+        <LinearLayout android:orientation="vertical" android:id="@+id/ll_pw_cancel" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true">
+            <View android:background="@color/color_f8f8fb" android:layout_width="match_parent" android:layout_height="@dimen/dimen_8"/>
+            <TextView android:textSize="@dimen/dimen_16" android:textColor="@color/color_222222" android:gravity="center" android:id="@+id/tv_pw_cancel" android:background="@color/c20" android:layout_width="match_parent" android:layout_height="@dimen/dimen_50" android:text="@string/cancel"/>
+        </LinearLayout>
+        <LinearLayout android:orientation="vertical" android:background="@color/c20" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_above="@+id/ll_pw_cancel">
+            <TextView android:textSize="@dimen/dimen_16" android:textColor="@color/color_222222" android:gravity="center" android:id="@+id/tv_pw_first" android:background="@drawable/edit_bottom_line_gray" android:layout_width="match_parent" android:layout_height="@dimen/dimen_50"/>
+            <TextView android:textSize="@dimen/dimen_16" android:textColor="@color/color_222222" android:gravity="center" android:id="@+id/tv_pw_second" android:background="@color/c20" android:layout_width="match_parent" android:layout_height="@dimen/dimen_50"/>
+        </LinearLayout>
+    </RelativeLayout>
+</RelativeLayout>

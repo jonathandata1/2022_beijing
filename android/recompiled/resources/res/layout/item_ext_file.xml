@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:descendantFocusability="blocksDescendants" android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:paddingLeft="@dimen/dimen_15" android:paddingRight="5dp" android:layout_width="match_parent" android:layout_height="72dp">
+        <CheckBox android:id="@+id/cb_ext_file_item" android:background="@drawable/chat_checkbox_blue_style" android:layout_width="23dp" android:layout_height="23dp" android:layout_marginRight="@dimen/dimen_8" android:button="@null"/>
+        <ImageView android:id="@+id/img_ext_file_item" android:layout_width="40dp" android:layout_height="40dp" android:layout_marginRight="10dp"/>
+        <LinearLayout android:gravity="left|center_vertical|center_horizontal|center" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <TextView android:textSize="@dimen/dimen_18" android:textColor="#333333" android:ellipsize="middle" android:id="@+id/tv_ext_file_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true"/>
+            <TextView android:textSize="@dimen/dimen_14" android:textColor="#999999" android:id="@+id/tv_ext_file_count" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="2dp"/>
+        </LinearLayout>
+    </LinearLayout>
+    <View android:id="@+id/line" android:visibility="gone" android:layout_width="match_parent" android:layout_height="@dimen/res_0x7f070190_dimen_0_3" android:layout_marginLeft="@dimen/dimen_27"/>
+</LinearLayout>

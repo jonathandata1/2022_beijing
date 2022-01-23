@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" android:id="@+id/rl_top_search" android:background="@color/c20" android:focusable="true" android:focusableInTouchMode="true" android:layout_width="match_parent" android:layout_height="@dimen/dimen_56">
+    <LinearLayout android:orientation="horizontal" android:id="@+id/search_hint_view" android:background="@drawable/shape_contact_search_bg" android:paddingLeft="@dimen/dimen_8" android:paddingRight="@dimen/dimen_8" android:layout_width="match_parent" android:layout_height="@dimen/dimen_36" android:layout_marginLeft="@dimen/dimen_16" android:layout_marginRight="@dimen/dimen_16" android:layout_centerVertical="true">
+        <ImageView android:layout_gravity="center_vertical" android:background="@drawable/icon_contact_friend_add_search" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+        <TextView android:textSize="15dp" android:textColor="@color/contact_colleague_head_end" android:layout_gravity="center_vertical" android:id="@+id/tv_search" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dimen_6" android:text="@string/contact_et_search"/>
+    </LinearLayout>
+    <View android:id="@+id/search_bottom_line" android:background="@color/contact_gray_line" android:layout_width="match_parent" android:layout_height="@dimen/divider_high" android:layout_alignParentBottom="true"/>
+</RelativeLayout>

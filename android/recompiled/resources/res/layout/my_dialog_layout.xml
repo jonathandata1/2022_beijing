@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" android:background="#11ffffff" android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:orientation="vertical" android:background="@drawable/my_dialog_bg" android:layout_width="260dp" android:layout_height="wrap_content" android:layout_centerInParent="true">
+        <TextView android:layout_gravity="center" android:id="@+id/message" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="20dp" android:text="提示消息"/>
+        <View android:background="#e4e4e4" android:layout_width="match_parent" android:layout_height="1px" android:layout_marginTop="15dp"/>
+        <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="40dp">
+            <Button android:textSize="16sp" android:textColor="#38adff" android:gravity="center" android:id="@+id/yes" android:background="@null" android:layout_width="0dp" android:layout_height="match_parent" android:layout_marginRight="10dp" android:text="确定" android:singleLine="true" android:layout_weight="1"/>
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>

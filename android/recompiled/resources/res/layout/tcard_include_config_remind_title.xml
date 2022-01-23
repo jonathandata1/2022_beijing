@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent" android:layout_height="match_parent">
+    <RelativeLayout android:layout_width="match_parent" android:layout_height="match_parent">
+        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="match_parent">
+            <ImageView android:id="@+id/remind_icon" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dimen_112" android:src="@drawable/add_email"/>
+            <TextView android:textSize="@dimen/dimen_16" android:textColor="@color/tc222222" android:id="@+id/tv_card_config_text_edit_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dimen_8" android:text="@string/vcard_add_email"/>
+        </LinearLayout>
+    </RelativeLayout>
+    <View android:id="@+id/v_card_config_text_edit_line" android:background="@color/c6" android:layout_width="match_parent" android:layout_height="@dimen/res_0x7f070190_dimen_0_3" android:layout_marginLeft="@dimen/dimen_16"/>
+</FrameLayout>

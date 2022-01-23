@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:orientation="vertical" android:background="@color/transparent" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <com.systoon.customhomepage.widget.NoScrollGridView android:id="@+id/gridview" android:background="@color/transparent" android:scrollbars="none" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dimen_2" android:layout_marginTop="@dimen/dimen_16" android:layout_marginRight="@dimen/dimen_2" android:layout_marginBottom="@dimen/dimen_16" android:listSelector="@color/transparent" android:columnWidth="@dimen/hp_px_10" android:divider="@null" android:overScrollMode="never"/>
+</LinearLayout>

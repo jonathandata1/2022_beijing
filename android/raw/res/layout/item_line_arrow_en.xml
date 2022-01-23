@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:gravity="center_vertical" android:id="@id/item_arrow_content" android:layout_width="fill_parent" android:layout_height="@dimen/dimen_68"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.msgseal.base.ui.AvatarView android:layout_gravity="start|center" android:id="@id/item_avatar" android:layout_width="@dimen/dimen_46" android:layout_height="@dimen/dimen_46" android:layout_centerVertical="true" android:layout_marginStart="@dimen/dimen_16" android:layout_alignParentStart="true" />
+    <LinearLayout android:gravity="start|center" android:orientation="vertical" android:id="@id/layout_item_left_content" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_centerVertical="true" android:layout_marginStart="@dimen/dimen_16" android:layout_toEndOf="@id/item_avatar">
+        <TextView android:textSize="@dimen/dimen_16" android:layout_gravity="center_vertical" android:id="@id/item_left_content" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="1" android:singleLine="true" />
+        <TextView android:textSize="@dimen/dimen_16" android:textColor="@color/color_8E8E93" android:id="@id/item_left_content_en" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dimen_3" android:maxLines="1" android:singleLine="true" />
+    </LinearLayout>
+    <LinearLayout android:gravity="end" android:orientation="horizontal" android:id="@id/item_right_layout" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerVertical="true" android:layout_marginStart="@dimen/dimen_16" android:layout_marginEnd="@dimen/dimen_20" android:layout_toEndOf="@id/layout_item_left_content" android:layout_alignParentEnd="true">
+        <TextView android:textSize="@dimen/dimen_14" android:ellipsize="end" android:gravity="center_vertical" android:id="@id/item_right_arrow_content" android:paddingTop="@dimen/dimen_4" android:paddingBottom="@dimen/dimen_4" android:layout_width="wrap_content" android:layout_height="@dimen/dimen_28" android:maxWidth="@dimen/dimen_240" android:maxLines="1" android:singleLine="true" />
+        <LinearLayout android:layout_gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginStart="@dimen/dimen_12" android:layout_alignParentEnd="true">
+            <com.systoon.toon.view.DragBubbleView android:textSize="@dimen/dimen_13" android:textColor="@color/white" android:gravity="center" android:id="@id/bubble_corner_mark" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+        </LinearLayout>
+        <ImageView android:layout_gravity="center_vertical" android:id="@id/item_right_arrow" android:background="@drawable/common_arrow_right" android:layout_width="@dimen/dimen_6" android:layout_height="@dimen/dimen_10" android:contentDescription="@string/app_name" android:layout_marginStart="@dimen/dimen_8" />
+    </LinearLayout>
+    <TextView android:textSize="@dimen/dimen_16" android:gravity="center" android:id="@id/item_center_content" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+</RelativeLayout>

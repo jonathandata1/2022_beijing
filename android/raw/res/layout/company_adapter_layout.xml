@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center" android:orientation="vertical" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="30.0dip">
+        <TextView android:textStyle="bold" android:id="@id/city_name" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="20.0dip" android:text="长沙市自来水公司1" />
+    </LinearLayout>
+    <TextView android:background="@color/ccbpay_gray" android:layout_width="fill_parent" android:layout_height="1.0dip" />
+</LinearLayout>

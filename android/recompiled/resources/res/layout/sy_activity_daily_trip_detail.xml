@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:orientation="vertical" android:background="@color/sy_vffffff" android:layout_width="match_parent" android:layout_height="match_parent">
+        <RelativeLayout android:layout_width="match_parent" android:layout_height="44dp">
+            <FrameLayout android:id="@+id/sy_fl_daily_trip_back" android:paddingLeft="16dp" android:paddingRight="16dp" android:layout_width="wrap_content" android:layout_height="match_parent">
+                <ImageView android:layout_gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/sy_ic_back"/>
+            </FrameLayout>
+            <TextView android:textSize="18sp" android:textColor="@color/sy_v222222" android:gravity="center" android:layout_width="wrap_content" android:layout_height="match_parent" android:text="@string/sy_str_daily_order_detail" android:layout_centerInParent="true"/>
+        </RelativeLayout>
+        <View android:background="@color/sy_vededed" android:layout_width="match_parent" android:layout_height="0.5dp"/>
+        <FrameLayout android:layout_width="match_parent" android:layout_height="match_parent">
+            <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+                <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:paddingLeft="15dp" android:paddingRight="20dp" android:layout_width="match_parent" android:layout_height="55dp">
+                    <ImageView android:id="@+id/sy_iv_car" android:layout_width="86dp" android:layout_height="45dp" android:src="@drawable/sy_ic_daily_car_pic_def"/>
+                    <LinearLayout android:orientation="vertical" android:paddingLeft="8dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+                        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content">
+                            <TextView android:textSize="18sp" android:textColor="@color/sy_v242424" android:id="@+id/sy_tv_plate_number" android:paddingRight="5dp" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+                            <ImageView android:id="@+id/sy_iv_car_brand" android:layout_width="36dp" android:layout_height="17dp"/>
+                        </LinearLayout>
+                        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="1dp">
+                            <TextView android:textSize="12sp" android:textColor="@color/sy_v222222" android:id="@+id/sy_tv_car_brand" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+                            <View android:background="@color/sy_v222222" android:layout_width="2dp" android:layout_height="2dp" android:layout_marginLeft="5dp" android:layout_marginRight="3dp"/>
+                            <TextView android:textSize="12sp" android:textColor="@color/sy_v222222" android:id="@+id/sy_tv_car_color" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+                        </LinearLayout>
+                    </LinearLayout>
+                </LinearLayout>
+                <android.support.v7.widget.RecyclerView android:id="@+id/sy_driver_recycler_view" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+                <View android:background="@color/sy_ve5e5e5" android:layout_width="match_parent" android:layout_height="8dp" android:layout_marginTop="5dp"/>
+                <TextView android:textSize="14sp" android:textColor="@color/sy_v000000" android:id="@+id/sy_tv_order_type" android:paddingTop="14dp" android:paddingBottom="14dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:paddingStart="20dp"/>
+                <LinearLayout android:gravity="center" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:paddingStart="20dp">
+                    <ImageView android:background="@drawable/base_dot_gray" android:layout_width="5dp" android:layout_height="5dp" android:scaleType="fitXY"/>
+                    <TextView android:textSize="14sp" android:textColor="@color/sy_v6e7073" android:ellipsize="end" android:id="@+id/sy_tv_trip_date" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="1" android:layout_marginStart="8dp"/>
+                </LinearLayout>
+                <LinearLayout android:gravity="center" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="4dp" android:paddingStart="20dp">
+                    <ImageView android:background="@drawable/base_dot_dark" android:layout_width="5dp" android:layout_height="5dp" android:scaleType="fitXY"/>
+                    <TextView android:textSize="14sp" android:textColor="@color/sy_v6e7073" android:ellipsize="end" android:id="@+id/sy_tv_order_status" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="1" android:layout_marginStart="8dp"/>
+                </LinearLayout>
+                <View android:layout_width="0dp" android:layout_height="0dp" android:layout_weight="1"/>
+                <View android:background="@color/sy_ve5e5e5" android:layout_width="match_parent" android:layout_height="0.5dp"/>
+                <TextView android:textSize="15sp" android:textColor="@color/sy_v222222" android:gravity="center" android:id="@+id/sy_tv_kefu" android:layout_width="match_parent" android:layout_height="50dp" android:text="@string/sy_str_link_kefu"/>
+            </LinearLayout>
+            <include android:visibility="gone" layout="@layout/sy_loading_layout"/>
+        </FrameLayout>
+    </LinearLayout>
+    <LinearLayout android:orientation="vertical" android:id="@+id/sy_ll_cancel" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <TextView android:textSize="13sp" android:textStyle="bold" android:textColor="@color/sy_v071433" android:id="@+id/sy_tv_cancel_title" android:background="@color/sy_vffffff" android:paddingLeft="16dp" android:paddingTop="16dp" android:paddingRight="16dp" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+        <TextView android:textSize="13sp" android:textColor="@color/sy_v222222" android:id="@+id/sy_tv_cancel_content" android:background="@color/sy_vffffff" android:paddingLeft="16dp" android:paddingTop="6dp" android:paddingRight="16dp" android:paddingBottom="16dp" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+        <View android:background="@drawable/sy_by_home_title_bar" android:layout_width="match_parent" android:layout_height="5dp"/>
+    </LinearLayout>
+</FrameLayout>

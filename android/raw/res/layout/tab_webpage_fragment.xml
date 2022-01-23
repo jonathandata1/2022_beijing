@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:background="@color/transparent" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:cube_ptr="http://schemas.android.com/apk/res-auto">
+    <com.systoon.topline.widget.CusPtrClassicFrameLayout android:id="@id/topline_ptr" android:background="@color/transparent" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginTop="@dimen/dimen_40" android:layout_marginBottom="@dimen/dimen_48" cube_ptr:ptr_duration_to_close_header="1000" cube_ptr:ptr_keep_header_when_refresh="true" cube_ptr:ptr_mode="refresh" cube_ptr:ptr_pull_to_fresh="false" cube_ptr:ptr_ratio_of_header_height_to_refresh="1.2" cube_ptr:ptr_resistance="2.8">
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <RelativeLayout android:background="@drawable/news_list" android:layout_width="fill_parent" android:layout_height="@dimen/dimen_44" />
+            <com.systoon.interactive.widget.RoundAngleFrameLayout android:background="@color/transparent" android:layout_width="fill_parent" android:layout_height="fill_parent" cube_ptr:topLeftRadius="@dimen/px_10" cube_ptr:topRightRadius="@dimen/px_10">
+                <com.systoon.business.webpage.TabWebView android:id="@id/webview" android:background="@color/transparent" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginTop="-180.0dip" />
+            </com.systoon.interactive.widget.RoundAngleFrameLayout>
+        </LinearLayout>
+    </com.systoon.topline.widget.CusPtrClassicFrameLayout>
+    <include android:id="@id/empty_view" android:visibility="gone" layout="@layout/webpage_empty_view" />
+</RelativeLayout>

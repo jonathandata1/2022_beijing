@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center" android:id="@id/fl_inner" android:layout_width="fill_parent" android:layout_height="wrap_content" android:minHeight="66.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <FrameLayout android:layout_gravity="center" android:id="@id/pull_to_refresh_image" android:background="@drawable/email_loading_image" android:layout_width="@dimen/dimen_22" android:layout_height="@dimen/dimen_26">
+        <com.airbnb.lottie.LottieAnimationView android:layout_gravity="center" android:id="@id/lav_view" android:layout_width="@dimen/dimen_22" android:layout_height="@dimen/dimen_26" app:lottie_fileName="@string/lottie_file_name" app:lottie_loop="true" />
+    </FrameLayout>
+</LinearLayout>

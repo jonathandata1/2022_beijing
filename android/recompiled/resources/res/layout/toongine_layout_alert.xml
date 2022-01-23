@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+    <TextView android:textSize="@dimen/dimen_18" android:textColor="@color/black" android:gravity="center" android:id="@+id/toongine_alter_title" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dimen_20"/>
+    <TextView android:textSize="@dimen/dimen_16" android:textColor="@color/c8" android:gravity="center" android:id="@+id/toongine_alter_content" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dimen_8"/>
+    <View android:background="@color/c7" android:layout_width="match_parent" android:layout_height="@dimen/res_0x7f070191_dimen_0_5" android:layout_marginTop="@dimen/dimen_24"/>
+    <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <Button android:textSize="@dimen/dimen_18" android:id="@+id/toongine_alterbtn_cancel" android:background="@color/c20" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1"/>
+        <View android:id="@+id/toogine_alert_view" android:background="@color/c7" android:layout_width="@dimen/res_0x7f070191_dimen_0_5" android:layout_height="match_parent"/>
+        <Button android:textSize="@dimen/dimen_18" android:textColor="@color/c24" android:id="@+id/toongine_alterbtn_confirm" android:background="@color/c20" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1"/>
+    </LinearLayout>
+</LinearLayout>

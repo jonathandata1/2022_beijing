@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:background="@drawable/bg_black_round_shape" android:layout_width="164.0dip" android:layout_height="50.0dip">
+        <TextView android:textSize="16.0sp" android:textColor="#ffffffff" android:gravity="center_horizontal" android:id="@id/cl_down_loading_des" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/cl_down_load_has" android:layout_centerInParent="true" android:lineSpacingExtra="6.0dip" />
+    </RelativeLayout>
+</RelativeLayout>

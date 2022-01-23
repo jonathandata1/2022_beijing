@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" android:gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="wrap_content">
+    <ImageView android:layout_gravity="center_vertical" android:id="@+id/img_sendfail_right" android:visibility="gone" android:layout_width="@dimen/dimen_20" android:layout_height="@dimen/dimen_20" android:src="@drawable/chat_send_error"/>
+    <ProgressBar android:layout_gravity="center_vertical" android:id="@+id/img_sending_right" android:visibility="gone" android:layout_width="20dp" android:layout_height="20dp" style="@style/chat_progressbar_loading"/>
+</FrameLayout>

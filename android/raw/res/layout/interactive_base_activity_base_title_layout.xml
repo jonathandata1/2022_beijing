@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:background="#ffffffff" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:orientation="vertical" android:id="@id/main_layout_container" android:clickable="true" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <RelativeLayout android:id="@id/header_container" android:clickable="true" android:layout_width="fill_parent" android:layout_height="@dimen/dimen_44" />
+        <View android:id="@id/main_layout_divider" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="@dimen/dimen_1" />
+        <include android:id="@id/rl_base_empty" android:visibility="gone" layout="@layout/interactive_base_activity_base_empty" />
+    </LinearLayout>
+    <FrameLayout android:id="@id/fl_loading_body" android:background="#00000000" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <com.wang.avi.AVLoadingIndicatorView android:layout_gravity="center" android:id="@id/loading" android:layout_width="wrap_content" android:layout_height="wrap_content" app:indicatorColor="#ff8e8e93" app:indicatorName="com.wang.avi.indicators.BallSpinFadeLoaderIndicator" />
+    </FrameLayout>
+</FrameLayout>

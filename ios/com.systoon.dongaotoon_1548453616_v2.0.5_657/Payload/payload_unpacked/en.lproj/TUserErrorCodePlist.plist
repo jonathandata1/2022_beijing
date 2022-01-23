@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>10601060</key>
+	<string>Old and new passwords cannot be the same</string>
+	<key>-1020</key>
+	<string>Network abnormal. Please check the network connection and try again! </string>
+	<key>-1009</key>
+	<string>Network abnormal. Please check the network connection and try again! </string>
+	<key>-100</key>
+	<string>Operation failed, please try again </string>
+	<key>10699999</key>
+	<string>Operation failed, please try again </string>
+	<key>10600001</key>
+	<string>Verification code reception times exceeded limit, please try again after 24 hours </string>
+	<key>10600002</key>
+	<string>Verification code request too frequent, please try again after 1 hour </string>
+	<key>10600003</key>
+	<string>Verification code expired, please try again </string>
+	<key>10600004</key>
+	<string>Number of verification code errors exceeded limit, please try again after 1 hour </string>
+	<key>10600005</key>
+	<string>Verification code error, please enter again</string>
+	<key>10600006</key>
+	<string>Operation failed, please try again </string>
+	<key>10600007</key>
+	<string>Wrong verification code, please try again </string>
+	<key>10600008</key>
+	<string>Operation failed, please try again </string>
+	<key>10600011</key>
+	<string>Verification code reception times exceeded limit, please try again after 24 hours </string>
+	<key>10600012</key>
+	<string>Verification code request too frequent, please try again after 1 hour </string>
+	<key>10600013</key>
+	<string>Verification code expired, please try again </string>
+	<key>10600014</key>
+	<string>Number of verification code errors exceeded limit, please try again after 1 hour </string>
+	<key>10600015</key>
+	<string>Wrong verification code, please try again </string>
+	<key>10600016</key>
+	<string>Operation failed, please try again </string>
+	<key>10601001</key>
+	<string>Operation failed, please try again </string>
+	<key>10601002</key>
+	<string>Operation failed, please try again </string>
+	<key>10601003</key>
+	<string>Please enter a correct mobile number </string>
+	<key>10601004</key>
+	<string>The changed mobile number has been registered </string>
+	<key>10601005</key>
+	<string>The account has not been registered </string>
+	<key>10601006</key>
+	<string>Wrong password, please try again</string>
+	<key>10601007</key>
+	<string>Invalid userToken </string>
+	<key>10601008</key>
+	<string>The changed mobile number cannot be the same as the current one </string>
+	<key>10601009</key>
+	<string>The e-mail has been bound </string>
+	<key>10601010</key>
+	<string>The e-mail is not bound </string>
+	<key>10601011</key>
+	<string>Operation failed, please try again </string>
+	<key>10601012</key>
+	<string>Operation failed, please try again </string>
+	<key>10601013</key>
+	<string>The old password is wrong, please try again </string>
+	<key>10601014</key>
+	<string>Operation failed, please try again </string>
+	<key>10601015</key>
+	<string>Times of wrong password entry exceeded limit, please try again later </string>
+	<key>10601016</key>
+	<string>Operation failed, please try again </string>
+	<key>10601017</key>
+	<string>Wrong answer, please try again </string>
+	<key>10601018</key>
+	<string>Operation failed, please try again </string>
+	<key>10601019</key>
+	<string>Operation failed, please try again </string>
+	<key>10601020</key>
+	<string>Operation failed, please try again </string>
+	<key>10601021</key>
+	<string>Account cancelled </string>
+	<key>10601022</key>
+	<string>Account disabled </string>
+	<key>10601023</key>
+	<string>Operation failed, please try again </string>
+	<key>10601024</key>
+	<string>This account has not been set with a password. Please log in with a password </string>
+	<key>10601025</key>
+	<string>Operation failed, please try again </string>
+	<key>10601026</key>
+	<string>Times of password verification too frequent, please try again later </string>
+	<key>10601027</key>
+	<string>The password has not been changed for a long time, please try again </string>
+	<key>10601029</key>
+	<string>QR code expired, please try again </string>
+	<key>10602001</key>
+	<string>Operation failed, please try again </string>
+	<key>10605003</key>
+	<string>Name or content contains prohibited words </string>
+	<key>10605002</key>
+	<string>Nickname contains prohibited words </string>
+	<key>106010460</key>
+	<string>Invalid CAPTCHA</string>
+	<key>106010470</key>
+	<string>Please try again in five minutes.</string>
+	<key>106010480</key>
+	<string>Enter the correct accreditation card ID</string>
+	<key>106010490</key>
+	<string>The card ID is already registered </string>
+	<key>106010500</key>
+	<string>The username already exists </string>
+	<key>106010170</key>
+	<string>Wrong answer</string>
+	<key>106010450</key>
+	<string>Fail to generate CAPTCHA</string>
+	<key>106010510</key>
+	<string>The verification code has expired. Please input it again</string>
+	<key>106999990</key>
+	<string>The operation failed. Please try again</string>
+	<key>106010060</key>
+	<string>error user name or password</string>
+	<key>106010150</key>
+	<string>Please try again in five minutes.</string>
+	<key>10601048</key>
+	<string>Wrong accreditation card or password, please try again</string>
+	<key>10601070</key>
+	<string>First time login, please reset password</string>
+	<key>10601057</key>
+	<string>You have not set the security issue or entered the wrong registration card number</string>
+</dict>
+</plist>

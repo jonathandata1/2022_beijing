@@ -1,0 +1,4 @@
+System.loginEvent
+-com.systoon.interact.interactive.InteractLifeCycle#getTags
+System.logoutEvent
+-com.systoon.interact.interactive.InteractLifeCycle#clearCache

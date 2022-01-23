@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:background="@color/translucent" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <SurfaceView android:id="@id/sv_scan_camera" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <com.systoon.toongine.nativeapi.common.qrcode.view.ScanFrameView android:id="@id/v_scan_frame_view" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <TextView android:textSize="@dimen/ts_16px" android:textColor="@color/c20" android:layout_gravity="center_horizontal" android:id="@id/tv_scan_network_notice" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/toongine_scan_notice_no_network" />
+    <LinearLayout android:layout_gravity="center_horizontal" android:orientation="vertical" android:id="@id/ll_flash_show" android:padding="@dimen/dimen_10" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <ImageView android:layout_gravity="center" android:id="@id/iv_scan_flash" android:background="@drawable/toongine_scan_flash_light_close" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+        <TextView android:textSize="@dimen/ts_15px" android:textColor="@color/c20" android:layout_gravity="center" android:id="@id/tv_scan_flash" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dimen_7" android:text="@string/toongine_scan_open_flash" />
+    </LinearLayout>
+    <ImageView android:id="@id/scan_line" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/toongine_scan_line" />
+    <TextView android:textSize="@dimen/dimen_16" android:textColor="@color/c4" android:layout_gravity="center_horizontal" android:id="@id/tv_scan_notice" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/toongine_scan_notice" />
+    <LinearLayout android:orientation="horizontal" android:id="@id/ll_scan_operate" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dimen_30" android:layout_marginRight="@dimen/dimen_30" />
+    <RelativeLayout android:paddingTop="@dimen/dimen_10" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <ImageView android:id="@id/iv_scan_back" android:paddingLeft="@dimen/dimen_15" android:paddingRight="@dimen/dimen_15" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/toongine_scan_go_back" android:scaleType="fitCenter" />
+        <TextView android:textSize="@dimen/dimen_20" android:textColor="@color/c20" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/toongine_scan" android:layout_centerHorizontal="true" />
+        <TextView android:textSize="@dimen/dimen_20" android:textColor="@color/c20" android:id="@id/tv_scan_ablum" android:paddingLeft="@dimen/dimen_15" android:paddingRight="@dimen/dimen_15" android:layout_width="wrap_content" android:layout_height="wrap_content" android:scaleType="fitCenter" android:text="@string/toongine_album" android:layout_alignParentRight="true" />
+    </RelativeLayout>
+</FrameLayout>

@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<!-- saved from url=(0020)https://msgseal.com/ -->
+<html lang="en">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="initial-scale=1,maximum-scale=1,minimum-scale=1,user-scalable=no">
+  <link rel="icon" href="https://msgseal.com/favicon.png">
+  <meta name="keywords" content="秘邮、密照、协作、秘邮服务报价、企业空间购买、密邮、购买邮箱、企业邮箱管理、秘邮端到端加密、邮箱即时通讯、效率、企业协同、无痕密送、追贴回复">
+  <meta name="description" content="一款基于邮箱寻址功能强大的端到端加密通讯工具">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="360-site-verification" content="2877d4d47812b8ffea4f01d39aea423e">
+<script src="//aeu.alicdn.com/waf/antidomxss_v640.js"></script><script src="//aeu.alicdn.com/waf/interfaceacting211222.js"></script></head>
+<body cz-shortcut-listen="true">
+<noscript><strong>请开启JavaScript后访问</strong></noscript>
+<div class="app">
+  <div class="bg1"></div>
+  <div class="bg2"></div>
+  <div class="bg3"></div>
+  <div class="bg4"></div>
+  <div class="footer">
+    <div class="line2">
+      北京思源政通科技集团有限公司 版权所有
+    </div>
+    <div class="line3">
+      <a target="_blank" href="https://beian.miit.gov.cn">京ICP备16069326号-21</a>
+      <!--<a target="_blank" href="https://beian.miit.gov.cn">京ICP备16069326号-17</a>-->
+    </div>
+  </div>
+</div>
+</body>
+</html>
+<style>
+  html, body, .app {
+    width: 100%;
+    height: 100%;
+  }
+
+  .bg1 {
+    width: 100%;
+    height: 1224px;
+    background: url("./images/bg.png") top center no-repeat;
+  }
+
+  .bg2 {
+    width: 100%;
+    height: 1191px;
+    background: url("./images/bg1.png") top center no-repeat;
+  }
+
+  .bg3 {
+    width: 100%;
+    height: 1059px;
+    background: url("./images/bg2.png") top center no-repeat;
+  }
+
+  .bg4 {
+    width: 100%;
+    height: 324px;
+    background: url("./images/bg3.png") top center no-repeat;
+  }
+
+  .footer {
+    max-width: 1116px;
+    background: #01081f;
+    text-align: center;
+    padding: 30px 0;
+    margin: 0 auto;
+  }
+
+  .footer .line1 {
+    color: #fff;
+    margin-bottom: 8px
+  }
+
+  .footer .line2, .footer .line3, .footer .line4 {
+    color: #8e8e93;
+  }
+  .footer a {
+    color: #8e8e93;
+    text-decoration: underline;
+  }
+  .footer .line2, .footer .line3 {
+    padding-bottom: 9px;
+  }
+</style>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>photoSelectedButtonImageNormal</key>
+	<string>photo_normal</string>
+	<key>photoSelectedButtonImageHighlight</key>
+	<string>photo_selected</string>
+	<key>goBackImage</key>
+	<string>tnc_image_icon_back</string>
+</dict>
+</plist>

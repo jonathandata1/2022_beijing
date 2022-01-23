@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/c20" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="horizontal" android:id="@id/rl_search_input_block" android:background="@drawable/contact_bg_notice_search" android:paddingLeft="@dimen/dimen_10" android:paddingRight="@dimen/dimen_10" android:layout_width="fill_parent" android:layout_height="@dimen/dimen_36" android:layout_marginLeft="@dimen/dimen_15" android:layout_marginTop="@dimen/dimen_10" android:layout_marginRight="@dimen/dimen_15" android:layout_marginBottom="@dimen/dimen_10">
+        <View android:id="@id/search_empty_left" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0" />
+        <TextView android:textSize="@dimen/ts_16px" android:textColor="@color/c8" android:textColorHint="@color/c8" android:gravity="start|center" android:id="@id/tv_search_input" android:layout_width="wrap_content" android:layout_height="fill_parent" android:hint="@string/contact_et_search" android:drawableLeft="@drawable/contact_search_icon" android:drawablePadding="@dimen/dimen_7" />
+        <View android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0" />
+    </LinearLayout>
+    <View android:id="@id/search_bottom_line" android:background="@color/separator_color" android:layout_width="fill_parent" android:layout_height="@dimen/dimen_0.5" />
+</LinearLayout>

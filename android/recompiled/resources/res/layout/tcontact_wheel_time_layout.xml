@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="horizontal" android:id="@+id/timePicker" android:background="@color/c20" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <com.systoon.tcontactcommon.view.wheel.WheelView android:id="@+id/hour" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1"/>
+    <com.systoon.tcontactcommon.view.wheel.WheelView android:id="@+id/minute" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1"/>
+</LinearLayout>

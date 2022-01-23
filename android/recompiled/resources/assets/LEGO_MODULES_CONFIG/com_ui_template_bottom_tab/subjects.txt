@@ -1,0 +1,2 @@
+ApplicationTopic.onCreate
+-com.ui.template.bottom.tab.UITemplateApp#onCreate

@@ -1,0 +1,89 @@
+{
+  "tnctpro": {
+
+      "kEfz_MyCard":{
+          
+          "kEfz_MyCard_Domain":"http://t200ecardui.zhengtoon.com/m/index.html",
+          "kEfz_MyCard_Level":"L2"
+      },
+      "kEfz_Moli":{
+          
+          "kEfz_Moli_Domain":"https://syuias.fuzhou.gov.cn/auth/authorize?clientId=20180609370419&redirectUri=https://syother.efzhou.com/payment/index.html&responseType=code&scope=userInfo&state=07&sign=66A4FB31A50CC461871D2827B40ABCE5",
+          "kEfz_Moli_Level":"L3"
+      },
+      "kEfz_Newland":{
+          
+          "kEfz_Newland_Domain":"https://syuias.fuzhou.gov.cn/auth/authorize?clientId=20180315110394&redirectUri=https://syother.fuzhou.gov.cn/Newlanderweima/app/index.html&responseType=code&scope=userInfo&sign=E93B8351E8705A6E276EDE4DFF3BA16F",
+          "kEfz_Newland_Level":"L3"
+      },
+      "kEfz_Mine_PersonInfo":{
+          
+          "kEfz_Mine_PersonInfo_Domain":"https://syuias.fuzhou.gov.cn/auth/authorize?clientId=20180308123404&redirectUri=http://syother.fuzhou.gov.cn/person-data/app/person-data/app/index.html&responseType=code&scope=userInfo&sign=a50af0234ceec85a87dc4d4813516891",
+          "kEfz_Mine_PersonInfo_Level":"L3"
+      },
+      "kEfz_Mine_CompanyInfo":{
+          
+          "kEfz_Mine_CompanyInfo_Domain":"https://syuias.fuzhou.gov.cn/portal/m/index.html#/legalpersonlist?clientId=20180308141837&redirectUri=http://syother.fuzhou.gov.cn/company-data/app/company-data/app/index.html&responseType=code&scope=userInfo&sign=59767e37078a92d9b3680abd9f8c91b1",
+          "kEfz_Mine_CompanyInfo_Level":"L3"
+      },
+      "kEfz_Account_Yibao":{
+          
+          "kEfz_Account_Yibao_Domain":"https://syuias.fuzhou.gov.cn/auth/authorize?clientId=20180609205126&redirectUri=https://syother.efzhou.com/medical-insurance/app/medical-insurance/app/index.html&responseType=code&scope=userInfo&sign=88138E36CC0F74EF6CAA0044807996B1",
+          "kEfz_Account_Yibao_Level":"L3"
+      },
+      "kEfz_Account_Shebao":{
+          
+          "kEfz_Account_Shebao_Domain":"https://syuias.fuzhou.gov.cn/auth/authorize?clientId=20180609203242&redirectUri=https://syother.efzhou.com/social-security/app/social-security/app/index.html&responseType=code&scope=userInfo&sign=C994C7C4ACE2FECC3822D97579A60E79",
+          "kEfz_Account_Shebao_Level":"L3"
+      },
+      "kEfz_Account_Gongjijin":{
+          
+          "kEfz_Account_Gongjijin_Domain":"https://syuias.fuzhou.gov.cn/auth/authorize?clientId=20180609163056&redirectUri=https://syother.efzhou.com/housing-fund/app/housing-fund/app/index.html&responseType=code&scope=userInfo&sign=F07D8BA384753D3867BC407120BF6339",
+          "kEfz_Account_Gongjijin_Level":"L3"
+      },
+      "kEfz_Account_Xiaofei":{
+          
+          "kEfz_Account_Xiaofei_Domain":"https://syuias.fuzhou.gov.cn/auth/authorize?clientId=20180609370419&redirectUri=https://syother.efzhou.com/payment/index.html&responseType=code&scope=userInfo&state=04&sign=DB35C120E11D48EE1BF763D46B3D347D",
+          "kEfz_Account_Xiaofei_Level":"L3"
+      },
+      "kEfz_Mine_Mywork":{
+          
+          "kEfz_Mine_Mywork_Domain":"https://syuias.fuzhou.gov.cn/auth/authorize?clientId=20180120132068&redirectUri=http://fzbs.fuzhou.gov.cn/service/app/index.htm&responseType=code&scope=userInfo&sign=5292985776e375876f5d2f5853a41293&state=3",
+          "kEfz_Mine_Mywork_Level":"L2"
+      },
+      "kEfz_Mine_MyAppointment":{
+          
+          "kEfz_Mine_MyAppointment_Domain":"https://syuias.fuzhou.gov.cn/auth/authorize?clientId=20180120132068&redirectUri=http://fzbs.fuzhou.gov.cn/service/app/index.htm&responseType=code&scope=userInfo&sign=251a937ca255ac0bd5979d890ec2f795&state=4",
+          "kEfz_Mine_MyAppointment_Level":"L2"
+      },
+      "kEfz_Mine_CoWork":{
+          
+          "kEfz_Mine_CoWork_Domain":"https://syuias.fuzhou.gov.cn/portal/m/index.html#/legalpersonlist?clientId=20180120132068&redirectUri=http://fzbs.fuzhou.gov.cn/service/app/index.htm&responseType=code&scope=userInfo&state=3&sign=5292985776E375876F5D2F5853A41293",
+          "kEfz_Mine_CoWork_Level":"L2"
+      },
+      "kEfz_Mine_CoAppointment":{
+          
+          "kEfz_Mine_CoAppointment_Domain":"https://syuias.fuzhou.gov.cn/portal/m/index.html#/legalpersonlist?clientId=20180120132068&redirectUri=http://fzbs.fuzhou.gov.cn/service/app/index.htm&responseType=code&scope=userInfo&state=4&sign=251A937CA255AC0BD5979D890EC2F795",
+          "kEfz_Mine_CoAppointment_Level":"L2"
+      },
+      "kEfz_Home_Paycode":{
+          
+          "kEfz_Home_Paycode_Domain":"https://syuias.fuzhou.gov.cn/auth/authorize?clientId=20180609370419&redirectUri=https://syother.efzhou.com/payment/index.html&responseType=code&scope=userInfo&state=03&sign=AB68930B9B6FA542FFD3A650CAF04FF9",
+          "kEfz_Home_Paycode_Level":"L3"
+      },
+      "kEfz_Setting_Paysetting":{
+          
+          "kEfz_Setting_Paysetting_Domain":"https://syuias.fuzhou.gov.cn/auth/authorize?clientId=20180609370419&redirectUri=https://syother.efzhou.com/payment/index.html&responseType=code&scope=userInfo&state=02&sign=DB174D4EB54B340634B18FF13898F83D",
+          "kEfz_Setting_Paysetting_Level":"L3"
+      },
+      "kEfz_Setting_Bankmanage":{
+          
+          "kEfz_Setting_Bankmanage_Domain":"https://syuias.fuzhou.gov.cn/auth/authorize?clientId=20180609370419&redirectUri=https://syother.efzhou.com/payment/index.html&responseType=code&scope=userInfo&state=01&sign=039FC92218D2B253027C87F76F2C19FF",
+          "kEfz_Setting_Bankmanage_Level":"L3"
+      },
+      "kEfz_Scan":{
+          
+          "kEfz_Scan_Domain":"https://syother.fuzhou.gov.cn/scanqrpay/api"
+      }
+  }
+}

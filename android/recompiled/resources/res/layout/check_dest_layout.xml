@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:background="@color/white" android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:orientation="vertical" android:background="@color/white" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="100dp">
+            <LinearLayout android:orientation="vertical" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="2">
+                <TextView android:id="@+id/zhonglei_tv" android:layout_width="wrap_content" android:layout_height="0dp" android:layout_marginLeft="10dp" android:text="" android:singleLine="true" android:layout_weight="1"/>
+                <TextView android:id="@+id/amount_tv" android:layout_width="wrap_content" android:layout_height="0dp" android:layout_marginLeft="10dp" android:text="" android:layout_weight="1"/>
+            </LinearLayout>
+            <LinearLayout android:orientation="vertical" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="4">
+                <TextView android:id="@+id/message_tv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text=""/>
+                <TextView android:id="@+id/number_tv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="客户号："/>
+            </LinearLayout>
+            <TextView android:id="@+id/detail_btn" android:background="0x7f0805f4" android:layout_width="35dp" android:layout_height="35dp" android:layout_marginRight="10dp" android:text=""/>
+        </LinearLayout>
+        <LinearLayout android:background="@color/ccbpay_gray" android:layout_width="match_parent" android:layout_height="30dp">
+            <TextView android:gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="match_parent" android:layout_marginLeft="10dp" android:text="请选择支付方式"/>
+        </LinearLayout>
+        <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@+id/app_pay_layout" android:layout_width="match_parent" android:layout_height="wrap_content" android:minHeight="55dp">
+                <ImageView android:background="0x7f0807aa" android:layout_width="50dp" android:layout_height="50dp" android:layout_marginLeft="10dp"/>
+                <TextView android:textStyle="bold" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10dp" android:text="建设银行"/>
+                <LinearLayout android:gravity="right|center_vertical|center_horizontal|center" android:layout_width="match_parent" android:layout_height="match_parent">
+                    <RadioGroup android:id="@+id/ccbapp_RG" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                        <RadioButton android:gravity="right" android:id="@+id/ccbapp_RB" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="15dp" android:checked="true" android:text=""/>
+                    </RadioGroup>
+                </LinearLayout>
+            </LinearLayout>
+            <TextView android:background="@color/ccbpay_gray" android:layout_width="match_parent" android:layout_height="1dp"/>
+            <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:minHeight="55dp">
+                <ImageView android:background="0x7f0807aa" android:layout_width="50dp" android:layout_height="50dp" android:layout_marginLeft="10dp"/>
+                <TextView android:textStyle="bold" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10dp" android:text="建行综合"/>
+                <LinearLayout android:gravity="right|center_vertical|center_horizontal|center" android:layout_width="match_parent" android:layout_height="match_parent">
+                    <RadioGroup android:id="@+id/ccb_RG" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                        <RadioButton android:gravity="right" android:id="@+id/ccb_RB" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="15dp" android:text=""/>
+                    </RadioGroup>
+                </LinearLayout>
+            </LinearLayout>
+            <TextView android:background="@color/ccbpay_gray" android:layout_width="match_parent" android:layout_height="1dp"/>
+            <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@+id/wechart_pay_layout" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:minHeight="55dp">
+                <ImageView android:background="0x7f0807ac" android:layout_width="50dp" android:layout_height="50dp" android:layout_marginLeft="10dp"/>
+                <TextView android:textStyle="bold" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10dp" android:text="微信支付"/>
+                <LinearLayout android:gravity="right|center_vertical|center_horizontal|center" android:layout_width="match_parent" android:layout_height="match_parent">
+                    <RadioGroup android:id="@+id/wechart_RG" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                        <RadioButton android:gravity="right" android:id="@+id/wechart_RB" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="15dp" android:text=""/>
+                    </RadioGroup>
+                </LinearLayout>
+            </LinearLayout>
+            <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@+id/appli_pay_layout" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:minHeight="55dp">
+                <ImageView android:background="0x7f0807ad" android:layout_width="50dp" android:layout_height="50dp" android:layout_marginLeft="10dp"/>
+                <TextView android:textStyle="bold" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10dp" android:text="支付宝支付"/>
+                <LinearLayout android:gravity="right|center_vertical|center_horizontal|center" android:layout_width="match_parent" android:layout_height="match_parent">
+                    <RadioGroup android:id="@+id/alipay_RG" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                        <RadioButton android:gravity="right" android:id="@+id/alipay_RB" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="15dp" android:text=""/>
+                    </RadioGroup>
+                </LinearLayout>
+            </LinearLayout>
+            <TextView android:background="@color/ccbpay_gray" android:layout_width="match_parent" android:layout_height="1dp"/>
+            <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@+id/unit_pay_layout" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:minHeight="55dp">
+                <ImageView android:background="0x7f0807ab" android:layout_width="50dp" android:layout_height="50dp" android:layout_marginLeft="10dp"/>
+                <TextView android:textStyle="bold" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10dp" android:text="银联支付"/>
+                <LinearLayout android:gravity="right|center_vertical|center_horizontal|center" android:layout_width="match_parent" android:layout_height="match_parent">
+                    <RadioGroup android:id="@+id/ccbUnion_RG" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                        <RadioButton android:gravity="right" android:id="@+id/ccbUnion_RB" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="15dp" android:text=""/>
+                    </RadioGroup>
+                </LinearLayout>
+            </LinearLayout>
+            <TextView android:background="@color/ccbpay_gray" android:layout_width="match_parent" android:layout_height="1dp"/>
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout android:gravity="bottom" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="match_parent">
+        <Button android:textColor="@color/white" android:id="@+id/next" android:background="@drawable/btn_shap" android:layout_width="0dp" android:layout_height="50dp" android:layout_margin="8dp" android:text="确认支付" android:layout_weight="1"/>
+    </LinearLayout>
+</LinearLayout>

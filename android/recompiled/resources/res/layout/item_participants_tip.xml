@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent" android:layout_height="@dimen/dimen_36">
+    <TextView android:textSize="@dimen/dimen_14" android:textColor="@color/text_subtitle_color" android:gravity="center_vertical" android:id="@+id/topic_participants_tip" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginLeft="@dimen/dimen_16" android:layout_marginStart="@dimen/dimen_16"/>
+</LinearLayout>

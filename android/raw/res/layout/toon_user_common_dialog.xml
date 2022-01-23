@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/rl_whole" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:background="@drawable/white_bg_with_corner" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dimen_20" android:layout_marginRight="@dimen/dimen_20" android:layout_centerInParent="true">
+        <TextView android:textSize="@dimen/ts_17px" android:textStyle="bold" android:textColor="@color/color_4a4a4a" android:gravity="center" android:id="@id/tv_dialog_title" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dimen_29" android:layout_marginTop="@dimen/dimen_20" android:layout_marginRight="@dimen/dimen_29" />
+        <TextView android:textSize="@dimen/ts_17px" android:textStyle="bold" android:textColor="@color/c12" android:gravity="center" android:id="@id/tv_dialog_content" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dimen_20" android:layout_marginTop="@dimen/dimen_5" android:layout_marginRight="@dimen/dimen_20" android:lineSpacingMultiplier="1.3" />
+        <EditText android:textSize="@dimen/ts_15px" android:textColor="@color/feed_card_label_color" android:textColorHint="@color/c8" android:id="@id/et_dialog_input" android:background="@drawable/login_et_bg" android:paddingLeft="@dimen/dimen_15" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="@dimen/dimen_30" android:layout_marginLeft="@dimen/dimen_20" android:layout_marginTop="@dimen/dimen_10" android:layout_marginRight="@dimen/dimen_20" android:singleLine="true" android:maxLength="20" android:inputType="textPassword" />
+        <LinearLayout android:id="@id/ll_bottom" android:layout_width="fill_parent" android:layout_height="@dimen/dimen_50" android:layout_marginTop="@dimen/dimen_15">
+            <TextView android:textSize="@dimen/ts_17px" android:textColor="@color/color_222222" android:gravity="center" android:id="@id/tv_dialog_cancel" android:layout_width="fill_parent" android:layout_height="49.0dip" android:layout_weight="1.0" />
+            <TextView android:textSize="@dimen/ts_17px" android:textColor="@color/color_222222" android:gravity="center" android:id="@id/tv_dialog_confirm" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_weight="1.0" />
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>

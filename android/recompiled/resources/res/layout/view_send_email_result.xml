@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" android:background="@color/white" android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true">
+        <com.syswin.email.view.EmailSendProgressView android:layout_gravity="center_horizontal" android:id="@+id/iv_send_progress" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+        <ImageView android:layout_gravity="center_horizontal" android:id="@+id/iv_send_result" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/icon_send_success"/>
+        <TextView android:textSize="@dimen/dimen_17" android:textColor="@color/c35" android:gravity="center" android:layout_gravity="center_horizontal" android:id="@+id/tv_send_result" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dimen_43" android:text="@string/email_send_success"/>
+        <TextView android:textSize="@dimen/dimen_15" android:textColor="@color/c35" android:gravity="center" android:layout_gravity="center_horizontal" android:id="@+id/tv_resend" android:background="@drawable/send_bg_color" android:padding="@dimen/dimen_10" android:layout_width="@dimen/dimen_110" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dimen_43" android:text="@string/email_resend"/>
+    </LinearLayout>
+</RelativeLayout>

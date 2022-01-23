@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@+id/sy_ll_gray_icon_row" android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <ImageView android:background="@drawable/base_dot_gray" android:layout_width="5dp" android:layout_height="5dp" android:scaleType="fitXY"/>
+        <TextView android:textSize="13sp" android:textColor="@color/sy_v6e7073" android:ellipsize="end" android:id="@+id/sy_tv_gray_icon_row" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="8dp" android:maxLines="1"/>
+    </LinearLayout>
+    <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@+id/sy_ll_red_icon_row" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5dp">
+        <ImageView android:background="@drawable/base_dot_red" android:layout_width="5dp" android:layout_height="5dp" android:scaleType="fitXY"/>
+        <TextView android:textSize="13sp" android:textColor="@color/sy_v6e7073" android:ellipsize="end" android:id="@+id/sy_tv_red_icon_row" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="8dp" android:maxLines="1"/>
+    </LinearLayout>
+    <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@+id/sy_ll_dark_icon_row" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5dp">
+        <ImageView android:background="@drawable/base_dot_dark" android:layout_width="5dp" android:layout_height="5dp" android:scaleType="fitXY"/>
+        <TextView android:textSize="13sp" android:textColor="@color/sy_v6e7073" android:ellipsize="end" android:id="@+id/sy_tv_dark_icon_row" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="8dp" android:maxLines="1"/>
+    </LinearLayout>
+</merge>

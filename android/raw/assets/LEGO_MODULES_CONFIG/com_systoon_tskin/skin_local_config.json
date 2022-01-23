@@ -1,0 +1,21 @@
+/**
+{
+  "data": [
+    {
+      "resId": "100000000",
+      "name" : "LEGO_MODULES_CONFIG/com_systoon_tskin/local_skin_white.apm",
+      "previewImage": "LEGO_MODULES_CONFIG/com_systoon_tskin/local_skin_white.png",
+      "colourScheme": "#F9F9F9",
+      "reserved1": "#CACACA"
+    },
+    {
+      "resId": "100000001",
+      "name" : "LEGO_MODULES_CONFIG/com_systoon_tskin/local_skin_green.apk",
+      "previewImage": "LEGO_MODULES_CONFIG/com_systoon_tskin/local_skin_green.png",
+      "colourScheme": "#aabbcc",
+      "reserved1": "#33aaee"
+    }
+  ],
+  "defaultChooseSkin": ""
+}
+**/

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:background="@color/transparent" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.msgseal.base.thridpart.subscaleview.SubsamplingScaleImageView android:id="@id/photo_view" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <android.support.v7.widget.AppCompatImageView android:id="@id/thumb_photo_view" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <ProgressBar android:layout_gravity="center" android:id="@id/emptv_progress" android:visibility="gone" android:layout_width="30.0dip" android:layout_height="30.0dip" style="@style/chat_progressbar_loading" />
+    <TextView android:textSize="14.0sp" android:textColor="@color/c20" android:gravity="center" android:layout_gravity="bottom|center" android:id="@id/pic_origin" android:background="@drawable/chat_pic_origin" android:paddingLeft="5.0dip" android:paddingRight="5.0dip" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="25.0dip" android:minWidth="110.0dip" android:minHeight="25.0dip" android:drawableRight="@drawable/pic_x" android:drawableEnd="@drawable/pic_x" />
+    <ImageView android:layout_gravity="end|bottom|center" android:id="@id/pic_download" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="20.0dip" android:layout_marginBottom="25.0dip" android:src="@drawable/pic_down" android:contentDescription="@string/app_name" android:layout_marginEnd="20.0dip" />
+</FrameLayout>

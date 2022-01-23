@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" android:gravity="center_vertical" android:id="@+id/toongine_root_title" android:background="#fff9f9f9" android:layout_width="match_parent" android:layout_height="48dp">
+    <LinearLayout android:gravity="center" android:id="@+id/toongine_llbackButton" android:layout_width="wrap_content" android:layout_height="match_parent" android:layout_marginLeft="@dimen/dimen_15" android:layout_marginRight="@dimen/dimen_15">
+        <ImageView android:layout_gravity="center" android:id="@+id/toongine_backButton" android:visibility="visible" android:layout_width="@dimen/dimen_24" android:layout_height="@dimen/dimen_24" android:src="@drawable/toongine_back_full"/>
+    </LinearLayout>
+    <LinearLayout android:gravity="center" android:id="@+id/toongine_llDivider" android:layout_width="wrap_content" android:layout_height="match_parent" android:layout_toRightOf="@+id/toongine_llbackButton">
+        <ImageView android:gravity="center_vertical" android:background="#d8d8d8" android:layout_width="@dimen/dimen_1" android:layout_height="@dimen/dimen_20"/>
+    </LinearLayout>
+    <LinearLayout android:gravity="center" android:id="@+id/toongine_llcloseButton" android:layout_width="wrap_content" android:layout_height="match_parent" android:layout_marginLeft="15.3dp" android:layout_marginRight="10.2dp" android:layout_toRightOf="@+id/toongine_llbackButton">
+        <ImageView android:layout_gravity="center" android:id="@+id/toongine_closeButton" android:visibility="visible" android:layout_width="@dimen/dimen_24" android:layout_height="@dimen/dimen_24" android:src="@drawable/toongine_title_left_close"/>
+    </LinearLayout>
+    <TextView android:gravity="left|center_vertical|center_horizontal|center" android:id="@+id/toongine_currentUrlTitle" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="match_parent" android:maxLines="1" android:layout_toLeftOf="@+id/toongine_llshareButton" android:layout_toRightOf="@+id/toongine_llcloseButton" android:layout_centerInParent="true" android:layout_centerVertical="true"/>
+    <LinearLayout android:gravity="center" android:id="@+id/toongine_llshareButton" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="match_parent" android:layout_marginRight="@dimen/dimen_15" android:layout_alignParentRight="true">
+        <ImageView android:id="@+id/toongine_shareButton" android:visibility="gone" android:layout_width="@dimen/dimen_24" android:layout_height="@dimen/dimen_24" android:src="@drawable/toongine_share_more"/>
+    </LinearLayout>
+    <View android:id="@+id/ttoongine_navbar_separator" android:background="#dddee3" android:layout_width="match_parent" android:layout_height="@dimen/dimen_1" android:layout_alignParentBottom="true"/>
+</RelativeLayout>

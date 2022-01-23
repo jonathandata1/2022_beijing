@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:background="@color/white" android:layout_width="match_parent" android:layout_height="match_parent">
+    <include android:id="@+id/in_1" layout="@layout/toon_item_navigation_bar"/>
+    <ScrollView android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_below="@+id/in_1">
+        <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_below="@+id/in_1">
+            <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dimen_40" android:src="@drawable/logout_page"/>
+            <TextView android:textSize="17sp" android:textStyle="bold" android:textColor="@color/color_222222" android:gravity="center_horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dimen_40" android:text="@string/apply_logout"/>
+            <TextView android:textSize="15sp" android:textColor="@color/color_4a4a4a" android:id="@+id/tv_logout_content" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dimen_40" android:layout_marginTop="@dimen/dimen_8" android:layout_marginRight="@dimen/dimen_40" android:layout_marginBottom="@dimen/dimen_70"/>
+        </LinearLayout>
+    </ScrollView>
+    <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="@dimen/dimen_50" android:layout_alignParentBottom="true">
+        <TextView android:textSize="@dimen/px_17" android:textColor="@color/color_4a4a4a" android:gravity="center" android:id="@+id/tv_go_logout" android:background="@drawable/logout_bg" android:layout_width="match_parent" android:layout_height="match_parent" android:text="@string/do_logout" android:layout_weight="1"/>
+        <TextView android:textSize="@dimen/px_17" android:textColor="@color/white" android:gravity="center" android:id="@+id/tv_cancel" android:background="@color/mainColor" android:layout_width="match_parent" android:layout_height="match_parent" android:text="@string/cancel_logout" android:layout_weight="1"/>
+    </LinearLayout>
+</RelativeLayout>

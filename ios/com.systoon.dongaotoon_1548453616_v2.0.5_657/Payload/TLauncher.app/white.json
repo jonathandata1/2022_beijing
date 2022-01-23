@@ -1,0 +1,201 @@
+{
+    "Global":{
+        
+        "skin_theme":"white",
+        
+        
+        "mainColor":"#0032A0",
+        "com_cursorColor":"#0032A0",
+        "nullView_imageTintColor":"#0032A0",
+        "haidianNavBar_rightButtonTintColor":"#FFFFFF",
+
+        
+        "statusBarStyle":"UIStatusBarStyleDefault",
+        
+        "backgroundColor":"#FFFFFF",
+        "backgroundColor_dark":"#F6F6F6",
+        "backgroundColor_light":"#FAFAFA",
+        "separator_color":"#E1E1E1",
+        
+        "list_background_color":"#FFFFFF",
+        "list_topSticky_color":"#F1F1F1",
+        "list_highlight_background_color":"#ECEDEF",
+        
+        "choose_icon_color":"#4D5B94",
+        "reverseColor":"#FFFFFF",
+        "emptyColor":"#000000",
+        "com_cursorColor":"#CC0098FF",
+        
+        "txt_button_Color":"#007AFF",
+        "txt_button_Color2":"#007AFF",
+        
+        "button_tintColor1":"#222222",
+        "button_TextColor":"#FFFFFF",
+        "button_MessageColor":"#383C47",
+        "button_text_MessageColor":"#383C47",
+        "button_text_LineColor":"#383C47",
+        "button_LineColor":"#383C47",
+        "button_MainColor":"#0032A0",
+        "button_DisableColor":"#800371C4",
+        "button_text_DisableColor":"#4D000000",
+        
+        "navBar_backgroundColor":"#F9F9F9",
+        "navBar_rightButtonTintColor":"#383C47",
+        "navBar_buttonTintDisableColor":"#80383C47",
+        "navBar_rightTitleColor":"#383C47",
+        "navBar_titleDisableColor":"#80383C47",
+        "navBar_bubble_backgroundColor":"#26383838",
+        "navBar_bubble_title_color":"#383C47",
+        "navBar_backButtonTintColor":"#383C47",
+        "navBar_leftTitleColor":"#383C47",
+        "navBar_centerTitleColor":{
+            "NSForegroundColorAttributeName" : "#383C47",
+            "NSFontAttributeName" : 18
+        },
+        "navBar_menuBgColor":"#222222",
+        
+        "navBar_searchOutBackgroundColor":"#FFFFFF",
+        "navBar_searchSeparatorColor":"#E1E1E1",
+        "navBar_searchTitleColor":"#222222",
+        "navBar_searchBackgroundColor":"#80D9D9DB",
+        "navBar_searchPlaceholderColor":"#8E8E93",
+        "navBar_separatorColor":"#DDDEE3",
+        "navBar_highlight_menuBgColor":"#2E2E2E",
+        
+        "login_button_DisableColor":"#50448BFB",
+        "login_button_MainColor":"#0032A0",
+        "login_button_LineColor":"#C5C5C5",
+        "login_button_DarkTextColor":"#CC2E3039",
+        
+        "text_main_color":"#222222",
+        "text_main_color4":"#FF7400",
+        "text_main_color2":"#4A4A4A",
+        "text_main_color3":"#5C5C5C",
+        "text_subtitle_color":"#8E8E93",
+        "text_disable_color":"#66A6A6A6",
+        "text_placeholder_color":"#C5C5C5",
+        "text_group_color":"#2B509B",
+        "text_invert_color":"#FFFFFF",
+        
+        "sideMenu_highlight_color":"#DADADE",
+        "sideMenu_background_color":"#E9EAEC",
+        "sideMenu_icon_color":"#CC525E87",
+        "sideMenu_separator_color":"#D1D1D1",
+        "sideMenu_space_color":"#F2F2F4",
+        
+        "input_outbackgroundColor":"#FFFFFF",
+        "input_backgroundColor":"#F1F2F2",
+        "input_backgroundColor2":"#ECECED",
+        "input_placeholderColor":"#8E8E93",
+        "input_icon_color":"#8E8E93",
+        "input_stageColor":"#99F9F9F9",
+        "inputComment_outBgColor":"#F2F2F4",
+        "inputComment_bgColor":"#FFFFFF",
+        
+        "mail_normalColor":"#F1F1F4",
+        "mail_selectColor":"#383C47",
+        "mail_text_selectColor":"#FFFFFF",
+        "mail_warningColor":"#F1F1F4",
+        "mail_text_warningColor":"#FF3B2F",
+        "mail_bottomColor":"#F5ECEDEF",
+        
+        "card_background_color":"#4D5B94",
+        "card_background_color2":"#FFFFFF",
+        "card_background_color3":"#525E87",
+        "card_border_color":"#332D3B51",
+        
+        "blurEffectStyle":"UIBlurEffectStyleLight",
+        
+        "navBar_centerSegmentNormalTitleColor":{
+            "NSForegroundColorAttributeName" : "#383838",
+            "NSFontAttributeName" : 18
+        },
+        "navBar_centerSegmentHighlightTitleColor":{
+            "NSForegroundColorAttributeName" : "#FF7400",
+            "NSFontAttributeName" : 18
+        },
+        "tabbar_itemImageNormalTintColor":"#222222",
+        "tabbar_itemImageHightLightTintColor":"#0032A0",
+        "tabbar_backgroundColor":"#ffffff",
+        "tabbar_itemTitleNormalColor":{
+            "NSForegroundColorAttributeName":"#4a4a4a"
+        },
+        "tabbar_itemTitleHightLightColor":{
+            "NSForegroundColorAttributeName":"#0032A0"
+        },
+        "tabbar_separatorColor":"#CFCFCF",
+        "content_medio_titleColor":"#222222",
+        "content_medioinfo_backgroundColor":"#F4F4F6",
+        "button_unableColor":"#800371C4",
+        "button_backgroundColor1":"#007AFF",
+        "button_unable_tintColor1":"#d1d2d7",
+        "button_unable_backgroundColor1":"#f2f2f2",
+        "com_title_color1":"#222222",
+        
+        "video_clipping_tintColor":"#99007AFF",
+        "voice_background_color":"#FDFDFD",
+        "voice_circle_color":"#8E8E93",
+        
+        "inputboard_tintColor":"#F8F9FB",
+        "inputboard_backgroundColor":"#3E3F42",
+        "inputboard_keyboard_light": 1,
+        "vcard_bg_border_color":"#332D3B51",
+        
+        "helper_mask_color":"26FFFFFF",
+        "helper_mask_color2":"EAEAEA",
+        "helper_icon_color":"#4E5052",
+        
+        "safety_circle_color":"#E1E1E1",
+        "safety_keyboard_color":"#FFFFFF",
+        "safety_keyboard_background_color":"#D6D9DE",
+        "safety_keyboard_press_color":"#66FFFFFF",
+        
+        "sideMenu_highlight_color":"#F7F9FB",
+        "sideMenu_space_color":"#DDDEDF",
+        
+        "voice_wave_color":"#98B3F8",
+        "voice_bg_main_color":"#F1F5F8",
+        "voice_bg_owner_color":"#E1E6FA",
+        "search_voice_MainColor":"#0032A0",
+        "navBar_tab_indicatorColor":"#0032A0",
+        "navBar_rightTitleDisableColor":"#80383C47",
+
+
+    },
+    
+    "message":{
+        "msg_activity_indicator_view_style":"UIActivityIndicatorViewStyleGray",
+        "msg_inner_color":"#FFFFFF",
+        "msg_text_main_color":"#222222",
+        "msg_text_subtitle_color":"#8E8E93",
+        "msg_text_owner_color":"#222222",
+        "msg_text_ownerSubtitle_color":"#8E8E93",
+        
+        "msg_text_mainUrl_color":"#28A1FF",
+        "msg_text_ownerUrl_color":"#0079FF",
+        
+        "msg_bg_main_color":"#F8F8FB",
+        "msg_bg_owner_color":"#CCE4FF",
+        
+        "msg_border_color":"#525775",
+        "msg_border_colorDark":"#CBD0D8",
+        
+        "msg_navBar_iconColor":"#4A4A4A",
+        
+        "msg_reply_borderColor":"#E1E6FA",
+        
+        "msg_order_backgroundColor":"#E9ECF9",
+        "msg_order_inforBgColor":"#8092D0",
+        "chat_group_reply_icon_name":"_white",
+        
+        "msg_sideButton_background_color":"#F8F8FB",
+        "msg_sideButton_border_color":"#CACACA",
+        "msg_topsticky_warringColor":"#E7746D",
+        "msg_topstickyColor":"#6B85DB",
+        
+        "":"",
+        "":"",
+        "":"",
+    }
+}
+

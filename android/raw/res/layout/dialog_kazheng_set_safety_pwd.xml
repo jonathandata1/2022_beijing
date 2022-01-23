@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@drawable/dialog_kazheng_set_safety_pwd_bg" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="18.0dip" android:textStyle="bold" android:textColor="#ff222222" android:id="@id/dialog_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="37.0dip" android:text="@string/set_safe_pwd_title" android:layout_centerHorizontal="true" />
+    <ImageView android:id="@id/dialog_img" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="24.0dip" android:src="@drawable/dialog_kazheng_set_safety_pwd_img" android:layout_below="@id/dialog_title" android:layout_centerHorizontal="true" />
+    <TextView android:textSize="13.0dip" android:textColor="#ff8e8e93" android:gravity="center" android:id="@id/dialog_content" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="24.0dip" android:layout_marginTop="20.0dip" android:layout_marginRight="24.0dip" android:text="@string/auth_tip" android:layout_below="@id/dialog_img" />
+    <ImageView android:id="@id/dialog_line" android:background="#ffdddee3" android:layout_width="fill_parent" android:layout_height="0.5dip" android:layout_marginTop="19.0dip" android:layout_below="@id/dialog_content" />
+    <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="14.0dip" android:layout_marginBottom="15.0dip" android:weightSum="2.0" android:layout_below="@id/dialog_line">
+        <TextView android:textSize="17.0dip" android:textColor="#ff222222" android:gravity="center" android:id="@id/dialog_goback" android:layout_width="fill_parent" android:layout_height="40.0dip" android:text="@string/cancel" android:layout_weight="1.0" />
+        <ImageView android:id="@id/dialog_vertical_line" android:background="#ffdddee3" android:layout_width="0.5dip" android:layout_height="fill_parent" />
+        <TextView android:textSize="17.0dip" android:textColor="#ffdf3031" android:gravity="center" android:id="@id/dialog_ok" android:layout_width="fill_parent" android:layout_height="40.0dip" android:text="@string/set_safe_pwd" android:layout_weight="1.0" />
+    </LinearLayout>
+</RelativeLayout>

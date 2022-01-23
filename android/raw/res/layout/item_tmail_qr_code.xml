@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/transparent" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <RelativeLayout android:id="@id/rl_activity_qr_code_panel" android:background="@drawable/vcard_qr_bg" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dimen_24" android:layout_marginRight="@dimen/dimen_24">
+        <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@id/infoview" android:layout_width="fill_parent" android:layout_height="63.5dip">
+            <com.systoon.toon.view.ShapeImageView android:visibility="gone" android:layout_width="@dimen/dimen_60" android:layout_height="@dimen/dimen_60" android:layout_marginRight="@dimen/dimen_16" android:src="@drawable/default_head_person132" app:shape="circle" />
+            <TextView android:textSize="@dimen/dimen_18" android:textColor="@color/c12" android:ellipsize="end" android:layout_gravity="center_vertical" android:id="@id/tv_activity_qr_code_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="1" android:singleLine="true" />
+        </LinearLayout>
+        <RelativeLayout android:id="@id/lineview" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="-4.5dip" android:layout_below="@id/infoview">
+            <View android:id="@id/left_view" android:background="@drawable/vcard_qr_left_view" android:layout_width="@dimen/dimen_9" android:layout_height="@dimen/dimen_18" android:layout_alignParentLeft="true" />
+            <View android:id="@id/right_view" android:background="@drawable/vcard_qr_right_view" android:layout_width="@dimen/dimen_9" android:layout_height="@dimen/dimen_18" android:layout_alignParentRight="true" />
+            <View android:background="@color/c36" android:layout_width="fill_parent" android:layout_height="@dimen/dimen_0.3" android:layout_marginLeft="@dimen/dimen_2" android:layout_marginRight="@dimen/dimen_2" android:layout_toLeftOf="@id/right_view" android:layout_toRightOf="@id/left_view" android:layout_centerVertical="true" />
+        </RelativeLayout>
+        <ImageView android:id="@id/iv_activity_qr_code" android:layout_width="220.0dip" android:layout_height="220.0dip" android:layout_marginTop="@dimen/dimen_31" android:layout_marginBottom="@dimen/dimen_16" android:src="@drawable/tcard_qrcode_example_icon" android:layout_below="@id/lineview" android:layout_centerHorizontal="true" />
+        <TextView android:textSize="@dimen/dimen_16" android:textColor="@color/c8" android:gravity="center_horizontal" android:id="@id/temailText" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/dimen_20" android:layout_below="@id/iv_activity_qr_code" android:layout_alignLeft="@id/iv_activity_qr_code" android:layout_alignRight="@id/iv_activity_qr_code" android:layout_centerHorizontal="true" />
+    </RelativeLayout>
+</LinearLayout>

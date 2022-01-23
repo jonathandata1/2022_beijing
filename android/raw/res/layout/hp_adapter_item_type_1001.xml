@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:gravity="center_horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_centerInParent="true">
+        <ImageView android:id="@id/appicon" android:layout_width="@dimen/hp_px_44" android:layout_height="@dimen/hp_px_44" android:layout_marginTop="@dimen/dimen_6" android:layout_centerHorizontal="true" />
+        <TextView android:textSize="@dimen/hp_px_13" android:textColor="@color/color_4A4A4A" android:gravity="center" android:id="@id/appName" android:layout_width="@dimen/hp_px_86" android:layout_height="@dimen/hp_px_18" android:layout_marginTop="@dimen/hp_px_4" android:singleLine="true" android:layout_below="@id/appicon" android:layout_centerHorizontal="true" />
+    </RelativeLayout>
+    <ImageView android:id="@id/appstatus" android:visibility="gone" android:layout_width="@dimen/hp_px_15" android:layout_height="@dimen/hp_px_15" android:layout_marginTop="@dimen/hp_px_5" android:layout_marginRight="@dimen/hp_px_5" android:src="@drawable/hp_append_app" android:layout_alignParentTop="true" android:layout_alignParentRight="true" />
+    <TextView android:textSize="@dimen/dimen_8" android:textColor="@color/white" android:gravity="center" android:id="@id/app_corner" android:background="@drawable/hp_corner_three" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dimen_3" android:layout_marginRight="@dimen/hp_px_8" android:text="第一个" android:layout_alignParentTop="true" android:layout_alignParentRight="true" />
+</RelativeLayout>

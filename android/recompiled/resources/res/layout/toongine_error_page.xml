@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" android:gravity="center_horizontal" android:id="@+id/toongine_base_rlnodataview" android:background="@color/c20" android:visibility="visible" android:layout_width="match_parent" android:layout_height="match_parent">
+    <ImageView android:id="@+id/toongine_base_notouch" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dimen_140" android:src="@drawable/toongine_nodata_touch"/>
+    <TextView android:textSize="@dimen/dimen_15" android:textColor="#8e8e93" android:gravity="center_horizontal" android:id="@+id/toongine_base_data_one" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="13.3dp" android:text="@string/toongine_wap_no_data_string_one" android:layout_below="@+id/toongine_base_notouch"/>
+    <TextView android:textSize="@dimen/dimen_15" android:textColor="#3a98ff" android:gravity="center_horizontal" android:id="@+id/toongine_base_data_two" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dimen_12" android:text="@string/toongine_wap_no_data_string_two" android:layout_below="@+id/toongine_base_data_one"/>
+</RelativeLayout>

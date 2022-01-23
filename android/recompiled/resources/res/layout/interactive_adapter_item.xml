@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:background="@color/transparent" android:layout_width="match_parent" android:layout_height="match_parent">
+    <com.systoon.topline.widget.CusPtrClassicFrameLayout android:id="@+id/topline_ptr" android:background="@color/transparent" android:layout_width="match_parent" android:layout_height="match_parent" app:ptr_duration_to_close_header="1000" app:ptr_keep_header_when_refresh="true" app:ptr_mode="1" app:ptr_pull_to_fresh="false" app:ptr_ratio_of_header_height_to_refresh="1.2" app:ptr_resistance="2.8">
+        <com.systoon.interactive.widget.RoundAngleFrameLayout android:background="@color/transparent" android:layout_width="match_parent" android:layout_height="match_parent" app:topLeftRadius="@dimen/px_10" app:topRightRadius="@dimen/px_10">
+            <com.systoon.interactive.view.InteractiveWebView android:id="@+id/webview" android:background="@color/transparent" android:layout_width="match_parent" android:layout_height="match_parent"/>
+        </com.systoon.interactive.widget.RoundAngleFrameLayout>
+    </com.systoon.topline.widget.CusPtrClassicFrameLayout>
+    <include android:id="@+id/empty_view" android:visibility="gone" layout="@layout/interactive_empty_view"/>
+</FrameLayout>

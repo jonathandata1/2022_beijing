@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@color/transparent" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:id="@id/rl_popwindow_camerapic" android:paddingLeft="9.0dip" android:paddingRight="9.0dip" android:paddingBottom="17.0dip" android:focusable="true" android:focusableInTouchMode="true" android:layout_width="fill_parent" android:layout_height="205.0dip" android:layout_alignParentBottom="true">
+        <Button android:textSize="20.0dip" android:textColor="@color/c1" android:gravity="center" android:id="@id/btn_cancelpic" android:background="@drawable/btn_pop_only_center" android:layout_width="fill_parent" android:layout_height="51.0dip" android:text="@string/cancel" android:layout_alignParentBottom="true" />
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="9.0dip" android:layout_above="@id/btn_cancelpic">
+            <Button android:textSize="20.0dip" android:textColor="@color/c1" android:gravity="center" android:id="@id/btn_takepic" android:background="@drawable/btn_pop_choose_pic_up" android:layout_width="fill_parent" android:layout_height="50.0dip" android:text="@string/photograph" />
+            <View android:background="@color/c6" android:layout_width="fill_parent" android:layout_height="1.0px" />
+            <Button android:textSize="20.0dip" android:textColor="@color/c1" android:gravity="center" android:id="@id/btn_picalbum" android:background="@drawable/btn_pop_choose_pic_down" android:layout_width="fill_parent" android:layout_height="50.0dip" android:text="@string/choose_from_album" />
+        </LinearLayout>
+    </RelativeLayout>
+</RelativeLayout>

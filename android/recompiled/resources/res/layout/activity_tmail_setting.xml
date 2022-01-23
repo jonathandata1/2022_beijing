@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:orientation="vertical" android:id="@+id/tmail_setting_layout" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <include android:id="@+id/setting_cp_manager" android:layout_width="match_parent" android:layout_height="@dimen/dimen_55" layout="@layout/tmail_selected_secret_manager"/>
+        <TextView android:textSize="@dimen/dimen_14" android:gravity="center_vertical" android:id="@+id/tmail_setting_add_des" android:paddingTop="@dimen/dimen_20" android:paddingBottom="@dimen/dimen_8" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dimen_15" android:text="@string/tmail_mailbox_setting" android:layout_marginStart="@dimen/dimen_15"/>
+        <android.support.v7.widget.RecyclerView android:id="@+id/rcv_tmail_setting_cardlist" android:scrollbars="none" android:layout_width="match_parent" android:layout_height="wrap_content" android:overScrollMode="never"/>
+    </LinearLayout>
+</android.support.v4.widget.NestedScrollView>

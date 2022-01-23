@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:id="@android:id/background" android:drawable="@mipmap/record_top" />
+    <item android:id="@android:id/progress">
+        <clip android:gravity="bottom" android:drawable="@mipmap/record_bottom" android:clipOrientation="vertical" />
+    </item>
+</layer-list>

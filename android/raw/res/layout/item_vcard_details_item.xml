@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:gravity="center" android:id="@id/iconview" android:visibility="gone" android:layout_width="@dimen/dimen_64" android:layout_height="wrap_content" android:layout_centerVertical="true">
+        <ImageView android:id="@id/type_icon" android:layout_width="@dimen/dimen_30" android:layout_height="@dimen/dimen_30" />
+    </LinearLayout>
+    <com.msgseal.base.ui.ShadowContainer android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dimen_5" android:layout_marginTop="-5.0dip" android:layout_marginRight="@dimen/dimen_5" android:layout_marginBottom="-5.0dip" app:containerCornerRadius="5.0dip" app:containerDeltaLength="15.0dip" app:containerShadowColor="#14000000" app:containerShadowRadius="5.0dip">
+        <LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:id="@id/infoview" android:background="@drawable/bg_vcard_head_info" android:paddingLeft="@dimen/dimen_20" android:paddingRight="@dimen/dimen_20" android:paddingBottom="@dimen/dimen_20" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_toRightOf="@id/iconview">
+            <TextView android:enabled="true" android:textSize="@dimen/dimen_14" android:textColor="@color/c8" android:id="@id/item_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dimen_16" android:layout_marginBottom="@dimen/dimen_6" android:singleLine="true" />
+            <LinearLayout android:orientation="vertical" android:id="@id/tmailViews" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dimen_2" />
+            <RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dimen_2">
+                <TextView android:textSize="@dimen/dimen_18" android:textColor="@color/c28" android:id="@id/item_describe" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_toLeftOf="@id/item_visible" android:layout_alignParentLeft="true" android:layout_centerVertical="true" />
+                <ImageView android:id="@id/item_visible" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/icon_card_invisible" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+            </RelativeLayout>
+        </LinearLayout>
+    </com.msgseal.base.ui.ShadowContainer>
+</RelativeLayout>

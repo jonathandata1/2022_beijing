@@ -1,0 +1,3 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.RecyclerView android:id="@id/topline_app_recyclerview" android:background="@color/c20" android:paddingLeft="@dimen/dimen_15" android:paddingTop="@dimen/dimen_0" android:paddingRight="@dimen/dimen_15" android:paddingBottom="@dimen/dimen_15" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" />

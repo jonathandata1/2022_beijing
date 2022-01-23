@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/ll_phone_num" android:background="@color/backgroundColor" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="@dimen/dimen_17" android:textStyle="bold" android:textColor="@color/color_535864" android:gravity="center_vertical" android:paddingLeft="@dimen/dimen_20" android:layout_width="fill_parent" android:layout_height="@dimen/dimen_55" android:text="@string/mail_show_name" />
+    <com.syswin.email.base.view.EditTextWithDel android:textSize="@dimen/ts_16px" android:textColor="@color/color_222222" android:textColorHint="@color/color_c5c5c5" android:gravity="center_vertical" android:id="@id/et_email_name" android:background="@drawable/edit_bottom_line_gray" android:paddingLeft="@dimen/dimen_24" android:paddingRight="@dimen/dimen_24" android:layout_width="fill_parent" android:layout_height="@dimen/dimen_60" android:singleLine="true" android:maxLength="32" android:textCursorDrawable="@drawable/edit_cursor_color" />
+</LinearLayout>

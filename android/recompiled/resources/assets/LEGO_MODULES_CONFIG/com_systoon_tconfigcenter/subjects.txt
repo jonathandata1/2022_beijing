@@ -1,0 +1,4 @@
+System.loginEvent
+-com.systoon.tconfigcenter.provider.TConfigCenterInit#TConfigCenterLoginInEvent
+ApplicationTopic.onCreate
+-com.systoon.tconfigcenter.provider.TConfigCenterInit#TConfigCenterApplicationInit

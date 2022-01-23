@@ -1,0 +1,3 @@
+TOPIC {SkinChangeTopics.skinChange} 应用皮肤初始化与皮肤切换的通知事件
+java.lang.String [currentSkin] 返回当前皮肤名称
+

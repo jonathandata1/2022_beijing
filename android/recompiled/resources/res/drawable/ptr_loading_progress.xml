@@ -1,0 +1,2 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rotate xmlns:android="http://schemas.android.com/apk/res/android" android:duration="1000" android:drawable="@drawable/ptr_progress" android:fromDegrees="0" android:toDegrees="1080" android:pivotX="50%" android:pivotY="50%" android:repeatCount="infinite"/>

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:orientation="vertical" android:background="@drawable/dialog_prompt_authentication_bg" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="15dp" android:layout_marginRight="15dp" android:layout_centerInParent="true">
+        <TextView android:textSize="17sp" android:textColor="#222222" android:layout_gravity="center_horizontal" android:id="@+id/tv_dialog_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="25dp" android:layout_marginTop="20dp" android:layout_marginRight="24dp" android:lineSpacingMultiplier="1.5"/>
+        <TextView android:textSize="13sp" android:textColor="#222222" android:id="@+id/tv_dialog_content" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="24dp" android:layout_marginTop="15dp" android:layout_marginRight="24dp" android:lineSpacingMultiplier="1.5"/>
+        <LinearLayout android:orientation="horizontal" android:id="@+id/ll_angree" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dimen_20" android:layout_marginTop="@dimen/dimen_10" android:layout_marginRight="@dimen/dimen_20">
+            <TextView android:textSize="@dimen/ts_14px" android:textColor="#222222" android:id="@+id/tv_agreement" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="8dp" android:text="@string/not_prompt"/>
+        </LinearLayout>
+        <View android:background="#3f000000" android:layout_width="match_parent" android:layout_height="1dp" android:layout_marginTop="26dp"/>
+        <RelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content">
+            <LinearLayout android:orientation="horizontal" android:id="@+id/ll_do" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <TextView android:textSize="17sp" android:textColor="#222222" android:gravity="center" android:id="@+id/tv_cancel" android:paddingTop="11dp" android:paddingBottom="14dp" android:layout_width="0dp" android:layout_height="wrap_content" android:text="@string/cancel" android:layout_weight="1"/>
+                <TextView android:textSize="17sp" android:textColor="#df3031" android:gravity="center" android:id="@+id/tv_sure" android:paddingTop="12dp" android:paddingBottom="14dp" android:layout_width="0dp" android:layout_height="wrap_content" android:text="@string/ok" android:layout_weight="1"/>
+            </LinearLayout>
+            <View android:id="@+id/view_border" android:background="#3f000000" android:layout_width="1dp" android:layout_height="wrap_content" android:layout_alignTop="@+id/ll_do" android:layout_alignBottom="@+id/ll_do" android:layout_centerHorizontal="true"/>
+        </RelativeLayout>
+    </LinearLayout>
+</RelativeLayout>

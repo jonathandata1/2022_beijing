@@ -1,0 +1,2 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TextView xmlns:android="http://schemas.android.com/apk/res/android" android:textSize="@dimen/hp_px_12" android:textColor="@color/color_777E8C" android:background="@drawable/hp_bg_search_history" android:paddingLeft="@dimen/dimen_15" android:paddingTop="@dimen/dimen_7" android:paddingRight="@dimen/dimen_15" android:paddingBottom="@dimen/dimen_7" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/dimen_10" android:layout_marginBottom="@dimen/dimen_12"/>

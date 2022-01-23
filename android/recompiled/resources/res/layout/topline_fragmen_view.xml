@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@+id/no_net_layout" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true">
+        <ImageView android:id="@+id/net_state_img" android:background="@drawable/top_line_no_netless" android:layout_width="100dp" android:layout_height="100dp" android:contentDescription="@null"/>
+        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/top_line_no_net_work"/>
+    </LinearLayout>
+    <com.systoon.topline.widget.CusPtrClassicFrameLayout android:id="@+id/topline_ptr" android:layout_width="match_parent" android:layout_height="match_parent" cube_ptr:ptr_duration_to_close_either="200" cube_ptr:ptr_keep_header_when_refresh="true" cube_ptr:ptr_mode="3" cube_ptr:ptr_pull_to_fresh="false" cube_ptr:ptr_ratio_of_header_height_to_refresh="1.2" cube_ptr:ptr_resistance="2.8">
+        <com.systoon.topline.widget.StickyNestedScrollView android:id="@+id/nested_scroll_view" android:layout_width="match_parent" android:layout_height="match_parent">
+            <RelativeLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+                <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+                    <RelativeLayout android:orientation="vertical" android:id="@+id/topview" android:background="@color/c20" android:layout_width="match_parent" android:layout_height="wrap_content">
+                        <ImageView android:id="@+id/topline_header_banner_bg" android:layout_width="match_parent" android:layout_height="154dp" android:scaleType="centerCrop"/>
+                        <com.systoon.topline.widget.banner.ToplineBanner android:id="@+id/topline_header_banner" android:layout_width="match_parent" android:layout_height="130dp" android:layout_marginLeft="@dimen/dimen_15" android:layout_marginTop="@dimen/dimen_70" android:layout_marginRight="@dimen/dimen_15" cube_ptr:indicator_drawable_selected="@drawable/icon_interact_news_banner_white_dot" cube_ptr:indicator_drawable_unselected="@drawable/icon_interact_news_banner_gray_dot"/>
+                        <com.systoon.topline.widget.BetterRecyclerView android:id="@+id/topline_header_rv" android:background="@color/transparent" android:scrollbars="none" android:layout_width="match_parent" android:layout_height="wrap_content" android:listSelector="@null" android:cacheColorHint="@color/transparent" android:divider="@null" android:layout_below="@+id/topline_header_banner"/>
+                        <RelativeLayout android:orientation="vertical" android:background="@color/c20" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_below="@+id/topline_header_rv">
+                            <View android:id="@+id/lineview" android:background="@color/c5" android:layout_width="match_parent" android:layout_height="@dimen/dimen_6"/>
+                            <RelativeLayout android:layout_gravity="center" android:id="@+id/topline_bj_rl" android:tag="sticky" android:background="@color/c20" android:layout_width="match_parent" android:layout_height="@dimen/dimen_44" android:layout_below="@+id/lineview">
+                                <ImageView android:id="@+id/icon_topline_header_iv" android:layout_width="@dimen/dimen_104" android:layout_height="@dimen/dimen_20" android:src="@drawable/icon_topline_header_bj" android:layout_centerInParent="true"/>
+                                <View android:background="@color/c5" android:layout_width="match_parent" android:layout_height="@dimen/res_0x7f070191_dimen_0_5" android:layout_alignParentBottom="true"/>
+                            </RelativeLayout>
+                        </RelativeLayout>
+                    </RelativeLayout>
+                    <android.support.v7.widget.RecyclerView android:id="@+id/topline_rv" android:background="@color/transparent" android:scrollbars="none" android:layout_width="match_parent" android:layout_height="match_parent" android:listSelector="@null" android:cacheColorHint="@color/transparent" android:divider="@null"/>
+                </LinearLayout>
+                <RelativeLayout android:id="@+id/topline_search" android:tag="sticky" android:background="@color/transparent" android:layout_width="match_parent" android:layout_height="@dimen/dimen_44" android:layout_marginTop="@dimen/dimen_1">
+                    <View android:id="@+id/search_bg" android:background="@color/c20" android:layout_width="match_parent" android:layout_height="match_parent"/>
+                    <RelativeLayout android:id="@+id/search_rl" android:background="@drawable/topline_search_bg" android:paddingLeft="@dimen/dimen_6" android:paddingRight="@dimen/dimen_10" android:layout_width="match_parent" android:layout_height="@dimen/dimen_28" android:layout_marginLeft="@dimen/dimen_20" android:layout_marginRight="@dimen/dimen_20" android:layout_marginBottom="@dimen/dimen_8" android:layout_alignParentBottom="true">
+                        <ImageView android:id="@+id/search_icon" android:layout_width="@dimen/dimen_15" android:layout_height="@dimen/dimen_15" android:src="@drawable/icon_topline_search" android:layout_centerVertical="true"/>
+                        <TextView android:textSize="@dimen/dimen_14" android:textColor="@color/c20" android:gravity="center_vertical" android:id="@+id/search_text" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginLeft="@dimen/dimen_4" android:text="@string/topline_search" android:layout_toRightOf="@+id/search_icon" android:layout_centerVertical="true"/>
+                    </RelativeLayout>
+                    <View android:id="@+id/search_line" android:background="@color/c6" android:layout_width="match_parent" android:layout_height="0.5dp" android:layout_alignParentBottom="true"/>
+                </RelativeLayout>
+            </RelativeLayout>
+        </com.systoon.topline.widget.StickyNestedScrollView>
+    </com.systoon.topline.widget.CusPtrClassicFrameLayout>
+</RelativeLayout>

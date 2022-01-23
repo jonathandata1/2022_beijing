@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:layout_gravity="center_vertical" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="@dimen/dimen_71">
+    <LinearLayout android:layout_gravity="center_vertical" android:orientation="horizontal" android:id="@+id/base_card_selected_item" android:paddingLeft="@dimen/dimen_16" android:paddingRight="@dimen/dimen_16" android:layout_width="match_parent" android:layout_height="@dimen/dimen_70">
+        <com.msgseal.base.ui.AvatarView android:layout_gravity="center_vertical" android:id="@+id/avatar_image" android:layout_width="@dimen/dimen_46" android:layout_height="@dimen/dimen_46"/>
+        <LinearLayout android:orientation="vertical" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1">
+            <TextView android:textSize="@dimen/dimen_14" android:gravity="bottom" android:layout_gravity="center_vertical" android:id="@+id/txt_text1" android:layout_width="wrap_content" android:layout_height="@dimen/dimen_40" android:layout_marginLeft="@dimen/dimen_12" android:layout_weight="1"/>
+            <TextView android:textSize="@dimen/dimen_16" android:gravity="top" android:layout_gravity="center_vertical" android:id="@+id/txt_text2" android:layout_width="wrap_content" android:layout_height="@dimen/dimen_40" android:layout_marginLeft="@dimen/dimen_12" android:layout_marginTop="@dimen/dimen_5" android:layout_weight="1"/>
+        </LinearLayout>
+        <ImageView android:layout_gravity="center_vertical" android:id="@+id/img_check" android:layout_width="@dimen/dimen_14" android:layout_height="@dimen/dimen_14" android:src="@drawable/picth_on"/>
+    </LinearLayout>
+</LinearLayout>

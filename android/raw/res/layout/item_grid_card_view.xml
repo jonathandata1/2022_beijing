@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.msgseal.base.ui.AvatarView android:id="@id/iv_avatar" android:background="@color/backgroundColor" android:layout_width="@dimen/dimen_68" android:layout_height="@dimen/dimen_68" android:layout_centerHorizontal="true" />
+    <ImageView android:id="@id/iv_check" android:layout_width="@dimen/dimen_18" android:layout_height="@dimen/dimen_18" android:layout_marginRight="@dimen/dimen_5" android:layout_marginBottom="@dimen/dimen_5" android:src="@drawable/contact_select_mark_icon" android:layout_alignRight="@id/iv_avatar" android:layout_alignBottom="@id/iv_avatar" />
+    <TextView android:textSize="@dimen/dimen_14" android:textColor="@color/text_main_color" android:gravity="center_horizontal" android:id="@id/tv_name" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dimen_4" android:layout_marginBottom="@dimen/dimen_15" android:singleLine="true" android:layout_below="@id/iv_avatar" android:layout_centerHorizontal="true" />
+</RelativeLayout>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_gravity="center" android:background="@drawable/toongine_prompt_bg" android:layout_width="wrap_content" android:layout_height="wrap_content" android:minWidth="@dimen/dimen_104" android:minHeight="@dimen/dimen_50"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center_vertical" android:layout_gravity="center" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dimen_14" android:layout_marginBottom="@dimen/dimen_14">
+        <com.systoon.toongine.nativeapi.common.page.loading.IOSLoadingView android:layout_gravity="center" android:id="@id/toongine_toast_progress" android:visibility="gone" android:layout_width="@dimen/dimen_40" android:layout_height="@dimen/dimen_40" android:layout_marginBottom="@dimen/dimen_4" />
+        <ImageView android:layout_gravity="center" android:id="@id/image_toast_prompt" android:background="@drawable/toongine_toast_success" android:visibility="gone" android:layout_width="@dimen/dimen_40" android:layout_height="@dimen/dimen_40" android:layout_marginBottom="@dimen/dimen_4" />
+        <TextView android:textSize="@dimen/ts_16px" android:textColor="@color/c20" android:gravity="center" android:layout_gravity="center" android:id="@id/tv_toast_prompt" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    </LinearLayout>
+</FrameLayout>

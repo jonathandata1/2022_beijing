@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@color/color_f8f8fb" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include android:id="@id/in_1" layout="@layout/toon_item_navigation_bar" />
+    <View android:id="@id/divider" android:layout_width="fill_parent" android:layout_height="@dimen/dimen_10" android:layout_below="@id/in_1" />
+    <LinearLayout android:orientation="vertical" android:background="@color/c20" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_below="@id/divider">
+        <RelativeLayout android:id="@id/rl_new_feature_introduce" android:background="@color/c20" android:layout_width="fill_parent" android:layout_height="@dimen/dimen_50">
+            <TextView android:textSize="@dimen/ts_16px" android:textColor="@color/c12" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dimen_15" android:text="@string/new_feature_introduce" android:layout_centerVertical="true" />
+            <TextView android:textSize="@dimen/ts_16px" android:textColor="@color/c9" android:id="@id/tv_new_feature_introduce" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/dimen_15" android:drawableRight="@drawable/common_arrow_right" android:drawablePadding="@dimen/dimen_5" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+        </RelativeLayout>
+        <View android:background="@color/color_f8f8fb" android:layout_width="fill_parent" android:layout_height="@dimen/dimen_10" />
+        <RelativeLayout android:orientation="horizontal" android:id="@id/rl_user_update" android:background="@color/c20" android:layout_width="fill_parent" android:layout_height="@dimen/dimen_50">
+            <TextView android:textSize="@dimen/ts_16px" android:textColor="@color/c12" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dimen_15" android:text="检查新版本" android:layout_centerVertical="true" />
+            <TextView android:textSize="@dimen/ts_16px" android:textColor="@color/c9" android:id="@id/tv_update_status" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/dimen_15" android:drawableRight="@drawable/common_arrow_right" android:drawablePadding="@dimen/dimen_5" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+        </RelativeLayout>
+        <View android:background="@color/color_f8f8fb" android:layout_width="fill_parent" android:layout_height="@dimen/dimen_10" />
+        <RelativeLayout android:orientation="horizontal" android:id="@id/rl_user_protocol" android:background="@color/c20" android:layout_width="fill_parent" android:layout_height="@dimen/dimen_50">
+            <TextView android:textSize="@dimen/ts_16px" android:textColor="@color/c12" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dimen_15" android:text="@string/user_protocol" android:layout_centerVertical="true" />
+            <TextView android:textSize="@dimen/ts_16px" android:textColor="@color/c9" android:id="@id/tv_emails_status" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/dimen_15" android:drawableRight="@drawable/common_arrow_right" android:drawablePadding="@dimen/dimen_5" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+        </RelativeLayout>
+        <View android:background="@color/color_f8f8fb" android:layout_width="fill_parent" android:layout_height="@dimen/dimen_10" />
+        <RelativeLayout android:orientation="horizontal" android:id="@id/rl_private_protocol" android:background="@color/c20" android:layout_width="fill_parent" android:layout_height="@dimen/dimen_50">
+            <TextView android:textSize="@dimen/ts_16px" android:textColor="@color/c12" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dimen_15" android:text="@string/private_protocol" android:layout_centerVertical="true" />
+            <TextView android:textSize="@dimen/ts_16px" android:textColor="@color/c9" android:id="@id/tv_private_status" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/dimen_15" android:drawableRight="@drawable/common_arrow_right" android:drawablePadding="@dimen/dimen_5" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+        </RelativeLayout>
+        <View android:background="@color/c36" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="@dimen/dimen_0.5" android:layout_marginLeft="@dimen/dimen_15" />
+        <RelativeLayout android:orientation="horizontal" android:id="@id/rl_service_protocol" android:background="@color/c20" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="@dimen/dimen_50" android:layout_below="@id/rl_user_protocol">
+            <TextView android:textSize="@dimen/ts_16px" android:textColor="@color/c12" android:id="@id/tv_phone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dimen_15" android:text="@string/service_protocol_title" android:layout_centerVertical="true" />
+            <TextView android:textSize="@dimen/ts_16px" android:textColor="@color/c9" android:id="@id/tv_question_status" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/dimen_15" android:drawableRight="@drawable/common_arrow_right" android:drawablePadding="@dimen/dimen_5" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+        </RelativeLayout>
+    </LinearLayout>
+    <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:paddingTop="@dimen/dimen_50" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true">
+        <ImageView android:id="@id/iv_about_toon_icon" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/dimen_15" android:src="@drawable/efz_logo_gray" />
+        <TextView android:textSize="@dimen/ts_14px" android:textColor="@color/c12" android:id="@id/build_version" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="5.0dip" />
+        <TextView android:textSize="@dimen/ts_15px" android:textColor="@color/c12" android:gravity="center_horizontal" android:id="@id/tv_toon_copyright" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="15.0dip" android:text="@string/copy_right" />
+    </LinearLayout>
+</RelativeLayout>

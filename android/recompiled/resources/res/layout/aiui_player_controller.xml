@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <android.support.design.widget.CoordinatorLayout android:id="@+id/control_container" android:background="@color/transparent" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <LinearLayout android:layout_gravity="center" android:orientation="vertical" android:id="@+id/play_control" android:background="@color/transparent" android:paddingTop="10dp" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:layoutDirection="ltr" android:elevation="3dp">
+            <LinearLayout android:gravity="center" android:orientation="horizontal" android:paddingTop="4dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <ImageButton android:id="@+id/control_prev" android:background="@null" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/play_control_margin" android:layout_marginRight="@dimen/play_control_margin" app:srcCompat="0x7f08048a"/>
+                <ImageButton android:id="@+id/control_play" android:background="@null" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/play_control_margin" android:layout_marginRight="@dimen/play_control_margin"/>
+                <ImageButton android:id="@+id/control_next" android:background="@null" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/play_control_margin" android:layout_marginRight="@dimen/play_control_margin" app:srcCompat="0x7f080489"/>
+            </LinearLayout>
+            <TextView android:textSize="18sp" android:textColor="@color/black" android:ellipsize="marquee" android:layout_gravity="center" android:id="@+id/control_songName" android:paddingLeft="4dp" android:paddingTop="10dp" android:paddingRight="4dp" android:paddingBottom="6dp" android:focusable="true" android:focusableInTouchMode="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true" android:includeFontPadding="false" android:marqueeRepeatLimit="marquee_forever"/>
+        </LinearLayout>
+    </android.support.design.widget.CoordinatorLayout>
+</RelativeLayout>

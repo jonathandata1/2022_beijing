@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" android:background="#ffffff" android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:orientation="vertical" android:id="@+id/main_layout_container" android:clickable="true" android:layout_width="match_parent" android:layout_height="match_parent">
+        <RelativeLayout android:id="@+id/header_container" android:clickable="true" android:layout_width="match_parent" android:layout_height="@dimen/hp_px_44"/>
+        <View android:id="@+id/main_layout_divider" android:visibility="gone" android:layout_width="match_parent" android:layout_height="@dimen/hp_px_1"/>
+        <include android:id="@+id/rl_base_empty" android:visibility="gone" layout="@layout/hp_base_activity_base_empty"/>
+    </LinearLayout>
+    <FrameLayout android:id="@+id/fl_loading_body" android:background="#00000000" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent">
+        <com.systoon.customhomepage.affair.view.HPLoading android:layout_gravity="center" android:id="@+id/loading" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+    </FrameLayout>
+</FrameLayout>

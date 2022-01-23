@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge android:gravity="center" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.zhuanche.commonbase.widget.datapicker.wheelview.WheelView android:id="@id/sy_wheel_options_one" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0" />
+    <com.zhuanche.commonbase.widget.datapicker.wheelview.WheelView android:id="@id/sy_wheel_options_two" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0" />
+    <com.zhuanche.commonbase.widget.datapicker.wheelview.WheelView android:id="@id/sy_wheel_options_three" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0" />
+</merge>

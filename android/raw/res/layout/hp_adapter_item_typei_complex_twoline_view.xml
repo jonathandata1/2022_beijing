@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="@dimen/hp_px_10" android:textColor="@color/color_DF3031" android:gravity="center" android:id="@id/tv_tag" android:background="@drawable/hp_topline_typei_notice_tag_bg" android:paddingLeft="@dimen/hp_px_3" android:paddingTop="@dimen/hp_px_1" android:paddingRight="@dimen/hp_px_3" android:paddingBottom="@dimen/hp_px_1" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/hp_px_4" android:text="@string/hp_newest" android:layout_centerVertical="true" />
+    <TextView android:textSize="@dimen/hp_px_14" android:textColor="@color/color_333333" android:ellipsize="end" android:gravity="center_vertical" android:id="@id/title_top" android:layout_width="fill_parent" android:layout_height="wrap_content" android:maxLines="2" android:maxLength="300" android:layout_toRightOf="@id/tv_tag" android:layout_centerVertical="true" />
+</RelativeLayout>

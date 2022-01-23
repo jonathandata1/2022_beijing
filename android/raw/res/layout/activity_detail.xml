@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:scrollbars="none" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:focusable="true" android:focusableInTouchMode="true" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <LinearLayout android:orientation="vertical" android:id="@id/item_container" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+        <RelativeLayout android:gravity="center_vertical" android:id="@id/rl_create_card" android:layout_width="fill_parent" android:layout_height="@dimen/dimen_50">
+            <TextView android:textSize="@dimen/dimen_16" android:id="@id/my_temail_vcard_des" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dimen_16" android:text="@string/create_new_chat_card" android:layout_centerVertical="true" />
+            <LinearLayout android:orientation="horizontal" android:id="@id/ll_add_card" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dimen_10" android:layout_marginRight="@dimen/dimen_16" android:layout_alignParentRight="true" android:layout_centerVertical="true">
+                <TextView android:textSize="@dimen/dimen_14" android:textColor="@color/c1" android:id="@id/tv_card_add" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/create_new_chat_create_card_new" />
+                <Button android:visibility="gone" android:layout_width="@dimen/dimen_18" android:layout_height="@dimen/dimen_18" android:layout_marginLeft="@dimen/dimen_12" />
+            </LinearLayout>
+        </RelativeLayout>
+        <com.msgseal.chat.customviews.NoScrollListView android:id="@id/lv_card_list" android:fadingEdge="none" android:layout_width="fill_parent" android:layout_height="wrap_content" android:listSelector="@color/transparent" android:cacheColorHint="@color/transparent" android:divider="@color/color_1F2022" android:dividerHeight="@dimen/dimen_16" android:choiceMode="singleChoice" android:fastScrollEnabled="false" android:headerDividersEnabled="true" android:footerDividersEnabled="false" />
+        <View android:id="@id/vcard_bottom_divider" android:background="@color/color_1F2022" android:layout_width="fill_parent" android:layout_height="@dimen/dimen_16" />
+        <TextView android:textSize="@dimen/dimen_16" android:textColor="@color/color_ff3b2f" android:gravity="center" android:id="@id/my_temail_remove" android:background="@color/color_1F2022" android:layout_width="fill_parent" android:layout_height="@dimen/dimen_50" android:layout_marginTop="@dimen/dimen_10" android:text="@string/my_temail_setting_remove" />
+    </LinearLayout>
+</ScrollView>

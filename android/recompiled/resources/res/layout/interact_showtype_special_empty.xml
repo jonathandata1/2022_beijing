@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:background="@color/c20" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <LinearLayout android:orientation="vertical" android:id="@+id/interact_special_empty_view" android:layout_width="match_parent" android:layout_height="@dimen/px_410">
+        <ImageView android:layout_gravity="center_horizontal" android:background="@drawable/icon_interact_special_empty" android:layout_width="@dimen/px_70" android:layout_height="@dimen/px_70" android:layout_marginTop="@dimen/px_63"/>
+        <TextView android:textSize="@dimen/px_16" android:textColor="#5c5c5c" android:gravity="center_horizontal" android:layout_gravity="center_horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/px_20" android:text="暂无资讯\10去其它分类看看吧~"/>
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/backgroundColor" android:paddingTop="@dimen/dimen_10" android:paddingBottom="@dimen/dimen_10" android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:layout_gravity="center_horizontal" android:background="@color/backgroundColor" android:layout_width="@dimen/dimen_44" android:layout_height="@dimen/dimen_44" android:layout_marginLeft="@dimen/dimen_10" android:layout_marginRight="@dimen/dimen_10">
+        <com.msgseal.base.ui.AvatarView android:id="@id/img_avatar" android:layout_width="@dimen/dimen_44" android:layout_height="@dimen/dimen_44" android:layout_centerInParent="true" />
+        <ImageView android:id="@id/img_icon" android:visibility="gone" android:layout_width="@dimen/dimen_44" android:layout_height="@dimen/dimen_44" android:layout_centerInParent="true" />
+        <ImageView android:id="@id/chat_group_create_icon" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/chat_group_create_icon" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true" />
+    </RelativeLayout>
+    <TextView android:textSize="@dimen/dimen_13" android:textColor="@color/c12" android:ellipsize="end" android:gravity="center_horizontal" android:layout_gravity="center_horizontal" android:id="@id/txt_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dimen_10" android:maxWidth="@dimen/dimen_54" android:singleLine="true" />
+</LinearLayout>

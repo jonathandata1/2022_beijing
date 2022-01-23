@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:background="#ffffff" android:clipChildren="false" android:clipToPadding="false" android:layout_width="match_parent" android:layout_height="match_parent">
+    <com.ui.template.bottom.tab.widget.UITemplateViewPager android:id="@+id/viewPager" android:layout_width="match_parent" android:layout_height="match_parent"/>
+    <FrameLayout android:id="@+id/tabContainer" android:layout_width="match_parent" android:layout_height="@dimen/dimen_100" android:layout_alignParentBottom="true">
+        <ImageView android:layout_gravity="bottom" android:id="@+id/tabBackground" android:layout_width="match_parent" android:layout_height="@dimen/dimen_50"/>
+        <LinearLayout android:layout_gravity="bottom" android:orientation="horizontal" android:id="@+id/tabLayout" android:background="@color/transparent" android:clipChildren="false" android:clipToPadding="false" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+    </FrameLayout>
+    <ViewStub android:id="@+id/vsEmptyView" android:layout="@layout/tab_empty" android:layout_width="match_parent" android:layout_height="match_parent"/>
+</RelativeLayout>

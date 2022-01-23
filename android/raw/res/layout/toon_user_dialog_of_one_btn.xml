@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/rl_protocol_whole" android:background="@drawable/white_bg_with_corner" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="@dimen/ts_17px" android:textColor="@color/color_222222" android:gravity="center" android:id="@id/tv_dialog_one_btn" android:layout_width="fill_parent" android:layout_height="@dimen/dimen_50" />
+</RelativeLayout>

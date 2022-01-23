@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CustomizationFlag</key>
+	<false/>
+	<key>TNNoticeSubViewControllers</key>
+	<array>
+		<dict>
+			<key>buttonTitle</key>
+			<string>通知</string>
+			<key>showUnreadCount</key>
+			<true/>
+			<key>subViewController</key>
+			<string>TNCHomePageController</string>
+		</dict>
+	</array>
+	<key>TNNoticeRightItems</key>
+	<array>
+		<dict>
+			<key>itemType</key>
+			<string>TNASetBarButtonItem</string>
+			<key>itemTitle</key>
+			<string></string>
+			<key>normalImage</key>
+			<string>tnn_rightAdd_icon</string>
+			<key>highLightImage</key>
+			<string>tnn_rightAdd_icon</string>
+			<key>itemClickAction</key>
+			<string>righItemClick</string>
+		</dict>
+		<dict>
+			<key>itemType</key>
+			<string>TNASetBarButtonItem</string>
+			<key>itemTitle</key>
+			<string></string>
+			<key>normalImage</key>
+			<string>tnn_card_icon</string>
+			<key>highLightImage</key>
+			<string>tnn_card_icon</string>
+			<key>itemClickAction</key>
+			<string>cardListClick</string>
+		</dict>
+	</array>
+	<key>TNNoticeSubViewControllersCopy</key>
+	<array>
+		<dict>
+			<key>buttonTitle</key>
+			<string>通知</string>
+			<key>showUnreadCount</key>
+			<true/>
+			<key>subViewController</key>
+			<string>TNCHomePageController</string>
+		</dict>
+		<dict>
+			<key>buttonTitle</key>
+			<string>动态</string>
+			<key>showUnreadCount</key>
+			<true/>
+			<key>subViewController</key>
+			<string>TNATrendsListController</string>
+		</dict>
+	</array>
+</dict>
+</plist>

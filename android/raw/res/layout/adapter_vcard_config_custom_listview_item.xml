@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:focusable="true" android:focusableInTouchMode="true" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center_vertical" android:layout_width="fill_parent" android:layout_height="@dimen/dimen_50">
+        <ImageView android:id="@id/del_icon" android:layout_width="wrap_content" android:layout_height="fill_parent" android:src="@drawable/del_email" />
+        <EditText android:textSize="@dimen/dimen_16" android:textColor="@color/c8" android:ellipsize="end" android:id="@id/textview" android:background="@color/c20" android:paddingRight="@dimen/dimen_15" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dimen_8" android:singleLine="true" />
+    </LinearLayout>
+    <View android:id="@id/lineview" android:background="@color/c6" android:layout_width="fill_parent" android:layout_height="@dimen/dimen_0.3" android:layout_marginLeft="@dimen/dimen_16" />
+</LinearLayout>

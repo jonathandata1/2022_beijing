@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView android:layout_gravity="center_horizontal" android:layout_width="wrap_content" android:layout_height="@dimen/px_205" app:cardElevation="5.0dip" app:cardUseCompatPadding="true"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <RelativeLayout android:layout_width="fill_parent" android:layout_height="@dimen/px_183">
+        <ImageView android:id="@id/iv_banner_content" android:layout_width="fill_parent" android:layout_height="@dimen/px_139" android:layout_marginLeft="@dimen/px_10" android:layout_marginTop="@dimen/px_10" android:layout_marginRight="@dimen/px_10" android:scaleType="centerCrop" />
+        <TextView android:textSize="@dimen/px_12" android:textColor="@color/c28" android:ellipsize="end" android:gravity="center_vertical" android:id="@id/recommend_banner_title" android:layout_width="fill_parent" android:layout_height="@dimen/px_25" android:layout_marginLeft="@dimen/px_10" android:layout_marginTop="@dimen/px_9" android:layout_marginRight="@dimen/px_10" android:layout_marginBottom="@dimen/px_8" android:maxLines="1" android:layout_below="@id/iv_banner_content" />
+    </RelativeLayout>
+</android.support.v7.widget.CardView>

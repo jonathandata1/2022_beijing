@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent" android:layout_height="match_parent">
+    <FrameLayout android:id="@+id/webViewContainer" android:layout_width="match_parent" android:layout_height="match_parent"/>
+    <Button android:textSize="9sp" android:layout_gravity="top|right|center_vertical|center_horizontal|center" android:id="@+id/toFullBt" android:layout_width="50dp" android:layout_height="30dp" android:layout_marginTop="20dp" android:layout_marginRight="20dp" android:text="全屏"/>
+    <Button android:textSize="9sp" android:id="@+id/closeBt" android:layout_width="50dp" android:layout_height="30dp" android:layout_marginLeft="20dp" android:layout_marginTop="20dp" android:text="关闭"/>
+</FrameLayout>

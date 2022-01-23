@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/transparent" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="@dimen/ts_14px" android:textColor="@color/c10" android:gravity="center" android:id="@id/tv_no_more" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/loading_no_more" />
+    <LinearLayout android:gravity="bottom|center" android:orientation="horizontal" android:id="@id/footer_pull_to_refresh" android:layout_width="fill_parent" android:layout_height="40.0dip">
+        <ImageView android:id="@id/footer_iv_1" android:background="@null" android:visibility="invisible" android:layout_width="10.0dip" android:layout_height="10.0dip" android:src="@drawable/splash_dot" />
+        <ImageView android:id="@id/footer_iv_2" android:background="@null" android:visibility="invisible" android:layout_width="10.0dip" android:layout_height="10.0dip" android:layout_marginLeft="20.0dip" android:layout_marginRight="20.0dip" android:src="@drawable/splash_dot" />
+        <ImageView android:id="@id/footer_iv_3" android:background="@null" android:visibility="invisible" android:layout_width="10.0dip" android:layout_height="10.0dip" android:src="@drawable/splash_dot" />
+    </LinearLayout>
+</LinearLayout>

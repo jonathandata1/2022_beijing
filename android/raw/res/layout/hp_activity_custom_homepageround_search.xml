@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/color_F2F2F4" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <View android:background="@color/color_B2B2B2" android:layout_width="fill_parent" android:layout_height="@dimen/dimen_0.3" />
+    <RelativeLayout android:background="@color/color_F2F2F4" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <ListView android:id="@id/pullToRefreshListView" android:background="@color/color_F2F2F4" android:scrollbars="none" android:fadingEdge="none" android:layout_width="fill_parent" android:layout_height="fill_parent" android:cacheColorHint="@color/transparent" android:divider="@null" android:fastScrollEnabled="false" android:headerDividersEnabled="false" android:footerDividersEnabled="false" />
+        <View android:background="@color/color_DDDEE3" android:layout_width="fill_parent" android:layout_height="@dimen/dimen_0.3" android:layout_alignBottom="@id/pullToRefreshListView" />
+    </RelativeLayout>
+</LinearLayout>

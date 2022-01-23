@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:gravity="center_vertical" android:orientation="horizontal" android:paddingRight="@dimen/dimen_15" android:layout_width="match_parent" android:layout_height="50dp">
+    <ImageView android:id="@+id/voice_play" android:paddingLeft="@dimen/dimen_15" android:paddingRight="@dimen/dimen_10" android:layout_width="wrap_content" android:layout_height="match_parent" android:src="@drawable/voice_play"/>
+    <TextView android:textColor="@color/c9" android:id="@+id/voice_progress_time" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+    <SeekBar android:id="@+id/voice_progress" android:background="@android:color/transparent" android:layout_width="0dp" android:layout_height="wrap_content" android:maxHeight="2dp" android:progressDrawable="@drawable/video_seekbar_style" android:thumb="@drawable/slider_thumb_blue_normal" android:layout_weight="10" android:splitTrack="false"/>
+    <TextView android:textColor="@color/c9" android:id="@+id/voice_total_time" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+</LinearLayout>

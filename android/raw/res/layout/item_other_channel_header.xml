@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/px_16" android:layout_marginTop="@dimen/px_20" android:layout_marginRight="@dimen/px_16"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="@dimen/px_18" android:textStyle="bold" android:textColor="#ff4a4a4a" android:id="@id/channelRecommended" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="频道推荐" />
+    <TextView android:textSize="@dimen/px_14" android:textColor="#ff8e8e93" android:id="@id/channelRecommended_hint" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/px_12" android:layout_marginTop="@dimen/px_3" android:text="点击添加频道" android:layout_toRightOf="@id/channelRecommended" />
+</RelativeLayout>

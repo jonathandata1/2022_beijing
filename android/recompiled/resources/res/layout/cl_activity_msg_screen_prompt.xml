@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:background="@color/cl_bg_msg_screen" android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="20dp" android:layout_marginTop="10dp">
+        <ImageView android:id="@+id/iv_avatar" android:layout_width="60dp" android:layout_height="60dp" app:srcCompat="@drawable/cl_chatui_img_default_avatar"/>
+        <TextView android:textSize="16dp" android:textColor="@color/cl_white_common" android:id="@+id/tv_user_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="15dp"/>
+    </LinearLayout>
+    <TextView android:textSize="24dp" android:textColor="@color/cl_white_common" android:id="@+id/tv_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="5dp" android:layout_above="@+id/tv_prompt" android:layout_centerHorizontal="true"/>
+    <TextView android:textSize="12dp" android:textColor="@color/cl_white_common" android:id="@+id/tv_prompt" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="20dp" android:layout_above="@+id/chat_msg_card_container" android:layout_centerHorizontal="true"/>
+    <com.lianjia.common.vr.view.RoundCornerLinearLayout android:orientation="vertical" android:id="@+id/chat_msg_card_container" android:background="@color/cl_white_common" android:paddingBottom="14dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="60dp" android:layout_marginRight="60dp" android:layout_centerInParent="true" app:bottom_left_radius="@dimen/cl_chatui_chat_msg_card_corner_radius" app:bottom_right_radius="@dimen/cl_chatui_chat_msg_card_corner_radius" app:corner_color="@color/cl_chatui_bg_msg_screen" app:top_left_radius="@dimen/cl_chatui_chat_msg_card_corner_radius" app:top_right_radius="@dimen/cl_chatui_chat_msg_card_corner_radius">
+        <include layout="@layout/cl_chat_item_detail_second_hand_house_rushi_card_content"/>
+    </com.lianjia.common.vr.view.RoundCornerLinearLayout>
+    <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_below="@+id/chat_msg_card_container" android:layout_centerHorizontal="true" app:srcCompat="@drawable/cl_chatui_icon_triangle_down"/>
+    <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@+id/ll_response_immediately" android:background="@drawable/cl_chatui_btn_response" android:layout_width="120dp" android:layout_height="120dp" android:layout_marginTop="20dp" android:layout_below="@+id/chat_msg_card_container" android:layout_centerHorizontal="true">
+        <TextView android:textSize="14dp" android:textColor="@color/cl_white_common" android:id="@+id/tv_countdown" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+        <TextView android:textSize="16dp" android:textColor="@color/cl_white_common" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/cl_chatui_response_immediately"/>
+    </LinearLayout>
+</RelativeLayout>

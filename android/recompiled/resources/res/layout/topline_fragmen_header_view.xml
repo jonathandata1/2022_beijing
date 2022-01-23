@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:orientation="vertical" android:id="@+id/topview" android:background="@color/c20" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <ImageView android:id="@+id/topline_header_banner_bg" android:layout_width="match_parent" android:layout_height="154dp" android:scaleType="centerCrop"/>
+    <com.systoon.topline.widget.banner.ToplineBanner android:id="@+id/topline_header_banner" android:layout_width="match_parent" android:layout_height="130dp" android:layout_marginLeft="@dimen/dimen_20" android:layout_marginTop="@dimen/dimen_70" android:layout_marginRight="@dimen/dimen_20" app:indicator_drawable_selected="@drawable/icon_interact_news_banner_white_dot" app:indicator_drawable_unselected="@drawable/icon_interact_news_banner_gray_dot"/>
+    <com.systoon.topline.widget.BetterRecyclerView android:id="@+id/topline_header_rv" android:background="@color/transparent" android:scrollbars="none" android:layout_width="match_parent" android:layout_height="wrap_content" android:listSelector="@null" android:cacheColorHint="@color/transparent" android:divider="@null" android:layout_below="@+id/topline_header_banner"/>
+    <LinearLayout android:orientation="vertical" android:background="@color/c20" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_below="@+id/topline_header_rv">
+        <View android:id="@+id/lineview" android:background="@color/c5" android:layout_width="match_parent" android:layout_height="@dimen/dimen_6"/>
+        <RelativeLayout android:layout_gravity="center" android:layout_width="match_parent" android:layout_height="@dimen/dimen_44">
+            <ImageView android:id="@+id/icon_topline_header_iv" android:layout_width="@dimen/dimen_104" android:layout_height="@dimen/dimen_23" android:src="@drawable/icon_topline_header_bj" android:layout_centerInParent="true"/>
+        </RelativeLayout>
+        <View android:background="@color/c5" android:layout_width="match_parent" android:layout_height="@dimen/res_0x7f070191_dimen_0_5" android:layout_marginLeft="@dimen/dimen_15" android:layout_marginRight="@dimen/dimen_15"/>
+    </LinearLayout>
+</RelativeLayout>

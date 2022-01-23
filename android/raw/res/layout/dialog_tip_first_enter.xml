@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="280.0dip" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:background="@drawable/bg_first_enter_tip_dialog" android:paddingLeft="@dimen/dimen_16" android:paddingTop="@dimen/dimen_16" android:paddingRight="@dimen/dimen_16" android:paddingBottom="@dimen/dimen_30" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <ImageView android:layout_gravity="center_horizontal" android:id="@id/img_tip_top" android:layout_width="248.0dip" android:layout_height="152.0dip" />
+        <LinearLayout android:gravity="center_horizontal" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="16.0dip">
+            <View android:layout_gravity="center_vertical" android:background="#ff4a4a4a" android:layout_width="@dimen/dimen_10" android:layout_height="1.0dip" />
+            <TextView android:textSize="@dimen/dimen_22" android:textStyle="bold" android:textColor="#ff000000" android:id="@id/tv_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dimen_8" android:layout_marginRight="@dimen/dimen_8" />
+            <View android:layout_gravity="center_vertical" android:background="#ff4a4a4a" android:layout_width="@dimen/dimen_10" android:layout_height="1.0dip" />
+        </LinearLayout>
+        <TextView android:textSize="16.0dip" android:textColor="#ff000000" android:id="@id/tv_content" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dimen_4" android:layout_marginTop="@dimen/dimen_8" android:layout_marginRight="@dimen/dimen_4" android:minHeight="@dimen/dimen_80" />
+    </LinearLayout>
+    <ImageView android:layout_gravity="center_horizontal" android:id="@id/img_close" android:layout_width="30.0dip" android:layout_height="30.0dip" android:layout_marginTop="30.0dip" android:src="@drawable/ic_close_first_enter" />
+</LinearLayout>

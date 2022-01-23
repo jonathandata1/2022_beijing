@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:background="@color/transparent" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="18.0dip" android:layout_marginRight="18.0dip" android:layout_centerInParent="true">
+        <LinearLayout android:orientation="vertical" android:background="@drawable/dialog_authprompt_bg" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <TextView android:textSize="18.0dip" android:textStyle="bold" android:textColor="#ff222222" android:layout_gravity="center_horizontal" android:id="@id/tv_dialog_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="24.0dip" android:text="@string/authprompt_uncheckcard_title" />
+            <TextView android:textSize="15.0dip" android:textColor="#ff8e8e93" android:layout_gravity="center_horizontal" android:id="@id/tv_dialog_subtitle" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="8.0dip" android:text="@string/authprompt_uncheckcard_subtitle" />
+            <LinearLayout android:gravity="center_horizontal" android:layout_gravity="center_horizontal" android:orientation="vertical" android:id="@id/ll_L2_tip" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <ImageView android:layout_gravity="center_horizontal" android:id="@id/iv_auth_icon" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="19.0dip" android:src="@drawable/authprompt_icon" />
+                <LinearLayout android:layout_gravity="center_horizontal" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_marginTop="16.0dip">
+                    <LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                        <ImageView android:layout_gravity="center_horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/auth_safe_icon" />
+                        <TextView android:textSize="12.0dip" android:textColor="#ffa3a3a3" android:layout_gravity="center_horizontal" android:id="@id/tv_safe" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5.0dip" android:text="@string/safe" />
+                    </LinearLayout>
+                    <LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="43.0dip" android:layout_marginRight="43.0dip">
+                        <ImageView android:layout_gravity="center_horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/auth_speedy_icon" />
+                        <TextView android:textSize="12.0dip" android:textColor="#ffa3a3a3" android:layout_gravity="center_horizontal" android:id="@id/tv_convenience" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5.0dip" android:text="@string/convenience" />
+                    </LinearLayout>
+                    <LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                        <ImageView android:layout_gravity="center_horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/auth_exclusive_icon" />
+                        <TextView android:textSize="12.0dip" android:textColor="#ffa3a3a3" android:layout_gravity="center_horizontal" android:id="@id/tv_only_have" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5.0dip" android:text="@string/only_have" />
+                    </LinearLayout>
+                </LinearLayout>
+                <View android:background="#ffdddee3" android:layout_width="fill_parent" android:layout_height="1.0dip" android:layout_marginTop="30.0dip" />
+                <TextView android:textSize="17.0dip" android:textColor="#ff222222" android:gravity="center" android:layout_gravity="center_horizontal" android:id="@id/tv_authentication" android:layout_width="fill_parent" android:layout_height="50.0dip" android:text="@string/verify_now" />
+            </LinearLayout>
+            <LinearLayout android:orientation="vertical" android:id="@id/ll_L3_tip" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <View android:background="#ffdddee3" android:layout_width="fill_parent" android:layout_height="0.70000005dip" android:layout_marginTop="20.0dip" />
+                <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/rl_checkface" android:background="@drawable/layout_selector_auth_prompt_dialog" android:paddingLeft="15.0dip" android:paddingRight="15.0dip" android:clickable="true" android:layout_width="fill_parent" android:layout_height="88.0dip">
+                    <ImageView android:id="@id/iv_checkface_icon" android:layout_width="56.299988dip" android:layout_height="56.299988dip" android:src="@drawable/auth_leveltwo_checkface_icon" />
+                    <LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginLeft="8.0dip" android:layout_weight="1.0">
+                        <TextView android:textSize="18.0sp" android:textStyle="bold" android:textColor="#ffffbc00" android:id="@id/tv_checkface_title" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="2.0dip" android:text="@string/haixin_title" />
+                        <TextView android:textSize="13.0sp" android:textColor="#ff8e8e93" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/open_camera" />
+                    </LinearLayout>
+                    <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_arrow_right" />
+                </LinearLayout>
+                <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/rl_bankcard" android:background="@drawable/layout_selector_auth_prompt_dialog" android:paddingLeft="15.0dip" android:paddingRight="15.0dip" android:clickable="true" android:layout_width="fill_parent" android:layout_height="83.0dip" android:layout_marginBottom="61.0dip">
+                    <ImageView android:id="@id/iv_bankcard_icon" android:layout_width="56.299988dip" android:layout_height="56.299988dip" android:src="@drawable/auth_leveltwo_bankcard_icon" />
+                    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="8.0dip" android:layout_weight="1.0">
+                        <TextView android:textSize="18.0sp" android:textStyle="bold" android:textColor="#ffffbc00" android:id="@id/tv_l1_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="2.0dip" android:text="@string/card_verify_title" />
+                        <TextView android:textSize="13.0sp" android:textColor="#ff8e8e93" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/card_verify_title_hint" />
+                    </LinearLayout>
+                    <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_arrow_right" />
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+        <ImageView android:gravity="center" android:layout_gravity="center_horizontal" android:id="@id/tv_cancel" android:layout_width="29.0dip" android:layout_height="29.0dip" android:layout_marginTop="30.0dip" android:src="@drawable/auth_prompt_close" />
+    </LinearLayout>
+</RelativeLayout>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:id="@id/input_common_container" android:background="@drawable/input_common_bg" android:paddingLeft="@dimen/dimen_12" android:paddingRight="@dimen/dimen_12" android:layout_width="@dimen/dimen_220" android:layout_height="@dimen/dimen_67" android:layout_marginTop="@dimen/dimen_9" android:layout_marginRight="@dimen/dimen_9">
+        <ImageView android:id="@id/iv_input_common" android:layout_width="@dimen/dimen_38" android:layout_height="@dimen/dimen_42" android:layout_centerVertical="true" />
+        <LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dimen_10" android:layout_toRightOf="@id/iv_input_common" android:layout_centerVertical="true">
+            <TextView android:textSize="@dimen/dimen_15" android:textColor="@color/tc222222" android:ellipsize="middle" android:layout_gravity="start|center" android:id="@id/tv_input_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true" />
+            <TextView android:textSize="@dimen/dimen_13" android:textColor="@color/color_8e8e93" android:ellipsize="middle" android:layout_gravity="start|center" android:id="@id/tv_input_desc" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true" />
+        </LinearLayout>
+    </RelativeLayout>
+    <FrameLayout android:layout_gravity="center|right|top" android:id="@id/del_input_voice" android:layout_width="@dimen/dimen_30" android:layout_height="@dimen/dimen_30">
+        <ImageView android:layout_gravity="center|right|top" android:layout_width="@dimen/dimen_18" android:layout_height="@dimen/dimen_18" android:src="@drawable/del_input_icon" />
+    </FrameLayout>
+</FrameLayout>

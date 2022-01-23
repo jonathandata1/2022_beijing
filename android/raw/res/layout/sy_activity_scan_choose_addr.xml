@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/sy_vf8f9fa" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.zhuanche.commonbase.widget.homewidget.TitleBar android:id="@id/sy_title_bar" android:background="@color/white" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="wrap_content" app:backgroundColor="@android:color/transparent" app:leftDrawable="@drawable/sy_ic_back" />
+    <include layout="@layout/sy_layout_driver_info" />
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/sy_layout_home_drop_off" android:background="@color/white" android:paddingLeft="@dimen/dp_16" android:paddingRight="@dimen/dp_16" android:layout_width="fill_parent" android:layout_height="@dimen/dp_50">
+        <ImageView android:layout_width="@dimen/dp_14" android:layout_height="@dimen/dp_14" android:src="@drawable/base_dot_dark" android:scaleType="centerInside" />
+        <TextView android:textSize="15.0sp" android:textColor="@color/sy_v222222" android:id="@id/sy_tv_drop_off_address" android:paddingLeft="@dimen/dp_8" android:paddingRight="@dimen/dp_8" android:layout_width="0.0dip" android:layout_height="wrap_content" android:hint="@string/sy_str_drop_off_home_hint" android:singleLine="true" android:layout_weight="1.0" />
+        <TextView android:textSize="12.0sp" android:textColor="@color/sy_v4a4a4a" android:id="@id/sy_tv_drop_off_address_modify" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/sy_now_start_addr_modify" android:paddingStart="@dimen/dp_5" android:paddingEnd="@dimen/dp_7" />
+        <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/base_icon_right_arrow_driver_info" android:layout_marginEnd="@dimen/dp_4" />
+    </LinearLayout>
+    <LinearLayout android:orientation="vertical" android:id="@id/sy_layout_check" android:background="@color/sy_white" android:paddingLeft="@dimen/dp_16" android:paddingRight="@dimen/dp_16" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <View android:background="@color/sy_ve5e5e5" android:layout_width="fill_parent" android:layout_height="@dimen/dp_0_5" />
+        <CheckBox android:id="@id/sy_cb_accept_carpool" android:paddingTop="@dimen/dp_15" android:paddingBottom="@dimen/dp_15" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/sy_str_accept_carpooling" style="@style/CheckBoxStyle" />
+    </LinearLayout>
+    <Button android:enabled="false" android:textSize="16.0sp" android:textColor="@color/sy_white" android:id="@id/sy_btn_home_book_car" android:layout_width="fill_parent" android:layout_height="@dimen/dp_50" android:layout_marginLeft="@dimen/dp_30" android:layout_marginTop="@dimen/dp_17" android:layout_marginRight="@dimen/dp_30" android:text="@string/sy_now_commit" android:textAllCaps="false" style="@style/SyDeepBtnBase" />
+</LinearLayout>

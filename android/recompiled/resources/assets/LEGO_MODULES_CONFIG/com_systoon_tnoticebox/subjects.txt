@@ -1,0 +1,4 @@
+System.loginEvent
+-com.systoon.tnoticebox.TNoticeBoxSDK#loginInit
+System.logoutEvent
+-com.systoon.tnoticebox.TNoticeBoxSDK#clearCache

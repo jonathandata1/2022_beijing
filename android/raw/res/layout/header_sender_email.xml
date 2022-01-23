@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginStart="@dimen/dimen_16" android:layout_marginEnd="@dimen/dimen_16"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:id="@id/receiver_layout" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    <RelativeLayout android:orientation="horizontal" android:id="@id/new_topic_title_layout" android:layout_width="fill_parent" android:layout_height="@dimen/dimen_50" android:layout_below="@id/receiver_layout">
+        <TextView android:textSize="@dimen/dimen_16" android:textColor="@color/c26" android:gravity="center_vertical" android:id="@id/email_written_title" android:layout_width="wrap_content" android:layout_height="fill_parent" android:text="@string/email_send_title" android:layout_marginEnd="@dimen/dimen_16" />
+        <EditText android:textSize="@dimen/dimen_16" android:textColor="@color/black" android:textColorHint="@color/color_8e8e93" android:ellipsize="end" android:id="@id/new_topic_title_edit" android:background="@null" android:layout_width="fill_parent" android:layout_height="fill_parent" android:hint="@string/email_send_title_hint" android:maxLines="1" android:singleLine="true" android:maxLength="100" android:drawablePadding="@dimen/dimen_10" android:layout_toRightOf="@id/email_written_title" android:layout_alignParentRight="true" android:layout_marginEnd="@dimen/dimen_16" />
+        <View android:id="@id/line1" android:background="@color/c36" android:layout_width="fill_parent" android:layout_height="@dimen/dimen_0.5" android:layout_alignParentBottom="true" />
+    </RelativeLayout>
+</RelativeLayout>

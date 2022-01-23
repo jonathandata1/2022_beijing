@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/main_layout_container" android:clickable="true" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include android:id="@id/header_container" layout="@layout/interact_title_bar_layout" />
+    <View android:id="@id/main_layout_divider" android:layout_width="fill_parent" android:layout_height="1.0px" />
+    <include android:id="@id/rl_base_empty" android:visibility="gone" layout="@layout/interact_activity_base_empty" />
+    <ViewStub android:id="@id/content_viewstub_placeholder" android:visibility="gone" android:inflatedId="@id/content_placeholder" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <ViewStub android:id="@id/content_viewstub_neterror" android:visibility="gone" android:inflatedId="@id/content_neterror" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+</LinearLayout>

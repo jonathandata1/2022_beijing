@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content">
+    <com.msgseal.chat.customviews.ChatPicImageView android:id="@+id/iv_input_video" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+    <ImageView android:layout_gravity="center" android:id="@+id/iv_input_video_status" android:layout_width="@dimen/dimen_44" android:layout_height="@dimen/dimen_44" android:src="@drawable/chat_video_play"/>
+    <FrameLayout android:layout_gravity="top|right|center_vertical|center_horizontal|center" android:id="@+id/del_input_voice" android:layout_width="@dimen/dimen_30" android:layout_height="@dimen/dimen_30">
+        <ImageView android:layout_gravity="top|right|center_vertical|center_horizontal|center" android:paddingTop="@dimen/dimen_4" android:paddingRight="@dimen/dimen_4" android:layout_width="@dimen/dimen_18" android:layout_height="@dimen/dimen_18" android:src="@drawable/del_input_icon"/>
+    </FrameLayout>
+</FrameLayout>

@@ -1,0 +1,28 @@
+TOPIC {MainOnResume}
+
+TOPIC {MainOnStop}
+
+TOPIC {MainOnSaveInstanceState}
+android.os.Bundle [outState]
+
+TOPIC {MainOnRestart}
+
+TOPIC {MainOnPause}
+
+TOPIC {MainOnStart}
+
+TOPIC {MainOnNewIntent}
+android.content.Intent [intent]
+
+TOPIC {MainOnDestroy}
+
+TOPIC {MainOnSaveInstanceState}
+android.os.Bundle [outState]
+android.os.PersistableBundle [outPersistentState]
+
+TOPIC {MainOnCreate}
+android.os.Bundle [savedInstanceState]
+
+TOPIC {MainOnRestoreInstanceState}
+android.os.Bundle [savedInstanceState]
+

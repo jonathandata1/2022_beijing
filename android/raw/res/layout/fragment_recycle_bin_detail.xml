@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:background="@color/color_fff6f6f6" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:background="@color/white" android:paddingLeft="@dimen/dimen_16" android:paddingTop="@dimen/dimen_10" android:paddingRight="@dimen/dimen_16" android:paddingBottom="@dimen/dimen_20" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <ImageView android:layout_gravity="center_vertical" android:layout_width="@dimen/dimen_50" android:layout_height="@dimen/dimen_50" android:src="@drawable/ic_default_person_avatar" />
+            <TextView android:textSize="@dimen/dimen_17" android:layout_gravity="center_vertical" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dimen_12" android:text="王志文" android:layout_weight="1.0" />
+            <TextView android:textSize="@dimen/dimen_14" android:layout_gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="14:03" />
+        </LinearLayout>
+        <TextView android:textSize="@dimen/dimen_17" android:textColor="@color/color_222222" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dimen_20" android:text="已删除的单条消息会话已删除的单条消息会话已删除的单条消息会话已删除的单条消息会话已删除的单条消息会话已删除的单条消息会话已删除的单条消息， 8.18 版，域名使用msgseal.com，请知悉" />
+    </LinearLayout>
+</FrameLayout>

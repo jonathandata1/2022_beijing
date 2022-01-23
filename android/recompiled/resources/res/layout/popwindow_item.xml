@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:layout_gravity="center_vertical" android:orientation="horizontal" android:paddingLeft="14dp" android:paddingRight="14dp" android:layout_width="match_parent" android:layout_height="60dp">
+    <TextView android:textSize="18dp" android:gravity="center_vertical" android:layout_gravity="center_vertical" android:id="@+id/txt_text1" android:layout_width="0dp" android:layout_height="40dp" android:text="email1" android:layout_weight="1"/>
+    <ImageView android:layout_gravity="center_vertical" android:id="@+id/img_check" android:layout_width="14dp" android:layout_height="14dp" android:src="@drawable/panel_choose_tmail_selected"/>
+</LinearLayout>

@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android" android:background="#ffffff" android:layout_width="match_parent" android:layout_height="match_parent" android:fillViewport="true">
+    <LinearLayout android:orientation="vertical" android:background="#ffffff" android:layout_width="match_parent" android:layout_height="match_parent">
+        <ImageView android:id="@+id/iv_banner" android:layout_width="match_parent" android:layout_height="wrap_content" android:src="@drawable/auth_banner"/>
+        <RelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="28dp" android:layout_marginTop="19dp">
+            <ImageView android:id="@+id/iv_safe" android:layout_width="62dp" android:layout_height="62dp" android:src="@drawable/auth_icon_safe" android:layout_centerVertical="true"/>
+            <LinearLayout android:orientation="vertical" android:id="@+id/ll_safe" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="23dp" android:layout_toRightOf="@+id/iv_safe" android:layout_centerVertical="true">
+                <TextView android:textSize="17dp" android:textColor="#222222" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/safety_and_security"/>
+                <TextView android:textSize="15dp" android:textColor="#8e8e93" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="6dp" android:text="@string/auth_text_prompt4"/>
+            </LinearLayout>
+            <View android:id="@+id/view_safe_dashline" android:background="@drawable/auth_dash_line" android:layout_width="match_parent" android:layout_height="2dp" android:layout_marginTop="15dp" android:layout_below="@+id/iv_safe" android:layout_alignLeft="@+id/ll_safe"/>
+        </RelativeLayout>
+        <RelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="28dp" android:layout_marginTop="21dp">
+            <ImageView android:id="@+id/iv_exclusive" android:layout_width="62dp" android:layout_height="62dp" android:src="@drawable/auth_icon_exclusive" android:layout_centerVertical="true"/>
+            <LinearLayout android:orientation="vertical" android:id="@+id/ll_exclusive" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="23dp" android:layout_toRightOf="@+id/iv_exclusive" android:layout_centerVertical="true">
+                <TextView android:textSize="17dp" android:textColor="#222222" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/certification_special"/>
+                <TextView android:textSize="15dp" android:textColor="#8e8e93" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="6dp" android:text="@string/atuh_text_prompt5"/>
+            </LinearLayout>
+            <View android:id="@+id/view_exclusive_dashline" android:background="@drawable/auth_dash_line" android:layout_width="match_parent" android:layout_height="2dp" android:layout_marginTop="15dp" android:layout_below="@+id/iv_exclusive" android:layout_alignLeft="@+id/ll_exclusive"/>
+        </RelativeLayout>
+        <RelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="28dp" android:layout_marginTop="21dp">
+            <ImageView android:id="@+id/iv_realname_create" android:layout_width="62dp" android:layout_height="62dp" android:src="@drawable/auth_icon_realname_create" android:layout_centerVertical="true"/>
+            <LinearLayout android:orientation="vertical" android:id="@+id/ll_realname_create" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="23dp" android:layout_toRightOf="@+id/iv_realname_create" android:layout_centerVertical="true">
+                <TextView android:textSize="17dp" android:textColor="#222222" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/creat_auth_identity"/>
+                <TextView android:textSize="15dp" android:textColor="#8e8e93" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="6dp" android:text="@string/auth_text_prompt6"/>
+            </LinearLayout>
+            <View android:id="@+id/view_realnamecreate_dashline" android:background="@drawable/auth_dash_line" android:layout_width="match_parent" android:layout_height="2dp" android:layout_marginTop="15dp" android:layout_below="@+id/iv_realname_create" android:layout_alignLeft="@+id/ll_realname_create"/>
+        </RelativeLayout>
+        <TextView android:textSize="17dp" android:textColor="#ffffff" android:gravity="center" android:id="@+id/tv_submit" android:background="@drawable/auth_btn_bg" android:layout_width="match_parent" android:layout_height="44dp" android:layout_marginLeft="15dp" android:layout_marginTop="20dp" android:layout_marginRight="15dp" android:layout_marginBottom="35dp" android:text="@string/start_auth"/>
+    </LinearLayout>
+</ScrollView>

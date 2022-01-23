@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:orientation="vertical" android:id="@+id/ll_custom_session_content" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+    <View android:background="@color/c36" android:visibility="gone" android:layout_width="match_parent" android:layout_height="@dimen/res_0x7f070190_dimen_0_3" android:layout_marginLeft="@dimen/dimen_63" android:layout_marginStart="@dimen/dimen_63"/>
+    <View android:background="@color/c36" android:visibility="gone" android:layout_width="match_parent" android:layout_height="@dimen/res_0x7f070190_dimen_0_3"/>
+</LinearLayout>

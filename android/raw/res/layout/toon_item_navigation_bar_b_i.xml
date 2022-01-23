@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/ll_item_navigation_bar_back" android:background="@color/transparent" android:paddingLeft="@dimen/dimen_4" android:layout_width="@dimen/dimen_49" android:layout_height="fill_parent" android:layout_alignParentLeft="true" android:paddingStart="@dimen/dimen_4" android:layout_alignParentStart="true"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/iv_navigation_bar_back" android:background="@drawable/icon_navigation_bar_back" android:layout_width="@dimen/dimen_20" android:layout_height="@dimen/dimen_20" />
+</LinearLayout>

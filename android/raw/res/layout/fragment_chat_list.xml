@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.msgseal.chat.customviews.InterceptTouchViewGroup android:id="@id/chat_view_group" android:clipChildren="true" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center" android:id="@id/ll_chat_background" android:visibility="gone" android:clipChildren="true" android:layout_width="fill_parent" android:layout_height="fill_parent" android:contentDescription="@string/app_name">
+        <ImageView android:id="@id/img_chat_background" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" android:scaleType="centerCrop" android:contentDescription="@string/app_name" android:layerType="software" />
+    </LinearLayout>
+    <include android:id="@id/chat_empty_view" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" layout="@layout/business_notification_empty" />
+    <LinearLayout android:orientation="vertical" android:id="@id/ll_list_chat" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <com.msgseal.chat.customviews.ChatRecyclerView android:scrollbarSize="30.0dip" android:id="@id/list_chat" android:fadingEdge="none" android:layout_width="fill_parent" android:layout_height="fill_parent" android:listSelector="@android:color/transparent" android:transcriptMode="normal" android:cacheColorHint="@color/transparent" android:divider="@color/transparent" android:fastScrollEnabled="false" android:headerDividersEnabled="false" android:footerDividersEnabled="false" android:smoothScrollbar="true" android:overScrollMode="never" />
+    </LinearLayout>
+    <LinearLayout android:layout_gravity="end|center|top" android:orientation="vertical" android:id="@id/ll_message_right" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="20.0dip">
+        <com.msgseal.chat.customviews.UnreadMsgCountPromptView android:id="@id/tv_un_read_message_count" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    </LinearLayout>
+    <com.msgseal.chat.customviews.ArrowCircleTextView android:textColor="@color/c20" android:gravity="center" android:layout_gravity="end|bottom|center" android:id="@id/tv_new_message_count" android:visibility="gone" android:layout_width="25.0dip" android:layout_height="25.0dip" android:layout_marginRight="10.0dip" android:layout_marginBottom="20.0dip" />
+    <TextView android:textSize="@dimen/dimen_12" android:textColor="#808e8e93" android:layout_gravity="bottom|center" android:id="@id/tv_my_address_mark" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/dimen_10" />
+</com.msgseal.chat.customviews.InterceptTouchViewGroup>

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" android:background="@color/c20" android:paddingLeft="@dimen/dimen_15" android:layout_width="match_parent" android:layout_height="@dimen/dimen_50">
+    <TextView android:textSize="@dimen/dimen_16" android:textColor="@color/color_222222" android:ellipsize="end" android:gravity="center_vertical" android:id="@+id/tv_common_question_name" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginRight="@dimen/dimen_30" android:lines="1" android:singleLine="true" android:layout_centerVertical="true"/>
+    <ImageView android:id="@+id/iv_common_question_select" android:visibility="invisible" android:layout_width="@dimen/dimen_14" android:layout_height="@dimen/dimen_14" android:layout_marginRight="@dimen/dimen_16" android:src="@drawable/icon_select" android:layout_alignParentRight="true" android:layout_centerVertical="true"/>
+    <View android:id="@+id/divider" android:background="@color/c36" android:layout_width="match_parent" android:layout_height="@dimen/res_0x7f070190_dimen_0_3" android:layout_alignParentBottom="true"/>
+</RelativeLayout>

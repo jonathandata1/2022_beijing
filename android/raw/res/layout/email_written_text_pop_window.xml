@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/email_written_tip_arrow" android:layout_width="@dimen/dimen_17" android:layout_height="wrap_content" android:src="@drawable/email_written_pop_arrow" android:scaleType="centerCrop" />
+    <TextView android:textSize="@dimen/dimen_16" android:textColor="@color/text_main_color" android:background="@drawable/bg_written_tip_corner" android:paddingLeft="@dimen/dimen_16" android:paddingTop="@dimen/dimen_12" android:paddingRight="@dimen/dimen_16" android:paddingBottom="@dimen/dimen_12" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/email_tip_content" />
+</LinearLayout>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/view_type_a" android:background="@drawable/hp_manager_background_with_shadow" android:paddingBottom="@dimen/hp_px_10" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/hp_px_20" android:layout_marginTop="@dimen/hp_px_25" android:layout_marginBottom="@dimen/hp_px_10">
+        <TextView android:textSize="@dimen/hp_px_17" android:textColor="@color/color_222222" android:id="@id/serviceType" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/hp_customized_service" android:layout_centerVertical="true" />
+        <TextView android:textSize="@dimen/hp_px_17" android:textColor="@color/color_8E8E93" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/hp_manager_adjust_hint" android:layout_toRightOf="@id/serviceType" android:layout_centerVertical="true" />
+    </RelativeLayout>
+    <android.support.v7.widget.RecyclerView android:id="@id/recyclerview" android:background="@color/color_FFFFFF" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/hp_px_15" android:layout_marginRight="@dimen/hp_px_15" />
+    <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/noapp" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="@dimen/hp_px_107" android:layout_marginTop="@dimen/hp_px_n25">
+        <TextView android:textSize="@dimen/hp_px_15" android:textColor="@color/color_95989F" android:gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/hp_no_app" />
+    </LinearLayout>
+</LinearLayout>

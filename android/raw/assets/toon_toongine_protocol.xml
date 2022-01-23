@@ -1,0 +1,946 @@
+<module-list>
+    <!--*********注意：所有的值都要有依据，不要乱填！！！！！方法每个参数都要进行配置*********-->
+    <!--*********举例 toon://test/add?params={'cardNo':'c_1492071722971'}*********-->
+    <!--*********模块名称，name的值是协议中的host*********-->
+    <!--<module name="test">-->
+    <!--*********name的值是toon协议中的path值，AndroidRouter根据scheme、host和routerPath确定调用哪个方法 *********-->
+    <!--<path name="add" host="XXXProvider" routerPath="/XXXMethod" scheme="toon">-->
+    <!-- *********cardType=1代表传过来的是cardNum，需要转换成feedId *********-->
+    <!-- *********cardType=2代表传过来的是groupNum，需要转换成feedId *********-->
+    <!-- *********cardType=-1代表传过来的是feedId,不需要转换 *********-->
+    <!-- *********realName是指协议中的参数和实际方法中的参数不匹配，需要进行转换，例如cardNo转换成feedId *********-->
+    <!--*********isRequare 代表这个参数是不是必要参数 true表示必要，value 代表参数默认值*********-->
+    <!--<params name="cardNo" realName="feedId" cardType="-1" isRequare="true" value="123"/>-->
+    <!--</path>-->
+    <!--</module>-->
+    <!--选择名片-->
+    <module name="card">
+        <path name="/chooseCard" host="cardProvider" routerPath="/openChooseCard" scheme="toon">
+            <params name="type" isRequare="true" realName="showCardType" />
+            <params name="flagId" />
+            <params name="requestCode" value="10019" />
+        </path>
+
+    </module>
+    <!--单聊-->
+    <module name="chat">
+        <path name="" host="messageProvider" routerPath="/openSingleChatActivityById" scheme="toon">
+            <params name="myFeedId" cardType="-1" isRequare="true" />
+            <params name="friendFeedId" cardType="-1" isRequare="true" />
+            <params name="flagId" />
+            <params name="backToPrev" />
+        </path>
+
+        <path name="" host="messageProvider" routerPath="/openSingleChatActivityByNo" scheme="toon">
+            <params name="myCardNo" cardType="1" isRequare="true" />
+            <params name="friendCardNo" cardType="1" isRequare="true" />
+            <params name="flagId" />
+            <params name="backToPrev" />
+        </path>
+
+    </module>
+    <!--群聊-->
+    <module name="groupChat">
+        <path name="" host="messageProvider" routerPath="/openGroupChatActivityById" scheme="toon">
+            <params name="myFeedId" cardType="-1" isRequare="true" />
+            <params name="groupChatId" isRequare="true" />
+            <params name="flagId" />
+            <params name="backToPrev" />
+        </path>
+
+        <path name="" host="messageProvider" routerPath="/openGroupChatActivityByNo" scheme="toon">
+            <params name="myCardNo" cardType="1" isRequare="true" />
+            <params name="groupChatId" isRequare="true" />
+            <params name="flagId" />
+            <params name="backToPrev" />
+        </path>
+        <path name="/create" host="messageProvider" routerPath="/createGroupChat" scheme="toon">
+            <params name="groupName" />
+            <params name="title" />
+            <params name="members" />
+            <params name="flagId" />
+            <params name="createFeedId" cardType="-1" />
+            <params name="requestCode" value="10028" />
+            <params name="feedId" />
+            <params name="userId" />
+            <params name="name" />
+            <params name="headImage" />
+        </path>
+
+        <path name="/joinMyself" host="messageProvider" routerPath="/joinGroupChat" scheme="toon">
+            <params name="groupId" />
+            <params name="userId" />
+            <params name="title" />
+            <params name="headImage" />
+            <params name="flagId" />
+            <params name="feedId" cardType="-1" />
+            <params name="name" />
+            <params name="operatorFeedId" />
+            <params name="requestCode" value="10029" />
+        </path>
+    </module>
+    <!--二维码-->
+    <module name="qrcode">
+        <path name="/scan" host="scanProvider" isFinish="false" routerPath="/openScan"
+            scheme="toon">
+            <params name="handleResult" value="0" />
+            <params name="backTitle" />
+            <params name="message" />
+            <params name="requestCode" value="2000" />
+            <params name="flagId" />
+        </path>
+        <path name="/show" host="scanProvider" routerPath="/openQRCodeActivity" scheme="toon">
+            <params name="feedId" cardType="-1" isRequare="true" />
+            <params name="flagId" />
+        </path>
+
+        <path name="/show" host="scanProvider" routerPath="/openQrCodeByCardNoOrGroupNo"
+            scheme="toon">
+            <params name="cardNo" cardType="1" isRequare="true" realName="feedId" />
+            <params name="flagId" />
+        </path>
+
+        <path name="/show" host="scanProvider" routerPath="/openQrCodeByCardNoOrGroupNo"
+            scheme="toon">
+            <params name="groupNo" cardType="2" isRequare="true" realName="feedId" />
+            <params name="flagId" />
+        </path>
+        <path name="/scanToLogin" host="scanProvider" routerPath="/openScanToLoginActivity"
+            scheme="toon">
+            <params name="qrCodeKey" isRequare="true" />
+            <params name="flagId" />
+        </path>
+    </module>
+    <!--通知中心-->
+    <module name="notify">
+        <path name="/main" host="mainProvider" routerPath="/openMainActivityForFeedId"
+            scheme="toon">
+            <params name="index" value="0" />
+            <params name="feedId" value="" />
+            <params name="flagId" />
+            <params name="cardType" value="" />
+        </path>
+
+        <!--打开通知消息，目前没有一个可以只根据ID打开的,还需要一个名字-->
+        <path name="/catalog" host="messageProvider" routerPath="/openCatalogShell" scheme="toon">
+            <params name="appId" isRequare="true" />
+            <params name="flagId" />
+        </path>
+    </module>
+    <!--通讯录-->
+    <module name="contact">
+        <!--选择好友，选择不了-->
+        <path name="/friends" host="contactProvider" routerPath="/openContactSelectFriend"
+            scheme="toon">
+            <params name="feedId" cardType="-1" isRequare="true" />
+            <params name="title" value="选择好友" />
+            <params name="backTitle" value="" />
+            <params name="flagId" />
+            <params name="isSingle" value="true" />
+            <params name="requestCode" value="10020" />
+
+        </path>
+
+        <path name="/friends" host="contactProvider" routerPath="/openContactSelectFriendByCardNo"
+            scheme="toon">
+            <params name="cardNo" cardType="1" isRequare="true" />
+            <params name="title" value="选择好友" />
+            <params name="flagId" />
+            <params name="requestCode" value="10020" />
+
+        </path>
+
+        <path name="/colleagues" host="companyContactProvider" routerPath="/openContactSelectColleague"
+            scheme="toon">
+            <params name="orgId" realName="colleagueId" />
+            <params name="flagId" />
+        </path>
+
+        <path name="/colleagues" host="companyContactProvider" routerPath="/openContactSelectColleague"
+            scheme="toon">
+            <params name="feedId" realName="colleagueId" />
+            <params name="flagId" />
+        </path>
+
+        <path name="/colleagues" host="companyContactProvider" routerPath="/openContactSelectColleague"
+            scheme="toon">
+            <params name="cardNo" cardType="1" realName="colleagueId" />
+            <params name="flagId" />
+        </path>
+
+
+    </module>
+    <!--rss模块-->
+    <module name="rss">
+        <path name="/rssComment" host="trendsProvider" routerPath="/openCommentActivity"
+            scheme="toon">
+            <params name="rssId" isRequare="true" />
+            <params name="flagId" />
+            <params name="feedId" cardType="-1" isRequare="true" />
+        </path>
+    </module>
+    <!--用户模块-->
+    <module name="user">
+        <path name="/map" host="mapProvider" routerPath="/openMapShow" scheme="toon">
+            <params name="latitude" realName="lat" />
+            <params name="longitude" realName="lon" />
+            <params name="flagId" />
+        </path>
+    </module>
+    <!--打开闪通-->
+    <module name="toonflash">
+        <path name="/showUserMainView" host="doorguardProvider"
+            routerPath="/openDoorGuardMainActivity" scheme="toon" />
+
+
+        <!--当用户需要使用门禁管理功能时，业务方调用toon协议进入门禁管理页面 20180315-->
+        <!--toon://toonflash/doorgrandSet?params={"flagId": “1210745780625”;"args":{}}; -->
+        <path name="/doorgrandSet" host="doorguardProvider"
+            routerPath="/openDoorGuard" isOpenParamsFlag="true" scheme="toon">
+            <params name="flagId" />
+            <params name="args" />
+            <params name="requestCode" value="27009" />
+        </path>
+
+        <!--进入闪通管理页面 20180315-->
+        <!--toon://toonflash/toonflashSet?params={"flagId": “1210745780625”;"args":{}};-->
+        <path name="/toonflashSet" host="beaconProvider"
+            routerPath="/openBeacon" isOpenParamsFlag="true" scheme="toon">
+            <params name="flagId" />
+            <params name="args" />
+            <params name="requestCode" value="27012" />
+        </path>
+
+        <!--调用toon协议进入摇一摇页面-->
+        <!--toon://toonflash/shakeByShake?params={"flagId": “1210745780625”;"args":{}};-->
+        <path name="/shakeByShake" host="beaconProvider"
+            routerPath="/openBeaconShakeShakeActivity" isOpenParamsFlag="true" scheme="toon">
+            <params name="flagId" />
+            <params name="args" />
+            <params name="requestCode" value="27013" />
+        </path>
+
+        <!--toon协议进入贴一贴页面-->
+        <!--toon://toonflash/nearByNear?params={"flagId": “1210745780625”;"args":{}};-->
+        <path name="/nearByNear" host="beaconProvider"
+            routerPath="/openBeaconTouchTouchActivity" isOpenParamsFlag="true" scheme="toon">
+            <params name="flagId" />
+            <params name="args" />
+            <params name="requestCode" value="27014" />
+        </path>
+
+        <!--toon协议用户报修，管理员通知收到消息，点击后跳转到对应报修同一设备的记录列表-->
+        <!--toon://toonflash/repairRecord?params={"lockId":"1851167904831441","sendTime":"1520932823937","flagId":"1520932823937"}-->
+        <path name="/repairRecord" host="doorguardProvider"
+            routerPath="/openLockRepairDetail" isOpenParamsFlag="true" scheme="toon">
+            <params name="flagId" />
+            <params name="sendTime" isRequare="true" />
+            <params name="lockId" isRequare="true" />
+            <params name="requestCode" value="27016" />
+        </path>
+
+    </module>
+
+    <!--mwap模块-->
+    <module name="mwap">
+        <path name="/screenorientation" host="mwapProvider" routerPath="/changeScreenOrientation"
+            scheme="toon">
+            <params name="orientation" isRequare="true" />
+            <params name="flagId" />
+        </path>
+        <path name="/window" host="mwapProvider" routerPath="/handleWindow" scheme="toon">
+            <params name="functionType" isRequare="true" />
+            <params name="flagId" />
+        </path>
+        <path name="/vibrate" host="mwapProvider" routerPath="/handleVibrate" scheme="toon">
+            <params name="flagId" />
+        </path>
+        <path name="/gps" host="mwapProvider" routerPath="/handleGps" scheme="toon">
+            <params name="flagId" />
+            <params name="functionType" isRequare="true" />
+        </path>
+        <path name="/network" host="mwapProvider" routerPath="/handleNetwork" scheme="toon">
+            <params name="flagId" />
+        </path>
+        <path name="/root" host="mwapProvider" routerPath="/handleRoot" scheme="toon" />
+        <path name="/clipboard" host="mwapProvider" routerPath="/handleClipboard" scheme="toon">
+            <params name="content" isRequare="true" />
+            <params name="flagId" />
+        </path>
+        <path name="/checkoutPayCash" host="mwapProvider" routerPath="/handleCheckoutPayCash"
+            scheme="toon">
+            <params name="flagId" isRequare="true" />
+            <params name="merNo" isRequare="true" />
+            <params name="txAmount" isRequare="true" />
+            <params name="outOrderNo" isRequare="true" />
+            <params name="body" isRequare="true" />
+            <params name="subject" isRequare="true" />
+            <params name="txTime" isRequare="true" />
+            <params name="userVcard" isRequare="true" />
+
+        </path>
+        <path name="/map" host="mwapProvider" routerPath="/handleMap" scheme="toon">
+            <params name="flagId" />
+            <params name="latitude" value="-1" />
+            <params name="longitude" value="-1" />
+        </path>
+        <path name="/photo" host="mwapProvider" routerPath="/handlePhone" scheme="toon">
+            <params name="nameSpace" />
+            <params name="aspectX" value="1" /><!--默认宽高比为1:1-->
+            <params name="aspectY" value="1" />
+            <params name="xLength" />
+            <params name="yLength" />
+            <params name="type" value="0" /><!--默认裁剪-->
+            <params name="ratio" />
+            <params name="functionType" isRequare="true" />
+            <params name="flagId" />
+            <params name="maxCount" value="9" />
+            <params name="filterMimeType" />
+        </path>
+
+    </module>
+
+    <module name="frame">
+        <path name="" host="frameProvider" routerPath="/openFrameByFeedId" scheme="toon">
+            <params name="feedId" cardType="-1" isRequare="true" />
+            <params name="myFeedId" cardType="-1" />
+            <params name="backTitle" value="" />
+            <params name="flagId" />
+        </path>
+        <path name="" host="frameProvider" routerPath="/openFrameByFeedId" scheme="toon">
+            <params name="cardNo" cardType="1" isRequare="true" realName="feedId" />
+            <params name="myCardNo" cardType="1" realName="myFeedId" />
+            <params name="backTitle" value="" />
+            <params name="flagId" />
+        </path>
+        <path name="" host="frameProvider" routerPath="/openFrameByFeedId" scheme="toon">
+            <params name="groupNo" cardType="2" isRequare="true" realName="feedId" />
+            <params name="myCardNo" cardType="1" realName="myFeedId" />
+            <params name="backTitle" value="" />
+            <params name="flagId" />
+        </path>
+        <!--sj add 20180124-->
+        <path name="" host="frameProvider" isOpenParamsFlag="true"
+            routerPath="/openFrameByFeedId" scheme="toon">
+            <params name="feedId" cardType="-1" isRequare="true" />
+            <params name="myFeedId" />
+            <params name="operatorFeedId" />
+            <params name="userId" />
+            <params name="backTitle" value="" />
+            <params name="flagId" />
+        </path>
+        <path name="" host="frameProvider" routerPath="/openFrameWithCode" scheme="toon">
+            <params name="code" isRequare="true" />
+            <params name="flagId" />
+            <params name="cardtype" />
+        </path>
+    </module>
+
+    <!--推荐-->
+    <module name="recommend">
+        <path name="" host="recommendProvider" routerPath="/openRecommendHomeActivity"
+            scheme="toon">
+            <params name="aspectType" isRequare="true" />
+            <params name="instanceId" isRequare="true" />
+            <params name="appName" isRequare="true" />
+            <params name="flagId" />
+            <params name="visitFeedId" cardType="-1" isRequare="true" />
+            <params name="beVisitFeedId" cardType="-1" isRequare="true" />
+        </path>
+    </module>
+
+    <!--发现-->
+    <module name="discovery">
+        <path name="/around" host="roundProvider" routerPath="/openVicinityActivityForH5"
+            scheme="toon">
+            <params name="coordinate" isRequare="true" />
+            <params name="viewType" isRequare="true" />
+            <params name="title" />
+            <params name="flagId" />
+            <params name="accessType" value="0" />
+            <params name="requestCode" value="10023" />
+        </path>
+
+        <!--发现  群组-->
+        <!--toon://discovery/group-->
+        <path name="/group" host="discoveryProvider" routerPath="/openDiscoveryGroupActivity"
+            scheme="toon" />
+    </module>
+
+    <!--推荐朋友-->
+    <module name="recommendFriends">
+        <path name="/recommendFriend" host="cardProvider" routerPath="/recommendFriend"
+            scheme="toon">
+            <params name="myFeedId" cardType="-1" isRequare="true" realName="feedId" />
+            <params name="flagId" />
+        </path>
+    </module>
+
+
+    <!--群组-->
+    <module name="group">
+        <path name="/createGroup" host="forumProvider" routerPath="/openCreateForumActivityFromH5"
+            scheme="toon">
+            <params name="userId" isRequare="true" />
+            <params name="cardFeedId" cardType="-1" isRequare="true" realName="createFeedId" />
+            <params name="broadcastCategory" />
+            <params name="name" realName="groupName" />
+            <params name="spreadTitle" realName="groupDesc" />
+            <params name="groupLogo" realName="groupAvatar" />
+            <params name="enrollType" />
+            <params name="isSpecifyLocation" />
+            <params name="address" />
+            <params name="lat" />
+            <params name="lng" />
+            <params name="memberListString" />
+            <params name="requestCode" value="10024" />
+            <params name="backgroundUrl" />
+            <params name="flagId" />
+        </path>
+
+        <path name="/setGroup" host="forumProvider" routerPath="/openGroupSettingForH5"
+            scheme="toon">
+            <params name="userId" isRequare="true" />
+            <params name="vFeedId" cardType="-1" isRequare="true" />
+            <params name="sFeedId" cardType="-1" isRequare="true" />
+            <params name="flagId" />
+            <params name="requestCode" value="10026" />
+        </path>
+
+        <path name="/groupContentDetail" host="forumProvider" routerPath="/openRichDetailActivity"
+            scheme="toon">
+            <params name="contentId" isRequare="true" />
+            <params name="forumId" isRequare="true" />
+            <params name="feedId" isRequare="true" />
+            <params name="visitType" isRequare="true" />
+            <params name="requestCode" isRequare="true" />
+            <params name="flagId" />
+            <params name="operatorFeedId" />
+        </path>
+
+        <path name="/groupContentDetail" host="forumProvider" routerPath="/openRichDetailActivity_2"
+            scheme="toon">
+            <params name="code" isRequare="true" />
+            <params name="cardtype" />
+            <params name="flagId" />
+        </path>
+
+        <path name="/discovery" host="forumFeedProvider" routerPath="/toForumRelationActivity"
+            scheme="toon">
+            <params name="index" isRequare="true" realName="pageIndex" />
+            <params name="feedId" realName="visitFeedId" />
+        </path>
+
+        <path name="/groupMain" host="frameProvider" isOpenParamsFlag="true"
+            routerPath="/openFrameByFeedId" scheme="toon">
+            <params name="groupId" isRequare="true" cardType="-1" realName="feedId" />
+            <params name="operatorFeedId"/>
+            <params name="cardFeedId" cardType="-1" realName="myFeedId" />
+            <params name="userId"/>
+            <params name="flagId" />
+        </path>
+    </module>
+
+    <!--支付平台现金收银台-->
+    <module name="toonpay">
+        <path name="/checkoutPayCash" host="toonPayProvider"
+            routerPath="/openWalletCashiersActivity" scheme="toon">
+            <params name="args" isRequare="true" realName="buyParams" />
+            <params name="flagId" />
+            <params name="requestCode" value="10027" />
+        </path>
+
+        <path name="/openMobileRecharge" host="toonPayProvider" routerPath="/openMobileRecharge"
+            scheme="toon">
+        </path>
+
+        <!--打开钱包首页页面 20180315 -->
+        <!--toon://toonpay/wallet?params={"flagId": “12345”;"args":{}};-->
+        <path name="/wallet" host="toonPayProvider" routerPath="/wallet"
+            isOpenParamsFlag="true" scheme="toon">
+            <params name="args" />
+            <params name="flagId" />
+            <params name="requestCode" value="27010" />
+        </path>
+
+    </module>
+
+    <module name="luckymoney">
+        <path name="/unpack" host="toonPayProvider" routerPath="/openLuckyMoneyStayOpenActivity"
+            scheme="toon">
+            <params name="fromFeedId" cardType="-1" isRequare="true" />
+            <params name="operatorFeedId" cardType="-1" isRequare="true" />
+            <params name="redPacketId" isRequare="true" />
+            <params name="remark" />
+            <params name="flagId" />
+            <params name="recvType" isRequare="true" />
+        </path>
+    </module>
+    <module name="trends">
+        <path name="/detail" host="trendsProvider" routerPath="/openRichDetailActivity"
+            scheme="toon">
+            <params name="rssId" isRequare="true" />
+            <params name="visitFeedId" cardType="-1" isRequare="true" />
+            <params name="shareFeedId" cardType="-1" />
+            <params name="trendsId" />
+            <params name="showType" />
+            <params name="anchor" />
+            <params name="flagId" />
+            <params name="requestCode" value="10030" />
+            <params name="operatorFeedId" />
+        </path>
+
+        <path name="/editor" host="trendsProvider" routerPath="/openRichEditActivity" scheme="toon">
+            <params name="title" />
+            <params name="text" />
+            <params name="image" />
+            <params name="map" />
+            <params name="voice" />
+            <params name="video" />
+            <params name="cloud" />
+            <params name="locationEnable" />
+            <params name="spreadEnable" />
+            <params name="repeiptEnable" />
+            <params name="flagId" />
+            <params name="requestCode" value="10031" />
+        </path>
+        <path name="/detail" host="trendsProvider" routerPath="/openRichDetailActivity_2"
+            scheme="toon">
+            <params name="code" isRequare="true" />
+            <params name="flagId" />
+            <params name="cardtype" />
+        </path>
+    </module>
+
+    <!--话题 add 20170828 -->
+    <module name="topic">
+        <!--toon://topic/articleDetail-->
+        <path name="/articleDetail" host="trendsProvider"
+            routerPath="/openTopicArticleDetailActivity" scheme="toon">
+            <params name="cId" isRequare="true" />
+            <params name="operatorFeedId" />
+            <params name="code" isRequare="true" />
+            <params name="cardtype" />
+        </path>
+    </module>
+
+    <!--KFZPT-585 群收款功能下线 20171225-->
+    <!--<module name="gathering">-->
+    <!--&lt;!&ndash;支付模块-群收款 2017/4/5&ndash;&gt;-->
+    <!--<path name="/unpack" host="toonPayProvider" routerPath="/openGatheringStateActivity"-->
+    <!--scheme="toon">-->
+    <!--<params name="billId" isRequare="true" />-->
+    <!--<params name="flagId" />-->
+    <!--<params name="operatorFeedId" cardType="-1" isRequare="true" />-->
+    <!--</path>-->
+    <!--&lt;!&ndash;支付模块-群收款停止收款 2017/4/11&ndash;&gt;-->
+    <!--<path name="/stop" host="toonPayProvider" routerPath="/openGatheringStopActivity"-->
+    <!--scheme="toon">-->
+    <!--<params name="billId" isRequare="true" />-->
+    <!--<params name="flagId" />-->
+    <!--<params name="operatorFeedId" cardType="-1" isRequare="true" />-->
+    <!--</path>-->
+    <!--</module>-->
+
+    <!--手机通信录模块-打开手机通讯录详情页 2017/9/14-->
+    <module name="addressbook">
+        <path name="/frame" host="addressBookProvider" routerPath="/openAddressBookDetailFromIm" scheme="toon">
+            <params name="name" isRequare="true"/>
+            <params name="phoneNumber" isRequare="true"/>
+            <params name="operatorFeedId" />
+        </path>
+    </module>
+
+    <module name="contentGroup">
+        <!--打开小组编辑器 20171218-->
+        <path name="/editor" host="forumContentProvider" isOpenParamsFlag="true"
+            routerPath="/openForumRichEditActivityByAgreement" scheme="toon">
+            <params name="feedId" isRequare="true" />
+            <params name="groupFeedId" isRequare="true" />
+            <params name="classifyId" />
+            <params name="flagId" />
+            <params name="requestCode" value="26001" />
+        </path>
+        <!--打开小组分类聚合页 20171218 -->
+        <path name="/classifyTogether" host="forumContentProvider" isOpenParamsFlag="true"
+            routerPath="/groupTopicTypeActivity" scheme="toon">
+            <params name="feedId" />
+            <params name="groupFeedId" isRequare="true" />
+            <params name="classifyId" isRequare="true" />
+            <params name="classifyName" isRequare="true" />
+            <params name="flagId" />
+            <params name="sourceChannel" value="-1" isRequare="true" />
+            <params name="requestCode" value="26002" />
+        </path>
+    </module>
+
+    <!--设置页面  20180315-->
+    <module name="worksetting">
+        <!--系统设置-->
+        <path name="/setting" scheme="toon" host="userProvider"
+            routerPath="/openSetting" isOpenParamsFlag="true">
+            <params name="flagId" />
+            <params name="requestCode" value="27001" />
+        </path>
+
+        <!--账号与安全-->
+        <path name="/openPersonalAccount" scheme="toon" host="userProvider"
+            routerPath="/openPersonalAccount" isOpenParamsFlag="true">
+            <params name="flagId" />
+            <params name="requestCode" value="27002" />
+        </path>
+
+        <!--通用设置-->
+        <path name="/openCommonSetting" scheme="toon" host="userProvider"
+            routerPath="/openCommonSetting" isOpenParamsFlag="true">
+            <params name="flagId" />
+            <params name="requestCode" value="27003" />
+        </path>
+
+        <!--新消息通知-->
+        <path name="/openNewMessageSet" scheme="toon" host="userProvider"
+            routerPath="/openNewMessageSet" isOpenParamsFlag="true">
+            <params name="flagId" />
+            <params name="requestCode" value="27004" />
+        </path>
+
+        <!--帮助与反馈条目-->
+        <path name="/openPersonalFeedback" scheme="toon" host="userProvider"
+            routerPath="/openPersonalFeedback" isOpenParamsFlag="true">
+            <params name="flagId" />
+            <params name="requestCode" value="27005" />
+        </path>
+
+        <!--在线客服-->
+        <path name="/openCustomerService" scheme="toon" host="userProvider"
+            routerPath="/openPhoneNum" isOpenParamsFlag="true">
+            <params name="flagId" />
+            <params name="tel" />
+            <params name="requestCode" value="27006" />
+        </path>
+
+        <!--关于toon-->
+        <path name="/openAboutToon" scheme="toon" host="userProvider"
+            routerPath="/openAboutToon" isOpenParamsFlag="true">
+            <params name="flagId" />
+            <params name="requestCode" value="27007" />
+        </path>
+
+        <!--系统设置页点击字体大小条目使用toon协议打开字体大小设置页面-->
+        <!--toon://worksetting/openSetFontSize-->
+        <path name="/openSetFontSize" scheme="toon" host="userProvider"
+            routerPath="/openSetFontSize" isOpenParamsFlag="true">
+            <params name="flagId" />
+            <params name="requestCode" value="27015" />
+        </path>
+    </module>
+
+    <!-- 20180315-->
+    <module name="customerservices">
+        <!--在系统设置里 ，点击在线客服条目，调用通协议，打开在线客服页面-->
+        <path name="/open" scheme="toon" host="mainProvider"
+            routerPath="/initCustomServiceWithAccessId" isOpenParamsFlag="true">
+            <params name="flagId" />
+            <params name="accessId" isRequare="true" />
+            <params name="requestCode" value="27008" />
+        </path>
+    </module>
+
+    <!--toon://collections/list 接口，提供第三方应用调用toon协议打开收藏列表 20180315-->
+    <!-- 20180315-->
+    <module name="collections">
+        <!--在系统设置里 ，点击在线客服条目，调用通协议，打开在线客服页面-->
+        <path name="/list" scheme="toon" host="collectionProvider"
+            routerPath="/openMyCollectionActivity" isOpenParamsFlag="true">
+            <params name="flagId" />
+            <params name="params" />
+            <params name="requestCode" value="27011" />
+        </path>
+    </module>
+
+    <module name="organization">
+        <!--toon://organization/openCompanyManage
+            IM或者H5落地页等第三方用toon协议向打开公司管理界面 20180322-->
+        <path name="/openCompanyManage" scheme="toon" host="companyProvider"
+            routerPath="/openQuickLoginManagerActivity" isOpenParamsFlag="true">
+            <params name="flagId" />
+            <params name="requestCode" value="27017" />
+        </path>
+    </module>
+
+    <module name="tuser">
+        <!-- 调起我的办事-->
+        <path name="/openSystemSetting" host="TUserProvider" routerPath="/openSystemSetting" scheme="toon">
+        </path>
+        <path name="/openGeneralSetting" host="TUserProvider" routerPath="/openCommonSetting" scheme="toon">
+        </path>
+        <path name="/openHelpAndFeedback" host="TUserProvider" routerPath="/openHelpAndFeedBack" scheme="toon">
+        </path>
+        <path name="/openAbout" host="TUserProvider" routerPath="/openAboutToon" scheme="toon">
+        </path>
+        <path name="/callKeFuPhone" host="TUserProvider" routerPath="/openPhoneNum" scheme="toon">
+            <params name="tel" />
+        </path>
+    </module>
+
+    <!--以下为e福州 自加的toon协议-->
+    <module name="bjxinyong">
+        <path name="/userRegister" host="bjxinyong" routerPath="/userRegister" scheme="toon">
+            <params name="isEnter"></params>
+            <params name="flagId"></params>
+        </path>
+
+
+        <!-- 查询信用报告-->
+        <path name="/getDecReport" host="bjxinyong" routerPath="/getDecReport" scheme="toon">
+            <params name="msspID"></params>
+            <params name="businessToken"></params>
+            <params name="isEnter"></params>
+            <params name="flagId"></params>
+        </path>
+
+
+        <!-- 申请信用报告-->
+        <path name="/reqEncReport" host="bjxinyong" routerPath="/reqEncReport" scheme="toon">
+            <params name="msspID"></params>
+            <params name="businessToken"></params>
+            <params name="isEnter"></params>
+            <params name="flagId"></params>
+        </path>
+
+        <!-- 关闭页面-->
+        <path name="/finishpage" host="bjxinyong" routerPath="/finishpage" scheme="toon">
+            <params name="msspID"></params>
+            <params name="businessToken"></params>
+            <params name="isEnter"></params>
+            <params name="flagId"></params>
+        </path>
+    </module>
+
+    <module name="bjrealname">
+
+        <path name="/bjRealNameGrade" host="bjrealname" routerPath="/bjRealNameGrade"
+            scheme="toon" />
+
+        <!-- 实名认证弹出选择框-->
+        <path name="/selectimage" host="bjrealname" routerPath="/selectimage" scheme="toon">
+            <params name="flagId"></params>
+            <params name="aspectX"></params>
+            <params name="aspectY"></params>
+            <params name="filterMimeType"></params>
+            <params name="ratio"></params>
+            <params name="maxCount"></params>
+            <params name="xLength"></params>
+            <params name="functionType"></params>
+            <params name="nameSpace"></params>
+            <params name="type"></params>
+            <params name="yLength"></params>
+        </path>
+
+        <!-- 实名认证拍照-->
+        <path name="/bjRealNameTakePhoto" host="bjrealname" routerPath="/bjRealNameTakePhoto"
+            scheme="toon">
+            <params name="flagId"></params>
+            <params name="aspectX"></params>
+            <params name="aspectY"></params>
+            <params name="filterMimeType"></params>
+            <params name="ratio"></params>
+            <params name="maxCount"></params>
+            <params name="xLength"></params>
+            <params name="functionType"></params>
+            <params name="nameSpace"></params>
+            <params name="type"></params>
+            <params name="yLength"></params>
+        </path>
+
+        <path name="/authenCertificatedVC" host="bjrealname" routerPath="/authenCertificatedVC" scheme="toon" />
+
+    </module>
+    <module name="wifi">
+        <path name="/beijing" host="wifi" routerPath="/beijing" scheme="toon">
+            <params name="flagId" />
+        </path>
+    </module>
+    <module name="virtualcard">
+        <path name="/generateQRCode" host="virtualcard" routerPath="/generateQRCode"
+            scheme="toon" />
+        <params name="flagId"></params>
+        <params name="extUserId"></params>
+        <params name="cardId"></params>
+        <params name="zcCardType"></params>
+        <params name="certType"></params>
+        <params name="cardTitle"></params>
+        <params name="listener"></params>
+    </module>
+    <module name="ecard">
+        <path name="/oauthCallback" host="ecard" routerPath="/oauthCallback" scheme="toon">
+            <params name="flagId" />
+            <params name="token"></params>
+            <params name="showMask"></params>
+        </path>
+
+        <path name="/addCard" host="ecard" routerPath="/addCard" scheme="toon">
+            <params name="flagId" />
+            <params name="cardData" />
+        </path>
+    </module>
+
+    <!-- 福州一卡通 -->
+    <module name="bjcard">
+        <!-- 充值 -->
+        <path name="/pay" host="bjcard" routerPath="/pay" scheme="toon">
+            <params name="isEnter"></params>
+            <params name="flagId"></params>
+        </path>
+    </module>
+
+
+    <!--政务钱包-->
+    <module name="municipalWallet">
+        <!--打开充值-->
+        <path name="/recharge" code="1" host="municipalWallet" routerPath="/recharge" scheme="toon">
+            <params name="flagId"></params>
+            <params name="args" isRequare="true"></params>
+            <params name="requestCode" value="25000"></params>
+        </path>
+        <!--打开开具发票-->
+        <path name="/invoice" code="2" host="municipalWallet" routerPath="/invoice" scheme="toon">
+            <params name="flagId"></params>
+            <params name="args" isRequare="true"></params>
+            <params name="requestCode" value="25001"></params>
+        </path>
+        <!--打开交易记录-->
+        <path name="/tradeList" code="3" host="municipalWallet" routerPath="/tradeList"
+            scheme="toon">
+            <params name="flagId"></params>
+            <params name="args" isRequare="true"></params>
+            <params name="requestCode" value="25002"></params>
+        </path>
+        <!--打开二维码-->
+        <path name="/qrCode" code="4" host="municipalWallet" routerPath="/qrCode" scheme="toon">
+            <params name="flagId"></params>
+            <params name="args" isRequare="true"></params>
+            <params name="requestCode" value="25003"></params>
+        </path>
+        <!--打开交易详情-->
+        <path name="/tradeDetail" code="5" host="municipalWallet" routerPath="/tradeDetail"
+            scheme="toon">
+            <params name="flagId"></params>
+            <params name="args" isRequare="true"></params>
+            <params name="requestCode" value="25004"></params>
+        </path>
+        <path name="/authorizedbybus" code="6" host="municipalWallet" routerPath="/authorizedbybus"
+            scheme="toon">
+            <params name="url"></params>
+            <params name="requestCode" value="25005"></params>
+        </path>
+
+    </module>
+
+    <!--闽师专食堂钱包-->
+    <module name="minJianglWallet">
+        <!--打开交易记录-->
+        <path name="/tradeList" code="1" host="minJianglWallet" routerPath="/tradeList" scheme="toon">
+            <params name="flagId"></params>
+            <params name="args" isRequare="true"></params>
+            <params name="requestCode" value="26001"></params>
+        </path>
+        <!--打开二维码-->
+        <path name="/qrCode" code="2" host="minJianglWallet" routerPath="/qrCode" scheme="toon">
+            <params name="flagId"></params>
+            <params name="args" isRequare="true"></params>
+            <params name="requestCode" value="26002"></params>
+        </path>
+    </module>
+
+    <!-- 头条 -->
+    <module name="interact">
+        <!--跳转资讯正文-->
+        <path name="/news_detail" host="interact" routerPath="/news_detail" scheme="toon">
+            <params name="content_id" />
+        </path>
+        <!--跳转话题详情-->
+        <path name="/topic_detail" host="interact" routerPath="/topic_detail" scheme="toon">
+            <params name="content_id" />
+            <params name="title" />
+        </path>
+        <!--专题列表-->
+        <path name="/theme_list" host="interact" routerPath="/theme_list" scheme="toon">
+            <params name="content_id" />
+            <params name="title" />
+        </path>
+        <!--话题列表-->
+        <path name="/topic_list" host="interact" routerPath="/topic_list" scheme="toon"></path>
+    </module>
+
+    <!--打开客服-->
+
+
+    <!-- 打开需要认证等级的应用 clientId:appId-->
+    <module name="openAppWithAuthLevel">
+        <path name="/openApp" host="appCenter" routerPath="/openAppWithAuthLevel" scheme="toon">
+            <params name="jumpURL"></params>
+            <params name="authLevel"></params>
+        </path>
+    </module>
+
+    <!-- 调起数字峰会小程序 toon://efzdigitalactivity/showStartView -->
+    <!--<module name="efzdigitalactivity">-->
+    <!--<path name="/showStartView" host="digitalMeetingProvider" routerPath="/showStartView" scheme="toon">-->
+    <!--<params name="authLevel"></params>-->
+    <!--</path>-->
+    <!--</module>-->
+    <!-- 调起我的...-->
+    <module name="openmyitemswithauthLevel">
+        <!-- 调起我的办事-->
+        <path name="/openMyAffirs" host="WorkbenchProvider" routerPath="/openMyAffirs" scheme="toon">
+            <params name="authLevel"></params>
+        </path>
+        <!-- 调起我的账单-->
+        <path name="/openMyBills" host="WorkbenchProvider" routerPath="/openMyBills" scheme="toon">
+            <params name="authLevel"></params>
+        </path>
+
+    </module>
+
+
+    <module name="openappwithtitlename">
+        <path name="/openapp" host="WorkbenchProvider" routerPath="/openAppWithTitleName" scheme="toon">
+            <params name="titleName"></params>
+        </path>
+    </module>
+
+    <!-- 平安管家 后台定位 -->
+    <module name="efzbackgroundlocation">
+        <path name="/startLocation" host="CustomLocationProvider" routerPath="/startLocation" scheme="toon">
+        </path>
+        <path name="/getLocation" host="CustomLocationProvider" routerPath="/getLocation" scheme="toon">
+            <params name="flagId" />
+        </path>
+        <path name="/stopLocation" host="CustomLocationProvider" routerPath="/stopLocation" scheme="toon">
+        </path>
+    </module>
+
+    <module name="tnwebappui">
+        <path name="/apphome" host="tnwebappui" routerPath="/apphome" scheme="toon">
+        </path>
+    </module>
+
+    <module name="message">
+        <path name="/openNewMsgSet" host="message" routerPath="/openNewMsgSet" scheme="tmail">
+        </path>
+    </module>
+
+    <module name="accountService">
+        <path name="/openAccountManagerPage" host="accountService" routerPath="/openAccountManagerPage" scheme="toon">
+        </path>
+    </module>
+
+    <module name="customerservices">
+        <path name="/open" host="customerServicesProvider" routerPath="/initCustomServiceWithAccessId" scheme="toon">
+            <params name="accessId" isRequare="true" />
+        </path>
+    </module>
+
+
+</module-list>

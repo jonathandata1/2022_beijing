@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:id="@+id/activity_main" android:paddingLeft="@dimen/activity_horizontal_margin" android:paddingTop="@dimen/activity_vertical_margin" android:paddingRight="@dimen/activity_horizontal_margin" android:paddingBottom="@dimen/activity_vertical_margin" android:layout_width="match_parent" android:layout_height="match_parent">
+    <Button android:id="@+id/btn_button1" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="解压zip包"/>
+    <Button android:id="@+id/btn_button2" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="换肤"/>
+    <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <ImageView android:id="@+id/iv_1" android:background="@drawable/common_question_resolved_selected" android:layout_width="48dp" android:layout_height="48dp"/>
+        <ImageView android:id="@+id/iv_2" android:background="@drawable/common_question_resolved_selected" android:layout_width="48dp" android:layout_height="48dp"/>
+        <ImageView android:id="@+id/iv_3" android:background="@drawable/common_question_resolved_selected" android:layout_width="48dp" android:layout_height="48dp"/>
+        <ImageView android:id="@+id/iv_4" android:background="@drawable/common_question_resolved_selected" android:layout_width="48dp" android:layout_height="48dp"/>
+    </LinearLayout>
+    <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <ImageView android:id="@+id/iv_5" android:background="@drawable/common_question_resolved_selected" android:layout_width="48dp" android:layout_height="48dp"/>
+        <ImageView android:id="@+id/iv_6" android:background="@drawable/common_question_resolved_selected" android:layout_width="48dp" android:layout_height="48dp"/>
+        <ImageView android:id="@+id/iv_7" android:background="@drawable/common_question_resolved_selected" android:layout_width="48dp" android:layout_height="48dp"/>
+        <ImageView android:id="@+id/iv_8" android:background="@drawable/common_question_resolved_selected" android:layout_width="48dp" android:layout_height="48dp"/>
+    </LinearLayout>
+</LinearLayout>

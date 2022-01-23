@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:background="#ffffff" android:layout_width="match_parent" android:layout_height="wrap_content" android:minHeight="100dp">
+    <ListView android:id="@+id/lv_menus" android:scrollbars="none" android:layout_width="match_parent" android:layout_height="0px" android:listSelector="@color/transparent" android:cacheColorHint="@color/transparent" android:divider="@color/c6" android:dividerHeight="@dimen/divider_high" android:layout_weight="1"/>
+    <View android:background="#e1e1e1" android:layout_width="match_parent" android:layout_height="8dp"/>
+    <Button android:textSize="17sp" android:textColor="#007aff" android:layout_gravity="center" android:id="@+id/btn_cancle" android:background="@color/white" android:layout_width="match_parent" android:layout_height="50dp" android:text="@string/cancel"/>
+</LinearLayout>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <group android:id="@id/tools" android:checkableBehavior="single">
+        <item android:icon="@drawable/APKTOOL_DUMMY_47c" android:id="@id/nav_net_test" android:title="@string/nav_net_test" />
+        <item android:icon="@drawable/APKTOOL_DUMMY_486" android:id="@id/nav_share_log" android:title="@string/nav_send_log" />
+    </group>
+    <group android:id="@id/settings" android:checkableBehavior="single">
+        <item android:icon="@drawable/APKTOOL_DUMMY_484" android:id="@id/nav_settings" android:title="@string/nav_settings" />
+        <item android:icon="@drawable/APKTOOL_DUMMY_468" android:id="@id/nav_about" android:title="@string/nav_about" />
+    </group>
+</menu>

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:gravity="bottom" android:orientation="vertical" android:id="@+id/layout_dim" android:background="#80000000" android:visibility="gone" android:clickable="true" android:layout_width="match_parent" android:layout_height="match_parent" android:alpha="1">
+    <LinearLayout android:orientation="vertical" android:id="@+id/container_menu" android:background="@color/white" android:paddingLeft="@dimen/dimen_10" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <TextView android:textSize="@dimen/dimen_14" android:textColor="@color/black" android:gravity="center_vertical" android:id="@+id/btn_file_tmail" android:paddingLeft="10dp" android:clickable="true" android:layout_width="match_parent" android:layout_height="40dp" android:text="@string/tmail_files"/>
+        <View android:id="@+id/typeline" android:background="@color/divider" android:layout_width="match_parent" android:layout_height="@dimen/res_0x7f070190_dimen_0_3"/>
+        <TextView android:textSize="@dimen/dimen_14" android:textColor="@color/black" android:gravity="center_vertical" android:id="@+id/btn_file_ext" android:paddingLeft="10dp" android:clickable="true" android:layout_width="match_parent" android:layout_height="40dp" android:text="@string/tmail_phone_storage"/>
+    </LinearLayout>
+</LinearLayout>

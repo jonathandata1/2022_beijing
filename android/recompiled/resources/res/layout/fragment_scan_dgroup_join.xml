@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:id="@+id/ll_qrcode_container" android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:orientation="vertical" android:id="@+id/ll_qrcode_group" android:paddingBottom="@dimen/dimen_30" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <ImageView android:id="@+id/img_back" android:paddingLeft="@dimen/dimen_12" android:paddingTop="@dimen/dimen_10" android:paddingRight="@dimen/dimen_12" android:paddingBottom="@dimen/dimen_10" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+        <ImageView android:layout_gravity="center_horizontal" android:layout_width="@dimen/dimen_80" android:layout_height="@dimen/dimen_80" android:layout_marginTop="@dimen/dimen_20" android:src="@drawable/group_d_avatar"/>
+        <TextView android:textSize="@dimen/dimen_20" android:layout_gravity="center_horizontal" android:id="@+id/tv_group_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dimen_15" android:layout_marginTop="@dimen/dimen_20" android:layout_marginRight="@dimen/dimen_15"/>
+        <TextView android:textSize="@dimen/dimen_16" android:layout_gravity="center_horizontal" android:id="@+id/tv_group_member_count" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dimen_8"/>
+        <View android:id="@+id/view_choose_tmail_diver" android:layout_width="match_parent" android:layout_height="@dimen/res_0x7f070190_dimen_0_3" android:layout_marginLeft="@dimen/dimen_16" android:layout_marginTop="@dimen/dimen_50" android:layout_marginRight="@dimen/dimen_16"/>
+        <TextView android:textSize="@dimen/dimen_14" android:layout_gravity="center" android:id="@+id/tv_choose_tmail_desc" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dimen_30" android:text="@string/qr_choose_tmail"/>
+        <LinearLayout android:layout_gravity="center_horizontal" android:orientation="horizontal" android:id="@+id/ll_tv_tmail" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dimen_8">
+            <TextView android:textSize="@dimen/dimen_18" android:id="@+id/tv_tmail" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dimen_15" android:layout_marginRight="@dimen/dimen_15"/>
+            <ImageView android:layout_gravity="center_vertical" android:id="@+id/img_triple_indicator" android:layout_width="@dimen/dimen_10" android:layout_height="@dimen/dimen_10" android:layout_marginLeft="@dimen/dimen_6" android:src="@drawable/popup_arrow" android:rotation="180"/>
+        </LinearLayout>
+    </LinearLayout>
+    <TextView android:textSize="@dimen/dimen_18" android:gravity="center" android:layout_gravity="center_horizontal" android:id="@+id/btn_join_group" android:background="@drawable/btn_invite_friend_bg" android:layout_width="@dimen/dimen_235" android:layout_height="@dimen/dimen_44" android:layout_marginTop="@dimen/dimen_50" android:text="@string/scan_group_join_group"/>
+</LinearLayout>

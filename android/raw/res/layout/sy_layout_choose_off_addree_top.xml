@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/sy_choose_addr_second_header" android:background="@color/white" android:paddingLeft="@dimen/dp_16" android:paddingTop="@dimen/dp_20" android:paddingBottom="@dimen/dp_17" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_below="@id/sy_choose_addr_driver_info"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:layout_width="@dimen/dp_7" android:layout_height="@dimen/dp_7" android:src="@drawable/base_dot_333333" />
+    <TextView android:textSize="12.0sp" android:textColor="@color/sy_v222222" android:id="@id/sy_choose_addr" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dp_8" />
+    <TextView android:textSize="12.0sp" android:textColor="@color/sy_v8a8d95" android:id="@id/sy_choose_addr_tip" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dp_11" android:layout_weight="1.0" />
+    <TextView android:textSize="12.0sp" android:textColor="@color/sy_v8a8d95" android:id="@id/sy_choose_addr_cancel" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/sy_str_cancel" android:paddingStart="@dimen/dp_10" android:paddingEnd="@dimen/dp_17" />
+</LinearLayout>

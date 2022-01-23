@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" android:background="@color/c5" android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:orientation="vertical" android:id="@+id/ll_content" android:layout_width="match_parent" android:layout_height="match_parent">
+        <LinearLayout android:orientation="horizontal" android:background="#fff8f0" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <ImageView android:layout_width="21dp" android:layout_height="22dp" android:layout_marginLeft="15dp" android:layout_marginTop="13dp" android:layout_marginBottom="10dp" android:src="@drawable/auth_tip_icon"/>
+            <TextView android:textSize="14dp" android:textColor="#333333" android:gravity="center_vertical" android:layout_gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5dp" android:text="@string/please_input_prompt"/>
+        </LinearLayout>
+        <LinearLayout android:orientation="vertical" android:background="#ffffff" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <View android:background="#dddee3" android:layout_width="match_parent" android:layout_height="0.5dp"/>
+            <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <TextView android:textSize="15dp" android:textColor="#000000" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="15dp" android:layout_marginTop="15dp" android:text="@string/real_name"/>
+                <EditText android:textSize="15dp" android:textColor="#000000" android:id="@+id/et_real_name" android:background="@null" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="15dp" android:layout_marginTop="15dp" android:layout_marginRight="15dp" android:hint="@string/auth_edit_name_hint" android:maxLines="1" android:singleLine="true" android:maxLength="15"/>
+            </LinearLayout>
+            <View android:background="#dddee3" android:layout_width="match_parent" android:layout_height="0.5dp" android:layout_marginLeft="15dp" android:layout_marginTop="14dp"/>
+            <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <TextView android:textSize="15dp" android:textColor="#000000" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="15dp" android:layout_marginTop="15dp" android:text="@string/auth_card_num"/>
+                <EditText android:textSize="15dp" android:textColor="#000000" android:id="@+id/et_identity_card" android:background="@null" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="15dp" android:layout_marginTop="15dp" android:layout_marginRight="15dp" android:hint="@string/auth_edit_idcard_hint" android:maxLines="1" android:maxLength="18" android:digits="0123456789xX"/>
+            </LinearLayout>
+            <View android:background="#dddee3" android:layout_width="match_parent" android:layout_height="0.5dp" android:layout_marginTop="14dp"/>
+        </LinearLayout>
+        <RelativeLayout android:id="@+id/id_number_hint_view" android:background="#f8f8fb" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dimen_16" android:layout_marginTop="@dimen/dimen_8" android:layout_marginRight="@dimen/dimen_16" android:layout_marginBottom="@dimen/dimen_8" android:text="@string/cert_bank_id_number_hint" android:layout_marginHorizontal="@dimen/dimen_16" android:layout_marginVertical="@dimen/dimen_8"/>
+        </RelativeLayout>
+        <TextView android:enabled="false" android:textSize="17dp" android:textColor="#ffffff" android:gravity="center" android:id="@+id/tv_submit" android:background="@drawable/verifyphonecode_sure_notenable_bg" android:paddingTop="14dp" android:paddingBottom="13dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="15dp" android:layout_marginTop="20dp" android:layout_marginRight="15dp" android:text="@string/confirm"/>
+        <RelativeLayout android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dimen_20" android:layout_marginRight="@dimen/dimen_15" android:layout_centerHorizontal="true">
+                <CheckBox android:layout_gravity="center_vertical" android:id="@+id/ck_user_agree_choose" android:background="@drawable/protocol_check_bg" android:visibility="gone" android:layout_width="@dimen/dimen_15" android:layout_height="@dimen/dimen_15" android:layout_marginTop="@dimen/dimen_1" android:button="@null"/>
+                <TextView android:textSize="@dimen/dimen_14" android:textColor="#8e8e93" android:id="@+id/tv_prompt" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dimen_3" android:text="@string/auth_agreement_content"/>
+            </LinearLayout>
+        </RelativeLayout>
+    </LinearLayout>
+    <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true">
+        <LinearLayout android:gravity="center_vertical" android:layout_gravity="center_horizontal" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <View android:background="#dddee3" android:layout_width="20dp" android:layout_height="3dp"/>
+            <View android:background="#dddee3" android:layout_width="3dp" android:layout_height="3dp" android:layout_marginLeft="3dp"/>
+            <TextView android:textSize="16dp" android:textColor="#8e8e93" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10dp" android:layout_marginRight="10dp" android:text="@string/auth_advantage"/>
+            <View android:background="#dddee3" android:layout_width="3dp" android:layout_height="3dp"/>
+            <View android:background="#dddee3" android:layout_width="20dp" android:layout_height="3dp" android:layout_marginLeft="3dp"/>
+        </LinearLayout>
+        <RelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="25dp" android:layout_marginBottom="50dp">
+            <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:id="@+id/ll_speedy" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerHorizontal="true">
+                <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/auth_speedy"/>
+                <TextView android:textSize="14dp" android:textColor="#acb3bf" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10dp" android:text="@string/convenience"/>
+            </LinearLayout>
+            <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:id="@+id/ll_safe" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="60dp" android:layout_toLeftOf="@+id/ll_speedy" android:layout_centerHorizontal="true">
+                <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/auth_safe"/>
+                <TextView android:textSize="14dp" android:textColor="#acb3bf" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10dp" android:text="@string/safe"/>
+            </LinearLayout>
+            <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:id="@+id/ll_exclusive" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="60dp" android:layout_toRightOf="@+id/ll_speedy" android:layout_centerHorizontal="true">
+                <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/auth_exclusive"/>
+                <TextView android:textSize="14dp" android:textColor="#acb3bf" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10dp" android:text="@string/only_have"/>
+            </LinearLayout>
+        </RelativeLayout>
+    </LinearLayout>
+    <com.systoon.toonauth.authentication.view.widget.MyKeyboardView android:layout_gravity="bottom" android:id="@+id/customKeyboard" android:background="#e6e6e6" android:focusable="true" android:focusableInTouchMode="true" android:layout_width="match_parent" android:layout_height="wrap_content" android:shadowRadius="0" android:layout_alignParentBottom="true" android:keyBackground="@drawable/bg_keyboard_btn" android:keyTextSize="28dp" android:labelTextSize="28dp" android:keyTextColor="#000000"/>
+</RelativeLayout>

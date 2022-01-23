@@ -1,0 +1,3 @@
+<?xml version="1.0" encoding="utf-8"?>
+<bitmap android:src="@drawable/cl_chat_btn_back_normal"
+  xmlns:android="http://schemas.android.com/apk/res/android" />

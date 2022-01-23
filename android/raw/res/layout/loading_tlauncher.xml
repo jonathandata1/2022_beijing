@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center" android:orientation="horizontal" android:background="@drawable/common_dialog_bg" android:layout_width="245.0dip" android:layout_height="76.0dip" android:layout_centerHorizontal="true" android:layout_centerVertical="true">
+        <com.systoon.phoenix.basic.view.dialog.MoveRoundView android:id="@id/loading_progress" android:layout_width="50.0dip" android:layout_height="50.0dip" />
+        <TextView android:textAppearance="?android:textAppearanceMedium" android:textSize="14.0sp" android:textStyle="bold" android:textColor="@color/cc20" android:gravity="center" android:id="@id/loading_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:text="@string/hard_loading" />
+    </LinearLayout>
+</RelativeLayout>

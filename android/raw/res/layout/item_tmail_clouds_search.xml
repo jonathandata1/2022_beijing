@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:clipChildren="false" android:clipToPadding="false" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dimen_20">
+        <RelativeLayout android:id="@id/rl_tmail_card_container" android:paddingRight="@dimen/dimen_16" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <com.msgseal.base.ui.AvatarView android:id="@id/group_avatar" android:layout_width="@dimen/dimen_46" android:layout_height="@dimen/dimen_46" android:layout_marginRight="@dimen/dimen_12" android:src="@drawable/default_head_person132" android:scaleType="fitCenter" android:layout_centerVertical="true" />
+            <LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginTop="@dimen/dimen_10" android:layout_marginBottom="@dimen/dimen_10" android:layout_toRightOf="@id/group_avatar">
+                <RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content">
+                    <TextView android:textSize="@dimen/dimen_13" android:textColor="@color/color_c5c5c5" android:ellipsize="end" android:gravity="bottom|center|left" android:id="@id/tv_tmail_search_time" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="1" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+                    <TextView android:textSize="@dimen/dimen_16" android:textColor="@color/color_222222" android:ellipsize="end" android:id="@id/group_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/dimen_16" android:maxLines="1" android:singleLine="true" android:layout_toLeftOf="@id/tv_tmail_search_time" android:layout_alignParentLeft="true" />
+                </RelativeLayout>
+                <TextView android:textSize="@dimen/dimen_14" android:textColor="@color/color_8e8e93" android:ellipsize="end" android:id="@id/content" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/dimen_16" android:maxLines="3" />
+            </LinearLayout>
+            <View android:id="@id/groupline" android:background="@color/c5" android:layout_width="fill_parent" android:layout_height="@dimen/dimen_0.5" android:layout_toRightOf="@id/group_avatar" android:layout_alignParentBottom="true" />
+        </RelativeLayout>
+    </RelativeLayout>
+</LinearLayout>

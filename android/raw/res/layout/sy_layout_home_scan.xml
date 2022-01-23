@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout android:id="@id/sy_layout_home_scan_info" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="30.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <TextView android:textSize="12.0sp" android:textColor="@color/sy_7b7f8a" android:id="@id/sy_tv_scan_at_pickup_loc" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="20.0dip" android:text="@string/sy_str_scan_at_pickup_location" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent" />
+    <com.zhuanche.winterolympic.view.ButtonCenterIcon android:textSize="16.0sp" android:textColor="@color/sy_white" android:gravity="center_vertical" android:id="@id/sy_btn_home_scan" android:layout_width="fill_parent" android:layout_height="50.0dip" android:layout_marginTop="9.0dip" android:text="@string/sy_str_scan" android:drawablePadding="5.0dip" android:textAllCaps="false" android:drawableStart="@drawable/sy_ic_scan_home_btn" app:layout_constraintTop_toBottomOf="@id/sy_tv_scan_at_pickup_loc" style="@style/SyDeepBtnBase" />
+</android.support.constraint.ConstraintLayout>

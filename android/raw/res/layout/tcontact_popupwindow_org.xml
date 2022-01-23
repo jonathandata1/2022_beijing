@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:id="@id/ll_popwindow_cancel_event" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <Button android:textSize="20.0dip" android:textColor="#ff007aff" android:gravity="center" android:id="@id/btn_employment" android:background="@drawable/common_search_input_white_bg" android:layout_width="fill_parent" android:layout_height="44.0dip" android:layout_marginLeft="8.0dip" android:layout_marginRight="8.0dip" android:text="员工入职" android:layout_above="@id/btn_resignation" />
+    <Button android:textSize="20.0dip" android:textColor="#ff007aff" android:gravity="center" android:id="@id/btn_resignation" android:background="@drawable/common_search_input_white_bg" android:layout_width="fill_parent" android:layout_height="44.0dip" android:layout_margin="8.0dip" android:text="员工离职" android:layout_alignParentBottom="true" />
+</RelativeLayout>

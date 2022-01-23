@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:id="@id/guide_dpf_rl" android:background="#00000000" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:id="@id/choose_rl" android:background="@drawable/hp_bg_dpf_guide" android:paddingLeft="@dimen/hp_px_10" android:paddingRight="@dimen/hp_px_5" android:layout_width="wrap_content" android:layout_height="@dimen/hp_px_29" android:layout_marginLeft="@dimen/hp_px_5" android:layout_marginTop="@dimen/hp_px_7">
+        <TextView android:textSize="@dimen/hp_px_16" android:textColor="@color/color_FFFFFF" android:ellipsize="end" android:id="@id/choose_city_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxWidth="@dimen/hp_px_100" android:text="@string/hp_selector_role_default" android:maxLines="1" android:singleLine="true" android:maxLength="20" android:layout_centerVertical="true" />
+        <ImageView android:id="@id/city_handover" android:layout_width="@dimen/hp_px_12" android:layout_height="@dimen/hp_px_12" android:layout_marginLeft="@dimen/hp_px_3" android:src="@drawable/hp_handover_icon" android:layout_toRightOf="@id/choose_city_text" android:layout_centerVertical="true" />
+    </RelativeLayout>
+    <ImageView android:id="@id/iv_guide_gesture" android:layout_width="@dimen/hp_px_46" android:layout_height="@dimen/hp_px_72" android:layout_marginLeft="@dimen/hp_px_23" android:layout_marginTop="@dimen/hp_px_74" android:src="@drawable/hp_dpf_guide_gesture" />
+    <TextView android:textSize="@dimen/hp_px_17" android:textColor="@color/color_FFFFFF" android:gravity="center" android:id="@id/apps_guide_tv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/hp_px_16" android:layout_marginTop="@dimen/hp_px_24" android:text="@string/hp_apps_guide_hint" android:layout_below="@id/iv_guide_gesture" />
+    <RelativeLayout android:gravity="center_horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <TextView android:textSize="17.0dip" android:textColor="@color/white" android:id="@id/apps_guide_know" android:background="@drawable/hp_bg_guide_apps" android:paddingLeft="26.0dip" android:paddingTop="7.0dip" android:paddingRight="26.0dip" android:paddingBottom="6.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="265.0dip" android:text="@string/hp_custom_apps_pop_roger" android:layout_centerHorizontal="true" />
+    </RelativeLayout>
+</RelativeLayout>

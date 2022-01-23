@@ -1,0 +1,71 @@
+{
+  "version": "0",
+  "page": {
+    "homePage": "0",
+    "appManagerPage": "1",
+    "appSearchPage": "0",
+    "noticePage": "0"
+  },
+  "title": {
+    "homePage": "0",
+    "appManagerPage": "1",
+    "appSearchPage": "0",
+    "noticePage": "2"
+  },
+  "content": {
+    "config":""
+  },
+  "pageImpl": {
+    "homePage": [
+      {
+        "index": "0",
+        "classPath": "com.systoon.customhomepage.view.CustomHomePageFragment"
+      },
+      {
+        "index": "1",
+        "classPath": "com.systoon.customhomepage.view.CustomHomePageBannerFragment"
+      }
+    ],
+    "appManagerPage": [
+      {
+        "index": "0",
+        "classPath": "com.systoon.customhomepage.view.CustomManagerAppActivity"
+      },
+      {
+        "index": "1",
+        "classPath": "com.systoon.customhomepage.view.CustomManagerApp2Activity"
+      }
+    ],
+    "appSearchPage": [
+      {
+        "index": "0",
+        "classPath": "com.systoon.customhomepage.view.ServeSearchActivity"
+      }
+    ],
+    "noticePage": [
+      {
+        "index": "0",
+        "classPath": "com.systoon.customhomepage.view.NoticeListActivity"
+      }
+    ]
+  },
+  "titleImpl": [
+    {
+      "index": "0",
+      "classPath": "com.systoon.customhomepage.view.xxxxxxxxxxxxxx",
+      "":""
+    },
+    {
+      "index": "1",
+      "classPath": "com.systoon.customhomepage.view.xxxxxxxxxxxxxx"
+    },
+    {
+      "index": "2",
+      "classPath": "com.systoon.customhomepage.view.xxxxxxxxxxxxxx"
+    },
+    {
+      "index": "3",
+      "classPath": "com.systoon.customhomepage.view.xxxxxxxxxxxxxx"
+    }
+  ]
+}

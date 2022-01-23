@@ -1,0 +1,10 @@
+{
+  "TNCertification":{
+      "pTokenInHeader":true,
+      "isunbind":false,
+      "smsencry":false,
+      "isHiddenCertView":false,
+      "HiddenCertificateProtocal":false,
+      "HiddenAlterAndProtocal":false
+  }
+}

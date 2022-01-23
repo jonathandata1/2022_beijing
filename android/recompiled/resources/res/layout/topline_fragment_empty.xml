@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:background="@color/c20" android:layout_width="match_parent" android:layout_height="match_parent">
+    <include android:id="@+id/topline_search" layout="@layout/topline_fragment_search"/>
+    <ScrollView android:scrollbars="none" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_below="@+id/topline_search">
+        <LinearLayout android:layout_width="match_parent" android:layout_height="match_parent">
+            <ImageView android:id="@+id/topline_empty" android:layout_width="match_parent" android:layout_height="wrap_content" android:src="@drawable/topline_empty"/>
+        </LinearLayout>
+    </ScrollView>
+    <RelativeLayout android:id="@+id/topline_empty_hint" android:background="@color/topline_empty_hint" android:visibility="gone" android:layout_width="match_parent" android:layout_height="@dimen/dimen_44" android:layout_alignParentBottom="true">
+        <TextView android:textSize="@dimen/dimen_14" android:textColor="@color/c20" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/top_line_weaknet_snackbar" android:layout_centerInParent="true"/>
+    </RelativeLayout>
+</RelativeLayout>

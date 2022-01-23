@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/toongine_audiorecord_parent" android:paddingLeft="@dimen/dimen_15" android:paddingTop="@dimen/dimen_15" android:paddingRight="@dimen/dimen_15" android:layout_width="fill_parent" android:layout_height="150.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:gravity="center" android:id="@id/toongine_audiorecord_rlvoice" android:background="#ffddebfb" android:layout_width="fill_parent" android:layout_height="@dimen/dimen_50">
+        <FrameLayout android:id="@id/toongine_audiorecord_fltplay" android:layout_width="@dimen/dimen_22" android:layout_height="@dimen/dimen_22" android:layout_marginLeft="@dimen/dimen_15" android:layout_centerVertical="true">
+            <CheckBox android:layout_gravity="center" android:id="@id/toongine_audiorecord_btnplay" android:background="@drawable/voice_play_icon" android:layout_width="fill_parent" android:layout_height="fill_parent" android:button="@null" />
+            <ImageView android:layout_gravity="center" android:id="@id/toongine_audiorecord_btnplaywait" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" android:src="@drawable/toongine_play_wait" />
+        </FrameLayout>
+        <TextView android:textSize="@dimen/ts_15px" android:textColor="@color/search_result_color" android:id="@id/toongine_audiorecord_voiceinfo" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dimen_12" android:text="@string/voice" android:layout_toRightOf="@id/toongine_audiorecord_fltplay" android:layout_centerVertical="true" />
+        <TextView android:textSize="@dimen/ts_14px" android:textColor="@color/c10" android:id="@id/toongine_audiorecord_voicetime" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dimen_8" android:text="@string/time" android:layout_toRightOf="@id/toongine_audiorecord_voiceinfo" android:layout_centerVertical="true" />
+        <ImageView android:id="@id/toongine_audiorecord_imganima" android:layout_width="@dimen/dimen_15" android:layout_height="@dimen/dimen_15" android:layout_marginRight="@dimen/dimen_15" android:src="@drawable/voice_play_anim" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+    </RelativeLayout>
+</RelativeLayout>

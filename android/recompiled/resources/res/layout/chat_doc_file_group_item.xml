@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <TextView android:textSize="@dimen/dimen_14" android:gravity="center" android:id="@+id/tv_doc_file_type" android:layout_width="wrap_content" android:layout_height="@dimen/dimen_40" android:layout_marginLeft="@dimen/dimen_15" android:layout_alignParentLeft="true" android:layout_alignParentTop="true" android:layout_centerVertical="true"/>
+    <ImageView android:id="@+id/iv_select_file_group" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/dimen_10" android:layout_alignParentRight="true" android:layout_centerVertical="true" android:contentDescription="@string/app_name"/>
+    <View android:id="@+id/line_select_file_group" android:layout_width="match_parent" android:layout_height="@dimen/res_0x7f070190_dimen_0_3" android:layout_below="@+id/tv_doc_file_type"/>
+</RelativeLayout>

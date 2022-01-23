@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:id="@id/ll_custom_session_content" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    <View android:background="@color/c36" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="@dimen/dimen_0.3" android:layout_marginLeft="@dimen/dimen_63" android:layout_marginStart="@dimen/dimen_63" />
+    <View android:background="@color/c36" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="@dimen/dimen_0.3" />
+</LinearLayout>

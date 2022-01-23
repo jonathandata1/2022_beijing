@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:clipChildren="false" android:clipToPadding="false" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/main_tab_icon" android:layout_width="@dimen/dimen_28" android:layout_height="@dimen/dimen_28" android:layout_marginTop="@dimen/dimen_3" android:layout_centerHorizontal="true" android:contentDescription="@null" />
+    <TextView android:textSize="@dimen/dimen_12" android:textColor="@drawable/hp_toolbar_tab_textcolor" android:gravity="center_horizontal" android:id="@id/main_tab_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="0.5dip" android:layout_below="@id/main_tab_icon" android:layout_centerHorizontal="true" />
+</RelativeLayout>

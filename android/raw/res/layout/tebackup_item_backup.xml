@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="horizontal" android:background="@color/c20" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:id="@id/rl_item_backup_bg" android:background="@color/c20" android:layout_width="fill_parent" android:layout_height="@dimen/dimen_68">
+        <ImageView android:id="@id/iv_item_keys_save_cloud_icon" android:background="@drawable/keys_cloud_icon" android:layout_width="@dimen/dimen_38" android:layout_height="@dimen/dimen_32" android:layout_marginLeft="@dimen/dimen_16" android:layout_centerVertical="true" android:layout_marginStart="@dimen/dimen_16" />
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginLeft="@dimen/dimen_16" android:layout_marginRight="@dimen/dimen_50" android:layout_toRightOf="@id/iv_item_keys_save_cloud_icon" android:layout_marginStart="@dimen/dimen_16" android:layout_toEndOf="@id/iv_item_keys_save_cloud_icon">
+            <TextView android:textSize="@dimen/dimen_16" android:textColor="@color/c26" android:gravity="bottom" android:id="@id/tv_tebackup_tooncloud_save_des" android:paddingBottom="@dimen/dimen_3" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_marginRight="@dimen/dimen_15" android:maxLines="1" android:singleLine="true" android:layout_weight="7.0" />
+            <TextView android:textSize="@dimen/dimen_13" android:textColor="@color/c8" android:gravity="start" android:id="@id/tv_tebackup_tooncloud_save_time" android:paddingTop="@dimen/dimen_3" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_marginRight="@dimen/dimen_15" android:maxLines="1" android:singleLine="true" android:layout_weight="6.0" />
+        </LinearLayout>
+        <LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="@dimen/dimen_30" android:layout_alignParentRight="true" android:layout_centerVertical="true">
+            <TextView android:textSize="@dimen/dimen_13" android:textColor="@color/c8" android:gravity="center" android:layout_gravity="center_vertical" android:id="@id/tv_tebackup_tooncloud_save_hint" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/tebackup_backup_know" android:maxLines="1" android:singleLine="true" />
+            <ImageView android:layout_gravity="center_vertical" android:background="@drawable/APKTOOL_DUMMY_e5" android:layout_width="@dimen/dimen_6" android:layout_height="@dimen/dimen_10" android:layout_marginLeft="@dimen/dimen_8" android:layout_marginRight="@dimen/dimen_10" />
+        </LinearLayout>
+        <View android:id="@id/v_tebackup_tooncloud_save_driver" android:background="@color/c36" android:layout_width="fill_parent" android:layout_height="@dimen/dimen_1" android:layout_marginLeft="@dimen/dimen_70" android:layout_alignParentBottom="true" android:layout_marginStart="@dimen/dimen_70" />
+    </RelativeLayout>
+</LinearLayout>

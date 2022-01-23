@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android" android:background="@color/backgroundColor_dark" android:scrollbars="none" android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:orientation="vertical" android:id="@+id/ll_root" android:focusable="true" android:focusableInTouchMode="true" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <TextView android:textSize="14dp" android:textColor="@color/text_subtitle_color" android:id="@+id/label_description" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dimen_16" android:layout_marginTop="@dimen/dimen_20" android:layout_marginRight="@dimen/dimen_16" android:layout_marginBottom="@dimen/dimen_10" android:text="@string/label_avatar_nickname_edit"/>
+        <LinearLayout android:orientation="horizontal" android:id="@+id/ll_avatar_edit" android:background="@color/backgroundColor" android:paddingLeft="@dimen/dimen_16" android:paddingRight="@dimen/dimen_16" android:layout_width="match_parent" android:layout_height="@dimen/dimen_74">
+            <TextView android:textSize="16dp" android:textColor="@color/text_subtitle_color" android:layout_gravity="center_vertical" android:id="@+id/label_avatar" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/d_avatar"/>
+            <com.msgseal.base.ui.AvatarView android:layout_gravity="center_vertical" android:id="@+id/img_member_avatar" android:layout_width="@dimen/dimen_50" android:layout_height="@dimen/dimen_50" android:layout_marginLeft="@dimen/dimen_40" android:src="@drawable/group_d_avatar"/>
+            <View android:layout_width="0dp" android:layout_height="1dp" android:layout_weight="1"/>
+            <ImageView android:layout_gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/right_arrows"/>
+        </LinearLayout>
+        <View android:id="@+id/line1" android:background="@color/separator_color" android:visibility="visible" android:layout_width="match_parent" android:layout_height="@dimen/res_0x7f070190_dimen_0_3" android:layout_marginLeft="@dimen/dimen_16"/>
+        <LinearLayout android:orientation="horizontal" android:id="@+id/ll_nickname" android:background="@color/backgroundColor" android:paddingLeft="@dimen/dimen_16" android:paddingRight="@dimen/dimen_16" android:layout_width="match_parent" android:layout_height="@dimen/dimen_50">
+            <TextView android:textSize="16dp" android:textColor="@color/text_subtitle_color" android:layout_gravity="center_vertical" android:id="@+id/label_nickname" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/nickname"/>
+            <com.msgseal.chat.customviews.EditTextWithDel android:textSize="16dp" android:textColor="#fff8f9fb" android:layout_gravity="center_vertical" android:id="@+id/et_nick_name" android:background="@drawable/transparent" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>

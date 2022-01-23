@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent" android:layout_height="40dp">
+    <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@+id/load_more_loading_view" android:layout_width="match_parent" android:layout_height="match_parent">
+        <com.zhuanche.commonbase.widget.dialog.CustomColorProgressBar android:id="@+id/loading_progress" android:layout_width="20dp" android:layout_height="20dp" android:layout_marginRight="4dp"/>
+        <TextView android:textSize="@dimen/sp_14" android:textColor="@android:color/black" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="4dp" android:text="@string/sy_str_loading"/>
+    </LinearLayout>
+    <FrameLayout android:id="@+id/load_more_load_fail_view" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent">
+        <TextView android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/sy_str_load_failed"/>
+    </FrameLayout>
+    <FrameLayout android:id="@+id/load_more_load_end_view" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent">
+        <TextView android:textColor="@android:color/darker_gray" android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/sy_str_load_end"/>
+    </FrameLayout>
+</FrameLayout>

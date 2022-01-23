@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+    <android.support.v7.widget.RecyclerView android:id="@+id/recycleview" android:scrollbars="none" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dimen_30" android:overScrollMode="never"/>
+    <LinearLayout android:gravity="center_horizontal" android:orientation="horizontal" android:id="@+id/group_select_view" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dimen_20"/>
+    <LinearLayout android:orientation="horizontal" android:id="@+id/operation_btn" android:layout_width="match_parent" android:layout_height="@dimen/dimen_45" android:layout_marginLeft="@dimen/dimen_24" android:layout_marginTop="@dimen/dimen_30" android:layout_marginRight="@dimen/dimen_24" android:layout_marginBottom="@dimen/dimen_63">
+        <TextView android:textSize="@dimen/dimen_18" android:textColor="@color/c20" android:gravity="center" android:id="@+id/btn_activity_qr_code_save" android:background="@drawable/tcard_example_shape" android:layout_width="match_parent" android:layout_height="@dimen/dimen_45" android:text="@string/tcard_qrcode_savepic" android:layout_weight="1"/>
+        <TextView android:textSize="@dimen/dimen_18" android:textColor="@color/c20" android:gravity="center" android:id="@+id/btn_activity_qr_share" android:background="@drawable/tcard_example_shape" android:layout_width="match_parent" android:layout_height="@dimen/dimen_45" android:layout_marginLeft="@dimen/dimen_17" android:text="@string/tcard_qrcode_share" android:layout_weight="1"/>
+    </LinearLayout>
+</LinearLayout>

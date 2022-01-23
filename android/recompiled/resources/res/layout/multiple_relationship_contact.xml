@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:background="@color/navBar_backgroundColor" android:layout_width="match_parent" android:layout_height="match_parent">
+    <TextView android:textSize="@dimen/dimen_14" android:textColor="@color/text_subtitle_color" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dimen_16" android:layout_marginTop="@dimen/dimen_3" android:text="@string/friend_info"/>
+    <LinearLayout android:orientation="horizontal" android:background="@color/list_background_color" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <com.msgseal.base.ui.AvatarView android:layout_gravity="center_vertical" android:id="@+id/iv_talker_avatar" android:layout_width="@dimen/dimen_50" android:layout_height="@dimen/dimen_50" android:layout_marginLeft="@dimen/dimen_16" android:layout_marginTop="@dimen/dimen_12" android:layout_marginBottom="@dimen/dimen_12" android:src="@drawable/default_head_person133"/>
+        <LinearLayout android:layout_gravity="center_vertical" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginStart="@dimen/dimen_12" android:layout_marginEnd="@dimen/dimen_12">
+            <TextView android:textSize="16dp" android:textColor="@color/text_main_color" android:ellipsize="end" android:id="@+id/tv_talker_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="1" android:singleLine="true"/>
+            <TextView android:textSize="14dp" android:textColor="@color/text_main_color" android:ellipsize="end" android:id="@+id/tv_org" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dimen_6" android:maxLines="1" android:singleLine="true"/>
+        </LinearLayout>
+    </LinearLayout>
+    <TextView android:textSize="@dimen/dimen_14" android:textColor="@color/text_subtitle_color" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dimen_16" android:layout_marginTop="@dimen/dimen_3" android:layout_marginRight="@dimen/dimen_16" android:text="@string/choose_connection_card"/>
+    <android.support.v7.widget.RecyclerView android:id="@+id/rv_card_list" android:background="@color/list_background_color" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+</LinearLayout>

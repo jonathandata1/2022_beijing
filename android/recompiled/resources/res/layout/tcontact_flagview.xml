@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" android:id="@+id/activity_main" android:layout_width="wrap_content" android:layout_height="wrap_content">
+    <TextView android:textSize="@dimen/ts_14px" android:textColor="#ffffff" android:ellipsize="end" android:gravity="center" android:id="@+id/textview" android:paddingLeft="13dp" android:paddingTop="3dp" android:paddingRight="13dp" android:paddingBottom="3dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="测试" android:lines="1" android:layout_centerHorizontal="true"/>
+    <ImageView android:layout_gravity="top|right|center_vertical|center_horizontal|center" android:id="@+id/imageview" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/common_close_gray"/>
+</FrameLayout>

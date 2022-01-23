@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:gravity="top|center_vertical|center_horizontal|center" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+    <TextView android:gravity="center" android:id="@+id/file_empty" android:paddingTop="@dimen/dimen_120" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/chat_file_empty" android:drawableTop="@drawable/file_icon" android:drawablePadding="@dimen/dimen_20"/>
+</LinearLayout>

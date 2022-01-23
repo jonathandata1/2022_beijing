@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" android:background="@color/c4" android:paddingLeft="@dimen/dimen_4" android:paddingRight="@dimen/dimen_4" android:layout_width="match_parent" android:layout_height="@dimen/dimen_48">
+    <LinearLayout android:orientation="horizontal" android:id="@+id/left_area" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_toLeftOf="@+id/right_area" android:layout_toStartOf="@+id/right_area"/>
+    <LinearLayout android:orientation="horizontal" android:id="@+id/middle_area" android:layout_width="wrap_content" android:layout_height="match_parent" android:layout_centerHorizontal="true"/>
+    <LinearLayout android:orientation="horizontal" android:id="@+id/right_area" android:layout_width="wrap_content" android:layout_height="match_parent" android:layout_alignParentRight="true" android:layout_alignParentEnd="true"/>
+</RelativeLayout>

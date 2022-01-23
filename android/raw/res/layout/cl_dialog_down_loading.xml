@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@drawable/bg_black_round_shape" android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:layout_width="206.0dip" android:layout_height="149.0dip">
+        <LinearLayout android:orientation="horizontal" android:id="@id/cl_down_loading_pc" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="29.0dip" android:layout_above="@id/cl_down_loading_des" android:layout_centerHorizontal="true">
+            <TextView android:textSize="16.0sp" android:textColor="#ffffffff" android:id="@id/cl_down_loading_percent" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="00" />
+            <TextView android:textSize="16.0sp" android:textColor="#ffffffff" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="%" />
+        </LinearLayout>
+        <TextView android:textSize="16.0sp" android:textColor="#ffffffff" android:gravity="center_horizontal" android:id="@id/cl_down_loading_des" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="28.0dip" android:text="@string/cl_down_loading_des" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true" android:lineSpacingExtra="6.0dip" />
+    </RelativeLayout>
+</RelativeLayout>

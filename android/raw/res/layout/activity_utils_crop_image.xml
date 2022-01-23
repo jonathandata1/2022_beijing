@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:gravity="center_vertical" android:id="@id/rl_nav_bar" android:background="@color/translucent" android:layout_width="fill_parent" android:layout_height="@dimen/dimen_44">
+        <ImageView android:id="@id/iv_crop_back" android:background="@drawable/icon_utils_back" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dimen_12" android:layout_centerVertical="true" />
+        <TextView android:textSize="@dimen/dimen_18" android:textColor="@color/c12" android:gravity="center_vertical" android:id="@id/tv_crop_right" android:paddingLeft="@dimen/dimen_12" android:paddingRight="@dimen/dimen_12" android:layout_width="wrap_content" android:layout_height="fill_parent" android:text="enter" android:layout_alignParentRight="true" />
+        <TextView android:textSize="@dimen/dimen_18" android:textColor="@color/c12" android:gravity="center_vertical" android:id="@id/tv_crop_title" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_marginLeft="@dimen/dimen_12" android:text="enterprise_1206_001" android:lines="1" android:layout_toLeftOf="@id/tv_crop_right" android:layout_toRightOf="@id/iv_crop_back" />
+    </RelativeLayout>
+    <View android:id="@id/v_divider" android:layout_width="fill_parent" android:layout_height="@dimen/dimen_0.5" />
+    <com.systoon.tutils.cropimage.TCropImageView android:id="@id/v_crop_view" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+</LinearLayout>

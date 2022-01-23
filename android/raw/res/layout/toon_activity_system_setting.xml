@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:background="@color/c5" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include android:id="@id/in_1" layout="@layout/toon_item_navigation_bar" />
+    <View android:id="@id/divider" android:layout_width="fill_parent" android:layout_height="@dimen/dimen_10" android:layout_below="@id/in_1" />
+    <RelativeLayout android:orientation="horizontal" android:id="@id/rl_about_toon" android:background="@color/c20" android:layout_width="fill_parent" android:layout_height="@dimen/dimen_50" android:layout_below="@id/divider">
+        <TextView android:textSize="@dimen/ts_16px" android:textColor="@color/c12" android:id="@id/tv_phone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dimen_15" android:text="@string/about_toon" android:layout_centerVertical="true" />
+        <TextView android:textSize="@dimen/ts_16px" android:textColor="@color/c9" android:id="@id/tv_question_status" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/dimen_15" android:drawableRight="@drawable/common_arrow_right" android:drawablePadding="@dimen/dimen_5" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+    </RelativeLayout>
+</RelativeLayout>

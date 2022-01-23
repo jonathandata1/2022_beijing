@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:background="@color/color_B4504A" android:padding="@dimen/dimen_12" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="@dimen/dimen_13" android:textColor="@color/c20" android:id="@id/not_spam_text" android:background="@drawable/bg_spam_alert" android:paddingLeft="@dimen/dimen_5" android:paddingTop="@dimen/dimen_2" android:paddingRight="@dimen/dimen_5" android:paddingBottom="@dimen/dimen_2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dimen_5" android:text="@string/chat_not_spam" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+    <TextView android:textSize="@dimen/dimen_13" android:textColor="@color/c20" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/chat_advertising_tips" android:layout_centerVertical="true" />
+</RelativeLayout>

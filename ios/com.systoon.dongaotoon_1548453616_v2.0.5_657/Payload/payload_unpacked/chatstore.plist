@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>backupCP</key>
+	<dict>
+		<key>excutor</key>
+		<string>TMSChatRouter</string>
+		<key>out</key>
+		<string>NSDictionary</string>
+		<key>in</key>
+		<string>TMSChatBackupCPModel</string>
+	</dict>
+	<key>queryCP</key>
+	<dict>
+		<key>excutor</key>
+		<string>TMSChatRouter</string>
+		<key>out</key>
+		<string>NSDictionary</string>
+		<key>in</key>
+		<string>TMSChatCPFileModel</string>
+	</dict>
+	<key>updateDefaultCard</key>
+	<dict>
+		<key>excutor</key>
+		<string>TMSChatRouter</string>
+		<key>out</key>
+		<string>NSDictionary</string>
+		<key>in</key>
+		<string>TMSUpdateDefaultCardsModel</string>
+	</dict>
+</dict>
+</plist>

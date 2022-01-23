@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent" android:layout_height="match_parent">
+    <RelativeLayout android:id="@+id/new_topic_bottom_layout" android:layoutAnimation="@anim/slide_layout_animator" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true" android:animateLayoutChanges="true">
+        <com.msgseal.inputtablet.MessageControlBar android:id="@+id/new_topic_control_bar_view" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+    </RelativeLayout>
+    <LinearLayout android:orientation="vertical" android:id="@+id/new_topic_input_container" android:paddingTop="@dimen/dimen_15" android:focusable="true" android:focusableInTouchMode="true" android:clickable="true" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_above="@+id/new_topic_bottom_layout" android:layout_below="@+id/line1">
+        <android.support.v7.widget.RecyclerView android:id="@+id/new_topic_content_recycle" android:focusableInTouchMode="true" android:scrollbars="none" android:layout_width="match_parent" android:layout_height="wrap_content" android:overScrollMode="never"/>
+    </LinearLayout>
+</RelativeLayout>

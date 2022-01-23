@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<animation-list android:oneshot="true"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:duration="50" android:drawable="@drawable/htjc_img_succeed_0" />
+    <item android:duration="50" android:drawable="@drawable/htjc_img_succeed_1" />
+    <item android:duration="50" android:drawable="@drawable/htjc_img_succeed_2" />
+    <item android:duration="50" android:drawable="@drawable/htjc_img_succeed_3" />
+    <item android:duration="50" android:drawable="@drawable/htjc_img_succeed_4" />
+    <item android:duration="50" android:drawable="@drawable/htjc_img_succeed_5" />
+</animation-list>

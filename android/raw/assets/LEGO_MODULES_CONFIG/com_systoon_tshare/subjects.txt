@@ -1,0 +1,2 @@
+ApplicationTopic.onCreate
+-com.systoon.tshare.third.TShareApplicationInit#tShareApplicationInit

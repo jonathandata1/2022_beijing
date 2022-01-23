@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/topline_search" android:background="@color/transparent" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <View android:id="@id/search_bg" android:background="@color/c20" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignBottom="@id/search_ll" />
+    <View android:id="@id/search_bar_bg" android:background="#2e000000" android:layout_width="fill_parent" android:layout_height="@dimen/hp_px_25" />
+    <LinearLayout android:gravity="center_vertical" android:id="@id/search_ll" android:layout_width="fill_parent" android:layout_height="@dimen/hp_px_44" android:layout_below="@id/search_bar_bg">
+        <RelativeLayout android:id="@id/search_rl" android:background="@drawable/hp_affair_bg_header_search" android:layout_width="fill_parent" android:layout_height="@dimen/hp_px_28" android:layout_marginLeft="@dimen/hp_px_16" android:layout_marginTop="@dimen/hp_px_9" android:layout_marginRight="@dimen/hp_px_16" android:layout_marginBottom="@dimen/hp_px_7">
+            <ImageView android:id="@id/search_icon" android:layout_width="@dimen/hp_px_16" android:layout_height="@dimen/hp_px_16" android:layout_marginLeft="@dimen/hp_px_8" android:src="@drawable/hp_affair_icon_search" android:layout_alignParentLeft="true" android:layout_centerVertical="true" />
+            <ImageView android:id="@id/iv_right_btn_voice" android:visibility="visible" android:layout_width="@dimen/hp_px_32" android:layout_height="@dimen/hp_px_16" android:src="@drawable/hp_voice_gray" android:scaleType="centerInside" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+            <TextView android:textSize="@dimen/hp_px_14" android:textColor="@color/color_8E8E93" android:ellipsize="end" android:gravity="center_vertical" android:id="@id/search_text" android:layout_width="fill_parent" android:layout_height="@dimen/hp_px_28" android:layout_marginLeft="@dimen/hp_px_6" android:layout_marginRight="@dimen/hp_px_6" android:text="@string/search_hint" android:singleLine="true" android:layout_toLeftOf="@id/iv_right_btn_voice" android:layout_toRightOf="@id/search_icon" android:layout_centerVertical="true" android:layout_toStartOf="@id/iv_right_btn_voice" android:layout_toEndOf="@id/search_icon" />
+        </RelativeLayout>
+    </LinearLayout>
+</RelativeLayout>

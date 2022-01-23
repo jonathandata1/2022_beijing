@@ -1,0 +1,3 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layoutAnimation android:delay="4.999995%" android:animation="@anim/slide_in_from_bottom" android:animationOrder="normal"
+  xmlns:android="http://schemas.android.com/apk/res/android" />

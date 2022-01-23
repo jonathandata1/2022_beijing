@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" android:id="@+id/container_stick_message" android:layout_width="match_parent" android:layout_height="@dimen/dimen_44">
+    <FrameLayout android:id="@+id/stick_message_del" android:paddingTop="@dimen/dimen_2" android:paddingRight="@dimen/dimen_4" android:layout_width="wrap_content" android:layout_height="match_parent" android:layout_alignParentRight="true" android:paddingEnd="@dimen/dimen_4" android:layout_alignParentEnd="true">
+        <ImageView android:layout_width="@dimen/dimen_20" android:layout_height="@dimen/dimen_20" android:src="@drawable/del_sticky_message"/>
+    </FrameLayout>
+    <TextView android:textSize="@dimen/dimen_14" android:textColor="@color/tnt_color_ffffff" android:ellipsize="end" android:gravity="center" android:id="@+id/tv_stick_tip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dimen_25" android:text="@string/group_stick_message" android:maxLines="1" android:layout_toLeftOf="@+id/stick_message_del" android:layout_alignParentLeft="true" android:layout_centerVertical="true" android:layout_marginStart="@dimen/dimen_25" android:layout_toStartOf="@+id/stick_message_del" android:layout_alignParentStart="true"/>
+</RelativeLayout>

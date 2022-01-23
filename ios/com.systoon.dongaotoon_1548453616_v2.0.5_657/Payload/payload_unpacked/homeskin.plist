@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>queryskincolorstring</key>
+	<dict>
+		<key>in</key>
+		<string>NSDictionary</string>
+		<key>excutor</key>
+		<string>TNSkinQueryColorExcutor</string>
+		<key>des</key>
+		<string>查询响应组件key下的颜色；，传对应换肤组件key，序列号、是否选中状态（tabbar传）</string>
+	</dict>
+	<key>queryskinresource</key>
+	<dict>
+		<key>in</key>
+		<string>NSDictionary</string>
+		<key>excutor</key>
+		<string>TNSkinQueryResourceExcutor</string>
+		<key>des</key>
+		<string>查询换肤资源，调取接口</string>
+	</dict>
+	<key>queryskinimage</key>
+	<dict>
+		<key>in</key>
+		<string>NSDictionary</string>
+		<key>out</key>
+		<string></string>
+		<key>excutor</key>
+		<string>TNSkinExcutor</string>
+		<key>des</key>
+		<string>换肤，传对应换肤组件key（互动key：interact   我的key：workbench，），序列号(不需要的可以不传)、是否选中状态（tabbar传,区分是否是iphonex）</string>
+	</dict>
+	<key>changeskinState</key>
+	<dict>
+		<key>des</key>
+		<string>当前是否是换肤的状态</string>
+		<key>excutor</key>
+		<string>TNSkinStateExcutor</string>
+	</dict>
+</dict>
+</plist>

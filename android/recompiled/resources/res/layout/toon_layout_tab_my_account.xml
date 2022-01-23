@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" android:clipChildren="false" android:clipToPadding="false" android:layout_width="match_parent" android:layout_height="match_parent">
+    <ImageView android:id="@+id/main_tab_account" android:layout_width="28dp" android:layout_height="28dp" android:layout_marginTop="@dimen/dimen_3" android:layout_centerHorizontal="true" android:contentDescription="@null"/>
+    <TextView android:textSize="12dp" android:textColor="@drawable/toolbar_tab_textcolor" android:gravity="center_horizontal" android:id="@+id/main_tab_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="0.5dp" android:layout_below="@+id/main_tab_account" android:layout_centerHorizontal="true"/>
+</RelativeLayout>

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent" android:layout_height="match_parent">
+    <android.support.v7.widget.RecyclerView android:id="@+id/rv_friend_list" android:layout_width="match_parent" android:layout_height="match_parent"/>
+    <LinearLayout android:orientation="vertical" android:id="@+id/ll_empty" android:paddingBottom="@dimen/dimen_45" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true">
+        <ImageView android:layout_gravity="center_horizontal" android:layout_width="@dimen/dimen_120" android:layout_height="@dimen/dimen_120" android:src="@drawable/new_friends_empty_icon"/>
+        <TextView android:textSize="@dimen/dimen_15" android:textColor="@color/text_main_color2" android:layout_gravity="center_horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dimen_16" android:text="@string/contact_new_apply_empty"/>
+    </LinearLayout>
+</RelativeLayout>

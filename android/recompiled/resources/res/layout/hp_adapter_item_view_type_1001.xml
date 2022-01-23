@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:orientation="vertical" android:background="@color/color_FFFFFF" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@+id/recommendtitleview" android:visibility="gone" android:layout_width="match_parent" android:layout_height="@dimen/hp_px_47">
+        <android.support.design.widget.TabLayout android:theme="@style/Theme.AppCompat.Light" android:layout_gravity="center" android:id="@+id/apps_tablayout" android:layout_width="wrap_content" android:layout_height="match_parent" app:tabBackground="@drawable/hp_tab_backgroud_selector" app:tabIndicatorColor="@color/color_DF3031" app:tabSelectedTextColor="@color/color_000000" app:tabTextAppearance="@style/HomepageMyCustomTabTextAppearance" app:tabTextColor="@color/color_8E8E93"/>
+        <View android:background="@color/color_DDDEE3" android:layout_width="match_parent" android:layout_height="@dimen/hp_px_1" android:layout_marginLeft="@dimen/hp_px_15" android:layout_marginRight="@dimen/hp_px_15"/>
+    </LinearLayout>
+    <RelativeLayout android:id="@+id/lineview" android:background="@color/color_F2F2F4" android:visibility="gone" android:layout_width="match_parent" android:layout_height="@dimen/hp_px_11"/>
+    <View android:background="@color/color_DDDEE3" android:visibility="gone" android:layout_width="match_parent" android:layout_height="@dimen/hp_px_1" android:layout_marginLeft="15dp"/>
+    <RelativeLayout android:id="@+id/grid_view" android:layout_width="match_parent" android:layout_height="@dimen/hp_px_180" android:layout_marginLeft="@dimen/hp_px_5" android:layout_marginTop="@dimen/hp_px_15" android:layout_marginRight="@dimen/hp_px_5" android:layout_marginBottom="@dimen/hp_px_16">
+        <ImageView android:id="@+id/iv_placeholder" android:background="@color/transparent" android:layout_width="match_parent" android:layout_height="@dimen/hp_px_78" android:src="@drawable/hp_placeholder_banner" android:layout_alignParentBottom="true"/>
+        <com.systoon.customhomepage.widget.NoScrollGridView android:id="@+id/gridview" android:background="@color/transparent" android:scrollbars="none" android:layout_width="match_parent" android:layout_height="wrap_content" android:listSelector="@color/transparent" android:horizontalSpacing="@dimen/hp_px_8" android:verticalSpacing="@dimen/hp_px_12" android:columnWidth="@dimen/hp_px_10" android:divider="@null" android:overScrollMode="never"/>
+    </RelativeLayout>
+</LinearLayout>

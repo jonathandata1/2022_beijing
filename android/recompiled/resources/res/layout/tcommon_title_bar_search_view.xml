@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginLeft="@dimen/dimen_6" android:layout_marginRight="@dimen/dimen_9">
+    <EditText android:textSize="@dimen/dimen_14" android:textColorHint="#9c9c9c" android:gravity="center_vertical" android:id="@+id/search_src_text" android:background="@null" android:layout_width="match_parent" android:layout_height="match_parent" android:drawableLeft="@drawable/common_search_header" android:drawablePadding="@dimen/dimen_8" android:layout_toLeftOf="@+id/voice_and_clear" android:inputType="text" android:imeOptions="actionSearch" android:drawableStart="@drawable/common_search_header" android:layout_toStartOf="@+id/voice_and_clear"/>
+    <FrameLayout android:id="@+id/voice_and_clear" android:layout_width="wrap_content" android:layout_height="match_parent" android:layout_alignParentRight="true" android:layout_alignParentEnd="true">
+        <ImageView android:id="@+id/search_voice_btn" android:paddingLeft="@dimen/dimen_6" android:layout_width="wrap_content" android:layout_height="match_parent" android:src="@drawable/common_search_voice"/>
+        <ImageView android:id="@+id/clear_btn" android:paddingLeft="@dimen/dimen_6" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="match_parent" android:src="@drawable/common_close_gray"/>
+    </FrameLayout>
+    <View android:id="@+id/under_line" android:background="#b6b6b6" android:layout_width="match_parent" android:layout_height="@dimen/dimen_1" android:layout_marginBottom="@dimen/dimen_6" android:layout_alignParentBottom="true"/>
+</RelativeLayout>

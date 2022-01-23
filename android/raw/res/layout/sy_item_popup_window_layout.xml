@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="@dimen/dp_52"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="14.0sp" android:textColor="@color/sy_v222222" android:ellipsize="end" android:gravity="center" android:id="@id/sy_popup_tv_addr_name" android:background="@drawable/sy_selector_choose_addr_drawable" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0" />
+    <View android:id="@id/sy_popup_line" android:background="@color/sy_split_line" android:layout_width="fill_parent" android:layout_height="@dimen/dp_0_5" android:layout_marginLeft="@dimen/dp_20" android:layout_marginRight="@dimen/dp_20" />
+</LinearLayout>

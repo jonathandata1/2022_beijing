@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" android:id="@+id/fl_main_activity" android:clickable="true" android:layout_width="match_parent" android:layout_height="match_parent">
+    <RelativeLayout android:background="@color/c5" android:layout_width="match_parent" android:layout_height="match_parent">
+        <com.systoon.tcontactcommon.view.base.NoSlideViewPager android:id="@+id/fragment_activity_pager" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginBottom="@dimen/dimen_48"/>
+        <LinearLayout android:orientation="horizontal" android:id="@+id/tab_container" android:background="@color/c20" android:layout_width="match_parent" android:layout_height="@dimen/dimen_48" android:layout_marginTop="@dimen/dimen_1" android:layout_alignParentBottom="true"/>
+    </RelativeLayout>
+</FrameLayout>

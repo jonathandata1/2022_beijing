@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@android:color/white" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ScrollView android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@id/checkline" android:layout_width="fill_parent" android:layout_height="40.0dip" android:layout_marginLeft="5.0dip" android:layout_marginRight="5.0dip">
+                <CheckBox android:id="@id/check_init" android:layout_width="fill_parent" android:layout_height="fill_parent" android:checked="false" android:text="Debug初位置" android:layout_weight="1.0" />
+                <CheckBox android:id="@id/check_init_magnet" android:layout_width="fill_parent" android:layout_height="fill_parent" android:checked="false" android:text="地磁初定" android:layout_weight="1.0" />
+                <CheckBox android:id="@id/check_simulate" android:layout_width="fill_parent" android:layout_height="fill_parent" android:checked="false" android:text="模拟定位" android:layout_weight="1.0" />
+            </LinearLayout>
+            <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@id/checkline1" android:layout_width="fill_parent" android:layout_height="40.0dip" android:layout_marginLeft="5.0dip" android:layout_marginRight="5.0dip" android:layout_below="@id/checkline">
+                <CheckBox android:id="@id/check_geo" android:layout_width="fill_parent" android:layout_height="fill_parent" android:checked="false" android:text="几何跟踪" android:layout_weight="1.0" />
+                <CheckBox android:id="@id/check_magnet" android:layout_width="fill_parent" android:layout_height="fill_parent" android:checked="false" android:text="地磁跟踪" android:layout_weight="1.0" />
+                <CheckBox android:visibility="invisible" android:layout_width="fill_parent" android:layout_height="fill_parent" android:checked="false" android:text="" android:layout_weight="1.0" />
+            </LinearLayout>
+            <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@id/checkline2" android:layout_width="fill_parent" android:layout_height="40.0dip" android:layout_marginLeft="5.0dip" android:layout_marginRight="5.0dip" android:layout_below="@id/checkline1">
+                <CheckBox android:id="@id/check_beacon" android:layout_width="fill_parent" android:layout_height="fill_parent" android:checked="false" android:text="beacon跟踪" android:layout_weight="1.0" />
+                <CheckBox android:id="@id/check_wifi" android:layout_width="fill_parent" android:layout_height="fill_parent" android:checked="false" android:text="wifi跟踪" android:layout_weight="1.0" />
+                <CheckBox android:id="@id/check_gps" android:layout_width="fill_parent" android:layout_height="fill_parent" android:checked="false" android:text="GPS跟踪" android:layout_weight="1.0" />
+            </LinearLayout>
+            <LinearLayout android:id="@id/site_linear" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_below="@id/checkline2">
+                <TextView android:textSize="15.0sp" android:gravity="center" android:layout_width="fill_parent" android:layout_height="fill_parent" android:text="大  厦:" android:layout_weight="2.0" />
+                <Spinner android:gravity="center" android:id="@id/site_spinner" android:layout_width="fill_parent" android:layout_height="35.0dip" android:layout_weight="1.0" />
+            </LinearLayout>
+            <LinearLayout android:id="@id/floor_linear" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_below="@id/site_linear">
+                <TextView android:textSize="15.0sp" android:gravity="center" android:layout_width="fill_parent" android:layout_height="fill_parent" android:text="楼  层:" android:layout_weight="2.0" />
+                <Spinner android:gravity="center" android:id="@id/floor_spinner" android:layout_width="fill_parent" android:layout_height="35.0dip" android:layout_weight="1.0" />
+            </LinearLayout>
+            <LinearLayout android:id="@id/x_linear" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_below="@id/floor_linear">
+                <TextView android:textSize="15.0sp" android:gravity="center" android:layout_width="fill_parent" android:layout_height="fill_parent" android:text="X坐标:" android:layout_weight="2.0" />
+                <EditText android:gravity="center" android:id="@id/x_edit" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_weight="1.0" android:inputType="numberDecimal|numberSigned" />
+            </LinearLayout>
+            <LinearLayout android:id="@id/y_linear" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_below="@id/x_linear">
+                <TextView android:textSize="15.0sp" android:gravity="center" android:layout_width="fill_parent" android:layout_height="fill_parent" android:text="Y坐标:" android:layout_weight="2.0" />
+                <EditText android:gravity="center" android:id="@id/y_edit" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_weight="1.0" android:inputType="numberDecimal|numberSigned" />
+            </LinearLayout>
+            <LinearLayout android:id="@id/h_linear" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_below="@id/y_linear">
+                <TextView android:textSize="15.0sp" android:gravity="center" android:layout_width="fill_parent" android:layout_height="fill_parent" android:text="方  向:" android:layout_weight="2.0" />
+                <EditText android:gravity="center" android:id="@id/h_edit" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_weight="1.0" android:inputType="numberDecimal|numberSigned" />
+            </LinearLayout>
+            <LinearLayout android:id="@id/magnet_linear" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_below="@id/h_linear">
+                <TextView android:textSize="15.0sp" android:gravity="center" android:layout_width="fill_parent" android:layout_height="fill_parent" android:text="地  磁:" android:layout_weight="2.0" />
+                <EditText android:gravity="center" android:id="@id/magnet_edit" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_weight="1.0" android:inputType="numberDecimal|numberSigned|phone|textCapCharacters|textCapWords" />
+            </LinearLayout>
+            <LinearLayout android:id="@id/geo_linear" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_below="@id/magnet_linear">
+                <TextView android:textSize="15.0sp" android:gravity="center" android:layout_width="fill_parent" android:layout_height="fill_parent" android:text="几  何:" android:layout_weight="2.0" />
+                <EditText android:gravity="center" android:id="@id/geo_edit" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_weight="1.0" android:inputType="numberDecimal|numberSigned|phone|textCapCharacters|textCapWords" />
+            </LinearLayout>
+            <LinearLayout android:id="@id/beacon_linear" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_below="@id/geo_linear">
+                <TextView android:textSize="15.0sp" android:gravity="center" android:layout_width="fill_parent" android:layout_height="fill_parent" android:text="Beacon:" android:layout_weight="2.0" />
+                <EditText android:gravity="center" android:id="@id/beacon_edit" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_weight="1.0" android:inputType="numberDecimal|numberSigned|phone|textCapCharacters|textCapWords" />
+            </LinearLayout>
+            <LinearLayout android:id="@id/wifi_linear" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_below="@id/beacon_linear">
+                <TextView android:textSize="15.0sp" android:gravity="center" android:layout_width="fill_parent" android:layout_height="fill_parent" android:text="WIFI:" android:layout_weight="2.0" />
+                <EditText android:gravity="center" android:id="@id/wifi_edit" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_weight="1.0" android:inputType="numberDecimal|numberSigned|phone|textCapCharacters|textCapWords" />
+            </LinearLayout>
+            <LinearLayout android:id="@id/gps_linear" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_below="@id/wifi_linear">
+                <TextView android:textSize="15.0sp" android:gravity="center" android:layout_width="fill_parent" android:layout_height="fill_parent" android:text="GPS:" android:layout_weight="2.0" />
+                <EditText android:gravity="center" android:id="@id/gps_edit" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_weight="1.0" android:inputType="numberDecimal|numberSigned|phone|textCapCharacters|textCapWords" />
+            </LinearLayout>
+            <LinearLayout android:id="@id/http_linear" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_below="@id/gps_linear">
+                <TextView android:textSize="15.0sp" android:gravity="center" android:layout_width="fill_parent" android:layout_height="fill_parent" android:text="跟踪网络:" android:layout_weight="2.0" />
+                <EditText android:gravity="center" android:id="@id/http_edit" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_weight="1.0" android:inputType="textUri" />
+            </LinearLayout>
+            <LinearLayout android:id="@id/simulate_linear" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_below="@id/http_linear">
+                <TextView android:textSize="15.0sp" android:gravity="center" android:layout_width="fill_parent" android:layout_height="fill_parent" android:text="模拟文件:" android:layout_weight="2.0" />
+                <EditText android:gravity="center" android:id="@id/simulate_edit" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_weight="1.0" android:inputType="text" />
+            </LinearLayout>
+            <Button android:id="@id/button_start_sdk" android:layout_width="fill_parent" android:layout_height="60.0dip" android:text="确   定" android:layout_below="@id/simulate_linear" />
+        </RelativeLayout>
+    </ScrollView>
+</LinearLayout>

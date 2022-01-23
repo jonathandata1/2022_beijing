@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="20.0dip">
+        <TextView android:textColor="#ff000000" android:ellipsize="end" android:id="@id/tv_thread" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0" />
+        <View android:background="@color/black" android:layout_width="1.0px" android:layout_height="fill_parent" />
+        <TextView android:textSize="16.0sp" android:textColor="#ffff0000" android:id="@id/tv_time" android:layout_width="70.0dip" android:layout_height="fill_parent" android:layout_marginLeft="4.0dip" android:text="39:52:43" />
+        <View android:background="@color/black" android:layout_width="1.0px" android:layout_height="fill_parent" />
+        <TextView android:textSize="16.0sp" android:textColor="#ffff0000" android:id="@id/tv_cost" android:layout_width="40.0dip" android:layout_height="fill_parent" android:text="9.52" />
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhuanche.winterolympic.view.ShadowLayout android:gravity="center" android:orientation="vertical" android:padding="10.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:minHeight="46.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <Space android:layout_width="wrap_content" android:layout_height="10.0dip" />
+    <TextView android:textSize="12.0sp" android:textColor="@color/sy_v222222" android:id="@id/sy_tv_map_bubble_tips" android:paddingLeft="14.0dip" android:paddingRight="14.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/sy_str_driver_loc_error" />
+    <TextView android:textSize="12.0sp" android:textColor="@color/sy_v788efe" android:id="@id/sy_tv_map_bubble_refresh" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/sy_str_click_refresh" />
+    <Space android:layout_width="wrap_content" android:layout_height="10.0dip" />
+</com.zhuanche.winterolympic.view.ShadowLayout>

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:orientation="vertical" android:id="@+id/ll_whole" android:layout_width="match_parent" android:layout_height="match_parent">
+        <FrameLayout android:id="@+id/fl_version_tip" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <ImageView android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginTop="@dimen/dimen_53" android:src="@drawable/version_dialog_title_bg"/>
+            <ImageView android:layout_gravity="center_horizontal" android:id="@+id/iv_version_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/iv_title" android:scaleType="centerCrop"/>
+        </FrameLayout>
+        <FrameLayout android:background="@drawable/version_dialog_bg" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="-5dp">
+            <ImageView android:id="@+id/iv_version_content" android:layout_width="match_parent" android:layout_height="wrap_content" android:scaleType="fitXY"/>
+            <LinearLayout android:orientation="vertical" android:id="@+id/ll_content" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <LinearLayout android:orientation="vertical" android:paddingTop="@dimen/dimen_12" android:paddingBottom="@dimen/dimen_12" android:layout_width="match_parent" android:layout_height="wrap_content">
+                    <TextView android:textSize="@dimen/dimen_20" android:textStyle="bold" android:textColor="#222222" android:gravity="center" android:id="@+id/tv_header_tip" android:layout_width="match_parent" android:layout_height="match_parent" android:text="@string/user_version_update_tip"/>
+                    <TextView android:textSize="@dimen/dimen_16" android:textColor="#9b9b9b" android:gravity="center" android:id="@+id/tv_header_version" android:visibility="visible" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginTop="4dp" android:text="@string/user_version_update_tip"/>
+                </LinearLayout>
+                <TextView android:textSize="@dimen/dimen_14" android:textColor="#8e8e93" android:gravity="center" android:id="@+id/tv_show_content" android:paddingLeft="@dimen/dimen_20" android:paddingRight="@dimen/dimen_20" android:visibility="visible" android:scrollbars="vertical" android:layout_width="match_parent" android:layout_height="wrap_content" android:lineSpacingMultiplier="1.3"/>
+                <View android:background="#dddee3" android:layout_width="match_parent" android:layout_height="1px" android:layout_marginTop="@dimen/dimen_30"/>
+                <LinearLayout android:gravity="center" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="50dp">
+                    <Button android:textSize="@dimen/dimen_17" android:textColor="#8e8e93" android:id="@+id/btn_left" android:background="@color/transparent" android:visibility="visible" android:layout_width="0dp" android:layout_height="match_parent" android:text="@string/user_version_no_update" android:layout_weight="1"/>
+                    <View android:id="@+id/line" android:background="#e1e1e1" android:layout_width="1px" android:layout_height="match_parent"/>
+                    <Button android:textSize="@dimen/dimen_17" android:textColor="#222222" android:id="@+id/btn_right" android:background="@color/transparent" android:layout_width="0dp" android:layout_height="match_parent" android:text="@string/user_version_update" android:layout_weight="1"/>
+                </LinearLayout>
+            </LinearLayout>
+        </FrameLayout>
+    </LinearLayout>
+</FrameLayout>

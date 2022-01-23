@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>SinfPaths</key>
+	<array>
+		<string>SC_Info/TLauncher.sinf</string>
+	</array>
+	<key>SinfReplicationPaths</key>
+	<array>
+		<string>Frameworks/App.framework/SC_Info/App.sinf</string>
+		<string>Frameworks/FMDB.framework/SC_Info/FMDB.sinf</string>
+		<string>Frameworks/Flutter.framework/SC_Info/Flutter.sinf</string>
+		<string>Frameworks/Reachability.framework/SC_Info/Reachability.sinf</string>
+		<string>Frameworks/connectivity.framework/SC_Info/connectivity.sinf</string>
+		<string>Frameworks/device_info.framework/SC_Info/device_info.sinf</string>
+		<string>Frameworks/flutter_boost.framework/SC_Info/flutter_boost.sinf</string>
+		<string>Frameworks/path_provider.framework/SC_Info/path_provider.sinf</string>
+		<string>Frameworks/shared_preferences.framework/SC_Info/shared_preferences.sinf</string>
+		<string>Frameworks/sqflite.framework/SC_Info/sqflite.sinf</string>
+		<string>SC_Info/TLauncher.sinf</string>
+	</array>
+</dict>
+</plist>

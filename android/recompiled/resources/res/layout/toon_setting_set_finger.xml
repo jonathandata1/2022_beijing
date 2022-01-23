@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:orientation="vertical" android:background="@color/color_f8f8fb" android:layout_width="match_parent" android:layout_height="match_parent">
+    <include android:id="@+id/in_1" layout="@layout/toon_item_navigation_bar"/>
+    <LinearLayout android:orientation="vertical" android:background="@color/c20" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dimen_10">
+        <RelativeLayout android:orientation="horizontal" android:id="@+id/rl_set_finger" android:layout_width="match_parent" android:layout_height="@dimen/dimen_50">
+            <TextView android:textSize="@dimen/ts_16px" android:textColor="@color/c12" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dimen_15" android:text="@string/setting_set_finger" android:layout_centerVertical="true"/>
+            <ImageView android:id="@+id/tv_finger_status" android:background="@drawable/common_switch_off" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/dimen_15" android:button="@null" android:drawablePadding="@dimen/dimen_12" android:layout_alignParentRight="true" android:layout_centerVertical="true"/>
+        </RelativeLayout>
+    </LinearLayout>
+    <TextView android:padding="@dimen/dimen_14" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/setting_login_finger_tip" android:lineSpacingMultiplier="1.2"/>
+</LinearLayout>

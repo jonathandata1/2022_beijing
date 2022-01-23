@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/layout_mail_left" android:background="@drawable/chat_item_left_bg" android:layout_width="@dimen/dimen_250" android:layout_height="@dimen/dimen_104"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <FrameLayout android:id="@id/fl_mail_left" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <FrameLayout android:layout_gravity="center" android:id="@id/ll_mail_show_detail_left" android:background="@drawable/icon_item_msg_mail_bg" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <TextView android:textSize="@dimen/dimen_16" android:textColor="@color/color_0098FF" android:gravity="center" android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/mail_show_detail" android:maxLines="1" android:drawableLeft="@drawable/icon_item_msg_mail" android:drawablePadding="@dimen/dimen_7" android:drawableStart="@drawable/icon_item_msg_mail" />
+        </FrameLayout>
+        <LinearLayout android:orientation="vertical" android:id="@id/ll_mail_left" android:paddingTop="@dimen/dimen_10" android:paddingBottom="@dimen/dimen_10" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <TextView android:textSize="@dimen/dimen_18" android:textColor="@color/tc222222" android:ellipsize="end" android:gravity="start|center" android:layout_gravity="start" android:id="@id/tv_mail_title_left" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dimen_10" android:layout_marginRight="@dimen/dimen_10" android:maxLines="1" />
+            <View android:id="@id/line_mail_left" android:background="@color/color_e1e1e1" android:layout_width="wrap_content" android:layout_height="@dimen/dimen_0.5" android:layout_marginTop="@dimen/dimen_6" android:layout_marginBottom="@dimen/dimen_8" />
+            <TextView android:textSize="@dimen/dimen_16" android:textColor="@color/color_e1e1e1" android:ellipsize="end" android:gravity="start|center" android:layout_gravity="start" android:id="@id/tv_mail_content_left" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dimen_10" android:layout_marginRight="@dimen/dimen_10" android:maxLines="2" />
+        </LinearLayout>
+    </FrameLayout>
+    <FrameLayout android:id="@id/fl_mail_load_left" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignTop="@id/fl_mail_left" android:layout_alignBottom="@id/fl_mail_left">
+        <com.msgseal.chat.customviews.ChatPicImageView android:id="@id/img_mail_load_left" android:layout_width="fill_parent" android:layout_height="fill_parent" android:src="@color/c36" />
+        <com.msgseal.chat.customviews.MessageLoadProgressView android:layout_gravity="center" android:id="@id/view_mail_load_left" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    </FrameLayout>
+</RelativeLayout>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" android:background="@drawable/bg_black_round_shape" android:layout_width="wrap_content" android:layout_height="wrap_content">
+    <RelativeLayout android:layout_width="206dp" android:layout_height="149dp">
+        <LinearLayout android:orientation="horizontal" android:id="@+id/cl_down_loading_pc" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="29dp" android:layout_above="@+id/cl_down_loading_des" android:layout_centerHorizontal="true">
+            <TextView android:textSize="16sp" android:textColor="#ffffff" android:id="@+id/cl_down_loading_percent" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="00"/>
+            <TextView android:textSize="16sp" android:textColor="#ffffff" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="%"/>
+        </LinearLayout>
+        <TextView android:textSize="16sp" android:textColor="#ffffff" android:gravity="center_horizontal" android:id="@+id/cl_down_loading_des" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="28dp" android:text="@string/cl_down_loading_des" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true" android:lineSpacingExtra="6dp"/>
+    </RelativeLayout>
+</RelativeLayout>

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" android:background="@color/color_000000" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_alignParentLeft="true" android:layout_alignParentTop="true" android:layout_alignParentStart="true">
+    <ImageView android:id="@+id/video_pic" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+    <FrameLayout android:layout_width="match_parent" android:layout_height="match_parent">
+        <SurfaceView android:layout_gravity="center" android:id="@+id/surface" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+    </FrameLayout>
+    <RelativeLayout android:orientation="horizontal" android:id="@+id/video_top_bar" android:background="@drawable/bg_gradien_black_white_up_down" android:layout_width="match_parent" android:layout_height="50dp">
+        <ImageView android:id="@+id/video_back" android:paddingLeft="15dp" android:layout_width="wrap_content" android:layout_height="match_parent" android:src="@drawable/common_back_white" android:layout_centerVertical="true"/>
+        <ImageView android:id="@+id/video_more" android:paddingRight="15dp" android:layout_width="wrap_content" android:layout_height="match_parent" android:src="@drawable/icon_more" android:layout_alignParentRight="true" android:layout_centerVertical="true"/>
+    </RelativeLayout>
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@+id/video_bottom_bar" android:background="@drawable/bg_gradien_black_white_down_up" android:paddingRight="8dp" android:layout_width="match_parent" android:layout_height="50dp" android:layout_alignParentBottom="true">
+        <ImageView android:id="@+id/video_play" android:paddingLeft="8dp" android:layout_width="wrap_content" android:layout_height="match_parent" android:src="@drawable/chat_file_video_play"/>
+        <SeekBar android:id="@+id/video_progress" android:background="@android:color/transparent" android:layout_width="match_parent" android:layout_height="wrap_content" android:maxHeight="2dp" android:progressDrawable="@drawable/video_seekbar_style" android:thumb="@drawable/slider_thumb_normal" android:layout_weight="10" android:splitTrack="false"/>
+        <TextView android:textColor="@color/c20" android:id="@+id/video_time" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_weight="0"/>
+    </LinearLayout>
+</RelativeLayout>

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" android:background="@color/c20" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <LinearLayout android:layout_gravity="left|center_vertical|center_horizontal|center" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <TextView android:textSize="@dimen/ts_16px" android:textColor="@color/tc222222" android:id="@+id/tv_card_config_text_edit_title" android:paddingLeft="@dimen/dimen_16" android:layout_width="@dimen/dimen_112" android:layout_height="wrap_content"/>
+        <com.msgseal.chat.customviews.NoScrollListView android:id="@+id/lv_vcard_config_customer_field" android:layout_width="match_parent" android:layout_height="wrap_content" android:listSelector="@color/transparent" android:divider="@null" android:overScrollMode="never"/>
+    </LinearLayout>
+    <View android:id="@+id/divider" android:background="@color/c6" android:layout_width="match_parent" android:layout_height="@dimen/res_0x7f070190_dimen_0_3" android:layout_marginLeft="@dimen/dimen_16"/>
+</FrameLayout>

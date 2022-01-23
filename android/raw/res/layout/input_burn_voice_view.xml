@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <RelativeLayout android:id="@id/rl_input_burn_voice" android:background="@drawable/input_burn_voice_bg" android:layout_width="@dimen/dimen_144" android:layout_height="@dimen/dimen_40">
+        <ImageView android:id="@id/input_burn_voice_play_icon" android:layout_width="@dimen/dimen_20" android:layout_height="@dimen/dimen_20" android:layout_marginLeft="@dimen/dimen_14" android:src="@drawable/item_voice_play_right_icon" android:layout_centerVertical="true" />
+        <com.airbnb.lottie.LottieAnimationView android:id="@id/input_burn_voice_playing_icon" android:layout_width="@dimen/dimen_18" android:layout_height="@dimen/dimen_16" android:layout_marginRight="@dimen/dimen_14" android:layout_alignParentRight="true" android:layout_centerVertical="true" app:lottie_autoPlay="false" app:lottie_fileName="item_voice_play_left.json" app:lottie_repeatCount="-1" app:lottie_repeatMode="restart" />
+        <TextView android:textSize="@dimen/dimen_14" android:textColor="@color/color_8E8E93" android:id="@id/tv_input_burn_voice" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dimen_12" android:layout_toLeftOf="@id/input_burn_voice_playing_icon" android:layout_toRightOf="@id/input_burn_voice_play_icon" android:layout_centerVertical="true" />
+    </RelativeLayout>
+</FrameLayout>

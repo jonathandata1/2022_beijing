@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@color/c20" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/iv_org_select_icon" android:visibility="gone" android:layout_width="22.0dip" android:layout_height="22.0dip" android:layout_marginLeft="16.0dip" android:layout_alignParentLeft="true" android:layout_centerVertical="true" />
+    <com.msgseal.base.ui.AvatarView android:id="@id/iv_org_avatar" android:layout_width="@dimen/dimen_46" android:layout_height="@dimen/dimen_46" android:layout_marginLeft="@dimen/dimen_16" android:layout_marginTop="@dimen/dimen_12" android:layout_marginBottom="@dimen/dimen_12" android:layout_toRightOf="@id/iv_org_select_icon" android:layout_centerVertical="true" />
+    <LinearLayout android:gravity="center_vertical" android:layout_gravity="center_vertical" android:orientation="vertical" android:id="@id/ll_tv_org_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerVertical="true" android:layout_marginStart="@dimen/dimen_12" android:layout_toEndOf="@id/iv_org_avatar">
+        <TextView android:textSize="16.0dip" android:textColor="@color/contact_item_text_color" android:ellipsize="end" android:id="@id/tv_org_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true" />
+        <TextView android:textSize="@dimen/dimen_14" android:textColor="@color/color_8E8E93" android:gravity="start|center" android:id="@id/tv_org_title_en" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dimen_3" android:maxLines="1" android:singleLine="true" />
+    </LinearLayout>
+    <TextView android:textSize="14.0dip" android:textColor="@color/contact_colleague_head_end" android:ellipsize="end" android:id="@id/tv_org_subtitle" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dimen_4" android:singleLine="true" android:layout_below="@id/ll_tv_org_title" android:layout_alignLeft="@id/ll_tv_org_title" />
+    <include android:id="@id/view_org_line" android:layout_width="fill_parent" android:layout_height="@dimen/dimen_0.3" android:layout_alignLeft="@id/ll_tv_org_title" android:layout_alignParentBottom="true" layout="@layout/contact_divider" />
+</RelativeLayout>

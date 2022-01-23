@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="bottom" android:layout_gravity="center_horizontal" android:orientation="vertical" android:id="@id/ll_control_voice" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <FrameLayout android:layout_gravity="center" android:id="@id/fl_control_voice_animation" android:background="@drawable/pop_voice_record_blue_bg" android:layout_width="@dimen/dimen_217" android:layout_height="@dimen/dimen_54">
+        <ImageView android:layout_gravity="center" android:id="@id/iv_control_voice_animation" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dimen_20" android:layout_marginRight="@dimen/dimen_20" android:src="@drawable/icon_helper_record0" />
+        <com.msgseal.inputtablet.widgets.VoiceProgressView android:id="@id/view_control_voice_progress" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    </FrameLayout>
+    <TextView android:textSize="@dimen/dimen_14" android:textColor="@color/color_8e8e93" android:gravity="center" android:layout_gravity="center" android:id="@id/tv_control_voice_record" android:background="#ff1f2022" android:layout_width="fill_parent" android:layout_height="@dimen/dimen_28" android:layout_marginTop="@dimen/dimen_20" android:text="@string/message_voice_up_cancel" />
+</LinearLayout>

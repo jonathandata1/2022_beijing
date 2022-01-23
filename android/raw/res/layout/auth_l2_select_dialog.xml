@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="20.0dip" android:layout_marginRight="20.0dip" android:layout_centerInParent="true">
+        <LinearLayout android:orientation="vertical" android:background="@drawable/dialog_authprompt_bg" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <TextView android:textSize="18.0dip" android:textColor="#ff222222" android:layout_gravity="center_horizontal" android:id="@id/tv_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="30.0dip" android:text="@string/please_choose_verify" />
+            <View android:background="#ffdddee3" android:layout_width="fill_parent" android:layout_height="0.70000005dip" android:layout_marginTop="20.0dip" />
+            <RelativeLayout android:id="@id/rl_checkface" android:background="@drawable/layout_selector_auth_prompt_dialog" android:paddingLeft="15.0dip" android:paddingRight="15.0dip" android:clickable="true" android:layout_width="fill_parent" android:layout_height="88.0dip">
+                <ImageView android:id="@id/iv_checkface_icon" android:layout_width="65.0dip" android:layout_height="65.0dip" android:layout_marginLeft="3.5dip" android:layout_marginTop="2.7999878dip" android:layout_marginBottom="2.0dip" android:src="@drawable/auth_leveltwo_checkface_icon" android:layout_centerVertical="true" />
+                <TextView android:textSize="18.0dip" android:textColor="#ffffbc00" android:id="@id/tv_checkface_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="2.0dip" android:text="@string/haixin_title" android:layout_toRightOf="@id/iv_checkface_icon" android:layout_alignTop="@id/iv_checkface_icon" />
+                <TextView android:textSize="14.0dip" android:textColor="#ff8e8e93" android:layout_width="141.0dip" android:layout_height="wrap_content" android:layout_marginLeft="2.0dip" android:layout_marginTop="1.0dip" android:text="@string/open_camera" android:layout_toRightOf="@id/iv_checkface_icon" android:layout_below="@id/tv_checkface_title" />
+                <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_arrow_right" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+            </RelativeLayout>
+            <RelativeLayout android:id="@id/rl_bankcard" android:background="@drawable/layout_selector_auth_prompt_dialog" android:paddingLeft="15.0dip" android:paddingRight="15.0dip" android:clickable="true" android:layout_width="fill_parent" android:layout_height="88.0dip" android:layout_marginTop="10.0dip" android:layout_marginBottom="61.0dip">
+                <ImageView android:id="@id/iv_bankcard_icon" android:layout_width="65.0dip" android:layout_height="65.0dip" android:layout_marginLeft="3.5dip" android:layout_marginTop="2.7999878dip" android:layout_marginBottom="2.0dip" android:src="@drawable/auth_leveltwo_bankcard_icon" android:layout_centerVertical="true" />
+                <TextView android:textSize="18.0dip" android:textColor="#ffffbc00" android:id="@id/tv_l1_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="2.0dip" android:text="@string/card_verify_title" android:layout_toRightOf="@id/iv_bankcard_icon" android:layout_alignTop="@id/iv_bankcard_icon" />
+                <TextView android:textSize="14.0dip" android:textColor="#ff8e8e93" android:layout_width="141.0dip" android:layout_height="wrap_content" android:layout_marginLeft="2.0dip" android:layout_marginTop="1.0dip" android:text="@string/card_verify_title_hint" android:layout_toRightOf="@id/iv_bankcard_icon" android:layout_below="@id/tv_l1_title" />
+                <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_arrow_right" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+            </RelativeLayout>
+        </LinearLayout>
+        <ImageView android:textColor="#ff000000" android:gravity="center" android:layout_gravity="center_horizontal" android:id="@id/tv_cancel" android:layout_width="29.0dip" android:layout_height="29.0dip" android:layout_marginTop="30.0dip" android:src="@drawable/auth_prompt_close" />
+    </LinearLayout>
+</RelativeLayout>

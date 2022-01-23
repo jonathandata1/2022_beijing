@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="horizontal" android:background="@drawable/hp_manager_toast_bg" android:layout_width="wrap_content" android:layout_height="wrap_content" android:minWidth="@dimen/hp_px_120" android:minHeight="@dimen/hp_px_120"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/image_toast_prompt" android:layout_width="@dimen/hp_px_50" android:layout_height="@dimen/hp_px_36" android:layout_marginTop="@dimen/hp_px_27" android:src="@drawable/hp_manager_toast_success" android:layout_centerHorizontal="true" />
+    <TextView android:textSize="@dimen/hp_px_13" android:textColor="@color/color_FFFFFF" android:gravity="center" android:id="@id/tv_toast_prompt" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/hp_px_20" android:layout_marginBottom="@dimen/hp_px_19" android:text="@string/hp_managerapps_edit_success" android:layout_below="@id/image_toast_prompt" android:layout_centerHorizontal="true" />
+</RelativeLayout>

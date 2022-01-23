@@ -1,0 +1,15 @@
+//首页基础配置， 注意注释必须以
+//开头换行结束  否则会影响整体的解析
+//解析的都是LinkedTreeMap对象
+{
+  //服务管理页定制服务数据是否添加
+  "isManagerMyappsSetData": true,
+  //是否显示每个服务分组 "|"状态条显示
+  "isShowHPItemHeaderSelecter": true,
+  //北京通样式实名认证view中二维码图标是否显示
+  "isShowHPAuthQRcode": false,
+  //titlebar 二维码是否显示
+  "isShowTitlebarQRcode": true,
+  //titlebar 扫一扫是否显示
+  "isShowTitlebarScan": true
+}

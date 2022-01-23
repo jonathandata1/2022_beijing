@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" android:gravity="bottom" android:orientation="vertical" android:id="@+id/recommend_pop_window" android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:gravity="bottom" android:orientation="vertical" android:id="@+id/container" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginLeft="8dp" android:layout_marginTop="8dp" android:layout_marginRight="8dp" android:layout_marginBottom="8dp">
+        <Button android:textSize="@dimen/ts_20px" android:textColor="@color/c1" android:id="@+id/accept" android:background="@drawable/rectangle_top" android:layout_width="match_parent" android:layout_height="wrap_content" android:minHeight="40dp" android:text="@string/accept"/>
+        <Button android:textSize="@dimen/ts_20px" android:textColor="@color/c14" android:id="@+id/reject" android:background="@drawable/rectangle_bottom" android:layout_width="match_parent" android:layout_height="@dimen/dimen_40" android:layout_marginTop="0.5dp" android:layout_marginBottom="0.5dp" android:text="@string/refuse"/>
+    </LinearLayout>
+    <Button android:textSize="@dimen/ts_20px" android:textColor="@color/c1" android:id="@+id/cancel" android:background="@drawable/rect" android:layout_width="match_parent" android:layout_height="@dimen/dimen_40" android:layout_marginLeft="8dp" android:layout_marginRight="8dp" android:layout_marginBottom="8dp" android:text="@string/cancel" android:layout_below="@+id/container"/>
+</RelativeLayout>

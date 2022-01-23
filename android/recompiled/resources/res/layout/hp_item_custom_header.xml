@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:id="@+id/topview" android:background="@color/transparent" android:layout_width="match_parent" android:layout_height="wrap_content" android:adjustViewBounds="true">
+    <RelativeLayout android:id="@+id/tiantan_rl" android:background="@color/transparent" android:layout_width="match_parent" android:layout_height="@dimen/hp_px_138">
+        <ImageView android:id="@+id/iv_yun_right" android:layout_width="@dimen/hp_px_93" android:layout_height="@dimen/hp_px_59" android:layout_marginBottom="@dimen/hp_px_15" android:scaleType="centerCrop" android:layout_alignParentRight="true" android:layout_alignParentBottom="true"/>
+        <ImageView android:id="@+id/iv_tiantan" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="@dimen/hp_px_100" android:layout_marginRight="@dimen/hp_px_40" android:scaleType="centerCrop" android:layout_alignParentRight="true" android:layout_alignParentBottom="true"/>
+        <ImageView android:id="@+id/iv_yun_left" android:layout_width="@dimen/hp_px_135" android:layout_height="@dimen/hp_px_62" android:layout_marginRight="@dimen/hp_px_125" android:scaleType="centerCrop" android:layout_alignParentRight="true" android:layout_alignParentBottom="true"/>
+    </RelativeLayout>
+    <include android:id="@+id/lifeview" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/hp_px_15" android:layout_marginRight="@dimen/hp_px_15" android:layout_marginBottom="0dp" android:layout_alignBottom="@+id/tiantan_rl" layout="@layout/hp_fragment_custom_head_lifeinfo"/>
+    <FrameLayout android:id="@+id/home_biz_container" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_below="@+id/tiantan_rl"/>
+</RelativeLayout>

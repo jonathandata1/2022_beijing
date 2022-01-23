@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:background="@color/transparent" android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:gravity="top|center_vertical|center_horizontal|center" android:orientation="horizontal" android:id="@+id/pull_to_refresh" android:layout_width="match_parent" android:layout_height="40dp">
+        <TextView android:textSize="@dimen/ts_14px" android:textColor="@color/c10" android:id="@+id/tv_no_more" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent" android:text="@string/loading_no_more"/>
+        <ImageView android:id="@+id/iv_1" android:background="@null" android:visibility="invisible" android:layout_width="9dp" android:layout_height="9dp" android:src="@drawable/splash_dot" android:contentDescription="@string/app_name"/>
+        <ImageView android:id="@+id/iv_2" android:background="@null" android:visibility="invisible" android:layout_width="9dp" android:layout_height="9dp" android:layout_marginLeft="5dp" android:layout_marginRight="5dp" android:src="@drawable/splash_dot" android:contentDescription="@string/app_name"/>
+        <ImageView android:id="@+id/iv_3" android:background="@null" android:visibility="invisible" android:layout_width="9dp" android:layout_height="9dp" android:src="@drawable/splash_dot" android:contentDescription="@string/app_name"/>
+    </LinearLayout>
+</LinearLayout>

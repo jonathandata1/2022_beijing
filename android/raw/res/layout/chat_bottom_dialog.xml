@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:focusable="true" android:fitsSystemWindows="true" android:clickable="true" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.msgseal.inputtablet.utils.BlurringView android:id="@id/chat_dialog_blurringView" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <ImageView android:id="@id/chat_bottom_close" android:padding="@dimen/dimen_10" android:layout_width="@dimen/dimen_44" android:layout_height="@dimen/dimen_28" android:layout_marginTop="@dimen/dimen_10" android:src="@drawable/chat_bottom_close_icon" android:scaleType="fitCenter" android:layout_centerHorizontal="true" />
+    <ImageView android:id="@id/chat_bottom_dialog_setting" android:padding="@dimen/dimen_20" android:layout_width="@dimen/dimen_62" android:layout_height="@dimen/dimen_63" android:layout_marginTop="@dimen/dimen_27" android:layout_marginBottom="@dimen/dimen_20" android:src="@drawable/help_icon_setting" android:scaleType="centerCrop" android:layout_alignParentRight="true" android:layout_alignParentBottom="true" android:layout_alignParentEnd="true" />
+    <android.support.v7.widget.RecyclerView android:id="@id/chat_bottom_dialog_recycler" android:paddingBottom="@dimen/dimen_1" android:scrollbars="none" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_above="@id/chat_bottom_dialog_setting" android:layout_below="@id/chat_bottom_close" android:overScrollMode="never" />
+    <FrameLayout android:id="@id/dialog_loading_layout" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_above="@id/chat_bottom_dialog_setting" android:layout_below="@id/chat_bottom_close">
+        <FrameLayout android:layout_gravity="center" android:background="@drawable/tmail_loading_image" android:layout_width="@dimen/dimen_45" android:layout_height="@dimen/dimen_57">
+            <com.airbnb.lottie.LottieAnimationView android:layout_gravity="center" android:id="@id/dialog_loading_animation" android:layout_width="@dimen/dimen_45" android:layout_height="@dimen/dimen_57" app:lottie_fileName="@string/lottie_file_name" app:lottie_loop="true" />
+        </FrameLayout>
+    </FrameLayout>
+</RelativeLayout>

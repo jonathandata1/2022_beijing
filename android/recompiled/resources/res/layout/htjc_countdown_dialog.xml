@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" android:background="@android:color/transparent" android:layout_width="match_parent" android:layout_height="match_parent">
+    <ImageView android:id="@+id/img_wait" android:background="@android:color/transparent" android:visibility="gone" android:layout_width="150dp" android:layout_height="150dp" android:src="@drawable/htjc_img_wait" android:layout_centerInParent="true" android:contentDescription="@string/htjc_app_name_overlight"/>
+    <ImageView android:id="@+id/img_count" android:background="@android:color/transparent" android:layout_width="90dp" android:layout_height="110dp" android:src="@drawable/htjc_img_count_3" android:layout_centerInParent="true" android:contentDescription="@string/htjc_app_name_overlight"/>
+</RelativeLayout>

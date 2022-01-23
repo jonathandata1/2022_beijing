@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>photo</key>
+	<dict>
+		<key>excutor</key>
+		<string>TNRPhotoModule</string>
+		<key>out</key>
+		<string>TNRPhotoMultiModel</string>
+		<key>in</key>
+		<string>TNRPhotoInModel</string>
+		<key>catchCallBack</key>
+		<true/>
+	</dict>
+</dict>
+</plist>

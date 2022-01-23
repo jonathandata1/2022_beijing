@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <RelativeLayout android:id="@+id/layout" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/hp_px_3" android:layout_marginBottom="@dimen/hp_px_5">
+        <RelativeLayout android:gravity="center_horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/hp_px_10" android:layout_marginBottom="@dimen/hp_px_10" android:layout_centerInParent="true">
+            <ImageView android:id="@+id/appicon" android:layout_width="@dimen/hp_px_42" android:layout_height="@dimen/hp_px_42" android:layout_centerHorizontal="true"/>
+            <TextView android:textSize="@dimen/hp_px_13" android:textColor="@color/color_5C5C5C" android:gravity="center_vertical" android:id="@+id/appName" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/hp_px_5" android:singleLine="true" android:layout_below="@+id/appicon" android:layout_centerHorizontal="true"/>
+        </RelativeLayout>
+        <ImageView android:id="@+id/appstatus" android:visibility="gone" android:layout_width="@dimen/hp_px_16" android:layout_height="@dimen/hp_px_16" android:layout_marginTop="@dimen/hp_px_4" android:layout_marginRight="@dimen/hp_px_4" android:src="@drawable/hp_append_app" android:layout_alignParentTop="true" android:layout_alignParentRight="true"/>
+    </RelativeLayout>
+</RelativeLayout>

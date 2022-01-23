@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <RelativeLayout android:id="@+id/rl_tmail_sv" android:layout_width="match_parent" android:layout_height="@dimen/dimen_70" android:layout_marginLeft="@dimen/dimen_16" android:layout_marginRight="@dimen/dimen_16">
+        <com.msgseal.base.ui.AvatarView android:id="@+id/head_pic" android:layout_width="@dimen/dimen_46" android:layout_height="@dimen/dimen_46" android:src="@drawable/default_head_person132" android:scaleType="fitXY" android:layout_centerVertical="true"/>
+        <LinearLayout android:orientation="vertical" android:id="@+id/vcard_textinfo" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dimen_12" android:layout_toRightOf="@+id/head_pic" android:layout_centerVertical="true">
+            <TextView android:textSize="@dimen/dimen_16" android:textColor="@color/color_222222" android:ellipsize="end" android:id="@+id/tv_item_card_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="1"/>
+            <TextView android:textSize="@dimen/dimen_14" android:textColor="@color/c8" android:ellipsize="end" android:id="@+id/tv_item_tmail" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dimen_4" android:maxLines="1"/>
+        </LinearLayout>
+        <View android:id="@+id/lineview" android:background="@color/color_4E5052" android:layout_width="match_parent" android:layout_height="@dimen/res_0x7f070190_dimen_0_3" android:layout_alignLeft="@+id/vcard_textinfo" android:layout_alignParentBottom="true"/>
+    </RelativeLayout>
+</LinearLayout>

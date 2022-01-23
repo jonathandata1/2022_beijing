@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <LinearLayout android:orientation="vertical" android:id="@+id/type_head_view" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <RelativeLayout android:orientation="horizontal" android:id="@+id/ll_" android:paddingLeft="@dimen/dimen_12" android:paddingRight="@dimen/dimen_16" android:layout_width="match_parent" android:layout_height="@dimen/dimen_48">
+            <ImageView android:id="@+id/type_icon" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/search_icon_contacts" android:layout_centerVertical="true"/>
+            <TextView android:textSize="@dimen/dimen_18" android:textColor="@color/color_c5c5c5" android:id="@+id/typetitle" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dimen_4" android:layout_toRightOf="@+id/type_icon" android:layout_centerVertical="true"/>
+            <TextView android:textSize="@dimen/dimen_14" android:gravity="center_vertical" android:id="@+id/search_all_type_more" android:layout_width="wrap_content" android:layout_height="match_parent" android:text="@string/msg_latest_more" android:drawableRight="@drawable/right_arrows" android:drawablePadding="@dimen/dimen_8" android:layout_alignParentRight="true" android:layout_centerVertical="true"/>
+        </RelativeLayout>
+    </LinearLayout>
+    <RelativeLayout android:id="@+id/search_result_item_info" android:layout_width="match_parent" android:layout_height="@dimen/dimen_72">
+        <ImageView android:id="@+id/search_result_icon" android:layout_width="@dimen/dimen_50" android:layout_height="@dimen/dimen_50" android:layout_marginLeft="@dimen/dimen_12" android:layout_marginRight="@dimen/dimen_12" android:layout_centerVertical="true"/>
+        <LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:id="@+id/search_result_item_name" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginRight="@dimen/dimen_16" android:layout_toLeftOf="@+id/search_result_icon" android:layout_toRightOf="@+id/search_result_icon" android:layout_alignParentRight="true" android:layout_centerVertical="true">
+            <TextView android:textSize="@dimen/dimen_17" android:ellipsize="end" android:layout_gravity="center_vertical" android:id="@+id/tv_tmail_search_result_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="1"/>
+            <LinearLayout android:orientation="horizontal" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dimen_4">
+                <TextView android:textSize="@dimen/dimen_14" android:ellipsize="end" android:id="@+id/search_result_prefix" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/search_type_group_contain" android:maxLines="1"/>
+                <TextView android:textSize="@dimen/dimen_14" android:ellipsize="end" android:id="@+id/search_result_subtitle" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="1"/>
+            </LinearLayout>
+        </LinearLayout>
+        <View android:id="@+id/search_result_lineview" android:layout_width="match_parent" android:layout_height="@dimen/res_0x7f070191_dimen_0_5" android:layout_alignLeft="@+id/search_result_item_name" android:layout_alignParentBottom="true"/>
+    </RelativeLayout>
+</LinearLayout>

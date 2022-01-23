@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@drawable/call_circle_bg" android:layout_width="@dimen/dimen_74" android:layout_height="@dimen/dimen_74"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:layout_gravity="center_horizontal" android:layout_width="@dimen/dimen_30" android:layout_height="@dimen/dimen_30" android:layout_marginTop="@dimen/dimen_12" android:src="@drawable/icon_phone_call" />
+    <TextView android:textSize="@dimen/dimen_12" android:textColor="@color/white" android:layout_gravity="center_horizontal" android:id="@id/tv_waiting" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="等待中" />
+    <Chronometer android:textSize="@dimen/dimen_12" android:textColor="@color/white" android:layout_gravity="center_horizontal" android:id="@id/tv_time_count" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:format="00:00" />
+</LinearLayout>

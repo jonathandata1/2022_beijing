@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <RelativeLayout android:id="@+id/delete_view" android:background="@drawable/channel_user_item_fixed_bg" android:layout_width="@dimen/px_80" android:layout_height="@dimen/px_36" android:layout_marginTop="@dimen/px_16" android:layout_centerHorizontal="true">
+        <ImageView android:id="@+id/fixed_img" android:visibility="gone" android:layout_width="@dimen/px_68" android:layout_height="@dimen/px_21" android:layout_centerInParent="true"/>
+        <RelativeLayout android:id="@+id/delete_img" android:visibility="gone" android:layout_width="@dimen/px_10" android:layout_height="@dimen/px_10" android:layout_marginLeft="@dimen/px_8" android:layout_marginTop="@dimen/px_13">
+            <ImageView android:layout_width="@dimen/px_10" android:layout_height="@dimen/px_10" android:src="@drawable/delete"/>
+        </RelativeLayout>
+        <TextView android:textSize="@dimen/px_12" android:textColor="@color/color_222222" android:ellipsize="end" android:gravity="center" android:id="@+id/user_text" android:layout_width="@dimen/px_52" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/px_4" android:text="" android:lines="2" android:maxEms="4" android:layout_toRightOf="@+id/delete_img" android:layout_centerInParent="true" android:layout_centerVertical="true"/>
+    </RelativeLayout>
+</RelativeLayout>

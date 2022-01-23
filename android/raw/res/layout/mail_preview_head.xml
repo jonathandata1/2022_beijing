@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dimen_4">
+        <TextView android:textSize="@dimen/dimen_17" android:ellipsize="end" android:id="@id/sender_d" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dimen_4" android:text="@string/msg_detail_sender" android:maxLines="1" android:layout_centerVertical="true" />
+        <TextView android:textSize="@dimen/dimen_16" android:textColor="@color/color_0063e7" android:gravity="end" android:id="@id/show_hide" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dimen_20" android:text="@string/msg_detail_hide" android:layout_toRightOf="@id/sender_d" android:layout_alignParentRight="true" android:layout_centerVertical="true" android:layout_toEndOf="@id/sender_d" android:layout_alignParentEnd="true" />
+    </RelativeLayout>
+    <TextView android:textSize="@dimen/dimen_16" android:id="@id/receiver_d" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dimen_14" android:text="@string/msg_detail_receiver" />
+    <TextView android:textSize="@dimen/dimen_16" android:id="@id/cc_d" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dimen_10" android:text="@string/msg_detail_cc" />
+    <TextView android:textSize="@dimen/dimen_16" android:id="@id/scc_d" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dimen_10" android:text="@string/msg_detail_scc" />
+    <View android:background="@color/color_e1e1e1" android:layout_width="fill_parent" android:layout_height="@dimen/dimen_0.3" android:layout_marginTop="@dimen/dimen_20" />
+    <TextView android:textSize="@dimen/dimen_20" android:textStyle="bold" android:textColor="@color/color_222222" android:id="@id/subject_d" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dimen_16" />
+    <TextView android:textSize="@dimen/dimen_14" android:textColor="@color/color_9b9b9b" android:id="@id/time_d" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dimen_4" />
+</LinearLayout>

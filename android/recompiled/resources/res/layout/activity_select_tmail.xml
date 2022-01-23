@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:id="@+id/rl_parent_view" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <LinearLayout android:orientation="vertical" android:id="@+id/bottom_view" android:background="#1e1e1e" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true">
+        <View android:id="@+id/ll_line_bottom_view" android:layout_width="match_parent" android:layout_height="@dimen/res_0x7f070190_dimen_0_3"/>
+        <TextView android:textSize="@dimen/dimen_16" android:textColor="@color/c20" android:gravity="center" android:id="@+id/logBtn" android:background="@drawable/bg_input_next_selector" android:layout_width="match_parent" android:layout_height="@dimen/dimen_44" android:layout_marginLeft="@dimen/dimen_16" android:layout_marginTop="@dimen/dimen_10" android:layout_marginRight="@dimen/dimen_16" android:layout_marginBottom="@dimen/dimen_10" android:text="@string/select_my_temail_login"/>
+    </LinearLayout>
+    <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <LinearLayout android:orientation="vertical" android:id="@+id/ll_title_view_ms" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <TextView android:textSize="@dimen/dimen_14" android:id="@+id/tv_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dimen_16" android:layout_marginTop="@dimen/dimen_20" android:layout_marginBottom="@dimen/dimen_6" android:text="@string/select_my_temail_title"/>
+            <View android:id="@+id/title_view_line_view" android:layout_width="match_parent" android:layout_height="@dimen/res_0x7f070190_dimen_0_3" android:layout_marginLeft="@dimen/dimen_16"/>
+        </LinearLayout>
+        <android.support.v7.widget.RecyclerView android:id="@+id/lv_tmail_list" android:scrollbars="none" android:layout_width="match_parent" android:layout_height="wrap_content" android:listSelector="@color/transparent" android:layout_above="@+id/bottom_view" android:layout_alignParentTop="true" android:overScrollMode="never"/>
+    </LinearLayout>
+</RelativeLayout>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@drawable/view_org_pop_bg" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="@dimen/dimen_20" android:layout_centerInParent="true"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="@dimen/dimen_17" android:textColor="@color/common_dialog_center_title_color" android:gravity="center" android:id="@id/tv_dialog_title" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dimen_29" android:layout_marginTop="@dimen/dimen_19" android:layout_marginRight="@dimen/dimen_29" />
+    <TextView android:textSize="@dimen/dimen_15" android:textColor="@color/c28" android:gravity="center" android:id="@id/tv_dialog_content" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dimen_29" android:layout_marginTop="@dimen/dimen_4" android:layout_marginRight="@dimen/dimen_29" android:layout_marginBottom="@dimen/dimen_20" />
+    <View android:id="@id/line1" android:background="@color/c36" android:layout_width="fill_parent" android:layout_height="@dimen/dimen_0.3" />
+    <LinearLayout android:id="@id/btn_parent" android:layout_width="fill_parent" android:layout_height="@dimen/dimen_50">
+        <TextView android:textSize="@dimen/dimen_17" android:gravity="center" android:id="@id/tv_dialog_left" android:layout_width="@dimen/dimen_0" android:layout_height="fill_parent" android:layout_weight="1.0" />
+        <View android:id="@id/line2" android:background="@color/c36" android:layout_width="@dimen/dimen_0.3" android:layout_height="fill_parent" />
+        <TextView android:textSize="@dimen/dimen_17" android:gravity="center" android:id="@id/tv_dialog_right" android:layout_width="@dimen/dimen_0" android:layout_height="fill_parent" android:layout_weight="1.0" />
+    </LinearLayout>
+</LinearLayout>

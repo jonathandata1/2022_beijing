@@ -1,0 +1,727 @@
+{
+    "TSiri": {
+          "configInit":{
+              "name": "TSiri",
+              "isAsyncAction": false,
+              "skipWhenFailed": true,
+              "routerSelector": "toon://tsiri/setup"
+          },
+          "网络不给力": "网络不给力",
+          "点击屏幕重新加载": "点击屏幕重新加载",
+          "加载中..": "加载中..",
+          "appId":"5cc01efc",
+          "weakupFile":"ivw_5cc01efc.jet",
+          "aiuiCfgFileName":"aiui"
+      },
+    "tmap": {
+        "hideLogo": 1
+    },
+    "tcard": {
+            "cardEditItemPlistName":"vcard_card_info_person",
+            "isShowSaveToPhone":"0"
+        },
+    "tcontact": {
+            "orgContactUpdateInterval":900,
+            "likeDongao": true,
+            "sortOrgList":"true"
+        },
+    "tchat": {
+        "smsencry":"0459AD9DF2F16BDC1D45B29B3920AECD348C6A34B7DB33743B90FD8BA63059621EFEE3204A7227413C78422281B1937824ED1911EE1E78DDAC8B5462FCF91ABD00",
+        "isShowVoiceToTextAction":"1",
+        "isShowGroupSelfNickName":"0",
+        "settingCPManagerHidden":"true",
+        "settingAddEmailHidden":"true",
+        "settingRemoveEmailHidden":"true",
+        "homePageLoginNewEmailHidden":"true",
+        "homePageContactHidden":"false",
+        "tmailHomePageLeftMenuHidden":"false",
+        "isHideTraceless":"1",
+        "share":{
+            "shareHaveContact":"1",
+            "downloadUrl":"https://dongaostatic.beijing2022.cn/download/index.html"
+        },
+        "addButtonFunctionList":[
+            {
+                "icon":"tms_new_group",
+                "title":"发起群聊",
+                "url":"toon://mainHelp/createGroupChat"
+            },
+            {
+                "icon":"tms_add_contant",
+                "title":"添加联系人",
+                "url":"toon://mainHelp/newContact"
+            },
+            {
+                "icon":"tms_qrcode",
+                "title":"扫一扫",
+                "url":"toon://mainHelp/scan"
+            }
+        ],
+        "reportGuidelines":{
+                    "zh_url" : "https://dongaostatic.beijing2022.cn/notice-reporting/index.html?language=zh",
+                    "en_url" : "https://dongaostatic.beijing2022.cn/notice-reporting/index.html?language=en",
+                },
+        "chatReportUrl":"toon://chat/report",
+        "groupChatReportUrl":"toon://chat/report",
+    },
+    "TUser":{
+        "t_dataContext":{
+            "SettingString":"关于冬奥通",
+            "promptLabel":"更换后，下次可以使用新手机号登录冬奥通",
+            "protocolStr":"冬奥通服务用户协议",
+            "PCStr":"冬奥通PC客户端登录确认",
+            "aboutToonLogoImageName":"aboutLogo",
+            "loginIconName":""
+        }
+    },
+    "tshare": {
+        "configurationAppId": {
+            "tshare_AppId": {
+                "QQAppId": "101913887",
+                "weixinAppId": "wx74cc6da60f9f9f33",
+                "weiboAppId": "1894078821"
+            }
+        }
+    },
+    
+   "taccount": {
+    "name": "taip账号组件",
+    "accountCell": {
+      "tn_dataContext": {
+        "toonTitle": "冬奥通账号",
+        "nameLabel": "变更手机号、密码管理、安全邮箱"
+      }
+    },
+    "useClientHeaderInfo": false,
+    "sourceSyncTimeExpire": "600"
+  },
+  "toonmq": {
+    "version": "1.0",
+    "name": "消息队列组件",
+    "customizeProvider": "nothing",
+    "topics": [
+      {
+        "name": "toonApplicationInit",
+        "desc": "app冷启动事件",
+        "scheduleInQueue": false,
+        "syncInMainThread": true,
+        "invokeSubsciberInMainThread": true,
+        "subscribers": [
+          {
+            "name": "TDNS",
+            "routerSelector": "toon://tdns/update"
+          },
+          {
+            "name": "TNTAIPSDK",
+            "routerSelector": "toon://tntaipsdk/addCPListener"
+          },
+          {
+            "name": "TSkin",
+            "routerSelector": "toon://tskin/registerTSkin",
+            "actionParamMap": {
+              "userId": "userId"
+            },
+            "skipWhenFailed": true
+          },
+          {
+            "name": "TSplash",
+            "routerSelector": "toon://tsplashboard/tsplashnet",
+            "actionParamMap": {},
+            "skipWhenFailed": true
+          },
+          {
+            "name": "TConfigCenter",
+            "routerSelector": "toon://tconfigcenter/config"
+          },
+          {
+              "name": "TContact",
+              "routerSelector": "toon://contact/addBackupSuccessObserver"
+          }
+        ]
+      },
+      {
+        "name": "startLogin",
+        "desc": "启动后进入登录页",
+        "scheduleInQueue": false,
+        "syncInMainThread": true,
+        "invokeSubsciberInMainThread": true,
+        "subscribers": [
+          {
+            "name": "TSplash",
+            "routerSelector": "toon://tsplashboard/tsplash",
+            "skipWhenFailed": true
+          }
+        ]
+      },
+      {
+        "name": "configInit",
+        "desc": "登录成功后初始化事件",
+        "scheduleInQueue": true,
+        "syncInMainThread": false,
+        "invokeSubsciberInMainThread": false,
+        "subscribers": [
+            {
+                "name": "tnetwork",
+                "routerSelector": "toon://tnetwork/setup",
+                "skipWhenFailed": true
+            },
+            
+            {
+                "name": "TNOrganization",
+                "isAsyncAction": true,
+                "skipWhenFailed": true,
+                "routerSelector": "toon://organization/updateOrgInfo"
+            },
+            
+            {
+            "name": "TMail",
+            "className": "TNCInitTask",
+            "isAsyncAction": true,
+            "actionSelector": "initialTmailManagerWithInfo:complete:",
+            "actionParamMap": {
+              "userId": "userId",
+              "userToken": "userToken",
+              "toonType": "toonType",
+              "pushToken": "deviceToken",
+              "navigationController": "navigationController",
+              "keyPath": "keyPath"
+            },
+            "staticParam": {
+              "allowRegisterMulti": false
+            },
+            "skipWhenFailed": false
+          },
+          {
+            "name": "TContact",
+            "skipWhenFailed": true,
+            "routerSelector": "toon://hrcontact/switchUserDB",
+            "actionParamMap": {
+              "userIdToNameDB": "tmail"
+            }
+          },
+          {
+            "name": "TAssistant",
+            "isAsyncAction": true,
+            "skipWhenFailed": true,
+            "routerSelector": "toon://assistant/setup"
+          },
+          {
+            "name": "TConfigCenter",
+            "routerSelector": "toon://tconfigcenter/config",
+            "actionParamMap": {
+              "userId": "userId"
+            },
+            "skipWhenFailed": true
+          },
+          {
+            "name": "TSkin",
+            "routerSelector": "toon://tskin/registerTSkin",
+            "actionParamMap": {
+              "userId": "userId"
+            },
+            "skipWhenFailed": true
+          },
+          {
+            "name": "TopLine",
+            "className": "TContentUserManager",
+            "sharedInstanceMethod": "defaultManager",
+            "isAsyncAction": false,
+            "actionSelector": "registerContentUser:",
+            "skipWhenFailed": true,
+            "actionParamMap": {
+              "userId": "userId",
+              "userAvatar": "avatar",
+              "userName": "nickName"
+            }
+          },
+          {
+            "name": "Bus",
+            "skipWhenFailed": true,
+            "routerSelector": "toon://municipalwallet/fzQrCodeInitMethod"
+          },
+          {
+            "name": "tchat",
+            "isAsyncAction": true,
+            "skipWhenFailed": true,
+            "routerSelector": "toon://chat/setup"
+          },
+          {
+              "name": "trustauth",
+              "isAsyncAction": true,
+              "skipWhenFailed": true,
+              "routerSelector": "toon://trustauth/setup"
+          },
+          {
+          "name": "TContact",
+          "isAsyncAction": true,
+          "skipWhenFailed": true,
+          "routerSelector": "toon://contact/setup"
+          },
+          {
+            "name": "TNCertification",
+            "skipWhenFailed": true,
+            "routerSelector": "toon://certinformation/getUserCertInfo"
+          }
+        ]
+      },
+      {
+        "name": "startInteractiveInit",
+        "desc": "登录成功后带UI交互的初始化事件",
+        "scheduleInQueue": false,
+        "syncInMainThread": true,
+        "invokeSubsciberInMainThread": true,
+        "subscribers": [
+          {
+            "name": "TSplash",
+            "routerSelector": "toon://tsplashboard/tsplash",
+            "skipWhenFailed": true
+          }
+        ]
+      },
+      {
+        "name": "leftFromLandingPage",
+        "desc": "从LandingPage进入首页",
+        "scheduleInQueue": false,
+        "syncInMainThread": true,
+        "invokeSubsciberInMainThread": true,
+        "subscribers": [
+          {
+            "name": "TSplash",
+            "routerSelector": "toon://tsplashboard/tsplash",
+            "skipWhenFailed": true
+          }
+        ]
+      },
+      {
+        "name": "configUnregister",
+        "desc": "退出登录事件",
+        "scheduleInQueue": false,
+        "syncInMainThread": false,
+        "invokeSubsciberInMainThread": false,
+        "subscribers": [
+          {
+            "name": "Tmail",
+            "routerSelector": "toon://message/appAccountLogout"
+          },
+          {
+            "name": "TSkin",
+            "routerSelector": "toon://tskin/resetDefault"
+          },
+          {
+                 "name": "TRouter",
+                  "routerSelector": "toon://trouter/cleanCache"
+           },
+          {
+            "name": "Tcard",
+            "className": "TNCardManager",
+            "sharedInstanceMethod": "shareManager",
+            "actionSelector": "unregisterCardManager"
+          },
+          {
+            "name": "TNOrganization",
+            "routerSelector": "toon://organization/reset"
+          },
+          {
+              "name": "trustauth",
+              "routerSelector": "toon://trustauth/reset"
+          },
+          {
+              "name": "tnetwork",
+              "routerSelector": "toon://tnetwork/reset",
+              "skipWhenFailed": true
+          }
+        ]
+      },
+      {
+        "name": "pushTokenHandler",
+        "scheduleInQueue": false,
+        "syncInMainThread": false,
+        "invokeSubsciberInMainThread": false,
+        "subscribers": [
+          {
+            "name": "Tmail",
+            "routerSelector": "toon://message/pushToken",
+            "actionParamMap": {
+              "pushToken": "deviceToken"
+            }
+          }
+        ]
+      },
+      {
+        "name": "skinChanged",
+        "scheduleInQueue": false,
+        "syncInMainThread": true,
+        "invokeSubsciberInMainThread": true,
+        "subscribers": [
+          {
+            "name": "TMail",
+            "routerSelector": "toon://message/initTNN"
+          }
+        ]
+      },
+      {
+        "name": "mainPageLoaded",
+        "scheduleInQueue": false,
+        "syncInMainThread": true,
+        "invokeSubsciberInMainThread": true,
+        "subscribers": [
+          {
+            "name": "TMail",
+            "routerSelector": "toon://message/initTNN"
+          }
+        ]
+      },
+      {
+        "name": "thirdAccountLogin",
+        "scheduleInQueue": true,
+        "syncInMainThread": false,
+        "invokeSubsciberInMainThread": false,
+        "subscribers": [
+          {
+            "name": "TMail",
+            "routerSelector": "toon://message/thirdAccountLogin"
+          }
+        ]
+      },
+      {
+        "name": "thirdAccountLogout",
+        "scheduleInQueue": true,
+        "syncInMainThread": false,
+        "invokeSubsciberInMainThread": false,
+        "subscribers": [
+          {
+            "name": "TMail",
+            "routerSelector": "toon://message/thirdAccountLogout"
+          }
+        ]
+      },
+      {
+        "name": "accountUpdated",
+        "desc": "组织账号变更事件",
+        "scheduleInQueue": true,
+        "syncInMainThread": false,
+        "invokeSubsciberInMainThread": false,
+        "subscribers": [
+          {
+            "name": "TCard",
+            "routerSelector": "toon://cardlib/orgcard"
+          }
+        ]
+      }
+    ]
+  },
+  "tscan": {
+    "scanQrcode": [
+    ],
+    "appQrcode": {
+      "url": "https://dongaostatic.beijing2022.cn/download/index.html",
+      "logoImageName" :"qrcode_scan_logo"
+    },
+    "scanQrcodeBottomActionArray":[
+                  {
+                      "title":"APP二维码",
+                      "imageName":"scanApp",
+                      "ToonRouterModule":"qrcode",
+                      "ToonRouterPath":"openmyappqrcode"
+                  },
+                  {
+                      "title":"相册",
+                      "imageName":"scanPhoto",
+                      "ToonRouterModule":"tphoto",
+                      "ToonRouterPath":"photo"
+                  }
+    ]
+  },
+    "tskin": {
+        "default_skin_file": "white",
+        "configImage": {
+            "skin_default_previewImageName": "",
+            "skin_net_placeHolderImageName": "",
+            "skin_default_selectImageName": "",
+            "skin_net_selectImageName": "",
+            "skin_default_unselectImageName": ""
+        },
+        "data": [
+                 {
+                 "resId": "100000001",
+                 "name":"white",
+                 "previewImage": "local_skin_white",
+                 "colourScheme": "#F9F9F9",
+                 "reserved1": "#CACACA",
+                 "status":3
+                 },
+                 {"resId": "100000000",
+                 "name":"default",
+                 "previewImage":"local_skin_default",
+                 "colourScheme":"#2E3039",
+                 "reserved1":"",
+                 "status":3
+                 },
+                 ]
+    },
+  "tSplash": {
+    "name": "启动页组件",
+    "config": {
+      "t_dataContext": {
+        "SettingString":"冬奥通",
+        "service_domain": "api.ocmconfig.systoon.com"
+      }
+    }
+  },
+  "TRouter": {
+    "name": "路由组件",
+    "util": {
+      "tip404": "协议不存在"
+    }
+  },
+  "TAssistant": {
+      "configInit":{
+          "name": "TAssistant",
+          "isAsyncAction": false,
+          "skipWhenFailed": true,
+          "routerSelector": "toon://assistant/setup"
+      },
+      "toonProtocol":{
+          "getAccount":[
+              "chat",
+              "getTemailList"
+          ],
+          "setMessage":[
+              "message",
+              "addOrUpdateCustomSession"
+          ],
+          "resetMessage":[
+              "message",
+              "addOrUpdateCustomSession"
+          ]
+      },
+      "images":{
+          "setMessageIcon":"assistant"
+      },
+      "origins":[
+          {
+              "url":"http://api.assistant.systoon.com/obtain/tmail/",
+              "domain":"api.assistant.systoon.com",
+              "path":"/obtain/tmail/"
+          }
+      ],
+      "homepage":"http://assist.systoon.com/",
+      "groupSquare":{
+          "url":"http://static.t.email/groupguide/index.html",
+          "domain":"static.t.email",
+          "path":"/groupguide/index.html"
+      }
+  },
+  "TNCertification":{
+      "pTokenInHeader":true,
+      "smsencry":true,
+      "isHiddenCertView":true,
+      "HiddenCertificateProtocal":true
+  },
+  "TNWebAppManagerUI": {
+    "应用桌面": "应用桌面",
+    "应用桌面右按钮": "TNWAMU_desktop_blackRight",
+    "编辑应用桌面": "编辑应用桌面",
+    "取消": "取消",
+    "完成": "完成",
+    "编辑成功": "编辑成功",
+    "应用库": "应用库",
+    "添加应用": "添加应用",
+    "添加": "添加",
+    "简介": "简介",
+    "添加成功": "添加成功",
+    "再试一次": "再试一次",
+    "网络无法连接，请检查网络设置": "网络无法连接，请检查网络设置",
+    "暂无应用": "暂无应用",
+    "该应用已下架": "该应用已下架",
+    "打开应用失败": "打开应用失败",
+    "打开应用库失败": "打开应用库失败",
+    "TNWAMU_tipsImage_netError": "TNWAMU_tipsImage_netError",
+    "TNWAMU_tipsImage_nodata": "TNWAMU_tipsImage_nodata",
+    "TNWAMU_tipsImage_dropoff": "TNWAMU_tipsImage_dropoff",
+    "defaultInstallApp": []
+  },
+  "TNToongine": {
+    "网络不给力": "网络不给力",
+    "点击屏幕重新加载": "点击屏幕重新加载",
+    "加载中..": "加载中..",
+    "网页无法打开": "网页无法打开"
+  },
+  "tncustomcontact":{
+      "showGovernment":true,
+      "govRequestDomain":"http://govcontacthrt.huairoutoon.com"
+  },
+  "skeleton": {
+    "version": "1.0",
+    "name": "骨架组件-tabbar",
+    "customizeProvider": "nothing",
+    "normalIconRenderingModeTemplate": false,
+    "hightLightIconRenderingModeTemplate": false,
+    "resourcesBundleName":"custom_skeleton.bundle",
+    "tabbarConfigs": [
+        {
+            "name": "HomePageFlutter",
+            "routerName": "homepage://main_page",
+            "params":{},
+            "title": "首页",
+            "viewControllerClass": "THomeFlutterViewController",
+            "tabbarItemKey": "m51",
+            "tabbarItemIcon": "m51_normal",
+            "tabbarItemSelectedIcon": "m51_selected",
+            "tabbarItemActive": true
+        },
+        {
+            "name": "tcontentTopline",
+            "title": "资讯",
+            "avoidLogin": "1",
+            "viewControllerClass": "TXTopLineWebViewController",
+            "tabbarItemKey": "m52",
+            "tabbarItemIcon": "m52_normal",
+            "tabbarItemSelectedIcon": "m52_selected"
+        },
+        {
+            "name": "Medals",
+            "title": "赛事",
+            "viewControllerClass": "TXMedalsTableViewController",
+            "tabbarItemKey": "m54",
+            "tabbarItemIcon": "m54_normal",
+            "tabbarItemSelectedIcon": "m54_selected"
+        },
+        {
+            "name": "TMail",
+            "title": "消息",
+            "sharedInstanceMethod": "sharedInstance",
+            "viewControllerClass": "TNCHomePageController",
+            "tabbarItemKey": "m49",
+            "tabbarItemIcon": "m49_normal",
+            "tabbarItemSelectedIcon": "m49_selected"
+        },
+        {
+            "name": "TMy",
+            "title": "我的",
+            "viewControllerClass": "TNMineViewController",
+            "tabbarItemKey": "m53",
+            "tabbarItemIcon": "m53_normal",
+            "tabbarItemSelectedIcon": "m53_selected"
+        }
+    ]
+  },
+  "homepage": {
+    "version": "1.0",
+    "name": "首页模块",
+    "homeVC": {
+      "HomeNavClassName": "TNHomeMainNavCustom",
+      "HomeMainHeaderViewClassName": "TNHomeMainHeaderView",
+      "HomeDefaultCityName": "",
+      "HomeQrcodeImageViewHasShow": false,
+      "HomeTableViewSectionHeaderRedLineViewHasShow": true
+    },
+    "homeStyle": {
+      "style1001": "TNHome_TableCellStyle1001",
+      "style1002": "TNHome_TableCellStyle1002",
+      "style10034": "TNHome_TableCellStyle10034",
+      "style1005": "TNHome_TableCellStyle1005",
+      "style1006": "TNHome_TableCellStyle1006",
+      "style1007": "TNHome_TableCellStyle1007",
+      "style1008": "TNHome_TableCellStyle1008",
+      "style1009": "TNHome_TableCellStyle1009",
+      "style1010": "TNHome_TableCellStyle1010",
+      "style1011": "TNHome_TableCellStyle1011",
+      "style1012": "TNHome_TableCellStyle1012",
+      "style1013": "TNHome_TableCellStyle1013",
+      "style1014": "TNHome_TableCellStyle1014",
+      "style1015": "TNHome_TableCellStyle1015"
+    },
+    "homeSectionStyle": {},
+    "homeNavRightView": {
+      "homePayCodeDomain": "https://syuias.fuzhou.gov.cn/auth/authorize?clientId=20180609370419&redirectUri=https://syother.efzhou.com/payment/index.html&responseType=code&scope=userInfo&state=03&sign=AB68930B9B6FA542FFD3A650CAF04FF9"
+    },
+    "homeEditVCeditBtnHidden":false,
+  },
+  "tnctpro": {
+    "kEfz_MyCard": {
+      "kEfz_MyCard_Domain": "http://t200ecardui.zhengtoon.com/m/index.html",
+      "kEfz_MyCard_Level": "L2"
+    },
+    "kEfz_Moli": {
+      "kEfz_Moli_Domain": "https://syuias.fuzhou.gov.cn/auth/authorize?clientId=20180609370419&redirectUri=https://syother.efzhou.com/payment/index.html&responseType=code&scope=userInfo&state=07&sign=66A4FB31A50CC461871D2827B40ABCE5",
+      "kEfz_Moli_Level": "L3"
+    },
+    "kEfz_Newland": {
+      "kEfz_Newland_Domain": "https://syuias.fuzhou.gov.cn/auth/authorize?clientId=20180315110394&redirectUri=https://syother.fuzhou.gov.cn/Newlanderweima/app/index.html&responseType=code&scope=userInfo&sign=E93B8351E8705A6E276EDE4DFF3BA16F",
+      "kEfz_Newland_Level": "L3"
+    },
+    "kEfz_Mine_PersonInfo": {
+      "kEfz_Mine_PersonInfo_Domain": "https://syuias.fuzhou.gov.cn/auth/authorize?clientId=20180308123404&redirectUri=http://syother.fuzhou.gov.cn/person-data/app/person-data/app/index.html&responseType=code&scope=userInfo&sign=a50af0234ceec85a87dc4d4813516891",
+      "kEfz_Mine_PersonInfo_Level": "L3"
+    },
+    "kEfz_Mine_CompanyInfo": {
+      "kEfz_Mine_CompanyInfo_Domain": "https://syuias.fuzhou.gov.cn/portal/m/index.html#/legalpersonlist?clientId=20180308141837&redirectUri=http://syother.fuzhou.gov.cn/company-data/app/company-data/app/index.html&responseType=code&scope=userInfo&sign=59767e37078a92d9b3680abd9f8c91b1",
+      "kEfz_Mine_CompanyInfo_Level": "L3"
+    },
+    "kEfz_Account_Yibao": {
+      "kEfz_Account_Yibao_Domain": "https://syuias.fuzhou.gov.cn/auth/authorize?clientId=20180609205126&redirectUri=https://syother.efzhou.com/medical-insurance/app/medical-insurance/app/index.html&responseType=code&scope=userInfo&sign=88138E36CC0F74EF6CAA0044807996B1",
+      "kEfz_Account_Yibao_Level": "L3"
+    },
+    "kEfz_Account_Shebao": {
+      "kEfz_Account_Shebao_Domain": "https://syuias.fuzhou.gov.cn/auth/authorize?clientId=20180609203242&redirectUri=https://syother.efzhou.com/social-security/app/social-security/app/index.html&responseType=code&scope=userInfo&sign=C994C7C4ACE2FECC3822D97579A60E79",
+      "kEfz_Account_Shebao_Level": "L3"
+    },
+    "kEfz_Account_Gongjijin": {
+      "kEfz_Account_Gongjijin_Domain": "https://syuias.fuzhou.gov.cn/auth/authorize?clientId=20180609163056&redirectUri=https://syother.efzhou.com/housing-fund/app/housing-fund/app/index.html&responseType=code&scope=userInfo&sign=F07D8BA384753D3867BC407120BF6339",
+      "kEfz_Account_Gongjijin_Level": "L3"
+    },
+    "kEfz_Account_Xiaofei": {
+      "kEfz_Account_Xiaofei_Domain": "https://syuias.fuzhou.gov.cn/auth/authorize?clientId=20180609370419&redirectUri=https://syother.efzhou.com/payment/index.html&responseType=code&scope=userInfo&state=04&sign=DB35C120E11D48EE1BF763D46B3D347D",
+      "kEfz_Account_Xiaofei_Level": "L3"
+    },
+    "kEfz_Mine_Mywork": {
+      "kEfz_Mine_Mywork_Domain": "https://syuias.fuzhou.gov.cn/auth/authorize?clientId=20180120132068&redirectUri=http://fzbs.fuzhou.gov.cn/service/app/index.htm&responseType=code&scope=userInfo&sign=5292985776e375876f5d2f5853a41293&state=3",
+      "kEfz_Mine_Mywork_Level": "L2"
+    },
+    "kEfz_Mine_MyAppointment": {
+      "kEfz_Mine_MyAppointment_Domain": "https://syuias.fuzhou.gov.cn/auth/authorize?clientId=20180120132068&redirectUri=http://fzbs.fuzhou.gov.cn/service/app/index.htm&responseType=code&scope=userInfo&sign=251a937ca255ac0bd5979d890ec2f795&state=4",
+      "kEfz_Mine_MyAppointment_Level": "L2"
+    },
+    "kEfz_Mine_CoWork": {
+      "kEfz_Mine_CoWork_Domain": "https://syuias.fuzhou.gov.cn/portal/m/index.html#/legalpersonlist?clientId=20180120132068&redirectUri=http://fzbs.fuzhou.gov.cn/service/app/index.htm&responseType=code&scope=userInfo&state=3&sign=5292985776E375876F5D2F5853A41293",
+      "kEfz_Mine_CoWork_Level": "L2"
+    },
+    "kEfz_Mine_CoAppointment": {
+      "kEfz_Mine_CoAppointment_Domain": "https://syuias.fuzhou.gov.cn/portal/m/index.html#/legalpersonlist?clientId=20180120132068&redirectUri=http://fzbs.fuzhou.gov.cn/service/app/index.htm&responseType=code&scope=userInfo&state=4&sign=251A937CA255AC0BD5979D890EC2F795",
+      "kEfz_Mine_CoAppointment_Level": "L2"
+    },
+    "kEfz_Home_Paycode": {
+      "kEfz_Home_Paycode_Domain": "https://syuias.fuzhou.gov.cn/auth/authorize?clientId=20180609370419&redirectUri=https://syother.efzhou.com/payment/index.html&responseType=code&scope=userInfo&state=03&sign=AB68930B9B6FA542FFD3A650CAF04FF9",
+      "kEfz_Home_Paycode_Level": "L3"
+    },
+    "kEfz_Setting_Paysetting": {
+      "kEfz_Setting_Paysetting_Domain": "https://syuias.fuzhou.gov.cn/auth/authorize?clientId=20180609370419&redirectUri=https://syother.efzhou.com/payment/index.html&responseType=code&scope=userInfo&state=02&sign=DB174D4EB54B340634B18FF13898F83D",
+      "kEfz_Setting_Paysetting_Level": "L3"
+    },
+    "kEfz_Setting_Bankmanage": {
+      "kEfz_Setting_Bankmanage_Domain": "https://syuias.fuzhou.gov.cn/auth/authorize?clientId=20180609370419&redirectUri=https://syother.efzhou.com/payment/index.html&responseType=code&scope=userInfo&state=01&sign=039FC92218D2B253027C87F76F2C19FF",
+      "kEfz_Setting_Bankmanage_Level": "L3"
+    },
+    "kEfz_Scan": {
+      "kEfz_Scan_Domain": "https://syother.fuzhou.gov.cn/scanqrpay/api"
+    }
+  },
+  "TScan_resources": {
+    "appQrcode": "appQrcode",
+    "qrcode_scan_appHeader_CN3": "qrcode_scan_appHeader_CN_custom",
+  },
+  "TNAppCenter": {
+          "removeAllATagTargetAttributeInSubFrame" : true,
+          "pTokenInHeader" : true,
+          "pTokenInUrl" : false,
+          "removeATagTargetAttributeInSubFrameList":[
+            "2238",
+            "2729"
+          ]
+      },
+  "tmchatstore": {
+      "PushIsUseMsgPush":"1",
+      "smsencry":"0459AD9DF2F16BDC1D45B29B3920AECD348C6A34B7DB33743B90FD8BA63059621EFEE3204A7227413C78422281B1937824ED1911EE1E78DDAC8B5462FCF91ABD00"
+  }
+}

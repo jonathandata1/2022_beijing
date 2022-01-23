@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@drawable/APKTOOL_DUMMY_765" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="20.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="15.0dip" android:layout_marginTop="15.0dip" android:layout_marginRight="15.0dip">
+        <ImageView android:id="@id/dialog_send_success_img" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true" />
+    </RelativeLayout>
+    <RelativeLayout android:layout_width="fill_parent" android:layout_height="48.0dip" android:layout_marginTop="12.0dip">
+        <TextView android:textSize="@dimen/textsize_21px" android:textColor="@color/c25" android:gravity="center" android:id="@id/Btn_ok_dialog_dialogask" android:layout_width="75.0dip" android:layout_height="36.0dip" android:layout_marginRight="12.0dip" android:text="@string/chat_send_button_title" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+        <TextView android:textSize="@dimen/textsize_21px" android:textColor="@color/c25" android:gravity="center" android:id="@id/Btn_cancle_dialog_dialogask" android:layout_width="75.0dip" android:layout_height="36.0dip" android:layout_marginRight="12.0dip" android:text="@string/chat_cancel" android:layout_toLeftOf="@id/Btn_ok_dialog_dialogask" android:layout_centerVertical="true" />
+    </RelativeLayout>
+</LinearLayout>

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:background="@color/htjc_title_bg" android:layout_width="fill_parent" android:layout_height="44.0dip">
+        <ImageView android:id="@id/iv_return" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="16.0dip" android:src="@drawable/htjc_title_return" android:layout_centerVertical="true" />
+        <TextView android:textSize="24.0sp" android:textColor="#ffffffff" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/htjc_success_title" android:layout_centerInParent="true" />
+    </RelativeLayout>
+    <LinearLayout android:orientation="vertical" android:background="@color/htjc_main_bg" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <RelativeLayout android:layout_gravity="center_horizontal" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="75.0dip">
+            <ImageView android:id="@id/success_img" android:background="#ffef7c01" android:padding="3.0dip" android:layout_width="140.0dip" android:layout_height="186.0dip" android:layout_margin="5.0dip" android:scaleType="fitXY" android:layout_centerHorizontal="true" />
+            <TextView android:textSize="22.0sp" android:textColor="#ffffffff" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:text="@string/htjc_success_result" android:layout_below="@id/success_img" android:layout_centerHorizontal="true" />
+        </RelativeLayout>
+        <LinearLayout android:layout_gravity="center_horizontal" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="15.0dip" android:layout_marginTop="70.0dip" android:layout_marginRight="15.0dip">
+            <ImageView android:id="@id/btn_again" android:layout_width="111.0dip" android:layout_height="42.0dip" android:layout_marginRight="5.0dip" android:src="@drawable/htjc_btn_again_selector" android:layout_weight="1.0" />
+            <ImageView android:id="@id/btn_return" android:layout_width="111.0dip" android:layout_height="42.0dip" android:layout_marginLeft="5.0dip" android:src="@drawable/htjc_btn_return_selector" android:layout_weight="1.0" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

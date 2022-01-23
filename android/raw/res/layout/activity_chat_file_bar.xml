@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="horizontal" android:id="@id/ll_choose_file_header" android:layout_width="fill_parent" android:layout_height="@dimen/dimen_44" android:baselineAligned="false" android:weightSum="3.0" android:layout_alignParentTop="true"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <FrameLayout android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0">
+        <TextView android:textSize="@dimen/dimen_16" android:textColor="@drawable/chat_choose_file_select" android:gravity="center" android:id="@id/tv_choose_doc" android:layout_width="fill_parent" android:layout_height="fill_parent" android:text="@string/choose_file_doc_tab" />
+        <View android:layout_gravity="bottom|center" android:id="@id/choose_doc_select" android:background="@color/c1" android:visibility="gone" android:layout_width="@dimen/dimen_32" android:layout_height="@dimen/dimen_2" />
+    </FrameLayout>
+    <FrameLayout android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0">
+        <TextView android:textSize="@dimen/dimen_16" android:textColor="@drawable/chat_choose_file_select" android:gravity="center" android:id="@id/tv_choose_video" android:layout_width="fill_parent" android:layout_height="fill_parent" android:text="@string/choose_file_video_tab" />
+        <View android:layout_gravity="bottom|center" android:id="@id/choose_video_select" android:background="@color/c1" android:visibility="gone" android:layout_width="@dimen/dimen_32" android:layout_height="@dimen/dimen_2" />
+    </FrameLayout>
+    <FrameLayout android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0">
+        <TextView android:textSize="@dimen/dimen_16" android:textColor="@drawable/chat_choose_file_select" android:gravity="center" android:id="@id/tv_choose_other" android:layout_width="fill_parent" android:layout_height="fill_parent" android:text="@string/choose_file_other_tab" />
+        <View android:layout_gravity="bottom|center" android:id="@id/choose_other_select" android:background="@color/c1" android:visibility="gone" android:layout_width="@dimen/dimen_32" android:layout_height="@dimen/dimen_2" />
+    </FrameLayout>
+</LinearLayout>

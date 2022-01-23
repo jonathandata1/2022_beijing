@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:padding="@dimen/dimen_10" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="@dimen/dimen_12" android:gravity="center" android:layout_gravity="center" android:id="@id/tv_new_message_diver" android:background="@drawable/bg_message_diver" android:paddingLeft="@dimen/dimen_10" android:paddingRight="@dimen/dimen_10" android:layout_width="wrap_content" android:layout_height="@dimen/dimen_25" android:layout_marginLeft="@dimen/dimen_6" android:layout_marginRight="@dimen/dimen_6" android:text="@string/chat_message_diver" android:layout_centerInParent="true" />
+    <View android:id="@id/view_new_message_left_diver" android:layout_width="fill_parent" android:layout_height="@dimen/dimen_0.5" android:layout_toLeftOf="@id/tv_new_message_diver" android:layout_centerVertical="true" android:layout_toStartOf="@id/tv_new_message_diver" />
+    <View android:id="@id/view_new_message_right_diver" android:layout_width="fill_parent" android:layout_height="@dimen/dimen_0.5" android:layout_toRightOf="@id/tv_new_message_diver" android:layout_centerVertical="true" android:layout_toEndOf="@id/tv_new_message_diver" />
+</RelativeLayout>

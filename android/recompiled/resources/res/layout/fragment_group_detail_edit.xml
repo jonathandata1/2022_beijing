@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android" android:background="@color/backgroundColor_dark" android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:orientation="vertical" android:id="@+id/ll_group_edit" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <TextView android:textSize="@dimen/dimen_16" android:textColor="@color/text_subtitle_color" android:gravity="center_vertical" android:id="@+id/label_group_name" android:paddingLeft="@dimen/dimen_16" android:layout_width="wrap_content" android:layout_height="@dimen/dimen_50" android:text="@string/setting_group_card_name"/>
+        <View android:background="@color/separator_color" android:layout_width="match_parent" android:layout_height="@dimen/res_0x7f070190_dimen_0_3"/>
+        <com.msgseal.chat.customviews.EditTextWithDel android:textSize="@dimen/dimen_16" android:textColor="@color/text_main_color2" android:gravity="center_vertical" android:id="@+id/et_group_name" android:background="@color/backgroundColor" android:paddingLeft="@dimen/dimen_16" android:paddingRight="@dimen/dimen_16" android:layout_width="match_parent" android:layout_height="@dimen/dimen_50" android:singleLine="true"/>
+        <View android:background="@color/separator_color" android:layout_width="match_parent" android:layout_height="@dimen/res_0x7f070190_dimen_0_3"/>
+        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:paddingLeft="@dimen/dimen_16" android:paddingRight="@dimen/dimen_16" android:visibility="gone" android:layout_width="match_parent" android:layout_height="@dimen/dimen_50">
+            <TextView android:textSize="@dimen/dimen_16" android:textColor="#ff8e8e93" android:layout_width="@dimen/dimen_64" android:layout_height="wrap_content" android:text="备注"/>
+            <com.msgseal.chat.customviews.EditTextWithDel android:textSize="@dimen/dimen_16" android:textColor="#fff8f9fb" android:id="@+id/et_group_note" android:background="@color/transparent" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dimen_32" android:maxLength="50"/>
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>

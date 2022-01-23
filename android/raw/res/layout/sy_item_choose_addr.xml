@@ -1,0 +1,3 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TextView android:textSize="11.0sp" android:textColor="@color/sy_v8a8d95" android:ellipsize="end" android:gravity="center" android:id="@id/sy_tv_addr_name" android:background="@drawable/sy_selector_choose_addr" android:layout_width="80.0dip" android:layout_height="50.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android" />

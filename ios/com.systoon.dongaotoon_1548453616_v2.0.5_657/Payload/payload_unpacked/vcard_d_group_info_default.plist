@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<array>
+	<dict>
+		<key>displayOrder</key>
+		<integer>2</integer>
+		<key>fieldId</key>
+		<integer>15</integer>
+		<key>fieldName</key>
+		<string>群聊名称</string>
+		<key>fieldName_english</key>
+		<string>Name</string>
+		<key>guideWords</key>
+		<string>名片名称</string>
+		<key>guideWords_english</key>
+		<string>Name</string>
+		<key>isRequire</key>
+		<integer>1</integer>
+		<key>maxLength</key>
+		<integer>40</integer>
+		<key>remark</key>
+		<string>名片名称</string>
+		<key>status</key>
+		<integer>1</integer>
+		<key>updateTime</key>
+		<integer>190</integer>
+		<key>useType</key>
+		<integer>0</integer>
+		<key>vcardName</key>
+		<string>N</string>
+		<key>vcardImageName</key>
+		<string>Card_ImageName_N</string>
+		<key>viewType</key>
+		<integer>1</integer>
+	</dict>
+	<dict>
+		<key>displayOrder</key>
+		<integer>9</integer>
+		<key>fieldId</key>
+		<integer>20</integer>
+		<key>fieldName</key>
+		<string>备注</string>
+		<key>fieldName_english</key>
+		<string>Note</string>
+		<key>guideWords</key>
+		<string>详细描述信息</string>
+		<key>guideWords_english</key>
+		<string>Add a Note</string>
+		<key>isRequire</key>
+		<integer>0</integer>
+		<key>maxLength</key>
+		<integer>100</integer>
+		<key>remark</key>
+		<string>备注</string>
+		<key>status</key>
+		<integer>1</integer>
+		<key>updateTime</key>
+		<integer>1</integer>
+		<key>useType</key>
+		<integer>0</integer>
+		<key>vcardName</key>
+		<string>NOTE</string>
+		<key>vcardImageName</key>
+		<string>Card_ImageName_NOTE</string>
+		<key>viewType</key>
+		<integer>1</integer>
+	</dict>
+</array>
+</plist>

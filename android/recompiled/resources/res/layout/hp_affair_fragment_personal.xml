@@ -1,0 +1,2 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.systoon.toonlib.business.homepageround.widget.BetterRecyclerView xmlns:android="http://schemas.android.com/apk/res/android" android:id="@+id/mc_hplist" android:background="@color/color_F8F8FB" android:paddingBottom="@dimen/hp_px_8" android:scrollbars="none" android:layout_width="match_parent" android:layout_height="match_parent" android:listSelector="@null" android:cacheColorHint="@color/transparent" android:divider="@null"/>

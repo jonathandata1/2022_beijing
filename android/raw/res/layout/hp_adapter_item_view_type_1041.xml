@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/color_FFFFFF" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.zyp.cardview.YcCardView android:id="@id/mCardView" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dimen_8" android:layout_marginRight="@dimen/dimen_8" app:ycCardCornerRadius="8.0dip" app:ycCardElevation="7.0dip" app:ycEndShadowColor="@color/transparent" app:ycStartShadowColor="@color/color_03000000">
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <ImageView android:id="@id/iv_banner" android:layout_width="fill_parent" android:layout_height="@dimen/dimen_80" android:scaleType="fitXY" />
+            <LinearLayout android:orientation="horizontal" android:id="@id/ll_functions" android:layout_width="fill_parent" android:layout_height="@dimen/dimen_50">
+                <TextView android:textSize="12.0sp" android:gravity="center" android:layout_gravity="center" android:id="@id/tv_app_1" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="水费查缴" android:layout_weight="1.0" />
+                <ImageView android:layout_gravity="center" android:background="@color/c36" android:layout_width="1.0dip" android:layout_height="16.0dip" />
+                <TextView android:textSize="12.0sp" android:gravity="center" android:layout_gravity="center" android:id="@id/tv_app_2" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="水费查缴" android:layout_weight="1.0" />
+                <ImageView android:layout_gravity="center" android:background="@color/c36" android:layout_width="1.0dip" android:layout_height="16.0dip" />
+                <TextView android:textSize="12.0sp" android:gravity="center" android:layout_gravity="center" android:id="@id/tv_app_3" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="水费查缴" android:layout_weight="1.0" />
+                <ImageView android:layout_gravity="center" android:background="@color/c36" android:layout_width="1.0dip" android:layout_height="16.0dip" />
+                <TextView android:textSize="12.0sp" android:gravity="center" android:layout_gravity="center" android:id="@id/tv_app_4" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="水费查缴" android:layout_weight="1.0" />
+            </LinearLayout>
+        </LinearLayout>
+    </com.zyp.cardview.YcCardView>
+</LinearLayout>

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" android:id="@+id/rltotal" android:background="#f0eff5" android:layout_width="match_parent" android:layout_height="match_parent">
+    <RelativeLayout android:id="@+id/main_layout" android:background="#ffffff" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <TextView android:textSize="13sp" android:id="@+id/ib_back" android:padding="15dp" android:layout_width="40dp" android:layout_height="30dp" android:layout_marginLeft="14dp" android:text="" android:drawableLeft="0x7f0800e3" android:layout_centerVertical="true"/>
+        <TextView android:textSize="18sp" android:textColor="@color/white" android:id="@+id/tv_title" android:text="缴费频道" style="@style/titleText"/>
+        <RelativeLayout android:id="@+id/titlebar_right" android:layout_width="match_parent" android:layout_height="match_parent">
+            <RelativeLayout android:id="@+id/ib_top_right_other_btn" android:layout_width="match_parent" android:layout_height="match_parent">
+                <TextView android:textSize="14sp" android:textStyle="bold" android:gravity="center" android:id="@+id/ib_top_right_btn" android:padding="15px" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="" android:drawableRight="@drawable/goldstore_back_icon" android:layout_alignParentRight="true" android:layout_centerVertical="true"/>
+            </RelativeLayout>
+        </RelativeLayout>
+    </RelativeLayout>
+    <RelativeLayout android:id="@+id/sliding_menu_view" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_below="@+id/main_layout">
+        <LinearLayout android:orientation="horizontal" android:id="@+id/sliding_body" android:background="#a0a0a0" android:paddingBottom="15dp" android:layout_width="match_parent" android:layout_height="match_parent"/>
+        <RelativeLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="match_parent"/>
+    </RelativeLayout>
+</RelativeLayout>

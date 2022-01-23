@@ -1,0 +1,3 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TextView android:textSize="@dimen/dimen_16" android:paddingLeft="@dimen/dimen_6" android:paddingTop="@dimen/dimen_4" android:paddingRight="@dimen/dimen_6" android:paddingBottom="@dimen/dimen_4" android:duplicateParentState="true" android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" />

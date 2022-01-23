@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="@dimen/dimen_70"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:id="@id/layout_remove" android:paddingLeft="@dimen/dimen_16" android:paddingRight="@dimen/dimen_12" android:layout_width="wrap_content" android:layout_height="fill_parent">
+        <ImageView android:layout_gravity="center_vertical" android:background="@drawable/icon_contact_remove" android:layout_width="@dimen/dimen_22" android:layout_height="@dimen/dimen_22" />
+    </LinearLayout>
+    <com.msgseal.base.ui.AvatarView android:id="@id/iv_contact_avatar" android:layout_width="@dimen/dimen_46" android:layout_height="@dimen/dimen_46" android:layout_toRightOf="@id/layout_remove" android:layout_centerVertical="true" />
+    <LinearLayout android:orientation="vertical" android:id="@id/layout_contact_info" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dimen_14" android:layout_toRightOf="@id/iv_contact_avatar" android:layout_centerVertical="true">
+        <TextView android:textSize="@dimen/dimen_16" android:textColor="@color/c12" android:layout_gravity="center_vertical" android:id="@id/tv_contact_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true" />
+        <TextView android:textSize="@dimen/dimen_14" android:textColor="@color/c8" android:id="@id/tv_contact_tmail" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dimen_4" />
+    </LinearLayout>
+    <View android:id="@id/item_line" android:background="@color/separator_color" android:layout_width="fill_parent" android:layout_height="@dimen/dimen_0.3" android:layout_alignLeft="@id/layout_contact_info" android:layout_alignParentBottom="true" />
+</RelativeLayout>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" android:background="@android:color/white" android:layout_width="match_parent" android:layout_height="match_parent">
+    <FrameLayout android:id="@+id/fl_map" android:layout_width="match_parent" android:layout_height="match_parent"/>
+    <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="74dp" android:layout_alignParentBottom="true">
+        <RelativeLayout android:background="@android:color/white" android:paddingLeft="15dp" android:paddingRight="15dp" android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="2">
+            <RelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_centerVertical="true">
+                <TextView android:textSize="15sp" android:textColor="#333333" android:ellipsize="end" android:id="@+id/tv_government_unit_name" android:layout_width="match_parent" android:layout_height="wrap_content" android:maxLines="1"/>
+                <TextView android:textSize="12sp" android:textColor="#666666" android:ellipsize="end" android:id="@+id/tv_government_unit_adress" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="2dp" android:maxLines="2" android:layout_below="@+id/tv_government_unit_name"/>
+            </RelativeLayout>
+        </RelativeLayout>
+        <LinearLayout android:gravity="center" android:id="@+id/ll_navigation" android:background="@color/contact_cursor" android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="1">
+            <TextView android:textSize="14sp" android:textColor="@android:color/white" android:gravity="center" android:layout_width="wrap_content" android:layout_height="match_parent" android:text="@string/contact_gov_map_navigation" android:drawableLeft="@drawable/icon_gov_contact_navigation" android:drawablePadding="3dp"/>
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>

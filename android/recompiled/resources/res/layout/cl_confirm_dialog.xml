@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:gravity="center_horizontal" android:orientation="vertical" android:background="@drawable/bg_white_round_shape" android:layout_width="270dp" android:layout_height="wrap_content">
+    <TextView android:textSize="20sp" android:textColor="#303641" android:gravity="center" android:id="@+id/dialog_title" android:visibility="gone" android:layout_width="match_parent" android:layout_height="40dp" android:layout_marginTop="20dp"/>
+    <TextView android:textSize="18sp" android:textStyle="bold" android:textColor="#303641" android:gravity="center" android:id="@+id/dialog_message" android:layout_width="210dp" android:layout_height="wrap_content" android:layout_marginLeft="30dp" android:layout_marginTop="26dp" android:layout_marginRight="30dp"/>
+    <Button android:textSize="16sp" android:textStyle="bold" android:textColor="#fff" android:id="@+id/btn_dialog_cancel" android:background="@drawable/cl_negative_btn_bg" android:layout_width="230dp" android:layout_height="77dp" android:layout_marginLeft="20dp" android:layout_marginTop="1dp" android:layout_marginRight="20dp"/>
+    <TextView android:textSize="16sp" android:textStyle="bold" android:textColor="#7b869a" android:id="@+id/btn_dialog_ok" android:background="#00000000" android:paddingLeft="20dp" android:paddingRight="20dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="17dp"/>
+</LinearLayout>

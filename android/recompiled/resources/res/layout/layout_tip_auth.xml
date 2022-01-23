@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:gravity="center_horizontal" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <LinearLayout android:gravity="center" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <View android:background="#dddee3" android:layout_width="21dp" android:layout_height="0.7dp"/>
+        <View android:background="#dddee3" android:layout_width="2dp" android:layout_height="2dp" android:layout_marginLeft="3.5dp"/>
+        <TextView android:textSize="16sp" android:textColor="#8e8e93" android:gravity="center" android:id="@+id/tv_auth_disclaimer_tip" android:layout_width="96dp" android:layout_height="wrap_content" android:text="@string/tip_auth_disclaimer_title"/>
+        <View android:background="#dddee3" android:layout_width="2dp" android:layout_height="2dp" android:layout_marginRight="3.5dp"/>
+        <View android:background="#dddee3" android:layout_width="21dp" android:layout_height="0.7dp"/>
+    </LinearLayout>
+    <TextView android:textSize="14sp" android:textColor="#a2a2a2" android:id="@+id/tv_auth_disclaimer" android:layout_width="302dp" android:layout_height="wrap_content" android:layout_marginTop="14sp" android:layout_marginBottom="23dp" android:text="@string/auth_disclaimer" android:lineSpacingExtra="2sp"/>
+</LinearLayout>

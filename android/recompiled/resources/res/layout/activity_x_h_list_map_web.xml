@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+    <RelativeLayout android:background="#f9f9f9" android:layout_width="match_parent" android:layout_height="48dp">
+        <TextView android:textSize="18sp" android:textColor="@android:color/background_dark" android:gravity="center" android:id="@+id/base_title_textview" android:layout_width="match_parent" android:layout_height="match_parent" android:text="" android:textAlignment="center"/>
+        <TextView android:textSize="17sp" android:textColor="@android:color/background_dark" android:gravity="center" android:id="@+id/base_title_back_textview" android:layout_width="wrap_content" android:layout_height="match_parent" android:layout_marginLeft="15dp" android:text="" android:drawableLeft="@mipmap/icon_xh_nv_back" android:drawablePadding="5dp" android:textAlignment="center"/>
+    </RelativeLayout>
+    <com.fineway.uimaplocator.activity.XHWebView android:id="@+id/xh_map_list_webview" android:layout_width="match_parent" android:layout_height="match_parent"/>
+</LinearLayout>

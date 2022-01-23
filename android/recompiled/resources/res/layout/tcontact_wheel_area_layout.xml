@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="horizontal" android:id="@+id/areaPicker" android:background="@android:color/white" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <com.systoon.tcontactcommon.view.wheel.WheelView android:id="@+id/first" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_weight="1"/>
+    <com.systoon.tcontactcommon.view.wheel.WheelView android:id="@+id/second" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_weight="1"/>
+    <com.systoon.tcontactcommon.view.wheel.WheelView android:id="@+id/third" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_weight="1"/>
+</LinearLayout>

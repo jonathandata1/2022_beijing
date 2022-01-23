@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android" android:gravity="center_vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+    <ImageView android:layout_width="24dp" android:layout_height="24dp" android:src="@drawable/sy_ic_trip_tips_car" android:adjustViewBounds="true"/>
+    <TextView android:textSize="12sp" android:textColor="@color/sy_7b7f8a" android:id="@+id/sy_tv_home_tips_in_itinerary" android:layout_width="0dp" android:layout_height="wrap_content" android:text="@string/sy_str_in_processing_itinerary" android:layout_weight="1" android:layout_marginStart="8dp"/>
+    <View android:background="#1a000000" android:layout_width="1dp" android:layout_height="16dp" android:layout_marginLeft="10dp" android:layout_marginRight="10dp"/>
+    <TextView android:textSize="12sp" android:textColor="@color/sy_7b7f8a" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/sy_str_view_itinerary"/>
+</merge>

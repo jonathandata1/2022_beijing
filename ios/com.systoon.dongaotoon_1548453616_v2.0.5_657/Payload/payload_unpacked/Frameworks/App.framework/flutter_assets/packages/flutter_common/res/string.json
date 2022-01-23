@@ -1,0 +1,7 @@
+{
+  "app_name": "南海通",
+  "app_welcome": "欢迎使用#1&app_name&1#，xxxxx",
+  "app_default_Role" : "公众版",
+  "app_default_Region" : "承德市",
+  "home_header_default_leftShow" : "switchRole"
+}

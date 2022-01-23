@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/backgroundColor" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="horizontal" android:id="@id/rl_info" android:layout_width="fill_parent" android:layout_height="@dimen/dimen_90">
+        <com.msgseal.base.ui.AvatarView android:layout_gravity="center_vertical" android:id="@id/iv_avatar" android:layout_width="@dimen/dimen_50" android:layout_height="@dimen/dimen_50" android:src="@drawable/default_head_person133" android:layout_marginStart="@dimen/dimen_16" android:layout_marginEnd="@dimen/dimen_12" />
+        <TextView android:textSize="@dimen/dimen_16" android:textColor="@color/text_main_color" android:ellipsize="end" android:layout_gravity="center_vertical" android:id="@id/tv_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="" android:maxLines="1" android:singleLine="true" />
+    </LinearLayout>
+    <View android:background="@color/separator_color" android:layout_width="fill_parent" android:layout_height="@dimen/dimen_0.5" android:layout_marginStart="@dimen/dimen_16" />
+    <EditText android:textSize="@dimen/dimen_16" android:textColor="@color/text_main_color" android:gravity="top" android:id="@id/tv_msg" android:padding="@dimen/dimen_16" android:scrollbars="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:minHeight="@dimen/dimen_50" android:text="@string/contact_exchage_card_text" android:editable="false" android:inputType="none" android:fadeScrollbars="false" />
+    <TextView android:textSize="@dimen/dimen_18" android:textColor="@color/button_TextColor" android:gravity="center" android:id="@id/tv_agree" android:background="@color/color_2C7CF6" android:layout_width="fill_parent" android:layout_height="@dimen/dimen_50" android:layout_marginLeft="@dimen/dimen_24" android:layout_marginTop="@dimen/dimen_30" android:layout_marginRight="@dimen/dimen_24" android:text="@string/contact_agree_apply" />
+</LinearLayout>

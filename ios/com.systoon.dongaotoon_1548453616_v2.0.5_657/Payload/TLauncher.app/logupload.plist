@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>version</key>
+	<string>1.0</string>
+	<key>uploadLog</key>
+	<dict>
+		<key>in</key>
+		<string></string>
+		<key>out</key>
+		<string></string>
+		<key>excutor</key>
+		<string>TNUploadLogExecuter</string>
+	</dict>
+</dict>
+</plist>

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content">
+    <FrameLayout android:id="@+id/fl_email_pic_detail" android:padding="@dimen/dimen_8" android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <com.systoon.toon.view.ShapeImageView android:layout_gravity="center" android:id="@+id/iv_send_pic" android:layout_width="@dimen/dimen_80" android:layout_height="@dimen/dimen_80"/>
+        <ImageView android:layout_gravity="top|right|center_vertical|center_horizontal|center" android:id="@+id/iv_send_pic_del" android:padding="@dimen/dimen_4" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/icon_send_del"/>
+    </FrameLayout>
+</FrameLayout>

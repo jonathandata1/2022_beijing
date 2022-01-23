@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:gravity="top|center_vertical|center_horizontal|center" android:orientation="vertical" android:id="@+id/search_empty_view" android:background="@color/c20" android:paddingTop="@dimen/dimen_120" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent">
+    <ImageView android:id="@+id/iv_chat_search_empty" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/icon_empty_search" android:contentDescription="@string/app_name"/>
+    <TextView android:textSize="@dimen/ts_16px" android:textColor="@color/c28" android:gravity="center" android:id="@+id/tv_chat_search_empty" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dimen_16" android:text="@string/contact_search_empty"/>
+</LinearLayout>

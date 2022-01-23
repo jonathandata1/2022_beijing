@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:state_enabled="true" android:state_pressed="true">
+        <layer-list>
+            <item>
+                <shape>
+                    <corners android:radius="40dp"/>
+                    <solid android:color="@color/upsdk_category_button_select_pressed"/>
+                </shape>
+            </item>
+            <item android:drawable="0x7f0809ba"/>
+        </layer-list>
+    </item>
+    <item android:state_enabled="true" android:state_pressed="false">
+        <layer-list>
+            <item>
+                <shape>
+                    <corners android:radius="40dp"/>
+                    <solid android:color="@color/upsdk_blue_text_007dff"/>
+                </shape>
+            </item>
+            <item android:drawable="0x7f0809ba"/>
+        </layer-list>
+    </item>
+</selector>

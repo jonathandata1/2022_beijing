@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/sy_white" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <ImageView android:id="@id/sy_layout_home_top" android:layout_width="fill_parent" android:layout_height="wrap_content" android:src="@drawable/sy_bg_home_top" android:adjustViewBounds="true" />
+        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/sy_layout_home_info" android:background="@drawable/sy_bg_white" android:paddingLeft="16.0dip" android:paddingRight="16.0dip" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="52.0dip" android:layout_marginLeft="10.0dip" android:layout_marginTop="-10.0dip" android:layout_marginRight="10.0dip" android:layout_below="@id/sy_layout_home_top">
+            <include layout="@layout/sy_layout_tips_in_itinerary" />
+        </LinearLayout>
+        <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:background="@drawable/sy_bg_white" android:paddingLeft="16.0dip" android:paddingRight="16.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginRight="10.0dip" android:layout_below="@id/sy_layout_home_info">
+            <include layout="@layout/sy_layout_home_order_info" />
+        </LinearLayout>
+    </RelativeLayout>
+    <Button android:enabled="false" android:textSize="16.0sp" android:textColor="@color/sy_white" android:id="@id/sy_btn_home_book_car" android:layout_width="fill_parent" android:layout_height="50.0dip" android:layout_marginLeft="30.0dip" android:layout_marginTop="17.0dip" android:layout_marginRight="30.0dip" android:text="@string/sy_str_book_car" android:textAllCaps="false" style="@style/SyDeepBtnBase" />
+</LinearLayout>

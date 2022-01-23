@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="@dimen/hp_px_110" android:layout_height="@dimen/hp_px_68" android:layout_marginRight="@dimen/hp_px_8"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.makeramen.roundedimageview.RoundedImageView android:id="@id/typebImage" android:layout_width="fill_parent" android:layout_height="fill_parent" android:scaleType="centerCrop" android:layout_centerInParent="true" app:riv_corner_radius="@dimen/hp_px_2" app:riv_mutate_background="true" />
+    <TextView android:textSize="@dimen/hp_px_15" android:textStyle="bold" android:textColor="@color/color_FFFFFF" android:ellipsize="end" android:gravity="center" android:id="@id/titleTextview" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/hp_px_5" android:layout_marginTop="@dimen/hp_px_16" android:layout_marginRight="@dimen/hp_px_5" android:maxLines="1" android:singleLine="true" android:layout_centerHorizontal="true" />
+    <TextView android:textSize="@dimen/hp_px_12" android:textColor="@color/color_FFFFFF" android:ellipsize="end" android:gravity="center" android:id="@id/subtitleTextview" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/hp_px_5" android:layout_marginRight="@dimen/hp_px_5" android:maxLines="1" android:singleLine="true" android:layout_below="@id/titleTextview" android:layout_centerHorizontal="true" />
+</RelativeLayout>

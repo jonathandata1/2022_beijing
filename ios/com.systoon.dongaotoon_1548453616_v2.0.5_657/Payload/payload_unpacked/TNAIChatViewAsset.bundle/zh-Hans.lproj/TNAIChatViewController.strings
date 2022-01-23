@@ -1,0 +1,101 @@
+"new_message"         = "请输入...";
+
+"record_speak"        = "按住 说话";
+
+"record_end"          = "松开 结束";
+
+"cancel"              = "取消";
+
+"select_gallery"      = "从相册选取";
+
+"select_camera"       = "相机";
+
+"wait_agent"          = "正在分配客服...";
+
+"not_access_camera"   = "请在系统设置中允许该App访问相机";
+
+"not_access_photos"   = "请在系统设置中允许该App访问相册";
+
+"display_new_message" = "下方有新消息";
+
+"network_jam"         = "网络不太通畅，请检查网络";
+
+"simulator_not_support_camera" = "模拟器无法使用相机";
+
+"simulator_not_support_microphone" = "模拟器无法使用麦克风";
+
+"recode_time_too_short" = "录音时间太短";
+
+"record_cancel_swipe"   = "聆听中";
+
+"record_cancel_realse"  = "聆听中";
+
+"save_photo_error"      = "抱歉，保存失败";
+
+"save_photo_success"    = "已保存图片到本地相册";
+
+"save_text_success"     = "已复制";
+
+"save_photo"            = "保存";
+
+"save_text"             = "复制";
+
+"record_error"          = "抱歉，录音出现了点小问题-_-";
+
+"user_confirm"          = "知道了";
+
+"no_more_messages"      = "没有更多消息啦~";
+
+"welcome_chat"          = "";
+
+"default_assistant"     = "美洽小助手";
+
+"no_agent_title"        = "在线客服";
+
+"no_agent_tips"         = "抱歉，现在没有客服人员在线\n你可以留下你的联系方式，我们会尽快联系你~";
+
+"retry_send_message"    = "重新发送吗？";
+
+"alert_view_cancel"     = "取消";
+
+"alert_view_confirm"    = "确定";
+
+"cannot_refresh"        = "刷新不了啦~";
+
+"make_call_to"          = "拨打至 ";
+
+"send_message_to"       = "短信至 ";
+
+"open_url_by_safari"    = "用Safari打开该链接";
+
+"make_email_to"         = "向该email发送邮件";
+
+"load_history_message_error"    = "抱歉，没有正确获取到历史消息-_-";
+
+"microphone_denied"     = "请在系统设置中允许该App访问麦克风";
+
+"meiqia_communication_failed" = "抱歉，连接通信网络可能有问题，请更换网络试一下。";
+
+"meiqia_evaluation_sheet"     = "评价";
+
+"file_download_file_is_expired" = "文件已过期";
+"file_download_canceld" = "已取消下载";
+"file_download_failed" = "下载失败";
+"file_download_downloading" = "下载中...";
+"file_download_complete" = "下载完成";
+"file_download_ %@ ∙ %@overdue" = "%@ ∙ %@ 小时后过期";
+
+"message_tips_send_message_fail_listed_in_black_list" = "对方已经拒绝接收你的消息";
+
+"message_tips_online_failed_listed_in_black_list" = "抱歉，你已被加入黑名单";
+
+"leave_a_message" = "留言";
+"submit" = "提交";
+"leave_a_message_placeholder" = "请输入你的留言";
+"param_not_allow_null" = "%@ 不允许为空";
+"submit_failure" = "提交失败";
+"add_picture" = "添加图片";
+"tel" = "电话";
+"tel_placeholder" = "请输入你的电话";
+"email" = "邮箱";
+"email_placeholder" = "请输入你的邮箱";

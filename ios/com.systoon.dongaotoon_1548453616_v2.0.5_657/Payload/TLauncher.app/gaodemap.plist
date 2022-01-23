@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>openmap</key>
+	<dict>
+		<key>in</key>
+		<string></string>
+		<key>out</key>
+		<string>MapModel</string>
+		<key>excutor</key>
+		<string>SkipGaoDeMapModel</string>
+		<key>description</key>
+		<string>跳转地图模块</string>
+	</dict>
+	<key>showmap</key>
+	<dict>
+		<key>in</key>
+		<string>MapModel</string>
+		<key>out</key>
+		<string></string>
+		<key>excutor</key>
+		<string>TNAShowLocaionViewController</string>
+		<key>description</key>
+		<string>展示具体地图</string>
+	</dict>
+	<key>reGeocode</key>
+	<dict>
+		<key>in</key>
+		<string>MapModel</string>
+		<key>out</key>
+		<string></string>
+		<key>excutor</key>
+		<string>TNMReGeoCodeExecutor</string>
+		<key>description</key>
+		<string>展示具体地图</string>
+	</dict>
+	<key>getLocation</key>
+	<dict>
+		<key>in</key>
+		<string>MapModel</string>
+		<key>out</key>
+		<string></string>
+		<key>excutor</key>
+		<string>TNMReGeoCodeExecutor</string>
+		<key>description</key>
+		<string>获取地理位置信息</string>
+	</dict>
+</dict>
+</plist>

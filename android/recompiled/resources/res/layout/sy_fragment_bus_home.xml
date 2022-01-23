@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:background="@color/sy_white" android:layout_width="match_parent" android:layout_height="match_parent">
+    <RelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content">
+        <ImageView android:id="@+id/sy_layout_home_top" android:layout_width="match_parent" android:layout_height="wrap_content" android:src="@drawable/sy_bg_home_top" android:adjustViewBounds="true"/>
+        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@+id/sy_layout_home_info" android:background="@drawable/sy_bg_white" android:paddingLeft="16dp" android:paddingRight="16dp" android:visibility="gone" android:layout_width="match_parent" android:layout_height="52dp" android:layout_marginLeft="10dp" android:layout_marginTop="-10dp" android:layout_marginRight="10dp" android:layout_below="@+id/sy_layout_home_top">
+            <include layout="@layout/sy_layout_tips_in_itinerary"/>
+        </LinearLayout>
+        <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:background="@drawable/sy_bg_white" android:paddingLeft="16dp" android:paddingRight="16dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="10dp" android:layout_marginRight="10dp" android:layout_below="@+id/sy_layout_home_info">
+            <include layout="@layout/sy_layout_home_order_info"/>
+        </LinearLayout>
+    </RelativeLayout>
+    <Button android:enabled="false" android:textSize="16sp" android:textColor="@color/sy_white" android:id="@+id/sy_btn_home_book_car" android:layout_width="match_parent" android:layout_height="50dp" android:layout_marginLeft="30dp" android:layout_marginTop="17dp" android:layout_marginRight="30dp" android:text="@string/sy_str_book_car" android:textAllCaps="false" style="@style/SyDeepBtnBase"/>
+</LinearLayout>

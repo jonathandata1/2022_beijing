@@ -1,0 +1,58 @@
+/* 
+  TSetting.strings
+  
+
+  Created by danghanxin on 2018/8/22.
+  
+*/
+
+/*test*/
+"关于秘邮" = "About";
+"秘邮服务协议" = "Terms of Service";
+"字体大小" = "Font size";
+"多语言" = "Language";
+"新功能介绍" = "Version Update";
+
+/*公共*/
+"加载中" = "Loading...";
+
+/*字体大小*/
+"字体大小" = "Font size";
+"预览字体大小" = "Preview font size";
+"拖动滑块设置字体" = "Slide to adjust font size.";
+"设置后字体改变" = "The font size of both messages and menu will be changed. Please provide feedback if you encounter any problems.";
+"标准" = "Standard";
+"特大" = "X_large";
+
+/*国际化*/
+"设置语言" = "Language";
+"完成" = "Done";
+"取消" = "Cancle";
+"正在设置语言" = "Setting language...";
+
+/*关于秘邮*/
+"关于秘邮" = "About";
+"秘邮服务协议" = "Terms of Service";
+//"新功能介绍" = "Version Update";
+"北京思源互联科技有限公司版权所有" = "Copyright of Beijing Syswin Network Technology \n Company Limited";
+"《隐私政策》" = "《Privacy Policy》";
+"隐私政策" = "Privacy Policy";
+"数字护照使用协议" = "Terms of Crypto-Passport(CP) Service";
+"数字护照网盘服务协议" = "Terms of Crypto-Passport(CP) Disk Storage Service";
+"秘邮群服务协议" = "Terms of Group Service";
+
+
+
+"安全键盘输入" = "Input via safe keyboard";
+"验证新密码" = "Verify new password";
+"密码不符，重新输入" = "The password is not match, try again.";
+"输入旧密码" = "Enter previous password";
+"请输入安全使用密码" = "Enter password";
+"密码错误，重新输入" = "Password incorrect, re-enter it.";
+"输入新密码" = "New password";
+"请设置安全使用密码" = "Set password";
+"安全密码设置" = "Secure Login Password";
+"修改密码" = "Change password";
+"修改密码成功" = "Password changed";
+"安全密码" = "Login Password";
+"关闭安全密码会增加密照泄露风险，建议保持开启状态" = "Turning off the security password will increase the risk of exposure leakage. It is recommended to keep it open.";

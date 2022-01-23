@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhengtoon.toon.view.header.BadgeLayout android:padding="@dimen/dimen_6" android:duplicateParentState="true" android:layout_width="wrap_content" android:layout_height="@dimen/dimen_44"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.zhengtoon.toon.view.header.TitleBarIconView android:duplicateParentState="true" android:layout_width="@dimen/dimen_32" android:layout_height="@dimen/dimen_32" android:scaleType="fitXY" />
+</com.zhengtoon.toon.view.header.BadgeLayout>

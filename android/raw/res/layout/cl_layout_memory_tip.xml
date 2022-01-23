@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_gravity="center" android:layout_width="200.0dip" android:layout_height="355.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <ImageView android:id="@id/closeBt" android:layout_width="20.0dip" android:layout_height="20.0dip" android:layout_marginTop="5.0dip" android:layout_alignParentRight="true" app:srcCompat="@drawable/vr_ic_close" />
+    <LinearLayout android:orientation="vertical" android:background="#33000000" android:padding="5.0dip" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginRight="20.0dip" android:layout_marginBottom="20.0dip" android:layout_below="@id/closeBt">
+        <TextView android:textSize="16.0sp" android:textStyle="bold" android:textColor="#ffffffff" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="系统" />
+        <View android:background="#ffffffff" android:layout_width="fill_parent" android:layout_height="1.0dip" />
+        <TextView android:textSize="12.0sp" android:textStyle="italic" android:textColor="#ffffffff" android:id="@id/sysTotalMemory" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="2.0dip" />
+        <TextView android:textSize="12.0sp" android:textStyle="italic" android:textColor="#ffffffff" android:id="@id/sysAvaiMemory" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="2.0dip" />
+        <TextView android:textSize="16.0sp" android:textStyle="bold" android:textColor="#ffffffff" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5.0dip" android:text="应用" />
+        <View android:background="#ffffffff" android:layout_width="fill_parent" android:layout_height="1.0dip" />
+        <TextView android:textSize="12.0sp" android:textStyle="italic" android:textColor="#ffffffff" android:id="@id/appMaxMemory" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="2.0dip" />
+        <TextView android:textSize="12.0sp" android:textStyle="italic" android:textColor="#ffffffff" android:id="@id/appTotalMemory" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="2.0dip" />
+        <TextView android:textSize="12.0sp" android:textStyle="italic" android:textColor="#ffffffff" android:id="@id/appAvaiMemory" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="2.0dip" />
+        <TextView android:textSize="16.0sp" android:textStyle="bold" android:textColor="#ffffffff" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5.0dip" android:text="其他" />
+        <View android:background="#ffffffff" android:layout_width="fill_parent" android:layout_height="1.0dip" />
+        <TextView android:textSize="12.0sp" android:textStyle="italic" android:textColor="#ffffffff" android:id="@id/appTotalUsedMemory" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="2.0dip" />
+        <TextView android:textSize="12.0sp" android:textStyle="italic" android:textColor="#ffffffff" android:id="@id/appJavaMemory" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="2.0dip" />
+        <TextView android:textSize="12.0sp" android:textStyle="italic" android:textColor="#ffffffff" android:id="@id/appNativeMemory" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="2.0dip" />
+        <TextView android:textSize="12.0sp" android:textStyle="italic" android:textColor="#ffffffff" android:id="@id/appGraphicsMemory" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="2.0dip" />
+        <TextView android:textSize="12.0sp" android:textStyle="italic" android:textColor="#ffffffff" android:id="@id/appCodeMemory" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="2.0dip" />
+        <TextView android:textSize="12.0sp" android:textStyle="italic" android:textColor="#ffffffff" android:id="@id/appStackMemory" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="2.0dip" />
+        <TextView android:textSize="12.0sp" android:textStyle="italic" android:textColor="#ffffffff" android:id="@id/appOtherMemory" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="2.0dip" />
+    </LinearLayout>
+    <ImageView android:id="@id/refreshBt" android:layout_width="20.0dip" android:layout_height="20.0dip" android:layout_marginTop="5.0dip" android:layout_alignParentRight="true" android:layout_alignParentBottom="true" app:srcCompat="@drawable/vr_ic_refresh" />
+</RelativeLayout>

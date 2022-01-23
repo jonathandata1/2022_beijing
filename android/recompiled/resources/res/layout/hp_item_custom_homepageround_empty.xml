@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:gravity="center_horizontal" android:orientation="vertical" android:background="@color/color_F2F2F4" android:paddingBottom="@dimen/hp_px_10" android:layout_width="match_parent" android:layout_height="match_parent">
+    <ImageView android:id="@+id/img_empty" android:layout_width="@dimen/hp_px_120" android:layout_height="@dimen/hp_px_120" android:layout_marginTop="@dimen/hp_px_98" android:layout_marginBottom="@dimen/hp_px_30" android:src="@drawable/hp_not_data"/>
+    <TextView android:textSize="@dimen/hp_px_16" android:textColor="@color/color_4A4A4A" android:gravity="center_horizontal" android:id="@+id/tv_empty" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/hp_empty_no_data"/>
+</LinearLayout>

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:layout_gravity="bottom" android:orientation="vertical" android:id="@id/sy_layout_dispatch_info" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <LinearLayout android:orientation="horizontal" android:paddingTop="18.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="20.0dip" android:layout_marginRight="20.0dip">
+            <ImageView android:layout_width="28.0dip" android:layout_height="28.0dip" android:layout_marginRight="8.0dip" android:src="@drawable/sy_dispatch_driver_icon" />
+            <TextView android:textSize="20.0sp" android:textStyle="bold" android:textColor="@color/sy_v4a4a4a" android:id="@id/sy_tv_dispath_title" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/sy_str_dispatch_title" />
+        </LinearLayout>
+        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/sy_ll_dispath_first_content" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="20.0dip" android:layout_marginRight="20.0dip" android:minHeight="48.0dip">
+            <ImageView android:layout_width="7.0dip" android:layout_height="7.0dip" android:src="@drawable/base_dot_d4d4d8_7" android:scaleType="centerInside" />
+            <TextView android:textSize="15.0sp" android:textColor="@color/sy_v222222" android:ellipsize="end" android:id="@id/sy_tv_dispath_title_first" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="13.0dip" android:singleLine="true" />
+        </LinearLayout>
+        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/sy_ll_dispath_second_content" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="20.0dip" android:layout_marginRight="20.0dip" android:minHeight="48.0dip">
+            <ImageView android:layout_width="7.0dip" android:layout_height="7.0dip" android:src="@drawable/base_dot_red_7" android:scaleType="centerInside" />
+            <TextView android:textSize="15.0sp" android:textColor="@color/sy_v222222" android:ellipsize="end" android:id="@id/sy_tv_dispath_title_second" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="13.0dip" android:singleLine="true" />
+        </LinearLayout>
+        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/sy_ll_dispath_third_content" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="20.0dip" android:layout_marginRight="20.0dip" android:minHeight="48.0dip">
+            <ImageView android:layout_width="7.0dip" android:layout_height="7.0dip" android:src="@drawable/base_dot_222222_7" android:scaleType="centerInside" />
+            <TextView android:textSize="15.0sp" android:textColor="@color/sy_v222222" android:ellipsize="end" android:id="@id/sy_tv_dispath_title_third" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="13.0dip" android:singleLine="true" />
+        </LinearLayout>
+        <View android:background="@color/v19000000" android:layout_width="fill_parent" android:layout_height="0.5dip" android:layout_marginLeft="20.0dip" android:layout_marginRight="20.0dip" />
+        <Button android:textSize="12.0sp" android:textColor="@color/sy_v4a4a4a" android:id="@id/sy_btn_cancel_order" android:background="@drawable/sy_null_drawable" android:layout_width="fill_parent" android:layout_height="50.0dip" android:text="@string/sy_str_booking_cancel_trip" android:textAllCaps="false" />
+    </LinearLayout>
+</LinearLayout>

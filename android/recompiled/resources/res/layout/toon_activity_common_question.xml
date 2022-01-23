@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" android:background="@color/c20" android:layout_width="match_parent" android:layout_height="match_parent">
+    <include android:id="@+id/in_1" layout="@layout/toon_item_navigation_bar"/>
+    <LinearLayout android:orientation="vertical" android:id="@+id/rl_deal" android:layout_width="match_parent" android:layout_height="@dimen/dimen_54" android:layout_alignParentBottom="true">
+        <View android:background="@color/c6" android:layout_width="match_parent" android:layout_height="@dimen/divider_high"/>
+        <LinearLayout android:layout_width="match_parent" android:layout_height="@dimen/dimen_39" android:layout_marginLeft="@dimen/dimen_15" android:layout_marginTop="@dimen/dimen_8" android:layout_marginRight="@dimen/dimen_15" android:layout_marginBottom="@dimen/dimen_8">
+            <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@+id/ll_resolved" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_weight="1">
+                <ImageView android:id="@+id/iv_common_question_resolved" android:layout_width="@dimen/dimen_22" android:layout_height="@dimen/dimen_22" android:button="@null" android:src="@drawable/common_question_resolved_unselected"/>
+                <TextView android:textSize="@dimen/dimen_17" android:textColor="#9c9c9c" android:gravity="center" android:id="@+id/tv_common_question_resolved" android:layout_width="wrap_content" android:layout_height="match_parent" android:layout_marginLeft="@dimen/dimen_4" android:text="@string/user_common_question_resolved"/>
+            </LinearLayout>
+            <View android:background="@color/c6" android:layout_width="1dp" android:layout_height="match_parent"/>
+            <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@+id/ll_unresolved" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_weight="1">
+                <ImageView android:id="@+id/iv_common_question_unresolved" android:layout_width="@dimen/dimen_22" android:layout_height="@dimen/dimen_22" android:button="@null" android:src="@drawable/common_question_unresolved_unselected"/>
+                <TextView android:textSize="@dimen/dimen_17" android:textColor="#9c9c9c" android:gravity="center" android:id="@+id/tv_common_question_unresolved" android:layout_width="wrap_content" android:layout_height="match_parent" android:layout_marginLeft="@dimen/dimen_4" android:text="@string/user_common_question_unresolved"/>
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+    <ScrollView android:scrollbars="none" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginTop="@dimen/dimen_49" android:layout_above="@+id/rl_deal">
+        <LinearLayout android:orientation="vertical" android:paddingBottom="@dimen/dimen_15" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dimen_15" android:layout_marginTop="@dimen/dimen_20" android:layout_marginRight="@dimen/dimen_15">
+            <TextView android:textSize="@dimen/dimen_19" android:textColor="@color/c12" android:ellipsize="end" android:id="@+id/tv_common_question_title" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+            <View android:background="@drawable/dash_line_gray" android:layout_width="match_parent" android:layout_height="@dimen/dimen_6" android:layout_marginTop="@dimen/dimen_16" android:layout_marginBottom="@dimen/dimen_16"/>
+            <TextView android:textSize="@dimen/dimen_15" android:textColor="@color/c12" android:id="@+id/tv_common_question_content" android:layout_width="match_parent" android:layout_height="wrap_content" android:lineSpacingMultiplier="1.3"/>
+            <View android:layout_width="match_parent" android:layout_height="@dimen/dimen_15"/>
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>

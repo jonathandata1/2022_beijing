@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <View android:id="@id/finallyview" android:background="@color/c4" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="@dimen/dimen_10" />
+    <RelativeLayout android:id="@id/rl_tmail_container" android:clipChildren="false" android:clipToPadding="false" android:layout_width="fill_parent" android:layout_height="@dimen/dimen_50" android:layout_marginLeft="@dimen/dimen_16">
+        <ImageView android:id="@id/tv_item_tmail_card_arrow" android:layout_width="@dimen/dimen_14" android:layout_height="@dimen/dimen_14" android:layout_marginLeft="@dimen/dimen_10" android:layout_marginRight="@dimen/dimen_16" android:src="@drawable/picth_on" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+        <TextView android:textSize="@dimen/dimen_16" android:textColor="@color/color_222222" android:ellipsize="end" android:id="@id/tv_item_tmail_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="1" android:layout_centerVertical="true" />
+        <View android:id="@id/lineview" android:background="@color/c36" android:layout_width="fill_parent" android:layout_height="@dimen/dimen_0.3" android:layout_alignParentBottom="true" />
+    </RelativeLayout>
+</LinearLayout>

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:orientation="vertical" android:background="@color/color_FFFFFF" android:layout_width="match_parent" android:layout_height="match_parent">
+    <include layout="@layout/hp_item_custom_manager_ceiling2"/>
+    <android.support.design.widget.CoordinatorLayout android:id="@+id/recy_coordinator_layout" android:layout_width="match_parent" android:layout_height="match_parent">
+        <android.support.design.widget.AppBarLayout android:id="@+id/recy_app_bar" android:layout_width="match_parent" android:layout_height="wrap_content" app:elevation="0dp" app:layout_behavior="com.systoon.customhomepage.widget.FlingBehavior">
+            <LinearLayout android:orientation="vertical" android:id="@+id/appbar_headview" android:layout_width="match_parent" android:layout_height="wrap_content" app:layout_scrollFlags="0x1">
+                <FrameLayout android:id="@+id/myapps_fl" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+                <FrameLayout android:id="@+id/recently_used_view" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+                <FrameLayout android:id="@+id/recommend_view" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+            </LinearLayout>
+            <RelativeLayout android:layout_width="match_parent" android:layout_height="@dimen/hp_px_44">
+                <com.systoon.customhomepage.widget.MyTabLayout android:id="@+id/recy_tabLayout" android:background="@color/color_FFFFFF" android:layout_width="match_parent" android:layout_height="match_parent" app:tabBackground="@drawable/hp_tab_backgroud_selector" app:tabIndicatorColor="@color/color_DF3031" app:tabMode="0" app:tabSelectedTextColor="@color/color_DF3031" app:tabTextAppearance="@style/CustomManagerAppsTabTextAppearance" app:tabTextColor="@color/color_8E8E93"/>
+                <ImageView android:layout_width="@dimen/hp_px_44" android:layout_height="@dimen/hp_px_40" android:src="@drawable/hp_manager_shade" android:scaleType="centerCrop" android:layout_alignParentTop="true" android:layout_alignParentRight="true"/>
+            </RelativeLayout>
+            <View android:background="@color/color_F9F9F9" android:layout_width="match_parent" android:layout_height="@dimen/hp_px_1"/>
+        </android.support.design.widget.AppBarLayout>
+        <android.support.v7.widget.RecyclerView android:id="@+id/recy_recyclerView" android:layout_width="match_parent" android:layout_height="match_parent" app:layout_behavior="@string/appbar_scrolling_view_behavior"/>
+    </android.support.design.widget.CoordinatorLayout>
+</LinearLayout>

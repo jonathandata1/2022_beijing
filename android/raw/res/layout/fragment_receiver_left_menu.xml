@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/menu_top_left" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_centerVertical="true"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.msgseal.base.ui.AvatarView android:id="@id/menu_avatar" android:layout_width="@dimen/dimen_32" android:layout_height="@dimen/dimen_32" android:src="@drawable/icon_card_all" android:scaleType="centerCrop" android:layout_centerVertical="true" />
+    <ImageView android:id="@id/menu_unread_mark" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="-3.0dip" android:layout_marginRight="-3.0dip" android:src="@drawable/notification_red" android:layout_alignTop="@id/menu_avatar" android:layout_alignRight="@id/menu_avatar" />
+    <ImageView android:id="@id/menu_card_arrow" android:layout_width="@dimen/dimen_9" android:layout_height="@dimen/dimen_6" android:layout_marginLeft="@dimen/dimen_10" android:src="@drawable/chat_arrow_down" android:layout_toRightOf="@id/menu_avatar" android:layout_centerVertical="true" />
+</RelativeLayout>

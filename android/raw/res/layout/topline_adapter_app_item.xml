@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:gravity="center_horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_centerInParent="true">
+        <ImageView android:id="@id/appicon" android:layout_width="@dimen/dimen_50" android:layout_height="@dimen/dimen_60" android:scaleType="centerCrop" android:layout_centerHorizontal="true" />
+        <TextView android:textSize="@dimen/dimen_12" android:textColor="@color/c10" android:id="@id/appName" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="51.0dip" android:text="地税" android:singleLine="true" android:layout_centerHorizontal="true" />
+    </RelativeLayout>
+</RelativeLayout>

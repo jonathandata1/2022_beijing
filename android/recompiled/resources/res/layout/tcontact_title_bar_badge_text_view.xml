@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.systoon.tcontactcommon.view.base.BadgeLayout xmlns:android="http://schemas.android.com/apk/res/android" android:padding="@dimen/dimen_6" android:duplicateParentState="true" android:layout_width="wrap_content" android:layout_height="match_parent">
+    <TextView android:layout_gravity="center_vertical" android:duplicateParentState="true" android:layout_width="wrap_content" android:layout_height="wrap_content" style="@style/ContactTitleBarTextStyle"/>
+</com.systoon.tcontactcommon.view.base.BadgeLayout>

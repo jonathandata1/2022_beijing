@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/file_preview" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/file_icon_iv" android:layout_width="100.0dip" android:layout_height="100.0dip" />
+    <TextView android:textSize="16.0dip" android:textColor="@color/color_F8F9FB" android:gravity="center_horizontal" android:id="@id/file_name_tv" android:paddingLeft="10.0dip" android:paddingRight="10.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="20.0dip" android:text="文件名称" />
+    <TextView android:textColor="@color/color_F8F9FB" android:id="@id/file_size_tv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:text="文件大小" />
+    <FrameLayout android:layout_gravity="center_horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="20.0dip">
+        <RelativeLayout android:layout_gravity="center" android:orientation="horizontal" android:id="@id/file_loading_hint_layout" android:layout_width="250.0dip" android:layout_height="wrap_content">
+            <ImageView android:id="@id/file_preview_close" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="3.0dip" android:src="@drawable/close_cricle" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+            <ProgressBar android:id="@id/file_preview_progress" android:layout_width="fill_parent" android:layout_height="5.0dip" android:max="100" android:progress="0" android:progressDrawable="@drawable/file_progress_background" android:layout_toLeftOf="@id/file_preview_close" android:layout_centerVertical="true" style="?android:progressBarStyleHorizontal" />
+            <TextView android:textSize="@dimen/dimen_14" android:textColor="@color/color_F8F9FB" android:id="@id/file_preview_progress_txt" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="35.0dip" android:text="@string/chat_video_preview_status_process" android:layout_centerHorizontal="true" />
+        </RelativeLayout>
+        <TextView android:textSize="@dimen/ts_17px" android:textColor="@color/c5" android:gravity="center" android:id="@id/file_operate_tv" android:background="@drawable/bg_blue_corner" android:paddingLeft="100.0dip" android:paddingRight="100.0dip" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="45.0dip" android:text="@string/chat_file_open_other_app" />
+        <com.msgseal.chat.customviews.ChatAudioPlayView android:layout_gravity="center" android:id="@id/file_music_play" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    </FrameLayout>
+    <TextView android:textSize="15.0dip" android:textColor="@color/color_F8F9FB" android:id="@id/file_tip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="15.0dip" android:text="@string/chat_file_tip" />
+</LinearLayout>

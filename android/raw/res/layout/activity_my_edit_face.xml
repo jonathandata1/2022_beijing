@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@color/c5" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="@dimen/dimen_14" android:textColor="@color/c34" android:id="@id/hint" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="15.0dip" android:layout_marginTop="@dimen/dimen_15" android:layout_marginBottom="@dimen/dimen_7" android:text="@string/my_face_edit_hint" />
+    <ListView android:id="@id/drag_list_view" android:layout_width="fill_parent" android:layout_height="fill_parent" android:divider="@color/c6" android:dividerHeight="0.5px" android:layout_below="@id/hint" />
+</RelativeLayout>

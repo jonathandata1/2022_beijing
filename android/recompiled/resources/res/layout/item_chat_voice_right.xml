@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignWithParentIfMissing="true">
+    <LinearLayout android:gravity="right" android:layout_gravity="right" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="@dimen/dimen_41">
+        <RelativeLayout android:gravity="center_vertical" android:layout_gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="@dimen/dimen_40" android:layout_marginRight="@dimen/dimen_8">
+            <TextView android:textSize="@dimen/dimen_16" android:textColor="@color/c8" android:id="@+id/txt_voicetime_right" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/chat_voice" android:layout_centerVertical="true"/>
+        </RelativeLayout>
+        <FrameLayout android:id="@+id/rl_layout_voice_right" android:background="@drawable/chat_item_right_bg" android:layout_width="@dimen/dimen_94" android:layout_height="@dimen/dimen_40">
+            <ImageView android:layout_gravity="left|center_vertical|center_horizontal|center|start" android:id="@+id/img_voice_status_icon_right" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dimen_14" android:src="@drawable/item_voice_play_right_icon"/>
+            <com.airbnb.lottie.LottieAnimationView android:layout_gravity="right|center_vertical|center_horizontal|center|end" android:id="@+id/img_voiceicon_right" android:layout_width="@dimen/dimen_23" android:layout_height="@dimen/dimen_20" android:layout_marginRight="@dimen/dimen_14" app:lottie_autoPlay="false" app:lottie_fileName="item_voice_play_right.json" app:lottie_repeatCount="-1" app:lottie_repeatMode="1"/>
+        </FrameLayout>
+    </LinearLayout>
+    <FrameLayout android:gravity="right" android:layout_gravity="right" android:id="@+id/fl_voice_text_container_right" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dimen_8">
+        <ProgressBar android:layout_gravity="center" android:id="@+id/iv_voice_text_right" android:layout_width="20dp" android:layout_height="20dp" style="@style/chat_progressbar_loading"/>
+        <LinearLayout android:orientation="vertical" android:id="@+id/ll_voice_text_right" android:background="@drawable/chat_item_right_bg" android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <com.msgseal.chat.customviews.AutoLinkTextView android:textSize="@dimen/dimen_16" android:textColor="@color/tc222222" android:textColorLink="@color/c1" android:gravity="left|center_vertical|center_horizontal|center|start" android:autoLink="phone" android:id="@+id/text_voice_text_right" android:paddingLeft="@dimen/dimen_10" android:paddingTop="@dimen/dimen_9" android:paddingRight="@dimen/dimen_10" android:paddingBottom="@dimen/dimen_8" android:descendantFocusability="blocksDescendants" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxWidth="@dimen/dimen_250" android:minWidth="@dimen/dimen_36" android:minHeight="@dimen/dimen_41" android:lineSpacingExtra="@dimen/dimen_2"/>
+        </LinearLayout>
+    </FrameLayout>
+</LinearLayout>

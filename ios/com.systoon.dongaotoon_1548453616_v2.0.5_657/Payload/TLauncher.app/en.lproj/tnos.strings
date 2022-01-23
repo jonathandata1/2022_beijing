@@ -1,0 +1,71 @@
+
+"cancel" = "Cancel";
+"goSetting" = "To Set";
+
+
+"cameraPrivacyTitle" = "Tips";
+"cameraPrivacyMsg" = "You have not granted the camera permission. You need to go to [Settings] for authorisation ";
+
+"bluetoothPrivacyTitle" = "Tips";
+"bluetoothPrivacyMsg" = "You have not granted the bluetooth permission. You need to go to [Settings] for authorisation ";
+
+"calendarsPrivacyTitle" = "Tips";
+"calendarsPrivacyMsg" = "You have not granted the calendars permission. You need to go to [Settings] for authorisation ";
+
+
+"contactsPrivacyTitle" = "Tips";
+"contactsPrivacyMsg" = "You have not granted the contacts modification permission. You need to go to [Settings] for authorisation ";
+
+
+"healthPrivacyTitle" = "Tips";
+"healthPrivacyMsg" = "You have not granted the health  permission. You need to go to [Settings] for authorisation ";
+
+
+"locationPrivacyTitle" = "Tips";
+"locationPrivacyMsg" = "You have not granted the location permission. You need to go to [Settings] for authorisation ";
+
+"mediaPrivacyTitle" = "Tips";
+"mediaPrivacyMsg" = "You have not granted the media permission. You need to go to [Settings] for authorisation ";
+
+"microphonePrivacyTitle" = "Tips";
+"microphonePrivacyMsg" = "You have not granted the recorder permission. You need to go to [Settings] for authorisation ";
+
+"fitnessPrivacyTitle" = "Tips";
+"fitnessPrivacyMsg" = "You have not granted the fitness permission. You need to go to [Settings] for authorisation ";
+
+"photoPrivacyTitle" = "Tips";
+"photoPrivacyMsg" = "You have not granted the album permission. You need to go to [Settings] for authorisation ";
+
+"remindersPrivacyTitle" = "Tips";
+"remindersPrivacyMsg" = "You have not granted the reminders permission. You need to go to [Settings] for authorisation ";
+
+"speechPrivacyTitle" = "Tips";
+"speechPrivacyMsg" = "You have not granted the recorder permission. You need to go to [Settings] for authorisation ";
+
+/*
+ "" = "";
+ "" = "";
+ "" = "";
+ "" = "";
+ "" = "";
+ "" = "";
+ "" = "";
+ "" = "";
+ "" = "";
+ "" = "";
+ "" = "";
+ "" = "";
+ "" = "";
+ "" = "";
+ "" = "";
+ "" = "";
+ "" = "";
+ "" = "";
+ "" = "";
+ "" = "";
+ "" = "";
+ "" = "";
+ "" = "";
+ "" = "";
+ "" = "";
+ */

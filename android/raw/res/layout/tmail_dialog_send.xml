@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@drawable/view_org_pop_bg" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_margin="@dimen/dimen_20"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="@dimen/ts_18px" android:textColor="@color/feed_card_label_color" android:ellipsize="end" android:id="@id/dialog_send_tv_operator" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dimen_15" android:layout_marginTop="@dimen/dimen_24" android:layout_marginRight="@dimen/dimen_15" android:maxLines="1" />
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dimen_15" android:layout_marginTop="@dimen/dimen_13">
+        <com.systoon.toon.view.ShapeImageView android:id="@id/dialog_send_iv_avatar" android:layout_width="@dimen/dimen_44" android:layout_height="@dimen/dimen_44" />
+        <TextView android:textSize="@dimen/ts_15px" android:textColor="@color/c12" android:ellipsize="end" android:id="@id/dialog_send_tv_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dimen_10" android:layout_marginRight="@dimen/dimen_15" android:maxLines="2" />
+    </LinearLayout>
+    <View android:background="@color/c6" android:layout_width="fill_parent" android:layout_height="@dimen/dimen_0.3" android:layout_margin="@dimen/dimen_15" />
+    <RelativeLayout android:gravity="center_vertical" android:id="@id/dialog_send_contentRelativeLayout" android:background="@color/c5" android:paddingTop="@dimen/dimen_12" android:paddingBottom="@dimen/dimen_12" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dimen_15" android:layout_marginRight="@dimen/dimen_15">
+        <ImageView android:id="@id/dialog_send_iv_picture" android:visibility="gone" android:layout_width="@dimen/dimen_34" android:layout_height="@dimen/dimen_34" android:layout_marginLeft="@dimen/dimen_10" android:layout_centerVertical="true" />
+        <ImageView android:id="@id/dialog_send_videoImage" android:background="@drawable/dialog_send_video_icon" android:visibility="gone" android:layout_width="@dimen/dimen_24" android:layout_height="@dimen/dimen_24" android:layout_centerInParent="true" />
+        <LinearLayout android:orientation="vertical" android:id="@id/dialog_operate_text_layout" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dimen_5" android:layout_marginRight="@dimen/dimen_5" android:layout_toRightOf="@id/dialog_send_iv_picture" android:layout_centerVertical="true">
+            <TextView android:textSize="@dimen/ts_15px" android:textColor="@color/c12" android:ellipsize="end" android:id="@id/dialog_send_tv_content" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="2" />
+            <TextView android:textSize="@dimen/ts_14px" android:textColor="@color/c35" android:ellipsize="end" android:id="@id/dialog_send_tv_dec" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="2" />
+        </LinearLayout>
+    </RelativeLayout>
+    <RelativeLayout android:layout_width="fill_parent" android:layout_height="@dimen/dimen_50" android:layout_marginTop="@dimen/dimen_15" android:layout_marginBottom="@dimen/dimen_5">
+        <TextView android:textSize="@dimen/ts_15px" android:textColor="@color/c12" android:gravity="center" android:id="@id/dialog_send_tv_confirm" android:layout_width="@dimen/dimen_100" android:layout_height="@dimen/dimen_50" android:layout_marginRight="@dimen/dimen_10" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+        <TextView android:textSize="@dimen/ts_15px" android:textColor="@color/c35" android:gravity="center" android:id="@id/dialog_send_tv_cancel" android:layout_width="@dimen/dimen_100" android:layout_height="@dimen/dimen_50" android:layout_toLeftOf="@id/dialog_send_tv_confirm" android:layout_alignParentTop="true" android:layout_toStartOf="@id/dialog_send_tv_confirm" />
+    </RelativeLayout>
+</LinearLayout>

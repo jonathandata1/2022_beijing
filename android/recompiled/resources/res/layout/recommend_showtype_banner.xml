@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:orientation="vertical" android:background="@color/transparent" android:clipChildren="false" android:layout_width="match_parent" android:layout_height="@dimen/px_205">
+    <com.stx.xhb.xbanner.XBanner android:id="@+id/xbanner" android:layout_width="@dimen/px_343" android:layout_height="@dimen/px_193" android:layout_centerHorizontal="true" app:AutoPlayTime="3000" app:clipChildrenLeftRightMargin="@dimen/px_4" app:isClipChildrenMode="true" app:isClipChildrenModeLessThree="true" app:isHandLoop="true" app:isShowIndicatorOnlyOne="true" app:pageChangeDuration="800" app:pointsContainerBackground="#00000000" app:pointsPosition="1" app:pointsVisibility="false" app:tipTextSize="12sp" app:viewpagerMargin="@dimen/px_12"/>
+</RelativeLayout>

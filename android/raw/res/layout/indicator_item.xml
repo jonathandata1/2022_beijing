@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="10.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/iv_red" android:background="@drawable/banner_red_dot" android:layout_width="6.0dip" android:layout_height="3.0dip" android:layout_marginRight="4.0dip" />
+    <ImageView android:id="@id/iv_grave" android:background="@drawable/banner_gray_dot" android:visibility="gone" android:layout_width="6.0dip" android:layout_height="3.0dip" android:layout_marginRight="4.0dip" />
+</LinearLayout>

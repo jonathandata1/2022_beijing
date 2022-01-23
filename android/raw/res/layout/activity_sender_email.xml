@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@color/white" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include android:id="@id/layout_footer" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true" layout="@layout/footer_sender_email" />
+    <ScrollView android:id="@id/send_scroll" android:scrollbars="none" android:fadingEdge="none" android:layout_width="fill_parent" android:layout_height="fill_parent" android:fillViewport="true" android:layout_above="@id/layout_footer">
+        <LinearLayout android:orientation="vertical" android:paddingLeft="@dimen/dimen_16" android:paddingRight="@dimen/dimen_12" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <include android:id="@id/layout_header" android:layout_width="fill_parent" android:layout_height="wrap_content" layout="@layout/header_sender_email" />
+            <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <EditText android:textSize="@dimen/dimen_16" android:textColor="@color/tc_2" android:textColorHint="@color/tc_6" android:gravity="top" android:id="@id/email_edit" android:background="@null" android:paddingTop="@dimen/dimen_20" android:paddingBottom="@dimen/dimen_20" android:layout_width="fill_parent" android:layout_height="wrap_content" android:minHeight="@dimen/dimen_200" android:hint="@string/email_input_hint_tip" android:maxLength="10000" android:textCursorDrawable="@null" />
+                <View android:id="@id/line_sign" android:background="@color/c36" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="@dimen/dimen_0.5" />
+                <TextView android:textSize="@dimen/dimen_16" android:textColor="@color/tc_6" android:gravity="top" android:id="@id/email_sign_text" android:background="@null" android:paddingTop="@dimen/dimen_13" android:paddingBottom="@dimen/dimen_13" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="@dimen/dimen_50" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+    <com.syswin.email.sender.view.SendEmailResultView android:id="@id/view_send_result" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+</RelativeLayout>

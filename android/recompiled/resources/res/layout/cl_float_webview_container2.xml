@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:layout_width="@dimen/vr_small_window_width" android:layout_height="@dimen/vr_small_window_height">
+    <FrameLayout android:id="@+id/webViewContainer" android:layout_width="match_parent" android:layout_height="match_parent"/>
+    <ImageView android:id="@+id/topView" android:layout_width="match_parent" android:layout_height="match_parent" app:srcCompat="@drawable/vr_small_window_border"/>
+    <LinearLayout android:layout_gravity="bottom" android:orientation="horizontal" android:id="@+id/tipBackView" android:background="@drawable/vr_small_window_tip_bg2" android:visibility="gone" android:layout_width="64dp" android:layout_height="16dp">
+        <TextView android:textSize="12dp" android:textStyle="bold" android:textColor="#fff" android:gravity="center" android:layout_width="wrap_content" android:layout_height="match_parent" android:layout_marginLeft="4dp" android:text="·"/>
+        <TextView android:textSize="9dp" android:textStyle="bold" android:textColor="#fff" android:gravity="center" android:id="@+id/tipTextView" android:layout_width="wrap_content" android:layout_height="match_parent" android:layout_marginLeft="2dp"/>
+    </LinearLayout>
+</FrameLayout>

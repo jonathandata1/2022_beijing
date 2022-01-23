@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:gravity="center" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <RelativeLayout android:layout_width="wrap_content" android:layout_height="60dp">
+        <LinearLayout android:orientation="vertical" android:id="@+id/ptr_classic_header_rotate_view_header_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_toRightOf="@+id/ptr_fl" android:layout_centerVertical="true">
+            <TextView android:textSize="15dp" android:textColor="#5c5c5c" android:gravity="center" android:layout_gravity="center_vertical" android:id="@+id/ptr_classic_header_rotate_view_header_title" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+        </LinearLayout>
+        <FrameLayout android:id="@+id/ptr_fl" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="10dp" android:layout_centerVertical="true">
+            <RelativeLayout android:layout_gravity="center" android:visibility="gone" android:layout_width="@dimen/dimen_20" android:layout_height="@dimen/dimen_20">
+                <ImageView android:id="@+id/ptr_classic_header_rotate_circle_view" android:layout_width="match_parent" android:layout_height="match_parent" android:src="@drawable/ptr_arrow_circle"/>
+                <ImageView android:id="@+id/ptr_classic_header_rotate_view" android:layout_width="@dimen/dimen_10" android:layout_height="@dimen/dimen_11" android:src="@drawable/ptr_arrow" android:layout_centerInParent="true"/>
+            </RelativeLayout>
+            <ProgressBar android:layout_gravity="center" android:id="@+id/ptr_classic_header_rotate_view_progressbar" android:background="@android:color/transparent" android:layout_width="@dimen/dimen_20" android:layout_height="@dimen/dimen_20" android:indeterminate="true" android:indeterminateDrawable="@drawable/ptr_loading_progress" style="?android:attr/progressBarStyleSmall"/>
+        </FrameLayout>
+    </RelativeLayout>
+</LinearLayout>

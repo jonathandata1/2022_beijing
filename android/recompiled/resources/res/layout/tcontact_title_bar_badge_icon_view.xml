@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.systoon.tcontactcommon.view.base.BadgeLayout xmlns:android="http://schemas.android.com/apk/res/android" android:padding="@dimen/dimen_6" android:duplicateParentState="true" android:layout_width="wrap_content" android:layout_height="@dimen/dimen_44">
+    <com.systoon.tcontactcommon.view.base.TitleBarIconView android:duplicateParentState="true" android:layout_width="@dimen/dimen_32" android:layout_height="@dimen/dimen_32" android:scaleType="fitXY"/>
+</com.systoon.tcontactcommon.view.base.BadgeLayout>

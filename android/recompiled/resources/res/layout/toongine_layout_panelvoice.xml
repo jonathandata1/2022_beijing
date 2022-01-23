@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" android:background="@color/color_message_input_bg" android:layout_width="match_parent" android:layout_height="330dp">
+    <RelativeLayout android:layout_width="match_parent" android:layout_height="match_parent">
+        <ImageView android:id="@+id/toongine_iv_voice" android:visibility="visible" android:layout_width="@dimen/dimen_96" android:layout_height="@dimen/dimen_96" android:src="@drawable/toongine_panelvoice_icon" android:scaleType="fitXY" android:layout_centerInParent="true" android:contentDescription="@string/app_name"/>
+        <ImageView android:id="@+id/toongine_ivvoice_delete" android:visibility="gone" android:layout_width="@dimen/dimen_96" android:layout_height="@dimen/dimen_96" android:src="@drawable/toongine_panelvoice_del_icon" android:scaleType="fitXY" android:layout_centerInParent="true" android:contentDescription="@string/app_name"/>
+        <ImageView android:id="@+id/toongine_ivgray_bg" android:visibility="gone" android:layout_width="@dimen/dimen_96" android:layout_height="@dimen/dimen_96" android:src="@drawable/gray_circle_bg" android:scaleType="fitXY" android:layout_centerInParent="true" android:contentDescription="@string/app_name"/>
+    </RelativeLayout>
+    <LinearLayout android:gravity="center" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dimen_28">
+        <TextView android:textSize="@dimen/ts_16px" android:textColor="@color/c9" android:gravity="center" android:id="@+id/toongine_tv_desc" android:clickable="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/press_talk"/>
+        <TextView android:textSize="@dimen/ts_16px" android:gravity="center" android:id="@+id/toongine_tv_time" android:paddingLeft="@dimen/dimen_10" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/defalut_title"/>
+    </LinearLayout>
+</FrameLayout>

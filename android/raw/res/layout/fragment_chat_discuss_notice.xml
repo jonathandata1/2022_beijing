@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <android.support.v7.widget.RecyclerView android:id="@id/rcy_group_notice" android:scrollbars="none" android:layout_width="fill_parent" android:layout_height="wrap_content" android:overScrollMode="never" />
+    <EditText android:textSize="@dimen/dimen_16" android:textColor="@color/tc_2" android:textColorHint="@color/tc_6" android:gravity="top" android:id="@id/group_notice_edit" android:background="@null" android:padding="@dimen/dimen_16" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:minHeight="@dimen/dimen_200" android:hint="@string/group_edit_notice_hint" android:textCursorDrawable="@null" />
+</FrameLayout>

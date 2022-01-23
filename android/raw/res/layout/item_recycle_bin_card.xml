@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="horizontal" android:background="@color/white" android:paddingLeft="@dimen/dimen_16" android:paddingTop="@dimen/dimen_10" android:paddingRight="@dimen/dimen_16" android:paddingBottom="@dimen/dimen_10" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/dimen_10"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <CheckBox android:layout_gravity="center_vertical" android:id="@id/cb_recycle_bin_check" android:background="@drawable/card_checked_selector" android:layout_width="@dimen/dimen_22" android:layout_height="@dimen/dimen_22" android:button="@null" />
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dimen_10">
+        <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <ImageView android:layout_width="@dimen/dimen_50" android:layout_height="@dimen/dimen_50" android:src="@drawable/ic_default_person_avatar" />
+            <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dimen_8">
+                <TextView android:textSize="@dimen/dimen_16" android:textColor="#ff222222" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="王志文" />
+                <TextView android:textSize="@dimen/dimen_14" android:textColor="#ff8e8e93" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="2.5dip" android:text="密友地址@tmail.systoon.com" />
+            </LinearLayout>
+        </LinearLayout>
+        <LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dimen_10">
+            <TextView android:textSize="@dimen/dimen_12" android:textColor="#ff8e8e93" android:id="@id/txt_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="杨越" />
+            <TextView android:textSize="@dimen/dimen_12" android:textColor="#ff8e8e93" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dimen_10" android:text="昨天" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

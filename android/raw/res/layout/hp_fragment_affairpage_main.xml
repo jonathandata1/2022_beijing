@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <FrameLayout android:id="@id/fragment_custom_search" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentTop="true" />
+    <com.systoon.customhomepage.widget.HomepageCusPtrClassicFrameLayout android:id="@id/rotate_header_web_view_frame" android:background="@color/transparent" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_below="@id/fragment_custom_search">
+        <android.support.v4.widget.NestedScrollView android:id="@id/nested_scroll_view" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent">
+                <android.support.design.widget.TabLayout android:id="@id/affair_tab" android:layout_width="fill_parent" android:layout_height="@dimen/hp_px_42" app:tabBackground="@android:color/transparent" app:tabIndicatorColor="#ffdf3031" app:tabMode="scrollable" app:tabSelectedTextColor="#ff222222" app:tabTextAppearance="@style/TabLayoutTextStyle" app:tabTextColor="#ff8e8e93" />
+                <com.systoon.customhomepage.view.HPScrollViewViewPager android:id="@id/affair_viewpager" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+            </LinearLayout>
+        </android.support.v4.widget.NestedScrollView>
+    </com.systoon.customhomepage.widget.HomepageCusPtrClassicFrameLayout>
+    <ImageView android:id="@id/iv_smart_quest_answer" android:visibility="visible" android:layout_width="@dimen/hp_px_65" android:layout_height="@dimen/hp_px_65" android:layout_marginRight="@dimen/hp_px_20" android:layout_marginBottom="@dimen/hp_px_30" android:scaleType="centerCrop" android:layout_alignParentRight="true" android:layout_alignParentBottom="true" android:layout_alignParentEnd="true" />
+</RelativeLayout>

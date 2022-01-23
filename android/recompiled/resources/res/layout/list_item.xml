@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="horizontal" android:paddingLeft="@dimen/bottom_sheet_list_item_horizontal_padding" android:paddingRight="@dimen/bottom_sheet_list_item_horizontal_padding" android:layout_width="match_parent" android:layout_height="@dimen/bottom_sheet_list_item_height" android:paddingStart="@dimen/bottom_sheet_list_item_horizontal_padding" android:paddingEnd="@dimen/bottom_sheet_list_item_horizontal_padding">
+    <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="match_parent">
+        <ImageView android:layout_gravity="center_vertical" android:id="@android:id/icon" android:layout_width="@dimen/bottom_sheet_list_item_icon_size" android:layout_height="@dimen/bottom_sheet_list_item_icon_size" android:layout_marginRight="@dimen/bottom_sheet_drawable_padding" android:scaleType="centerInside" android:contentDescription="@null" android:layout_marginEnd="@dimen/bottom_sheet_drawable_padding"/>
+        <TextView android:textAppearance="?android:attr/textAppearanceMedium" android:textColor="?android:attr/textColorPrimary" android:ellipsize="end" android:layout_gravity="center_vertical" android:id="@android:id/title" android:layout_width="0dp" android:layout_height="wrap_content" android:singleLine="true" android:layout_weight="1"/>
+    </LinearLayout>
+</LinearLayout>

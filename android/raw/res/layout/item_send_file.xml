@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:orientation="horizontal" android:padding="@dimen/dimen_8" android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:id="@id/rl_email_file_detail" android:background="@drawable/bg_attachment_corner" android:layout_width="@dimen/dimen_80" android:layout_height="@dimen/dimen_80">
+        <LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true">
+            <LinearLayout android:layout_gravity="center_horizontal" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                <ImageView android:layout_gravity="center_vertical" android:id="@id/iv_doc_icon" android:layout_width="@dimen/dimen_40" android:layout_height="@dimen/dimen_40" />
+                <TextView android:textSize="@dimen/dimen_14" android:layout_gravity="center_vertical" android:id="@id/tv_doc_size" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true" />
+            </LinearLayout>
+            <TextView android:textSize="@dimen/dimen_18" android:ellipsize="end" android:gravity="center" android:layout_gravity="center_horizontal" android:id="@id/tv_doc_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true" />
+        </LinearLayout>
+    </RelativeLayout>
+    <ImageView android:layout_gravity="center|right|top" android:id="@id/iv_send_file_del" android:padding="@dimen/dimen_4" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/icon_send_del" />
+</FrameLayout>

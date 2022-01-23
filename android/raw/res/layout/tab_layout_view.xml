@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="@dimen/px_15" android:textColor="@color/color_222222" android:gravity="center" android:id="@id/tv_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="1" android:layout_centerHorizontal="true" />
+    <ImageView android:id="@id/iv_image" android:layout_width="@dimen/px_68" android:layout_height="@dimen/px_21" android:layout_centerHorizontal="true" />
+    <View android:id="@id/tab_item_indicator" android:background="@drawable/interactive_tab_indicator_bg" android:layout_width="@dimen/px_20" android:layout_height="@dimen/px_3" android:layout_marginTop="@dimen/px_30" android:layout_centerHorizontal="true" />
+</RelativeLayout>

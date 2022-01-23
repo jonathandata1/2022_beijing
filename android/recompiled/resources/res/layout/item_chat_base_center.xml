@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" android:paddingLeft="@dimen/dimen_10" android:paddingRight="@dimen/dimen_10" android:paddingBottom="@dimen/dimen_15" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <TextView android:textSize="@dimen/dimen_12" android:textColor="@color/c8" android:gravity="center" android:id="@+id/txt_sendtime" android:paddingLeft="@dimen/dimen_10" android:paddingTop="@dimen/dimen_5" android:paddingRight="@dimen/dimen_10" android:paddingBottom="@dimen/dimen_5" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dimen_10" android:layout_marginBottom="@dimen/dimen_10" android:text="@string/chat_sendtime" android:layout_alignParentTop="true" android:layout_centerHorizontal="true"/>
+    <FrameLayout android:id="@+id/layout_base_center" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_below="@+id/txt_sendtime" android:layout_centerHorizontal="true" android:layout_alignWithParentIfMissing="true"/>
+</RelativeLayout>

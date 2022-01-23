@@ -1,0 +1,12 @@
+{
+    "TNAppCenter": {
+        "removeAllATagTargetAttributeInSubFrame" : false,
+        "removeATagTargetAttributeInSubFrameList":[
+          
+        ],
+        "pTokenInHeader" : true,
+        "pTokenInUrl" : true,
+        "histroyAppCount" : 4,
+        "isAddrecentApp" : false
+    }
+}

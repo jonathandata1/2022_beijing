@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" android:id="@+id/topline_search" android:layout_width="match_parent" android:layout_height="@dimen/px_44">
+    <View android:id="@+id/search_bar_bg" android:background="#2e000000" android:layout_width="match_parent" android:layout_height="@dimen/px_25"/>
+    <RelativeLayout android:id="@+id/search_rl" android:background="@drawable/topline_search_bg" android:paddingLeft="@dimen/px_10" android:paddingRight="@dimen/px_10" android:layout_width="match_parent" android:layout_height="@dimen/px_28" android:layout_marginLeft="@dimen/px_20" android:layout_marginRight="@dimen/px_20" android:layout_marginBottom="@dimen/px_8" android:layout_alignParentBottom="true">
+        <ImageView android:id="@+id/search_icon" android:layout_width="@dimen/px_12" android:layout_height="@dimen/px_12" android:src="@drawable/interactive_social_vicinity_search_ic" android:layout_centerVertical="true"/>
+        <ImageView android:id="@+id/voice_icon" android:layout_width="@dimen/px_16" android:layout_height="@dimen/px_16" android:src="@drawable/interactive_voice_gray" android:layout_alignParentRight="true" android:layout_centerVertical="true"/>
+        <TextView android:textSize="@dimen/px_14" android:textColor="#ff8e8e93" android:gravity="center_vertical" android:id="@+id/search_text" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginLeft="@dimen/px_4" android:text="@string/topline_search" android:layout_toLeftOf="@+id/voice_icon" android:layout_toRightOf="@+id/search_icon" android:layout_centerVertical="true"/>
+    </RelativeLayout>
+</RelativeLayout>

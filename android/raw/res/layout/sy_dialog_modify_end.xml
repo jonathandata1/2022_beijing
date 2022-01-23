@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@drawable/sy_shape_dialog_bg" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="14.0sp" android:textColor="@color/sy_v333333" android:gravity="center" android:id="@id/sy_dialog_content" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dp_20" android:layout_marginTop="@dimen/dp_20" android:layout_marginRight="@dimen/dp_20" />
+    <View android:background="@color/sy_split_line" android:layout_width="fill_parent" android:layout_height="@dimen/dp_0_5" android:layout_marginTop="@dimen/dp_20" />
+    <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="@dimen/dp_50">
+        <Button android:textSize="16.0sp" android:textColor="@color/sy_v4a4a4a" android:gravity="center" android:id="@id/sy_dialog_btn_cancel" android:background="@null" android:layout_width="0.0dip" android:layout_height="fill_parent" android:singleLine="true" android:layout_weight="1.0" />
+        <View android:background="@color/sy_split_line" android:layout_width="@dimen/dp_0_5" android:layout_height="fill_parent" />
+        <Button android:textSize="16.0sp" android:textStyle="bold" android:textColor="@color/sy_v222222" android:gravity="center" android:id="@id/sy_dialog_btn_sure" android:background="@null" android:layout_width="0.0dip" android:layout_height="fill_parent" android:singleLine="true" android:layout_weight="1.0" />
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,3 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TextView android:paddingLeft="15.0dip" android:paddingRight="20.0dip" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="28.0dip" style="@style/MMListCatalog"
+  xmlns:android="http://schemas.android.com/apk/res/android" />

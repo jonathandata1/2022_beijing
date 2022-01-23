@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" android:background="@color/c20" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <View android:id="@+id/tmail_dialog_operator_top" android:background="@color/c6" android:visibility="gone" android:layout_width="match_parent" android:layout_height="@dimen/dimen_8"/>
+    <RelativeLayout android:id="@+id/tmail_dialog_operate_text_layout" android:paddingBottom="@dimen/dimen_11" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dimen_12" android:layout_below="@+id/tmail_dialog_operator_top">
+        <TextView android:textSize="@dimen/dimen_15" android:id="@+id/tmail_dialog_operate_dec" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dimen_5" android:layout_marginRight="@dimen/dimen_15" android:maxLines="1" android:layout_alignParentTop="true" android:layout_alignParentRight="true"/>
+        <TextView android:textSize="@dimen/dimen_17" android:textColor="@color/c12" android:id="@+id/tmail_dialog_operateTv" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dimen_15" android:layout_marginRight="@dimen/dimen_5" android:maxLines="1" android:layout_alignBaseline="@+id/tmail_dialog_operate_dec"/>
+    </RelativeLayout>
+    <View android:id="@+id/tmail_dialog_operator_divider" android:background="@color/c6" android:layout_width="match_parent" android:layout_height="@dimen/res_0x7f070190_dimen_0_3" android:layout_below="@+id/tmail_dialog_operate_text_layout"/>
+</RelativeLayout>

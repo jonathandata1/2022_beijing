@@ -1,0 +1,12 @@
+{
+  "taccount": {
+    "accountCell": {
+      "tn_dataContext": {
+        "toonTitle": "e福州账号",
+        "nameLabel": "变更手机号、密码管理、备份设置"
+      }
+    },
+    "useClientHeaderInfo":false,
+    "sourceSyncTimeExpire":"3600"
+  }
+}

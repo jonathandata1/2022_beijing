@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/parentView" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:id="@id/search_all_type_view" android:background="@color/color_f9f9f9" android:paddingLeft="@dimen/dimen_12" android:paddingRight="@dimen/dimen_12" android:layout_width="fill_parent" android:layout_height="@dimen/dimen_56">
+        <TextView android:textSize="@dimen/ts_17px" android:textColor="@color/color_222222" android:id="@id/search_all_type_cancel" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dimen_8" android:text="@string/cancel" android:layout_alignParentRight="true" android:layout_centerVertical="true" android:layout_alignParentEnd="true" />
+        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/search_all_type_input_view" android:background="@drawable/tmail_search_input_bg" android:layout_width="fill_parent" android:layout_height="@dimen/dimen_36" android:layout_toLeftOf="@id/search_all_type_cancel" android:layout_centerVertical="true">
+            <ImageView android:id="@id/search_all_type_icon" android:layout_width="@dimen/dimen_18" android:layout_height="@dimen/dimen_18" android:layout_marginLeft="@dimen/dimen_8" android:layout_marginRight="@dimen/dimen_5" android:src="@drawable/t_notice_search" />
+            <com.msgseal.chat.customviews.ClearEditText android:textSize="@dimen/dimen_16" android:textColor="@color/color_222222" android:textColorHint="@color/c8" android:gravity="center|left" android:id="@id/search_all_type_input" android:background="@color/transparent" android:focusable="true" android:focusableInTouchMode="true" android:layout_width="fill_parent" android:layout_height="@dimen/dimen_36" android:layout_marginRight="@dimen/dimen_8" android:hint="@string/search_text" android:singleLine="true" android:imeOptions="actionSearch" />
+        </LinearLayout>
+    </RelativeLayout>
+    <View android:id="@id/search_all_type_line_view" android:background="@color/color_0F0F0F" android:layout_width="fill_parent" android:layout_height="@dimen/dimen_0.3" />
+    <com.msgseal.notification.view.NoticeViewGroup android:id="@id/search_all_type_view_group" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <android.support.v4.widget.NestedScrollView android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <android.support.v7.widget.RecyclerView android:id="@id/search_all_type_result" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+                <android.support.v7.widget.RecyclerView android:id="@id/search_app_result" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+            </LinearLayout>
+        </android.support.v4.widget.NestedScrollView>
+        <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:id="@id/search_all_type_empty" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <TextView android:textSize="@dimen/ts_15px" android:textColor="@color/color_8E8E93" android:gravity="center" android:id="@id/tv_search_all_type_emtpy" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/tmail_search_empty_hint" android:drawableTop="@drawable/icon_search_empty" android:drawablePadding="@dimen/dimen_30" />
+        </LinearLayout>
+    </com.msgseal.notification.view.NoticeViewGroup>
+</LinearLayout>

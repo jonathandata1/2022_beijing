@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/rl_item_root" android:layout_width="fill_parent" android:layout_height="@dimen/dimen_70"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/select_icon" android:layout_width="@dimen/dimen_22" android:layout_height="@dimen/dimen_22" android:layout_marginTop="@dimen/dimen_11" android:layout_marginBottom="@dimen/dimen_11" android:src="@drawable/contact_select_not_icon" android:layout_centerVertical="true" />
+    <com.msgseal.base.ui.AvatarView android:id="@id/head_pic" android:layout_width="@dimen/dimen_50" android:layout_height="@dimen/dimen_50" android:scaleType="fitXY" android:layout_toRightOf="@id/select_icon" android:layout_centerVertical="true" />
+    <TextView android:textSize="@dimen/dimen_17" android:textColor="@color/color_222222" android:ellipsize="end" android:id="@id/group_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dimen_12" android:layout_marginRight="@dimen/dimen_16" android:maxLines="1" android:layout_toRightOf="@id/head_pic" android:layout_alignTop="@id/head_pic" />
+    <TextView android:textSize="@dimen/dimen_14" android:textColor="@color/text_subtitle_color" android:ellipsize="end" android:id="@id/member_number" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dimen_12" android:layout_marginTop="@dimen/dimen_2" android:layout_marginRight="@dimen/dimen_16" android:maxLines="1" android:layout_toRightOf="@id/head_pic" android:layout_below="@id/group_name" />
+    <View android:id="@id/lineview" android:background="@color/c36" android:layout_width="fill_parent" android:layout_height="@dimen/dimen_0.3" android:layout_alignLeft="@id/group_name" android:layout_alignParentBottom="true" />
+</RelativeLayout>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="@dimen/dimen_14" android:textColor="@color/text_subtitle_color" android:gravity="center_vertical" android:id="@id/tv_apply_tag" android:background="@color/color_F8F8FB" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dimen_5" android:layout_marginBottom="@dimen/dimen_5" android:text="@string/contact_friend_request_tip" android:paddingStart="@dimen/dimen_15" />
+    <LinearLayout android:id="@id/ll_apply_et" android:paddingLeft="@dimen/dimen_16" android:paddingRight="@dimen/dimen_16" android:focusable="true" android:focusableInTouchMode="true" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <AutoCompleteTextView android:textSize="@dimen/dimen_17" android:id="@id/et_content" android:background="@drawable/transparent" android:focusable="true" android:focusableInTouchMode="true" android:layout_width="0.0dip" android:layout_height="@dimen/dimen_56" android:text="@string/contact_exchage_card_text" android:hint="@string/contact_exchage_card_text" android:maxLines="1" android:singleLine="true" android:maxLength="15" android:layout_weight="1.0" />
+        <ImageView android:layout_gravity="center_vertical" android:id="@id/iv_clear" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_input_del" />
+    </LinearLayout>
+    <TextView android:textSize="@dimen/dimen_14" android:textColor="@color/text_subtitle_color" android:gravity="center_vertical" android:id="@id/tv_select" android:background="@color/color_F8F8FB" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dimen_5" android:layout_marginBottom="@dimen/dimen_5" android:text="@string/contact_friend_select_tip" android:paddingStart="@dimen/dimen_15" />
+    <android.support.v7.widget.RecyclerView android:id="@id/rv_card_list" android:background="@color/backgroundColor" android:padding="@dimen/dimen_16" android:scrollbars="none" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+</LinearLayout>

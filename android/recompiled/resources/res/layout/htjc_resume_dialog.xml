@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:background="@drawable/htjc_img_dialog_bg" android:layout_width="wrap_content" android:layout_height="wrap_content">
+    <TextView android:textSize="16sp" android:textColor="#000000" android:ellipsize="none" android:layout_gravity="center_horizontal" android:id="@+id/dialog_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10dp" android:layout_marginTop="40dp" android:layout_marginRight="10dp" android:layout_marginBottom="40dp" android:text="@string/htjc_friendly_tip_0" android:singleLine="true"/>
+    <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <Button android:textSize="15sp" android:id="@+id/btn_return" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/htjc_btn_return" android:layout_weight="1"/>
+        <Button android:textSize="15sp" android:id="@+id/btn_resume" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/htjc_btn_resume" android:layout_weight="1"/>
+    </LinearLayout>
+</LinearLayout>

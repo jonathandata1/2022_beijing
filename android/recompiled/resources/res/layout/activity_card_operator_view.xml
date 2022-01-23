@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:id="@+id/rl_root" android:background="@color/c5" android:layout_width="match_parent" android:layout_height="match_parent">
+    <android.support.v7.widget.RecyclerView android:id="@+id/rv_card_operator" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+    <LinearLayout android:orientation="vertical" android:id="@+id/ll_delete_contact" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <View android:background="@color/c5" android:layout_width="match_parent" android:layout_height="@dimen/dimen_10"/>
+        <TextView android:textSize="@dimen/dimen_18" android:textColor="@color/c13" android:gravity="center" android:id="@+id/tv_card_delete_contact" android:background="@color/c20" android:layout_width="match_parent" android:layout_height="@dimen/dimen_45" android:text="@string/card_operator_delete_contact"/>
+        <View android:background="@color/c5" android:layout_width="match_parent" android:layout_height="@dimen/dimen_10"/>
+    </LinearLayout>
+</LinearLayout>

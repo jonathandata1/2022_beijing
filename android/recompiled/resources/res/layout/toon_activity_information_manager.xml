@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:background="@color/color_f8f8fb" android:layout_width="match_parent" android:layout_height="match_parent">
+    <include android:id="@+id/in_1" layout="@layout/toon_item_navigation_bar"/>
+    <RelativeLayout android:id="@+id/rl_show_view" android:layout_width="match_parent" android:layout_height="match_parent">
+        <LinearLayout android:id="@+id/ll_add" android:background="@color/c20" android:layout_width="match_parent" android:layout_height="@dimen/dimen_64" android:layout_alignParentBottom="true">
+            <Button android:textSize="@dimen/dimen_18" android:textColor="@color/c20" android:layout_gravity="center" android:id="@+id/btn_add_information" android:background="@drawable/btn_login_red" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dimen_20" android:layout_marginRight="@dimen/dimen_20" android:text="@string/add_common_information_list"/>
+        </LinearLayout>
+        <android.support.v7.widget.RecyclerView android:id="@+id/rv_information_list" android:scrollbars="none" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginTop="15dp" android:listSelector="@drawable/tab_contacts_layout" android:layout_above="@+id/ll_add"/>
+    </RelativeLayout>
+    <include android:id="@+id/ll_empty_view" layout="@layout/toon_view_user_common_empty"/>
+</LinearLayout>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" android:id="@+id/rl_camera" android:layout_width="match_parent" android:layout_height="match_parent">
+    <com.systoon.toonauth.authentication.view.widget.CameraPreviewView android:id="@+id/surface_view" android:layout_width="match_parent" android:layout_height="match_parent"/>
+    <ImageView android:id="@+id/image_view" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent" android:scaleType="fitXY"/>
+    <com.systoon.toonauth.authentication.view.widget.MaskView android:id="@+id/mask_view" android:layout_width="match_parent" android:layout_height="match_parent"/>
+    <ImageView android:id="@+id/iv_close" android:padding="15dp" android:layout_width="50dp" android:layout_height="50dp" android:src="@drawable/camera_close_bg" android:layout_alignParentRight="true"/>
+    <ImageView android:id="@+id/iv_camera" android:padding="15dp" android:layout_width="50dp" android:layout_height="50dp" android:src="@drawable/activity_bjcamera_camera" android:layout_alignParentRight="true"/>
+    <RelativeLayout android:id="@+id/rl_btn" android:paddingTop="10dp" android:paddingBottom="10dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true">
+        <ImageView android:id="@+id/btn_capture" android:background="@drawable/photograph_bg" android:layout_width="60dp" android:layout_height="60dp" android:layout_centerHorizontal="true"/>
+        <ImageView android:id="@+id/btn_submit" android:background="@drawable/camera_sumbit_bg" android:visibility="gone" android:layout_width="60dp" android:layout_height="60dp" android:src="@drawable/icon_camera_selected" android:scaleType="centerInside" android:layout_toRightOf="@+id/btn_capture" android:rotation="90"/>
+        <ImageView android:id="@+id/btn_back" android:background="@drawable/camera_back_bg" android:visibility="gone" android:layout_width="60dp" android:layout_height="60dp" android:src="@drawable/sv_record_retry" android:scaleType="centerInside" android:layout_toLeftOf="@+id/btn_capture" android:rotation="90"/>
+    </RelativeLayout>
+</RelativeLayout>

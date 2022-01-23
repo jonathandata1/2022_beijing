@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:orientation="vertical" android:id="@+id/wheel_linearLayout" android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <RelativeLayout android:gravity="center_vertical" android:background="@color/white" android:layout_width="match_parent" android:layout_height="@dimen/dimen_50">
+            <TextView android:textSize="@dimen/dimen_16" android:textColor="@color/search_result_color" android:id="@+id/wheel_cancel" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dimen_16" android:text="@string/cancel"/>
+            <TextView android:textSize="@dimen/dimen_16" android:textColor="@color/search_result_color" android:id="@+id/wheel_confirm" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/dimen_16" android:text="@string/ok" android:layout_alignParentRight="true"/>
+        </RelativeLayout>
+        <View android:background="@color/view_divider_color" android:layout_width="match_parent" android:layout_height="@dimen/res_0x7f070190_dimen_0_3"/>
+    </LinearLayout>
+</LinearLayout>
