@@ -1,9 +1,0 @@
-{
-    "tmap_resources": {
-        "gpsnormal": "gpsnormal", 
-        "gpssearchbutton": "gpssearchbutton", 
-        "map": "map", 
-        "tmap_nullView": "0011_empty_search", 
-        "tmap_select": "tmap_select"
-    }
-}

@@ -19,6 +19,14 @@
 ### 5. List of endpoints gathered from Decompiled Apps and Scraped Endpoints
 ### 6. iOS PCAP file - showing data transfer out of iPhone -> Chinese Servers
 
+## NOTE:
+### Due to the size of the .ipa file and the binary located inside of the .ipa file. I have added a download link to my website
+
+**TLauncher binary go into the following directory** 
+/ios/com.systoon.dongaotoon_1548453616_v2.0.5_657/Payload/payload_unpacked/TLauncher
+
+**Files Download:** https://www.0hak.com/research/2022-beijing-olympics-files
+
 ## Overview
 
 > This repo directly correlates with a report I will be releasing Jan 24th, 2022. The report reveals how the 2022 MY2022 App is collecting data, and storing data on Chinese servers. This is just a general overview, the report will be very detailed. 
