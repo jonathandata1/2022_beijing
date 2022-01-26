@@ -2,8 +2,8 @@
 # Decompiled 2022 Beijing Olympics Apps
 ### Author: Jonathan Scott 
 #### Twitter: @jonathandata1
-#### Version 1.0
-
+#### Version 2.0
+## UPDATE 1/26/2022: The iOS app has been decrypted, and the decrypted TLauncher binary is available for download on  https://www.0hak.com/research/2022-beijing-olympics-files
 
 ![2022 Beijing Olympics Apps](https://i.postimg.cc/rscdmBjs/2022-beijing.jpg)
 
@@ -18,6 +18,7 @@
 ### 4. Unminified JS files - Showing data collection and db calls
 ### 5. List of endpoints gathered from Decompiled Apps and Scraped Endpoints
 ### 6. iOS PCAP file - showing data transfer out of iPhone -> Chinese Servers
+### 7. iOS Filesystem Trace while executing the MY2022 iOS app
 
 ## NOTE:
 ### Due to the size of the .ipa file and the binary located inside of the .ipa file. I have added a download link to my website
