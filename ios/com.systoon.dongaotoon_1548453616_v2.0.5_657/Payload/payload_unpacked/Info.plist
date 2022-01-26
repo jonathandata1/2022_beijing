@@ -150,7 +150,7 @@
     <string>冬奥通需要使用您的蓝牙信息
 冬奥通需要使用您的蓝牙信息</string>
     <key>MinimumOSVersion</key>
-    <string>9.0</string>
+    <string>12.0</string>
     <key>NSPhotoLibraryAddUsageDescription</key>
     <string>若不允许您将无法保存扫一扫功能选择相册里面的二维码，或无法选择相册里面的图片。</string>
     <key>shareWeiboAppId</key>
@@ -307,5 +307,15 @@
     <string>1240</string>
     <key>DTAppStoreToolsBuild</key>
     <string>13C90b</string>
+    <key>UISupportedDevices</key>
+    <array>
+      <string>iPhone6,1</string>
+      <string>iPhone6,2</string>
+      <string>iPhone7,2</string>
+      <string>iPhone8,1</string>
+      <string>iPhone8,4</string>
+      <string>iPod7,1</string>
+      <string>iPod9,1</string>
+    </array>
   </dict>
 </plist>
