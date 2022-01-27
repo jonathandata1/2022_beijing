@@ -3,7 +3,7 @@
 ### Author: Jonathan Scott 
 #### Twitter: @jonathandata1
 #### Version 2.0
-## UPDATE 1/26/2022: The iOS app has been decrypted, and the decrypted TLauncher binary is available for download on  https://www.0hak.com/research/2022-beijing-olympics-files
+
 
 ![2022 Beijing Olympics Apps](https://i.postimg.cc/rscdmBjs/2022-beijing.jpg)
 
@@ -67,144 +67,70 @@ After tracing the server requests and unminifying the javascript I could clearly
 
 ![2022 Beijing Olympics Apps](https://i.postimg.cc/Bv8tCdCY/Screen-Shot-2022-01-23-at-3-37-22-AM.png)
 
-`HscK: function(e, t) {
-        e.exports = {
-            days: "天",
-            reported_title_before: "入境前",
-            reported_title_entry: "入境后",
-            reported_msg: "您已填报",
-            lost_msg: "，漏填",
-            daily_health: "每日健康信息填报",
-            goto_fill: "去填报",
-            vaccination: "新冠疫苗接种信息填报",
-            test_results: "实验室检测结果填报",
-            schedule: "计划行程填报",
-            actual: "实际行程填报",
-            information: "个人健康信息汇总报告",
-            id_no: "注册号：",
-            date: "日期：",
-            temperature: "当前体温:",
-            isfever: "发热:",
-            istired: "乏力:",
-            iscough: "咳嗽:",
-            ispharyngalgia: "咽痛:",
-            isheadache: "头痛:",
-            ismyalgia: "肌肉/关节酸痛:",
-            isbreath: "呼吸困难:",
-            ispectoralgia: "胸痛:",
-            isvomit: "呕吐:",
-            isdiarrhea: "腹泻:",
-            issmell: "味觉异常:",
-            isothersymptoms: "其他不适症状:",
-            isseedoctor: "今日是否有就诊记录或服药记录:",
-            istouchpatient: "今日您是否曾接触新冠肺炎确诊病例/疑似病例/无症状感染者:",
-            submit: "提交",
-            yes: "是",
-            no: "否",
-            enterRequire: "请输入",
-            chooseRequire: "请选择",
-            all_choose_no: "全部选“否”",
-            submit_success: "提交成功",
-            back: "返回",
-            daily_health_list: "健康信息查询",
-            view_detail: "查看详情",
-            daily_health_supplement: "健康信息补录",
-            vaccine_question: "您是否接种过新型冠状病毒疫苗",
-            vaccine_img: "接种记录照片",
-            first: "一",
-            second: "二",
-            third: "三",
-            forth: "四",
-            fifth: "五",
-            vaccine_manufacturer: "第###NUM###剂疫苗名称 (厂家名称)",
-            vaccine_time: "第###NUM###剂接种时间",
-            test_question: "在末段航程登机前72小时，于中国驻外使领馆认证的检测机构获取核酸检测结果",
-            result_positive: "阳性",
-            result_negative: "阴性",
-            result_undetected: "未检测",
-            test_img: "核酸检测报告",
-            IgM_question: "抗体检测结果IgM",
-            IgG_question: "抗体检测结果IgG",
-            promise_title: "真实性承诺",
-            promise_text: "本人已阅知本健康申报所列事项，保证以下申报的内容真实准确。如有虚假申报内容，愿承担相应法律责任。",
-            syncInfo_title: "数据同步",
-            syncInfo_text: "您的冬奥注册号###NUM###信息会同步到当前使用的残奥注册号，数据只会进行一次同步，之后该冬奥注册号填报的数据不会再进行同步",
-            agree: "我同意",
-            confirm: "确定",
-            modify_success: "修改成功",
-            modify: "修改",
-            no_data: "暂无数据",
-            no_replenish_data: "暂无可补录的日期",
-            choose_replenish_data: "选择需要补录的日期",
-            file_format_error: "文件格式不正确",
-            file_format_error_desc: "请上传 jpg 或 jpeg 或 png 格式的图片",
-            file_size_exceed: "超出文件大小限制",
-            file_size_exceed_desc: "上传文件大小不能超过 6M",
-            info_health: "健康填报信息",
-            info_test: "实验室检测结果",
-            info_vaccination: "新冠疫苗接种",
-            more_vaccination: "添加接种疫苗针剂",
-            max_doses: "疫苗针剂最多支持5次",
-            required_test_img: "请上传核酸检测报告照片",
-            required_vaccine_img: "请上传接种记录照片",
-            record_vaccine: "请至少完成一剂疫苗接种记录的填写",
-            complete_vaccine: "请完成当前疫苗接种记录的填写",
-            schedule_flight: "计划入境航班",
-            schedule_flight_time: "计划入境登机时间",
-            schedule_inbound_date: "计划入境日期",
-            schedule_outbound_date: "计划离境日期",
-            schedule_outbound_flight: "计划离境航班",
-            actual_inbound_date: "入境日期",
-            actual_flight: "入境航班",
-            actual_flight_seat: "入境航班座位号",
-            actual_outbound_date: "计划离境日期",
-            actual_outbound_flight: "计划离境航班",
-            info_schedule: "计划行程",
-            info_actual: "实际行程",
-            temperature_error: "请输入数字",
-            temperature_error_range: "体温输入不规范",
-            vaccine_time_error: "疫苗接种时间有误。填写要求：接种时间不能为同一天，并且后一针剂时间不能早于前一针剂",
-            before_error: "不能早于",
-            today_str: "当天",
-            after_error: "不能晚于",
-            login: "登录",
-            password: "密码",
-            verify_code: "验证码",
-            login_id_no: "注册卡号",
-            forget_password: "忘记密码",
-            forget_password_mark: "忘记密码",
-            index: "首页",
-            email: "注册邮箱",
-            back_to_login: "返回登录",
-            forget_pass_mail_tips: "重置账号密码的链接已经发送到您的邮箱，请查收邮件并进行下一步操作。",
-            forget_pass_steps: "请输入注册卡号和邮箱，然后单击“密码设置”。系统将自动发送密码设置的链接到您的注册邮箱，请登录邮箱后，点击该链接，进行重置。",
-            pass_reset: "密码设置",
-            link_validate: "密码设置链接已失效，系统页面即将回到登录页",
-            new_password: "新密码",
-            old_password: "旧密码",
-            confirmRequire: "请确认",
-            pass_again: "请再次输入密码",
-            pass_not_same: "两次输入的密码不一致",
-            pass_update_success: "密码修改成功，系统页面即将回到登录页",
-            pass_tips: "注意事项：",
-            pass_tips_1: "密码由8-20个字符组成；",
-            pass_tips_2: "需同时包含大写字母、小写字母和数字。",
-            finish_pass: "完成",
-            first_login_update_pass: "初次登录系统需要修改初始密码",
-            update_pass_title: "修改密码提醒",
-            logout: "退出登录",
-            logout_content: "您确认要退出登录吗?",
-            test_promise: "本人承诺，已按《防疫手册》（Playbook）“启程前”章节要求，完成所有新冠肺炎相关检测，并将随身携带检测报告，以备核实。",
-            pass_change: "修改密码",
-            cancel: "取消",
-            web_daily_health: "健康信息填报",
-            login_tips: "当您第一次登陆时，请使用初始密码（YYYYMMDD格式），密码为您护照/旅行证件的签发日期。如未提交上述日期，请使用出生日期。格式同为YYYYMMDD。",
-            vaccine_img_tips: "请确保上传的照片中包含您的姓名及“新冠病毒疫苗”字样",
-            initMessage: "失败，redisKey不存在"
-        }
-    },`
+| Example 1 Data                                                             | Example 2 Data                                                  |
+|----------------------------------------------------------------------------|-----------------------------------------------------------------|
+| reported_title_entry: "入境后",                                            | agree: "我同意",                                                |
+| reported_msg: "您已填报",                                                  | confirm: "确定",                                                |
+| lost_msg: "，漏填",                                                        | modify_success: "修改成功",                                     |
+| daily_health: "每日健康信息填报",                                          | modify: "修改",                                                 |
+| goto_fill: "去填报",                                                       | no_data: "暂无数据",                                            |
+| vaccination: "新冠疫苗接种信息填报",                                       | no_replenish_data: "暂无可补录的日期",                          |
+| test_results: "实验室检测结果填报",                                        | choose_replenish_data: "选择需要补录的日期",                    |
+| schedule: "计划行程填报",                                                  | file_format_error: "文件格式不正确",                            |
+| actual: "实际行程填报",                                                    | file_format_error_desc: "请上传 jpg 或 jpeg 或 png 格式的图片", |
+| information: "个人健康信息汇总报告",                                       | file_size_exceed: "超出文件大小限制",                           |
+| id_no: "注册号：",                                                         | file_size_exceed_desc: "上传文件大小不能超过 6M",               |
+| date: "日期：",                                                            | info_health: "健康填报信息",                                    |
+| temperature: "当前体温:",                                                  | info_test: "实验室检测结果",                                    |
+| isfever: "发热:",                                                          | info_vaccination: "新冠疫苗接种",                               |
+| istired: "乏力:",                                                          | more_vaccination: "添加接种疫苗针剂",                           |
+| iscough: "咳嗽:",                                                          | max_doses: "疫苗针剂最多支持5次",                               |
+| ispharyngalgia: "咽痛:",                                                   | required_test_img: "请上传核酸检测报告照片",                    |
+| isheadache: "头痛:",                                                       | required_vaccine_img: "请上传接种记录照片",                     |
+| ismyalgia: "肌肉/关节酸痛:",                                               | record_vaccine: "请至少完成一剂疫苗接种记录的填写",             |
+| isbreath: "呼吸困难:",                                                     | complete_vaccine: "请完成当前疫苗接种记录的填写",               |
+| ispectoralgia: "胸痛:",                                                    | schedule_flight: "计划入境航班",                                |
+| isvomit: "呕吐:",                                                          | schedule_flight_time: "计划入境登机时间",                       |
+| isdiarrhea: "腹泻:",                                                       | schedule_inbound_date: "计划入境日期",                          |
+| issmell: "味觉异常:",                                                      | schedule_outbound_date: "计划离境日期",                         |
+| isothersymptoms: "其他不适症状:",                                          | schedule_outbound_flight: "计划离境航班",                       |
+| isseedoctor: "今日是否有就诊记录或服药记录:",                              | actual_inbound_date: "入境日期",                                |
+| istouchpatient: "今日您是否曾接触新冠肺炎确诊病例/疑似病例/无症状感染者:", | actual_flight: "入境航班",                                      |
+| enterRequire: "请输入",                                                    | actual_flight_seat: "入境航班座位号",                           |
+| chooseRequire: "请选择",                                                   | actual_outbound_date: "计划离境日期",                           |
+| all_choose_no: "全部选“否”",                                               | actual_outbound_flight: "计划离境航班",                         |
+| daily_health_list: "健康信息查询",                                         | info_schedule: "计划行程",                                      |
+| view_detail: "查看详情",                                                   | info_actual: "实际行程",                                        |
+| daily_health_supplement: "健康信息补录",                                   | temperature_error: "请输入数字",                                |
+| vaccine_question: "您是否接种过新型冠状病毒疫苗",                          | temperature_error_range: "体温输入不规范",                      |
+| vaccine_img: "接种记录照片",                                               | before_error: "不能早于",                                       |
+| first: "一",                                                               | today_str: "当天",                                              |
+| second: "二",                                                              | after_error: "不能晚于",                                        |
+| third: "三",                                                               | login: "登录",                                                  |
+| forth: "四",                                                               | password: "密码",                                               |
+| fifth: "五",                                                               | verify_code: "验证码",                                          |
+| vaccine_manufacturer: "第###NUM###剂疫苗名称 (厂家名称)",                  | login_id_no: "注册卡号",                                        |
+| vaccine_time: "第###NUM###剂接种时间",                                     | forget_password: "忘记密码",                                    |
+| result_positive: "阳性",                                                   | forget_password_mark: "忘记密码",                               |
+| result_negative: "阴性",                                                   | index: "首页",                                                  |
+| result_undetected: "未检测",                                               | email: "注册邮箱",                                              |
+| test_img: "核酸检测报告",                                                  |                                                                 |
+
 
 ![2022 Beijing Olympics Apps](https://i.postimg.cc/g2k8RzB3/Screen-Shot-2022-01-23-at-3-51-12-AM.png)
+
+## UPDATE 1/26/2022: The iOS app has been decrypted, and the decrypted TLauncher binary is available for download on  https://www.0hak.com/research/2022-beijing-olympics-files
+
+> After decrypting the iOS ipa TLauncher binary that executes when launching the MY2022 app could be easily read and interpreted. The data exfiltration path and endpoint were clear, and showed the prevalence and unilateral integration of technology created by a known Chinese spyware firm iFlytek. The spyware firm is on a US blacklist due to its disregard to human rights and data privacy.
+
+Source: https://www.wired.com/story/mit-cuts-ties-chinese-ai-firm-human-rights/  
+
+This screenshot of the disassembled binary shows how iFlytek is interacting with the users device and the MY2020 app. 
+
+![2022 Beijing Olympics Apps](https://i.postimg.cc/hvHrrnC9/iflytek.png )
+
+
+
 
 ## AndroidOS 
 
