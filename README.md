@@ -245,7 +245,9 @@ This screenshot of the disassembled binary shows how iFlytek is interacting with
 
 ![2022 Beijing Olympics Apps](https://i.postimg.cc/YqyDhsd2/Screen-Shot-2022-01-22-at-1-17-02-AM.png)
 
-`function i(e) {
+ 
+```
+            function i(e) {
                 e && e.callback && e.callback(r(e.handlerName, e.params))
             }
 
@@ -312,6 +314,7 @@ This screenshot of the disassembled binary shows how iFlytek is interacting with
             }, {
                 moduleName: "media",
                 actionKeys: ["chooseImage", "previewImage", "audioPlay", "videoPlay", "audioRecord", "chooseVideo"]
-            }, {`
+            }, {
+```
 
 ### There is a lot of AndroidOS data exfil and system controls to speak about, but as I mentioned this is a brief introduction to the full report I will be releasing . 
