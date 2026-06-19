@@ -21,12 +21,21 @@
 ### 7. iOS Filesystem Trace while executing the MY2022 iOS app
 
 ## NOTE:
-### Due to the size of the .ipa file and the binary located inside of the .ipa file. I have added a download link to my website
+### The MY2022 iOS .ipa and the decrypted TLauncher binary are now included directly in this repo. They are tracked with Git LFS because of their size.
 
-**TLauncher binary go into the following directory** 
-/ios/com.systoon.dongaotoon_1548453616_v2.0.5_657/Payload/payload_unpacked/TLauncher
+**.ipa location:**
+`ios/com.systoon.dongaotoon_1548453616_v2.0.5_657.ipa`
 
-**Files Download:** https://www.0hak.com/research/2022-beijing-olympics-files
+**Decrypted TLauncher binary location:**
+`ios/com.systoon.dongaotoon_1548453616_v2.0.5_657/Payload/payload_unpacked/TLauncher`
+
+To get the actual binaries when cloning, you need [Git LFS](https://git-lfs.com/) installed (`brew install git-lfs` on macOS) and then either clone normally or, if you already cloned without LFS, run `git lfs pull` from inside the repo. Without LFS you will only see small pointer files in place of the two binaries.
+
+**SHA-256:**
+- `ios/com.systoon.dongaotoon_1548453616_v2.0.5_657.ipa` — `86947d074fa854138c2a9c0c87d5cfa320a617f6f7c6e2ce28796f971e12b67a`
+- `ios/com.systoon.dongaotoon_1548453616_v2.0.5_657/Payload/payload_unpacked/TLauncher` — `8d8c53c82e83ab4ba55db2ead9e3e59e602cb353ab8ffe824c892e683d02e9f0`
+
+**Mirror (legacy):** https://www.0hak.com/research/2022-beijing-olympics-files
 
 ## Overview
 
