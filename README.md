@@ -35,8 +35,6 @@ To get the actual binaries when cloning, you need [Git LFS](https://git-lfs.com/
 - `ios/com.systoon.dongaotoon_1548453616_v2.0.5_657.ipa` — `86947d074fa854138c2a9c0c87d5cfa320a617f6f7c6e2ce28796f971e12b67a`
 - `ios/com.systoon.dongaotoon_1548453616_v2.0.5_657/Payload/payload_unpacked/TLauncher` — `8d8c53c82e83ab4ba55db2ead9e3e59e602cb353ab8ffe824c892e683d02e9f0`
 
-**Mirror (legacy):** https://www.0hak.com/research/2022-beijing-olympics-files
-
 ## Overview
 
 > This repo directly correlates with a report I will be releasing Jan 24th, 2022. The report reveals how the 2022 MY2022 App is collecting data, and storing data on Chinese servers. This is just a general overview, the report will be very detailed. 
@@ -128,7 +126,7 @@ After tracing the server requests and unminifying the javascript I could clearly
 
 ![2022 Beijing Olympics Apps](https://i.postimg.cc/g2k8RzB3/Screen-Shot-2022-01-23-at-3-51-12-AM.png)
 
-## UPDATE 1/26/2022: The iOS app has been decrypted, and the decrypted TLauncher binary is available for download on  https://www.0hak.com/research/2022-beijing-olympics-files
+## UPDATE 1/26/2022: The iOS app has been decrypted, and the decrypted TLauncher binary is committed to this repo at `ios/com.systoon.dongaotoon_1548453616_v2.0.5_657/Payload/payload_unpacked/TLauncher` (Git LFS).
 
 > After decrypting the iOS ipa TLauncher binary that executes when launching the MY2022 app could be easily read and interpreted. The data exfiltration path and endpoint were clear, and showed the prevalence and unilateral integration of technology created by a known Chinese spyware firm iFlytek. The spyware firm is on a US blacklist due to its disregard to human rights and data privacy.
 
