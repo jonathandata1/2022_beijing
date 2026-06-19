@@ -1,0 +1,2 @@
+*.ipa filter=lfs diff=lfs merge=lfs -text
+ios/com.systoon.dongaotoon_1548453616_v2.0.5_657/Payload/payload_unpacked/TLauncher filter=lfs diff=lfs merge=lfs -text
